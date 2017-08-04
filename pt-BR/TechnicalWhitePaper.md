@@ -73,7 +73,7 @@ A tecnologia Blockchain foi introduzida em 2008 com o lançamento da moeda bitco
 
 Enquanto varias plataformas de blockchain têm tido dificuldades para suportar aplicações descentralizadas em funcionamento, blockchains especializados por aplicação como o exchange descentralizado BitShares (2014) e a plataforma de mídia social Steem (2016) tornaram-se blockchains intensamente utilizados com dezenas de milhares de usuários ativos diariamente. Eles conseguiram isto aumentando o desempenho para milhares de transações por segundo, reduzindo a latência para 1,5 segundos, eliminando taxas, e proporcionando uma experiência de usuário semelhante aos actualmente prestados pelos serviços centralizados existentes.
 
-Existing blockchain platforms are burdened by large fees and limited computational capacity that prevent widespread blockchain adoption.
+Plataformas de blockchain existentes, estão sobrecarregadas por grandes taxas e capacidade computacional limitada que impede a adoção generalizada do blockchain.
 
 # Requirements for Blockchain Applications
 
