@@ -55,23 +55,23 @@ Sem permissão, qualquer um pode usar, reproduzir ou distribuir qualquer materia
   - [Atualizando o Protocolo & Constituição](#upgrading-the-protocol--constitution) 
     - [Mudanças de Emergência](#emergency-changes)
 - [Scripts & Máquinas Virtuais](#scripts--virtual-machines) 
-  - [Schema Defined Messages](#schema-defined-messages)
-  - [Schema Defined Database](#schema-defined-database)
-  - [Separating Authentication from Application](#separating-authentication-from-application)
-  - [Virtual Machine Independent Architecture](#virtual-machine-independent-architecture) 
+  - [Mensagens Definidas por Esquema](#schema-defined-messages)
+  - [Banco de Dados Definido por Esquema](#schema-defined-database)
+  - [Separando a Autenticação da Aplicação](#separating-authentication-from-application)
+  - [Arquitetura Independente de Máquina Virtual](#virtual-machine-independent-architecture) 
     - [Web Assembly (WASM)](#web-assembly-wasm)
-    - [Ethereum Virtual Machine (EVM)](#ethereum-virtual-machine-evm)
-- [Inter Blockchain Communication](#inter-blockchain-communication) 
-  - [Merkle Proofs for Light Client Validation (LCV)](#merkle-proofs-for-light-client-validation-lcv)
-  - [Latency of Interchain Communication](#latency-of-interchain-communication)
+    - [Máquina Virtual de Ethereum (EVM)](#ethereum-virtual-machine-evm)
+- [Comunicação Inter Blockchain](#inter-blockchain-communication) 
+  - [Provas de Merkle para Validação Leve de Cliente (LCV)](#merkle-proofs-for-light-client-validation-lcv)
+  - [Latência de Comunicação Interchain](#latency-of-interchain-communication)
   - [Proof of Completeness](#proof-of-completeness)
-- [Conclusion](#conclusion)
+- [Conclusão](#conclusion)
 
-# Background
+# Contexto
 
-Blockchain technology was introduced in 2008 with the launch of the bitcoin currency, and since then entrepreneurs and developers have been attempting to generalize the technology in order to support a wider range of applications on a single blockchain platform.
+A tecnologia Blockchain foi introduzida em 2008 com o lançamento da moeda bitcoin e desde então empreendedores e desenvolvedores tem intentado generalizar a tecnologia para oferecer suporte a uma mais ampla gama de aplicações num único blockchain.
 
-While a number of blockchain platforms have struggled to support functional decentralized applications, application specific blockchains such as the BitShares decentralized exchange (2014) and Steem social media platform (2016) have become heavily used blockchains with tens of thousands of daily active users. They have achieved this by increasing performance to thousands of transactions per second, reducing latency to 1.5 seconds, eliminating fees, and providing a user experience similar to those currently provided by existing centralized services.
+Enquanto varias plataformas de blockchain têm tido dificuldades para suportar aplicações descentralizadas em funcionamento, blockchains especializados por aplicação como o exchange descentralizado BitShares (2014) e a plataforma de mídia social Steem (2016) tornaram-se blockchains intensamente utilizados com dezenas de milhares de usuários ativos diariamente. Eles conseguiram isto aumentando o desempenho para milhares de transações por segundo, reduzindo a latência para 1,5 segundos, eliminando taxas, e proporcionando uma experiência de usuário semelhante aos actualmente prestados pelos serviços centralizados existentes.
 
 Existing blockchain platforms are burdened by large fees and limited computational capacity that prevent widespread blockchain adoption.
 
