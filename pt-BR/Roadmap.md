@@ -1,85 +1,85 @@
-## EOS.IO Software Roadmap
+## EOS.IO Roadmap do Software
 
-This document outlines the development plan from a high level and will be updated as progress is made toward version 1.0. It should be noted that this roadmap applies only to the blockchain software and not to the other tools and utilities such as wallets and block explorers which will have their own teams and dedicated roadmaps once Phase 1 is complete.
+Este documento descreve o plano de desenvolvimento de alto nível e será atualizado conforme é feito progresso em direção a versão 1.0. Este roadmap se aplica unicamente ao software do blockchain e não as outras ferramentas e utilitários como carteiras e exploradores de blocos que que terão os seus próprios times e roadmaps assim que a Fase 1 seja finalizada.
 
-***Everything contained in this document is in draft form and subject to change at any time and provided for information purposes only. block.one does not guarantee the accuracy of the information contained in this roadmap and the information is provided “as is” with no representations or warranties, express or implied.***
+***Todo o conteúdo deste documento é rascunho e sujeito a alterações a qualquer momento e é publicado apenas para fins informativos. block.one não garante a exatidão das informações contidas neste roadmap e a informação é oferecida sem nenhum tipo de garantias, expressas ou implícitas.***
 
-# Phase 1 - Minimal Viable Testing Environment - Summer 2017
+# Fase 1 - Ambiente de Teste Minimamente Viável - Verão 2017
 
-The goal of this phase is to establish the APIs that developers will require to start building and testing applications on EOS.IO. In order for developers to start testing their applications they will require the following to be implemented:
+O objetivo desta fase é estabelecer as APIs que desenvolvedores irão precisar para começar a construir e testar aplicações no EOS.IO. Para que os desenvolvedores possam começar a testar as suas aplicações eles precisarão implementado o seguinte:
 
-### Standalone Node (Dan & Nathan)
+### Nó Autônomo (Dan & Nathan)
 
-A standalone node operates a test blockchain and produces blocks while exposing an API. This node does not need to concern itself with any P2P networking code.
+Um nó autônomo opera um blockchain de testes e produz blocos e expõe uma API. Este nó não precisa preocupar-se com qualquer código da rede P2P.
 
-### Native Contracts (Nathan)
+### Contratos nativos (Nathan)
 
-The EOS.IO software has a number of native contracts. These are contracts that manage the core operations of the blockchain and exist outside the Web Assembly interface. These contracts include:
+O software EOS.IO tem vários contratos nativos. Estes são os contratos que gerenciam as operações principais do blockchain e existem fora da interface Web Assembly. Estes contratos incluem:
 
-1. @eos - manages EOS token transfers
-2. @stake - manages locked EOS, voting, and Producer Election
-3. @system - manages permissions, messages, and contact code updates
+1. @eos - gerencia as transferências de token EOS
+2. @stake - gerencia EOS bloqueado, votação e Eleição do Produtor
+3. @system - gerencia permissões, mensagens e atualizações de código
 
-### Virtual Machine API (Dan)
+### API da Máquina Virtual (Dan)
 
-Contracts are compiled to WebAssembly (WASM) and WASM must interface with the blockchain via a defined API. This API is what developers depend upon to build applications and be relatively stable before developers can really start to build on EOS.
+Contratos são compilados para WebAssembly (WASM) e WASM deve interagir com o blockchain através de uma API definida. Esta API é o que os desenvolvedores dependem para construir aplicações e deve estar relativamente estável antes que os desenvolvedores começem a construir em cima do EOS.
 
-### RPC Interface (Arhag, Nathan)
+### Interface RPC (Arhag, Nathan)
 
-A simple JSON RPC over HTTP interface will be provided that enables developers to broadcast transactions and query application state. This is critical for both publishing and interacting with test applications.
+Uma interface simples usando JSON RPC sobre HTTP será fornecida que permite que os desenvolvedores transmitam transações e consultem o estado do aplicativo. Isto é critico para publicação e interação com as aplicações de teste.
 
-### Command line Tools (Arhag)
+### Ferramentas de linha de comando (Arhag)
 
-Command line tools facilitate integrating the RPC interface with developer build environments.
+As ferramentas de linha de comando facilitam a integração entre a interface RPC com o ambientes de desenvolvimento dos desenvolvedores.
 
-### Basic Developer Documentation (Josh)
+### Documentação Basica para Desenvolvedores (Josh)
 
-Documents that teach developers how to get started with building on EOS.IO blockchains. This includes documentations of the WASM API, RPC Interface, and Command Line Tools.
+Documentos que ensinam os desenvolvedores como começar a construir acima dos blockchains do EOS.IO. Isto inclui documentação API WASM, Interface RPC e ferramentas de linha de comando.
 
-# Phase 2 - Minimal Viable Test Network - Fall 2017
+# Fase 2 - Rede de Testes Minimamente Viável - Outono 2017
 
-Everything in Phase 1 assumes a trusted environment that only runs the developer's own code. Before a test network can be deployed several additional features need to be implemented and tested.
+Tudo na Fase 1 pressupõe um ambiente confiável que apenas executa código do desenvolvedor. Antes que uma rede de teste possa ser implantada vários recursos adicionais precisam ser implementados e testados.
 
-### P2P Network Code (Phil)
+### Código da rede P2P (Phil)
 
-This is a plugin that is responsible for synchronizing the blockchain state between two standalone nodes.
+Este é um plugin que é responsável por sincronizar o estado do blockchain entre dois nós autônomos.
 
-### WASM Sanitation & CPU Sandboxing (Brian)
+### Saneamento do WASM & Sandboxing da CPU (Brian)
 
-The WASM code needs to be sanitized to check for non-deterministic behavior such as floating point operations and infinite loops.
+O código WASM precisa ser higienizado para verificar o comportamento não-determinístico, como operações de ponto flutuante e loops infinitos.
 
-### Resource Usage Tracking & Rate Limiting (Arhag)
+### Rastreamento do uso de Recursos & Limitação de Taxa (Arhag)
 
-To prevent abuse the resource monitoring and usage tracking rate limits users according to staked EOS.
+Para evitar o abuso a monitoração de recursos e o rastreamento da taxa de uso limita os usuários de acordo com as políticas do EOS.
 
-### Genesis Import Testing (DappHub)
+### Teste da Importação Inicial (DappHub)
 
-Tools need to be developed to export data from the EOS Token Distribution state and create a genesis configuration file. This will enable anyone participating in the Token Distribution to acquire some initial test EOS (TEOS).
+As ferramentas precisam ser desenvolvidas para exportar os dados do estado de Distribuição de Tokens EOS e criar um arquivo de configuração inicial. Isto permitira que qualquer que esta participando na distribuição do Token possa adquirir alguns Tokens EOS de teste (TEOS).
 
-### Interblockchain Communication (Nathan)
+### Comunicação Interblockchain (Nathan)
 
-This feature involves verifying the Merkle hashing of transactions is proper.
+Esta característica envolve verificar se o hash de Merkle das transações é adequado.
 
-# Phase 3 - Testing & Security Audits - Winter 2017, Spring 2018
+# Fase 3 - Testes & Auditorias de Segurança - Inverno 2017, Primavera 2018
 
-During this phase the platform will undergo heavy testing with a focus on finding security issues and bug. At the end of Phase 3 version 1.0 will be tagged.
+Durante esta fase, a plataforma passará por testes pesados com foco na busca de bugs e problemas de segurança. No final da fase 3 a versão 1.0 será taggeada.
 
-### Develop Example Applications
+### Desenvolver Aplicações de Exemplo
 
-Example applications are critical to proving the platform provides the features required by real developers.
+As aplicações de exemplo são criticas para demostrar que a plataforma fornece os recursos necessários por desenvolvedores reais.
 
-### Bounties for Successfully Attacking Network
+### Prémios para atacar com sucesso a rede
 
-Attacking the network with spam, virtual machine exploits, and bug crashes, and non-deterministic behavior will be a heavily involved process but necessary to ensure that version 1.0 is stable.
+O processo de atacar a rede com spam, exploits da máquina virtual e crashes causados por bugs, e comportamento não determinístico será intensivo, mas necessário para garantir que a versão 1.0 seja estável.
 
-### Language Support
+### Suporte de Linguagens
 
-Adding support for additional languages to be compiled to WASM: C++, Rust, etc.
+Adicionar suporte para linguagens adicionais para que possam ser compiladas para o WASM: C++, Rust, etc.
 
-### Documentation & Tutorials
+### Documentação & Tutoriais
 
-# Phase 4 - Parallel Optimization Summer / Fall 2018
+# Fase 4 - Otimização Paralela - Verão / Outono 2018
 
-After getting a stable 1.0 product released, we will move toward optimizing the code for parallel execution.
+Depois de conseguir liberar um produto estável 1.0, vamos passar a otimizar o código para execução paralela.
 
-# Phase 5 - Cluster Implementation The Future
+# Fase 5 - Implementação do Cluster O Futuro
