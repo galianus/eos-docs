@@ -10,21 +10,21 @@ Copyright © 2017 block.one
 
 Sem permissão, qualquer um pode usar, reproduzir ou distribuir qualquer material em este documento para usos não comerciais e educacionais (ex. sem taxa ou fins comerciais) desde que a fonte original e o aviso de direitos autorais sejam citados.
 
-**AVISO LEGAL:** Este White Paper Técnico do EOS.IO é apenas para fins informativos. block.one does not guarantee the accuracy of or the conclusions reached in this white paper, and this white paper is provided “as is”. block.one does not make and expressly disclaims all representations and warranties, express, implied, statutory or otherwise, whatsoever, including, but not limited to: (i) warranties of merchantability, fitness for a particular purpose, suitability, usage, title or noninfringement; (ii) that the contents of this white paper are free from error; and (iii) that such contents will not infringe third-party rights. block.one and its affiliates shall have no liability for damages of any kind arising out of the use, reference to, or reliance on this white paper or any of the content contained herein, even if advised of the possibility of such damages. In no event will block.one or its affiliates be liable to any person or entity for any damages, losses, liabilities, costs or expenses of any kind, whether direct or indirect, consequential, compensatory, incidental, actual, exemplary, punitive or special for the use of, reference to, or reliance on this white paper or any of the content contained herein, including, without limitation, any loss of business, revenues, profits, data, use, goodwill or other intangible losses.
+**AVISO LEGAL:** Este White Paper Técnico do EOS.IO é apenas para fins informativos. block.one não garante a precisão das conclusões neste white paper, e este white paper é fornecido "como está". block.one does not make and expressly disclaims all representations and warranties, express, implied, statutory or otherwise, whatsoever, including, but not limited to: (i) warranties of merchantability, fitness for a particular purpose, suitability, usage, title or noninfringement; (ii) that the contents of this white paper are free from error; and (iii) that such contents will not infringe third-party rights. block.one and its affiliates shall have no liability for damages of any kind arising out of the use, reference to, or reliance on this white paper or any of the content contained herein, even if advised of the possibility of such damages. In no event will block.one or its affiliates be liable to any person or entity for any damages, losses, liabilities, costs or expenses of any kind, whether direct or indirect, consequential, compensatory, incidental, actual, exemplary, punitive or special for the use of, reference to, or reliance on this white paper or any of the content contained herein, including, without limitation, any loss of business, revenues, profits, data, use, goodwill or other intangible losses.
 
 - [Background](#background)
-- [Requirements for Blockchain Applications](#requirements-for-blockchain-applications) 
-  - [Support Millions of Users](#support-millions-of-users)
-  - [Free Usage](#free-usage)
-  - [Easy Upgrades and Bug Recovery](#easy-upgrades-and-bug-recovery)
-  - [Low Latency](#low-latency)
-  - [Sequential Performance](#sequential-performance)
-  - [Parallel Performance](#parallel-performance)
-- [Consensus Algorithm (DPOS)](#consensus-algorithm-dpos) 
-  - [Transaction Confirmation](#transaction-confirmation)
-  - [Transaction as Proof of Stake (TaPoS)](#transaction-as-proof-of-stake-tapos)
-- [Accounts](#accounts) 
-  - [Messages & Handlers](#messages--handlers)
+- [Requisitos para Aplicações Blockchain](#requirements-for-blockchain-applications) 
+  - [Suporte a Milhões de Usuários](#support-millions-of-users)
+  - [Uso Gratuito](#free-usage)
+  - [Simplicidade nas Atualizações e Recuperação de Falhas](#easy-upgrades-and-bug-recovery)
+  - [Baixa Latência](#low-latency)
+  - [Desempenho Sequencial](#sequential-performance)
+  - [Desempenho Paralelo](#parallel-performance)
+- [Algoritmo de Consenso (DPOS)](#consensus-algorithm-dpos) 
+  - [Confirmação da Transação](#transaction-confirmation)
+  - [Transação como Prova de Participação (TaPoS)](#transaction-as-proof-of-stake-tapos)
+- [Contas](#accounts) 
+  - [Mensagens & Handlers](#messages--handlers)
   - [Role Based Permission Management](#role-based-permission-management) 
     - [Named Permission Levels](#named-permission-levels)
     - [Named Message Handler Groups](#named-message-handler-groups)
