@@ -8,11 +8,11 @@ Bu doküman geliştirme planının çerçevesini kuşbakışı çizer ve versiyo
 
 Bu fazın amacı geliştiricilerin EOS.IO üzerinde uygulamaları oluşturmaya başlamaları ve test etmeleri için gereksinim duyacakları API'leri (Uygulama Programlama Arayüzü) belirlemektir. Geliştiricilerin uygulamalarını test etmeye başlayabilmesi için aşağıdakilerin tamamlanmış olması gerekir:
 
-### Standalone Node (Dan & Nathan)
+### Bağımsız Düğüm (Dan ve Nathan)
 
 A standalone node operates a test blockchain and produces blocks while exposing an API. This node does not need to concern itself with any P2P networking code.
 
-### Native Contracts (Nathan)
+### Doğal Sözleşmeler (Nathan)
 
 The EOS.IO software has a number of native contracts. These are contracts that manage the core operations of the blockchain and exist outside the Web Assembly interface. These contracts include:
 
@@ -20,19 +20,19 @@ The EOS.IO software has a number of native contracts. These are contracts that m
 2. @stake - manages locked EOS, voting, and Producer Election
 3. @system - manages permissions, messages, and contact code updates
 
-### Virtual Machine API (Dan)
+### Sanal Makine API'si (Dan)
 
 Contracts are compiled to WebAssembly (WASM) and WASM must interface with the blockchain via a defined API. This API is what developers depend upon to build applications and be relatively stable before developers can really start to build on EOS.
 
-### RPC Interface (Arhag, Nathan)
+### RPC arabirimi (Arhag, Nathan)
 
 A simple JSON RPC over HTTP interface will be provided that enables developers to broadcast transactions and query application state. This is critical for both publishing and interacting with test applications.
 
-### Command line Tools (Arhag)
+### Komut Satırı Araçları (Arhag)
 
 Command line tools facilitate integrating the RPC interface with developer build environments.
 
-### Basic Developer Documentation (Josh)
+### Temel Geliştirici Belgeleri (Josh)
 
 Documents that teach developers how to get started with building on EOS.IO blockchains. This includes documentations of the WASM API, RPC Interface, and Command Line Tools.
 
