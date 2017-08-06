@@ -10,7 +10,7 @@ Bu fazın amacı geliştiricilerin EOS.IO üzerinde uygulamaları oluşturmaya b
 
 ### Bağımsız Düğüm (Dan ve Nathan)
 
-A standalone node operates a test blockchain and produces blocks while exposing an API. This node does not need to concern itself with any P2P networking code.
+Bağımsız bir düğüm bir API sunarken bir test blok zinciri çalıştırır ve bloklar üretir. Bu düğümün herhangi bir P2P ağ kodu ile ilgilenmesi gerekmez.
 
 ### Doğal Sözleşmeler (Nathan)
 
