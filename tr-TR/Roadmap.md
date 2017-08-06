@@ -6,7 +6,7 @@ Bu doküman geliştirme planının çerçevesini kuşbakışı çizer ve versiyo
 
 # Faz 1 - Asgari Uygun Test Ortamı - Yaz 2017
 
-The goal of this phase is to establish the APIs that developers will require to start building and testing applications on EOS.IO. In order for developers to start testing their applications they will require the following to be implemented:
+Bu fazın amacı geliştiricilerin EOS.IO üzerinde uygulamaları oluşturmaya başlamaları ve test etmeleri için gereksinim duyacakları API'leri (Uygulama Programlama Arayüzü) belirlemektir. Geliştiricilerin uygulamalarını test etmeye başlayabilmesi için aşağıdakilerin tamamlanmış olması gerekir:
 
 ### Standalone Node (Dan & Nathan)
 
