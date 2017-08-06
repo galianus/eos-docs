@@ -14,11 +14,11 @@ Bağımsız bir düğüm bir API sunarken bir test blok zinciri çalıştırır 
 
 ### Doğal Sözleşmeler (Nathan)
 
-The EOS.IO software has a number of native contracts. These are contracts that manage the core operations of the blockchain and exist outside the Web Assembly interface. These contracts include:
+EOS.IO yazılımı bir dizi doğal sözleşmeye sahiptir. Bunlar blok zincirinin çekirdek işlemlerini yöneten kontratlardır ve Web Assembly Arabirimi dışında bulunurlar. Bu kontratlar şunlardır:
 
-1. @eos - manages EOS token transfers
+1. @eos - EOS token transferlerini yönetir
 2. @stake - manages locked EOS, voting, and Producer Election
-3. @system - manages permissions, messages, and contact code updates
+3. @sistem - izinleri, mesajları ve sözleşme kod güncellemelerini yönetir
 
 ### Sanal Makine API'si (Dan)
 
