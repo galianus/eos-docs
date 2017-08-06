@@ -17,7 +17,7 @@ Bağımsız bir düğüm bir API sunarken bir test blok zinciri çalıştırır 
 EOS.IO yazılımı bir dizi doğal sözleşmeye sahiptir. Bunlar blok zincirinin çekirdek işlemlerini yöneten kontratlardır ve Web Assembly Arabirimi dışında bulunurlar. Bu kontratlar şunlardır:
 
 1. @eos - EOS token transferlerini yönetir
-2. @stake - manages locked EOS, voting, and Producer Election
+2. @direk- kilitli EOS'ları, oylamaları ve Yapımcı Seçimlerini yönetir
 3. @sistem - izinleri, mesajları ve sözleşme kod güncellemelerini yönetir
 
 ### Sanal Makine API'si (Dan)
