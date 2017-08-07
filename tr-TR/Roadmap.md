@@ -40,7 +40,7 @@ Documents that teach developers how to get started with building on EOS.IO block
 
 Everything in Phase 1 assumes a trusted environment that only runs the developer's own code. Before a test network can be deployed several additional features need to be implemented and tested.
 
-### P2P Network Code (Phil)
+### P2P Network Kodu (Phil)
 
 This is a plugin that is responsible for synchronizing the blockchain state between two standalone nodes.
 
