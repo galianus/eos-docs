@@ -17,7 +17,7 @@ Bağımsız bir düğüm bir API sunarken bir test blok zinciri çalıştırır 
 EOS.IO yazılımı bir dizi doğal sözleşmeye sahiptir. Bunlar blok zincirinin çekirdek işlemlerini yöneten kontratlardır ve Web Assembly Arabirimi dışında bulunurlar. Bu kontratlar şunlardır:
 
 1. @eos - EOS token transferlerini yönetir
-2. @direk- kilitli EOS'ları, oylamaları ve Yapımcı Seçimlerini yönetir
+2. @pay algoritması - kilitli EOS'ları, oylamaları ve Yapımcı Seçimlerini yönetir
 3. @sistem - izinleri, mesajları ve sözleşme kod güncellemelerini yönetir
 
 ### Sanal Makine API'si (Dan)
@@ -72,7 +72,7 @@ Example applications are critical to proving the platform provides the features 
 
 Attacking the network with spam, virtual machine exploits, and bug crashes, and non-deterministic behavior will be a heavily involved process but necessary to ensure that version 1.0 is stable.
 
-### Language Support
+### Dil Desteği
 
 Adding support for additional languages to be compiled to WASM: C++, Rust, etc.
 
