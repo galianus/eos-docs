@@ -36,11 +36,11 @@ Command line tools facilitate integrating the RPC interface with developer build
 
 Documents that teach developers how to get started with building on EOS.IO blockchains. This includes documentations of the WASM API, RPC Interface, and Command Line Tools.
 
-# Phase 2 - Minimal Viable Test Network - Fall 2017
+# Faz 2 - Asgari Uygun Test Ağı - Sonbahar 2017
 
 Everything in Phase 1 assumes a trusted environment that only runs the developer's own code. Before a test network can be deployed several additional features need to be implemented and tested.
 
-### P2P Network Kodu (Phil)
+### P2P Ağ Kodu (Phil)
 
 This is a plugin that is responsible for synchronizing the blockchain state between two standalone nodes.
 
@@ -48,7 +48,7 @@ This is a plugin that is responsible for synchronizing the blockchain state betw
 
 The WASM code needs to be sanitized to check for non-deterministic behavior such as floating point operations and infinite loops.
 
-### Resource Usage Tracking & Rate Limiting (Arhag)
+### Kaynak Kullanımı Takibi ve Oran Sınırlaması (Arhag)
 
 To prevent abuse the resource monitoring and usage tracking rate limits users according to staked EOS.
 
@@ -60,13 +60,13 @@ Tools need to be developed to export data from the EOS Token Distribution state 
 
 This feature involves verifying the Merkle hashing of transactions is proper.
 
-# Phase 3 - Testing & Security Audits - Winter 2017, Spring 2018
+# Faz 3 - Test Yapma ve Güvenlik Denetimleri - Kış 2017, İlkbahar 2018
 
 During this phase the platform will undergo heavy testing with a focus on finding security issues and bug. At the end of Phase 3 version 1.0 will be tagged.
 
 ### Örnek Uygulamaların Geliştirilmesi
 
-Example applications are critical to proving the platform provides the features required by real developers.
+Örnek uygulamalar platformun gerçek geliştiriciler tarafından ihtiyaç duyulan özelliklere sahip olduğunu kanıtlaması açısından için kritik öneme sahiptir.
 
 ### Bounties for Successfully Attacking Network
 
