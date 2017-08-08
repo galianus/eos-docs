@@ -76,9 +76,9 @@ Attacking the network with spam, virtual machine exploits, and bug crashes, and 
 
 Adding support for additional languages to be compiled to WASM: C++, Rust, etc.
 
-### Documentation & Tutorials
+### Dökümantasyon ve Kılavuzlar
 
-# Phase 4 - Parallel Optimization Summer / Fall 2018
+# Faz 4 - Paralel Optimizasyon Yaz / Sonbahar 2018
 
 After getting a stable 1.0 product released, we will move toward optimizing the code for parallel execution.
 
