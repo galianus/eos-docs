@@ -30,7 +30,7 @@ A simple JSON RPC over HTTP interface will be provided that enables developers t
 
 ### Komut Satırı Araçları (Arhag)
 
-Command line tools facilitate integrating the RPC interface with developer build environments.
+Komut satırı araçları RPC arabirimininin geliştirici derleme ortamları ile entegrasyonuna olanak sağlar.
 
 ### Temel Geliştirici Belgeleri (Josh)
 
@@ -74,7 +74,7 @@ Attacking the network with spam, virtual machine exploits, and bug crashes, and 
 
 ### Dil Desteği
 
-Adding support for additional languages to be compiled to WASM: C++, Rust, etc.
+WASM: C++, Rust, vb. dillerine derlenecek ilave diller için destek ekleme.
 
 ### Dökümantasyon ve Kılavuzlar
 
