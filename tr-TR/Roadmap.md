@@ -34,7 +34,7 @@ Command line tools facilitate integrating the RPC interface with developer build
 
 ### Temel Geliştirici Belgeleri (Josh)
 
-Documents that teach developers how to get started with building on EOS.IO blockchains. This includes documentations of the WASM API, RPC Interface, and Command Line Tools.
+Geliştiricilere EOS.IO blok zincirleri üzerinde nasıl geliştirme yapmaya başlayacaklarını öğreten dökümanlardır. Bunlar WASM API, RPC Arabirimi ve Komut Satırı Araçları dökümanlarını içerir.
 
 # Faz 2 - Asgari Uygun Test Ağı - Sonbahar 2017
 
