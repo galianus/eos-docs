@@ -22,11 +22,11 @@ EOS.IO yazılımı bir dizi doğal sözleşmeye sahiptir. Bunlar blok zincirinin
 
 ### Sanal Makine API'si (Dan)
 
-WebAssembly (WASM) ve WASM'a derlenen sözleşmeler blok zincirine belirlenmiş bir arayüz ile bağlanmalıdır. This API is what developers depend upon to build applications and be relatively stable before developers can really start to build on EOS.
+WebAssembly (WASM) ve WASM'a derlenen sözleşmeler blok zincirine belirlenmiş bir arayüz ile bağlanmalıdır. Geliştiricilerin EOS üzerinde gerçekten uygulamalar oluşturmaya başlaması bu API'ye ve nispeten onun stabil olmasına bağlıdır.
 
 ### RPC arabirimi (Arhag, Nathan)
 
-A simple JSON RPC over HTTP interface will be provided that enables developers to broadcast transactions and query application state. This is critical for both publishing and interacting with test applications.
+HTTP arayüzü üzerinden basit bir JSON RPC aracılığıyla geliştiricilerin hareketleri yayınlamasına ve uygulama durumunu sorgulamalarına olanak tanıyan mimari sağlanacaktır. This is critical for both publishing and interacting with test applications.
 
 ### Komut Satırı Araçları (Arhag)
 
