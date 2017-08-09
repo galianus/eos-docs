@@ -50,7 +50,7 @@ Kayan nokta işlemleri ve sonsuz döngüler gibi deterministik olmayan davranı�
 
 ### Kaynak Kullanımı Takibi ve Oran Sınırlaması (Arhag)
 
-To prevent abuse the resource monitoring and usage tracking rate limits users according to staked EOS.
+Kötüye kullanımı engellemek amacıyla kaynak izleme ve kullanım oranı takibi kullanıcıları EOS pay algoritmasına göre sınırlandırır.
 
 ### Genesis Import Testing (DappHub)
 
