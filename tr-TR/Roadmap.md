@@ -44,7 +44,7 @@ Faz 1'deki her şey sadece geliştiricinin kendi kodunu çalıştıran güvenili
 
 Bu, iki bağımsız düğüm arasındaki blok zinciri durumunu senkronize etmekten sorumlu bir eklentidir.
 
-### WASM Sanitation & CPU Sandboxing (Brian)
+### WASM Sanitasyonu ve CPU düzeyinde güvenlik (Brian)
 
 Kayan nokta işlemleri ve sonsuz döngüler gibi deterministik olmayan davranışları denetlemek için WASM kodunun sanitize edilmesi gerekir.
 
