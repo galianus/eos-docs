@@ -22,7 +22,7 @@ EOS.IO yazılımı bir dizi doğal sözleşmeye sahiptir. Bunlar blok zincirinin
 
 ### Sanal Makine API'si (Dan)
 
-Contracts are compiled to WebAssembly (WASM) and WASM must interface with the blockchain via a defined API. This API is what developers depend upon to build applications and be relatively stable before developers can really start to build on EOS.
+WebAssembly (WASM) ve WASM'a derlenen sözleşmeler blok zincirine belirlenmiş bir arayüz ile bağlanmalıdır. This API is what developers depend upon to build applications and be relatively stable before developers can really start to build on EOS.
 
 ### RPC arabirimi (Arhag, Nathan)
 
