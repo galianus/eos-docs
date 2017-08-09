@@ -26,7 +26,7 @@ WebAssembly (WASM) ve WASM'a derlenen sözleşmeler blok zincirine belirlenmiş 
 
 ### RPC arabirimi (Arhag, Nathan)
 
-HTTP arayüzü üzerinden basit bir JSON RPC aracılığıyla geliştiricilerin hareketleri yayınlamasına ve uygulama durumunu sorgulamalarına olanak tanıyan mimari sağlanacaktır. This is critical for both publishing and interacting with test applications.
+HTTP arayüzü üzerinden basit bir JSON RPC aracılığıyla geliştiricilerin hareketleri yayınlamasına ve uygulama durumunu sorgulamalarına olanak tanıyan mimari sağlanacaktır. Bu, test uygulamalarının yayınlanması ve etkileşimi için hayati önem taşımaktadır.
 
 ### Komut Satırı Araçları (Arhag)
 
