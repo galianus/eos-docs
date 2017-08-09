@@ -46,7 +46,7 @@ Bu, iki bağımsız düğüm arasındaki blok zinciri durumunu senkronize etmekt
 
 ### WASM Sanitation & CPU Sandboxing (Brian)
 
-The WASM code needs to be sanitized to check for non-deterministic behavior such as floating point operations and infinite loops.
+Kayan nokta işlemleri ve sonsuz döngüler gibi deterministik olmayan davranışları denetlemek için WASM kodunun sanitize edilmesi gerekir.
 
 ### Kaynak Kullanımı Takibi ve Oran Sınırlaması (Arhag)
 
