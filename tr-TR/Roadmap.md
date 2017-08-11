@@ -62,7 +62,7 @@ This feature involves verifying the Merkle hashing of transactions is proper.
 
 # Faz 3 - Test Yapma ve Güvenlik Denetimleri - Kış 2017, İlkbahar 2018
 
-During this phase the platform will undergo heavy testing with a focus on finding security issues and bug. At the end of Phase 3 version 1.0 will be tagged.
+Bu faz sırasında platform güvenlik sorunları ve hataların tespiti odakta tutularak yoğun bir teste tabi tutulacaktır. Faz 3 sonunda versiyon 1.0 etiketi verilecektir.
 
 ### Örnek Uygulamaların Geliştirilmesi
 
@@ -80,6 +80,6 @@ WASM: C++, Rust, vb. dillerine derlenecek ilave diller için destek ekleme.
 
 # Faz 4 - Paralel Optimizasyon Yaz / Sonbahar 2018
 
-After getting a stable 1.0 product released, we will move toward optimizing the code for parallel execution.
+Stabil bir 1.0 ürünü yayınlandıktan sonra, paralel yürütme kodunun optimizasyonu çalışmalarına yöneleceğiz.
 
 # Phase 5 - Cluster Implementation The Future
