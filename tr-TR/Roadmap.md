@@ -22,7 +22,7 @@ EOS.IO yazılımı bir dizi doğal sözleşmeye sahiptir. Bunlar blok zincirinin
 
 ### Sanal Makine API'si (Dan)
 
-WebAssembly (WASM) ve WASM'a derlenen sözleşmeler blok zincirine belirlenmiş bir arayüz ile bağlanmalıdır. Geliştiricilerin EOS üzerinde gerçekten uygulamalar oluşturmaya başlaması bu API'ye ve nispeten onun stabil olmasına bağlıdır.
+WebAssembly (WASM) ve WASM'a derlenen sözleşmeler blok zincirine belirlenmiş bir arayüz ile bağlanmalıdır. Geliştiricilerin EOS üzerinde gerçekten uygulamalar oluşturmaya başlaması bu API'ye ve onun nispeten stabil olmasına bağlıdır.
 
 ### RPC arabirimi (Arhag, Nathan)
 
@@ -68,7 +68,7 @@ Bu faz sırasında platform güvenlik sorunları ve hataların tespiti odakta tu
 
 Örnek uygulamalar platformun gerçek geliştiriciler tarafından ihtiyaç duyulan özelliklere sahip olduğunu kanıtlaması açısından için kritik öneme sahiptir.
 
-### Bounties for Successfully Attacking Network
+### Başarılı Ağ Saldırıları için Ödüller
 
 Attacking the network with spam, virtual machine exploits, and bug crashes, and non-deterministic behavior will be a heavily involved process but necessary to ensure that version 1.0 is stable.
 
