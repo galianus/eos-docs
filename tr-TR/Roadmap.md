@@ -70,7 +70,7 @@ Bu faz sırasında platform güvenlik sorunları ve hataların tespiti odakta tu
 
 ### Başarılı Ağ Saldırıları için Ödüller
 
-Networke spam, sanal makine açıkları, bug çökertmeleri ve deterministik olmayan davranışlar ile saldırılar süreçte yoğun olarak yer alacaktır. 
+Versiyon 1.0'ın istikrarlı olmasını garanti etmek için ağa spam, sanal makine açıkları, bug çökertmeleri ve deterministik olmayan davranışlar ile saldırılar gerekli olacaktır ve süreçte yoğun olarak yer alacaktır. 
 
 ### Dil Desteği
 
@@ -78,8 +78,8 @@ WASM: C++, Rust, vb. dillerine derlenecek ilave diller için destek ekleme.
 
 ### Dökümantasyon ve Kılavuzlar
 
-# Faz 4 - Paralel Optimizasyon Yaz / Sonbahar 2018
+# Faz 4 - Paralel Optimizasyon - Yaz / Sonbahar 2018
 
 Stabil bir 1.0 ürünü yayınlandıktan sonra, paralel yürütme kodunun optimizasyonu çalışmalarına yöneleceğiz.
 
-# Phase 5 - Cluster Implementation The Future
+# Faz 5 - Küme Uygulaması - Gelecek
