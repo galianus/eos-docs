@@ -54,13 +54,13 @@ Kötüye kullanımı engellemek amacıyla kaynak izleme ve kullanım oranı taki
 
 ### Başlangıç İmport Testi (DappHub)
 
-EOS Token Dağıtımı durumunda veri çıkartmak ve bir başlangıç konfigürasyon dosyası oluşturmak için araçların geliştirilmesi gereklidir. Bu sayede Token Dağıtımına katılan herkesin bir miktar başlangıç test EOS'u (TEOS) edinmesi sağlanabilir.
+EOS Token Dağıtımı sürecinde veri çıkartmak ve bir başlangıç konfigürasyon dosyası oluşturmak için araçların geliştirilmesi gereklidir. Bu sayede Token Dağıtımına katılan herkesin bir miktar başlangıç test EOS'u (TEOS) edinmesi sağlanabilir.
 
-### Blok Zincirler Arası İletişim (Nathan)
+### Blok Zincirleri Arası İletişim (Nathan)
 
-Bu özellik aktarımlara ait Merkle hash işleminin doğru yürüdüğünün teyit edilmesini içerir.
+Bu özellik aktarımlara ait Merkle hash işleminin doğru yürüdüğünün teyidini içerir.
 
-# Faz 3 - Test Yapma ve Güvenlik Denetimleri - Kış 2017, İlkbahar 2018
+# Faz 3 - Test Etme ve Güvenlik Denetimleri - Kış 2017, İlkbahar 2018
 
 Bu faz sırasında platform güvenlik sorunları ve hataların tespiti odakta tutularak yoğun bir teste tabi tutulacaktır. Faz 3 sonunda versiyon 1.0 etiketi verilecektir.
 
