@@ -70,7 +70,7 @@ Bu faz sırasında platform güvenlik sorunları ve hataların tespiti odakta tu
 
 ### Başarılı Ağ Saldırıları için Ödüller
 
-Attacking the network with spam, virtual machine exploits, and bug crashes, and non-deterministic behavior will be a heavily involved process but necessary to ensure that version 1.0 is stable.
+Networke spam, sanal makine açıkları, bug çökertmeleri ve deterministik olmayan davranışlar ile saldırılar süreçte yoğun olarak yer alacaktır. 
 
 ### Dil Desteği
 
