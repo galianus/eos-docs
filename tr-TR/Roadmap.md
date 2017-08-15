@@ -56,7 +56,7 @@ Kötüye kullanımı engellemek amacıyla kaynak izleme ve kullanım oranı taki
 
 Tools need to be developed to export data from the EOS Token Distribution state and create a genesis configuration file. This will enable anyone participating in the Token Distribution to acquire some initial test EOS (TEOS).
 
-### Interblockchain Communication (Nathan)
+### Blok Zincirler Arası İletişim (Nathan)
 
 This feature involves verifying the Merkle hashing of transactions is proper.
 
