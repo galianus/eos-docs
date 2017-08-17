@@ -81,31 +81,31 @@ Para ser adotadas amplamente, aplicações que rodam no blockchain exigem uma pl
 
 ## Suporte a Milhões de Usuários
 
-Disrupting businesses such as Ebay, Uber, AirBnB, and Facebook, require blockchain technology capable of handling tens of millions of active daily users. In certain cases, applications may not work unless a critical mass of users is reached and therefore a platform that can handle mass number of users is paramount.
+Disromper empresas como Ebay, Uber, AirBnB e Facebook, requer uma tecnologia blockchain capaz de lidar com dezenas de milhões de usuários ativos diariamente. Em certos casos, os aplicativos podem não funcionar a menos que uma massa crítica de usuários é atingida e, portanto, uma plataforma que pode lidar com uma quantidade massiva de usuários é fundamental.
 
-## Free Usage
+## Uso Gratuito
 
-Application developers need the flexibility to offer users free services; users should not have to pay in order to use the platform or benefit from its services. A blockchain platform that is free to use for users will likely gain more widespread adoption. Developers and businesses can then create effective monetization strategies.
+Os desenvolvedores de aplicativos precisam da flexibilidade para oferecer aos usuários serviços gratuitos; usuários não devem ter que pagar para usar a plataforma ou se beneficiar de seus serviços. Uma plataforma de blockchain que é gratuita para ser usada pelos usuários provavelmente ganhará mais ampla adoção. Desenvolvedores e empresas podem criar estratégias de monetização eficaz.
 
-## Easy Upgrades and Bug Recovery
+## Atualizações fáceis e Recuperação de Falhas
 
-Businesses building blockchain based applications need the flexibility to enhance their applications with new features.
+Empresas construindo aplicações baseadas em blockchain precisam de flexibilidade para melhorar suas aplicações com novas funcionalidades.
 
-All non-trivial software is subject to bugs, even with the most rigorous of formal verification. The platform must be robust enough to fix bugs when they inevitably occur.
+Todos os softwares mais complexos são sujeitos a errores, mesmo com a verificação formal mais rigorosa. A plataforma deve ser robusta o suficiente para permitir a correção de erros quando eles ocorrerem inevitavelmente.
 
-## Low Latency
+## Baixa Latência
 
-A good user experience demands reliable feedback with delay of no more than a few seconds. Longer delays frustrate users and make applications built on a blockchain less competitive with existing non-blockchain alternatives.
+Uma boa experiência do usuário exige feedback confiável com atraso de não mais que alguns segundos. Atrasos maiores frustram os usuários e fazem que as aplicações construídas sobre um blockchain sejam menos competitivas com alternativas não baseadas no blockchain.
 
-## Sequential Performance
+## Desempenho Sequencial
 
-There are some applications that just cannot be implemented with parallel algorithms due to sequentially dependent steps. Applications such as exchanges need enough sequential performance to handle high volumes and therefore a platform with fast sequential performance is required.
+Existem alguns aplicativos que não podem ser implementados com algoritmos paralelos devido a passos sequencialmente dependentes. Aplicações tais como exchanges precisam de bastante desempenho sequencial para lidar com grandes volumes e, portanto, uma plataforma com desempenho rápido sequencial é necessária.
 
-## Parallel Performance
+## Desempenho Paralelo
 
-Large scale applications need to divide the workload across multiple CPUs and computers.
+Aplicações de grande escala precisam dividir a carga de trabalho entre vários processadores e computadores.
 
-# Consensus Algorithm (DPOS)
+# Algoritmo de Consenso (DPOS)
 
 EOS.IO software utilizes the only decentralized consensus algorithm capable of meeting the performance requirements of applications on the blockchain, [Delegated Proof of Stake (DPOS)](https://steemit.com/dpos/@dantheman/dpos-consensus-algorithm-this-missing-white-paper). Under this algorithm, those who hold tokens on a blockchain adopting the EOS.IO software may select block producers through a continuous approval voting system and anyone may choose to participate in block production and will be given an opportunity to produce blocks proportional to the total votes they have received relative to all other producers. For private blockchains the management could use the tokens to add and remove IT staff.
 
