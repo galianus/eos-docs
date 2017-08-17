@@ -75,11 +75,11 @@ Enquanto varias plataformas de blockchain têm tido dificuldades para suportar a
 
 Plataformas de blockchain existentes, estão sobrecarregadas por grandes taxas e capacidade computacional limitada que impede a adoção generalizada do blockchain.
 
-# Requirements for Blockchain Applications
+# Requisitos para Aplicações Blockchain
 
-In order to gain widespread use, applications on the blockchain require a platform that is flexible enough to meet the following requirements:
+Para ser adotadas amplamente, aplicações que rodam no blockchain exigem uma plataforma que é suficientemente flexível para atender aos seguintes requisitos:
 
-## Support Millions of Users
+## Suporte a Milhões de Usuários
 
 Disrupting businesses such as Ebay, Uber, AirBnB, and Facebook, require blockchain technology capable of handling tens of millions of active daily users. In certain cases, applications may not work unless a critical mass of users is reached and therefore a platform that can handle mass number of users is paramount.
 
