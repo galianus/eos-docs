@@ -75,15 +75,15 @@ While a number of blockchain platforms have struggled to support functional dece
 
 Existing blockchain platforms are burdened by large fees and limited computational capacity that prevent widespread blockchain adoption.
 
-# Requirements for Blockchain Applications
+# Blok Zincir Uygulamaları için Gereksinimler
 
 In order to gain widespread use, applications on the blockchain require a platform that is flexible enough to meet the following requirements:
 
-## Support Millions of Users
+## Milyonlarca Kullanıcı Desteği
 
 Disrupting businesses such as Ebay, Uber, AirBnB, and Facebook, require blockchain technology capable of handling tens of millions of active daily users. In certain cases, applications may not work unless a critical mass of users is reached and therefore a platform that can handle mass number of users is paramount.
 
-## Free Usage
+## Ücretsiz Kullanım
 
 Application developers need the flexibility to offer users free services; users should not have to pay in order to use the platform or benefit from its services. A blockchain platform that is free to use for users will likely gain more widespread adoption. Developers and businesses can then create effective monetization strategies.
 
