@@ -140,11 +140,11 @@ Ao longo do tempo, todos os usuários acabam diretamente confirmando o blockchai
 
 O software EOS.IO permite que todas as contas sejam referenciadas por um nome humanamente legível exclusivo de 2 a 32 caracteres de comprimento. O nome é escolhido pelo criador da conta. Todas as contas devem ser financiadas com o saldo mínimo no momento que elas são criadas para cobrir o custo de armazenamento dos dados da conta. Os nomes de conta também oferecem suporte a namespaces tal que o proprietário da conta @domain é o único que pode criar a conta @user.domain.
 
-Em um contexto descentralizado, os desenvolvedores de aplicativos vão pagar o custo nominal de criação da conta para inscrever um novo usuário. As empresas tradicionais já gastam quantias significativas de dinheiro por cliente que eles adquirem na forma de serviços de publicidade, enciclopédia, etc. The cost of funding a new blockchain account should be insignificant in comparison. Fortunately, there is no need to create accounts for users already signed up by another application.
+Em um contexto descentralizado, os desenvolvedores de aplicativos vão pagar o custo nominal de criação da conta para inscrever um novo usuário. As empresas tradicionais já gastam quantias significativas de dinheiro por cliente que eles adquirem na forma de serviços de publicidade, enciclopédia, etc. O custo do financiamento de uma nova conta no blockchain deve ser insignificante em comparação. Felizmente, não há nenhuma necessidade de criar contas de usuários que já se inscreveram por outro aplicativo.
 
-## Messages & Handlers
+## Mensagens & Handlers
 
-Each account can send structured messages to other accounts and may define scripts to handle messages when they are received. The EOS.IO software gives each account its own private database which can only be accessed by its own message handlers. Message handling scripts can also send messages to other accounts. The combination of messages and automated message handlers is how EOS.IO defines smart contracts.
+Cada conta pode enviar mensagens estruturadas para outras contas e pode definir scripts para manipular mensagens quando elas são recebidas. The EOS.IO software gives each account its own private database which can only be accessed by its own message handlers. Message handling scripts can also send messages to other accounts. The combination of messages and automated message handlers is how EOS.IO defines smart contracts.
 
 ## Role Based Permission Management
 
