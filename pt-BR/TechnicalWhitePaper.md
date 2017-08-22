@@ -323,13 +323,13 @@ Cada conta de usuário requer uma certa quantidade de armazenamento; Portanto, t
 
 ## Recompensas de Bloco
 
-Um blockchain que adota o EOS.IO recompensará com novos tokens a um produtor de bloco, cada vez que um bloco é produzido. In these circumstances, the number of tokens created is determined by the median of the desired pay published by all block producers. The EOS.IO software may be configured to enforce a cap on producer awards such that the total annual increase in token supply does not exceed 5%.
+Um blockchain que adota o EOS.IO recompensará com novos tokens a um produtor de bloco, cada vez que um bloco é produzido. Nestas circunstâncias, o número de tokens criados é determinado pela mediana do pagamento desejado, publicado por todos os produtores do bloco. O EOS.IO pode ser configurado para impor um topo nas recompensas dos produtores, tal que o aumento anual total de oferta de token não exceda 5%.
 
-## Community Benefit Applications
+## Aplicações de Benefício da Comunidade
 
-In addition to electing block producers, pursuant to a blockchain based on the EOS.IO software, users can elect 3 community benefit applications also known as smart contracts. These 3 applications will receive tokens of up to a configured percent of the token supply per annum minus the tokens that have been paid to block producers. These smart contracts will receive tokens proportional to the votes each application has received from token holders. The elected applications or smart contracts can be replaced by newly elected applications or smart contracts by token holders.
+Além de eleger os produtores de blocos, em conformidade com um blockchain baseado no EOS.IO, os usuários podem eleger 3 aplicações de benefício comunitário também conhecidas como contratos inteligentes. Estas 3 aplicações receberão tokens até uma porcentagem configurado do oferta do token por ano, menos os tokens que foram pagos para os produtores de blocos. Estes contratos inteligentes receberão tokens proporcionais aos votos que cada aplicativo tem recebido dos titulares dos token. As aplicações eleitas ou contratos inteligentes podem ser substituídos por outras aplicações recém-eleitas ou contratos inteligentes pelos detentores de token.
 
-# Governance
+# Governança
 
 Governance is the process by which people reach consensus on subjective matters that cannot be captured entirely by software algorithms. An EOS.IO software-based blockchain implements a governance process that efficiently directs the existing influence of block producers. Absent a defined governance process, prior blockchains relied ad hoc, informal, and often controversial governance processes that result in unpredictable outcomes.
 
