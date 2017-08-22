@@ -202,19 +202,19 @@ Tempo é um componente crítico de segurança. Na maioria dos casos, não é pos
 
 Os usuários podem então receber avisos através de e-mail ou mensagem de texto quando uma dessas mensagens é transmitida. Se eles não autorizaram isso, então eles podem usar o processo de recuperação de conta para recuperar sua conta e cancelar a mensagem.
 
-The required delay depends upon how sensitive an operation is. Paying for a coffee can have no delay and be irreversible in seconds, while buying a house may require a 72 hour clearing period. Transferring an entire account to new control may take up to 30 days. The exact delays chosen are up to application developers and users.
+O atraso necessário depende de quão sensível é uma operação. Pagar por um café não pode ter nenhum atraso e ser irreversível em segundos, enquanto que comprar uma casa pode exigir um período de compensação de 72 horas. Transferir uma conta inteira para novo controle pode demorar até 30 dias. Os atrasos exatos escolhidos devem ser definidos pelos desenvolvedores de aplicativos e os usuários.
 
-## Recovery from Stolen Keys
+## Recuperação de Chaves Roubadas
 
-The EOS.IO software provides users a way to restore control of their account when their keys are stolen. An account owner can use any owner key that was active in the last 30 days along with approval from their designated account recovery partner to reset the owner key on their account. The account recovery partner cannot reset control of the account without the help of the owner.
+O software EOS.IO fornece aos usuários uma maneira de restaurar o controle da sua conta quando as chaves são roubadas. Um proprietário de conta pode usar qualquer chave de proprietário que era ativo nos últimos 30 dias juntamente com a aprovação de seu parceiro de recuperação de conta designado para redefinir a chave do proprietário na sua conta. O parceiro de recuperação de conta não pode redefinir o controle da conta sem a ajuda do proprietário.
 
-There is nothing for the hacker to gain by attempting to go through the recovery process because they already "control" the account. Furthermore, if they did go through the process, the recovery partner would likely demand identification and multi-factor authentication (phone and email). This would likely compromise the hacker or gain the hacker nothing in the process.
+Não há nada para um hacker ganhar ao tentar passar pelo processo de recuperação, porque eles já "controlam" a conta. Além disso, se eles passarem pelo processo, o parceiro de recuperação demandaria identificação e autenticação de vários fatores (telefone e e-mail). Isso provavelmente iria comprometer o hacker ou nada ganharia no processo.
 
-This process is also very different from a simple multi-signature arrangement. With a multi-signature transaction, there is another company that is party to every transaction that is executed, but with the recovery process the agent is only a party to the recovery process and has no power over the day-to-day transactions. This dramatically reduces costs and legal liabilities for everyone involved.
+Este processo também é muito diferente de um simples arranjo de múltiplas assinaturas. Numa transação múlti-assinaturas, há outra empresa, que é a parte em cada transação que é executada, mas com o processo de recuperação, o agente é apenas uma parte para o processo de recuperação e não tem poder sobre as transações do dia a dia. Isto drasticamente reduz os custos e obrigações legais para todos os envolvidos.
 
-# Deterministic Parallel Execution of Applications
+# Execução Paralela Determinística de Aplicações
 
-Blockchain consensus depends upon deterministic (reproducible) behavior. This means all parallel execution must be free from the use of mutexes or other locking primitives. Without locks there must be some way to guarantee that all accounts can only read and write their own private database. It also means that each account processes messages sequentially and that parallelism will be at the account level.
+O consenso do Blockchain depende do comportamento determinístico (reprodutível). This means all parallel execution must be free from the use of mutexes or other locking primitives. Without locks there must be some way to guarantee that all accounts can only read and write their own private database. It also means that each account processes messages sequentially and that parallelism will be at the account level.
 
 In an EOS.IO software-based blockchain, it is the job of the block producer to organize message delivery into independent threads so that they can be evaluated in parallel. The state of each account depends only upon the messages delivered to it. The schedule is the output of a block producer and will be deterministically executed, but the process for generating the schedule need not be deterministic. This means that block producers can utilize parallel algorithms to schedule transactions.
 
