@@ -313,17 +313,17 @@ Um titular de tokens em um blockchain lançado que adota o software EOS.IO, que 
 
 Um dos principais benefícios do software EOS.IO é que a quantidade de largura de banda disponível para uma aplicação é inteiramente independente de qualquer preço token. Se um proprietário de uma aplicação possui um número relevante de tokens em um blockchain adotando EOS.IO, então a aplicação pode rodar indefinidamente dentro de um uso de estado e de largura de banda fixo. Neste caso, os desenvolvedores e os usuários são afetados de qualquer volatilidade de preços no mercado de token e, portanto, não dependente de preço (price feed). Em outras palavras, um blockchain que adota o EOS.IO permite aos produtores de bloco a naturalmente aumentar a largura de banda, computação e armazenamento disponível por token independente do valor do token.
 
-A blockchain using EOS.IO software also awards block producers tokens every time they produce a block. The value of the tokens will impact the amount of bandwidth, storage, and computation a producer can afford to purchase; this model naturally leverages rising token values to increase network performance.
+Um blockchain usando o software EOS.IO também recompensa os produtores de bloco com tokens cada vez que produzem um bloco. O valor dos tokens terá impacto sobre a quantidade de largura de banda, armazenamento e computação, que um produtor pode ter recursos para comprar; Este modelo naturalmente alavanca o valor crescente dos tokens para aumentar o desempenho da rede.
 
-## State Storage Costs
+## Custos de Armazenamento do Estado
 
-While bandwidth and computation can be delegated, storage of application state will require an application developer to hold tokens until that state is deleted. If state is never deleted then the tokens are effectively removed from circulation.
+Enquanto podem ser delegadas a largura de banda e de computação, o armazenamento do estado da aplicação exigirá a um desenvolvedor de aplicações possuir tokens até esse estado seja excluído. Se o estado nunca é eliminado os tokens são efetivamente retirados de circulação.
 
-Every user account requires a certain amount of storage; therefore, every account must maintain a minimum balance. As storage capacity of the network increases this minimum required balance will fall.
+Cada conta de usuário requer uma certa quantidade de armazenamento; Portanto, todas as contas devem manter um saldo mínimo. Conforme a capacidade de armazenamento da rede aumenta esse saldo mínimo necessário ira cair.
 
-## Block Rewards
+## Recompensas de Bloco
 
-A blockchain that adopts the EOS.IO software will award new tokens to a block producer every time a block is produced. In these circumstances, the number of tokens created is determined by the median of the desired pay published by all block producers. The EOS.IO software may be configured to enforce a cap on producer awards such that the total annual increase in token supply does not exceed 5%.
+Um blockchain que adota o EOS.IO recompensará com novos tokens a um produtor de bloco, cada vez que um bloco é produzido. In these circumstances, the number of tokens created is determined by the median of the desired pay published by all block producers. The EOS.IO software may be configured to enforce a cap on producer awards such that the total annual increase in token supply does not exceed 5%.
 
 ## Community Benefit Applications
 
