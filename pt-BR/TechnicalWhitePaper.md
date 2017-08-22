@@ -150,17 +150,17 @@ Cada conta pode enviar mensagens estruturadas para outras contas e pode definir 
 
 Gestão de permissão envolve determinar se ou não uma mensagem esta devidamente autorizada. A forma mais simples de gerenciamento de permissão é verificar que uma transação tem as assinaturas necessárias, mas isto implica que as assinaturas requeridas já são conhecidas. Geralmente autoridade é vinculada a indivíduos ou grupos de indivíduos e muitas vezes é compartimentada. O software EOS.IO fornece um sistema de gestão de permissão declarativa que da para as contas um alto nível controle com boa granularidade sobre quem pode fazer o quê e quando.
 
-It is critical that authentication and permission management be standardized and separate from the business logic of the application. This enables tools to be developed to manage permissions in a general purpose manner and also provide significant opportunities for performance optimization.
+É crítico que o gerenciamento de autenticação e autorização seja padronizado e separado da lógica de negócios do aplicativo. Isso permite que ferramentas a serem desenvolvidas para gerenciar permissões de forma geral e também oferecem oportunidades significativas para otimização de desempenho.
 
-Every account may be controlled by any weighted combination of other accounts and private keys. This creates a hierarchical authority structure that reflects how permissions are organized in reality, and makes multi-user control over funds easier than ever. Multi-user control is the single biggest contributor to security, and, when used properly, it can greatly eliminate the risk of theft due to hacking.
+Cada conta pode ser controlada por qualquer combinação ponderada de outras contas e chaves privadas. Isto cria uma estrutura de autoridade hierárquica que reflete como as permissões são organizadas na realidade e facilita mais do que nunca o controle por vários usuários sobre os fundos. Controle multi-usuário é o fator único com maior contribuição para a segurança, e, quando usado corretamente, pode eliminar consideravelmente o risco de roubo devido a hacking.
 
-EOS.IO software allows accounts to define what combination of keys and/or accounts can send a particular message type to another account. For example, it is possible to have one key for a user's social media account and another for access to the exchange. It is even possible to give other accounts permission to act on behalf of a user's account without assigning them keys.
+O software EOS.IO permite que as contas definam qual a combinação de chaves e/ou contas podem enviar um tipo específico de mensagem para outra conta. Por exemplo, é possível ter uma chave para uma conta de usuário mídia social e outro para acesso ao exchange. É até possível dar outras contas permissão para agir em nome de uma conta de usuário sem atribuir-lhes as chaves.
 
-### Named Permission Levels
+### Níveis de Permissão Nomeados
 
 <img align="right" src="http://eos.io/wpimg/diagram3.png" width="228.395px" height="300px" />
 
-Using the EOS.IO software, accounts can define named permission levels each of which can be derived from higher level named permissions. Each named permission level defines an authority; an authority is a threshold multi-signature check consisting of keys and/or named permission levels of other accounts. For example, an account's "Friend" permission level can be set for the account to be controlled equally by any of the account's friends.
+Usando o software EOS.IO, contas podem definir níveis de permissões nomeadas cada um dos quais pode ser derivado de permissões nomeada de um nível mais alto. Cada nível de permissões nomeadas define uma autoridade; uma autoridade é uma verificação de múltiplas assinatura consistindo de chaves e/ou níveis de permissão nomeados de outras contas. For example, an account's "Friend" permission level can be set for the account to be controlled equally by any of the account's friends.
 
 Another example is the Steem blockchain which has three hard-coded named permission levels: owner, active, and posting. The posting permission can only perform social actions such as voting and posting, while the active permission can do everything except change the owner. The owner permission is meant for cold storage and is able to do everything. The EOS.IO software generalizes this concept by allowing each account holder to define their own hierarchy as well as the grouping of actions.
 
