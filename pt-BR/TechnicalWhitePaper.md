@@ -117,30 +117,30 @@ Se um produtor perde um bloco e não produziu qualquer bloco nas últimas 24 hor
 
 Em condições normais um blockchain DPOS não experimenta qualquer fork porque os produtores do bloco cooperarem para produzir blocos, ao invés de competir. No caso há uma bifurcação, consenso mudará automaticamente para a cadeia mais longa. Esta métrica funciona porque a taxa em que blocos são adicionados a um fork de cadeia blockchain é diretamente correlacionada com a porcentagem de produtores do bloco que compartilham o mesmo consenso. Em outras palavras, um fork de blockchain com mais produtores nele irá crescer em comprimento mais rápido do que um com poucos produtores. Além disso, nenhum produtor de bloco deve produzir blocos em dois forks ao mesmo tempo. Se um produtor de bloco é pego fazendo isto então o produtor de bloco será provavelmente eliminado. Evidencias criptográficas dessa produção dupla podem também ser usadas para remover automaticamente os abusadores.
 
-## Transaction Confirmation
+## Confirmação da Transação
 
-Typical DPOS blockchains have 100% block producer participation. A transaction can be considered confirmed with 99.9% certainty after an average of 1.5 seconds from time of broadcast.
+Os blockchains DPOS típicos tem 100% de participação dos produtores de blocos. Uma transação pode ser considerada confirmada com 99,9% de certeza, após uma média de 1,5 segundos de tempo de transmissão.
 
-There are some extraordinary cases where a software bug, Internet congestion, or a malicious block producer will create two or more forks. For absolute certainty that a transaction is irreversible, a node may choose to wait for confirmation by 15 out of the 21 block producers. Based on a typical configuration of the EOS.IO software, this will take an average of 45 seconds under normal circumstances. By default all nodes will consider a block confirmed by 15 of 21 producers irreversible and will not switch to a fork that excludes such a block regardless of length.
+Existem alguns casos extraordinários onde um bug de software, congestionamento da Internet ou um produtor de bloco malicioso irá criar dois ou mais forks. Para ter absoluta certeza que uma transação é irreversível, um nó pode optar por esperar a confirmação de 15 dos 21 produtores de blocos. Baseado em uma configuração típica do software EOS.IO, isto levará a uma média de 45 segundos em circunstâncias normais. Por padrão, todos os nós irão considerar um bloco confirmado por 15 dos 21 produtores irreversível e não vão mudar para um fork que exclui aquele bloco independentemente do comprimento.
 
-It is possible for a node to warn users that there is a high probability that they are on a minority fork within 9 seconds of the start of a fork. After 2 consecutive missed blocks there is a 95% probability a node is on a minority fork. With 3 consecutive missed blocks there is a 99% certainty of being on a minority fork. It is possible to generate a robust predictive model that will utilize information about which nodes missed, recent participation rates, and other factors to quickly warn operators that something is wrong.
+É possível para um nó avisar os usuários que há uma alta probabilidade de que eles estão em um fork minoritário dentro de 9 segundos do início de um fork. Depois de 2 blocos consecutivos perdidos há uma probabilidade de 95%, que um nó é um fork minoritário. Com 3 blocos perdidos consecutivos há um 99% de certeza de ser um fork minoritário. É possível gerar um modelo preditivo robusto que irá utilizar a informação sobre quais nós perdeu, recentes taxas de participação e de outros fatores que rapidamente avisar os operadores que algo está errado.
 
-The response to such a warning depends entirely upon the nature of the business transactions, but the simplest response is to wait for 15/21 confirmations until the warning stops.
+A resposta a tal aviso depende inteiramente da natureza das transações de negócio, mas a resposta mais simples é esperar por 15/21 confirmações até as paradas de advertência.
 
-## Transaction as Proof of Stake (TaPoS)
+## Transação como Prova de Participação (TaPoS)
 
-The EOS.IO software requires every transaction to include the hash of a recent block header. This hash serves two purposes:
+O software EOS.IO requer que cada transação inclua o hash de um cabeçalho de bloco recente. Este hash serve dois propósitos:
 
-1. prevents a replay of a transaction on forks that do not include the referenced block; and
-2. signals the network that a particular user and their stake are on a specific fork.
+1. impede que uma repetição de uma transação num fork que não incluei o bloco referenciado; e
+2. sinaliza a rede que um usuário específico e sua participação estão num fork específico.
 
-Over time all users end up directly confirming the blockchain which makes it difficult to forge counterfeit chains as the counterfeit would not be able to migrate transactions from the legitimate chain.
+Ao longo do tempo, todos os usuários acabam diretamente confirmando o blockchain, o que torna difícil forjar falsas correntes já que o falsificador não será capaz de migrar as operações da corrente legítima.
 
-# Accounts
+# Contas
 
-The EOS.IO software permits all accounts to be referenced by a unique human readable name of 2 to 32 characters in length. The name is chosen by the creator of the account. All accounts must be funded with the minimal account balance at the time they are created to cover the cost of storing account data. Account names also support namespaces such that the owner of account @domain is the only one who can create the account @user.domain.
+O software EOS.IO permite que todas as contas sejam referenciadas por um nome humanamente legível exclusivo de 2 a 32 caracteres de comprimento. O nome é escolhido pelo criador da conta. Todas as contas devem ser financiadas com o saldo mínimo no momento que elas são criadas para cobrir o custo de armazenamento dos dados da conta. Os nomes de conta também oferecem suporte a namespaces tal que o proprietário da conta @domain é o único que pode criar a conta @user.domain.
 
-In a decentralized context, application developers will pay the nominal cost of account creation to sign up a new user. Traditional businesses already spend significant sums of money per customer they acquire in the form of advertising, free services, etc. The cost of funding a new blockchain account should be insignificant in comparison. Fortunately, there is no need to create accounts for users already signed up by another application.
+Em um contexto descentralizado, os desenvolvedores de aplicativos vão pagar o custo nominal de criação da conta para inscrever um novo usuário. As empresas tradicionais já gastam quantias significativas de dinheiro por cliente que eles adquirem na forma de serviços de publicidade, enciclopédia, etc. The cost of funding a new blockchain account should be insignificant in comparison. Fortunately, there is no need to create accounts for users already signed up by another application.
 
 ## Messages & Handlers
 
