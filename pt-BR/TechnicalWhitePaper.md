@@ -144,11 +144,11 @@ Em um contexto descentralizado, os desenvolvedores de aplicativos vão pagar o c
 
 ## Mensagens & Handlers
 
-Cada conta pode enviar mensagens estruturadas para outras contas e pode definir scripts para manipular mensagens quando elas são recebidas. The EOS.IO software gives each account its own private database which can only be accessed by its own message handlers. Message handling scripts can also send messages to other accounts. The combination of messages and automated message handlers is how EOS.IO defines smart contracts.
+Cada conta pode enviar mensagens estruturadas para outras contas e pode definir scripts para manipular mensagens quando elas são recebidas. O software EOS.IO dá para cada conta seu próprio banco de dados particular, que só pode ser acessado por seus próprios handlers de mensagens. Scripts de manipulação de mensagens também podem enviar mensagens para outras contas. É a combinação de mensagens e manipuladores de mensagens automatizadas como EOS.IO define contratos inteligentes.
 
-## Role Based Permission Management
+## Gerenciamento de Permissões Baseadas em Papeis
 
-Permission management involves determining whether or not a message is properly authorized. The simplest form of permission management is checking that a transaction has the required signatures, but this implies that required signatures are already known. Generally authority is bound to individuals or groups of individuals and is often compartmentalized. The EOS.IO software provides a declarative permission management system that gives accounts fine grained and high level control over who can do what and when.
+Gestão de permissão envolve determinar se ou não uma mensagem esta devidamente autorizada. A forma mais simples de gerenciamento de permissão é verificar que uma transação tem as assinaturas necessárias, mas isto implica que as assinaturas requeridas já são conhecidas. Geralmente autoridade é vinculada a indivíduos ou grupos de indivíduos e muitas vezes é compartimentada. O software EOS.IO fornece um sistema de gestão de permissão declarativa que da para as contas um alto nível controle com boa granularidade sobre quem pode fazer o quê e quando.
 
 It is critical that authentication and permission management be standardized and separate from the business logic of the application. This enables tools to be developed to manage permissions in a general purpose manner and also provide significant opportunities for performance optimization.
 
