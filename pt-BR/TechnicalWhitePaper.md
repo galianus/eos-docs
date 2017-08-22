@@ -224,34 +224,34 @@ Parte de execução em paralelo significa que quando um script gera uma nova men
 
 Latência é o tempo que leva para uma conta enviar uma mensagem para outra conta e então receber uma resposta. O objetivo é permitir que duas contas troquem mensagens entre elas dentro de um único bloco, sem ter que esperar 3 segundos entre cada mensagem. Para permitir isto, o software EOS.IO divide cada bloco em ciclos. Cada ciclo é dividido em threads e cada thread contém uma lista de transações. Cada transação contém um conjunto de mensagens a ser entregues. Essa estrutura pode ser visualizada como uma árvore onde camadas alternadas são processadas sequencialmente e em paralelo.
 
-        Block
+        Bloco
     
-          Cycles (sequential)
+          Ciclos (sequencial) 
     
-            Threads (parallel)
+             Threads (paralelo)
     
-              Transactions (sequential)
+                Transações (sequencial)
     
-                Messages (sequential)
+                   Mensagens (sequencial)
     
-                  Receiver and Notified Accounts (parallel)
+                      Receptor e Contas Notificadas (paralelo)
     
 
-Transactions generated in one cycle can be delivered in any subsequent cycle or block. Block producers will keep adding cycles to a block until the maximum wall clock time has passed or there are no new generated transactions to deliver.
+Transações geradas em um ciclo podem ser entregue em qualquer ciclo subsequente ou bloco. Os produtores do bloco vão continuar adicionando ciclos para um bloco até que passe o tempo de relógio máximo ou não exista nenhuma nova transação gerada para entregar.
 
-It is possible to use static analysis of a block to verify that within a given cycle no two threads contain transactions that modify the same account. So long as that invariant is maintained a block can be processed by running all threads in parallel.
+É possível usar a análise estática de um bloco para verificar se, dentro de um determinado ciclo não existem duas threads que contenham transações que modificam a mesma conta. Desde que esse invariante é mantida, um bloco pode ser processado por todos os threads de execução em paralelo.
 
-## Read-Only Message Handlers
+## Handlers de Mensagens Somente de Leitura
 
-Some accounts may be able to process a message on a pass/fail basis without modifying their internal state. If this is the case then these handlers can be executed in parallel so long as only read-only message handlers for a particular account are included in one or more threads within a particular cycle.
+Algumas contas podem ser capazes de processar uma mensagem na base de aprovação/reprovação sem modificar seu estado interno. Se este for o caso esses manipuladores podem ser executados em paralelo enquanto apenas manipuladores de mensagens somente leitura de uma determinada conta estão incluídos em um ou mais threads dentro de um determinado ciclo.
 
-## Atomic Transactions with Multiple Accounts
+## Transações Atômicas com Múltiplas Contas
 
-Sometimes it is desirable to ensure that messages are delivered to and accepted by multiple accounts atomically. In this case both messages are placed in one transaction and both accounts will be assigned the same thread and the messages applied sequentially. This situation is not ideal for performance and when it comes to "billing" users for usage, they will get billed by the number of unique accounts referenced by a transaction.
+Às vezes é desejável assegurar que as mensagens são entregues e aceites pela várias contas atomicamente. Neste caso, ambas as mensagens são colocadas em uma única transação, e ambas as contas serão atribuídas o mesmo thread e as mensagens serão aplicadas sequencialmente. Esta situação não é ideal para desempenho e quando se trata de "faturamento" usuários para o uso, eles serão cobrados pelo número de contas únicas referenciado por uma transação.
 
-For performance and cost reasons it is best to minimize atomic operations involving two or more heavily utilized accounts.
+Por motivos de desempenho e custo é melhor minimizar as operações atômicas envolvendo duas ou mais contas muito utilizadas.
 
-## Partial Evaluation of Blockchain State
+## Avaliação Parcial do Estado do Blockchain
 
 Scaling blockchain technology necessitates that components are modular. Everyone should not have to run everything, especially if they only need to use a small subset of the applications.
 
