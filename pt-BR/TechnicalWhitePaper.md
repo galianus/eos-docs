@@ -295,23 +295,23 @@ Adotando o software EOS.IO em um blockchain lançado significa a largura de band
 
 ## Medições Objetivas e Subjetivas
 
-As discussed earlier, instrumenting computational usage has a significant impact on performance and optimization; therefore, all resource usage constraints are ultimately subjective and enforcement is done by block producers according to their individual algorithms and estimates.
+Como discutido anteriormente, instrumentar o uso computacional tem um impacto significativo no desempenho e otimização; Portanto, todas as restrições de uso de recursos são, em última análise subjetivas, e a aplicação é feita pelos produtores do bloco de acordo com seus algoritmos individuais e estimativas.
 
-That said, there are certain things that are trivial to measure objectively. The number of messages delivered and the size of the data stored in the internal database are cheap to measure objectively. The EOS.IO software enables block producers to apply the same algorithm over these objective measures but may choose to apply stricter subjective algorithms over subjective measurements.
+Dito isso, há certas coisas que são triviais para medir objetivamente. O número de mensagens entregues e o tamanho dos dados armazenados no banco de dados interno são baratos para medir objetivamente. O software EOS.IO permite aos produtores de bloco aplicar o mesmo algoritmo sobre estas medidas objetivas, mas pode optar por aplicar algoritmos subjetivos mais rigorosos sobre medições subjetivas.
 
-## Receiver Pays
+## Receptor Paga
 
-Traditionally, it is the business that pays for office space, computational power, and other costs required to run the business. The customer buys specific products from the business and the revenue from those product sales is used to cover the business costs of operation. Similarly, no website obligates its visitors to make micropayments for visiting its website to cover hosting costs. Therefore, decentralized applications should not force its customers to pay the blockchain directly for the use of the blockchain.
+Tradicionalmente, é o negócio que paga o espaço do escritório, poder computacional e outros custos necessários para gerir o negócio. O cliente compra produtos específicos do negócio e as receitas provenientes das vendas do produto são usadas para cobrir os custos da operação do negócio. Da mesma forma, nenhum site obriga seus visitantes a fazer micro-pagamentos para visitar seu site para cobrir os seus custos de hospedagem. Portanto, aplicativos descentralizados não devem forçar seus clientes a pagar o blockchain diretamente pelo uso do blockchain.
 
-A launched blockchain that uses the EOS.IO software does not require its users to pay the blockchain directly for its use and therefore does not constrain or prevent a business from determining its own monetization strategy for its products.
+Um blockchain lançado que usa o software EOS.IO não exige que seus usuários paguem o blockchain diretamente para o seu uso e, portanto, não restringem ou impedem um negócio de determinar sua própria estratégia de monetização para os seus produtos.
 
-## Delegating Capacity
+## Delegando Capacidade
 
-A holder of tokens on a blockchain launched adopting the EOS.IO software who may not have an immediate need to consume all or part of the available bandwidth, can give or rent such unconsumed bandwidth to others; the block producers running EOS.IO software on such blockchain will recognize this delegation of capacity and allocate bandwidth accordingly.
+Um titular de tokens em um blockchain lançado que adota o software EOS.IO, que pode não ter uma necessidade imediata para consumir toda ou parte da largura de faixa disponível, pode dar ou alugar essa largura de banda não consumida a outros; os produtores do bloco executando o software EOS.IO em tal blockchain vão reconhecer esta delegação de capacidade e alocar largura de banda em conformidade.
 
-## Separating Transaction costs from Token Value
+## Separando os Custos de Transação do Valor do Token
 
-One of the major benefits of the EOS.IO software is that the amount of bandwidth available to an application is entirely independent of any token price. If an application owner holds a relevant number of tokens on a blockchain adopting EOS.IO software, then the application can run indefinitely within a fixed state and bandwidth usage. In such case, developers and users are unaffected from any price volatility in the token market and therefore not reliant on a price feed. In other words, a blockchain that adopts the EOS.IO software enables block producers to naturally increase bandwidth, computation, and storage available per token independent of the token's value.
+Um dos principais benefícios do software EOS.IO é que a quantidade de largura de banda disponível para uma aplicação é inteiramente independente de qualquer preço token. Se um proprietário de uma aplicação possui um número relevante de tokens em um blockchain adotando EOS.IO, então a aplicação pode rodar indefinidamente dentro de um uso de estado e de largura de banda fixo. Neste caso, os desenvolvedores e os usuários são afetados de qualquer volatilidade de preços no mercado de token e, portanto, não dependente de preço (price feed). Em outras palavras, um blockchain que adota o EOS.IO permite aos produtores de bloco a naturalmente aumentar a largura de banda, computação e armazenamento disponível por token independente do valor do token.
 
 A blockchain using EOS.IO software also awards block producers tokens every time they produce a block. The value of the tokens will impact the amount of bandwidth, storage, and computation a producer can afford to purchase; this model naturally leverages rising token values to increase network performance.
 
