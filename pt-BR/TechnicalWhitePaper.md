@@ -194,13 +194,13 @@ O processo de avaliação de permissão é "somente leitura" e as alterações d
 
 Quando consideramos todas as coisas, a verificação de permissão representa uma percentagem significativa do poder computacional necessário para validar as transações. Fazer disto um processo solo leitura e trivialmente paralelizável permite um aumento dramático no desempenho.
 
-When replaying the blockchain to regenerate the deterministic state from the log of messages there is no need to evaluate the permissions again. The fact that a transaction is included in a known good block is sufficient to skip this step. This dramatically reduces the computational load associated with replaying an ever growing blockchain.
+Quando se esta re-processando o blockchain para regenerar o estado determinístico do log de mensagens não há nenhuma necessidade de avaliar as permissões novamente. O fato de que uma transação estar incluída em um bloco conhecidamente bom é suficiente para ignorar esta etapa. Isto reduz drasticamente a carga computacional associada a re-processamento de um blockchain sempre em crescimento.
 
-## Messages with Mandatory Delay
+## Mensagens com Atraso Obrigatório
 
-Time is a critical component of security. In most cases, it is not possible to know if a private key has been stolen until it has been used. Time based security is even more critical when people have applications that require keys be kept on computers connected to the internet for daily use. The EOS.IO software enables application developers to indicate that certain messages must wait a minimum period of time after being included in a block before they can be applied. During this time they can be cancelled.
+Tempo é um componente crítico de segurança. Na maioria dos casos, não é possível saber se uma chave privada foi roubada até que ela tenha sido usada. Segurança baseada em tempo é ainda mais crítica quando as pessoas têm aplicações que requerem que as chaves sejam mantidas em computadores conectados à internet para o seu uso diário. O software EOS.IO permite que os desenvolvedores de aplicativos indiquem que certas mensagens devam esperar um período mínimo de tempo depois de ser incluídas em um bloco antes que elas possam ser aplicadas. Durante este tempo pode ser canceladas.
 
-Users can then receive notice via email or text message when one of these messages is broadcast. If they did not authorize it, then they can use the account recovery process to recover their account and retract the message.
+Os usuários podem então receber avisos através de e-mail ou mensagem de texto quando uma dessas mensagens é transmitida. Se eles não autorizaram isso, então eles podem usar o processo de recuperação de conta para recuperar sua conta e cancelar a mensagem.
 
 The required delay depends upon how sensitive an operation is. Paying for a coffee can have no delay and be irreversible in seconds, while buying a house may require a 72 hour clearing period. Transferring an entire account to new control may take up to 30 days. The exact delays chosen are up to application developers and users.
 
