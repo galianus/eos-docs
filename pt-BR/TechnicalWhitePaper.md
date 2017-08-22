@@ -170,15 +170,15 @@ O software EOS.IO permite que cada conta organize os seus próprios manipuladore
 
 O grupo de manipulador de mensagem de nível mais alto é o nome da conta e o nível mais baixo é o tipo de mensagem individual, sendo recebido pela conta. Esses grupos podem ser referenciados da seguinte forma: **@accountname.groupa.subgroupb.MessageType**.
 
-Sob este modelo, é possível para um contrato de câmbio agrupar a criação da ordem e o seu cancelamento separadamente de depositar e retirar. This grouping by the exchange contract is a convenience for users of the exchange.
+Sob este modelo, é possível para um contrato de câmbio agrupar a criação da ordem e o seu cancelamento separadamente de depositar e retirar. Este agrupamento pelo contrato de câmbio é uma conveniência para os usuários do exchange.
 
-### Permission Mapping
+### Mapeamento de Permissões
 
-EOS.IO software allows each account to define a mapping between a Named Message Handler Group of any account and their own Named Permission Level. For example, an account holder could map the account holder's social media application to the account holder's "Friend" permission group. With this mapping, any friend could post as the account holder on the account holder's social media. Even though they would post as the account holder, they would still use their own keys to sign the message. This means it is always possible to identify which friends used the account and in what way.
+O software EOS.IO permite que cada conta defina um mapeamento entre um Grupo Nomeado de Manipuladores de Mensagens de qualquer conta e seu Nível de Permissão Nomeado. Por exemplo, um titular de conta poderia mapear a aplicação de mídia social do titular da conta para o grupo de permissão do titular da conta "Amigo". Com esse mapeamento, qualquer amigo poderia postar como titular da conta na mídia social do titular da conta. Mesmo que eles postariam como titular da conta, ainda usariam suas próprias chaves para assinar a mensagem. Isto significa que sempre é possível identificar quais amigos usaram a conta e de que maneira.
 
-### Evaluating Permissions
+### Avaliando Permissões
 
-When delivering a message of type "**Action**", from **@alice** to **@bob** the EOS.IO software will first check to see if **@alice** has defined a permission mapping for **@bob.groupa.subgroup.Action**. If nothing is found then a mapping for **@bob.groupa.subgroup** then **@bob.groupa**, and lastly **@bob** will be checked. If no further match is found, then the assumed mapping will be to the named permission group **@alice.active**.
+Quando se esta entregando uma mensagem do tipo "**Action**", de **@alice** para **@bob** o software EOS.IO primeiro verificará se **@alice** definiu um mapeamento de permissão para **@bob.groupa.subgroup.Action**. Se nada for encontrado então será verificado se existem mapeamentos para **@bob.groupa.subgroup**, depois **@bob.groupa** e, por último, **@bob**. If no further match is found, then the assumed mapping will be to the named permission group **@alice.active**.
 
 Once a mapping is identified then signing authority is validated using the threshold multi-signature process and the authority associated with the named permission. If that fails, then it traverses up to the parent permission and ultimately to the owner permission, **@alice.owner**.
 
