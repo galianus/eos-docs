@@ -160,17 +160,17 @@ O software EOS.IO permite que as contas definam qual a combinação de chaves e/
 
 <img align="right" src="http://eos.io/wpimg/diagram3.png" width="228.395px" height="300px" />
 
-Usando o software EOS.IO, contas podem definir níveis de permissões nomeadas cada um dos quais pode ser derivado de permissões nomeada de um nível mais alto. Cada nível de permissões nomeadas define uma autoridade; uma autoridade é uma verificação de múltiplas assinatura consistindo de chaves e/ou níveis de permissão nomeados de outras contas. For example, an account's "Friend" permission level can be set for the account to be controlled equally by any of the account's friends.
+Usando o software EOS.IO, contas podem definir níveis de permissões nomeadas cada um dos quais pode ser derivado de permissões nomeada de um nível mais alto. Cada nível de permissões nomeadas define uma autoridade; uma autoridade é uma verificação de múltiplas assinatura consistindo de chaves e/ou níveis de permissão nomeados de outras contas. Por exemplo, o nível de permissão de "Amigo" de uma conta pode ser definido para a conta para ser controlado igualitariamente por qualquer um dos amigos da conta.
 
-Another example is the Steem blockchain which has three hard-coded named permission levels: owner, active, and posting. The posting permission can only perform social actions such as voting and posting, while the active permission can do everything except change the owner. The owner permission is meant for cold storage and is able to do everything. The EOS.IO software generalizes this concept by allowing each account holder to define their own hierarchy as well as the grouping of actions.
+Outro exemplo é o blockchain Steem que tem marretados três níveis de permissão nomeados: proprietário, ativo e postar. A permissão de postar só pode realizar ações sociais, tais como votação e postar, enquanto a permissão ativa pode fazer tudo, exceto a mudança do proprietário. A permissão de proprietário é para armazenamento frio e é capaz de fazer tudo. O software EOS.IO generaliza este conceito, permitindo que cada titular de conta defina sua própria hierarquia, bem como o agrupamento de ações.
 
-### Named Message Handler Groups
+### Grupos de Handlers de Mensagens Nomeados
 
-The EOS.IO software allows each account to organize its own message handlers into named and nested groups. These named message handler groups can be referenced by other accounts when they configure their permission levels.
+O software EOS.IO permite que cada conta organize os seus próprios manipuladores de mensagens em grupos nomeados e aninhados. Estes grupos de manipuladores de mensagem nomeados podem ser referenciados por outras contas quando eles configuram seus níveis de permissão.
 
-The highest level message handler group is the account name and the lowest level is the individual message type being received by the account. These groups can be referenced like so: **@accountname.groupa.subgroupb.MessageType**.
+O grupo de manipulador de mensagem de nível mais alto é o nome da conta e o nível mais baixo é o tipo de mensagem individual, sendo recebido pela conta. Esses grupos podem ser referenciados da seguinte forma: **@accountname.groupa.subgroupb.MessageType**.
 
-Under this model it is possible for an exchange contract to group order creation and canceling separately from deposit and withdraw. This grouping by the exchange contract is a convenience for users of the exchange.
+Sob este modelo, é possível para um contrato de câmbio agrupar a criação da ordem e o seu cancelamento separadamente de depositar e retirar. This grouping by the exchange contract is a convenience for users of the exchange.
 
 ### Permission Mapping
 
