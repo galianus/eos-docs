@@ -178,21 +178,21 @@ O software EOS.IO permite que cada conta defina um mapeamento entre um Grupo Nom
 
 ### Avaliando Permissões
 
-Quando se esta entregando uma mensagem do tipo "**Action**", de **@alice** para **@bob** o software EOS.IO primeiro verificará se **@alice** definiu um mapeamento de permissão para **@bob.groupa.subgroup.Action**. Se nada for encontrado então será verificado se existem mapeamentos para **@bob.groupa.subgroup**, depois **@bob.groupa** e, por último, **@bob**. If no further match is found, then the assumed mapping will be to the named permission group **@alice.active**.
+Quando se esta entregando uma mensagem do tipo "**Action**", de **@alice** para **@bob** o software EOS.IO primeiro verificará se **@alice** definiu um mapeamento de permissão para **@bob.groupa.subgroup.Action**. Se nada for encontrado então será verificado se existem mapeamentos para **@bob.groupa.subgroup**, depois **@bob.groupa** e, por último, **@bob**. Se não for encontrada nenhuma correspondência, então será assumido o mapeamento do grupo de permissão nomeada **@alice.active**.
 
-Once a mapping is identified then signing authority is validated using the threshold multi-signature process and the authority associated with the named permission. If that fails, then it traverses up to the parent permission and ultimately to the owner permission, **@alice.owner**.
+Depois de um mapeamento ser identificado em seguida é validada a autoridade da assinatura usando o processo de múltiplas assinaturas e autoridade associada com a permissão nomeada. Se isso falhar, então ele percorre a permissão do pai e, finalmente, a permissão do proprietário, **@alice.owner**.
 
 <img align="center" src="http://eos.io/wpimg/diagram2grayscale2.jpg" width="845.85px" height="500px" />
 
-#### Default Permission Groups
+#### Grupos de Permissão Padrão
 
-The EOS.IO technology also allows all accounts to have an "owner" group which can do everything, and an "active" group which can do everything except change the owner group. All other permission groups are derived from "active".
+A tecnologia EOS.IO também permite que todas as contas tenham um "owner" que pode fazer tudo e um grupo "active" que pode fazer tudo, exceto alterar o grupo proprietário. Todos os outros grupos de permissão são derivados de "active".
 
-#### Parallel Evaluation of Permissions
+#### Avaliação Paralela de Permissões
 
-The permission evaluation process is "read-only" and changes to permissions made by transactions do not take effect until the end of a block. This means that all keys and permission evaluation for all transactions can be executed in parallel. Furthermore, this means that a rapid validation of permission is possible without starting the costly application logic that would have to be rolled back. Lastly, it means that transaction permissions can be evaluated as pending transactions are received and do not need to be re-evaluated as they are applied.
+O processo de avaliação de permissão é "somente leitura" e as alterações de permissões feitas por transações não terão efeito até ao final de um bloco. Isto significa que todas as chaves e avaliações de permissão para todas as transações podem ser executadas em paralelo. Além disso, isto significa que uma rápida validação da permissão é possível sem iniciar a custosa lógica do aplicativo que teria de ser revertida. Por fim, significa que as permissões de transação podem ser avaliadas enquanto as transações pendentes são recebidas e não precisam ser re-avaliadas quando elas são aplicadas.
 
-All things considered, permission verification represents a significant percentage of the computation required to validate transactions. Making this a read-only and trivially parallelizable process enables a dramatic increase in performance.
+Quando consideramos todas as coisas, a verificação de permissão representa uma percentagem significativa do poder computacional necessário para validar as transações. Fazer disto um processo solo leitura e trivialmente paralelizável permite um aumento dramático no desempenho.
 
 When replaying the blockchain to regenerate the deterministic state from the log of messages there is no need to evaluate the permissions again. The fact that a transaction is included in a known good block is sufficient to skip this step. This dramatically reduces the computational load associated with replaying an ever growing blockchain.
 
