@@ -271,23 +271,23 @@ Em geral, enquanto um único produtor de bloco considera uma transação como v�
 
 Em alguns casos, um produtor pode criar um bloco que inclui transações que estão uma ordem de magnitude fora dos intervalos aceitáveis. Neste caso o próximo produtor de bloco pode optar por rejeitar o bloco e a ligação vai ser quebrada pelo terceiro produtor. Isto não é diferente do que aconteceria se um grande bloco causasse atrasos na propagação da rede. A comunidade iria notar um padrão de abuso e eventualmente removeria os votos dos produtores desonestos.
 
-Esta avaliação subjetiva de custo computacional libera a blockchain de ter que precisamente e deterministicamente medir quanto tempo leva para algo executar. With this design there is no need to precisely count instructions which dramatically increases opportunities for optimization without breaking consensus.
+Esta avaliação subjetiva de custo computacional libera a blockchain de ter que precisamente e deterministicamente medir quanto tempo leva para algo executar. Com este design não existe necessidade de contar com precisão as instruções o que drasticamente aumenta as oportunidades de otimização sem quebra de consenso.
 
-# Token Model and Resource Usage
+# Modelo de Token e Uso de Recursos
 
-**PLEASE NOTE: CRYPTOGRAPHIC TOKENS REFERRED TO IN THIS WHITE PAPER REFER TO CRYPTOGRAPHIC TOKENS ON A LAUNCHED BLOCKCHAIN THAT ADOPTS THE EOS.IO SOFTWARE. THEY DO NOT REFER TO THE ERC-20 COMPATIBLE TOKENS BEING DISTRIBUTED ON THE ETHEREUM BLOCKCHAIN IN CONNECTION WITH THE EOS TOKEN DISTRIBUTION.**
+**POR FAVOR NOTE: OS TOKENS CRIPTOGRÁFICOS REFERIDOS NESTE WHITE PAPER SE REFEREM A TOKENS CRIPTOGRÁFICOS EM UM BLOCKCHAIN LANÇADO QUE ADOTA O SOFTWARE EOS.IO. ELES NÃO SE REFEREM AOS TOKENS COMPATÍVEIS COM ERC-20 QUE ESTÃO SENDO DISTRIBUÍDOS NO BLOCKCHAIN ETHEREUM EM CONEXÃO COM A DISTRIBUIÇÃO DE TOKENS EOS.**
 
-All blockchains are resource constrained and require a system to prevent abuse. With a blockchain that uses EOS.IO software, there are three broad classes of resources that are consumed by applications:
+Todos os blockchains são recursos limitados e necessitam de um sistema para prevenir abusos. Com um blockchain que usa o software EOS.IO, existem três grandes classes de recursos que são consumidos por aplicações:
 
-1. Bandwidth and Log Storage (Disk);
-2. Computation and Computational Backlog (CPU); and
-3. State Storage (RAM).
+1. Largura de Banda e Armazenamento de Log (Disco);
+2. Poder Computacional e Backlog Computacional (CPU); e
+3. Armazenamento de Estado (RAM).
 
-Bandwidth and computation have two components, instantaneous usage and long-term usage. A blockchain maintains a log of all messages and this log is ultimately stored and downloaded by all full nodes. With the log of messages it is possible to reconstruct the state of all applications.
+Largura de banda e poder computacional têm dois componentes, o uso instantâneo e o uso a longo prazo. Um blockchain mantém um log de todas as mensagens e este log é finalmente armazenado e baixável por todos os nós completos. Com o log de mensagens é possível reconstruir o estado de todas as aplicações.
 
-The computational debt is calculations that must be performed to regenerate state from the message log. If the computational debt grows too large then it becomes necessary to take snapshots of the blockchain's state and discard the blockchain's history. If computational debt grows too quickly then it may take 6 months to replay 1 year worth of transactions. It is critical, therefore, that the computational debt be carefully managed.
+A dívida computacional são os cálculos que devem ser executados para regenerar o estado a partir do log de mensagens. Se a dívida computacional cresce muito então torna-se necessário tirar fotos (snapshots) do estado do blockchain e descartar a história da blockchain. Se a dívida computacional cresce muito rápidamente então pode levar até 6 meses re-processar 1 ano de transações. É fundamental, portanto, que a dívida computacional seja gerida com cuidado.
 
-Blockchain state storage is information that is accessible from application logic. It includes information such as order books and account balances. If the state is never read by the application then it should not be stored. For example, blog post content and comments are not read by application logic so they should not be stored in the blockchain's state. Meanwhile the existence of a post/comment, the number of votes, and other properties do get stored as part of the blockchain's state.
+Armazenamento do estado de Blockchain é informação acessível a partir da lógica do aplicativo. Inclui informações tais como livros de ordens e os saldos das contas. Se o estado nunca é lido pelo aplicativo, então não deve ser armazenado. Por exemplo, comentários e conteúdo do post de blog não são lidos pela lógica do aplicativo então eles não devem ser armazenados no estado de blockchain. Meanwhile the existence of a post/comment, the number of votes, and other properties do get stored as part of the blockchain's state.
 
 Block producers publish their available capacity for bandwidth, computation, and state. The EOS.IO software allows each account to consume a percentage of the available capacity proportional to the amount of tokens held in a 3-day staking contract. For example, if a blockchain based on the EOS.IO software is launched and if an account holds 1% of the total tokens distributable pursuant to that blockchain, then that account has the potential to utilize 1% of the state storage capacity.
 
