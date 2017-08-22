@@ -214,15 +214,15 @@ Este processo também é muito diferente de um simples arranjo de múltiplas ass
 
 # Execução Paralela Determinística de Aplicações
 
-O consenso do Blockchain depende do comportamento determinístico (reprodutível). This means all parallel execution must be free from the use of mutexes or other locking primitives. Without locks there must be some way to guarantee that all accounts can only read and write their own private database. It also means that each account processes messages sequentially and that parallelism will be at the account level.
+O consenso do Blockchain depende do comportamento determinístico (reprodutível). Isso significa que toda execução paralela deve ser livre da utilização de mutexes ou outros primitivos de locking. Sem os locks, deve haver alguma maneira de garantir que todas as contas só podem ler e escrever seu próprio banco de dados particular. Significa também que cada conta processa mensagens sequencialmente e que paralelismo será no nível das contas.
 
-In an EOS.IO software-based blockchain, it is the job of the block producer to organize message delivery into independent threads so that they can be evaluated in parallel. The state of each account depends only upon the messages delivered to it. The schedule is the output of a block producer and will be deterministically executed, but the process for generating the schedule need not be deterministic. This means that block producers can utilize parallel algorithms to schedule transactions.
+Em um blockchain baseado no EOS.IO, é o trabalho do produtor bloco organizar a entrega de mensagens em threads independentes para que elas possam ser avaliadas em paralelo. O estado de cada conta depende somente das mensagens entregadas a ela. A agenda é a saída de um produtor de bloco e será deterministicamente executada, mas o processo para gerar a agenda não precisa ser determinístico. Isto significa que os produtores do bloco podem utilizar algoritmos paralelos para agendar transações.
 
-Part of parallel execution means that when a script generates a new message it does not get delivered immediately, instead it is scheduled to be delivered in the next cycle. The reason it cannot be delivered immediately is because the receiver may be actively modifying its own state in another thread.
+Parte de execução em paralelo significa que quando um script gera uma nova mensagem, ela não é entregue imediatamente, em vez disso é agendada para ser entregue no próximo ciclo. A razão pela qual que ela não pode ser entregue imediatamente é porque o receptor pode estar ativamente modificando seu próprio estado em outra thread.
 
-## Minimizing Communication Latency
+## Minimizando a Latência de Comunicação
 
-Latency is the time it takes for one account to send a message to another account and then receive a response. The goal is to enable two accounts to exchange messages back and forth within a single block without having to wait 3 seconds between each message. To enable this, the EOS.IO software divides each block into cycles. Each cycle is divided into threads and each thread contains a list of transactions. Each transaction contains a set of messages to be delivered. This structure can be visualized as a tree where alternating layers are processed sequentially and in parallel.
+Latência é o tempo que leva para uma conta enviar uma mensagem para outra conta e então receber uma resposta. O objetivo é permitir que duas contas troquem mensagens entre elas dentro de um único bloco, sem ter que esperar 3 segundos entre cada mensagem. Para permitir isto, o software EOS.IO divide cada bloco em ciclos. Cada ciclo é dividido em threads e cada thread contém uma lista de transações. Cada transação contém um conjunto de mensagens a ser entregues. Essa estrutura pode ser visualizada como uma árvore onde camadas alternadas são processadas sequencialmente e em paralelo.
 
         Block
     
