@@ -1,6 +1,6 @@
 # EOS.IO 기술 백서
 
-**초안 작성일: 2017년 6월 26일, 번역: 이태민 (taeminlee), 감수: 조재우 (@clayop (https://steemit.com/@clayop))**
+**초안 작성일: 2017년 6월 26일, 번역: 이태민 (taeminlee), 감수: 조재우 (@clayop (https://steemit.com/@clayop)), 일부 내용은 @loum이 수정했음.**
 
 **초록:** EOS.IO 소프트웨어는 탈중앙화 애플리케이션의 수직 및 수평 확장이 가능하도록 디자인된 새로운 블록체인 아키텍처를 소개합니다. 이는 애플리케이션을 구축할 수 있는 운영체제와 유사한 구조를 생성함으로 완성됩니다. 본 소프트웨어는 수백 개의 CPU 코어 또는 클러스터에 계정(accounts), 인증(authentication), 데이터베이스(databases), 비동기 통신(asynchronous communication), 애플리케이션 스케쥴링(application scheduling) 기능을 제공합니다. 그 결과 초당 수백만 건의 트랜잭션 처리 능력을 갖추면서도, 수수료가 없고, 빠르고 쉽게 애플리케이션을 개발할 수 있는 블록체인 아키텍처 기술이 탄생했습니다.
 
@@ -10,7 +10,7 @@
 
 누구든지 허가 없이 원래의 출처와 해당 저작권 고지가 언급된 경우 비영리적이고 교육적인 용도 (즉, 유료 또는 상업적 목적 이외의 목적)로 본 백서의 자료를 사용, 복제 또는 배포할 수 있습니다.
 
-**면책 조항:** EOS.IO 기술 백서 초안은 오직 정보 제공의 목적으로써 제공됩니다. block.one does not guarantee the accuracy of or the conclusions reached in this white paper, and this white paper is provided “as is”. block.one does not make and expressly disclaims all representations and warranties, express, implied, statutory or otherwise, whatsoever, including, but not limited to: (i) warranties of merchantability, fitness for a particular purpose, suitability, usage, title or noninfringement; (ii) that the contents of this white paper are free from error; and (iii) that such contents will not infringe third-party rights. block.one and its affiliates shall have no liability for damages of any kind arising out of the use, reference to, or reliance on this white paper or any of the content contained herein, even if advised of the possibility of such damages. In no event will block.one or its affiliates be liable to any person or entity for any damages, losses, liabilities, costs or expenses of any kind, whether direct or indirect, consequential, compensatory, incidental, actual, exemplary, punitive or special for the use of, reference to, or reliance on this white paper or any of the content contained herein, including, without limitation, any loss of business, revenues, profits, data, use, goodwill or other intangible losses.
+**면책 조항:** EOS.IO 기술 백서 초안은 오직 정보 제공의 목적으로써 제공됩니다. block.one의 정확성을 보증 하지 않습니다 또는이 백서의 결론 도달하고 이 백서는 "있는 그대로" 제공 됩니다. block.one은 이 백서에서 도달한 결론의 정확성을 보장하지 않으며, 백서는 "있는 그대로" 제공되며 이는 (단, 이에 한정되지는 않음) 명시적이거나 묵시적인 것으로서 어떠한 보증도 하지 않습니다. (i) 상품성에 대한 보증, 특정 목적을 위한 적합성, 타이틀 또는 법규의 위반이 없음; (ii) 본 백서의 내용에 오류가 없거나 어떤 목적에 적합하다는 것; (iii) 그러한 내용이 제3자의 권리를 침해하지 않을 것입니다. block.one과 그 계열사는 이 백서에 포함된 정보의 사용, 참조 또는 신뢰로 인해 발생하는 모든 종류의 손해에 대해 명시적으로 책임을 지지 않습니다. 어떠한 경우에도 block.one 또는 그 계열사 책임을 지지 것입니다 어떤 사람 또는 엔터티의 모든 손해, 손실, 책임, 비용 또는 어떠한 종류의 비용에 대 한 직접 또는 간접, 결과적, 보상, 부수적, 실제, 모범, 징벌적 또는의 사용, 참조, 또는이 백서 또는 비즈니스의 손실을 포함 하 되이 제한 없이, 여기에 포함 된 내용에 대 한 의존도 대 한 특별 한 수익, 이익, 데이터, 사용, 영업권 또는 기타 무형 손실.
 
 - [탄생 배경 (Background)](#background)
 - [블록체인 애플리케이션의 요구사항 (Requirements for Blockchain Application)](#requirements-for-blockchain-applications) 
@@ -275,7 +275,7 @@ EOS.IO 소프트웨어는 네트워크 관점에서 모든 트랜잭션에 대�
 
 # 토큰 모델과 리소스 사용 (Token Model and Resource Usage)
 
-**PLEASE NOTE: CRYPTOGRAPHIC TOKENS REFERRED TO IN THIS WHITE PAPER REFER TO CRYPTOGRAPHIC TOKENS ON A LAUNCHED BLOCKCHAIN THAT ADOPTS THE EOS.IO SOFTWARE. THEY DO NOT REFER TO THE ERC-20 COMPATIBLE TOKENS BEING DISTRIBUTED ON THE ETHEREUM BLOCKCHAIN IN CONNECTION WITH THE EOS TOKEN DISTRIBUTION.**
+**주의사항: 본 백서에서 언급되는 암호화폐 토큰은 EOS.IO 소프트웨어를 사용할 수 있는 블록체인 상에 존재하는 토큰을 지칭합니다. 이 토큰은 EOS 분배에 사용되는 이더리움 블록체인 상에 존재하는 ERC-20 기반 토큰을 가리키는 것이 아닙니다.**
 
 모든 blockchains는 제한 된 리소스 남용을 방지 하기 위해 시스템이 필요. EOS를 사용 하는 blockchain와 함께 IO 소프트웨어, 응용 프로그램에서 사용 하는 리소스의 3 개의 넓은 종류가 있다:
 
@@ -311,9 +311,9 @@ EOS.IO 소프트웨어를 사용하여 블록체인을 출시하였을 때, 필�
 
 ## 토큰의 가치와 트랜잭션 비용의 분리 (Separating Transaction costs from Token Value)
 
-EOS.IO 소프트웨어의 큰 장점 중 하나는 애플리케이션에서 필요한 대역폭은 어떠한 토큰 가격과도 독립적이라는 것입니다. 만약에 애플리케이션 소유자가 충분한 양의 토큰을 가지고 있다면, 애플리케이션은 고정된 상태와 대역폭 사용량 내에서 제한 없이 구동됩니다. In such case, developers and users are unaffected from any price volatility in the token market and therefore not reliant on a price feed. In other words, a blockchain that adopts the EOS.IO software enables block producers to naturally increase bandwidth, computation, and storage available per token independent of the token's value.
+EOS.IO 소프트웨어의 큰 장점 중 하나는 애플리케이션에서 필요한 대역폭은 어떠한 토큰 가격과도 독립적이라는 것입니다. 만약에 애플리케이션 소유자가 충분한 양의 토큰을 가지고 있다면, 애플리케이션은 고정된 상태와 대역폭 사용량 내에서 제한 없이 구동됩니다. 개발자와 사용자는 토큰 시장의 가격 변동성에 영향을 받지 않으며, 가격 추이에 연연하지 않게 됩니다. 다른 말로, EOS.IO 소프트웨어에서 블록 생산자는 토큰의 가치와 무관하게 자연스럽게 대역폭, 연산 능력, 저장 능력을 향상할 수 있습니다.
 
-A blockchain using EOS.IO software also awards block producers tokens every time they produce a block. 토큰의 가치는 블록 생산자가 구매할 수 있는 대역폭, 저장소, 연산장치에 영향을 줍니다. 이러한 모델은 토큰 가치의 상승을 이용하여 네트워크 성능을 향상합니다.
+EOS.IO 소프트웨어는 블록 생산자가 블록을 생성할 때마다 보상으로 토큰을 제공합니다. 토큰의 가치는 블록 생산자가 구매할 수 있는 대역폭, 저장소, 연산장치에 영향을 줍니다. 이러한 모델은 토큰 가치의 상승을 이용하여 네트워크 성능을 향상합니다.
 
 ## 상태 저장 비용 (State Storage Costs)
 
@@ -323,29 +323,29 @@ A blockchain using EOS.IO software also awards block producers tokens every time
 
 ## 블록 보상 (Block Rewards)
 
-A blockchain that adopts the EOS.IO software will award new tokens to a block producer every time a block is produced. In these circumstances, the number of tokens created is determined by the median of the desired pay published by all block producers. EOS.IO 소프트웨어는 생산자 보상의 총량이 연 토큰 증가분의 5%를 넘지 못하도록 제한을 걸 수 있습니다.
+EOS.IO 소프트웨어는 블록이 생성될 때마다 블록 생성자에게 보상으로 토큰을 부여합니다. 생성되는 토큰의 양은 블록 생산자들이 제출한 요구 금액의 중앙값으로 결정됩니다. EOS.IO 소프트웨어는 생산자 보상의 총량이 연 토큰 증가분의 5%를 넘지 못하도록 제한을 걸 수 있습니다.
 
 ## 커뮤니티 혜택 애플리케이션 (Community Benefit Applications)
 
-In addition to electing block producers, pursuant to a blockchain based on the EOS.IO software, users can elect 3 community benefit applications also known as smart contracts. 커뮤니티 애플리케이션은 설정된 연간 토큰 공급량에서 블록 생산자에게 지급한 양을 제외한 토큰을 가지게 됩니다. 이 스마트 컨트렉트들이 받는 토큰의 양은 각 어플리케이션이 토큰 소유자들로부터 받은 투표 수에 비례하여 결정됩니다. 선정된 애플리케이션 혹은 스마트 컨트렉트는 토큰 소유자들의 투표 결과에 따라 바뀔 수 있습니다.
+블록 생산자를 선출함과 더불어, EOS.IO 소프트웨어의 사용자들은 3개의 커뮤니티 애플리케이션(스마트 컨트렉트)을 선정할 수 있습니다. 커뮤니티 애플리케이션은 설정된 연간 토큰 공급량에서 블록 생산자에게 지급한 양을 제외한 토큰을 가지게 됩니다. 이 스마트 컨트렉트들이 받는 토큰의 양은 각 어플리케이션이 토큰 소유자들로부터 받은 투표 수에 비례하여 결정됩니다. 선정된 애플리케이션 혹은 스마트 컨트렉트는 토큰 소유자들의 투표 결과에 따라 바뀔 수 있습니다.
 
 # 거버넌스 (Governance)
 
-거버넌스는 사람들이 소프트웨어 알고리즘으로 결정할 수 없는 주관적 문제에 대하여 합의를 이루는 과정을 뜻합니다. An EOS.IO software-based blockchain implements a governance process that efficiently directs the existing influence of block producers. 정의된 가버넌스 과정의 부재로 인해 이전의 블록체인들은 즉흥적이고, 비공식적이고, 때로는 논란을 일으키는 거버넌스 과정을 겪었고 예측할 수 없는 결과가 나타났습니다.
+거버넌스는 사람들이 소프트웨어 알고리즘으로 결정할 수 없는 주관적 문제에 대하여 합의를 이루는 과정을 뜻합니다. EOS.IO 소프트웨어는 블록 생산자가 가지고 있는 영향력을 효과적으로 행사하는 거버넌스 과정을 구현합니다. 정의된 가버넌스 과정의 부재로 인해 이전의 블록체인들은 즉흥적이고, 비공식적이고, 때로는 논란을 일으키는 거버넌스 과정을 겪었고 예측할 수 없는 결과가 나타났습니다.
 
-A blockchain based on the EOS.IO software recognizes that power originates with the token holders who delegate that power to the block producers. 블록 생산자가 가지는 권한은, 계정을 동결하고, 결함이 있는 애플리케이션을 판올림하며, 기본 프로토콜의 변경을 가하는 하드포크를 제안하는 것으로 한정합니다.
+EOS.IO 소프트웨어는 블록 생산자에게 위임한 토큰 소유자로부터 권한이 발생함을 인지하고 있습니다. 블록 생산자가 가지는 권한은, 계정을 동결하고, 결함이 있는 애플리케이션을 판올림하며, 기본 프로토콜의 변경을 가하는 하드포크를 제안하는 것으로 한정합니다.
 
-Embedded into the EOS.IO software is the election of block producers. 블록체인의 모든 변경사항은 블록 생산자에 의해 검수받아야 합니다. 만약에 블록 생산자가 토큰 소유자에 반하는 결정을 내린다면 투표에 의해 지위를 상실할 수 있습니다. 블록 생산자가 토큰 소유자의 허가 없이 변경을 가한다면 모든 비생산 풀 노드 검사자(non-producing full-node validators)(거래소 등)들은 변경을 거부할 수 있습니다.
+EOS.IO 소프트웨어의 일부는 블록 생산자를 선출하는 것입니다. 블록체인의 모든 변경사항은 블록 생산자에 의해 검수받아야 합니다. 만약에 블록 생산자가 토큰 소유자에 반하는 결정을 내린다면 투표에 의해 지위를 상실할 수 있습니다. 블록 생산자가 토큰 소유자의 허가 없이 변경을 가한다면 모든 비생산 풀 노드 검사자(non-producing full-node validators)(거래소 등)들은 변경을 거부할 수 있습니다.
 
 ## 계정 동결 (Freezing Accounts)
 
 가끔 스마트 컨트렉트는 비정상적이거나 예측하지 못한 방식으로 동작하여 의도했던 기능이 동작하지 않을 수 있습니다. 이외에도 비정상적인 양의 리소스를 소비하는 것을 인지하여 애플리케이션이나 계정에 문제가 있음을 알 수 있습니다. 이러한 문제점이 발생했을 때, 블록 생산자는 이러한 상황을 바로 잡을 방법을 가집니다.
 
-모든 블록체인의 블록 생산자들은 블록에 포함되는 트랜잭션을 선택하는 능력을 갖추고 있으며, 이를 이용하여 계정을 동결할 수 있습니다. A blockchain using EOS.IO software formalizes this authority by subjecting the process of freezing an account to a 17/21 vote of active producers. 만약에 블록 생산자들이 이 기능을 악용한다면 투표에 의해 지위를 상실할 수 있으며 이 경우 동결된 계정은 복원됩니다.
+모든 블록체인의 블록 생산자들은 블록에 포함되는 트랜잭션을 선택하는 능력을 갖추고 있으며, 이를 이용하여 계정을 동결할 수 있습니다. EOS.IO 소프트웨어는 활성화된 블록 생산자들 간의 17/21 투표를 통해 특정 계정에 대한 동결 여부를 의결할 수 있습니다. 만약에 블록 생산자들이 이 기능을 악용한다면 투표에 의해 지위를 상실할 수 있으며 이 경우 동결된 계정은 복원됩니다.
 
 ## 계정 코드 변경 (Changing Account Code)
 
-When all else fails and an "unstoppable application" acts in an unpredictable manner, a blockchain using EOS.IO software allows the block producers to replace the account's code without hard forking the entire blockchain. 계정 동결과 유사하게 코드의 교체 작업은 선출된 블록 생산자들 간의 17/21 투표가 필요합니다.
+다른 모든 수단이 실패하고 "멈추지 않은 애플리케이션"이 예측할 수 없이 동작한다면 EOS.IO 소프트웨어는 블록 생산자들이 전체 블록체인의 하드 포크 없이 계정의 코드를 교체할 수 있도록 합니다. 계정 동결과 유사하게 코드의 교체 작업은 선출된 블록 생산자들 간의 17/21 투표가 필요합니다.
 
 ## 약관 (Constitution)
 
@@ -355,7 +355,7 @@ EOS.IO 소프트웨어는 블록체인에서 P2P 서비스 약정을 체결하�
 
 ## 프로토콜과 약관의 개정 (Upgrading the Protocol & Constitution)
 
-The EOS.IO software defines a process by which the protocol as defined by the canonical source code and its constitution, can be updated using the following process:
+EOS.IO 소프트웨어는 소스 코드 원형과 약관으로 규정되는 프로토콜의 절차를 규정하며, 다음의 절차로 개정할 수 있습니다.
 
 1. 블록 생산자들은 약관의 개정을 제안하고 17/21 승인을 받습니다.
 2. 블록 생산자들은 17/21 승인을 30일간 유지합니다.
@@ -385,7 +385,7 @@ EOS.IO 소프트웨어는 인증된 메시지를 계정으로 전달하는 과�
 
 ## 애플리케이션과 인증 분리 (Separating Authentication from Application)
 
-To maximize parallelization opportunities and minimize the computational debt associated with regenerating application state from the transaction log, EOS.IO software separates validation logic into three sections:
+병렬 처리 효율의 극대화와 트랜잭션 로그에서 애플리케이션 상태(state)가 재생성될 때 발생하는 과다 연산을 최소화하기 위하여, EOS.IO는 인증 방법(authentication logic)을 세 가지로 분리합니다.
 
 1. 메시지의 내적 일관성(internal consistency) 검증
 2. 모든 전제 조건의 유효성 검증
@@ -397,7 +397,7 @@ To maximize parallelization opportunities and minimize the computational debt as
 
 ## 가상 머신 독립 아키텍처 (Virtual Machine Independent Architecture)
 
-It is the intention of the EOS.IO software-based blockchain that multiple virtual machines can be supported and new virtual machines added over time as necessary. 그러므로 본 백서에서는 특정 언어나 가상머신에 세부적인 내용에 관하여 기술하지 않습니다. That said, there are two virtual machines that are currently being evaluated for use with an EOS.IO software-based blockchain.
+EOS.IO 소프트웨어의 설계 목적은 다수의 가상 머신을 운용하며 필요에 따라 새로운 가상 머신을 추가하는 것 입니다. 그러므로 본 백서에서는 특정 언어나 가상머신에 세부적인 내용에 관하여 기술하지 않습니다. 현재 EOS.IO를 이용하여 평가 중인 가상 머신은 2가지 입니다.
 
 ### 웹어셈블리 (WASM; Web Assembly)
 
@@ -407,7 +407,7 @@ It is the intention of the EOS.IO software-based blockchain that multiple virtua
 
 ### 이더리움 가상 머신 (EVM; Ethereum Virtual Machine)
 
-이 가상머신은 현존하는 대부분의 스마트 컨트렉트를 구동할 수 있으며, 이를 이용하여 그들의 작업물을 EOS.IO 블록체인에 적용할 수 있습니다. It is conceivable that EVM contracts could be run within their own sandbox inside an EOS.IO software-based blockchain and that with some adaptation EVM contracts could communicate with other EOS.IO software blockchain applications.
+이 가상머신은 현존하는 대부분의 스마트 컨트렉트를 구동할 수 있으며, 이를 이용하여 그들의 작업물을 EOS.IO 블록체인에 적용할 수 있습니다. EVM의 컨트렉트는 샌드박스 안에서 구동되며, 약간의 조정을 거치면 EOS.IO의 블록체인 애플리케이션과 통신할 수 있습니다.
 
 # 블록체인 간 통신 (Inter Blockchain Communication)
 
@@ -433,7 +433,7 @@ EOS.IO 소프트웨어는 트랜잭션이 바뀌지 않는(irreversible) 블록 
 
 ## 체인 간 통신의 지연 시간 (Latency of Interchain Communication)
 
-외부의 다른 블록체인과 통신할 때, 블록 생산자는 적합한 입력값으로 받아들이기 이전에 다른 블록체인에서 바뀌지 않는 확인 상태에 돌입하였음을 100% 확신할 때까지 기다려야 합니다. Using an EOS.IO software-based blockchain and DPOS with 3 second blocks and 21 producers, this takes approximately 45 seconds. If a chain's block producers do not wait for irreversibility it would be like an exchange accepting a deposit that was later reversed and could impact the validity of the blockchain's consensus.
+외부의 다른 블록체인과 통신할 때, 블록 생산자는 적합한 입력값으로 받아들이기 이전에 다른 블록체인에서 바뀌지 않는 확인 상태에 돌입하였음을 100% 확신할 때까지 기다려야 합니다. EOS.IO 소프트웨어와 21명의 생산자와 3초 블록 생성 시간을 가지는 DPOS(지분 위임 증명; Delegated Proof-Of-Stake)를 이용할 때 약 45초가 걸립니다. 만약에 특정 체인의 블록 생산자가 바뀌지 않는 상태가 되는 것을 기다리지 않는다면 거래소에 취소한 입금이 승인되는 것과 같은 일이 일어나며 체인의 합의 검증에 문제가 발생할 것입니다.
 
 ## 완전성 증명 (Proof of Completeness)
 
