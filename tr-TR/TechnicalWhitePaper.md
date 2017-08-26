@@ -2,9 +2,9 @@
 
 **26 Haziran 2017**
 
-** Özet: </ 0> EOS.IO yazılımı, merkezi olmayan uygulamaların dikey ve yatay ölçeklenebilirliğini sağlamak üzere tasarlanmış yeni bir blok zincir mimarisi sunar. Bu, üzerinde uygulamaların oluşturulabileceği işletim sistemi benzeri bir yapı oluşturularak sağlanır. Bu yazılım hesaplar, kimlik doğrulamaları, veritabanları, asenkron iletişim ve yüzlerce CPU çekirdeği veya kümesi arasında uygulamaların zamanlamalarını sağlar. Sonuçta ortaya çıkan teknoloji saniyede milyonlarca işlemi ile ölçeklendirebilen, kullanıcı ücretlerini ortadan kaldıran ve merkezi olmayan uygulamaların hızlı ve kolay bir şekilde kurulmasına izin veren bir blok zincir mimarisidir.</p> 
+** Özet: </ 0> EOS.IO yazılımı, merkezi olmayan uygulamaların dikey ve yatay ölçeklenebilirliğini sağlamak üzere tasarlanmış yeni bir blok zincir mimarisi sunar. Bu, üzerinde uygulamaların oluşturulabileceği işletim sistemi benzeri bir yapı oluşturularak sağlanır. Bu yazılım hesaplar, kimlik doğrulamaları, veritabanları, asenkron iletişim ve yüzlerce CPU çekirdeği veya kümesi arasında uygulamaların zamanlamalarını sağlar. Sonuçta ortaya çıkan teknoloji saniyede milyonlarca işlemi ölçeklendirebilen, kullanıcı ücretlerini ortadan kaldıran ve merkezi olmayan uygulamaların hızlı ve kolay bir şekilde kurulmasına izin veren bir blok zincir mimarisidir.</p> 
 
-**PLEASE NOTE: CRYPTOGRAPHIC TOKENS REFERRED TO IN THIS WHITE PAPER REFER TO CRYPTOGRAPHIC TOKENS ON A LAUNCHED BLOCKCHAIN THAT ADOPTS THE EOS.IO SOFTWARE. THEY DO NOT REFER TO THE ERC-20 COMPATIBLE TOKENS BEING DISTRIBUTED ON THE ETHEREUM BLOCKCHAIN IN CONNECTION WITH THE EOS TOKEN DISTRIBUTION.**
+**LÜTFEN DİKKAT: BU TEKNİK DÖKÜMANDA ANILAN KRİPTOGRAFİK TOKENLER EOS.IO YAZILIMI KULLANAN BİR BLOK ZİNCİRDEN BAŞLATILAN KRİPTOGRAFİK TOKENLERİ KASTETMEKTEDİR. EOS TOKEN DAĞITIMI İLE BAĞLANTILI OLARAK ETHEREUM BLOK ZİNCİRİNDE DAĞITILMAKTA OLAN ERC-20 UYUMLU TOKENLER İLE İLGİSİ YOKTUR.**
 
 Telif Hakkı © 2017 block.one
 
