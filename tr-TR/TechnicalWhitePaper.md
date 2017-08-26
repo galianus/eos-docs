@@ -21,7 +21,7 @@ Herkes izin almaksızın, orijinal kaynak ve geçerli telif hakkı bilgisini bel
   - [Sıralı Performans](#sequential-performance)
   - [Paralel Performans](#parallel-performance)
 - [Konsensüs Algoritması (DPOS)](#consensus-algorithm-dpos) 
-  - [Transaction Confirmation](#transaction-confirmation)
+  - [Hareket Konfirmasyonu](#transaction-confirmation)
   - [Transaction as Proof of Stake (TaPoS)](#transaction-as-proof-of-stake-tapos)
 - [Hesaplar](#accounts) 
   - [Messages & Handlers](#messages--handlers)
