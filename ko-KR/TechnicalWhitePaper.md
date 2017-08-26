@@ -385,11 +385,11 @@ EOS.IO 소프트웨어는 인증된 메시지를 계정으로 전달하는 과�
 
 ## 애플리케이션과 인증 분리 (Separating Authentication from Application)
 
-병렬 처리 효율의 극대화와 트랜잭션 로그(transaction log)로부터 애플리케이션 상태(state)가 다시 생성될 때 발생하는 과다 연산( computational debt)을 최소화하기 위하여, EOS.IO는 인증 방법(authentication logic)을 세 가지로 분리합니다.
+병렬 처리 효율의 극대화와 트랜잭션 로그(transaction log)로부터 애플리케이션 상태(application state)를 다시 생성할 때의 과다 연산( computational debt)을 최소화하기 위하여, EOS.IO는 인증 방법(authentication logic)을 세 가지로 분리합니다.
 
 1. 메시지의 내적 일관성(internal consistency) 검증
-2. 모든 전제 조건의 유효성 검증
-3. 애플리케이션 상태의 변경
+2. 모든 전제 조건(preconditions )의 유효성 검증
+3. 애플리케이션 상태( application state)의 변경
 
 메시지의 내적 일관성 검증은 읽기 연산으로만 구성되며, 블록체인 상태에 대한 확인을 요구하지 않습니다. 이는 최대한의 병렬성을 가질 수 있음을 뜻합니다. 필요 잔액과 같은 전제 조건을 검증하는 것은 읽기 연산이므로 병렬 처리의 이점을 가집니다. 오직 애플리케이션 상태의 변경만 쓰기 접근을 요구하고 이것은 각각의 애플리케이션마다 순차적으로 처리되어야 합니다.
 
