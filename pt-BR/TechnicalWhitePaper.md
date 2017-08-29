@@ -360,16 +360,16 @@ O software EOS.IO define um processo pelo qual o protocolo conforme definido pel
 1. Produtores de blocos propõem uma alteração da Constituição e obtém aprovação de 17/21.
 2. Produtores de blocos mantêm uma aprovação de 17/21, durante 30 dias consecutivos.
 3. É requerido que todos os usuários passem a assinar transações usando o hash da nova constituição.
-4. Block producers adopt changes to the source code to reflect the change in the constitution and propose it to the blockchain using the hash of a git commit.
-5. Block producers maintain 17/21 approval for 30 consecutive days.
-6. Changes to the code take effect 7 days later, giving all full nodes 1 week to upgrade after ratification of the source code.
-7. All nodes that do not upgrade to the new code shut down automatically.
+4. Produtores de blocos adoptam as alterações ao código-fonte para refletir a mudança na Constituição e propôem ele para o blockchain usando o hash de um commit do git.
+5. Produtores de blocos mantêm uma aprovação de 17/21, durante 30 dias consecutivos.
+6. Alterações no código entram em vigor 7 dias depois, dando a todos os nós completo 1 semana para atualizar após a ratificação do código-fonte.
+7. Todos os nós que não atualizarem para o novo código são desligados automaticamente.
 
-By default configuration of the EOS.IO software, the process of updating the blockchain to add new features takes 2 to 3 months, while updates to fix non-critical bugs that do not require changes to the constitution can take 1 to 2 months.
+Pela configuração padrão do software EOS.IO, o processo de atualizar o blockchain para adicionar novas funcionalidades leva 2 a 3 meses, enquanto as atualizações para corrigir bugs não-críticos que não necessitam de alterações à Constituição podem levar de 1 a 2 meses.
 
-### Emergency Changes
+### Mudanças de Emergência
 
-The block producers may accelerate the process if a software change is required to fix a harmful bug or security exploit that is actively harming users. Generally speaking it could be against the constitution for accelerated updates to introduce new features or fix harmless bugs.
+Os produtores de blocos podem acelerar o processo, se uma mudança de software é necessária para corrigir uma falha de segurança ou um defeito prejudicial que está ativamente prejudicando os usuários. De um modo geral pode ser contra a Constituição fazer atualizações aceleradas ou introduzir novas funcionalidades ou corrigir bugs inofensivos.
 
 # Scripts & Virtual Machines
 
