@@ -341,25 +341,25 @@ A eleição dos produtores de blocos é incorporada no software EOS.IO. Antes qu
 
 Às vezes um contato inteligente se comporta de forma imprevisível ou aberrante e falha a funcionar conforme o esperado; outras vezes, um aplicativo ou conta pode descobrir uma falha de segurança que permita que sejam consumidos uma quantidade não razoável de recursos. Quando tais questões inevitavelmente acontecerem, os produtores de blocos tem o poder de corrigir tais situações.
 
-Os produtores de blocos em todos os blockchains têm o poder de selecionar quais operações estão incluídas em blocos o que lhes dá a capacidade de congelar a contas. A blockchain using EOS.IO software formalizes this authority by subjecting the process of freezing an account to a 17/21 vote of active producers. If the producers abuse the power they can be voted out and an account will be unfrozen.
+Os produtores de blocos em todos os blockchains têm o poder de selecionar quais operações estão incluídas em blocos o que lhes dá a capacidade de congelar a contas. Um blockchain usando o software EOS.IO formaliza esta autoridade, sujeitando o processo de congelamento de uma conta a 17/21 dos votos dos produtores ativos. Se os produtores abusam o poder eles podem ser eliminados e uma conta será descongelada.
 
-## Changing Account Code
+## Alterando o Código da Conta
 
-When all else fails and an "unstoppable application" acts in an unpredictable manner, a blockchain using EOS.IO software allows the block producers to replace the account's code without hard forking the entire blockchain. Similar to the process of freezing an account, this replacement of the code requires a 17/21 vote of elected block producers.
+Quando tudo mais falhar, e um aplicativo "imparável" atua de forma imprevisível, um blockchain usando o software EOS.IO permite aos produtores de blocos substituir o código da conta sem ser necessário fazer um hard fork do blockchain inteiro. Semelhante ao processo de congelamento de uma conta, esta substituição do código exige uma votação de 17/21 dos produtores de blocos eleitos.
 
-## Constitution
+## Constituição
 
-The EOS.IO software enables blockchains to establish a peer-to-peer terms of service agreement or a binding contract among those users who sign it, referred to as a "constitution". The content of this constitution defines obligations among the users which cannot be entirely enforced by code and facilitates dispute resolution by establishing jurisdiction and choice of law along with other mutually accepted rules. Every transaction broadcast on the network must incorporate the hash of the constitution as part of the signature and thereby explicitly binds the signer to the contract.
+O software EOS.IO permite que blockchains estabeleçam um termo de acordo de serviço entre pares (peer-to-peer) ou um contrato vinculativo entre aqueles usuários que assiná-lo, referido como uma "Constituição". O conteúdo desta Constituição define obrigações entre os usuários que não podem ser aplicadas inteiramente pelo código e facilita a resolução de litígios, estabelecendo a jurisdição e a escolha da lei, juntamente com outras regras mutuamente aceitas. Todas as transações na rede de transmissão devem incorporar o hash da constituição como parte da assinatura e desse modo explicitamente vincula o signatário do contrato.
 
-The constitution also defines the human-readable intent of the source code protocol. This intent is used to identify the difference between a bug and a feature when errors occur and guides the community on what fixes are proper or improper.
+A Constituição também define a intenção legível do protocolo de código fonte. Esta intenção é usada para identificar a diferença entre um defeito de software e uma funcionalidade, quando ocorrerem erros e guia a comunidade na decisão sobre quais correções podem ser adequadas ou inadequadas para esse caso.
 
-## Upgrading the Protocol & Constitution
+## Atualizando o Protocolo & Constituição
 
-The EOS.IO software defines a process by which the protocol as defined by the canonical source code and its constitution, can be updated using the following process:
+O software EOS.IO define um processo pelo qual o protocolo conforme definido pelo código fonte canônico e sua constituição, podem ser atualizados usando os seguintes passos:
 
-1. Block producers propose a change to the constitution and obtains 17/21 approval.
-2. Block producers maintain 17/21 approval for 30 consecutive days.
-3. All users are required to sign transactions using the hash of the new constitution.
+1. Produtores de blocos propõem uma alteração da Constituição e obtém aprovação de 17/21.
+2. Produtores de blocos mantêm uma aprovação de 17/21, durante 30 dias consecutivos.
+3. É requerido que todos os usuários passem a assinar transações usando o hash da nova constituição.
 4. Block producers adopt changes to the source code to reflect the change in the constitution and propose it to the blockchain using the hash of a git commit.
 5. Block producers maintain 17/21 approval for 30 consecutive days.
 6. Changes to the code take effect 7 days later, giving all full nodes 1 week to upgrade after ratification of the source code.
