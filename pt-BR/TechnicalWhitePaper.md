@@ -333,15 +333,15 @@ Além de eleger os produtores de blocos, em conformidade com um blockchain basea
 
 Governança é o processo no qual pessoas chegam um consenso sobre quesões subjetivas as quais não podem ser totalmente capturados por algoritmos de software. Um blockchain baseado no software EOS.IO implementa um processo de governança que direciona eficientemente a influência existente dos produtores do bloco. Sem um processo de governança definidos, blockchains anteriores dependiam de um processo de governança ad-hoc, informal e frequentemente controverso que resultam em resultados imprevisíveis.
 
-Um blockchain baseado no software EOS.IO reconhece que o poder se origina com os titulares dos tokens que delegam esse poder para os produtores de blocos. The block producers are given limited and checked authority to freeze accounts, update defective applications, and propose hard forking changes to the underlying protocol.
+Um blockchain baseado no software EOS.IO reconhece que o poder se origina com os titulares dos tokens que delegam esse poder para os produtores de blocos. Aos produtores de blocos é dada autoridade limitada e verificada para congelar contas, atualizar aplicativos defeituosos e propor alterações no protocolo subjacente que resultem em hard forks.
 
-Embedded into the EOS.IO software is the election of block producers. Before any change can be made to the blockchain these block producers must approve it. If the block producers refuse to make changes desired by the token holders then they can be voted out. If the block producers make changes without permission of the token holders then all other non-producing full-node validators (exchanges, etc) will reject the change.
+A eleição dos produtores de blocos é incorporada no software EOS.IO. Antes que qualquer mudança possa ser feita ao blockchain esses produtores de blocos devem aprová-lo. Se os produtores de blocos se recusam a fazer as mudanças desejadas pelos titulares token então pode ser votado contra a continuidade deles. Se os produtores de blocos fazem alterações sem a permissão dos titulares de tokens então todos os outros nodos completos validadores que não produzem blocos (exchanges, etc.) irão rejeitar a mudança.
 
-## Freezing Accounts
+## Congelamento de contas
 
-Sometimes a smart contact behaves in an aberrant or unpredictable manner and fails to perform as intended; other times an application or account may discover an exploit that enables it to consume an unreasonable amount of resources. When such issues inevitably occur, the block producers have the power to rectify such situations.
+Às vezes um contato inteligente se comporta de forma imprevisível ou aberrante e falha a funcionar conforme o esperado; outras vezes, um aplicativo ou conta pode descobrir uma falha de segurança que permita que sejam consumidos uma quantidade não razoável de recursos. Quando tais questões inevitavelmente acontecerem, os produtores de blocos tem o poder de corrigir tais situações.
 
-The block producers on all blockchains have the power to select which transactions are included in blocks which gives them the ability to freeze accounts. A blockchain using EOS.IO software formalizes this authority by subjecting the process of freezing an account to a 17/21 vote of active producers. If the producers abuse the power they can be voted out and an account will be unfrozen.
+Os produtores de blocos em todos os blockchains têm o poder de selecionar quais operações estão incluídas em blocos o que lhes dá a capacidade de congelar a contas. A blockchain using EOS.IO software formalizes this authority by subjecting the process of freezing an account to a 17/21 vote of active producers. If the producers abuse the power they can be voted out and an account will be unfrozen.
 
 ## Changing Account Code
 
