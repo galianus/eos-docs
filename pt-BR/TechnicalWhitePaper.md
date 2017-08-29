@@ -331,9 +331,9 @@ Além de eleger os produtores de blocos, em conformidade com um blockchain basea
 
 # Governança
 
-Governança é o processo no qual pessoas chegam um consenso sobre quesões subjetivas as quais não podem ser totalmente capturados por algoritmos de software. An EOS.IO software-based blockchain implements a governance process that efficiently directs the existing influence of block producers. Absent a defined governance process, prior blockchains relied ad hoc, informal, and often controversial governance processes that result in unpredictable outcomes.
+Governança é o processo no qual pessoas chegam um consenso sobre quesões subjetivas as quais não podem ser totalmente capturados por algoritmos de software. Um blockchain baseado no software EOS.IO implementa um processo de governança que direciona eficientemente a influência existente dos produtores do bloco. Sem um processo de governança definidos, blockchains anteriores dependiam de um processo de governança ad-hoc, informal e frequentemente controverso que resultam em resultados imprevisíveis.
 
-A blockchain based on the EOS.IO software recognizes that power originates with the token holders who delegate that power to the block producers. The block producers are given limited and checked authority to freeze accounts, update defective applications, and propose hard forking changes to the underlying protocol.
+Um blockchain baseado no software EOS.IO reconhece que o poder se origina com os titulares dos tokens que delegam esse poder para os produtores de blocos. The block producers are given limited and checked authority to freeze accounts, update defective applications, and propose hard forking changes to the underlying protocol.
 
 Embedded into the EOS.IO software is the election of block producers. Before any change can be made to the blockchain these block producers must approve it. If the block producers refuse to make changes desired by the token holders then they can be voted out. If the block producers make changes without permission of the token holders then all other non-producing full-node validators (exchanges, etc) will reject the change.
 
