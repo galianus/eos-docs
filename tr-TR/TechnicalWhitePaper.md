@@ -71,9 +71,9 @@ Herkes izin almaksızın, orijinal kaynak ve geçerli telif hakkı bilgisini bel
 
 Blok zinciri teknolojisi 2008 yılında bitcoin para biriminin oluşturulmasıyla birlikte ortaya çıkmıştır ve o zamandan beri tek bir blok zinciri platformunda daha geniş bir uygulama yelpazesi desteklemek amacıyla bu teknoloji girişimciler ve geliştiriciler tarafından yaygınlaştırılmaya çalışılmaktadır.
 
-Bir dizi blok zinciri platformları fonksiyonel merkezi olmayan uygulamaları desteklemek için çalışırken, merkezi olmayan borsa BitShares (2014) ve sosyal medya platformu Steem (2016) gibi uygulamaya özgü blok zincirleri on binlerce günlük aktif kullanıcıya sahip olarak yoğun biçimde kullanılan blok zincirlerine dönüştü. They have achieved this by increasing performance to thousands of transactions per second, reducing latency to 1.5 seconds, eliminating fees, and providing a user experience similar to those currently provided by existing centralized services.
+Bir dizi blok zinciri platformları fonksiyonel merkezi olmayan uygulamaları desteklemek için çalışırken, merkezi olmayan borsa BitShares (2014) ve sosyal medya platformu Steem (2016) gibi uygulamaya özgü blok zincirleri on binlerce günlük aktif kullanıcıya sahip olarak yoğun biçimde kullanılan blok zincirlerine dönüştü. Performansı saniyede binlerce harekete yükselterek, gecikmeyi 1,5 saniyeye indirerek, ücretleri ortadan kaldırarak ve mevcut merkezi hizmetlerin sunduğuna benzer kullanıcı deneyimleri sağlayarak bunu başarmışlardır.
 
-Existing blockchain platforms are burdened by large fees and limited computational capacity that prevent widespread blockchain adoption.
+Mevcut blok zinciri platformları blok zincirinin yaygın kabulüne engel olan yüksek ücretler ve sınırlı hesaplama kapasiteleri nedeniyle ağır yük altındadırlar.
 
 # Blok Zinciri Uygulamaları için Gereksinimler
 
