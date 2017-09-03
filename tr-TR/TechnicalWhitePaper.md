@@ -77,7 +77,7 @@ Mevcut blok zinciri platformları blok zincirinin yaygın kabulüne engel olan y
 
 # Blok Zinciri Uygulamaları için Gereksinimler
 
-In order to gain widespread use, applications on the blockchain require a platform that is flexible enough to meet the following requirements:
+Yaygın kullanım sağlamak için blok zinciri üzerindeki uygulamaların aşağıdaki gereklilikleri sağlayacak kadar esnek bir platforma sahip olmaları gerekir:
 
 ## Milyonlarca Kullanıcı Desteği
 
