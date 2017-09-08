@@ -2,8 +2,16 @@
 
 - [English](TechnicalWhitePaper.md)
 - [Russian](ru-RU/TechnicalWhitePaper.md) translated by [@blockchained](https://steemit.com/@blockchained)
-- [Chinese](zh-CN/TechnicalWhitePaper.md) translated by [@0dayZh](https://github.com/0dayZh)
-- [Korean](ko-KR/TechnicalWhitePaper.md) translated by [@clayop](https://steemit.com/@clayop)
+- [Chinese](zh-CN/TechnicalWhitePaper.md) translated by [@dayzh](https://steemit.com/@dayzh)
+- [Korean](ko-KR/TechnicalWhitePaper.md) translated by [@clayop](https://steemit.com/@clayop) and [@loum](https://steemit.com/@loum)
+
+# EOS.IO Roadmap
+
+- [English](Roadmap.md)
+- [Russian](ru-RU/Roadmap.md) translated by [@blockchained](https://steemit.com/@blockchained)
+- [Chinese](zh-CN/Roadmap.md) translated by [@shuke0327](https://steemit.com/@shuke0327)
+- [Korean](ko-KR/Roadmap.md) translated by [@loum](https://steemit.com/@loum)
+- [Vietnamese](vi-VN/Roadmap.md) translated by [@chamviet](https://steemit.com/@chamviet)
 
 # Translation Guide
 
