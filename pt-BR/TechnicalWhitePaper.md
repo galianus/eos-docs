@@ -385,19 +385,19 @@ O estado do banco de dados também é definido usando um esquema similar. Isso g
 
 ## Separando a Autenticação da Aplicação
 
-To maximize parallelization opportunities and minimize the computational debt associated with regenerating application state from the transaction log, EOS.IO software separates validation logic into three sections:
+Para maximizar as oportunidades de paralelização e minimizar a dívida computacional associada a regeneração do estado do aplicativo do log de transações, o software EOS.IO separa a lógica de validação em três seções:
 
-1. Validating that a message is internally consistent;
-2. Validating that all preconditions are valid; and
-3. Modifying the application state.
+1. Validando de que uma mensagem seja internamente consistente;
+2. Validando que todas as pre-condições são válidas; e
+3. Modificando o estado do aplicativo.
 
-Validating the internal consistency of a message is read-only and requires no access to blockchain state. This means that it can be performed with maximum parallelism. Validating preconditions, such as required balance, is read-only and therefore can also benefit from parallelism. Only modification of application state requires write access and must be processed sequentially for each application.
+A validação da coerência interna de uma mensagem é uma operação de somente leitura e não requer acesso ao estado de blockchain. Isto significa que pode ser realizada com paralelismo máximo. Validação de pré-condições, tais como verificar o saldo necessário, é somente leitura e, portanto, pode também beneficiar de paralelismo. Apenas a modificação do estado do aplicativo requer acesso de gravação e deve ser processada sequencialmente para cada aplicação.
 
-Authentication is the read-only process of verifying that a message can be applied. Application is actually doing the work. In real time both calculations are required to be performed, however once a transaction is included in the blockchain it is no longer necessary to perform the authentication operations.
+A autenticação é o processo de leitura somente que verifica que uma mensagem possa ser aplicada. Aplicação é fazer o trabalho. Ambos cálculos são devem ser executados em tempo real, no entanto quando uma transação é incluída no blockchain não é mais necessário executar as operações de autenticação.
 
-## Virtual Machine Independent Architecture
+## Arquitetura Independente de Máquina Virtual
 
-It is the intention of the EOS.IO software-based blockchain that multiple virtual machines can be supported and new virtual machines added over time as necessary. For this reason, this paper will not discuss the details of any particular language or virtual machine. That said, there are two virtual machines that are currently being evaluated for use with an EOS.IO software-based blockchain.
+É a intenção do blockchain baseado em EOS.IO que várias máquinas virtuais possam ser suportadas e novas máquinas virtuais adicionadas ao longo do tempo, conforme seja necessário. Por esta motivo, este artigo não discutirá os detalhes de qualquer linguagem ou máquina virtual particular. That said, there are two virtual machines that are currently being evaluated for use with an EOS.IO software-based blockchain.
 
 ### Web Assembly (WASM)
 
