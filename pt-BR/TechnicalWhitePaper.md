@@ -12,7 +12,7 @@ Sem permissão, qualquer um pode usar, reproduzir ou distribuir qualquer materia
 
 **AVISO LEGAL:** Este White Paper Técnico do EOS.IO é apenas para fins informativos. block.one não garante a precisão das conclusões neste white paper, e este white paper é fornecido "como está". block.one não faz e expressamente renuncia todas as representações e garantias, expressas, implícitas, estatuária ou de outra forma, de qualquer maneira, incluindo, mas não limitado a: (i) garantia de comercialização, adequação para algum propósito em particular, adequação, uso, título ou não infração; (ii) que o conteúdo deste Whitepaper estão livres de erro; e (iii) que tal conteúdo não irá infringir direitos de terceiros. block.one e seus afiliados não terão responsabilidade por danos de qualquer espécie resultado do uso, referencia à, ou dependência nesse Whitepaper ou qualquer um dos conteúdos contidos no mesmo, mesmo se advertido da possibilidade de tais danos. Em nenhum evento block.one ou seus afiliados será responsável à qualquer pessoa ou entidade por qualquer dano, perda, responsabilidades, custos ou gastos de qualquer espécie, direta ou indireta, consequentes, compensatória, incidental, atual, exemplar, punitivo ou especial para o uso de, referente à, ou confiança nesse Whitepaper ou qualquer conteúdo contidos no mesmo, incluindo, sem limitações, qualquer perda de negócios, receitas, lucros, informações, uso, boa vontade, ou outra perdas intangíveis.
 
-- [Background](#background)
+- [Contexto](#background)
 - [Requisitos para Aplicações Blockchain](#requirements-for-blockchain-applications) 
   - [Suporte a Milhões de Usuários](#support-millions-of-users)
   - [Uso Gratuito](#free-usage)
@@ -64,7 +64,7 @@ Sem permissão, qualquer um pode usar, reproduzir ou distribuir qualquer materia
 - [Comunicação Inter Blockchain](#inter-blockchain-communication) 
   - [Provas de Merkle para Validação Leve de Cliente (LCV)](#merkle-proofs-for-light-client-validation-lcv)
   - [Latência de Comunicação Interchain](#latency-of-interchain-communication)
-  - [Proof of Completeness](#proof-of-completeness)
+  - [Prova de Completude](#proof-of-completeness)
 - [Conclusão](#conclusion)
 
 # Contexto
@@ -435,10 +435,10 @@ Após uma certa densidade de interconexão, torna-se mais eficiente simplesmente
 
 Ao se comunicar com outro blockchain externo, os produtores de blocos devem aguardar até que exista 100% de certeza de que uma transação foi confirmada irreversivelmente pela outra cadeia de blocos antes de aceitá-la como uma entrada válida. Usando um blockchain baseado em software EOS.IO e DPOS com blocos a cada 3 segundos e 21 produtores, isto leva aproximadamente 45 segundos. Se os produtores de blocos de um blockchain não aguardarem a irreversibilidade, seria como uma troca aceitando um depósito que mais tarde foi revertido e pode afetar a validade do consenso do blockchain.
 
-## Proof of Completeness
+## Prova de Completude
 
-When using merkle proofs from outside blockchains, there is a significant difference between knowing that all transactions processed are valid and knowing that no transactions have been skipped or omitted. While it is impossible to prove that all of the most recent transactions are known, it is possible to prove that there have been no gaps in the transaction history. The EOS.IO software facilitates this by assigning a sequence number to every message delivered to every account. A user can use these sequence numbers to prove that all messages intended for a particular account have been processed and that they were processed in order.
+Ao usar provas merkle de blockchains externos, há uma diferença significativa entre saber que todas as transações processadas são válidas e saber que nenhuma transação foi ignorada ou omitida. Embora seja impossível provar que todas as transações mais recentes são conhecidas, é possível provar que não houve lacunas no histórico de transações. O software EOS.IO facilita isso atribuindo um número seqüêncial a cada mensagem entregue a cada conta. Um usuário pode usar esses números de seqüência para provar que todas as mensagens destinadas a uma determinada conta foram processadas e que elas foram processadas em ordem.
 
-# Conclusion
+# Conclusão
 
-The EOS.IO software is designed from experience with proven concepts and best practices, and represents fundamental advancements in blockchain technology. The software is part of a holistic blueprint for a globally scalable blockchain society in which decentralised applications can be easily deployed and governed.
+O software EOS.IO foi projetado a partir da experiência com conceitos comprovados e melhores práticas, e representa avanços fundamentais na tecnologia blockchain. O software faz parte de um plano holístico para uma sociedade de blockchains globalmente escalável em que aplicativos descentralizados possam ser facilmente implantados e governados.
