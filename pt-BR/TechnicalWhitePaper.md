@@ -411,15 +411,15 @@ Essa máquina virtual tem sido usada pelo maioria dos contratos inteligentes e p
 
 # Comunicação Inter Blockchain
 
-O software EOS.IO foi projetado para facilitar a comunicação inter-blockchain. Isto é conseguido, facilitando a geração de prova de existência de mensagem e prova de sequência de mensagens. These proofs combined with an application architecture designed around message passing enables the details of inter-blockchain communication and proof validation to be hidden from application developers.
+O software EOS.IO foi projetado para facilitar a comunicação inter-blockchain. Isto é conseguido, facilitando a geração de prova de existência de mensagem e prova de sequência de mensagens. Estas provas combinadas com uma arquitetura de aplicativo projetada ao redor de passagem de mensagens permite que os detalhes do inter-blockchain de comunicação e à prova de validação possam ser escondidos dos desenvolvedores de aplicativos.
 
 <img align="right" src="http://eos.io/wpimg/Diagram1.jpg" width="362.84px" height="500px" />
 
-## Merkle Proofs for Light Client Validation (LCV)
+## Provas de Merkle para Validação Leve de Cliente (LCV)
 
-Integrating with other blockchains is much easier if clients do not need to process all transactions. After all, an exchange only cares about transfers in and out of the exchange and nothing more. It would also be ideal if the exchange chain could utilize lightweight merkle proofs of deposit rather than having to trust its own block producers entirely. At the very least a chain's block producers would like to maintain the smallest possible overhead when synchronizing with another blockchain.
+A integração com outros blockchains é muito mais fácil se os clientes não precisam processar todas as transações. Afinal de contas, um exchange só se preocupa com as transferências para dentro e para fora e nada mais. Também seria ideal se a cadeia de troca pudesse utilizar provas merkle de depósito leve, ao invés de ter que confiar em seus próprios produtores de bloco inteiramente. Pelo menos, os produtores de blocos de um blockchain gostariam de manter a menor sobrecarga possível ao sincronizar com outro blockchain.
 
-The goal of LCV is to enable the generation of relatively light-weight proof of existence that can be validated by anyone tracking a relatively light-weight data set. In this case the objective is to prove that a particular transaction was included in a particular block and that the block is included in the verified history of a particular blockchain.
+O objetivo do LCV é permitir a geração de uma prova de existência relativamente leve que possa ser validada por qualquer um que rastreie um conjunto de dados relativamente leve. Neste caso, o objetivo é provar que uma determinada operação foi incluída em um bloco particular e que o bloco está incluído na história verificada de um blockchain particular.
 
 Bitcoin supports validation of transactions assuming all nodes have access to the full history of block headers which amounts to 4MB of block headers per year. At 10 transactions per second, a valid proof requires about 512 bytes. This works well for a blockchain with a 10 minute block interval, but is no longer "light" for blockchains with a 3 second block interval.
 
