@@ -371,19 +371,19 @@ Pela configuração padrão do software EOS.IO, o processo de atualizar o blockc
 
 Os produtores de blocos podem acelerar o processo, se uma mudança de software é necessária para corrigir uma falha de segurança ou um defeito prejudicial que está ativamente prejudicando os usuários. De um modo geral pode ser contra a Constituição fazer atualizações aceleradas ou introduzir novas funcionalidades ou corrigir bugs inofensivos.
 
-# Scripts & Virtual Machines
+# Scripts & Máquinas Virtuais
 
-The EOS.IO software will be first and foremost a platform for coordinating the delivery of authenticated messages to accounts. The details of scripting language and virtual machine are implementation specific details that are mostly independent from the design of the EOS.IO technology. Any language or virtual machine that is deterministic and properly sandboxed with sufficient performance can be integrated with the EOS.IO software API.
+O software EOS.IO será, sobretudo, uma plataforma para coordenar a entrega de mensagens autenticadas para contas. Os detalhes das linguagens de script e máquinas virtuais são detalhes de implementação específicos que são na sua maioria independentes do design da tecnologia do EOS.IO. Qualquer linguagem ou máquina virtual que seja determinístico e corretamente sandboxed com desempenho suficiente poderá ser integrada com a API do EOS.IO.
 
-## Schema Defined Messages
+## Mensagens Definidas por Esquema
 
-All messages sent between accounts are defined by a schema which is part of the blockchain consensus state. This schema allows seamless conversion between binary and JSON representation of the messages.
+Todas as mensagens enviadas entre contas são definidas por um esquema que faz parte do estado consensuado do blockchain. Este esquema permite uma perfeita conversão entre uma representação binária e JSON das mensagens.
 
-## Schema Defined Database
+## Banco de Dados Definido por Esquema
 
-Database state is also defined using a similar schema. This ensures that all data stored by all applications is in a format that can be interpreted as human readable JSON but stored and manipulated with the efficiency of binary.
+O estado do banco de dados também é definido usando um esquema similar. Isso garante que todos os dados armazenados por todos os aplicativos em um formato que pode ser interpretado como JSON mas armazenado e manipulado com a eficiência de binário.
 
-## Separating Authentication from Application
+## Separando a Autenticação da Aplicação
 
 To maximize parallelization opportunities and minimize the computational debt associated with regenerating application state from the transaction log, EOS.IO software separates validation logic into three sections:
 
