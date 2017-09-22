@@ -2,9 +2,9 @@
 
 **26 tháng 6 năm 2017**
 
-**Tóm tắt:** EOS. Phần mềm IO giới thiệu một kiến trúc blockchain mới được thiết kế để cho phép các ứng dụng phi tập trung mở rộng theo chiều dọc và chiều ngang. Điều này đạt được bằng cách tạo ra một hệ điều hành giống như ứng dụng có thể được xây dựng. Phần mềm cung cấp các tài khoản, xác thực, cơ sở dữ liệu, liên lạc không đồng bộ và lịch trình của các ứng dụng trên hàng trăm các lõi CPU hoặc cụm clusters. Công nghệ kết quả là một kiến trúc blockchain mở rộng quy mô cho hàng triệu giao dịch mỗi giây, giúp loại bỏ chi phí người dùng, và cho phép cho việc triển khai nhanh chóng và dễ dàng các ứng dụng không tập trung-decentralized.
+**Tóm tắt:** EOS. Phần mềm IO giới thiệu một kiến trúc blockchain mới được thiết kế để cho phép các ứng dụng phi tập trung mở rộng theo chiều dọc và chiều ngang. Điều này đạt được bằng cách tạo ra một hệ điều hành mà ứng dụng có thể được xây dựng trên đó. Phần mềm cung cấp các tài khoản, xác thực, cơ sở dữ liệu, liên lạc không đồng bộ và lịch trình của các ứng dụng trên hàng trăm các lõi CPU hoặc cụm nhỏ. Kết quả của công nghệ này là một kiến trúc blockchain mở rộng quy mô lên đến hàng triệu giao dịch mỗi giây, giúp loại bỏ chi phí người dùng, và cho phép cho việc triển khai nhanh chóng và dễ dàng các ứng dụng không tập trung.
 
-**XIN LƯU Ý: Tốt Kinh MÃ HÓA ĐỀ CẬP TRONG GIẤY TRẮNG NÀY THAM KHẢO Tốt Kinh MÃ HÓA TRÊN MỘT CHUỖI KHỐI ĐƯỢC VẬN HÀNH BLOCKCHAIN THÔNG QUA PHẦN MỀM EOS.IO. NÓ KHÔNG HỀ CHỈ ĐẾN CÁC TỐT KINH KIỂU ERC-20, ĐƯỢC PHÂN PHỐI TRÊN BLOCKCHAIN CỦA NỀN TẢNG ETHEREUM LIÊN QUAN ĐẾN VIỆC PHÂN PHỐI TỐT KINH EOS.**
+**XIN LƯU Ý: TOKEN MÃ HÓA ĐỀ CẬP TRONG GIẤY TRẮNG NÀY LÀ TOKEN GỐC CỦA BLOCKCHAIN PHÁT TRIỂN TRÊN PHẦN MỀM EOS. NÓ KHÔNG HỀ CHỈ ĐẾN CÁC TOKEN ERC-20 CỦA ETHEREUM LIÊN QUAN ĐẾN VIỆC PHÂN PHỐI TOKEN EOS.**
 
 Bản quyền © block.one năm 2017
 
