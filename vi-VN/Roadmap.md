@@ -1,12 +1,12 @@
 ## Lộ trình phát triển phần mềm EOS. IO
 
-Tài liệu này vạch ra kế hoạch phát triển mức độ cao và sẽ được cập nhật như là tiến trình được thực hiện đối với phiên bản 1.0. Cần lưu ý rằng lộ trình này áp dụng với blockchain và không dành cho các công cụ và tiện ích như ví và xem xét tìm kiếm các chuỗi khối, chúng sẽ có đội phát triển riêng khi giai đoạn 1 đã hoàn tất.
+Tài liệu này vạch ra kế hoạch phát triển ở mức độ cao và sẽ được cập nhật trong quá trình phát triển phiên bản 1.0. Cần lưu ý rằng lộ trình này chỉ áp dụng cho phần mềm blockchain và không liên quan đến các khía cạnh khác như ví hay block explorer, chúng tôi sẽ có đội phát triển riêng khi giai đoạn 1 đã hoàn tất.
 
-***Tất cả mọi thứ trong tài liệu này ở dạng dự thảo và có thể thay đổi bất cứ lúc nào và chỉ cung cấp cho mục đích thông tin về Eos. block.One không đảm bảo tính chính xác của thông tin trong lộ trình này và các thông tin được cung cấp không có đại diện chiệu trách nhiệm hoặc bảo đảm, rõ ràng.***
+***Tất cả mọi thứ trong tài liệu này ở dạng dự thảo và có thể thay đổi bất cứ lúc nào và chỉ cung cấp cho mục đích thông tin về Eos. block.one không đảm bảo tính chính xác của thông tin trong lộ trình phát triển này và các thông tin được cung cấp không có người đại diện đảm bảo về thông tin đó.***
 
-# Giai đoạn 1 - môi trường thử nghiệm tối thiểu khả thi - Trong mùa hè năm 2017
+# Giai đoạn 1 - Môi trường thử nghiệm tối thiểu khả thi - Trong mùa hè năm 2017
 
-Mục tiêu của giai đoạn này là để thiết lập các API dành cho nhà phát triển, họ sẽ yêu cầu để xây dựng và thử nghiệm các ứng dụng trên nền tảng EOS. Để cho các nhà phát triển để bắt đầu thử nghiệm các ứng dụng của họ, sẽ có các yêu cầu sau đây được thực hiện:
+Mục tiêu của giai đoạn này là để thiết lập các API mà nhà phát triển (dev) yêu cầu để xây dựng và thử nghiệm các ứng dụng trên nền tảng EOS.IO. Để cho các nhà phát triển để bắt đầu thử nghiệm các ứng dụng của họ, sẽ có các yêu cầu sau đây được thực hiện:
 
 ### Nút chạy riêng lẻ (Dan &Nathan)
 
