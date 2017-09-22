@@ -1,4 +1,4 @@
-## Lộ trình phần mềm EOS. IO
+## Lộ trình phát triển phần mềm EOS. IO
 
 Tài liệu này vạch ra kế hoạch phát triển mức độ cao và sẽ được cập nhật như là tiến trình được thực hiện đối với phiên bản 1.0. Cần lưu ý rằng lộ trình này áp dụng với blockchain và không dành cho các công cụ và tiện ích như ví và xem xét tìm kiếm các chuỗi khối, chúng sẽ có đội phát triển riêng khi giai đoạn 1 đã hoàn tất.
 
