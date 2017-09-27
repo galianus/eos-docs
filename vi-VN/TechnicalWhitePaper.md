@@ -47,27 +47,27 @@ Bất kì ai cũng có thể dùng, chỉnh sửa, phát hành tất cả các n
   - [Tách phí giao dịch từ giá trị token](#separating-transaction-costs-from-token-value)
   - [Giá lưu trữ thông tin](#state-storage-costs)
   - [Phần thưởng khối](#block-rewards)
-  - [Community Benefit Applications](#community-benefit-applications)
-- [Governance](#governance) 
-  - [Freezing Accounts](#freezing-accounts)
-  - [Changing Account Code](#changing-account-code)
-  - [Constitution](#constitution)
-  - [Upgrading the Protocol & Constitution](#upgrading-the-protocol--constitution) 
-    - [Emergency Changes](#emergency-changes)
-- [Scripts & Virtual Machines](#scripts--virtual-machines) 
-  - [Schema Defined Messages](#schema-defined-messages)
-  - [Schema Defined Database](#schema-defined-database)
-  - [Separating Authentication from Application](#separating-authentication-from-application)
-  - [Virtual Machine Independent Architecture](#virtual-machine-independent-architecture) 
+  - [Các ứng dụng lợi ích cộng đồng](#community-benefit-applications)
+- [Quản trị](#governance) 
+  - [Đóng băng tài khoản](#freezing-accounts)
+  - [Thay đổi mã tài khoản](#changing-account-code)
+  - [Hiến pháp](#constitution)
+  - [Nâng cấp giao thức & Hiến pháp](#upgrading-the-protocol--constitution) 
+    - [Thay đổi khẩn cấp](#emergency-changes)
+- [Lập trình scripts & Máy ảo](#scripts--virtual-machines) 
+  - [Lược đồ xác định thông báo](#schema-defined-messages)
+  - [Lược đồ xác định cơ sở dữ liệu](#schema-defined-database)
+  - [Xác thực riêng lẽ từ ứng dụng](#separating-authentication-from-application)
+  - [Kiến trúc máy ảo độc lập](#virtual-machine-independent-architecture) 
     - [Web Assembly (WASM)](#web-assembly-wasm)
-    - [Ethereum Virtual Machine (EVM)](#ethereum-virtual-machine-evm)
-- [Inter Blockchain Communication](#inter-blockchain-communication) 
-  - [Merkle Proofs for Light Client Validation (LCV)](#merkle-proofs-for-light-client-validation-lcv)
-  - [Latency of Interchain Communication](#latency-of-interchain-communication)
-  - [Proof of Completeness](#proof-of-completeness)
-- [Conclusion](#conclusion)
+    - [Máy ảo Ethereum (EVM)](#ethereum-virtual-machine-evm)
+- [Giao tiếp xuyên blockchain](#inter-blockchain-communication) 
+  - [Chứng minh Merkle cho việc xác thực Light Client (LCV)](#merkle-proofs-for-light-client-validation-lcv)
+  - [Độ trễ của giao tiếp xuyên blockchain](#latency-of-interchain-communication)
+  - [Chứng minh hoàn chỉnh](#proof-of-completeness)
+- [Kết luận](#conclusion)
 
-# Background
+# Bối cảnh
 
 Blockchain technology was introduced in 2008 with the launch of the bitcoin currency, and since then entrepreneurs and developers have been attempting to generalize the technology in order to support a wider range of applications on a single blockchain platform.
 
@@ -105,13 +105,13 @@ There are some applications that just cannot be implemented with parallel algori
 
 Large scale applications need to divide the workload across multiple CPUs and computers.
 
-# Consensus Algorithm (DPOS)
+# Thuật toán đồng thuận (DPOS)
 
-EOS.IO software utilizes the only decentralized consensus algorithm capable of meeting the performance requirements of applications on the blockchain, [Delegated Proof of Stake (DPOS)](https://steemit.com/dpos/@dantheman/dpos-consensus-algorithm-this-missing-white-paper). Under this algorithm, those who hold tokens on a blockchain adopting the EOS.IO software may select block producers through a continuous approval voting system and anyone may choose to participate in block production and will be given an opportunity to produce blocks proportional to the total votes they have received relative to all other producers. For private blockchains the management could use the tokens to add and remove IT staff.
+EOS.IO dùng một thuật toán duy nhất có khả năng cung cấp đủ sức mạnh cho ứng dụng trên blockchain, [Delegated Proof of Stake (DPOS)](https://steemit.com/dpos/@dantheman/dpos-consensus-algorithm-this-missing-white-paper). Theo thuật toán này, những người giữ token trên blockchain sử dụng phần mềm EOS.IO có thể chọn một người tạo block thông qua hệ thống bỏ phiếu liên tục và bất kì ai cũng có thể được chọn để tham gia vào quá trình tạo block và sẽ có cơ hội tạo block tỉ lệ thuận với số lượng phiếu bầu nhận được tương đối với những người tạo khối khác. Trên blockchain cá nhân, người quản lý có thể sử dụng token để thêm hay loại bỏ nhân viên IT.
 
-The EOS.IO software enables blocks to be produced exactly every 3 seconds and exactly one producer is authorized to produce a block at any given point in time. If the block is not produced at the scheduled time then the block for that time slot is skipped. When one or more blocks are skipped, there is a 6 or more second gap in the blockchain.
+Phần mềm EOS>IO cho phép block được tạo mỗi 3 giây một lần và chỉ duy nhất một người được phép tạo block ở một thời điểm nhất định. Nếu block không được tạo theo đúng lịch trình thì block đó được bỏ qua. Khi một hay nhiều block bị bỏ qua, có 6 hay nhiều hơn lỗ hổng trong blockchain (???).
 
-Using the EOS.IO software blocks are produced in rounds of 21. At the start of each round 21 unique block producers are chosen. The top 20 by total approval are automatically chosen every round and the last producer is chosen proportional to their number of votes relative to other producers. The selected producers are shuffled using a pseudorandom number derived from the block time. This shuffling is done to ensure that all producers maintain balanced connectivity to all other producers.
+Sử dụng phần mềm EOS.IO, 21 blocks được tạo ra trong mỗi chu kì và cứ thế quay vòng. Lúc bắt đầu mỗi chu kì, 21 người sẽ được chọn để tham gia vào việc tạo block. 20 người có lượt bầu chọn cao nhất sẽ được tự động chọn trong mỗi chu kỳ và người cuối cùng được chọn theo tỉ lệ phiếu bầu. Những người được chọn bị xáo trộn sử dụng một số ngẫu nhiên từ thời gian của block. Việc xáo trộn này để đảm bảo tính kết nối cân bằng đến tất cả những người tạo khối khác.
 
 If a producer misses a block and has not produced any block within the last 24 hours they are removed from consideration until they notify the blockchain of their intention to start producing blocks again. This ensures the network operates smoothly by minimizing the number of blocks missed by not scheduling those who are proven to be unreliable.
 
