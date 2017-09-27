@@ -140,9 +140,9 @@ Over time all users end up directly confirming the blockchain which makes it dif
 
 Phần mềm EOS.IO cho phép tạo tài khoản bằng chữ cái có thể đọc được với độ dài từ 2 đến 32 kí tự. Tên được chọn bởi người tạo tài khoản. Tất cả tài khoản phải có số dư tối thiểu lúc được tạo để trang trải chi phí cho việc lưu giữ thông tin trên blockchain. Tên tài khoản cũng hỗ trợ tên miền phụ. Ví dụ bạn sở hữu tài khoản @domain thì bạn là người duy nhất có thể tạo được tài khoản @user.domain.
 
-In a decentralized context, application developers will pay the nominal cost of account creation to sign up a new user. Traditional businesses already spend significant sums of money per customer they acquire in the form of advertising, free services, etc. The cost of funding a new blockchain account should be insignificant in comparison. Fortunately, there is no need to create accounts for users already signed up by another application.
+Nhà phát triển ứng dụng không tập trung phải trả một mức tối thiểu nào đó cho việc tạo người dùng mới. Dịch vụ truyền thống phải trả một lượng tiền rất lớn cho mỗi khách hàng đăng kí. Chi phí cho việc tạo một tài khoản mới trên blockchain không đáng kể khi so sánh với các dịch vụ truyền thống đó. Người dùng nếu đã tạo tài khoản cho một ứng dụng thì không cần phải đăng kí lại khi sử dụng các ứng dụng khác trên blockchain.
 
-## Messages & Handlers
+## Tín hiệu & Xử lý
 
 Each account can send structured messages to other accounts and may define scripts to handle messages when they are received. The EOS.IO software gives each account its own private database which can only be accessed by its own message handlers. Message handling scripts can also send messages to other accounts. The combination of messages and automated message handlers is how EOS.IO defines smart contracts.
 
