@@ -44,11 +44,11 @@ Todo en la Fase 1, presupone trabajar sobre un entorno de confianza en el que so
 
 Este es un complemento que se encarga de sincronizar el estado de la cadena de bloques entre nodos autónomos.
 
-### WASM Sanitation & CPU Sandboxing (Brian)
+### Buen estado de salud del código WASM empleado & Aislamiento de procesos (Brian)
 
-The WASM code needs to be sanitized to check for non-deterministic behavior such as floating point operations and infinite loops.
+El código WASM debe ser desparasitado, analizando posibles comportamientos no deterministas, como operaciones de punto flotante y bucles infinitos.
 
-### Resource Usage Tracking & Rate Limiting (Arhag)
+### Seguimiento del Uso de Recursos & Límitación mediante tarificación (Arhag)
 
 To prevent abuse the resource monitoring and usage tracking rate limits users according to staked EOS.
 
