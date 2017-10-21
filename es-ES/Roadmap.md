@@ -10,17 +10,17 @@ El objetivo de esta fase es establecer las API que los desarrolladores requerir�
 
 ### Nodo autónomo (Dan & Nathan)
 
-A standalone node operates a test blockchain and produces blocks while exposing an API. This node does not need to concern itself with any P2P networking code.
+Un nodo autónomo opera una cadena de bloques de prueba y produce bloques exponiendo una API. Este nodo no necesita utilizar código de red P2P.
 
-### Native Contracts (Nathan)
+### Contratos nativos (Nathan)
 
-The EOS.IO software has a number of native contracts. These are contracts that manage the core operations of the blockchain and exist outside the Web Assembly interface. These contracts include:
+El software EOS.IO cuenta con varios contratos nativos. Estos son contratos que administran las operaciones centrales de la blockchain y son ajenos a la interfaz Web Assembly. Estos contratos incluyen:
 
-1. @eos - manages EOS token transfers
-2. @stake - manages locked EOS, voting, and Producer Election
-3. @system - manages permissions, messages, and contact code updates
+1. @eos: gestiona las transferencias de tokens de EOS
+2. @stake - gestiona el Bloqueo de los Tokens de EOS, las Votaciones y la Elección del Productor
+3. @system: gestiona permisos, mensajes y las actualizaciones de los códigos de contacto
 
-### Virtual Machine API (Dan)
+### API de la Máquina Virtual (Dan)
 
 Contracts are compiled to WebAssembly (WASM) and WASM must interface with the blockchain via a defined API. This API is what developers depend upon to build applications and be relatively stable before developers can really start to build on EOS.
 
