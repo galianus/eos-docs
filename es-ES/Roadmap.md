@@ -26,13 +26,13 @@ Los contratos compilados son convertidos a WebAssembly (WASM) y el código WASM 
 
 ### Interface RPC (Arhag, Nathan)
 
-A simple JSON RPC over HTTP interface will be provided that enables developers to broadcast transactions and query application state. This is critical for both publishing and interacting with test applications.
+Se proporcionará una interfaz JSON RPC simple sobre HTTP que permitirá a los desarrolladores difundir transacciones y consultar los estados de las aplicaciones. Esto es crítico tanto para publicar como para interactuar con aplicaciones de prueba.
 
-### Command line Tools (Arhag)
+### Herramientas de línea de comando (Arhag)
 
-Command line tools facilitate integrating the RPC interface with developer build environments.
+Las herramientas de línea de comando facilitan la integración de la interfaz RPC con los entornos de construcción de los desarrolladores.
 
-### Basic Developer Documentation (Josh)
+### Documentación básica del Desarrollador (Josh)
 
 Documents that teach developers how to get started with building on EOS.IO blockchains. This includes documentations of the WASM API, RPC Interface, and Command Line Tools.
 
