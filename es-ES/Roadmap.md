@@ -34,15 +34,15 @@ Las herramientas de línea de comando facilitan la integración de la interfaz R
 
 ### Documentación básica del Desarrollador (Josh)
 
-Documents that teach developers how to get started with building on EOS.IO blockchains. This includes documentations of the WASM API, RPC Interface, and Command Line Tools.
+Documentos que enseñen a los desarrolladores cómo comenzar a construir para las blockchains de EOS.IO. Esto incluye documentación del API de WASM, de la interfaz RPC y de las Herramientas de Línea de Comandos.
 
-# Phase 2 - Minimal Viable Test Network - Fall 2017
+# Fase 2 - Red de Prueba Mínima Viable - Otoño de 2017
 
-Everything in Phase 1 assumes a trusted environment that only runs the developer's own code. Before a test network can be deployed several additional features need to be implemented and tested.
+Todo en la Fase 1, presupone trabajar sobre un entorno de confianza en el que solo se ejecuta código de desarrolladores. Antes de implementar una red de pruebas, es necesario implementar y probar varias características adicionales.
 
-### P2P Network Code (Phil)
+### Código para gestión de Red P2P (Phil)
 
-This is a plugin that is responsible for synchronizing the blockchain state between two standalone nodes.
+Este es un complemento que se encarga de sincronizar el estado de la cadena de bloques entre nodos autónomos.
 
 ### WASM Sanitation & CPU Sandboxing (Brian)
 
