@@ -6,7 +6,7 @@ Este documento describe el plan de desarrollo a alto nivel y se irá actualizand
 
 # Fase 1 - Entorno de Pruebas Mínimo Viable - Verano del 2017
 
-El objetivo de esta fase es establecer las API que los desarrolladores requerirán para comenzar a construir y probar aplicaciones en EOS.IO. Para que los desarrolladores comiencen a probar sus aplicaciones requerirán que se implemente lo siguiente:
+El objetivo de esta fase es establecer las API que los desarrolladores necesitarán para comenzar a construir y probar aplicaciones en EOS.IO. Para que los desarrolladores comiencen a probar sus aplicaciones requerirán que se implemente lo siguiente:
 
 ### Nodo autónomo (Dan & Nathan)
 
@@ -22,9 +22,9 @@ El software EOS.IO cuenta con varios contratos nativos. Estos son contratos que 
 
 ### API de la Máquina Virtual (Dan)
 
-Contracts are compiled to WebAssembly (WASM) and WASM must interface with the blockchain via a defined API. This API is what developers depend upon to build applications and be relatively stable before developers can really start to build on EOS.
+Los contratos compilados son convertidos a WebAssembly (WASM) y el código WASM interactúa con la blockchain a través de una API definida. Este API, es del que los desarrolladores dependen para crear aplicaciones y será relativamente estable antes de que los desarrolladores realmente puedan comenzar a construir en EOS.
 
-### RPC Interface (Arhag, Nathan)
+### Interface RPC (Arhag, Nathan)
 
 A simple JSON RPC over HTTP interface will be provided that enables developers to broadcast transactions and query application state. This is critical for both publishing and interacting with test applications.
 
