@@ -1,8 +1,8 @@
 ## Hoja de ruta de EOS.IO
 
-This document outlines the development plan from a high level and will be updated as progress is made toward version 1.0. It should be noted that this roadmap applies only to the blockchain software and not to the other tools and utilities such as wallets and block explorers which will have their own teams and dedicated roadmaps once Phase 1 is complete.
+Este documento describe el plan de desarrollo a alto nivel y se irá actualizando a medida que se vaya avanzando hacia la versión 1.0. Cabe señalar que esta hoja de ruta se aplica solo al componente Blockchain del software y no a las otras herramientas y utilidades, como wallets y exploradores de bloques, que tendrán sus propios equipos de desarrollo y hojas de ruta dedicados, una vez que se complete la Fase 1.
 
-***Everything contained in this document is in draft form and subject to change at any time and provided for information purposes only. block.one does not guarantee the accuracy of the information contained in this roadmap and the information is provided “as is” with no representations or warranties, express or implied.***
+***Todo lo que se incluye en este documento está en forma de borrador, está sujeto a cambios en cualquier momento y se proporciona únicamente con fines informativos. block.one does not guarantee the accuracy of the information contained in this roadmap and the information is provided “as is” with no representations or warranties, express or implied.***
 
 # Phase 1 - Minimal Viable Testing Environment - Summer 2017
 
