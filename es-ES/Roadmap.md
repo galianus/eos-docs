@@ -50,9 +50,9 @@ El código WASM debe ser desparasitado, analizando posibles comportamientos no d
 
 ### Seguimiento del Uso de Recursos & Límitación mediante tarificación (Arhag)
 
-To prevent abuse the resource monitoring and usage tracking rate limits users according to staked EOS.
+Para evitar el abuso, a través de la monitorización de recursos y el seguimiento de su uso, se controlan los limites a los usuarios, en base a su grado de participación en EOS.
 
-### Genesis Import Testing (DappHub)
+### Importación de Génesis de Pruebas (DappHub)
 
 Tools need to be developed to export data from the EOS Token Distribution state and create a genesis configuration file. This will enable anyone participating in the Token Distribution to acquire some initial test EOS (TEOS).
 
