@@ -2,13 +2,13 @@
 
 Este documento describe el plan de desarrollo a alto nivel y se irá actualizando a medida que se vaya avanzando hacia la versión 1.0. Cabe señalar que esta hoja de ruta se aplica solo al componente Blockchain del software y no a las otras herramientas y utilidades, como wallets y exploradores de bloques, que tendrán sus propios equipos de desarrollo y hojas de ruta dedicados, una vez que se complete la Fase 1.
 
-***Todo lo que se incluye en este documento está en forma de borrador, está sujeto a cambios en cualquier momento y se proporciona únicamente con fines informativos. block.one does not guarantee the accuracy of the information contained in this roadmap and the information is provided “as is” with no representations or warranties, express or implied.***
+***Todo lo que se incluye en este documento está en forma de borrador, está sujeto a cambios en cualquier momento y se proporciona únicamente con fines informativos. Block.one no garantiza la exactitud de la información contenida en esta hoja de ruta y la información se proporciona "tal cual" sin representaciones ni garantías, expresas o implícitas.***
 
-# Phase 1 - Minimal Viable Testing Environment - Summer 2017
+# Fase 1 - Entorno de Pruebas Mínimo Viable - Verano del 2017
 
-The goal of this phase is to establish the APIs that developers will require to start building and testing applications on EOS.IO. In order for developers to start testing their applications they will require the following to be implemented:
+El objetivo de esta fase es establecer las API que los desarrolladores requerirán para comenzar a construir y probar aplicaciones en EOS.IO. Para que los desarrolladores comiencen a probar sus aplicaciones requerirán que se implemente lo siguiente:
 
-### Standalone Node (Dan & Nathan)
+### Nodo autónomo (Dan & Nathan)
 
 A standalone node operates a test blockchain and produces blocks while exposing an API. This node does not need to concern itself with any P2P networking code.
 
