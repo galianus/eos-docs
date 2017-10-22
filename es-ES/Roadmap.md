@@ -78,8 +78,8 @@ Agregando soporte para lenguajes adicionales que puedan ser compilados a WASM: C
 
 ### Documentación & Tutoriales
 
-# Phase 4 - Parallel Optimization Summer / Fall 2018
+# Fase 4: Optimización de Ejecución en Paralelo - Verano / Otoño de 2018
 
-After getting a stable 1.0 product released, we will move toward optimizing the code for parallel execution.
+Tras lanzar un producto 1.0 estable, avanzaremos hacia la optimización del código para la ejecución en paralelo.
 
-# Phase 5 - Cluster Implementation The Future
+# Fase 5 - Implementación de Clúster. El futuro
