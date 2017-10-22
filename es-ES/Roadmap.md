@@ -48,15 +48,15 @@ Este es un complemento que se encarga de sincronizar el estado de la cadena de b
 
 El código WASM debe ser desparasitado, analizando posibles comportamientos no deterministas, como operaciones de punto flotante y bucles infinitos.
 
-### Seguimiento del Uso de Recursos & Límitación mediante tarificación (Arhag)
+### Seguimiento del Uso de Recursos & Límitación mediante Tarificación (Arhag)
 
 Para evitar el abuso, a través de la monitorización de recursos y el seguimiento de su uso, se controlan los limites a los usuarios, en base a su grado de participación en EOS.
 
-### Importación de Génesis de Pruebas (DappHub)
+### Importación de Génesis para Pruebas (DappHub)
 
-Tools need to be developed to export data from the EOS Token Distribution state and create a genesis configuration file. This will enable anyone participating in the Token Distribution to acquire some initial test EOS (TEOS).
+Deberán ser desarrolladas las herramientas, para exportar los datos del estado de Distribución de Tokens de EOS y crear así un archivo Génesis de configuración. Esto permitirá que cualquiera que participe en la Distribución de Tokens, pueda adquirir algún Token inicial para Pruebas EOS (TEOS).
 
-### Interblockchain Communication (Nathan)
+### Comunicación Interblockchain (Nathan)
 
 This feature involves verifying the Merkle hashing of transactions is proper.
 
