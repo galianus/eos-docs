@@ -64,11 +64,11 @@ Esta funcionalidad verifica el hasheado Merkle de las transacciones.
 
 Durante esta fase, la plataforma se someterá a pruebas intensivas enfocadas a encontrar problemas de seguridad y errores. Al final de la fase 3, la versión 1.0 quedará etiquetada.
 
-### Develop Example Applications
+### Desarrollo de Aplicaciones de Ejemplo
 
-Example applications are critical to proving the platform provides the features required by real developers.
+Las aplicaciones de ejemplo son fundamentales para probar que la plataforma proporciona las características requeridas por desarrolladores reales.
 
-### Bounties for Successfully Attacking Network
+### Recompensas a Ataques con Éxito en la Red de Pruebas
 
 Attacking the network with spam, virtual machine exploits, and bug crashes, and non-deterministic behavior will be a heavily involved process but necessary to ensure that version 1.0 is stable.
 
