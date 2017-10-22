@@ -2,9 +2,9 @@
 
 **26 de Junio de 2017**
 
-**Resumen:** El software EOS.IO presenta una nueva arquitectura Blockchain diseñada para facilitar la escalabilidad vertical y horizontal de aplicaciones descentralizadas. Esto se logra creando una construcción similar a un sistema operativo, sobre la cual se puedan construir aplicaciones. El software proporciona cuentas, autenticación, bases de datos, comunicación asíncrona y la ejecución programada de aplicaciones en cientos de núcleos CPU o clústeres. The resulting technology is a blockchain architecture that scales to millions of transactions per second, eliminates user fees, and allows for quick and easy deployment of decentralized applications.
+**Resumen:** El software EOS.IO presenta una nueva arquitectura Blockchain diseñada para facilitar la escalabilidad vertical y horizontal de aplicaciones descentralizadas. Esto se logra creando una construcción similar a un sistema operativo, sobre la cual se puedan construir aplicaciones. El software proporciona cuentas, autenticación, bases de datos, comunicación asíncrona y la ejecución programada de aplicaciones en cientos de núcleos CPU o clústeres. La tecnología resultante es una arquitectura blockchain que se adapta convenientemente a millones de transacciones por segundo, elimina las tarifas de los usuarios y permite el despliegue rápido y sencillo de aplicaciones descentralizadas.
 
-**PLEASE NOTE: CRYPTOGRAPHIC TOKENS REFERRED TO IN THIS WHITE PAPER REFER TO CRYPTOGRAPHIC TOKENS ON A LAUNCHED BLOCKCHAIN THAT ADOPTS THE EOS.IO SOFTWARE. THEY DO NOT REFER TO THE ERC-20 COMPATIBLE TOKENS BEING DISTRIBUTED ON THE ETHEREUM BLOCKCHAIN IN CONNECTION WITH THE EOS TOKEN DISTRIBUTION.**
+**ATENCIÓN: TENGA EN CUENTA QUE LOS TOKENS CRIPTOGRÁFICOS MENCIONADOS EN ESTE WHITE PAPER SE REFIEREN A LOS TOKENS CRIPTOGRÁFICOS EN UNA BLOCKCHAIN LANZADA QUE ADOPTA EL SOFTWARE EOS.IO. NO SE REFIEREN A LOS TOKENS COMPATIBLES ERC-20 DISTRIBUIDOS EN LA BLOCKCHAIN DE ETHEREUM EN CONEXIÓN CON LA DISTRIBUCIÓN DE TOKEN EOS.**
 
 Copyright © 2017 block.one
 
