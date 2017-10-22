@@ -58,11 +58,11 @@ Deberán ser desarrolladas las herramientas, para exportar los datos del estado 
 
 ### Comunicación Interblockchain (Nathan)
 
-This feature involves verifying the Merkle hashing of transactions is proper.
+Esta funcionalidad verifica el hasheado Merkle de las transacciones.
 
-# Phase 3 - Testing & Security Audits - Winter 2017, Spring 2018
+# Fase 3 - Pruebas & Auditorías de Seguridad - Invierno de 2017, Primavera de 2018
 
-During this phase the platform will undergo heavy testing with a focus on finding security issues and bug. At the end of Phase 3 version 1.0 will be tagged.
+Durante esta fase, la plataforma se someterá a pruebas intensivas enfocadas a encontrar problemas de seguridad y errores. Al final de la fase 3, la versión 1.0 quedará etiquetada.
 
 ### Develop Example Applications
 
