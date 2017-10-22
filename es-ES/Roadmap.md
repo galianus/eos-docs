@@ -70,13 +70,13 @@ Las aplicaciones de ejemplo son fundamentales para probar que la plataforma prop
 
 ### Recompensas a Ataques con Éxito en la Red de Pruebas
 
-Attacking the network with spam, virtual machine exploits, and bug crashes, and non-deterministic behavior will be a heavily involved process but necessary to ensure that version 1.0 is stable.
+Atacar la red con spam, exploits (explotación malintencionada) de las máquinas virtuales, bugs responsables de graves interrupciones del sistema (crashes), y comportamientos no deterministas, será un proceso muy complicado pero necesario en pro de garantizar la estabilidad de la versión 1.0.
 
-### Language Support
+### Soporte de Lenguajes
 
-Adding support for additional languages to be compiled to WASM: C++, Rust, etc.
+Agregando soporte para lenguajes adicionales que puedan ser compilados a WASM: C++, Rust, etc.
 
-### Documentation & Tutorials
+### Documentación & Tutoriales
 
 # Phase 4 - Parallel Optimization Summer / Fall 2018
 
