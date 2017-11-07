@@ -83,9 +83,9 @@ Para obtener un uso generalizado, las aplicaciones Blockchain requieren una plat
 
 Reemplazar por completo negocios como Ebay, Uber, AirBnB y Facebook requiere de una tecnología Blockchain capaz de manejar decenas de millones de usuarios activos diariamente. En ciertos casos, las aplicaciones pueden no funcionar a menos que se alcance una masa crítica de usuarios y, por lo tanto, una plataforma que pueda manejar una cantidad masiva de usuarios es primordial.
 
-## Free Usage
+## Uso gratuito
 
-Application developers need the flexibility to offer users free services; users should not have to pay in order to use the platform or benefit from its services. A blockchain platform that is free to use for users will likely gain more widespread adoption. Developers and businesses can then create effective monetization strategies.
+Los desarrolladores de aplicaciones necesitan la suficiente flexibilidad para ofrecer a sus usuarios servicios gratuitos; los usuarios no deberían tener que pagar para usar la plataforma o beneficiarse de sus servicios. Una plataforma Blockchain que sea de uso gratuito para los usuarios es muy probable que obtenga una adopción más generalizada. En tales condiciones, desarrolladores y empresas pueden crear estrategias efectivas de monetización.
 
 ## Easy Upgrades and Bug Recovery
 
