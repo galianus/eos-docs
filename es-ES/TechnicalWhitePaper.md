@@ -73,15 +73,15 @@ La tecnología Blockchain se introdujo en 2008 con el lanzamiento de la moneda b
 
 Mientras que varias plataformas blockchain han tenido dificultades para soportar aplicaciones funcionales descentralizadas, aplicaciones de blockchains específicas como el Exchange descentralizado BitShares (2014) y la plataforma de red social Steem (2016) se han convertido en blockchains muy utilizados con decenas de miles de usuarios activos diarios. Lo han logrado aumentando el rendimiento a miles de transacciones por segundo, reduciendo la latencia a 1,5 segundos, eliminando las tarifas y ofreciendo a los usuarios una experiencia similar a la que ofrecen actualmente los servicios centralizados.
 
-Existing blockchain platforms are burdened by large fees and limited computational capacity that prevent widespread blockchain adoption.
+Las plataformas blockchain existentes están soportadas por grandes tarifas y sus capacidades computacionales son limitadas lo que impide la adopción generalizada de dichas tecnologías.
 
-# Requirements for Blockchain Applications
+# Requerimientos para las Aplicaciones Blockchain
 
-In order to gain widespread use, applications on the blockchain require a platform that is flexible enough to meet the following requirements:
+Para obtener un uso generalizado, las aplicaciones Blockchain requieren una plataforma lo suficientemente flexible como para cumplir con los siguientes requisitos:
 
-## Support Millions of Users
+## Soporte para Millones de Usuarios
 
-Disrupting businesses such as Ebay, Uber, AirBnB, and Facebook, require blockchain technology capable of handling tens of millions of active daily users. In certain cases, applications may not work unless a critical mass of users is reached and therefore a platform that can handle mass number of users is paramount.
+Reemplazar por completo negocios como Ebay, Uber, AirBnB y Facebook requiere de una tecnología Blockchain capaz de manejar decenas de millones de usuarios activos diariamente. En ciertos casos, las aplicaciones pueden no funcionar a menos que se alcance una masa crítica de usuarios y, por lo tanto, una plataforma que pueda manejar una cantidad masiva de usuarios es primordial.
 
 ## Free Usage
 
