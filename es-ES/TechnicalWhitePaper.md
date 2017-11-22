@@ -87,9 +87,9 @@ Reemplazar por completo negocios como Ebay, Uber, AirBnB y Facebook requiere de 
 
 Los desarrolladores de aplicaciones necesitan la suficiente flexibilidad para ofrecer a sus usuarios servicios gratuitos; los usuarios no deberían tener que pagar para usar la plataforma o beneficiarse de sus servicios. Una plataforma Blockchain que sea de uso gratuito para los usuarios es muy probable que obtenga una adopción más generalizada. En tales condiciones, desarrolladores y empresas pueden crear estrategias efectivas de monetización.
 
-## Easy Upgrades and Bug Recovery
+## Actualizaciones fáciles y recuperación de errores
 
-Businesses building blockchain based applications need the flexibility to enhance their applications with new features.
+Las empresas que crean aplicaciones basadas en blockchain necesitan la flexibilidad para mejorar sus aplicaciones con nuevas funciones.
 
 All non-trivial software is subject to bugs, even with the most rigorous of formal verification. The platform must be robust enough to fix bugs when they inevitably occur.
 
