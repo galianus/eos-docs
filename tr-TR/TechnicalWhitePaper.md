@@ -62,10 +62,10 @@ Herkes izin almaksızın, orijinal kaynak ve geçerli telif hakkı bilgisini bel
     - [Web Assembly (WASM)](#web-assembly-wasm)
     - [Ethereum Sanal Makinası (ESM)](#ethereum-virtual-machine-evm)
 - [Blok Zincirleri Arası İletişim](#inter-blockchain-communication) 
-  - [Merkle Proofs for Light Client Validation (LCV)](#merkle-proofs-for-light-client-validation-lcv)
-  - [Latency of Interchain Communication](#latency-of-interchain-communication)
-  - [Proof of Completeness](#proof-of-completeness)
-- [Conclusion](#conclusion)
+  - [Hafif İstemci Doğrulaması için Merkle Kanıtları (HİD)](#merkle-proofs-for-light-client-validation-lcv)
+  - [Zincirler Arası İletişim Gecikmesi](#latency-of-interchain-communication)
+  - [Tamlığın Kanıtı](#proof-of-completeness)
+- [Sonuç](#conclusion)
 
 # Geçmiş
 
