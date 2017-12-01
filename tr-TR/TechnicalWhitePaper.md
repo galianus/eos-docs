@@ -85,11 +85,11 @@ Ebay, Uber, AirBnB ve Facebook gibi karmaşık iş yürüten şirketler on milyo
 
 ## Ücretsiz Kullanım
 
-Uygulama geliştiricilerine, kullanıcılara ücretsiz hizmetler sunma esnekliği gerekir; kullanıcıları platformu kullanma veya hizmetlerinden yararlanmak için ödeme yapmamalı. A blockchain platform that is free to use for users will likely gain more widespread adoption. Developers and businesses can then create effective monetization strategies.
+Uygulama geliştiricilerine, kullanıcılara ücretsiz hizmetler sunma esnekliği gerekir; kullanıcıları platformu kullanma veya hizmetlerinden yararlanmak için ödeme yapmamalı. Bir blok zinciri platformu kullanıcılar için ücretsiz olduğunda, muhtemelen daha fazla benimsenecektir. Geliştiriciler ve işletmeler daha sonra etkin kazanç stratejileri oluşturabilir.
 
 ## Kolay Yükseltmeler ve Hata Kurtarma
 
-Businesses building blockchain based applications need the flexibility to enhance their applications with new features.
+Blok zinciri tabanlı uygulama üreten işletmeler yeni özellik geliştirmek için esnekliğe ihtiyaç duyar.
 
 All non-trivial software is subject to bugs, even with the most rigorous of formal verification. The platform must be robust enough to fix bugs when they inevitably occur.
 
