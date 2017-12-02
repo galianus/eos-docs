@@ -99,7 +99,7 @@ Açık olmayan yazılımlar, en titiz resmi doğrulamalarla bile hatalara açık
 
 ## Sıralı Performans
 
-There are some applications that just cannot be implemented with parallel algorithms due to sequentially dependent steps. Applications such as exchanges need enough sequential performance to handle high volumes and therefore a platform with fast sequential performance is required.
+Sıralı bağımlı adımlar nedeniyle paralel algoritmalar uygulanamayan bazı uygulamalar var. Borsa tarzı uygulamalar, yüksek hacimleri idare etmek için yeterli sıralı performansa ihtiyaç duyar ve bu nedenle hızlı sıralı performansa sahip bir platform gereklidir.
 
 ## Paralel Performans
 
