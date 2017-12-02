@@ -119,9 +119,9 @@ Normal şartlar altında bir DPOS blok zinciri, çatal üretmez çünkü blok ü
 
 ## Hareket Doğrulaması
 
-Typical DPOS blockchains have 100% block producer participation. A transaction can be considered confirmed with 99.9% certainty after an average of 1.5 seconds from time of broadcast.
+Tipik bir DPOS (Yetkili Menfaat Kanıtı) blok zinciri, blok üreticilerinin %100'üne sahiptir. Bir işlem, yayın zamanından 1.5 saniye sona, %99 kesinlikte doğrulanmış kabul edilebilir.
 
-There are some extraordinary cases where a software bug, Internet congestion, or a malicious block producer will create two or more forks. For absolute certainty that a transaction is irreversible, a node may choose to wait for confirmation by 15 out of the 21 block producers. Based on a typical configuration of the EOS.IO software, this will take an average of 45 seconds under normal circumstances. By default all nodes will consider a block confirmed by 15 of 21 producers irreversible and will not switch to a fork that excludes such a block regardless of length.
+Yazılım hatası, internet tıkanıklığı veya kötü niyetli bir blok üreticisinin iki veya daha fazla çatal oluşturacağı ekstra durumlar vardır. Geri dönüş işlemlerde mutlak kesinlik için, node (düğüm), 21 blok üreticinden 15'inden onay bekleyebilir. Based on a typical configuration of the EOS.IO software, this will take an average of 45 seconds under normal circumstances. By default all nodes will consider a block confirmed by 15 of 21 producers irreversible and will not switch to a fork that excludes such a block regardless of length.
 
 It is possible for a node to warn users that there is a high probability that they are on a minority fork within 9 seconds of the start of a fork. After 2 consecutive missed blocks there is a 95% probability a node is on a minority fork. With 3 consecutive missed blocks there is a 99% certainty of being on a minority fork. It is possible to generate a robust predictive model that will utilize information about which nodes missed, recent participation rates, and other factors to quickly warn operators that something is wrong.
 
