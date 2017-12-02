@@ -99,7 +99,7 @@ Açık olmayan yazılımlar, en titiz resmi doğrulamalarla bile hatalara açık
 
 ## Sıralı Performans
 
-Sıralı bağımlı adımlar nedeniyle paralel algoritmalar uygulanamayan bazı uygulamalar var. Borsa tarzı uygulamalar, yüksek hacimleri idare etmek için yeterli sıralı performansa ihtiyaç duyar ve bu nedenle hızlı sıralı performansa sahip bir platform gereklidir.
+Sıralı bağımlı adımlar nedeniyle paralel algoritmalar uygulanamayan bazı uygulamalar vardır. Borsa tarzı uygulamalar, yüksek hacimleri idare etmek için yeterli miktarda sıralı performansa ihtiyaç duyar ve bu nedenle sıralı performansa sahip bir hızlı platform gereklidir.
 
 ## Paralel Performans
 
