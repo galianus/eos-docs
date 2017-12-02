@@ -91,11 +91,11 @@ Uygulama geliştiricilerine, kullanıcılara ücretsiz hizmetler sunma esnekliğ
 
 Blok zinciri tabanlı uygulama üreten işletmeler yeni özellik geliştirmek için esnekliğe ihtiyaç duyar.
 
-All non-trivial software is subject to bugs, even with the most rigorous of formal verification. The platform must be robust enough to fix bugs when they inevitably occur.
+Açık olmayan yazılımlar, en titiz resmi doğrulamalarla bile hatalara açıktır. Platform, kaçınılmaz hatalar ortaya çıktığında esnek düzeltmeler için yeterinde sağlam olmalıdır.
 
-## Düşük Gecikme
+## Az Gecikme
 
-A good user experience demands reliable feedback with delay of no more than a few seconds. Longer delays frustrate users and make applications built on a blockchain less competitive with existing non-blockchain alternatives.
+İyi bir kullanıcı deneyimi, birkaç saniyeden fazla olmayan bir gecikmeyle güvenilir geri bildirim istemektedir. Daha uzun gecikmeler, kullanıcıları hayal kırıklığına uğratır ve uygulamaları, bir blok zinciri yapısında olmayan mevcut alternatiflerle daha rekabetçi hale getirir.
 
 ## Sıralı Performans
 
