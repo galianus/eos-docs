@@ -117,7 +117,7 @@ Eğer bir üretici, bir bloku kaçırmış ve son 24 saat içinde herhangi bir b
 
 Normal şartlar altında bir DPOS blok zinciri, çatal üretmez çünkü blok üreticileri rekabet etmek yerine işbirliği yapmak için birlikte çalışır. Bir çatal olduğunda, konsensüs, otomatik olarak en uzun zincire geçer. Bu metrik verimli çalışır. Çünkü, bir blok zincir çatalına blokların eklenme hızı, aynı uzlaşmayı paylaşan blok üreticilerinin yüzdesi ile doğrudan ilişkilidir. Başka bir deyişle üzerinde daha fazla üretici olan bir blok zinciri çatalı, daha az üreticisi olandan hızlı büyür. Ayıca, hiçbir blok üreticisi aynı anda iki çatal üzerinde blok üretmemelidir. Eğer bir blok üreticisi bunu yaparken yakalanırsa, büyük olasılıkla atılması için oylanır. Bu tür çift üretimin şifreleme kanıtı, istismar eden kişileri otomatik olarak atmak için de kullanılabilir.
 
-## Hareket Konfirmasyonu
+## Hareket Doğrulaması
 
 Typical DPOS blockchains have 100% block producer participation. A transaction can be considered confirmed with 99.9% certainty after an average of 1.5 seconds from time of broadcast.
 
