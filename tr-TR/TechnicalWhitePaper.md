@@ -125,7 +125,7 @@ Yazılım hatası, internet tıkanıklığı veya kötü niyetli bir blok üreti
 
 Bir çatalın başlangıcından 9 saniye sonra, nodu'un/düğümün yüksek ihtimalle bir azınlık çatalı üzerinde olduğunu kullanıcılara bildirmek mümkündür. Arka arkaya kaçırılan iki blok varsa, node/düğüm %95 ihtimalle bir azınlık çatalı üzerindedir. Arka arkaya kaçırılan 3 blok varsa, azınlık çatalı üzerinde olma kesinliği %99'dur. Hangi node'ların/düğümlerin kaçırdığı, son katılım oranları ve ya diğer sebepleri içeren kullanışlı bilgilerle operatörleri hızla uyaran, sağlam tahmin modelleri üretmek mümkündür.
 
-The response to such a warning depends entirely upon the nature of the business transactions, but the simplest response is to wait for 15/21 confirmations until the warning stops.
+Böyle bir uyarının karşılığı, tamamen yapılan ticari işlemin doğasına bağlıdır, fakat en basit karşılığı; uyarılar durana kadar 15/21 onayının beklenmesidir.
 
 ## Transaction as Proof of Stake (TaPoS)
 
