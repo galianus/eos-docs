@@ -129,9 +129,9 @@ Böyle bir uyarının karşılığı, tamamen yapılan ticari işlemin doğasın
 
 ## Transaction as Proof of Stake (TaPoS)
 
-The EOS.IO software requires every transaction to include the hash of a recent block header. This hash serves two purposes:
+EOS.IO yazılımı, her işlemin, son bloğun üstbilgisindeki hash'i içermesini gerekli kılar. Bu hash iki amaca hizmet eder:
 
-1. prevents a replay of a transaction on forks that do not include the referenced block; and
+1. referans bloğu içermeyen çatallarda bir işlemin tekrar edilmesini önler; ve
 2. signals the network that a particular user and their stake are on a specific fork.
 
 Over time all users end up directly confirming the blockchain which makes it difficult to forge counterfeit chains as the counterfeit would not be able to migrate transactions from the legitimate chain.
