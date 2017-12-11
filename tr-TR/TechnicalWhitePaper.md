@@ -162,7 +162,7 @@ EOS.IO yazılımı, hesaplara, hangi anahtarların ve/veya hesapların kombinasy
 
 Hesaplar, EOS.IO yazılımını kullanarak her biri üst düzey adlandırılmış izinlerden türetilebilen, adlandırılmış izin seviyeleri tanımlayabilir. Her adlandırılmış izin seviyesi bir yetkiyi tanımlar; bir yetki, anahtarların çoklu imza kontrolü ve/veya adlandırılmış izin seviyelerinden oluşur. Örneğin, bir hesaba ait "Arkadaş" izin seviyesi, hesabın arkadaşlarından herhangi biri tarafından eşit olarak kontrol edileceği şekilde ayarlanabilir.
 
-Another example is the Steem blockchain which has three hard-coded named permission levels: owner, active, and posting. The posting permission can only perform social actions such as voting and posting, while the active permission can do everything except change the owner. The owner permission is meant for cold storage and is able to do everything. The EOS.IO software generalizes this concept by allowing each account holder to define their own hierarchy as well as the grouping of actions.
+Başka bir örnek Steem'in blok zincirindeki, adlandırılmış üç sabit izin seviyesidir: sahip, aktif ve yayınlama. Yayınlama izni, sadece oylama ve gönderme gibi sosyal eylemleri gerçekleştirebilirken, aktif izin, sahibi değiştirme dışında her şeyi yapabilir. Sahiplik izni soğuk kayıt içindir ve her şeyi yapabilir. The EOS.IO software generalizes this concept by allowing each account holder to define their own hierarchy as well as the grouping of actions.
 
 ### Named Message Handler Groups
 
