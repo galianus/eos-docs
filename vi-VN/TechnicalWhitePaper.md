@@ -99,11 +99,11 @@ Trải nghiệp người dùng tốt yêu cầu phản hồi đáng tin cậy v�
 
 ## Thi Hành Tuần Tự
 
-There are some applications that just cannot be implemented with parallel algorithms due to sequentially dependent steps. Applications such as exchanges need enough sequential performance to handle high volumes and therefore a platform with fast sequential performance is required.
+Có nhiều ứng dụng đơn giản là không thể được thực thi với các giải thuật song song vì các bước phụ thuộc tuần tự vào nhau. Ứng dụng như là sàn giao dịch cần có đủ hiệu suất xử lý trình tự để giải quyết lượng lớn giao dịch và do đó, cần một nền tảng thao tác các phép tính tuần tự nhanh chóng.
 
-## Parallel Performance
+## Thi Hành Song Song
 
-Large scale applications need to divide the workload across multiple CPUs and computers.
+Các ứng dụng quy mô lớn cần phải chia lượng công việc ra nhiều CPU hoặc là máy tính.
 
 # Thuật toán đồng thuận (DPOS)
 
