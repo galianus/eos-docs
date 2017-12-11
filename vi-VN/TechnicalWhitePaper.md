@@ -115,9 +115,9 @@ Sử dụng nền tảng EOS.IO, khối được tạo ra theo chu kỳ 21 khố
 
 Nếu một cá nhân bỏ lỡ một khối và không tạo bất kì khối nào trong vòng 24 giờ, họ sẽ bị loại khỏi danh sách cho đến khi họ thông báo cho blockchain rằng họ muốn bắt đầu tạo khối trở lại. Việc này đảm bảo mạng lưới vận hành trơn tru bằng cách giảm thiểu số lượng khối hao hụt bởi không phải lên kế hoạch tạo khối cho các cá nhân đã được xem là không đáng tin cậy.
 
-Trong điều kiện thông thường, blockchain sử dụng DPOS không thực hiện bất kì sự phân nhánh nào bởi vì những người tạo khối sẽ hợp tác với nhau để tạo ra khổi thay vì tranh giành nhau. Thậm chí trong trường hợp phân nhánh, sự đồng thuận sẽ tự động chuyển sang chuỗi dài nhất. Nguyên tắc hữu ích vì tốc độ khối được thêm vào sự tách nhánh blockchain trực tiếp tỉ lệ thuận với số phần trăm của cá nhân tạo khối chia sẽ cùng sự đồng thuận. Nói cách khác, phân nhánh blockchain với nhiều cá nhân tạo khối trên nó sẽ phát triển nhanh hơn so với blockchain chỉ có một hoặc vài cá nhân. Hơn nữa, cá nhân không nên tạo khối trên hai nhánh cùng một lúc. Nếu cá nhân nào vi phạm điều lệ này, họ sẽ có khả năng bị khai trừ cao. Cryptographic evidence of such double-production may also be used to automatically remove abusers.
+Trong điều kiện thông thường, blockchain sử dụng DPOS không thực hiện bất kì sự phân nhánh nào bởi vì những người tạo khối sẽ hợp tác với nhau để tạo ra khổi thay vì tranh giành nhau. Thậm chí trong trường hợp phân nhánh, sự đồng thuận sẽ tự động chuyển sang chuỗi dài nhất. Nguyên tắc hữu ích vì tốc độ khối được thêm vào sự tách nhánh blockchain trực tiếp tỉ lệ thuận với số phần trăm của cá nhân tạo khối chia sẽ cùng sự đồng thuận. Nói cách khác, phân nhánh blockchain với nhiều cá nhân tạo khối trên nó sẽ phát triển nhanh hơn so với blockchain chỉ có một hoặc vài cá nhân. Hơn nữa, cá nhân không nên tạo khối trên hai nhánh cùng một lúc. Nếu cá nhân nào vi phạm điều lệ này, họ sẽ có khả năng bị khai trừ cao. Bằng chứng mật mã của việc sản xuất khối nước đôi này cũng có thể dùng để tự động khai trừ cá nhân lạm dụng.
 
-## Transaction Confirmation
+## Xác Nhận Giao Dịch
 
 Typical DPOS blockchains have 100% block producer participation. A transaction can be considered confirmed with 99.9% certainty after an average of 1.5 seconds from time of broadcast.
 
