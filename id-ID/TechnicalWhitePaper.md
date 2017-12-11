@@ -30,24 +30,24 @@ Tanpa izin, siapa pun dapat menggunakan, mereproduksi, atau mendistribusikan mat
     - [Dinamakan Message Handler Groups](#named-message-handler-groups)
     - [Pemetaan Izin](#permission-mapping)
     - [Mengevaluasi izin](#evaluating-permissions) 
-      - [Default Permission Groups](#default-permission-groups)
-      - [Parallel Evaluation of Permissions](#parallel-evaluation-of-permissions)
-  - [Messages with Mandatory Delay](#messages-with-mandatory-delay)
-  - [Recovery from Stolen Keys](#recovery-from-stolen-keys)
-- [Deterministic Parallel Execution of Applications](#deterministic-parallel-execution-of-applications) 
-  - [Minimizing Communication Latency](#minimizing-communication-latency)
+      - [Kegagalan izin kelompok](#default-permission-groups)
+      - [Paralel evaluasi dari izin](#parallel-evaluation-of-permissions)
+  - [Pesan dengan Mandatory Delay](#messages-with-mandatory-delay)
+  - [Pemulihan dari dicuri kunci](#recovery-from-stolen-keys)
+- [Eksekusi Paralel Deterministik Aplikasi](#deterministic-parallel-execution-of-applications) 
+  - [Meminimalkan Latensi Komunikasi](#minimizing-communication-latency)
   - [Read-Only Message Handlers](#read-only-message-handlers)
-  - [Atomic Transactions with Multiple Accounts](#atomic-transactions-with-multiple-accounts)
-  - [Partial Evaluation of Blockchain State](#partial-evaluation-of-blockchain-state)
-  - [Subjective Best Effort Scheduling](#subjective-best-effort-scheduling)
-- [Token Model and Resource Usage](#token-model-and-resource-usage) 
-  - [Objective and Subjective Measurements](#objective-and-subjective-measurements)
-  - [Receiver Pays](#receiver-pays)
-  - [Delegating Capacity](#delegating-capacity)
-  - [Separating Transaction costs from Token Value](#separating-transaction-costs-from-token-value)
-  - [State Storage Costs](#state-storage-costs)
-  - [Block Rewards](#block-rewards)
-  - [Community Benefit Applications](#community-benefit-applications)
+  - [Transaksi Atom dengan Multiple Accounts](#atomic-transactions-with-multiple-accounts)
+  - [Evaluasi Partial dari Blockchain State](#partial-evaluation-of-blockchain-state)
+  - [Penjadwalan Usaha Subjektif Terbaik](#subjective-best-effort-scheduling)
+- [Token Model dan Penggunaan Sumber Daya](#token-model-and-resource-usage) 
+  - [Pengukuran Obyektif dan Subjektif](#objective-and-subjective-measurements)
+  - [Penerima membayar](#receiver-pays)
+  - [Mendelegasikan Kapasitas](#delegating-capacity)
+  - [Memisahkan biaya transaksi dari Token Value](#separating-transaction-costs-from-token-value)
+  - [Biaya Penyimpanan Negara](#state-storage-costs)
+  - [Blok hadiah](#block-rewards)
+  - [Aplikasi Manfaat Komunitas](#community-benefit-applications)
 - [Governance](#governance) 
   - [Freezing Accounts](#freezing-accounts)
   - [Changing Account Code](#changing-account-code)
@@ -111,13 +111,13 @@ EOS.IO software utilizes the only decentralized consensus algorithm capable of m
 
 The EOS.IO software enables blocks to be produced exactly every 3 seconds and exactly one producer is authorized to produce a block at any given point in time. If the block is not produced at the scheduled time then the block for that time slot is skipped. When one or more blocks are skipped, there is a 6 or more second gap in the blockchain.
 
-Using the EOS.IO software blocks are produced in rounds of 21. At the start of each round 21 unique block producers are chosen. The top 20 by total approval are automatically chosen every round and the last producer is chosen proportional to their number of votes relative to other producers. The selected producers are shuffled using a pseudorandom number derived from the block time. This shuffling is done to ensure that all producers maintain balanced connectivity to all other producers.
+Menggunakan blok perangkat lunak EOS.IO diproduksi dalam ronde 21. Pada awal setiap putaran, 21 produsen blok unik dipilih. 20 besar dengan total persetujuan dipilih secara otomatis setiap putaran dan penghasil terakhir dipilih sebanding dengan jumlah suara mereka dibandingkan dengan produsen lainnya. Produsen terpilih dikocok menggunakan nomor pseudorandom yang berasal dari waktu blok. Pengocokan ini dilakukan untuk memastikan bahwa semua produsen menjaga konektivitas seimbang ke semua produsen lainnya.
 
-If a producer misses a block and has not produced any block within the last 24 hours they are removed from consideration until they notify the blockchain of their intention to start producing blocks again. This ensures the network operates smoothly by minimizing the number of blocks missed by not scheduling those who are proven to be unreliable.
+Jika seorang produsen merindukan satu blok dan tidak menghasilkan blok apapun dalam 24 jam terakhir, mereka akan dihapus dari pertimbangan sampai mereka memberitahukan blockchain tentang niat mereka untuk mulai memproduksi blok lagi. Ini memastikan jaringan beroperasi dengan lancar dengan meminimalkan jumlah blok yang tidak terjawab dengan tidak menjadwalkannya yang terbukti tidak dapat diandalkan.
 
-Under normal conditions a DPOS blockchain does not experience any forks because the block producers cooperate to produce blocks rather than compete. In the event there is a fork, consensus will automatically switch to the longest chain. This metric works because the rate at which blocks are added to a blockchain chain fork is directly correlated to the percentage of block producers that share the same consensus. In other words, a blockchain fork with more producers on it will grow in length faster than one with fewer producers. Furthermore, no block producer should be producing blocks on two forks at the same time. If a block producer is caught doing this then such block producer will likely be voted out. Cryptographic evidence of such double-production may also be used to automatically remove abusers.
+Dalam kondisi normal, blocker DPOS tidak mengalami garpu karena produsen blok bekerja sama untuk menghasilkan blok daripada bersaing. Jika ada pertigaan, konsensus secara otomatis akan beralih ke rantai terpanjang. Metrik ini bekerja karena tingkat di mana blok ditambahkan ke garpu rantai blokch secara langsung berkorelasi dengan persentase produsen blok yang memiliki konsensus yang sama. Dengan kata lain, garpu blockchain dengan lebih banyak produsen di dalamnya akan tumbuh lebih cepat dari satu dengan produsen lebih sedikit. Selanjutnya, produsen blok tidak harus memproduksi blok pada dua garpu pada saat bersamaan. Jika produsen blok tertangkap basah melakukan hal ini maka produsen blok tersebut kemungkinan akan dipilih. Bukti kriptografi dari produksi ganda semacam itu juga dapat digunakan untuk secara otomatis menghapus penyalahguna.
 
-## Transaction Confirmation
+## Konfirmasi Transaksi
 
 Typical DPOS blockchains have 100% block producer participation. A transaction can be considered confirmed with 99.9% certainty after an average of 1.5 seconds from time of broadcast.
 
