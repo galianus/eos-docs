@@ -69,13 +69,13 @@ Bất kì ai cũng có thể dùng, chỉnh sửa, phát hành tất cả các n
 
 # Bối cảnh
 
-Blockchain technology was introduced in 2008 with the launch of the bitcoin currency, and since then entrepreneurs and developers have been attempting to generalize the technology in order to support a wider range of applications on a single blockchain platform.
+Công nghệ blockchain đã được giới thiệu vào năm 2008 với sự phát hành của đồng tiền bitcoin, và kể từ đó, các nhà khởi nghiệp và lập trình viên đã và đang thử sức để khái quát hoá công nghệ này để hỗ trợ cho các ứng dụng đa dạng hơn trên một nền tảng blockchain duy nhất.
 
-While a number of blockchain platforms have struggled to support functional decentralized applications, application specific blockchains such as the BitShares decentralized exchange (2014) and Steem social media platform (2016) have become heavily used blockchains with tens of thousands of daily active users. They have achieved this by increasing performance to thousands of transactions per second, reducing latency to 1.5 seconds, eliminating fees, and providing a user experience similar to those currently provided by existing centralized services.
+Trong khi đã có một số nền tảng blockchain đã phải vật lộn để hỗ trợ ứng dụng phân cấp chạy được, các ứng dụng blockchain cụ thể như là thị trường trao đổi phân cấp BitShares (2014) và nền tảng ứng dụng xã hội Steem (2016) đã trở thành các nền tảng blockchain nặng ký với hàng chục ngàn người dùng thường xuyên hàng ngày. Họ đã đạt được điều này bằng cách tăng hiệu năng lên hàng ngàn giao dịch trong một giây, giảm độ trễ xuống 1.5 giây, xoá bỏ phí giao dịch, và cung cấp trải nghiệm người dùng tương tự như các dịch vụ tập trung hiện tại.
 
-Existing blockchain platforms are burdened by large fees and limited computational capacity that prevent widespread blockchain adoption.
+Các nền tảng blockchain hiện tại đang phải cõng các chi phí khổng lồ và khả năng tính toán có giới hạn mà chính các điều đó đã ngăn cản sự phổ biến rộng rãi của công nghệ blockchain.
 
-# Requirements for Blockchain Applications
+# Các Yêu Cầu cho Ứng Dụng trên blockchain
 
 In order to gain widespread use, applications on the blockchain require a platform that is flexible enough to meet the following requirements:
 
