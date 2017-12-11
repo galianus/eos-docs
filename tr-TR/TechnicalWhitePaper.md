@@ -148,11 +148,11 @@ Her hesap, yapılandırılmış mesajları diğer hesaplara gönderebilir ve ile
 
 ## Rol Tabanlı İzin Yönetimi
 
-İzin yönetimi, bir mesajın düzgün şekilde yetkilendirilmiş olup olmadığını belirler. İzin yönetiminin en basit şekli, bir işlemin gerekli imzalarının bulunduğunu kontrol etmektir, ancak bu şu anlama gelmektedir; gerekli imzaların zaten bilinmektedir. Genel olarak yetki, bireylere veya birey gruplarına bağlıdır ve sıklıkla bölümlere ayrılmıştır. The EOS.IO software provides a declarative permission management system that gives accounts fine grained and high level control over who can do what and when.
+İzin yönetimi, bir mesajın düzgün şekilde yetkilendirilmiş olup olmadığını belirler. İzin yönetiminin en basit şekli, bir işlemin gerekli imzalarının bulunduğunu kontrol etmektir, ancak bu şu anlama gelmektedir; gerekli imzaların zaten bilinmektedir. Genel olarak yetki, bireylere veya birey gruplarına bağlıdır ve sıklıkla bölümlere ayrılmıştır. EOS.IO yazılımı, kimlerin ne zaman ne yapabileceği konusunda, hesapları ince bir hassasiyet ve yüksek seviyede kontrol eden bildirimsel bir izin yönetim sistemi sunmaktadır.
 
-It is critical that authentication and permission management be standardized and separate from the business logic of the application. This enables tools to be developed to manage permissions in a general purpose manner and also provide significant opportunities for performance optimization.
+Kimlik doğrulama ve izin yönetiminin standart olması ve de uygulamanın iş mantığından ayrı olması kritik önem taşır. Bu, izinlerin genel amaçlı bir şekilde yönetilmesi için geliştirilen araçların kullanılmasını sağlar ve ayrıca performans optimizasyonu için de önemli fırsatlar sunar.
 
-Every account may be controlled by any weighted combination of other accounts and private keys. This creates a hierarchical authority structure that reflects how permissions are organized in reality, and makes multi-user control over funds easier than ever. Multi-user control is the single biggest contributor to security, and, when used properly, it can greatly eliminate the risk of theft due to hacking.
+Her hesap, diğer hesapların ağırlıklı kombinasyonu ve özel anahtarlar ile kontrol edilebilir. This creates a hierarchical authority structure that reflects how permissions are organized in reality, and makes multi-user control over funds easier than ever. Multi-user control is the single biggest contributor to security, and, when used properly, it can greatly eliminate the risk of theft due to hacking.
 
 EOS.IO software allows accounts to define what combination of keys and/or accounts can send a particular message type to another account. For example, it is possible to have one key for a user's social media account and another for access to the exchange. It is even possible to give other accounts permission to act on behalf of a user's account without assigning them keys.
 
