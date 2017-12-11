@@ -12,45 +12,45 @@ Tujuan dari tahap ini adalah untuk membangun API yang pengembang perlukan untuk 
 
 Simpul mandiri mengoperasikan alat uji coba dan menghasilkan blok sambil membuka API. Node ini tidak perlu memperhatikan dirinya sendiri dengan kode jaringan P2P.
 
-### Native Contracts (Nathan)
+### Kontrak Asli (Nathan)
 
-The EOS.IO software has a number of native contracts. These are contracts that manage the core operations of the blockchain and exist outside the Web Assembly interface. These contracts include:
+Perangkat lunak EOS.IO memiliki sejumlah kontrak asli. Ini adalah kontrak yang mengelola operasi inti dari blockchain dan ada di luar antarmuka Majelis Web. Kontrak ini meliputi:
 
-1. @eos - manages EOS token transfers
-2. @stake - manages locked EOS, voting, and Producer Election
-3. @system - manages permissions, messages, and contact code updates
+1. @ oos - mengelola transfer token EOS
+2. @stake - mengatur EOS, voting, dan produser pemilihan
+3. @system - mengatur perizinan, pesan, dan pembaruan kode kontak
 
-### Virtual Machine API (Dan)
+### API Mesin Virtual (Dan)
 
-Contracts are compiled to WebAssembly (WASM) and WASM must interface with the blockchain via a defined API. This API is what developers depend upon to build applications and be relatively stable before developers can really start to build on EOS.
+Kontrak dikompilasi ke WebAssembly (WASM) dan WASM harus terhubung dengan blockchain melalui API yang ditetapkan. API ini adalah pengembang yang bergantung pada untuk membangun aplikasi dan relatif stabil sebelum pengembang benar-benar dapat mulai membangun EOS.
 
-### RPC Interface (Arhag, Nathan)
+### Antarmuka RPC (Arhag, Nathan)
 
-A simple JSON RPC over HTTP interface will be provided that enables developers to broadcast transactions and query application state. This is critical for both publishing and interacting with test applications.
+RPC JSON sederhana melalui antarmuka HTTP akan disediakan yang memungkinkan pengembang untuk menyiarkan transaksi dan negara aplikasi permintaan. Ini sangat penting untuk penerbitan dan interaksi dengan aplikasi uji.
 
 ### Command line Tools (Arhag)
 
-Command line tools facilitate integrating the RPC interface with developer build environments.
+Alat baris perintah memfasilitasi integrasi antarmuka RPC dengan lingkungan pengembang.
 
-### Basic Developer Documentation (Josh)
+### Dokumentasi Pengembang Dasar (Josh)
 
-Documents that teach developers how to get started with building on EOS.IO blockchains. This includes documentations of the WASM API, RPC Interface, and Command Line Tools.
+Dokumen yang mengajarkan pengembang cara memulai dengan membangun blokir EOS.IO. Ini termasuk dokumentasi API WASM, RPC Interface, dan Command Line Tools.
 
-# Phase 2 - Minimal Viable Test Network - Fall 2017
+# Tahap 2 - Jaringan Uji Minimum yang Minimal - Fall 2017
 
-Everything in Phase 1 assumes a trusted environment that only runs the developer's own code. Before a test network can be deployed several additional features need to be implemented and tested.
+Semuanya di Tahap 1 mengasumsikan lingkungan tepercaya yang hanya menjalankan kode pengembang sendiri. Sebelum jaringan uji bisa disebarkan beberapa fitur tambahan perlu diimplementasikan dan diuji.
 
-### P2P Network Code (Phil)
+### Kode Jaringan P2P (Phil)
 
-This is a plugin that is responsible for synchronizing the blockchain state between two standalone nodes.
+Ini adalah plugin yang bertanggung jawab untuk menyinkronkan status blockchain antara dua node mandiri.
 
-### WASM Sanitation & CPU Sandboxing (Brian)
+### WASM Sanitasi & Sandboxing CPU (Brian)
 
-The WASM code needs to be sanitized to check for non-deterministic behavior such as floating point operations and infinite loops.
+Kode WASM perlu disterilkan untuk memeriksa perilaku non-deterministik seperti operasi floating point dan loop tak terbatas.
 
-### Resource Usage Tracking & Rate Limiting (Arhag)
+### Pelacakan Penggunaan Sumber Daya & Batas Rate (Arhag)
 
-To prevent abuse the resource monitoring and usage tracking rate limits users according to staked EOS.
+Untuk mencegah penyalahgunaan, pemantauan sumber daya dan tingkat pelacakan penggunaan membatasi pengguna menurut EOS yang diintai.
 
 ### Genesis Import Testing (DappHub)
 
