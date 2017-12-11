@@ -1,16 +1,16 @@
-## EOS.IO Software Roadmap
+## EOS.IO Perangkat lunak Roadmap
 
-This document outlines the development plan from a high level and will be updated as progress is made toward version 1.0. It should be noted that this roadmap applies only to the blockchain software and not to the other tools and utilities such as wallets and block explorers which will have their own teams and dedicated roadmaps once Phase 1 is complete.
+Dokumen ini menguraikan rencana pengembangan dari tingkat tinggi dan akan diperbarui karena kemajuan dibuat terhadap versi 1.0. Perlu dicatat bahwa peta jalan ini hanya berlaku untuk perangkat lunak blockchain dan bukan pada alat dan utilitas lain seperti dompet dan penjelajah blok yang akan memiliki tim mereka sendiri dan peta jalan khusus setelah Tahap 1 selesai.
 
-***Everything contained in this document is in draft form and subject to change at any time and provided for information purposes only. block.one does not guarantee the accuracy of the information contained in this roadmap and the information is provided “as is” with no representations or warranties, express or implied.***
+***Segala sesuatu yang terkandung dalam dokumen ini adalah dalam bentuk draft dan dapat berubah sewaktu-waktu dan hanya untuk keperluan informasi saja. block.one tidak menjamin keakuratan informasi yang terdapat dalam peta jalan ini dan informasinya diberikan "sebagaimana adanya" tanpa pernyataan atau jaminan, tersurat maupun tersirat.***
 
-# Phase 1 - Minimal Viable Testing Environment - Summer 2017
+# Tahap 1 - Lingkungan Pengujian Minimal yang Layak - Musim Panas 2017
 
-The goal of this phase is to establish the APIs that developers will require to start building and testing applications on EOS.IO. In order for developers to start testing their applications they will require the following to be implemented:
+Tujuan dari tahap ini adalah untuk membangun API yang pengembang perlukan untuk mulai membangun dan menguji aplikasi di EOS.IO. Agar pengembang mulai menguji aplikasi mereka, mereka memerlukan hal-hal berikut untuk diterapkan:
 
-### Standalone Node (Dan & Nathan)
+### Node Standalone (Dan & amp; Nathan)
 
-A standalone node operates a test blockchain and produces blocks while exposing an API. This node does not need to concern itself with any P2P networking code.
+Simpul mandiri mengoperasikan alat uji coba dan menghasilkan blok sambil membuka API. Node ini tidak perlu memperhatikan dirinya sendiri dengan kode jaringan P2P.
 
 ### Native Contracts (Nathan)
 
