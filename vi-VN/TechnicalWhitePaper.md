@@ -97,7 +97,7 @@ Tất cả phần mềm nghiêm túc đều bị lỗi, mặc dù với quy trì
 
 Trải nghiệp người dùng tốt yêu cầu phản hồi đáng tin cậy với đỗ trễ không nhiều hơn một vài giây. Độ trễ dài hơn sẽ làm người dùng bực bội và sẽ làm cho ứng dụng xây dựng trên blockchain cạnh tranh yếu hơn so với các lựa chọn không chạy trên blockchain.
 
-## Sequential Performance
+## Thi Hành Tuần Tự
 
 There are some applications that just cannot be implemented with parallel algorithms due to sequentially dependent steps. Applications such as exchanges need enough sequential performance to handle high volumes and therefore a platform with fast sequential performance is required.
 
