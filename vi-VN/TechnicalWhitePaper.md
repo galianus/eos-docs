@@ -89,13 +89,13 @@ Các lập trình viên cần sự linh hoạt để cung cấp cho người dù
 
 ## Dễ Nâng Cấp và Phục Hồi Lỗi
 
-Businesses building blockchain based applications need the flexibility to enhance their applications with new features.
+Doanh nghiệp phát triển ứng dụng chạy trên blockchain cần sự linh hoạt để tăng cường ứng dụng với các tính năng mới.
 
-All non-trivial software is subject to bugs, even with the most rigorous of formal verification. The platform must be robust enough to fix bugs when they inevitably occur.
+Tất cả phần mềm nghiêm túc đều bị lỗi, mặc dù với quy trình xác minh chuẩn mực khắc khe nhất. Nền tảng phải đủ mạnh mẽ để vá lỗi khi chúng xảy ra.
 
-## Low Latency
+## Độ Trễ Thấp
 
-A good user experience demands reliable feedback with delay of no more than a few seconds. Longer delays frustrate users and make applications built on a blockchain less competitive with existing non-blockchain alternatives.
+Trải nghiệp người dùng tốt yêu cầu phản hồi đáng tin cậy với đỗ trễ không nhiều hơn một vài giây. Độ trễ dài hơn sẽ làm người dùng bực bội và sẽ làm cho ứng dụng xây dựng trên blockchain cạnh tranh yếu hơn so với các lựa chọn không chạy trên blockchain.
 
 ## Sequential Performance
 
