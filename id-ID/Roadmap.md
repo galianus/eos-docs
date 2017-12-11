@@ -52,33 +52,33 @@ Kode WASM perlu disterilkan untuk memeriksa perilaku non-deterministik seperti o
 
 Untuk mencegah penyalahgunaan, pemantauan sumber daya dan tingkat pelacakan penggunaan membatasi pengguna menurut EOS yang diintai.
 
-### Genesis Import Testing (DappHub)
+### Pengujian Impor Kejadian (DappHub)
 
-Tools need to be developed to export data from the EOS Token Distribution state and create a genesis configuration file. This will enable anyone participating in the Token Distribution to acquire some initial test EOS (TEOS).
+Alat perlu dikembangkan untuk mengekspor data dari negara EOS Token Distribution dan membuat file konfigurasi genesis. Ini akan memungkinkan siapa saja yang berpartisipasi dalam Distribusi Token untuk memperoleh beberapa tes awal EOS (TEOS).
 
-### Interblockchain Communication (Nathan)
+### Komunikasi Interblockchain (Nathan)
 
-This feature involves verifying the Merkle hashing of transactions is proper.
+Fitur ini melibatkan verifikasi kinerja dari Merkle.
 
-# Phase 3 - Testing & Security Audits - Winter 2017, Spring 2018
+# Tahap 3 - Pengujian & Audit Keamanan - Musim Dingin 2017, Musim Semi 2018
 
-During this phase the platform will undergo heavy testing with a focus on finding security issues and bug. At the end of Phase 3 version 1.0 will be tagged.
+Selama fase ini platform akan menjalani pengujian berat dengan fokus pada menemukan masalah keamanan dan bug. Pada akhir Tahap 3 versi 1.0 akan ditandai.
 
-### Develop Example Applications
+### Kembangkan Aplikasi Contoh
 
-Example applications are critical to proving the platform provides the features required by real developers.
+Contoh aplikasi sangat penting untuk membuktikan platform menyediakan fitur yang dibutuhkan oleh pengembang nyata.
 
-### Bounties for Successfully Attacking Network
+### Hadiah untuk Jaringan yang Berhasil Menyerang
 
-Attacking the network with spam, virtual machine exploits, and bug crashes, and non-deterministic behavior will be a heavily involved process but necessary to ensure that version 1.0 is stable.
+Menyerang jaringan dengan spam, eksploitasi mesin virtual, dan bug crash, dan perilaku non-deterministik akan menjadi proses yang sangat terlibat namun perlu untuk memastikan bahwa versi 1.0 stabil.
 
-### Language Support
+### Dukungan bahasa
 
-Adding support for additional languages to be compiled to WASM: C++, Rust, etc.
+Menambahkan dukungan untuk bahasa tambahan yang akan dikompilasi ke WASM: C ++, Rust, etc.
 
-### Documentation & Tutorials
+### Dokumentasi & tutorial
 
-# Phase 4 - Parallel Optimization Summer / Fall 2018
+# Tahap 4 - paralel optimasi musim panas / jatuh 2018
 
 After getting a stable 1.0 product released, we will move toward optimizing the code for parallel execution.
 
