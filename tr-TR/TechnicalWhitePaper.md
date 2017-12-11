@@ -154,7 +154,7 @@ Kimlik doğrulama ve izin yönetiminin standart olması ve de uygulamanın iş m
 
 Her hesap, diğer hesapların ağırlıklı kombinasyonu ve özel anahtarlar ile kontrol edilebilir. Bu, izinlerin gerçekte nasıl organize edildiğini yansıtan hiyerarşik bir yetki yapısı oluşturur ve çok kullanıcılı fonları her zamankinden daha kolay kontrol eder. Çok kullanıcılı kontrol, güvenlik için büyük katkıyı sağlar ve düzgün bir şekilde kullanıldığında, hackten kaynaklanan hırsızlık riskini büyük ölçüde ortadan kaldırabilir.
 
-EOS.IO software allows accounts to define what combination of keys and/or accounts can send a particular message type to another account. For example, it is possible to have one key for a user's social media account and another for access to the exchange. It is even possible to give other accounts permission to act on behalf of a user's account without assigning them keys.
+EOS.IO yazılımı, hesaplara, hangi anahtarların ve/veya hesapların kombinasyonunun belirli bir mesaj türünü başka bir hesaba gönderebileceğini tanımlamasına izin verir. Örneğin, bir kullanıcının sosyal medya hesabı için bir anahtarı ve borsaya erişmek için başka bir anahtarı olması mümkündür. Hatta, anahtar verme hariç, başka hesaplara, bir kullanıcının hesabı adına hareket etmesine izin vermek bile mümkündür.
 
 ### Named Permission Levels
 
