@@ -80,6 +80,6 @@ Menambahkan dukungan untuk bahasa tambahan yang akan dikompilasi ke WASM: C ++, 
 
 # Tahap 4 - paralel optimasi musim panas / jatuh 2018
 
-After getting a stable 1.0 product released, we will move toward optimizing the code for parallel execution.
+Setelah mendapatkan produk 1.0 yang stabil, kita akan bergerak menuju optimalisasi kode untuk eksekusi paralel.
 
-# Phase 5 - Cluster Implementation The Future
+# Tahap 5 - Implementasi Cluster Masa Depan
