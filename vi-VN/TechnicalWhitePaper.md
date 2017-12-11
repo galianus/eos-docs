@@ -85,9 +85,9 @@ Các ứng dụng đột phá như Ebay, Uber, AirBnB, và Facebook cần công 
 
 ## Dùng Miễn Phí
 
-Application developers need the flexibility to offer users free services; users should not have to pay in order to use the platform or benefit from its services. A blockchain platform that is free to use for users will likely gain more widespread adoption. Developers and businesses can then create effective monetization strategies.
+Các lập trình viên cần sự linh hoạt để cung cấp cho người dùng các dịch vụ miễn phí; người dùng không nên trả tiền để sử dụng nền tảng hoặc hưởng lợi từ các dịch vụ của nó. Một nền tảng blockchain miễn phí cho người dùng sẽ có khả năng được đón nhận rộng rãi hơn. Lập trình viên và doanh nghiệp sau đó có thể tạo ra các chiến lược tiền tệ hiệu quả hơn.
 
-## Easy Upgrades and Bug Recovery
+## Dễ Nâng Cấp và Phục Hồi Lỗi
 
 Businesses building blockchain based applications need the flexibility to enhance their applications with new features.
 
