@@ -77,11 +77,11 @@ Các nền tảng blockchain hiện tại đang phải cõng các chi phí khổ
 
 # Các Yêu Cầu cho Ứng Dụng trên blockchain
 
-In order to gain widespread use, applications on the blockchain require a platform that is flexible enough to meet the following requirements:
+Để gia tăng sử dụng rộng rãi, các ứng dụng blockchain yêu cầu một nền tảng phải linh hoạt đủ để đáp ứng các yêu cầu như sau:
 
-## Support Millions of Users
+## Hỗ Trợ Hàng Triệu Người Dùng
 
-Disrupting businesses such as Ebay, Uber, AirBnB, and Facebook, require blockchain technology capable of handling tens of millions of active daily users. In certain cases, applications may not work unless a critical mass of users is reached and therefore a platform that can handle mass number of users is paramount.
+Các ứng dụng đột phá như Ebay, Uber, AirBnB, và Facebook cần công nghệ blockchain với khả năng xử lý hàng chục triệu người dùng hoạt động hàng ngày. In certain cases, applications may not work unless a critical mass of users is reached and therefore a platform that can handle mass number of users is paramount.
 
 ## Free Usage
 
