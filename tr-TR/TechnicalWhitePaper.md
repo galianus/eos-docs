@@ -166,7 +166,7 @@ Başka bir örnek Steem'in blok zincirindeki, adlandırılmış üç sabit izin 
 
 ### İsimlendirişmiş Mesaj İşleyici Grupları
 
-The EOS.IO software allows each account to organize its own message handlers into named and nested groups. These named message handler groups can be referenced by other accounts when they configure their permission levels.
+EOS.IO yazılımı, her hesabın kendi mesaj işleyicilerini, adlandırılmış ve iç içe geçmiş gruplar için düzenlemesine olanak tanır. Bu adlandırılmış ileti işleyici grupları, diğer hesaplar izin seviyelerini ayarladıklarına, referans olabilirler.
 
 The highest level message handler group is the account name and the lowest level is the individual message type being received by the account. These groups can be referenced like so: **@accountname.groupa.subgroupb.MessageType**.
 
