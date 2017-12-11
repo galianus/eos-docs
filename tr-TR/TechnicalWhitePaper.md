@@ -148,7 +148,7 @@ Her hesap, yapılandırılmış mesajları diğer hesaplara gönderebilir ve ile
 
 ## Rol Tabanlı İzin Yönetimi
 
-Permission management involves determining whether or not a message is properly authorized. The simplest form of permission management is checking that a transaction has the required signatures, but this implies that required signatures are already known. Generally authority is bound to individuals or groups of individuals and is often compartmentalized. The EOS.IO software provides a declarative permission management system that gives accounts fine grained and high level control over who can do what and when.
+İzin yönetimi, bir mesajın düzgün şekilde yetkilendirilmiş olup olmadığını belirler. İzin yönetiminin en basit şekli, bir işlemin gerekli imzalarının bulunduğunu kontrol etmektir, ancak bu şu anlama gelmektedir; gerekli imzaların zaten bilinmektedir. Genel olarak yetki, bireylere veya birey gruplarına bağlıdır ve sıklıkla bölümlere ayrılmıştır. The EOS.IO software provides a declarative permission management system that gives accounts fine grained and high level control over who can do what and when.
 
 It is critical that authentication and permission management be standardized and separate from the business logic of the application. This enables tools to be developed to manage permissions in a general purpose manner and also provide significant opportunities for performance optimization.
 
