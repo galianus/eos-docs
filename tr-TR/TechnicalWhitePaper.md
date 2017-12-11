@@ -140,11 +140,11 @@ Zamanla tüm kullanıcılar, sahte zincirlerin işlemlerini, meşru zincirden ge
 
 EOS.IO yazılımı, tüm hesapların, 2 ila 32 karakter uzunluğunda, benzersiz ve okunabilir bir adla referans alınmasına izin verir. İsim hesap yaratıcısı tarafından seçilir. Tüm hesaplar, yaratıkları anda, hesap verilerini saklamanın maliyetini karşılamak için oluşturulan minimum hesap bakiyesiyle finanse edilmelidir. Hesap adları isim uzaylarını da destekler ve bu @domain kullanıcısının @user.domain hesabı oluşturabilen tek kişi olduğu anlamına gelir.
 
-Merkezi olmayan bir bağlamda, uygulama geliştiricileri, yeni bir kullanıcı kaydetmek için hesap oluşturma maliyetini öderler. Geleneksel işletmeler halihazırda müşteri edinmek için, reklamcılık, ücretsiz hizmetler vb. şeklinde önemli miktarda para harcıyorlar. Yeni bir blok zinciri hesabının fonlama maliyeti, bunlarla karşılaştırıldığında önemsiz kalır. Fortunately, there is no need to create accounts for users already signed up by another application.
+Merkezi olmayan bir bağlamda, uygulama geliştiricileri, yeni bir kullanıcı kaydetmek için hesap oluşturma maliyetini öderler. Geleneksel işletmeler halihazırda müşteri edinmek için, reklamcılık, ücretsiz hizmetler vb. şeklinde önemli miktarda para harcıyorlar. Yeni bir blok zinciri hesabının fonlama maliyeti, bunlarla karşılaştırıldığında önemsiz kalır. Neyse ki, daha önce başka bir uygulamaya kaydolmuş kullanıcıların yeni hesap oluşturmasına gerek yoktur.
 
-## Messages & Handlers
+## Mesajlar & İşleyiciler
 
-Each account can send structured messages to other accounts and may define scripts to handle messages when they are received. The EOS.IO software gives each account its own private database which can only be accessed by its own message handlers. Message handling scripts can also send messages to other accounts. The combination of messages and automated message handlers is how EOS.IO defines smart contracts.
+Her hesap, yapılandırılmış mesajları diğer hesaplara gönderebilir ve iletileri alındıklarında işlemek için komut dosyaları tanımlayabilir. EOS.IO yazılımı, her hesaba yalnızca kendi mesaj işleyicileri tarafından erişilebilen, ona özel bir veritabanını verir. Mesaj işleme komut dosyaları da diğer hesaplara mesaj gönderebilir. Mesajların ve otomatik mesaj işleyicilerin kombinasyonu, EOS.IO'nun akıllı sözleşmeleri tanımlama biçimidir.
 
 ## Rol Tabanlı İzin Yönetimi
 
