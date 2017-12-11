@@ -127,7 +127,7 @@ Bir çatalın başlangıcından 9 saniye sonra, nodu'un/düğümün yüksek ihti
 
 Böyle bir uyarının karşılığı, tamamen yapılan ticari işlemin doğasına bağlıdır, fakat en basit karşılığı; uyarılar durana kadar 15/21 onayının beklenmesidir.
 
-## Transaction as Proof of Stake (TaPoS)
+## Menfaati İspat olarak İşlem (TaPoS)
 
 EOS.IO yazılımı, her işlemin, son bloğun üstbilgisindeki hash'i içermesini gerekli kılar. Bu hash iki amaca hizmet eder:
 
