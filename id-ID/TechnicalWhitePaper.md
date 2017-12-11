@@ -119,38 +119,38 @@ Dalam kondisi normal, blocker DPOS tidak mengalami garpu karena produsen blok be
 
 ## Konfirmasi Transaksi
 
-Typical DPOS blockchains have 100% block producer participation. A transaction can be considered confirmed with 99.9% certainty after an average of 1.5 seconds from time of broadcast.
+Blocker khas DPOS memiliki partisipasi produsen blok 100%. Sebuah transaksi dapat dianggap dikonfirmasikan dengan kepastian 99,9% setelah rata-rata 1,5 detik dari waktu penyiaran.
 
-There are some extraordinary cases where a software bug, Internet congestion, or a malicious block producer will create two or more forks. For absolute certainty that a transaction is irreversible, a node may choose to wait for confirmation by 15 out of the 21 block producers. Based on a typical configuration of the EOS.IO software, this will take an average of 45 seconds under normal circumstances. By default all nodes will consider a block confirmed by 15 of 21 producers irreversible and will not switch to a fork that excludes such a block regardless of length.
+Ada beberapa kasus luar biasa di mana bug perangkat lunak, kemacetan Internet, atau produsen blok berbahaya akan menciptakan dua atau lebih garpu. Untuk kepastian yang mutlak bahwa sebuah transaksi tidak dapat diubah, sebuah simpul dapat memilih untuk menunggu konfirmasi 15 dari 21 produsen blok. Berdasarkan konfigurasi khas perangkat lunak EOS.IO, ini akan memakan waktu rata-rata 45 detik dalam keadaan normal. Secara default semua node akan mempertimbangkan sebuah blok yang dikonfirmasi oleh 15 dari 21 produsen yang tidak dapat dipulihkan dan tidak akan beralih ke garpu yang mengecualikan blok semacam itu tanpa memperhatikan panjangnya.
 
-It is possible for a node to warn users that there is a high probability that they are on a minority fork within 9 seconds of the start of a fork. After 2 consecutive missed blocks there is a 95% probability a node is on a minority fork. With 3 consecutive missed blocks there is a 99% certainty of being on a minority fork. It is possible to generate a robust predictive model that will utilize information about which nodes missed, recent participation rates, and other factors to quickly warn operators that something is wrong.
+Ada kemungkinan sebuah node memperingatkan pengguna bahwa ada kemungkinan besar mereka berada di garda minoritas dalam waktu 9 detik sejak awal sebuah garpu. Setelah 2 blok terjawab berturut-turut ada probabilitas 95% node berada pada garpu minoritas. Dengan 3 blok terjawab berturut-turut ada 99% kepastian berada di garpu minoritas. Hal ini dimungkinkan untuk menghasilkan model prediktif yang kuat yang akan memanfaatkan informasi tentang kelambatan node, tingkat partisipasi terkini, dan faktor lain untuk memperingatkan operator dengan cepat bahwa ada sesuatu yang salah.
 
-The response to such a warning depends entirely upon the nature of the business transactions, but the simplest response is to wait for 15/21 confirmations until the warning stops.
+Tanggapan terhadap peringatan semacam itu sepenuhnya bergantung pada sifat transaksi bisnis, namun respons yang paling sederhana adalah menunggu konfirmasi 15/21 sampai peringatan tersebut berhenti.
 
-## Transaction as Proof of Stake (TaPoS)
+## Transaksi sebagai Bukti Kepemilikan (TaPoS)
 
-The EOS.IO software requires every transaction to include the hash of a recent block header. This hash serves two purposes:
+Perangkat lunak EOS.IO mengharuskan setiap transaksi menyertakan hash dari header blok baru-baru ini. Hash ini melayani dua tujuan:
 
-1. prevents a replay of a transaction on forks that do not include the referenced block; and
-2. signals the network that a particular user and their stake are on a specific fork.
+1. mencegah ulangan transaksi pada garpu yang tidak termasuk blok yang direferensikan; dan
+2. sinyal jaringan bahwa pengguna tertentu dan saham mereka berada di garpu tertentu.
 
-Over time all users end up directly confirming the blockchain which makes it difficult to forge counterfeit chains as the counterfeit would not be able to migrate transactions from the legitimate chain.
+Seiring waktu semua pengguna akhirnya secara langsung mengkonfirmasikan blockchain yang membuat sulit untuk menempa rantai palsu karena pemalsuan tidak dapat memigrasi transaksi dari rantai yang sah.
 
-# Accounts
+# Akun
 
-The EOS.IO software permits all accounts to be referenced by a unique human readable name of 2 to 32 characters in length. The name is chosen by the creator of the account. All accounts must be funded with the minimal account balance at the time they are created to cover the cost of storing account data. Account names also support namespaces such that the owner of account @domain is the only one who can create the account @user.domain.
+Perangkat lunak EOS.IO memungkinkan semua akun untuk dirujuk oleh nama terbaca manusia yang unik dengan panjang 2 sampai 32 karakter. Nama tersebut dipilih oleh pencipta akun. Semua akun harus didanai dengan saldo akun minimal pada saat dibuat untuk menutupi biaya penyimpanan data akun. Nama akun juga mendukung ruang nama sehingga pemilik akun @domain adalah satu-satunya yang bisa membuat akun @user.domain.
 
-In a decentralized context, application developers will pay the nominal cost of account creation to sign up a new user. Traditional businesses already spend significant sums of money per customer they acquire in the form of advertising, free services, etc. The cost of funding a new blockchain account should be insignificant in comparison. Fortunately, there is no need to create accounts for users already signed up by another application.
+Dalam konteks terdesentralisasi, pengembang aplikasi akan membayar biaya nominal pembuatan akun untuk mendaftar pengguna baru. Bisnis tradisional sudah menghabiskan sejumlah uang per pelanggan yang mereka dapatkan dalam bentuk iklan, layanan gratis, dll. Biaya pendanaan akun blockchain baru seharusnya tidak signifikan jika dibandingkan. Untungnya, tidak perlu membuat akun bagi pengguna yang sudah mendaftar oleh aplikasi lain.
 
-## Messages & Handlers
+## Pesan & Penangan
 
-Each account can send structured messages to other accounts and may define scripts to handle messages when they are received. The EOS.IO software gives each account its own private database which can only be accessed by its own message handlers. Message handling scripts can also send messages to other accounts. The combination of messages and automated message handlers is how EOS.IO defines smart contracts.
+Setiap akun dapat mengirim pesan terstruktur ke akun lain dan mungkin menentukan skrip untuk menangani pesan saat pesan diterima. Perangkat lunak EOS.IO memberi setiap akun database pribadinya sendiri yang hanya dapat diakses oleh penangan pesannya sendiri. Skrip penanganan pesan juga dapat mengirim pesan ke akun lain. Kombinasi pesan dan penangan pesan otomatis adalah bagaimana EOS.IO mendefinisikan kontrak cerdas.
 
-## Role Based Permission Management
+## Manajemen Perizinan Berbasis Peran
 
-Permission management involves determining whether or not a message is properly authorized. The simplest form of permission management is checking that a transaction has the required signatures, but this implies that required signatures are already known. Generally authority is bound to individuals or groups of individuals and is often compartmentalized. The EOS.IO software provides a declarative permission management system that gives accounts fine grained and high level control over who can do what and when.
+Pengelolaan izin melibatkan penentuan apakah sebuah pesan benar atau tidak. Bentuk paling sederhana dari manajemen izin adalah memeriksa bahwa sebuah transaksi memiliki tanda tangan yang diperlukan, namun ini menyiratkan bahwa tanda tangan yang diperlukan sudah diketahui. Umumnya otoritas terikat pada individu atau kelompok individu dan sering dikelompokkan. Perangkat lunak EOS.IO menyediakan sistem manajemen izin deklaratif yang memberi akun kontrol berbutir halus dan tingkat tinggi atas siapa yang dapat melakukan apa dan kapan.
 
-It is critical that authentication and permission management be standardized and separate from the business logic of the application. This enables tools to be developed to manage permissions in a general purpose manner and also provide significant opportunities for performance optimization.
+Penting agar manajemen otentikasi dan izin distandarisasi dan terpisah dari logika bisnis aplikasi. This enables tools to be developed to manage permissions in a general purpose manner and also provide significant opportunities for performance optimization.
 
 Every account may be controlled by any weighted combination of other accounts and private keys. This creates a hierarchical authority structure that reflects how permissions are organized in reality, and makes multi-user control over funds easier than ever. Multi-user control is the single biggest contributor to security, and, when used properly, it can greatly eliminate the risk of theft due to hacking.
 
@@ -198,58 +198,58 @@ When replaying the blockchain to regenerate the deterministic state from the log
 
 ## Messages with Mandatory Delay
 
-Time is a critical component of security. In most cases, it is not possible to know if a private key has been stolen until it has been used. Time based security is even more critical when people have applications that require keys be kept on computers connected to the internet for daily use. The EOS.IO software enables application developers to indicate that certain messages must wait a minimum period of time after being included in a block before they can be applied. During this time they can be cancelled.
+Time is a critical component of security. In most cases, it is not possible to know if a private key has been stolen until it has been used. Keamanan berbasis waktu bahkan lebih penting lagi bila orang memiliki aplikasi yang memerlukan kunci untuk disimpan di komputer yang terhubung ke internet untuk pemakaian sehari-hari. Perangkat lunak EOS.IO memungkinkan pengembang aplikasi untuk menunjukkan bahwa pesan tertentu harus menunggu periode minimum setelah dimasukkan ke dalam blok sebelum dapat diterapkan. Selama ini mereka bisa dibatalkan.
 
-Users can then receive notice via email or text message when one of these messages is broadcast. If they did not authorize it, then they can use the account recovery process to recover their account and retract the message.
+Pengguna kemudian dapat menerima pemberitahuan melalui email atau pesan teks saat salah satu pesan ini disiarkan. Jika mereka tidak mengizinkannya, mereka dapat menggunakan proses pemulihan akun untuk memulihkan akun mereka dan mencabut pesannya.
 
-The required delay depends upon how sensitive an operation is. Paying for a coffee can have no delay and be irreversible in seconds, while buying a house may require a 72 hour clearing period. Transferring an entire account to new control may take up to 30 days. The exact delays chosen are up to application developers and users.
+Keterlambatan yang dibutuhkan tergantung pada seberapa sensitif sebuah operasi. Membayar untuk minum kopi tidak dapat ditunda dan tidak dapat dipulihkan dalam hitungan detik, saat membeli rumah mungkin memerlukan waktu pembersihan 72 jam. Mentransfer seluruh akun ke kontrol baru mungkin memakan waktu hingga 30 hari. Penundaan yang tepat yang dipilih adalah pengembang aplikasi dan pengguna.
 
-## Recovery from Stolen Keys
+## Pemulihan dari dicuri kunci
 
-The EOS.IO software provides users a way to restore control of their account when their keys are stolen. An account owner can use any owner key that was active in the last 30 days along with approval from their designated account recovery partner to reset the owner key on their account. The account recovery partner cannot reset control of the account without the help of the owner.
+Perangkat lunak EOS.IO memberi pengguna cara untuk memulihkan kontrol akun mereka saat kunci mereka dicuri. Pemilik akun dapat menggunakan kunci pemilik yang aktif dalam 30 hari terakhir bersamaan dengan persetujuan dari mitra pemulihan akun yang ditunjuk untuk menyetel ulang kunci pemilik di akun mereka. Mitra pemulihan akun tidak dapat mengatur ulang kontrol akun tanpa bantuan pemilik.
 
-There is nothing for the hacker to gain by attempting to go through the recovery process because they already "control" the account. Furthermore, if they did go through the process, the recovery partner would likely demand identification and multi-factor authentication (phone and email). This would likely compromise the hacker or gain the hacker nothing in the process.
+Tidak ada yang bisa didapat hacker dengan mencoba melewati proses pemulihan karena mereka sudah "mengendalikan" akun tersebut. Selanjutnya, jika mereka berhasil melewati proses tersebut, pasangan pemulihan kemungkinan akan meminta identifikasi dan otentikasi multi faktor (telepon dan email). Hal ini kemungkinan akan membahayakan hacker atau tidak mendapatkan hacker dalam prosesnya.
 
-This process is also very different from a simple multi-signature arrangement. With a multi-signature transaction, there is another company that is party to every transaction that is executed, but with the recovery process the agent is only a party to the recovery process and has no power over the day-to-day transactions. This dramatically reduces costs and legal liabilities for everyone involved.
+Proses ini juga sangat berbeda dengan pengaturan multi-signature sederhana. Dengan transaksi multi tanda tangan, ada perusahaan lain yang menjadi pihak dalam setiap transaksi yang dijalankan, namun dengan proses pemulihan, agen tersebut hanya merupakan pihak dalam proses pemulihan dan tidak memiliki kekuatan dalam transaksi sehari-hari. Ini secara dramatis mengurangi biaya dan kewajiban hukum untuk semua orang yang terlibat.
 
-# Deterministic Parallel Execution of Applications
+# Eksekusi Paralel Deterministik Aplikasi
 
-Blockchain consensus depends upon deterministic (reproducible) behavior. This means all parallel execution must be free from the use of mutexes or other locking primitives. Without locks there must be some way to guarantee that all accounts can only read and write their own private database. It also means that each account processes messages sequentially and that parallelism will be at the account level.
+Konsensus blockchain bergantung pada perilaku deterministik (direproduksi). Ini berarti semua eksekusi paralel harus bebas dari penggunaan mutexes atau primitif penguncian lainnya. Tanpa kunci harus ada beberapa cara untuk menjamin bahwa semua akun hanya bisa membaca dan menulis database pribadi mereka sendiri. Ini juga berarti bahwa setiap akun memproses pesan secara berurutan dan paralelisme itu berada pada tingkat akun.
 
-In an EOS.IO software-based blockchain, it is the job of the block producer to organize message delivery into independent threads so that they can be evaluated in parallel. The state of each account depends only upon the messages delivered to it. The schedule is the output of a block producer and will be deterministically executed, but the process for generating the schedule need not be deterministic. This means that block producers can utilize parallel algorithms to schedule transactions.
+Dalam blokir perangkat lunak berbasis EOS.IO, adalah tugas produsen blok untuk mengatur pengiriman pesan ke dalam benang independen sehingga dapat dievaluasi secara paralel. Keadaan masing-masing akun hanya bergantung pada pesan yang dikirimkan kepadanya. Jadwal adalah output dari produsen blok dan akan ditentukan secara deterministik, namun proses untuk menghasilkan jadwal tidak perlu deterministik. Ini berarti produsen blok bisa memanfaatkan algoritma paralel untuk menjadwalkan transaksi.
 
-Part of parallel execution means that when a script generates a new message it does not get delivered immediately, instead it is scheduled to be delivered in the next cycle. The reason it cannot be delivered immediately is because the receiver may be actively modifying its own state in another thread.
+Bagian dari eksekusi paralel berarti bahwa ketika sebuah naskah menghasilkan pesan baru, pesan itu tidak segera terkirim, namun dijadwalkan akan disampaikan pada siklus berikutnya. Alasannya tidak bisa segera disampaikan adalah karena receiver bisa secara aktif memodifikasi keadaannya sendiri di thread lain.
 
-## Minimizing Communication Latency
+## Meminimalkan Latensi Komunikasi
 
-Latency is the time it takes for one account to send a message to another account and then receive a response. The goal is to enable two accounts to exchange messages back and forth within a single block without having to wait 3 seconds between each message. To enable this, the EOS.IO software divides each block into cycles. Each cycle is divided into threads and each thread contains a list of transactions. Each transaction contains a set of messages to be delivered. This structure can be visualized as a tree where alternating layers are processed sequentially and in parallel.
+Latensi adalah waktu yang dibutuhkan satu akun untuk mengirim pesan ke akun lain dan kemudian menerima tanggapan. Tujuannya adalah untuk memungkinkan dua akun untuk bertukar pesan bolak-balik dalam satu blok tanpa harus menunggu 3 detik di antara setiap pesan. Untuk mengaktifkan ini, perangkat lunak EOS.IO membagi setiap blok menjadi siklus. Setiap siklus dibagi menjadi benang dan setiap thread berisi daftar transaksi. Setiap transaksi berisi sekumpulan pesan yang akan dikirimkan. Ini struktur dapat divisualisasikan sebagai sebuah pohon di mana bolak lapisan diproses berurutan dan secara paralel.
 
-        Block
+        Blok
     
-          Cycles (sequential)
+          Siklus (berurutan)
     
-            Threads (parallel)
+            Threads (paralel)
     
-              Transactions (sequential)
+              Transaksi (berurutan)
     
-                Messages (sequential)
+                Pesan (berurutan)
     
-                  Receiver and Notified Accounts (parallel)
+                  Receiver dan Akun yang Diberitahu (paralel)
     
 
-Transactions generated in one cycle can be delivered in any subsequent cycle or block. Block producers will keep adding cycles to a block until the maximum wall clock time has passed or there are no new generated transactions to deliver.
+Transaksi yang dihasilkan dalam satu siklus dapat disampaikan dalam siklus atau blok berikutnya. Blokir produsen akan terus menambahkan siklus ke blok sampai waktu jam dinding maksimum berlalu atau tidak ada transaksi baru yang dihasilkan untuk dikirimkan.
 
-It is possible to use static analysis of a block to verify that within a given cycle no two threads contain transactions that modify the same account. So long as that invariant is maintained a block can be processed by running all threads in parallel.
+Hal ini dimungkinkan untuk menggunakan analisis statis blok untuk memverifikasi bahwa dalam siklus tertentu tidak ada dua benang berisi transaksi yang memodifikasi akun yang sama. Selama invarian itu dipertahankan satu blok bisa diproses dengan menjalankan semua thread secara paralel.
 
 ## Read-Only Message Handlers
 
-Some accounts may be able to process a message on a pass/fail basis without modifying their internal state. If this is the case then these handlers can be executed in parallel so long as only read-only message handlers for a particular account are included in one or more threads within a particular cycle.
+Beberapa akun mungkin dapat memproses pesan secara pass / fail tanpa memodifikasi keadaan internal mereka. Jika ini masalahnya, penangan ini dapat dieksekusi secara paralel asalkan hanya penangan pesan hanya-baca untuk akun tertentu yang disertakan dalam satu atau beberapa benang dalam siklus tertentu.
 
-## Atomic Transactions with Multiple Accounts
+## Transaksi Atom dengan beberapa Akun
 
-Sometimes it is desirable to ensure that messages are delivered to and accepted by multiple accounts atomically. In this case both messages are placed in one transaction and both accounts will be assigned the same thread and the messages applied sequentially. This situation is not ideal for performance and when it comes to "billing" users for usage, they will get billed by the number of unique accounts referenced by a transaction.
+Terkadang diinginkan untuk memastikan bahwa pesan dikirim ke dan diterima oleh banyak akun secara atomik. Dalam hal ini kedua pesan ditempatkan dalam satu transaksi dan kedua akun akan diberi thread yang sama dan pesan yang diterapkan secara berurutan. Situasi ini tidak ideal untuk kinerja dan ketika harus menggunakan "penagihan" pengguna untuk penggunaan, mereka akan ditagih oleh jumlah akun unik yang diacu oleh transaksi.
 
-For performance and cost reasons it is best to minimize atomic operations involving two or more heavily utilized accounts.
+Untuk alasan kinerja dan biaya, paling baik meminimalkan operasi atom yang melibatkan dua atau lebih akun yang banyak digunakan.
 
 ## Partial Evaluation of Blockchain State
 
