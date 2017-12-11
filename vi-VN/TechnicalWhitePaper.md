@@ -81,9 +81,9 @@ Các nền tảng blockchain hiện tại đang phải cõng các chi phí khổ
 
 ## Hỗ Trợ Hàng Triệu Người Dùng
 
-Các ứng dụng đột phá như Ebay, Uber, AirBnB, và Facebook cần công nghệ blockchain với khả năng xử lý hàng chục triệu người dùng hoạt động hàng ngày. In certain cases, applications may not work unless a critical mass of users is reached and therefore a platform that can handle mass number of users is paramount.
+Các ứng dụng đột phá như Ebay, Uber, AirBnB, và Facebook cần công nghệ blockchain với khả năng xử lý hàng chục triệu người dùng hoạt động hàng ngày. Trong một vài trường hợp, các ứng dụng có thể không hoạt động trừ khi đạt tới một lượng lớn người dùng đột biến và do đó nền tảng có thể hỗ trợ lượng lớn người dùng là tối quan trọng.
 
-## Free Usage
+## Dùng Miễn Phí
 
 Application developers need the flexibility to offer users free services; users should not have to pay in order to use the platform or benefit from its services. A blockchain platform that is free to use for users will likely gain more widespread adoption. Developers and businesses can then create effective monetization strategies.
 
