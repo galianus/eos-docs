@@ -132,13 +132,13 @@ Böyle bir uyarının karşılığı, tamamen yapılan ticari işlemin doğasın
 EOS.IO yazılımı, her işlemin, son bloğun üstbilgisindeki hash'i içermesini gerekli kılar. Bu hash iki amaca hizmet eder:
 
 1. referans bloğu içermeyen çatallarda bir işlemin tekrar edilmesini önler; ve
-2. signals the network that a particular user and their stake are on a specific fork.
+2. ağa, belirli bir kullanıcının ve menfaatlerinin belirli bir çatal üzerinde olduğunun, sinyalini verir.
 
-Over time all users end up directly confirming the blockchain which makes it difficult to forge counterfeit chains as the counterfeit would not be able to migrate transactions from the legitimate chain.
+Zamanla tüm kullanıcılar, sahte zincirlerin işlemlerini, meşru zincirden geçiremeyecekleri için, sahte zincirlerin oluşturulmasını zorlaştıran blok zincirini doğrudan teyit ederler.
 
 # Hesaplar
 
-The EOS.IO software permits all accounts to be referenced by a unique human readable name of 2 to 32 characters in length. İsim hesap yaratıcısı tarafından seçilir. All accounts must be funded with the minimal account balance at the time they are created to cover the cost of storing account data. Account names also support namespaces such that the owner of account @domain is the only one who can create the account @user.domain.
+EOS.IO yazılımı, tüm hesapların, 2 ila 32 karakter uzunluğunda, benzersiz ve okunabilir bir adla referans alınmasına izin verir. İsim hesap yaratıcısı tarafından seçilir. All accounts must be funded with the minimal account balance at the time they are created to cover the cost of storing account data. Account names also support namespaces such that the owner of account @domain is the only one who can create the account @user.domain.
 
 In a decentralized context, application developers will pay the nominal cost of account creation to sign up a new user. Traditional businesses already spend significant sums of money per customer they acquire in the form of advertising, free services, etc. The cost of funding a new blockchain account should be insignificant in comparison. Fortunately, there is no need to create accounts for users already signed up by another application.
 
