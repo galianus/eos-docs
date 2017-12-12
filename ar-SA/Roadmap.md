@@ -14,11 +14,11 @@
 
 ### العقود الأصلية (Nathan)
 
-The EOS.IO software has a number of native contracts. These are contracts that manage the core operations of the blockchain and exist outside the Web Assembly interface. These contracts include:
+يحتوي البرنامج EOS.IO على عدد من العقود المحلية. هذه هي العقود هي التي تدير العمليات الأساسية للبلوكشين وتوجد خارج واجهة الويب. وتشمل هذه العقود ما يلي:
 
 1. @eos إدارة نقل رمزية EOS
-2. @stake - manages locked EOS, voting, and Producer Election
-3. @system - manages permissions, messages, and contact code updates
+2. @stake - تدير EOS المقفلة، والتصويت، واختيار المنتج
+3. @system - يدير التصريحات والرسائل، وتحديثات رمز الاتصال
 
 ### الجهاز الظاهري أبي (Dan)
 
