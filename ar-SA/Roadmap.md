@@ -4,7 +4,7 @@
 
 ***كل ما ورد في هذه الوثيقة هو في شكل مسودة وقابل للتغيير في أي وقت، ويعرض لأغراض المعلومات فقط. block.one لا يضمن دقة المعلومات الواردة في خارطة الطريق هذه، وتوفر المعلومات "كما هي" دون أي تعهدات أو ضمانات، صريحة أو ضمنية.***
 
-# المرحلة 1 - الحد الأدنى لبيئة إختبار قابلية الحياة
+# المرحلة 1 - الحد الأدنى لبيئة إختبار قابلية الحياة - صيف 2017
 
 والهدف من هذه المرحلة هو برمجة واجهات التطبيقات التي سيحتاجها المطورون للبدء في بناء واختبار التطبيقات على EOS.IO. ولكي يبدأ المطورون في اختبار تطبيقاتهم، سيحتاجون إلى تنفيذ ما يلي:
 
@@ -30,13 +30,13 @@
 
 ### أدوات سطر الأوامر (Arhag)
 
-Command line tools facilitate integrating the RPC interface with developer build environments.
+أدوات سطر الأوامر تسهل دمج واجهة RPC مع بيئات بناء المطور.
 
-### Basic Developer Documentation (Josh)
+### وثائق المطور الأساسية (Josh)
 
-Documents that teach developers how to get started with building on EOS.IO blockchains. This includes documentations of the WASM API, RPC Interface, and Command Line Tools.
+الوثائق التي تعلم المطورين كيفية البدء في البناء على بلوكشينات EOS.IO. يتضمن ذلك توثيق واجهة برمجة تطبيقات WASM API وواجهة RPC وأدوات سطر الأوامر.
 
-# Phase 2 - Minimal Viable Test Network - Fall 2017
+# المرحلة 1 - الحد الأدنى لبيئة إختبار قابلية الحياة - خريف 2017
 
 Everything in Phase 1 assumes a trusted environment that only runs the developer's own code. Before a test network can be deployed several additional features need to be implemented and tested.
 
