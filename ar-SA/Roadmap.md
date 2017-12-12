@@ -24,11 +24,11 @@
 
 يتم تجميع العقود إلى مركب الويب (WASM) و WASM يجب أن يتفاعل مع بلوكشين عبر API معرفة. هذا أبي هو ما يعتمد عليه المطورين لبناء التطبيقات وتكون مستقرة نسبيا قبل أن يتمكن المطورين حقا من الإنشاء على EOS.
 
-### RPC Interface (Arhag, Nathan)
+### واجهة (Arhag، Nathan) ل RPC
 
-A simple JSON RPC over HTTP interface will be provided that enables developers to broadcast transactions and query application state. This is critical for both publishing and interacting with test applications.
+وسيتم توفير JSON RPC بسيطة عبر واجهة HTTP التي تمكن المطورين لبث المعاملات واستعلام حالة التطبيق. هذا أمر بالغ الأهمية لنشر والتفاعل مع تطبيقات الاختبار.
 
-### Command line Tools (Arhag)
+### أدوات سطر الأوامر (Arhag)
 
 Command line tools facilitate integrating the RPC interface with developer build environments.
 
