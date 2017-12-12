@@ -6,9 +6,9 @@
 
 # المرحلة 1 - الحد الأدنى لبيئة إختبار قابلية الحياة
 
-The goal of this phase is to establish the APIs that developers will require to start building and testing applications on EOS.IO. In order for developers to start testing their applications they will require the following to be implemented:
+والهدف من هذه المرحلة هو برمجة واجهات التطبيقات التي سيحتاجها المطورون للبدء في بناء واختبار التطبيقات على EOS.IO. ولكي يبدأ المطورون في اختبار تطبيقاتهم، سيحتاجون إلى تنفيذ ما يلي:
 
-### Standalone Node (Dan & Nathan)
+### العقدة المستقلة (Dan & Nathan)
 
 عقدة مستقلة تختبر بلوكشين وتنتج بلوكات في حين استخدام API. هذه العقدة لا تحتاج لتكون لها صلة مع أي رمز من رموز شبكات P2P.
 
