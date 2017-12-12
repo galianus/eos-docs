@@ -150,31 +150,31 @@ Setiap akun dapat mengirim pesan terstruktur ke akun lain dan mungkin menentukan
 
 Pengelolaan izin melibatkan penentuan apakah sebuah pesan benar atau tidak. Bentuk paling sederhana dari manajemen izin adalah memeriksa bahwa sebuah transaksi memiliki tanda tangan yang diperlukan, namun ini menyiratkan bahwa tanda tangan yang diperlukan sudah diketahui. Umumnya otoritas terikat pada individu atau kelompok individu dan sering dikelompokkan. Perangkat lunak EOS.IO menyediakan sistem manajemen izin deklaratif yang memberi akun kontrol berbutir halus dan tingkat tinggi atas siapa yang dapat melakukan apa dan kapan.
 
-Penting agar manajemen otentikasi dan izin distandarisasi dan terpisah dari logika bisnis aplikasi. This enables tools to be developed to manage permissions in a general purpose manner and also provide significant opportunities for performance optimization.
+Penting agar manajemen otentikasi dan izin distandarisasi dan terpisah dari logika bisnis aplikasi. Hal ini memungkinkan alat untuk dikembangkan untuk mengelola perizinan secara umum dan juga memberikan peluang yang signifikan untuk optimalisasi kinerja.
 
-Every account may be controlled by any weighted combination of other accounts and private keys. This creates a hierarchical authority structure that reflects how permissions are organized in reality, and makes multi-user control over funds easier than ever. Multi-user control is the single biggest contributor to security, and, when used properly, it can greatly eliminate the risk of theft due to hacking.
+Setiap akun dapat dikendalikan dengan kombinasi tertimbang akun lain dan kunci pribadi. Ini menciptakan struktur otoritas hierarkis yang mencerminkan bagaimana perizinan diatur dalam kenyataan, dan membuat kontrol pengguna multi-user lebih mudah dari sebelumnya. Kontrol multi-pengguna adalah penyumbang keamanan tunggal terbesar, dan bila digunakan dengan benar, ini bisa sangat menghilangkan risiko pencurian karena hacking.
 
-EOS.IO software allows accounts to define what combination of keys and/or accounts can send a particular message type to another account. For example, it is possible to have one key for a user's social media account and another for access to the exchange. It is even possible to give other accounts permission to act on behalf of a user's account without assigning them keys.
+Perangkat lunak EOS.IO memungkinkan akun menentukan kombinasi tombol dan / atau akun mana yang dapat mengirim jenis pesan tertentu ke akun lain. Misalnya, Anda dapat memiliki satu kunci untuk akun media sosial pengguna dan satu lagi untuk akses ke pertukaran. Bahkan dimungkinkan untuk memberi izin kepada akun lain untuk bertindak atas nama akun pengguna tanpa menugaskan mereka kunci.
 
-### Named Permission Levels
+### Tingkat Izin yang Dinamakan
 
 <img align="right" src="http://eos.io/wpimg/diagram3.png" width="228.395px" height="300px" />
 
-Using the EOS.IO software, accounts can define named permission levels each of which can be derived from higher level named permissions. Each named permission level defines an authority; an authority is a threshold multi-signature check consisting of keys and/or named permission levels of other accounts. For example, an account's "Friend" permission level can be set for the account to be controlled equally by any of the account's friends.
+Dengan menggunakan perangkat lunak EOS.IO, akun dapat menentukan tingkat izin bernama masing-masing yang dapat diturunkan dari hak akses tingkat yang lebih tinggi. Setiap tingkat izin diberi tahu otoritas; otoritas adalah ambang batas cek multi tanda tangan yang terdiri dari kunci dan / atau diberi nomor izin dari akun lainnya. Misalnya, tingkat izin "Teman" akun dapat ditetapkan agar akun dapat dikontrol sama dengan teman akun mana pun.
 
-Another example is the Steem blockchain which has three hard-coded named permission levels: owner, active, and posting. The posting permission can only perform social actions such as voting and posting, while the active permission can do everything except change the owner. The owner permission is meant for cold storage and is able to do everything. The EOS.IO software generalizes this concept by allowing each account holder to define their own hierarchy as well as the grouping of actions.
+Contoh lain adalah blockchain Steem yang memiliki tiga tingkat izin dengan kode keras: pemilik, aktif, dan posting. Izin posting hanya bisa melakukan aksi sosial seperti voting dan postingan, sedangkan izin aktif bisa melakukan segala hal kecuali mengubah pemiliknya. Izin pemilik dimaksudkan untuk penyimpanan dingin dan mampu melakukan segalanya. Perangkat lunak EOS.IO menggeneralisasi konsep ini dengan memungkinkan setiap pemegang akun menentukan hierarki mereka sendiri dan juga pengelompokan tindakan.
 
-### Named Message Handler Groups
+### Dinamakan Message Handler Groups
 
-The EOS.IO software allows each account to organize its own message handlers into named and nested groups. These named message handler groups can be referenced by other accounts when they configure their permission levels.
+Perangkat lunak EOS.IO memungkinkan setiap akun untuk mengatur penangan pesannya sendiri ke grup bernama dan nested. Kelompok penangan pesan bernama ini dapat dirujuk oleh akun lain saat mereka mengonfigurasi tingkat izin mereka.
 
-The highest level message handler group is the account name and the lowest level is the individual message type being received by the account. These groups can be referenced like so: **@accountname.groupa.subgroupb.MessageType**.
+Grup penangan pesan tingkat tertinggi adalah nama akun dan tingkat terendah adalah jenis pesan individual yang diterima oleh akun. Kelompok ini dapat dirujuk seperti: ** @ accountname.groupa.subgroupb.MessageType **.
 
-Under this model it is possible for an exchange contract to group order creation and canceling separately from deposit and withdraw. This grouping by the exchange contract is a convenience for users of the exchange.
+Dengan model ini dimungkinkan adanya kontrak pertukaran untuk membuat pesanan kelompok dan membatalkannya secara terpisah dari deposit dan withdraw. Pengelompokan oleh kontrak pertukaran ini merupakan kemudahan bagi pengguna bursa.
 
-### Permission Mapping
+### Pemetaan Izin
 
-EOS.IO software allows each account to define a mapping between a Named Message Handler Group of any account and their own Named Permission Level. For example, an account holder could map the account holder's social media application to the account holder's "Friend" permission group. With this mapping, any friend could post as the account holder on the account holder's social media. Even though they would post as the account holder, they would still use their own keys to sign the message. This means it is always possible to identify which friends used the account and in what way.
+Perangkat lunak EOS.IO memungkinkan setiap akun menentukan pemetaan antara Kelompok Penangan Pesan Bernama dari akun mana pun dan Tingkat Izin Bernama mereka sendiri. Misalnya, pemegang akun dapat memetakan aplikasi media sosial pemegang rekening ke grup izin "Teman" pemegang rekening. Dengan pemetaan ini, teman manapun bisa memposting sebagai pemegang akun di media sosial pemegang rekening. Meskipun mereka akan memposting sebagai pemegang rekening, mereka tetap menggunakan kunci mereka sendiri untuk menandatangani pesan. Ini berarti selalu memungkinkan untuk mengidentifikasi teman mana yang menggunakan akun tersebut dan dengan cara apa.
 
 ### Evaluating Permissions
 
