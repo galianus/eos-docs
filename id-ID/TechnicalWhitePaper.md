@@ -48,44 +48,44 @@ Tanpa izin, siapa pun dapat menggunakan, mereproduksi, atau mendistribusikan mat
   - [Biaya Penyimpanan Negara](#state-storage-costs)
   - [Blok hadiah](#block-rewards)
   - [Aplikasi Manfaat Komunitas](#community-benefit-applications)
-- [Governance](#governance) 
-  - [Freezing Accounts](#freezing-accounts)
-  - [Changing Account Code](#changing-account-code)
-  - [Constitution](#constitution)
-  - [Upgrading the Protocol & Constitution](#upgrading-the-protocol--constitution) 
-    - [Emergency Changes](#emergency-changes)
-- [Scripts & Virtual Machines](#scripts--virtual-machines) 
-  - [Schema Defined Messages](#schema-defined-messages)
-  - [Schema Defined Database](#schema-defined-database)
-  - [Separating Authentication from Application](#separating-authentication-from-application)
-  - [Virtual Machine Independent Architecture](#virtual-machine-independent-architecture) 
-    - [Web Assembly (WASM)](#web-assembly-wasm)
-    - [Ethereum Virtual Machine (EVM)](#ethereum-virtual-machine-evm)
-- [Inter Blockchain Communication](#inter-blockchain-communication) 
-  - [Merkle Proofs for Light Client Validation (LCV)](#merkle-proofs-for-light-client-validation-lcv)
-  - [Latency of Interchain Communication](#latency-of-interchain-communication)
-  - [Proof of Completeness](#proof-of-completeness)
-- [Conclusion](#conclusion)
+- [Pemerintahan](#governance) 
+  - [Pembekuan akun](#freezing-accounts)
+  - [Mengubah Kode Akun](#changing-account-code)
+  - [Konstitusi](#constitution)
+  - [Perbarui Protokol & Konstitusi](#upgrading-the-protocol--constitution) 
+    - [Perubahan Darurat](#emergency-changes)
+- [Script & Mesin virtual](#scripts--virtual-machines) 
+  - [Pesan yang Ditetapkan Skema](#schema-defined-messages)
+  - [Skema yang Ditetapkan Database](#schema-defined-database)
+  - [Memisahkan Otentikasi dari Aplikasi](#separating-authentication-from-application)
+  - [Arsitektur Independen Mesin Virtual](#virtual-machine-independent-architecture) 
+    - [Majelis Web (WASM)](#web-assembly-wasm)
+    - [Mesin Virtual Etereum (EVM)](#ethereum-virtual-machine-evm)
+- [Blockchain antar Komunikasi](#inter-blockchain-communication) 
+  - [Bukti Merkle untuk Validasi Klien Cahaya (LCV)](#merkle-proofs-for-light-client-validation-lcv)
+  - [Merantaikan dari latensi Komunikasi](#latency-of-interchain-communication)
+  - [Bukti Kelengkapan](#proof-of-completeness)
+- [Kesimpulan](#conclusion)
 
-# Background
+# Latar Belakang
 
-Blockchain technology was introduced in 2008 with the launch of the bitcoin currency, and since then entrepreneurs and developers have been attempting to generalize the technology in order to support a wider range of applications on a single blockchain platform.
+Teknologi Blockchain diperkenalkan pada tahun 2008 dengan diluncurkannya mata uang bitcoin, dan sejak saat itu para pengusaha dan pengembang telah berusaha untuk menggeneralisasi teknologinya guna mendukung berbagai aplikasi yang lebih luas pada platform single blockchain.
 
-While a number of blockchain platforms have struggled to support functional decentralized applications, application specific blockchains such as the BitShares decentralized exchange (2014) and Steem social media platform (2016) have become heavily used blockchains with tens of thousands of daily active users. They have achieved this by increasing performance to thousands of transactions per second, reducing latency to 1.5 seconds, eliminating fees, and providing a user experience similar to those currently provided by existing centralized services.
+Sementara sejumlah platform blockchain telah berjuang untuk mendukung aplikasi desentralisasi fungsional, aplikasi blokir tertentu seperti platform pertukaran terdistribusi BitShares (2014) dan Steem social media (2016) telah menjadi alat penghambat yang sangat banyak dengan puluhan ribu pengguna aktif setiap hari. Mereka telah mencapai hal ini dengan meningkatkan kinerja ke ribuan transaksi per detik, mengurangi latency menjadi 1,5 detik, menghilangkan biaya, dan memberikan pengalaman pengguna yang serupa dengan layanan yang ada saat ini.
 
-Existing blockchain platforms are burdened by large fees and limited computational capacity that prevent widespread blockchain adoption.
+Platform blockchain yang ada dibebani oleh biaya yang besar dan kapasitas komputasi terbatas yang mencegah adopsi blockchain yang luas.
 
-# Requirements for Blockchain Applications
+# Persyaratan untuk Aplikasi Blockchain
 
-In order to gain widespread use, applications on the blockchain require a platform that is flexible enough to meet the following requirements:
+Agar dapat digunakan secara luas, aplikasi pada blockchain memerlukan platform yang cukup fleksibel untuk memenuhi persyaratan berikut:
 
-## Support Millions of Users
+## Dukungan Jutaan Pengguna
 
-Disrupting businesses such as Ebay, Uber, AirBnB, and Facebook, require blockchain technology capable of handling tens of millions of active daily users. In certain cases, applications may not work unless a critical mass of users is reached and therefore a platform that can handle mass number of users is paramount.
+Mengganggu bisnis seperti Ebay, Uber, AirBnB, dan Facebook, membutuhkan teknologi blockchain yang mampu menangani puluhan juta pengguna harian aktif. Dalam kasus tertentu, aplikasi mungkin tidak bekerja kecuali jika ada banyak pengguna yang kritis dan oleh karena itu, platform yang dapat menangani jumlah pengguna massal sangat penting.
 
-## Free Usage
+## Penggunaan gratis
 
-Application developers need the flexibility to offer users free services; users should not have to pay in order to use the platform or benefit from its services. A blockchain platform that is free to use for users will likely gain more widespread adoption. Developers and businesses can then create effective monetization strategies.
+Pengembang aplikasi memerlukan fleksibilitas untuk menawarkan layanan gratis kepada pengguna; pengguna tidak perlu membayar untuk menggunakan platform atau mendapatkan keuntungan dari layanannya. A blockchain platform that is free to use for users will likely gain more widespread adoption. Developers and businesses can then create effective monetization strategies.
 
 ## Easy Upgrades and Bug Recovery
 
