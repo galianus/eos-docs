@@ -85,23 +85,23 @@ Mengganggu bisnis seperti Ebay, Uber, AirBnB, dan Facebook, membutuhkan teknolog
 
 ## Penggunaan gratis
 
-Pengembang aplikasi memerlukan fleksibilitas untuk menawarkan layanan gratis kepada pengguna; pengguna tidak perlu membayar untuk menggunakan platform atau mendapatkan keuntungan dari layanannya. A blockchain platform that is free to use for users will likely gain more widespread adoption. Developers and businesses can then create effective monetization strategies.
+Pengembang aplikasi memerlukan fleksibilitas untuk menawarkan layanan gratis kepada pengguna; pengguna tidak perlu membayar untuk menggunakan platform atau mendapatkan keuntungan dari layanannya. Platform blockchain yang bebas digunakan bagi pengguna kemungkinan akan mendapatkan adopsi yang lebih luas. Pengembang dan bisnis kemudian dapat menciptakan strategi monetisasi yang efektif.
 
-## Easy Upgrades and Bug Recovery
+## Memperbarui Mudah dan Pemulihan Bug
 
-Businesses building blockchain based applications need the flexibility to enhance their applications with new features.
+Bisnis yang membangun aplikasi berbasis blockchain memerlukan fleksibilitas untuk meningkatkan aplikasinya dengan fitur baru.
 
-All non-trivial software is subject to bugs, even with the most rigorous of formal verification. The platform must be robust enough to fix bugs when they inevitably occur.
+Semua perangkat lunak non-sepele tunduk pada bug, bahkan dengan verifikasi formal yang paling ketat sekalipun. Platform harus cukup kuat untuk memperbaiki bug saat mereka mau tidak mau terjadi.
 
-## Low Latency
+## Latensi rendah
 
-A good user experience demands reliable feedback with delay of no more than a few seconds. Longer delays frustrate users and make applications built on a blockchain less competitive with existing non-blockchain alternatives.
+Pengalaman pengguna yang baik menuntut umpan balik yang andal dengan penundaan tidak lebih dari beberapa detik. Penundaan yang lebih lama membuat frustrasi pengguna dan membuat aplikasi yang dibangun di atas blokir kurang bersaing dengan alternatif non-blockchain yang ada.
 
-## Sequential Performance
+## Berurutan kinerja
 
-There are some applications that just cannot be implemented with parallel algorithms due to sequentially dependent steps. Applications such as exchanges need enough sequential performance to handle high volumes and therefore a platform with fast sequential performance is required.
+Ada beberapa aplikasi yang tidak dapat diimplementasikan dengan algoritma paralel karena langkah-langkah yang bergantung secara berurutan. Aplikasi seperti pertukaran membutuhkan kinerja sekuensial yang cukup untuk menangani volume tinggi dan oleh karena itu diperlukan sebuah platform dengan kinerja sekuensial yang cepat.
 
-## Parallel Performance
+## Paralel Kinerja
 
 Large scale applications need to divide the workload across multiple CPUs and computers.
 
