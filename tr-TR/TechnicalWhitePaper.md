@@ -174,11 +174,11 @@ Bu modele göre, bir takas sözleşmesinin, sipariş oluşturma ve iptal işleml
 
 ### İzin Haritası
 
-EOS.IO yazılımı, her hesabın herhangi bir hesabın, Adlandırılmış Mesaj İşleyiciler Grubu ile kendi Adlandırılmış İzin Düzeyleri arasındaki eşlemeyi tanımlamasına izin verir. Örneğin, bir hesap sahibi, sosyal medya uygulamasını "Arkadaş" izin grubuna eşleyebilir. Bu haritalama ile herhangi bir arkadaş, hesap sahibinin sosyal medyasına hesap sahibi olarak bilgi gönderebilir. Even though they would post as the account holder, they would still use their own keys to sign the message. This means it is always possible to identify which friends used the account and in what way.
+EOS.IO yazılımı, her hesabın herhangi bir hesabın, Adlandırılmış Mesaj İşleyiciler Grubu ile kendi Adlandırılmış İzin Düzeyleri arasındaki eşlemeyi tanımlamasına izin verir. Örneğin, bir hesap sahibi, sosyal medya uygulamasını "Arkadaş" izin grubuna eşleyebilir. Bu haritalama ile herhangi bir arkadaş, hesap sahibinin sosyal medyasına hesap sahibi olarak bilgi gönderebilir. Hesap sahibi olarak gönderi yapıyor olsalar dahi, mesajı imzalamak için kendi anahtarlarını kullanmaya devam ederler. Bu, hangi arkadaşın hesabı hangi şekilde kullandığını saptamanın, her zaman mümkün olduğu anlamına gelir.
 
-### Evaluating Permissions
+### İzinlerin Değerlendirmesi
 
-When delivering a message of type "**Action**", from **@alice** to **@bob** the EOS.IO software will first check to see if **@alice** has defined a permission mapping for **@bob.groupa.subgroup.Action**. If nothing is found then a mapping for **@bob.groupa.subgroup** then **@bob.groupa**, and lastly **@bob** will be checked. If no further match is found, then the assumed mapping will be to the named permission group **@alice.active**.
+**@ayse**'den **@aliye** **Action** tipinde mesajı gönderirken, EOS.IO yazılımı önce **@ayse**'nin, **@ali.groupa.subgroup.Action** için bir izin eşlemesi var mı diye kontrol eder. If nothing is found then a mapping for **@bob.groupa.subgroup** then **@bob.groupa**, and lastly **@bob** will be checked. If no further match is found, then the assumed mapping will be to the named permission group **@alice.active**.
 
 Once a mapping is identified then signing authority is validated using the threshold multi-signature process and the authority associated with the named permission. If that fails, then it traverses up to the parent permission and ultimately to the owner permission, **@alice.owner**.
 
