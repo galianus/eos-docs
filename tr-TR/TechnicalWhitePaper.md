@@ -170,11 +170,11 @@ EOS.IO yazılımı, her hesabın kendi mesaj işleyicilerini, adlandırılmış 
 
 En üst düzey mesaj işleyici grubu hesap adıdır ve en düşük düzey ise hesap tarafından alınan tekil/bireysel mesaj tipidir. Bu gruplara şöyle başvurulabilir: **@accountname.groupa.subgroupb.MessageType**.
 
-Under this model it is possible for an exchange contract to group order creation and canceling separately from deposit and withdraw. This grouping by the exchange contract is a convenience for users of the exchange.
+Bu modele göre, bir takas sözleşmesinin, sipariş oluşturma ve iptal işlemlerini, para yatırma/çekme işlemlerinden ayrı olarak gruplandırması mümkündür. Takas sözleşmesi ile bu gruplandırma, borsa kullanıcıları için kolaylıktır.
 
-### Permission Mapping
+### İzin Haritası
 
-EOS.IO software allows each account to define a mapping between a Named Message Handler Group of any account and their own Named Permission Level. For example, an account holder could map the account holder's social media application to the account holder's "Friend" permission group. With this mapping, any friend could post as the account holder on the account holder's social media. Even though they would post as the account holder, they would still use their own keys to sign the message. This means it is always possible to identify which friends used the account and in what way.
+EOS.IO yazılımı, her hesabın herhangi bir hesabın, Adlandırılmış Mesaj İşleyiciler Grubu ile kendi Adlandırılmış İzin Düzeyleri arasındaki eşlemeyi tanımlamasına izin verir. Örneğin, bir hesap sahibi, sosyal medya uygulamasını "Arkadaş" izin grubuna eşleyebilir. Bu haritalama ile herhangi bir arkadaş, hesap sahibinin sosyal medyasına hesap sahibi olarak bilgi gönderebilir. Even though they would post as the account holder, they would still use their own keys to sign the message. This means it is always possible to identify which friends used the account and in what way.
 
 ### Evaluating Permissions
 
