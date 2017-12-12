@@ -168,7 +168,7 @@ Başka bir örnek Steem'in blok zincirindeki, adlandırılmış üç sabit izin 
 
 EOS.IO yazılımı, her hesabın kendi mesaj işleyicilerini, adlandırılmış ve iç içe geçmiş gruplar için düzenlemesine olanak tanır. Bu adlandırılmış ileti işleyici grupları, diğer hesaplar izin seviyelerini ayarladıklarına, referans olabilirler.
 
-The highest level message handler group is the account name and the lowest level is the individual message type being received by the account. These groups can be referenced like so: **@accountname.groupa.subgroupb.MessageType**.
+En üst düzey mesaj işleyici grubu hesap adıdır ve en düşük düzey ise hesap tarafından alınan tekil/bireysel mesaj tipidir. Bu gruplara şöyle başvurulabilir: **@accountname.groupa.subgroupb.MessageType**.
 
 Under this model it is possible for an exchange contract to group order creation and canceling separately from deposit and withdraw. This grouping by the exchange contract is a convenience for users of the exchange.
 
