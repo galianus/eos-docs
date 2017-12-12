@@ -287,13 +287,13 @@ Bandwidth dan perhitungan memiliki dua komponen, penggunaan seketika dan penggun
 
 Utang komputasi adalah perhitungan yang harus dilakukan untuk regenerasi keadaan dari log pesan. Jika hutang komputasi tumbuh terlalu besar, maka perlu mengambil snapshot dari status blockchain dan membuang sejarah blockchain. Jika hutang komputasi tumbuh terlalu cepat maka mungkin diperlukan waktu 6 bulan untuk memutar ulang transaksi satu tahun senilai 1 tahun. Oleh karena itu, sangat penting bahwa hutang komputasi dikelola dengan hati-hati.
 
-Blockchain state storage adalah informasi yang dapat diakses dari logika aplikasi. Ini mencakup informasi seperti buku pesanan dan saldo akun. Jika negara tidak pernah dibaca oleh aplikasi maka seharusnya tidak disimpan. Misalnya, konten dan komentar posting blog tidak dibaca oleh logika aplikasi sehingga tidak boleh disimpan dalam status blockchain. Meanwhile the existence of a post/comment, the number of votes, and other properties do get stored as part of the blockchain's state.
+Blockchain state storage adalah informasi yang dapat diakses dari logika aplikasi. Ini mencakup informasi seperti buku pesanan dan saldo akun. Jika negara tidak pernah dibaca oleh aplikasi maka seharusnya tidak disimpan. Misalnya, konten dan komentar posting blog tidak dibaca oleh logika aplikasi sehingga tidak boleh disimpan dalam status blockchain. Sementara itu keberadaan posting / komentar, jumlah suara dan properti lainnya bisa disimpan sebagai bagian dari negara blockchain.
 
-Block producers publish their available capacity for bandwidth, computation, and state. The EOS.IO software allows each account to consume a percentage of the available capacity proportional to the amount of tokens held in a 3-day staking contract. For example, if a blockchain based on the EOS.IO software is launched and if an account holds 1% of the total tokens distributable pursuant to that blockchain, then that account has the potential to utilize 1% of the state storage capacity.
+Produsen blok mempublikasikan kapasitas mereka yang tersedia untuk bandwidth, perhitungan, dan negara. Perangkat lunak EOS.IO memungkinkan setiap akun untuk mengkonsumsi persentase kapasitas yang tersedia sebanding dengan jumlah token yang ada dalam kontrak 3 hari yang mengintai. Misalnya, jika blockchain berdasarkan perangkat lunak EOS.IO diluncurkan dan jika akun menyimpan 1% dari total token yang dapat didistribusikan sesuai dengan blockchain tersebut, maka akun tersebut berpotensi memanfaatkan 1% dari kapasitas penyimpanan negara.
 
-Adopting the EOS.IO software on a launched blockchain means bandwidth and computational capacity are allocated on a fractional reserve basis because they are transient (unused capacity cannot be saved for future use). The algorithm used by EOS.IO software is similar to the algorithm used by Steem to rate-limit bandwidth usage.
+Mengadopsi perangkat lunak EOS.IO pada blockchain yang diluncurkan berarti bandwidth dan kapasitas komputasi dialokasikan berdasarkan basis cadangan karena mereka bersifat sementara (kapasitas yang tidak terpakai tidak dapat disimpan untuk penggunaan selanjutnya). Algoritma yang digunakan oleh perangkat lunak EOS.IO mirip dengan algoritma yang digunakan oleh Steem untuk menilai-membatasi penggunaan bandwidth.
 
-## Objective and Subjective Measurements
+## Pengukuran Obyektif dan Subjektif
 
 As discussed earlier, instrumenting computational usage has a significant impact on performance and optimization; therefore, all resource usage constraints are ultimately subjective and enforcement is done by block producers according to their individual algorithms and estimates.
 
@@ -345,11 +345,11 @@ The block producers on all blockchains have the power to select which transactio
 
 ## Changing Account Code
 
-When all else fails and an "unstoppable application" acts in an unpredictable manner, a blockchain using EOS.IO software allows the block producers to replace the account's code without hard forking the entire blockchain. Similar to the process of freezing an account, this replacement of the code requires a 17/21 vote of elected block producers.
+When all else fails and an "unstoppable application" acts in an unpredictable manner, a blockchain using EOS.IO software allows the block producers to replace the account's code without hard forking the entire blockchain. Mirip dengan proses pembekuan akun, penggantian kode ini membutuhkan 17/21 suara produsen blok terpilih.
 
-## Constitution
+## Konstitusi
 
-The EOS.IO software enables blockchains to establish a peer-to-peer terms of service agreement or a binding contract among those users who sign it, referred to as a "constitution". The content of this constitution defines obligations among the users which cannot be entirely enforced by code and facilitates dispute resolution by establishing jurisdiction and choice of law along with other mutually accepted rules. Every transaction broadcast on the network must incorporate the hash of the constitution as part of the signature and thereby explicitly binds the signer to the contract.
+Perangkat lunak EOS.IO memungkinkan blockchains untuk menetapkan persyaratan layanan peer-to-peer atau kontrak mengikat antara pengguna yang menandatanganinya, disebut sebagai "undang-undang dasar". Isi konstitusi ini mendefinisikan kewajiban di antara pengguna yang tidak dapat sepenuhnya ditegakkan berdasarkan kode dan memfasilitasi penyelesaian perselisihan dengan menetapkan yurisdiksi dan pilihan undang-undang beserta peraturan yang saling diterima lainnya. Setiap transaksi yang disiarkan di jaringan harus menggabungkan hash dari konstitusi sebagai bagian dari tanda tangan dan dengan demikian secara eksplisit mengikat penandatangan kontrak.
 
 The constitution also defines the human-readable intent of the source code protocol. This intent is used to identify the difference between a bug and a feature when errors occur and guides the community on what fixes are proper or improper.
 
