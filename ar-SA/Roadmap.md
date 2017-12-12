@@ -22,7 +22,7 @@
 
 ### الجهاز الظاهري أبي (Dan)
 
-Contracts are compiled to WebAssembly (WASM) and WASM must interface with the blockchain via a defined API. This API is what developers depend upon to build applications and be relatively stable before developers can really start to build on EOS.
+يتم تجميع العقود إلى مركب الويب (WASM) و WASM يجب أن يتفاعل مع بلوكشين عبر API معرفة. هذا أبي هو ما يعتمد عليه المطورين لبناء التطبيقات وتكون مستقرة نسبيا قبل أن يتمكن المطورين حقا من الإنشاء على EOS.
 
 ### RPC Interface (Arhag, Nathan)
 
