@@ -178,7 +178,7 @@ EOS.IO yazılımı, her hesabın herhangi bir hesabın, Adlandırılmış Mesaj 
 
 ### İzinlerin Değerlendirmesi
 
-**@ayse**'den **@aliye** **Action** tipinde mesajı gönderirken, EOS.IO yazılımı önce **@ayse**'nin, **@ali.groupa.subgroup.Action** için bir izin eşlemesi var mı diye kontrol eder. If nothing is found then a mapping for **@bob.groupa.subgroup** then **@bob.groupa**, and lastly **@bob** will be checked. If no further match is found, then the assumed mapping will be to the named permission group **@alice.active**.
+**@ayse**'den **@aliye** **Action** tipinde mesajı gönderirken, EOS.IO yazılımı önce **@ayse**'nin, **@ali.groupa.subgroup.Action** için bir izin eşlemesi var mı diye kontrol eder. **@ali.groupa.subgroup** için hiçbir şey bulunamazsa **@ali.groupa** için kontrol yapar yine bulamazsa son olarak **@ali** için bir eşleme kontrolü yapar. Daha fazla eşleşme bulunmazsa, varsayılan eşleme **@ayse.active** olarak isimlendirilmiş izin grubu olacaktır.
 
 Once a mapping is identified then signing authority is validated using the threshold multi-signature process and the authority associated with the named permission. If that fails, then it traverses up to the parent permission and ultimately to the owner permission, **@alice.owner**.
 
