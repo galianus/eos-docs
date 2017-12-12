@@ -38,11 +38,11 @@
 
 # المرحلة 1 - الحد الأدنى لبيئة إختبار قابلية الحياة - خريف 2017
 
-Everything in Phase 1 assumes a trusted environment that only runs the developer's own code. Before a test network can be deployed several additional features need to be implemented and tested.
+كل شيء في المرحلة 1 يفرض بيئة موثوق بها التي تشغل فقط الكود الخاص بالمطور. قبل أن يتم اختبار الشبكة عدة ميزات إضافية تحتاج إلى تنفيذ واختبارها.
 
-### P2P Network Code (Phil)
+### P2P كود الشبكة (Phil)
 
-This is a plugin that is responsible for synchronizing the blockchain state between two standalone nodes.
+هذا هو البرنامج المساعد الذي هو المسؤول عن مزامنة وضعية بلوكشين بين عقدتين مستقلتين.
 
 ### WASM Sanitation & CPU Sandboxing (Brian)
 
