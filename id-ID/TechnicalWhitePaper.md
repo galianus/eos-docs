@@ -333,19 +333,19 @@ Selain memilih produsen blok, sesuai dengan blockchain berdasarkan perangkat lun
 
 Pemerintahan adalah proses di mana orang mencapai konsensus mengenai hal-hal subyektif yang tidak dapat ditangkap sepenuhnya oleh algoritme perangkat lunak. Perangkat lunak berbasis EOS.IO menerapkan proses tata kelola yang secara efisien mengarahkan pengaruh produsen blok yang ada. Tidak adanya proses tata kelola yang telah ditetapkan, blokir sebelumnya mengandalkan proses pemerintahan yang ad hoc, informal, dan sering kontroversial yang menghasilkan hasil yang tidak dapat diprediksi.
 
-Blockchain berdasarkan perangkat lunak EOS.IO menyadari bahwa kekuatan berasal dari pemegang token yang mendelegasikan kekuatan tersebut kepada produsen blok. The block producers are given limited and checked authority to freeze accounts, update defective applications, and propose hard forking changes to the underlying protocol.
+Blockchain berdasarkan perangkat lunak EOS.IO menyadari bahwa kekuatan berasal dari pemegang token yang mendelegasikan kekuatan tersebut kepada produsen blok. Produsen blok diberi wewenang terbatas dan diperiksa untuk membekukan rekening, memperbarui aplikasi yang cacat, dan mengusulkan perubahan keras terhadap protokol yang mendasarinya.
 
-Embedded into the EOS.IO software is the election of block producers. Before any change can be made to the blockchain these block producers must approve it. If the block producers refuse to make changes desired by the token holders then they can be voted out. If the block producers make changes without permission of the token holders then all other non-producing full-node validators (exchanges, etc) will reject the change.
+Tertanam ke perangkat lunak EOS.IO adalah pemilihan produsen blok. Sebelum apa saja perubahan bisa dibuat dengan blockchain ini blok produsen harus menyetujui saya. Jika blok produsen itu menolak untuk membuat perubahan yang diinginkan oleh pemegang token itu kemudian mereka dapat sebagai di luar. Jika produsen blok melakukan perubahan tanpa izin pemegang token maka semua pemeriksa node full-node lainnya (pertukaran, dll) akan menolak perubahannya.
 
-## Freezing Accounts
+## Pembekuan akun
 
-Sometimes a smart contact behaves in an aberrant or unpredictable manner and fails to perform as intended; other times an application or account may discover an exploit that enables it to consume an unreasonable amount of resources. When such issues inevitably occur, the block producers have the power to rectify such situations.
+Terkadang kontak cerdas berperilaku tidak masuk akal atau tidak dapat diprediksi dan gagal dilakukan sebagaimana mestinya; Lain kali aplikasi atau akun mungkin menemukan eksploitasi yang memungkinkannya mengkonsumsi sejumlah sumber daya yang tidak masuk akal. Bila masalah semacam itu pasti terjadi, produsen blok memiliki kekuatan untuk memperbaiki situasi semacam itu.
 
-The block producers on all blockchains have the power to select which transactions are included in blocks which gives them the ability to freeze accounts. A blockchain using EOS.IO software formalizes this authority by subjecting the process of freezing an account to a 17/21 vote of active producers. If the producers abuse the power they can be voted out and an account will be unfrozen.
+Produsen blok pada semua blokir memiliki kekuatan untuk memilih transaksi mana yang termasuk dalam blok yang memberi mereka kemampuan untuk membekukan akun. Blockchain menggunakan perangkat lunak EOS.IO meresmikan wewenang ini dengan menundukkan proses pembekuan akun ke pemungutan suara 17/21 produsen aktif. Jika produsen menyalahgunakan kekuasaan, mereka dapat memilih dan sebuah akun akan dicairkan.
 
-## Changing Account Code
+## Mengubah Kode Akun
 
-When all else fails and an "unstoppable application" acts in an unpredictable manner, a blockchain using EOS.IO software allows the block producers to replace the account's code without hard forking the entire blockchain. Mirip dengan proses pembekuan akun, penggantian kode ini membutuhkan 17/21 suara produsen blok terpilih.
+Ketika semuanya gagal dan sebuah "aplikasi yang tidak dapat dihentikan" bertindak dengan cara yang tidak terduga, blockchain yang menggunakan perangkat lunak EOS.IO memungkinkan produsen blok untuk mengganti kode akun tanpa membuat keras seluruh blockchain. Mirip dengan proses pembekuan akun, penggantian kode ini membutuhkan 17/21 suara produsen blok terpilih.
 
 ## Konstitusi
 
@@ -419,25 +419,25 @@ EOS.IO software is designed to facilitate inter-blockchain communication. This i
 
 Integrating with other blockchains is much easier if clients do not need to process all transactions. After all, an exchange only cares about transfers in and out of the exchange and nothing more. It would also be ideal if the exchange chain could utilize lightweight merkle proofs of deposit rather than having to trust its own block producers entirely. At the very least a chain's block producers would like to maintain the smallest possible overhead when synchronizing with another blockchain.
 
-The goal of LCV is to enable the generation of relatively light-weight proof of existence that can be validated by anyone tracking a relatively light-weight data set. In this case the objective is to prove that a particular transaction was included in a particular block and that the block is included in the verified history of a particular blockchain.
+Tujuan LCV adalah untuk memungkinkan pembangkitan bukti keberadaan yang relatif ringan yang dapat divalidasi oleh siapa pun yang melacak kumpulan data yang relatif ringan. Dalam kasus ini, tujuannya adalah untuk membuktikan bahwa transaksi tertentu disertakan dalam blok tertentu dan blok tersebut termasuk dalam sejarah terverifikasi dari blockchain tertentu.
 
-Bitcoin supports validation of transactions assuming all nodes have access to the full history of block headers which amounts to 4MB of block headers per year. At 10 transactions per second, a valid proof requires about 512 bytes. This works well for a blockchain with a 10 minute block interval, but is no longer "light" for blockchains with a 3 second block interval.
+Bitcoin mendukung validasi transaksi dengan asumsi semua node memiliki akses ke sejarah lengkap header blok yang berjumlah 4MB blok header per tahun. Pada 10 transaksi per detik, bukti yang valid membutuhkan sekitar 512 byte. Ini bekerja dengan baik untuk blockchain dengan interval blok 10 menit, namun tidak lagi "ringan" untuk blockchains dengan interval blok 3 detik.
 
-The EOS.IO software enables lightweight proofs for anyone who has any irreversible block header after the point in which the transaction was included. Using the hash-linked structure shown below it is possible to prove the existence of any transaction with a proof less than 1024 bytes in size. If it is assumed that validating nodes are keeping up with all block headers in the past day (2 MB of data), then proving these transactions will only require proofs 200 bytes long.
+Perangkat lunak EOS.IO memungkinkan bukti ringan bagi siapa saja yang memiliki header blok ireversibel setelah titik di mana transaksi disertakan. Dengan menggunakan struktur yang ditunjukkan di bawah ini adalah mungkin untuk membuktikan adanya transaksi dengan ukuran kurang dari 1024 byte. Jika diasumsikan bahwa memvalidasi node adalah menjaga dengan semua header blok dalam satu hari terakhir (2 MB data), maka membuktikan bahwa transaksi ini hanya memerlukan bukti 200 byte.
 
-There is little incremental overhead associated with producing blocks with the proper hash-linking to enable these proofs which means there is no reason not to generate blocks this way.
+Ada sedikit atas tambahan yang terkait dengan blok produksi dengan kaitan hash yang tepat untuk memungkinkan bukti-bukti ini yang berarti tidak ada alasan untuk tidak menghasilkan blok dengan cara ini.
 
-When it comes time to validate proofs on other chains there are a wide variety of time/ space/ bandwidth optimizations that can be made. Tracking all block headers (420 MB/year) will keep proof sizes small. Tracking only recent headers can offer a trade off between minimal long-term storage and proof size. Alternatively, a blockchain can use a lazy evaluation approach where it remembers intermediate hashes of past proofs. New proofs only have to include links to the known sparse tree. The exact approach used will necessarily depend upon the percentage of foreign blocks that include transactions referenced by merkle proof.
+Ketika tiba saatnya untuk memvalidasi bukti pada rantai lain ada berbagai variasi waktu / ruang / optimalisasi bandwidth yang dapat dilakukan. Melacak semua header blok (420 MB / tahun) akan menyimpan ukuran bukti kecil. Pelacakan hanya header baru-baru ini dapat menawarkan trade off antara penyimpanan jangka panjang minimal dan ukuran bukti. Sebagai alternatif, blockchain dapat menggunakan pendekatan evaluasi yang malas di mana ia mengingat hash antara bukti masa lalu. Bukti baru hanya harus menyertakan link ke pohon jarang yang diketahui. Pendekatan tepat yang digunakan tentu saja bergantung pada persentase blok asing yang mencakup transaksi yang dirujuk oleh bukti merkil.
 
-After a certain density of interconnectedness it becomes more efficient to simply have one chain contain the entire block history of another chain and eliminate the need for proofs all together. For performance reasons, it is ideal to minimize the frequency of inter-chain proofs.
+Setelah kepadatan keterkaitan tertentu, menjadi lebih efisien untuk hanya memiliki satu rantai berisi keseluruhan sejarah blok rantai lain dan menghilangkan kebutuhan akan bukti bersama-sama. Untuk alasan kinerja, sangat ideal untuk meminimalkan frekuensi bukti antar-rantai.
 
-## Latency of Interchain Communication
+## Merantaikan dari latensi Komunikasi
 
-When communicating with another outside blockchain, block producers must wait until there is 100% certainty that a transaction has been irreversibly confirmed by the other blockchain before accepting it as a valid input. Using an EOS.IO software-based blockchain and DPOS with 3 second blocks and 21 producers, this takes approximately 45 seconds. If a chain's block producers do not wait for irreversibility it would be like an exchange accepting a deposit that was later reversed and could impact the validity of the blockchain's consensus.
+Saat berkomunikasi dengan blockchain luar yang lain, produsen blok harus menunggu sampai ada kepastian 100% bahwa sebuah transaksi telah dikonfirmasi secara tidak dapat dipulihkan oleh blockchain lainnya sebelum menerimanya sebagai masukan yang valid. Dengan menggunakan blockchain berbasis perangkat lunak dan DPOS EOS.IO dengan 3 blok kedua dan 21 produsen, ini membutuhkan waktu sekitar 45 detik. Jika produsen blok rantai tidak menunggu ireversibilitas, itu akan seperti pertukaran yang menerima deposit yang kemudian dibatalkan dan dapat mempengaruhi validitas konsensus blockchain.
 
-## Proof of Completeness
+## Bukti Kelengkapan
 
-When using merkle proofs from outside blockchains, there is a significant difference between knowing that all transactions processed are valid and knowing that no transactions have been skipped or omitted. While it is impossible to prove that all of the most recent transactions are known, it is possible to prove that there have been no gaps in the transaction history. The EOS.IO software facilitates this by assigning a sequence number to every message delivered to every account. A user can use these sequence numbers to prove that all messages intended for a particular account have been processed and that they were processed in order.
+Bila menggunakan bukti merkle dari batasan luar, ada perbedaan yang signifikan antara mengetahui bahwa semua transaksi yang diproses valid dan mengetahui bahwa tidak ada transaksi yang dilewati atau diabaikan. While it is impossible to prove that all of the most recent transactions are known, it is possible to prove that there have been no gaps in the transaction history. The EOS.IO software facilitates this by assigning a sequence number to every message delivered to every account. A user can use these sequence numbers to prove that all messages intended for a particular account have been processed and that they were processed in order.
 
 # Conclusion
 
