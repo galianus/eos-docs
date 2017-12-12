@@ -103,13 +103,13 @@ Ada beberapa aplikasi yang tidak dapat diimplementasikan dengan algoritma parale
 
 ## Paralel Kinerja
 
-Large scale applications need to divide the workload across multiple CPUs and computers.
+Aplikasi skala besar perlu membagi beban kerja di beberapa CPU dan komputer.
 
-# Consensus Algorithm (DPOS)
+# Algoritma Konsensus (DPOS)
 
-EOS.IO software utilizes the only decentralized consensus algorithm capable of meeting the performance requirements of applications on the blockchain, [Delegated Proof of Stake (DPOS)](https://steemit.com/dpos/@dantheman/dpos-consensus-algorithm-this-missing-white-paper). Under this algorithm, those who hold tokens on a blockchain adopting the EOS.IO software may select block producers through a continuous approval voting system and anyone may choose to participate in block production and will be given an opportunity to produce blocks proportional to the total votes they have received relative to all other producers. For private blockchains the management could use the tokens to add and remove IT staff.
+Perangkat lunak EOS.IO menggunakan satu-satunya algoritma konsensus terdesentralisasi yang mampu memenuhi persyaratan kinerja aplikasi pada blockchain, [ Delegated Proof of Stake (DPOS) ](https://steemit.com/dpos/@dantheman/dpos-consensus-algorithm-this-missing-white-paper). Dengan algoritma ini, mereka yang memegang token pada blockchain yang mengadopsi perangkat lunak EOS.IO dapat memilih produsen blok melalui sistem voting persetujuan terus menerus dan siapa pun dapat memilih untuk berpartisipasi dalam produksi blok dan diberi kesempatan untuk menghasilkan blok yang proporsional dengan jumlah suara mereka telah menerima relatif terhadap semua produsen lainnya. Untuk blokir pribadi, manajemen dapat menggunakan token untuk menambahkan dan menghapus staf TI.
 
-The EOS.IO software enables blocks to be produced exactly every 3 seconds and exactly one producer is authorized to produce a block at any given point in time. If the block is not produced at the scheduled time then the block for that time slot is skipped. When one or more blocks are skipped, there is a 6 or more second gap in the blockchain.
+Perangkat lunak EOS.IO memungkinkan blok diproduksi tepat setiap 3 detik dan tepat satu produsen diberi wewenang untuk menghasilkan satu blok pada satu titik waktu tertentu. Jika blok tidak diproduksi pada waktu yang dijadwalkan maka blok untuk slot waktu dilewati. Ketika satu atau lebih blok dilewati, ada 6 celah atau lebih detik di blockchain tersebut.
 
 Menggunakan blok perangkat lunak EOS.IO diproduksi dalam ronde 21. Pada awal setiap putaran, 21 produsen blok unik dipilih. 20 besar dengan total persetujuan dipilih secara otomatis setiap putaran dan penghasil terakhir dipilih sebanding dengan jumlah suara mereka dibandingkan dengan produsen lainnya. Produsen terpilih dikocok menggunakan nomor pseudorandom yang berasal dari waktu blok. Pengocokan ini dilakukan untuk memastikan bahwa semua produsen menjaga konektivitas seimbang ke semua produsen lainnya.
 
