@@ -176,29 +176,29 @@ Dengan model ini dimungkinkan adanya kontrak pertukaran untuk membuat pesanan ke
 
 Perangkat lunak EOS.IO memungkinkan setiap akun menentukan pemetaan antara Kelompok Penangan Pesan Bernama dari akun mana pun dan Tingkat Izin Bernama mereka sendiri. Misalnya, pemegang akun dapat memetakan aplikasi media sosial pemegang rekening ke grup izin "Teman" pemegang rekening. Dengan pemetaan ini, teman manapun bisa memposting sebagai pemegang akun di media sosial pemegang rekening. Meskipun mereka akan memposting sebagai pemegang rekening, mereka tetap menggunakan kunci mereka sendiri untuk menandatangani pesan. Ini berarti selalu memungkinkan untuk mengidentifikasi teman mana yang menggunakan akun tersebut dan dengan cara apa.
 
-### Evaluating Permissions
+### Mengevaluasi Izin
 
-When delivering a message of type "**Action**", from **@alice** to **@bob** the EOS.IO software will first check to see if **@alice** has defined a permission mapping for **@bob.groupa.subgroup.Action**. If nothing is found then a mapping for **@bob.groupa.subgroup** then **@bob.groupa**, and lastly **@bob** will be checked. If no further match is found, then the assumed mapping will be to the named permission group **@alice.active**.
+Saat mengirim pesan bertipe "** Action **", dari ** @alice ** ke ** @bob ** perangkat lunak EOS.IO akan memeriksa untuk melihat apakah ** @alice ** telah menetapkan pemetaan izin untuk ** @ bob.groupa.subgroup.Action **. Jika tidak ada yang ditemukan maka pemetaan untuk ** @ bob.groupa.subgroup ** lalu ** @ bob.groupa **, dan terakhir ** @bob ** akan diperiksa. Jika tidak ada pertandingan lebih lanjut yang ditemukan, maka pemetaan yang diasumsikan akan ke grup izin yang diberi nama ** @ alice.active **.
 
-Once a mapping is identified then signing authority is validated using the threshold multi-signature process and the authority associated with the named permission. If that fails, then it traverses up to the parent permission and ultimately to the owner permission, **@alice.owner**.
+Setelah pemetaan diidentifikasi, maka penandatanganan wewenang divalidasi menggunakan proses multi-signature ambang batas dan wewenang yang terkait dengan izin yang disebutkan. Jika itu gagal, maka hal itu terkait dengan izin orang tua dan akhirnya izin pemiliknya, ** @ alice.owner **.
 
 <img align="center" src="http://eos.io/wpimg/diagram2grayscale2.jpg" width="845.85px" height="500px" />
 
-#### Default Permission Groups
+#### Kegagalan izin kelompok
 
-The EOS.IO technology also allows all accounts to have an "owner" group which can do everything, and an "active" group which can do everything except change the owner group. All other permission groups are derived from "active".
+Teknologi EOS.IO juga memungkinkan semua akun memiliki grup "pemilik" yang dapat melakukan semuanya, dan grup "aktif" yang dapat melakukan segalanya kecuali mengubah grup pemilik. Semua kelompok izin lainnya berasal dari "aktif".
 
-#### Parallel Evaluation of Permissions
+#### Evaluasi Paralel Perizinan
 
-The permission evaluation process is "read-only" and changes to permissions made by transactions do not take effect until the end of a block. This means that all keys and permission evaluation for all transactions can be executed in parallel. Furthermore, this means that a rapid validation of permission is possible without starting the costly application logic that would have to be rolled back. Lastly, it means that transaction permissions can be evaluated as pending transactions are received and do not need to be re-evaluated as they are applied.
+Proses evaluasi izin adalah "hanya-baca" dan perubahan pada perizinan yang dibuat oleh transaksi tidak berlaku sampai akhir blok. Ini berarti bahwa semua kunci dan evaluasi izin untuk semua transaksi dapat dilakukan secara paralel. Selanjutnya, ini berarti bahwa validasi izin yang cepat dimungkinkan tanpa memulai logika aplikasi mahal yang harus digulirkan kembali. Terakhir, ini berarti bahwa perizinan transaksi dapat dievaluasi karena transaksi yang tertunda diterima dan tidak perlu dievaluasi ulang saat diterapkan.
 
-All things considered, permission verification represents a significant percentage of the computation required to validate transactions. Making this a read-only and trivially parallelizable process enables a dramatic increase in performance.
+Semua hal dipertimbangkan, verifikasi izin mewakili persentase yang signifikan dari perhitungan yang diperlukan untuk memvalidasi transaksi. Membuat proses baca-saja dan sepele sejajar ini memungkinkan peningkatan kinerja yang dramatis.
 
-When replaying the blockchain to regenerate the deterministic state from the log of messages there is no need to evaluate the permissions again. The fact that a transaction is included in a known good block is sufficient to skip this step. This dramatically reduces the computational load associated with replaying an ever growing blockchain.
+Ketika mengulangi blockchain untuk meregenerasi keadaan deterministik dari log pesan, tidak perlu mengevaluasi hak akses lagi. Fakta bahwa transaksi yang termasuk dalam blok yang diketahui sudah cukup untuk melewati langkah ini. Hal ini secara dramatis mengurangi beban komputasi yang terkait dengan replaying blockchain yang terus berkembang.
 
-## Messages with Mandatory Delay
+## Pesan dengan Mandatory Delay
 
-Time is a critical component of security. In most cases, it is not possible to know if a private key has been stolen until it has been used. Keamanan berbasis waktu bahkan lebih penting lagi bila orang memiliki aplikasi yang memerlukan kunci untuk disimpan di komputer yang terhubung ke internet untuk pemakaian sehari-hari. Perangkat lunak EOS.IO memungkinkan pengembang aplikasi untuk menunjukkan bahwa pesan tertentu harus menunggu periode minimum setelah dimasukkan ke dalam blok sebelum dapat diterapkan. Selama ini mereka bisa dibatalkan.
+Waktu adalah komponen keamanan yang penting. Dalam kebanyakan kasus, tidak mungkin untuk mengetahui apakah kunci privat telah dicuri sampai telah digunakan. Keamanan berbasis waktu bahkan lebih penting lagi bila orang memiliki aplikasi yang memerlukan kunci untuk disimpan di komputer yang terhubung ke internet untuk pemakaian sehari-hari. Perangkat lunak EOS.IO memungkinkan pengembang aplikasi untuk menunjukkan bahwa pesan tertentu harus menunggu periode minimum setelah dimasukkan ke dalam blok sebelum dapat diterapkan. Selama ini mereka bisa dibatalkan.
 
 Pengguna kemudian dapat menerima pemberitahuan melalui email atau pesan teks saat salah satu pesan ini disiarkan. Jika mereka tidak mengizinkannya, mereka dapat menggunakan proses pemulihan akun untuk memulihkan akun mereka dan mencabut pesannya.
 
@@ -351,17 +351,17 @@ When all else fails and an "unstoppable application" acts in an unpredictable ma
 
 Perangkat lunak EOS.IO memungkinkan blockchains untuk menetapkan persyaratan layanan peer-to-peer atau kontrak mengikat antara pengguna yang menandatanganinya, disebut sebagai "undang-undang dasar". Isi konstitusi ini mendefinisikan kewajiban di antara pengguna yang tidak dapat sepenuhnya ditegakkan berdasarkan kode dan memfasilitasi penyelesaian perselisihan dengan menetapkan yurisdiksi dan pilihan undang-undang beserta peraturan yang saling diterima lainnya. Setiap transaksi yang disiarkan di jaringan harus menggabungkan hash dari konstitusi sebagai bagian dari tanda tangan dan dengan demikian secara eksplisit mengikat penandatangan kontrak.
 
-The constitution also defines the human-readable intent of the source code protocol. This intent is used to identify the difference between a bug and a feature when errors occur and guides the community on what fixes are proper or improper.
+Konstitusi juga mendefinisikan maksud manusia dari protokol kode sumber. Tujuan ini digunakan untuk mengidentifikasi perbedaan antara bug dan fitur saat terjadi kesalahan dan membimbing masyarakat tentang perbaikan apa yang benar atau tidak patut.
 
-## Upgrading the Protocol & Constitution
+## Upgrade Protokol & Konstitusi
 
-The EOS.IO software defines a process by which the protocol as defined by the canonical source code and its constitution, can be updated using the following process:
+Perangkat lunak EOS.IO mendefinisikan sebuah proses dimana protokol seperti yang didefinisikan oleh kode sumber kanonik dan konstitusinya, dapat diperbarui dengan menggunakan proses berikut:
 
-1. Block producers propose a change to the constitution and obtains 17/21 approval.
-2. Block producers maintain 17/21 approval for 30 consecutive days.
-3. All users are required to sign transactions using the hash of the new constitution.
-4. Block producers adopt changes to the source code to reflect the change in the constitution and propose it to the blockchain using the hash of a git commit.
-5. Block producers maintain 17/21 approval for 30 consecutive days.
+1. Produsen blok mengusulkan perubahan pada konstitusi dan memperoleh persetujuan 17/21.
+2. Produsen blok mempertahankan persetujuan 17/21 selama 30 hari berturut-turut.
+3. Semua pengguna diharuskan menandatangani transaksi dengan menggunakan hash dari konstitusi baru.
+4. Produsen blok mengadopsi perubahan pada kode sumber untuk mencerminkan perubahan dalam konstitusi dan mengusulkannya ke blokir menggunakan hash dari komit git.
+5. Produsen blok mempertahankan persetujuan 17/21 selama 30 hari berturut-turut.
 6. Changes to the code take effect 7 days later, giving all full nodes 1 week to upgrade after ratification of the source code.
 7. All nodes that do not upgrade to the new code shut down automatically.
 
