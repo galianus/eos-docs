@@ -10,13 +10,13 @@ The goal of this phase is to establish the APIs that developers will require to 
 
 ### Standalone Node (Dan & Nathan)
 
-A standalone node operates a test blockchain and produces blocks while exposing an API. This node does not need to concern itself with any P2P networking code.
+عقدة مستقلة تختبر بلوكشين وتنتج بلوكات في حين استخدام API. هذه العقدة لا تحتاج لتكون لها صلة مع أي رمز من رموز شبكات P2P.
 
 ### العقود الأصلية (Nathan)
 
 The EOS.IO software has a number of native contracts. These are contracts that manage the core operations of the blockchain and exist outside the Web Assembly interface. These contracts include:
 
-1. @eos - manages EOS token transfers
+1. @eos إدارة نقل رمزية EOS
 2. @stake - manages locked EOS, voting, and Producer Election
 3. @system - manages permissions, messages, and contact code updates
 
