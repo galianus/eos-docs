@@ -295,45 +295,45 @@ Mengadopsi perangkat lunak EOS.IO pada blockchain yang diluncurkan berarti bandw
 
 ## Pengukuran Obyektif dan Subjektif
 
-As discussed earlier, instrumenting computational usage has a significant impact on performance and optimization; therefore, all resource usage constraints are ultimately subjective and enforcement is done by block producers according to their individual algorithms and estimates.
+Seperti telah dibahas sebelumnya, penggunaan instruksional memiliki pengaruh yang signifikan terhadap kinerja dan optimalisasi; Oleh karena itu, semua batasan penggunaan sumber daya pada akhirnya subjektif dan penegakan dilakukan oleh produsen blok sesuai dengan algoritma dan perkiraan masing-masing.
 
-That said, there are certain things that are trivial to measure objectively. The number of messages delivered and the size of the data stored in the internal database are cheap to measure objectively. The EOS.IO software enables block producers to apply the same algorithm over these objective measures but may choose to apply stricter subjective algorithms over subjective measurements.
+Yang mengatakan, ada beberapa hal yang sepele untuk diukur secara obyektif. Jumlah pesan yang disampaikan dan ukuran data yang tersimpan dalam database internal murah untuk diukur secara obyektif. Perangkat lunak EOS.IO memungkinkan produsen blok untuk menerapkan algoritme yang sama mengenai ukuran objektif ini namun mungkin memilih untuk menerapkan algoritme subjektif yang lebih ketat atas pengukuran subjektif.
 
-## Receiver Pays
+## Penerima membayar
 
-Traditionally, it is the business that pays for office space, computational power, and other costs required to run the business. The customer buys specific products from the business and the revenue from those product sales is used to cover the business costs of operation. Similarly, no website obligates its visitors to make micropayments for visiting its website to cover hosting costs. Therefore, decentralized applications should not force its customers to pay the blockchain directly for the use of the blockchain.
+Secara tradisional, bisnis inilah yang membayar ruang kantor, daya komputasi, dan biaya lainnya yang dibutuhkan untuk menjalankan bisnis. Pelanggan membeli produk tertentu dari bisnis dan pendapatan dari penjualan produk tersebut digunakan untuk menutupi biaya operasi bisnis. Demikian pula, tidak ada situs web yang mewajibkan pengunjungnya untuk membuat micropayments karena mengunjungi situsnya untuk menutupi biaya hosting. Oleh karena itu, aplikasi yang terdesentralisasi seharusnya tidak memaksa pelanggannya untuk membayar blockchain secara langsung untuk penggunaan blockchain tersebut.
 
-A launched blockchain that uses the EOS.IO software does not require its users to pay the blockchain directly for its use and therefore does not constrain or prevent a business from determining its own monetization strategy for its products.
+Blockchain yang diluncurkan yang menggunakan perangkat lunak EOS.IO tidak mengharuskan pengguna membayar blockchain secara langsung untuk penggunaannya dan oleh karena itu tidak membatasi atau mencegah bisnis menentukan strategi monetisasi sendiri untuk produknya.
 
-## Delegating Capacity
+## Mendelegasikan Kapasitas
 
-A holder of tokens on a blockchain launched adopting the EOS.IO software who may not have an immediate need to consume all or part of the available bandwidth, can give or rent such unconsumed bandwidth to others; the block producers running EOS.IO software on such blockchain will recognize this delegation of capacity and allocate bandwidth accordingly.
+Pemegang token di blokir diluncurkan dengan mengadopsi perangkat lunak EOS.IO yang mungkin tidak memiliki kebutuhan segera untuk mengkonsumsi semua atau sebagian dari bandwidth yang tersedia, dapat memberi atau menyewakan bandwidth yang tidak dapat digunakan tersebut kepada orang lain; produsen blok yang menjalankan perangkat lunak EOS.IO pada blockchain tersebut akan mengenali delegasi kapasitas ini dan mengalokasikan bandwidth yang sesuai.
 
-## Separating Transaction costs from Token Value
+## Memisahkan biaya transaksi dari Token Value
 
-One of the major benefits of the EOS.IO software is that the amount of bandwidth available to an application is entirely independent of any token price. If an application owner holds a relevant number of tokens on a blockchain adopting EOS.IO software, then the application can run indefinitely within a fixed state and bandwidth usage. In such case, developers and users are unaffected from any price volatility in the token market and therefore not reliant on a price feed. In other words, a blockchain that adopts the EOS.IO software enables block producers to naturally increase bandwidth, computation, and storage available per token independent of the token's value.
+Salah satu manfaat utama dari perangkat lunak EOS.IO adalah bahwa jumlah bandwidth yang tersedia untuk aplikasi sepenuhnya bebas dari harga token. Jika pemilik aplikasi memegang jumlah token yang relevan pada perangkat lunak pelacak yang mengadopsi perangkat lunak EOS.IO, aplikasi tersebut dapat berjalan tanpa batas waktu dalam keadaan tetap dan penggunaan bandwidth. Dalam kasus tersebut, pengembang dan pengguna tidak terpengaruh oleh volatilitas harga di pasar token dan oleh karena itu tidak bergantung pada umpan harga. Dengan kata lain, blockchain yang mengadopsi perangkat lunak EOS.IO memungkinkan produsen blok untuk secara alami meningkatkan bandwidth, perhitungan, dan penyimpanan yang tersedia per token yang terlepas dari nilai token.
 
-A blockchain using EOS.IO software also awards block producers tokens every time they produce a block. The value of the tokens will impact the amount of bandwidth, storage, and computation a producer can afford to purchase; this model naturally leverages rising token values to increase network performance.
+Blockchain yang menggunakan perangkat lunak EOS.IO juga memberi penghargaan kepada token produsen setiap kali menghasilkan satu blok. Nilai token akan mempengaruhi jumlah bandwidth, penyimpanan, dan perhitungan yang dapat dibeli oleh produsen; Model ini secara alami meningkatkan nilai token untuk meningkatkan kinerja jaringan.
 
-## State Storage Costs
+## Biaya Penyimpanan Negara
 
-While bandwidth and computation can be delegated, storage of application state will require an application developer to hold tokens until that state is deleted. If state is never deleted then the tokens are effectively removed from circulation.
+Sementara bandwidth dan perhitungan dapat didelegasikan, penyimpanan status aplikasi akan mengharuskan pengembang aplikasi untuk menyimpan token sampai status tersebut dihapus. Jika negara tidak pernah dihapus maka tokennya dikeluarkan dari peredaran secara efektif.
 
-Every user account requires a certain amount of storage; therefore, every account must maintain a minimum balance. As storage capacity of the network increases this minimum required balance will fall.
+Setiap akun pengguna memerlukan sejumlah penyimpanan; Oleh karena itu, setiap akun harus menjaga keseimbangan minimum. Seiring kapasitas penyimpanan jaringan meningkat, saldo minimum yang dibutuhkan ini akan turun.
 
-## Block Rewards
+## Blok hadiah
 
-A blockchain that adopts the EOS.IO software will award new tokens to a block producer every time a block is produced. In these circumstances, the number of tokens created is determined by the median of the desired pay published by all block producers. The EOS.IO software may be configured to enforce a cap on producer awards such that the total annual increase in token supply does not exceed 5%.
+Blockchain yang mengadopsi perangkat lunak EOS.IO akan memberikan token baru kepada produsen blok setiap kali sebuah blok diproduksi. Dalam keadaan seperti ini, jumlah token yang dibuat ditentukan oleh median dari gaji yang diinginkan yang diterbitkan oleh semua produsen blok. Perangkat lunak EOS.IO dapat dikonfigurasi untuk memberlakukan pembatasan penghargaan produsen sehingga total kenaikan persediaan token tahunan tidak melebihi 5%.
 
-## Community Benefit Applications
+## Aplikasi Manfaat Komunitas
 
-In addition to electing block producers, pursuant to a blockchain based on the EOS.IO software, users can elect 3 community benefit applications also known as smart contracts. These 3 applications will receive tokens of up to a configured percent of the token supply per annum minus the tokens that have been paid to block producers. These smart contracts will receive tokens proportional to the votes each application has received from token holders. The elected applications or smart contracts can be replaced by newly elected applications or smart contracts by token holders.
+Selain memilih produsen blok, sesuai dengan blockchain berdasarkan perangkat lunak EOS.IO, pengguna dapat memilih 3 aplikasi manfaat masyarakat yang juga dikenal sebagai kontrak cerdas. Ketiga aplikasi ini akan menerima token hingga persentase yang terkonfigurasi dari persediaan token per tahun dikurangi token yang telah dibayarkan untuk memblokir produsen. Kontrak pintar ini akan menerima token sebanding dengan jumlah yang diterima masing-masing aplikasi dari pemegang token. Aplikasi terpilih atau kontrak cerdas dapat diganti dengan aplikasi yang baru dipilih atau kontrak cerdas oleh pemegang token.
 
-# Governance
+# Pemerintahan
 
-Governance is the process by which people reach consensus on subjective matters that cannot be captured entirely by software algorithms. An EOS.IO software-based blockchain implements a governance process that efficiently directs the existing influence of block producers. Absent a defined governance process, prior blockchains relied ad hoc, informal, and often controversial governance processes that result in unpredictable outcomes.
+Pemerintahan adalah proses di mana orang mencapai konsensus mengenai hal-hal subyektif yang tidak dapat ditangkap sepenuhnya oleh algoritme perangkat lunak. Perangkat lunak berbasis EOS.IO menerapkan proses tata kelola yang secara efisien mengarahkan pengaruh produsen blok yang ada. Tidak adanya proses tata kelola yang telah ditetapkan, blokir sebelumnya mengandalkan proses pemerintahan yang ad hoc, informal, dan sering kontroversial yang menghasilkan hasil yang tidak dapat diprediksi.
 
-A blockchain based on the EOS.IO software recognizes that power originates with the token holders who delegate that power to the block producers. The block producers are given limited and checked authority to freeze accounts, update defective applications, and propose hard forking changes to the underlying protocol.
+Blockchain berdasarkan perangkat lunak EOS.IO menyadari bahwa kekuatan berasal dari pemegang token yang mendelegasikan kekuatan tersebut kepada produsen blok. The block producers are given limited and checked authority to freeze accounts, update defective applications, and propose hard forking changes to the underlying protocol.
 
 Embedded into the EOS.IO software is the election of block producers. Before any change can be made to the blockchain these block producers must approve it. If the block producers refuse to make changes desired by the token holders then they can be voted out. If the block producers make changes without permission of the token holders then all other non-producing full-node validators (exchanges, etc) will reject the change.
 
