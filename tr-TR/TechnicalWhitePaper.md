@@ -107,7 +107,7 @@ Büyük ölçekli uygulamalar, iş yükünü birden fazla CPU ve bilgisayar aras
 
 # Konsensüs Algoritması (DPOS)
 
-EOS.IO yazılımı, blok zinciri üzerinde [Yetkili Menfaat Kanıtı, Delegated Proof of Stake(DPOS)](https://steemit.com/dpos/@dantheman/dpos-consensus-algorithm-this-missing-white-paper) uygulamalarının performans gereksinimlerini karşılayabilen, merkezi olmayan uzlaşma algoritmasını kullanır. Bu algoritma altında, bir blok zinciri jetonlarını tutanlar, EOS.IO yazılımının izin verdiği durumlarda, devam eden oylama sistemiyle blok üreticilerini seçebilirler. Herkes blok üretimine katılmayı seçebilir. Diğer üreticilerin ve kendilerinin aldıkları oylarla orantılı olarak blok üretmek için bir fırsat verilir. Özel blok zincirler için yönetim IT personelini eklemek veya çıkarmak için jetonları kullanabilir.
+EOS.IO yazılımı, blok zinciri üzerinde [Yetkili Menfaat Kanıtı, Delegated Proof of Stake(DPOS)](https://steemit.com/dpos/@dantheman/dpos-consensus-algorithm-this-missing-white-paper) uygulamalarının performans gereksinimlerini karşılayabilen, merkezi olmayan uzlaşma algoritmasını kullanır. Bu algoritma altında, EOS.IO yazılımının benimsediği blok zincirinde jetonlarını tutanlar, devam eden oylama sistemiyle blok üreticilerini seçebilirler. Herkes blok üretimine katılmayı seçebilir. Diğer üreticilerin ve kendilerinin aldıkları oylarla orantılı olarak blok üretmek için bir fırsat verilir. Özel blok zincirler için yönetim IT personelini eklemek veya çıkarmak için jetonları kullanabilir.
 
 EOS.IO yazılımı, blokların her 3 saniyede bir üretilmesini sağlar ve bir üreticinin verilen herhangi bir zamanda tam olarak bir blok üretme yetkisi vardır. Blok, planlanan zamanda üretilmezse, o zaman aralığı için blok atlanır. Bir veya daha fazla blok atlandığında, blok zincirinde 6 veya daha fazla saniyelik boşluk olur.
 
@@ -178,7 +178,7 @@ EOS.IO yazılımı, her hesabın herhangi bir hesabın, Adlandırılmış Mesaj 
 
 ### İzinlerin Değerlendirmesi
 
-**@ayse**'den **@aliye** **Action** tipinde mesajı gönderirken, EOS.IO yazılımı önce **@ayse**'nin, **@ali.groupa.subgroup.Action** için bir izin eşlemesi var mı diye kontrol eder. **@ali.groupa.subgroup** için hiçbir şey bulunamazsa **@ali.groupa** için kontrol yapar yine bulamazsa son olarak **@ali** için bir eşleme kontrolü yapar. Daha fazla eşleşme bulunmazsa, varsayılan eşleme **@ayse.active** olarak isimlendirilmiş izin grubu olacaktır.
+**@ayse**'den **@aliye** **Action** tipinde mesaj gönderirken, EOS.IO yazılımı önce **@ayse**'nin, **@ali.groupa.subgroup.Action** için bir izin eşlemesi var mı diye kontrol eder. **@ali.groupa.subgroup** için hiçbir şey bulunamazsa **@ali.groupa** için kontrol yapar yine bulamazsa son olarak **@ali** için bir eşleme kontrolü yapar. Daha fazla eşleşme bulunmazsa, varsayılan eşleme **@ayse.active** olarak isimlendirilmiş izin grubu olacaktır.
 
 Once a mapping is identified then signing authority is validated using the threshold multi-signature process and the authority associated with the named permission. If that fails, then it traverses up to the parent permission and ultimately to the owner permission, **@alice.owner**.
 
