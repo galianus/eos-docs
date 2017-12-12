@@ -1,6 +1,6 @@
-## EOS.IO Software Roadmap
+## خارطة الطريق لبرنامج EOS.IO
 
-This document outlines the development plan from a high level and will be updated as progress is made toward version 1.0. It should be noted that this roadmap applies only to the blockchain software and not to the other tools and utilities such as wallets and block explorers which will have their own teams and dedicated roadmaps once Phase 1 is complete.
+توضح هذه الوثيقة خطة التنمية من مستوى عال وسيتم تحديثها مع التقدم المحرز نحو الإصدار 1.0. وتجدر الإشارة إلى أن خارطة الطريق هذه تنطبق فقط على برامج بلوكشين وليس على الأدوات والمرافق الأخرى مثل المحفظة ومستكشفي البلوك الذي سيكون لهم فرق خاصة وخرائط الطريق مخصصة عند اكتمال المرحلة 1.
 
 ***كل ما ورد في هذه الوثيقة هو في شكل مسودة وقابل للتغيير في أي وقت، ويعرض لأغراض المعلومات فقط. block.one لا يضمن دقة المعلومات الواردة في خارطة الطريق هذه، وتوفر المعلومات "كما هي" دون أي تعهدات أو ضمانات، صريحة أو ضمنية.***
 
@@ -20,7 +20,7 @@ The EOS.IO software has a number of native contracts. These are contracts that m
 2. @stake - manages locked EOS, voting, and Producer Election
 3. @system - manages permissions, messages, and contact code updates
 
-### الجهاز الظاهري API (Dan)
+### الجهاز الظاهري أبي (Dan)
 
 Contracts are compiled to WebAssembly (WASM) and WASM must interface with the blockchain via a defined API. This API is what developers depend upon to build applications and be relatively stable before developers can really start to build on EOS.
 
