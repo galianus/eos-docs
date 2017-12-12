@@ -46,13 +46,13 @@
 
 ### WASM Sanitation & CPU Sandboxing (Brian)
 
-The WASM code needs to be sanitized to check for non-deterministic behavior such as floating point operations and infinite loops.
+يحتاج كود WASM إلى التعقيم للتحقق من السلوك غير الحتمي مثل عمليات النقطة العائمة وحلقات الانهائية.
 
-### Resource Usage Tracking & Rate Limiting (Arhag)
+### تتبع استخدام الموارد & تمعدل الحد (Arhag)
 
-To prevent abuse the resource monitoring and usage tracking rate limits users according to staked EOS.
+لمنع إساءة استخدام رصد الموارد واستخدام معدل التتبع يحد المستخدمين وفقا ل EOS مكدسة.
 
-### Genesis Import Testing (DappHub)
+### اختبار استيراد جينيسيس(DappHub)
 
 Tools need to be developed to export data from the EOS Token Distribution state and create a genesis configuration file. This will enable anyone participating in the Token Distribution to acquire some initial test EOS (TEOS).
 
