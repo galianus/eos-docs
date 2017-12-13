@@ -362,36 +362,36 @@ Perangkat lunak EOS.IO mendefinisikan sebuah proses dimana protokol seperti yang
 3. Semua pengguna diharuskan menandatangani transaksi dengan menggunakan hash dari konstitusi baru.
 4. Produsen blok mengadopsi perubahan pada kode sumber untuk mencerminkan perubahan dalam konstitusi dan mengusulkannya ke blokir menggunakan hash dari komit git.
 5. Produsen blok mempertahankan persetujuan 17/21 selama 30 hari berturut-turut.
-6. Changes to the code take effect 7 days later, giving all full nodes 1 week to upgrade after ratification of the source code.
-7. All nodes that do not upgrade to the new code shut down automatically.
+6. Perubahan kode berlaku 7 hari kemudian, memberikan semua node penuh 1 minggu untuk upgrade setelah ratifikasi kode sumber.
+7. Semua node yang tidak meng-upgrade ke kode baru dimatikan secara otomatis.
 
-By default configuration of the EOS.IO software, the process of updating the blockchain to add new features takes 2 to 3 months, while updates to fix non-critical bugs that do not require changes to the constitution can take 1 to 2 months.
+Dengan konfigurasi default perangkat lunak EOS.IO, proses memperbarui blockchain untuk menambahkan fitur baru memerlukan waktu 2 sampai 3 bulan, sementara pembaruan untuk memperbaiki bug non-kritis yang tidak memerlukan perubahan pada konstitusi dapat memakan waktu 1 sampai 2 bulan.
 
-### Emergency Changes
+### Perubahan Darurat
 
-The block producers may accelerate the process if a software change is required to fix a harmful bug or security exploit that is actively harming users. Generally speaking it could be against the constitution for accelerated updates to introduce new features or fix harmless bugs.
+Produsen blok dapat mempercepat proses jika ada perubahan perangkat lunak untuk memperbaiki bug atau eksploitasi keamanan yang berbahaya yang secara aktif merugikan pengguna. Secara umum, hal itu bisa melawan konstitusi untuk mempercepat pembaruan untuk mengenalkan fitur baru atau memperbaiki bug yang tidak berbahaya.
 
-# Scripts & Virtual Machines
+# Script & Mesin virtual
 
-The EOS.IO software will be first and foremost a platform for coordinating the delivery of authenticated messages to accounts. The details of scripting language and virtual machine are implementation specific details that are mostly independent from the design of the EOS.IO technology. Any language or virtual machine that is deterministic and properly sandboxed with sufficient performance can be integrated with the EOS.IO software API.
+Perangkat lunak EOS.IO akan menjadi platform utama dan pertama yang mengkoordinasikan penyampaian pesan yang diautentikasi ke akun. Rincian bahasa scripting dan mesin virtual adalah rincian spesifik implementasi yang sebagian besar independen dari desain teknologi EOS.IO. Setiap bahasa atau mesin virtual yang deterministik dan sandboxed dengan performa yang cukup dapat diintegrasikan dengan API perangkat lunak EOS.IO.
 
-## Schema Defined Messages
+## Pesan yang Ditetapkan Skema
 
-All messages sent between accounts are defined by a schema which is part of the blockchain consensus state. This schema allows seamless conversion between binary and JSON representation of the messages.
+Semua pesan yang dikirim antar akun ditentukan oleh skema yang merupakan bagian dari keadaan konsensus blockchain. Skema ini memungkinkan konversi yang mulus antara representasi pesan biner dan JSON.
 
-## Schema Defined Database
+## Skema yang Ditetapkan Database
 
-Database state is also defined using a similar schema. This ensures that all data stored by all applications is in a format that can be interpreted as human readable JSON but stored and manipulated with the efficiency of binary.
+Database state juga didefinisikan dengan menggunakan skema yang sama. Ini memastikan bahwa semua data yang tersimpan oleh semua aplikasi ada dalam format yang bisa diartikan sebagai JSON terbaca manusia namun tersimpan dan dimanipulasi dengan efisiensi biner.
 
-## Separating Authentication from Application
+## Memisahkan Otentikasi dari Aplikasi
 
-To maximize parallelization opportunities and minimize the computational debt associated with regenerating application state from the transaction log, EOS.IO software separates validation logic into three sections:
+Untuk memaksimalkan kesempatan paralelisasi dan meminimalkan hutang komputasi yang terkait dengan regenerasi aplikasi dari log transaksi, perangkat lunak EOS.IO memisahkan logika validasi menjadi tiga bagian:
 
-1. Validating that a message is internally consistent;
-2. Validating that all preconditions are valid; and
-3. Modifying the application state.
+1. Memvalidasi bahwa pesan konsisten secara internal;
+2. Memvalidasi bahwa semua prasyarat valid; dan
+3. Memodifikasi status aplikasi.
 
-Validating the internal consistency of a message is read-only and requires no access to blockchain state. This means that it can be performed with maximum parallelism. Validating preconditions, such as required balance, is read-only and therefore can also benefit from parallelism. Only modification of application state requires write access and must be processed sequentially for each application.
+Memvalidasi konsistensi internal sebuah pesan hanya bisa dibaca dan tidak memerlukan akses ke status blockchain. Ini berarti bisa dilakukan dengan paralelisme maksimal. Memvalidasi prasyarat, seperti keseimbangan yang dibutuhkan, hanya bisa dibaca dan karena itu juga bisa mendapat keuntungan dari paralelisme. Hanya modifikasi status aplikasi yang membutuhkan akses tulis dan harus diproses secara berurutan untuk setiap aplikasi.
 
 Authentication is the read-only process of verifying that a message can be applied. Application is actually doing the work. In real time both calculations are required to be performed, however once a transaction is included in the blockchain it is no longer necessary to perform the authentication operations.
 
@@ -437,8 +437,8 @@ Saat berkomunikasi dengan blockchain luar yang lain, produsen blok harus menungg
 
 ## Bukti Kelengkapan
 
-Bila menggunakan bukti merkle dari batasan luar, ada perbedaan yang signifikan antara mengetahui bahwa semua transaksi yang diproses valid dan mengetahui bahwa tidak ada transaksi yang dilewati atau diabaikan. While it is impossible to prove that all of the most recent transactions are known, it is possible to prove that there have been no gaps in the transaction history. The EOS.IO software facilitates this by assigning a sequence number to every message delivered to every account. A user can use these sequence numbers to prove that all messages intended for a particular account have been processed and that they were processed in order.
+Bila menggunakan bukti merkle dari batasan luar, ada perbedaan yang signifikan antara mengetahui bahwa semua transaksi yang diproses valid dan mengetahui bahwa tidak ada transaksi yang dilewati atau diabaikan. Sementara ini adalah mustahil untuk membuktikan bahwa semua dari paling baru-baru transaksi adalah diketahui, ini adalah mungkin untuk membuktikan bahwa di sana telah tidak kesenjangan dalam transaksi sejarah. Perangkat lunak EOS.IO memfasilitasi ini dengan menetapkan nomor urut ke setiap pesan yang dikirimkan ke setiap akun. Pengguna dapat menggunakan nomor urut ini untuk membuktikan bahwa semua pesan yang ditujukan untuk akun tertentu telah diproses dan diproses secara berurutan.
 
-# Conclusion
+# Kesimpulan
 
-The EOS.IO software is designed from experience with proven concepts and best practices, and represents fundamental advancements in blockchain technology. The software is part of a holistic blueprint for a globally scalable blockchain society in which decentralised applications can be easily deployed and governed.
+Perangkat lunak EOS.IO didesain dari pengalaman dengan konsep dan praktik terbaik yang terbukti, dan merupakan kemajuan mendasar dalam teknologi blockchain. Perangkat lunak ini merupakan bagian dari cetak biru holistik untuk masyarakat blokir yang dapat diukur secara global di mana aplikasi terdesentralisasi dapat dengan mudah digunakan dan diatur.
