@@ -54,7 +54,7 @@
 
 ### اختبار استيراد جينيسيس(DappHub)
 
-Tools need to be developed to export data from the EOS Token Distribution state and create a genesis configuration file. This will enable anyone participating in the Token Distribution to acquire some initial test EOS (TEOS).
+تحتاج الأدوات إلى تطوير لتصدير البيانات من حالة توزيع رمز EOS وإنشاء ملف الضبط ل جينيسيس. This will enable anyone participating in the Token Distribution to acquire some initial test EOS (TEOS).
 
 ### Interblockchain Communication (Nathan)
 
