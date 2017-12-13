@@ -180,17 +180,17 @@ EOS.IO yazılımı, her hesabın herhangi bir hesabın, Adlandırılmış Mesaj 
 
 **@ayse**'den **@aliye** **Action** tipinde mesaj gönderirken, EOS.IO yazılımı önce **@ayse**'nin, **@ali.groupa.subgroup.Action** için bir izin eşlemesi var mı diye kontrol eder. **@ali.groupa.subgroup** için hiçbir şey bulunamazsa **@ali.groupa** için kontrol yapar yine bulamazsa son olarak **@ali** için bir eşleme kontrolü yapar. Daha fazla eşleşme bulunmazsa, varsayılan eşleme **@ayse.active** olarak isimlendirilmiş izin grubu olacaktır.
 
-Bir eşleme belirlendikten sonra imzalama yetkisi, eşiğin çoklu imza süreci ve belirtilen izinle ilişkili yetkiyi kullanarak doğrulanır. If that fails, then it traverses up to the parent permission and ultimately to the owner permission, **@alice.owner**.
+Bir eşleme belirlendikten sonra imzalama yetkisi, eşiğin çoklu imza süreci ve belirtilen izinle ilişkili yetkiyi kullanarak doğrulanır. Bu başarısız olursa, bir üst izine ve sonuçta, sahiplik iznine **@ayse.owner** geçilir.
 
 <img align="center" src="http://eos.io/wpimg/diagram2grayscale2.jpg" width="845.85px" height="500px" />
 
-#### Default Permission Groups
+#### Varsayılan İzin Grupları
 
-The EOS.IO technology also allows all accounts to have an "owner" group which can do everything, and an "active" group which can do everything except change the owner group. All other permission groups are derived from "active".
+EOS.IO teknolojisi, tüm hesapların; her şeyi yapabilen bir "owner"/sahip grubu ve sahip grubunu değiştirmek dışında her şeyi yapabilen bir "active" grubu edinmesine izin verir. Diğer tüm izin grupları "active"den türetilmiştir.
 
-#### Parallel Evaluation of Permissions
+#### İzinlerin Parelel Değerlendirilmesi
 
-The permission evaluation process is "read-only" and changes to permissions made by transactions do not take effect until the end of a block. This means that all keys and permission evaluation for all transactions can be executed in parallel. Furthermore, this means that a rapid validation of permission is possible without starting the costly application logic that would have to be rolled back. Lastly, it means that transaction permissions can be evaluated as pending transactions are received and do not need to be re-evaluated as they are applied.
+İzin değerlendirme süreci "salt okunur"dur ve işlemler tarafından yapılan izin değişiklikleri bir blokun sonuna kadar etkili olmaz. Bu, tüm işlemler için tüm anahtarların ve izin değerlendirmelerinin paralel olarak yürütülebileceği anlamına gelir. Furthermore, this means that a rapid validation of permission is possible without starting the costly application logic that would have to be rolled back. Lastly, it means that transaction permissions can be evaluated as pending transactions are received and do not need to be re-evaluated as they are applied.
 
 All things considered, permission verification represents a significant percentage of the computation required to validate transactions. Making this a read-only and trivially parallelizable process enables a dramatic increase in performance.
 
