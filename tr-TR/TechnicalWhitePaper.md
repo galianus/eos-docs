@@ -194,11 +194,11 @@ EOS.IO teknolojisi, tüm hesapların; her şeyi yapabilen bir "owner"/sahip grub
 
 Her şey göz önüne alındığında, izin doğrulaması, işlemleri doğrulamak için gereken hesaplamanın önemli bir yüzdesini temsil eder. Bunu salt okunur ve paralel hale getiren küçük bir işlem yapmak, performansta çarpıcı bir artış sağlar.
 
-Mesaj kayıtlarından belirli bir durumu yeniden oluşturmak için blok zinciri tekrar oynatılırken, izinleri tekrar değerlendirmeye gerek yoktur. The fact that a transaction is included in a known good block is sufficient to skip this step. This dramatically reduces the computational load associated with replaying an ever growing blockchain.
+Mesaj kayıtlarından belirli bir durumu yeniden oluşturmak için blok zinciri tekrar edilirken, izinleri tekrar değerlendirmeye gerek yoktur. Aslında, işlemin, iyi bir blokta olması, bu adım atlamak için yeterlidir. Bu, gittikçe büyüyen bir blok zincirini tekrarlama ile ilişkili hesaplama yükünü önemli ölçüde azaltır.
 
-## Messages with Mandatory Delay
+## Zorunlu Gecikmeli Mesajlar
 
-Time is a critical component of security. In most cases, it is not possible to know if a private key has been stolen until it has been used. Time based security is even more critical when people have applications that require keys be kept on computers connected to the internet for daily use. The EOS.IO software enables application developers to indicate that certain messages must wait a minimum period of time after being included in a block before they can be applied. During this time they can be cancelled.
+Zaman, güvenliğin önemli bir bileşenidir. Çoğu durumda, bir özel anahtarın çalınmış olup olmadığını bilmek, kullanılıncaya kadar mümkün değildir. Time based security is even more critical when people have applications that require keys be kept on computers connected to the internet for daily use. The EOS.IO software enables application developers to indicate that certain messages must wait a minimum period of time after being included in a block before they can be applied. During this time they can be cancelled.
 
 Users can then receive notice via email or text message when one of these messages is broadcast. If they did not authorize it, then they can use the account recovery process to recover their account and retract the message.
 
