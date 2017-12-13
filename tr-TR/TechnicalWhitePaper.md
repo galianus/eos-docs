@@ -190,9 +190,9 @@ EOS.IO teknolojisi, tüm hesapların; her şeyi yapabilen bir "owner"/sahip grub
 
 #### İzinlerin Parelel Değerlendirilmesi
 
-İzin değerlendirme süreci "salt okunur"dur ve işlemler tarafından yapılan izin değişiklikleri bir blokun sonuna kadar etkili olmaz. Bu, tüm işlemler için tüm anahtarların ve izin değerlendirmelerinin paralel olarak yürütülebileceği anlamına gelir. Furthermore, this means that a rapid validation of permission is possible without starting the costly application logic that would have to be rolled back. Lastly, it means that transaction permissions can be evaluated as pending transactions are received and do not need to be re-evaluated as they are applied.
+İzin değerlendirme süreci "salt okunur"dur ve işlemler tarafından yapılan izin değişiklikleri bir blokun sonuna kadar etkili olmaz. Bu, tüm işlemler için tüm anahtarların ve izin değerlendirmelerinin paralel olarak yürütülebileceği anlamına gelir. Bu, hızlı bir izin doğrulamasının mümkün olduğu anlamına geliyor. Üstelik, geri alınması gereken, yüksek maliyetli uygulama mantığına başvurmadan. Son olarak, işlem izinlerinin, bekleyen işlemler alındığında değerlendirilebileceği ve uygulanırken yeniden değerlendirilmesi gerekmediği anlamına da gelir.
 
-All things considered, permission verification represents a significant percentage of the computation required to validate transactions. Making this a read-only and trivially parallelizable process enables a dramatic increase in performance.
+Her şey göz önüne alındığında, izin doğrulaması, işlemleri doğrulamak için gereken hesaplamanın önemli bir yüzdesini temsil eder. Making this a read-only and trivially parallelizable process enables a dramatic increase in performance.
 
 When replaying the blockchain to regenerate the deterministic state from the log of messages there is no need to evaluate the permissions again. The fact that a transaction is included in a known good block is sufficient to skip this step. This dramatically reduces the computational load associated with replaying an ever growing blockchain.
 
