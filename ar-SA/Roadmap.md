@@ -58,7 +58,7 @@
 
 ### Interblockchain Communication (Nathan)
 
-This feature involves verifying the Merkle hashing of transactions is proper.
+تشمل هذه الميزة التحقق من التجزئة ميركيل من المعاملات الصحيحة.
 
 # Phase 3 - Testing & Security Audits - Winter 2017, Spring 2018
 
@@ -74,12 +74,12 @@ Attacking the network with spam, virtual machine exploits, and bug crashes, and 
 
 ### دعم اللغة
 
-Adding support for additional languages to be compiled to WASM: C++, Rust, etc.
+إضافة دعم للغات إضافية ليتم تجميعها إلى C++, Rust: WASM.
 
-### Documentation & Tutorials
+### الوثائق & دروس
 
 # Phase 4 - Parallel Optimization Summer / Fall 2018
 
-After getting a stable 1.0 product released, we will move toward optimizing the code for parallel execution.
+بعد الحصول على منتج مستقرر1.0، فإننا سنتحرك نحو تحسين رمز التنفيذ المتوازي.
 
 # Phase 5 - Cluster Implementation The Future
