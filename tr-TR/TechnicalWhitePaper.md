@@ -206,7 +206,7 @@ Gerekli gecikme, işlemin ne kadar hassas olduğuna bağlıdır. Kahve ödemesi 
 
 ## Anahtar Çalınması Sonrası Kurtarma
 
-The EOS.IO software provides users a way to restore control of their account when their keys are stolen. An account owner can use any owner key that was active in the last 30 days along with approval from their designated account recovery partner to reset the owner key on their account. The account recovery partner cannot reset control of the account without the help of the owner.
+EOS.IO yazılımı, kullanıcılara anahtarları çalındığında, hesaplarını kontrol etme imkanı sağlar. Bir hesap sahibi, hesabındaki owner anahtarını sıfırlamak için, belirlenen hesap kurtarma ortağının onayıyla birlikte, onun hesabında son 30 günde etkin olan herhangi bir owner anahtarını kullanabilir. Hesap kurtarma iş ortağı, hesap sahibin yardımı olmaksızın hesabın denetimini sıfırlayamaz.
 
 There is nothing for the hacker to gain by attempting to go through the recovery process because they already "control" the account. Furthermore, if they did go through the process, the recovery partner would likely demand identification and multi-factor authentication (phone and email). This would likely compromise the hacker or gain the hacker nothing in the process.
 
