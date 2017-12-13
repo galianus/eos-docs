@@ -393,31 +393,31 @@ Untuk memaksimalkan kesempatan paralelisasi dan meminimalkan hutang komputasi ya
 
 Memvalidasi konsistensi internal sebuah pesan hanya bisa dibaca dan tidak memerlukan akses ke status blockchain. Ini berarti bisa dilakukan dengan paralelisme maksimal. Memvalidasi prasyarat, seperti keseimbangan yang dibutuhkan, hanya bisa dibaca dan karena itu juga bisa mendapat keuntungan dari paralelisme. Hanya modifikasi status aplikasi yang membutuhkan akses tulis dan harus diproses secara berurutan untuk setiap aplikasi.
 
-Authentication is the read-only process of verifying that a message can be applied. Application is actually doing the work. In real time both calculations are required to be performed, however once a transaction is included in the blockchain it is no longer necessary to perform the authentication operations.
+Otentikasi adalah proses hanya-baca untuk memverifikasi bahwa pesan dapat diterapkan. Aplikasi sebenarnya sedang melakukan pekerjaan. Secara real time kedua perhitungan harus dilakukan, namun begitu transaksi dimasukkan ke dalam blockchain, tidak diperlukan lagi untuk melakukan operasi otentikasi.
 
-## Virtual Machine Independent Architecture
+## Arsitektur Independen Mesin Virtual
 
-It is the intention of the EOS.IO software-based blockchain that multiple virtual machines can be supported and new virtual machines added over time as necessary. For this reason, this paper will not discuss the details of any particular language or virtual machine. That said, there are two virtual machines that are currently being evaluated for use with an EOS.IO software-based blockchain.
+Ini adalah tujuan blokir perangkat lunak berbasis EOS.IO bahwa beberapa mesin virtual dapat didukung dan mesin virtual baru ditambahkan dari waktu ke waktu seperlunya. Untuk alasan ini, makalah ini tidak akan membahas rincian bahasa atau mesin virtual tertentu. Yang mengatakan, ada dua mesin virtual yang saat ini sedang dievaluasi untuk digunakan dengan block software berbasis EOS.IO.
 
-### Web Assembly (WASM)
+### Majelis Web (WASM)
 
-Web Assembly is an emerging web standard for building high performance web applications. With a few small modifications Web Assembly can be made deterministic and sandboxed. The benefit of Web Assembly is the widespread support from industry and that it enables contracts to be developed in familiar languages such as C or C++.
+Majelis web adalah standar web yang muncul untuk membangun aplikasi web berkinerja tinggi. Dengan sedikit modifikasi kecil majelis web bisa dibuat deterministik dan sandboxed. Manfaat Majelis Web adalah dukungan luas dari industri dan memungkinkan kontrak dikembangkan dalam bahasa yang sudah dikenal seperti C atau C ++.
 
-Ethereum developers have already begun modifying Web Assembly to provide suitable sandboxing and determinism in with their [Ethereum flavored Web Assembly (WASM)](https://github.com/ewasm/design). This approach can be easily adapted and integrated with EOS.IO software.
+Pengembang Ethereal telah mulai memodifikasi Majelis Web untuk menyediakan sandboxing dan determinisme yang sesuai dengan [ Ethereum flavored Majelis web (WASM) ](https://github.com/ewasm/design). Pendekatan ini dapat dengan mudah diadaptasi dan diintegrasikan dengan software EOS.IO.
 
-### Ethereum Virtual Machine (EVM)
+### Mesin Virtual Etereum (EVM)
 
-This virtual machine has been used for most existing smart contracts and could be adapted to work within an EOS.IO blockchain. It is conceivable that EVM contracts could be run within their own sandbox inside an EOS.IO software-based blockchain and that with some adaptation EVM contracts could communicate with other EOS.IO software blockchain applications.
+Mesin virtual ini telah digunakan untuk sebagian besar kontrak pintar yang ada dan dapat disesuaikan untuk bekerja dalam blokir EOS.IO. Bisa dibayangkan bahwa kontrak EVM dapat dijalankan di dalam kotak pasir mereka sendiri di dalam blok perangkat lunak berbasis EOS.IO dan bahwa dengan beberapa kontrak EVM adaptasi dapat berkomunikasi dengan aplikasi blokir perangkat lunak EOS.IO lainnya.
 
-# Inter Blockchain Communication
+# Blockchain antar Komunikasi,
 
-EOS.IO software is designed to facilitate inter-blockchain communication. This is achieved by making it easy to generate proof of message existence and proof of message sequence. These proofs combined with an application architecture designed around message passing enables the details of inter-blockchain communication and proof validation to be hidden from application developers.
+Perangkat lunak EOS.IO dirancang untuk memfasilitasi komunikasi antar-blockchain. Hal ini dicapai dengan memudahkan menghasilkan bukti keberadaan pesan dan bukti urutan pesan. Bukti-bukti ini dikombinasikan dengan arsitektur aplikasi yang dirancang seputar pengiriman pesan memungkinkan perincian komunikasi antar-blockchain dan validasi bukti disembunyikan dari pengembang aplikasi.
 
 <img align="right" src="http://eos.io/wpimg/Diagram1.jpg" width="362.84px" height="500px" />
 
-## Merkle Proofs for Light Client Validation (LCV)
+## Bukti Merkle untuk Validasi Klien Cahaya (LCV)
 
-Integrating with other blockchains is much easier if clients do not need to process all transactions. After all, an exchange only cares about transfers in and out of the exchange and nothing more. It would also be ideal if the exchange chain could utilize lightweight merkle proofs of deposit rather than having to trust its own block producers entirely. At the very least a chain's block producers would like to maintain the smallest possible overhead when synchronizing with another blockchain.
+Mengintegrasikan dengan blockchains lainnya jauh lebih mudah jika klien tidak perlu memproses semua transaksi. Bagaimanapun, pertukaran hanya peduli tentang transfer masuk dan keluar dari bursa dan tidak lebih. Ini juga ideal jika rantai pertukaran bisa memanfaatkan bukti deposit merkil ringan daripada harus mempercayai produsen bloknya sendiri sepenuhnya. Paling tidak produsen blok rantai ingin mempertahankan biaya sekecil mungkin saat melakukan sinkronisasi dengan blockchain lain.
 
 Tujuan LCV adalah untuk memungkinkan pembangkitan bukti keberadaan yang relatif ringan yang dapat divalidasi oleh siapa pun yang melacak kumpulan data yang relatif ringan. Dalam kasus ini, tujuannya adalah untuk membuktikan bahwa transaksi tertentu disertakan dalam blok tertentu dan blok tersebut termasuk dalam sejarah terverifikasi dari blockchain tertentu.
 
