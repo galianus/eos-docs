@@ -202,7 +202,7 @@ Zaman, güvenliğin önemli bir bileşenidir. Çoğu durumda, bir özel anahtar�
 
 Daha sonra bu mesajlardan biri yayınlandığında kullanıcılar, e-posta veya kısa mesaj yoluyla bildirim alabilir. Yetki vermezlerse, hesap kurtarma işlemini kullanarak hesaplarını kurtarabilir ve mesajı geri çekebilirler.
 
-Gerekli gecikme, işlemin ne kadar hassas olduğuna bağlıdır. Paying for a coffee can have no delay and be irreversible in seconds, while buying a house may require a 72 hour clearing period. Transferring an entire account to new control may take up to 30 days. The exact delays chosen are up to application developers and users.
+Gerekli gecikme, işlemin ne kadar hassas olduğuna bağlıdır. Kahve ödemesi saniyeler içinde ve geri dönüşsüz olarak yapabilir. Ev satın alırken 72 saatlik takas süresi gerekli olabilir. Bir hesabın tamamını yeni kontrole aktarmak 30 güne kadar sürebilir. Doğru bir gecikme süresi seçimi, geliştiricilere ve kullanıcılara kalmıştır.
 
 ## Anahtar Çalınması Sonrası Kurtarma
 
