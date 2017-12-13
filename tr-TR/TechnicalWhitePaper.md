@@ -198,9 +198,9 @@ Mesaj kayıtlarından belirli bir durumu yeniden oluşturmak için blok zinciri 
 
 ## Zorunlu Gecikmeli Mesajlar
 
-Zaman, güvenliğin önemli bir bileşenidir. Çoğu durumda, bir özel anahtarın çalınmış olup olmadığını bilmek, kullanılıncaya kadar mümkün değildir. Zaman odaklı güvenlik; insanlar anahtar gerektiren uygulamaları, günlük kullanım için internete bağlı bilgisayarlarda tutuluyorsa, daha da kritiktir. The EOS.IO software enables application developers to indicate that certain messages must wait a minimum period of time after being included in a block before they can be applied. During this time they can be cancelled.
+Zaman, güvenliğin önemli bir bileşenidir. Çoğu durumda, bir özel anahtarın çalınmış olup olmadığını bilmek, kullanılıncaya kadar mümkün değildir. Zaman odaklı güvenlik; insanlar anahtar gerektiren uygulamaları, günlük kullanım için internete bağlı bilgisayarlarda tutuluyorsa, daha da kritiktir. EOS.IO yazılımı uygulama geliştiricilerine şöyle olanak tanır; bazı mesajların uygulanabilmesi için bir bloğa eklendikten sonra beklemesi gereken minimum süreyi belirleyebilirler. Bu süre içinde iptal edilebilirler.
 
-Users can then receive notice via email or text message when one of these messages is broadcast. If they did not authorize it, then they can use the account recovery process to recover their account and retract the message.
+Daha sonra bu mesajlardan biri yayınlandığında kullanıcılar, e-posta veya kısa mesaj yoluyla bildirim alabilir. Yetki vermezlerse, hesap kurtarma işlemini kullanarak hesaplarını kurtarabilir ve mesajı geri çekebilirler.
 
 The required delay depends upon how sensitive an operation is. Paying for a coffee can have no delay and be irreversible in seconds, while buying a house may require a 72 hour clearing period. Transferring an entire account to new control may take up to 30 days. The exact delays chosen are up to application developers and users.
 
