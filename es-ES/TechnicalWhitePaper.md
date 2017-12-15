@@ -91,7 +91,7 @@ Los desarrolladores de aplicaciones necesitan la suficiente flexibilidad para of
 
 Las empresas que crean aplicaciones basadas en blockchain necesitan la flexibilidad para mejorar sus aplicaciones con nuevas funciones.
 
-All non-trivial software is subject to bugs, even with the most rigorous of formal verification. The platform must be robust enough to fix bugs when they inevitably occur.
+Todo software no-trivial está sujeto a fallos, incluso con las verificaciones formales más rigurosas. La plataforma debe ser lo suficientemente robusta como para arreglar los fallos cuando estos inevitablemente ocurran.
 
 ## Low Latency
 
