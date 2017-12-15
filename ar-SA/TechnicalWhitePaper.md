@@ -24,7 +24,7 @@ Without permission, anyone may use, reproduce or distribute any material in this
   - [Transaction Confirmation](#transaction-confirmation)
   - [Transaction as Proof of Stake (TaPoS)](#transaction-as-proof-of-stake-tapos)
 - [Accounts](#accounts) 
-  - [Messages & Handlers](#messages--handlers)
+  - [الرسائل & معالجات](#messages--handlers)
   - [Role Based Permission Management](#role-based-permission-management) 
     - [Named Permission Levels](#named-permission-levels)
     - [Named Message Handler Groups](#named-message-handler-groups)
@@ -71,7 +71,7 @@ Without permission, anyone may use, reproduce or distribute any material in this
 
 Blockchain technology was introduced in 2008 with the launch of the bitcoin currency, and since then entrepreneurs and developers have been attempting to generalize the technology in order to support a wider range of applications on a single blockchain platform.
 
-While a number of blockchain platforms have struggled to support functional decentralized applications, application specific blockchains such as the BitShares decentralized exchange (2014) and Steem social media platform (2016) have become heavily used blockchains with tens of thousands of daily active users. They have achieved this by increasing performance to thousands of transactions per second, reducing latency to 1.5 seconds, eliminating fees, and providing a user experience similar to those currently provided by existing centralized services.
+While a number of blockchain platforms have struggled to support functional decentralized applications, application specific blockchains such as the BitShares decentralized exchange (2014) and Steem social media platform (2016) have become heavily used blockchains with tens of thousands of daily active users. وقد حققوا ذلك من خلال زيادة الأداء لآلاف المعاملات في الثانية الواحدة، والحد من الكمون إلى 1.5 ثانية، والقضاء على الرسوم، وتوفير تجربة للمستخدم كتلك التي توفرها الخدمات المركزية القائمة حاليا.
 
 Existing blockchain platforms are burdened by large fees and limited computational capacity that prevent widespread blockchain adoption.
 
