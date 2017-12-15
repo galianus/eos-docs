@@ -1,4 +1,4 @@
-# EOS.IO Technical White Paper
+# الورقة البيضاء التقنية ل EOS.IO
 
 **26 يونيو 2017**
 
@@ -67,13 +67,13 @@ Without permission, anyone may use, reproduce or distribute any material in this
   - [Proof of Completeness](#proof-of-completeness)
 - [Conclusion](#conclusion)
 
-# Background
+# الخلفية
 
 Blockchain technology was introduced in 2008 with the launch of the bitcoin currency, and since then entrepreneurs and developers have been attempting to generalize the technology in order to support a wider range of applications on a single blockchain platform.
 
 While a number of blockchain platforms have struggled to support functional decentralized applications, application specific blockchains such as the BitShares decentralized exchange (2014) and Steem social media platform (2016) have become heavily used blockchains with tens of thousands of daily active users. وقد حققوا ذلك من خلال زيادة الأداء لآلاف المعاملات في الثانية الواحدة، والحد من الكمون إلى 1.5 ثانية، والقضاء على الرسوم، وتوفير تجربة للمستخدم كتلك التي توفرها الخدمات المركزية القائمة حاليا.
 
-Existing blockchain platforms are burdened by large fees and limited computational capacity that prevent widespread blockchain adoption.
+منصات بلوكشين الموجودة مرهقة برسوم كبيرة وقدرة حاسوبية محدودة تمنع إنتشار بلوكشين على نطاق واسع.
 
 # Requirements for Blockchain Applications
 
