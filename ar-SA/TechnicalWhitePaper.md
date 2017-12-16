@@ -69,7 +69,7 @@
 
 # الخلفية
 
-Blockchain technology was introduced in 2008 with the launch of the bitcoin currency, and since then entrepreneurs and developers have been attempting to generalize the technology in order to support a wider range of applications on a single blockchain platform.
+تم إدخال تقنية بلوكشين في عام 2008 مع إطلاق عملة بيتكوين، ومنذ ذلك الحين كان رجال الأعمال والمطورين يحاولون تعميم التكنولوجيا من أجل دعم مجموعة واسعة من التطبيقات على منصة بلوكشين واحدة.
 
 While a number of blockchain platforms have struggled to support functional decentralized applications, application specific blockchains such as the BitShares decentralized exchange (2014) and Steem social media platform (2016) have become heavily used blockchains with tens of thousands of daily active users. وقد حققوا ذلك من خلال زيادة الأداء لآلاف المعاملات في الثانية الواحدة، والحد من الكمون إلى 1.5 ثانية، والقضاء على الرسوم، وتوفير تجربة للمستخدم كتلك التي توفرها الخدمات المركزية القائمة حاليا.
 
@@ -85,7 +85,7 @@ Disrupting businesses such as Ebay, Uber, AirBnB, and Facebook, require blockcha
 
 ## Free Usage
 
-Application developers need the flexibility to offer users free services; users should not have to pay in order to use the platform or benefit from its services. A blockchain platform that is free to use for users will likely gain more widespread adoption. Developers and businesses can then create effective monetization strategies.
+مطوري التطبيقات بحاجة إلى المرونة لتقديم خدمات مجانية للمستخدمين. يجب أن المستخدمين لا يجب أن يدفعو من أجل لاستخدام منصة أو الاستفادة من خدماتها. A blockchain platform that is free to use for users will likely gain more widespread adoption. Developers and businesses can then create effective monetization strategies.
 
 ## Easy Upgrades and Bug Recovery
 
