@@ -26,7 +26,7 @@ Les contrats sont compilées à WebAssembly(WASM) et WASM doit s'inerfacer avec 
 
 ### Interface RPC (Arhag, Nathan)
 
-A simple JSON RPC over HTTP interface will be provided that enables developers to broadcast transactions and query application state. This is critical for both publishing and interacting with test applications.
+Un simple RPC JSON sur une interface HTTP qui seront fournis que permettra à les développeurs diffuser les transactions et requête l’état de l'application. This is critical for both publishing and interacting with test applications.
 
 ### Command line Tools (Arhag)
 
