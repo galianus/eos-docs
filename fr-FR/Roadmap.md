@@ -12,7 +12,7 @@ L'objectif de cette phase est d'établir les API dont les développeurs auront b
 
 A standalone node operates a test blockchain and produces blocks while exposing an API. This node does not need to concern itself with any P2P networking code.
 
-### Native Contracts (Nathan)
+### Contrats Natives (Nathan)
 
 The EOS.IO software has a number of native contracts. These are contracts that manage the core operations of the blockchain and exist outside the Web Assembly interface. These contracts include:
 
