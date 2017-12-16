@@ -16,7 +16,7 @@ Un nœud autonome opérés un blockhain de test et produit des blocs tandis qu'e
 
 Le Software EOS.IO a un nombre de contrats natives. Ce sont des contrats que manageront les operations principales de le blockchain et qui existe dehors l'interface Web Assemblée. Ces contrats contiennent:
 
-1. @eos - manages EOS token transfers
+1. @eos - géré les transfers de jetons EOS
 2. @stake - manages locked EOS, voting, and Producer Election
 3. @system - manages permissions, messages, and contact code updates
 
