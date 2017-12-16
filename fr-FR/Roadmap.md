@@ -4,9 +4,9 @@ Ce document décrit le plan de développement à partir d'un niveau élevé et s
 
 ***Tout ce qui est contenu dans ce document est sous forme d'ébauche et peut être modifié à tout moment et fourni à titre d'information seulement. block.one ne garantit pas l'exactitude des informations contenues dans ce plan d' d’évolution et l'information est fourni "comme si" sans représentation ni garantie, expresse ou implicite.***
 
-# Phase 1 - Minimal Viable Testing Environment - Summer 2017
+# La phase 1 - Environnement de test viable minimal- Été 20017
 
-The goal of this phase is to establish the APIs that developers will require to start building and testing applications on EOS.IO. In order for developers to start testing their applications they will require the following to be implemented:
+L'objectif de cette phase est d'établir les API dont les développeurs auront besoin pour commencer à créer et tester des applications sur EOS.IO. In order for developers to start testing their applications they will require the following to be implemented:
 
 ### Standalone Node (Dan & Nathan)
 
