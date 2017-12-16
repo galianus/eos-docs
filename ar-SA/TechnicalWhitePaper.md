@@ -4,7 +4,7 @@
 
 **نبذة مختصرة:** يقدم برنامج EOS.IO معمارية بلوكشين جديدة مصممة لتفعيل التوسع الرأسي والأفقي للبرامج اللامركزية. ويتحقق ذلك بإنشاء بنية تشبه أنظمة التشغيل حيث يمكن بناء التطبيقات عليها. يوفر البرنامج الحسابات والمصادقة وقواعد البيانات والإتصال الغير المتزامن وجدولة التطبيقات عبر مئات من النوى لوحدة المعالجة المركزية أو المجموعات. The resulting technology is a blockchain architecture that scales to millions of transactions per second, eliminates user fees, and allows for quick and easy deployment of decentralized applications.
 
-**PLEASE NOTE: CRYPTOGRAPHIC TOKENS REFERRED TO IN THIS WHITE PAPER REFER TO CRYPTOGRAPHIC TOKENS ON A LAUNCHED BLOCKCHAIN THAT ADOPTS THE EOS.IO SOFTWARE. THEY DO NOT REFER TO THE ERC-20 COMPATIBLE TOKENS BEING DISTRIBUTED ON THE ETHEREUM BLOCKCHAIN IN CONNECTION WITH THE EOS TOKEN DISTRIBUTION.**
+**المرجو الملاحظة: الرموز الكريبتوغرافية المشار إليها في هذه الورقة البيضاء ترجع إلى رموز كريبتوغرافية على بلوكشين مطلقة التي تقوم بتشغيل البرنامج EOS.IO. أنها لا ترجع إلى رموز ERC-20 المنسجمة التي تم توزيعها على بلوك إيثروم في اتصال مع توزيع رموز EOS.**
 
 حقوق الطبع والنشر © 2017 block.one
 
