@@ -8,7 +8,7 @@
 
 حقوق الطبع والنشر © 2017 block.one
 
-Without permission, anyone may use, reproduce or distribute any material in this white paper for non-commercial and educational use (i.e., other than for a fee or for commercial purposes) provided that the original source and the applicable copyright notice are cited.
+دون الحصول على إذن، يجوز لأي شخص إستخدام أو إعادة إنتاج أو توزيع أي مادة في هذا الكتاب الأبيض ر للإستخدام الغير التجاري والتعليمي (أي بخلاف الرسوم أو لأغراض تجارية) شريطة ذكر المصدر الأصلي وإشعار حقوق الطبع والنشر الساري.
 
 **DISCLAIMER:** This EOS.IO Technical White Paper is for information purposes only. block.one لا يضمن دقة أو الاستنتاجات التي تم التوصل إليها في هذا الكتاب الأبيض،   ويتم توفير هذا الكتاب الأبيض "كما هو". block.one لا ينكر جميع التصريحات والضمانات، قانونية أو غير ذلك، أيا كان، بما في ذلك، على سبيل المثال لا تقتصر على: (1) ضمان قابلية التسويق أو الملاءمة لغرض معين أو الملاءمة أو الاستخدام أو الملكية أو عدم الانتهاك؛ (2) أن محتويات هذا الكتاب الأبيض خالية من الأخطاء؛ و (3) أن هذه المحتويات لن تنتهك حقوق الطرف الثالث. لا تتحمل block.one والشركات التابعة لها أية مسؤولية عن الأضرار من أي نوع تنشأ عن الاستخدام، إشارة أو الاعتماد على هذا الكتاب الأبيض أو أي من المحتوى الوارد في هذه الوثيقة،حتى إذا نصح بإمكانية حدوث مثل هذه الأضرار. In no event will block.one or its affiliates be liable to any person or entity for any damages, losses, liabilities, costs or expenses of any kind, whether direct or indirect, consequential, compensatory, incidental, actual, exemplary, punitive or special for the use of, reference to, or reliance on this white paper or any of the content contained herein, including, without limitation, any loss of business, revenues, profits, data, use, goodwill or other intangible losses.
 
