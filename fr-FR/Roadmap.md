@@ -17,10 +17,10 @@ Un nœud autonome opérés un blockhain de test et produit des blocs tandis qu'e
 Le Software EOS.IO a un nombre de contrats natives. Ce sont des contrats que manageront les operations principales de le blockchain et qui existe dehors l'interface Web Assemblée. Ces contrats contiennent:
 
 1. @eos - géré les transfers de jetons EOS
-2. @stake - manages locked EOS, voting, and Producer Election
-3. @system - manages permissions, messages, and contact code updates
+2. @stake - gere les jetons EOS verrouilles, vote, et Election du Producteur
+3. @system - gère les permissions, les messages et contact de mises à jour du code
 
-### Virtual Machine API (Dan)
+### API Machine Virtuelle (Dan)
 
 Contracts are compiled to WebAssembly (WASM) and WASM must interface with the blockchain via a defined API. This API is what developers depend upon to build applications and be relatively stable before developers can really start to build on EOS.
 
