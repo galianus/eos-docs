@@ -36,7 +36,7 @@ Les outils de ligne de commande facilitent l'integration de l'interface RPC avec
 
 Documents qui vont enseigner les développeurs comment commencer avec la construction sur la blockchain EOS.IO. Ceci contient les documentations de WASM,API, interface RPC, et les Outils de Ligne de Commande.
 
-# Phase 2 - Minimal Viable Test Network - Fall 2017
+# La Phase 2 - Réseau de test minimum viable - Automne 2017
 
 Everything in Phase 1 assumes a trusted environment that only runs the developer's own code. Before a test network can be deployed several additional features need to be implemented and tested.
 
