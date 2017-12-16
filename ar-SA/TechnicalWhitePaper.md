@@ -85,7 +85,7 @@ Disrupting businesses such as Ebay, Uber, AirBnB, and Facebook, require blockcha
 
 ## Free Usage
 
-مطوري التطبيقات بحاجة إلى المرونة لتقديم خدمات مجانية للمستخدمين. يجب أن المستخدمين لا يجب أن يدفعو من أجل لاستخدام منصة أو الاستفادة من خدماتها. A blockchain platform that is free to use for users will likely gain more widespread adoption. Developers and businesses can then create effective monetization strategies.
+مطوري التطبيقات بحاجة إلى المرونة لتقديم خدمات مجانية للمستخدمين. يجب أن المستخدمين لا يجب أن يدفعو من أجل لاستخدام منصة أو الاستفادة من خدماتها. منصة بلوكشين مجانية لاستخدامها للمستخدمين من المرجح أن يكتسب اعتماد أوسع نطاقا. Developers and businesses can then create effective monetization strategies.
 
 ## Easy Upgrades and Bug Recovery
 
