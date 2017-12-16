@@ -6,9 +6,9 @@ Ce document décrit le plan de développement à partir d'un niveau élevé et s
 
 # La phase 1 - Environnement de test viable minimal- Été 20017
 
-L'objectif de cette phase est d'établir les API dont les développeurs auront besoin pour commencer à créer et tester des applications sur EOS.IO. In order for developers to start testing their applications they will require the following to be implemented:
+L'objectif de cette phase est d'établir les API dont les développeurs auront besoin pour commencer à créer et tester des applications sur EOS.IO. Afin que les développeurs commencer à tester leurs applications, ils exigeront à mettre en œuvre ce qui suit :
 
-### Standalone Node (Dan & Nathan)
+### Nœud Autonome (Dan et Nathan)
 
 A standalone node operates a test blockchain and produces blocks while exposing an API. This node does not need to concern itself with any P2P networking code.
 
