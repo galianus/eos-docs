@@ -10,7 +10,7 @@
 
 دون الحصول على إذن، يجوز لأي شخص إستخدام أو إعادة إنتاج أو توزيع أي مادة في هذا الكتاب الأبيض ر للإستخدام الغير التجاري والتعليمي (أي بخلاف الرسوم أو لأغراض تجارية) شريطة ذكر المصدر الأصلي وإشعار حقوق الطبع والنشر الساري.
 
-**DISCLAIMER:** This EOS.IO Technical White Paper is for information purposes only. block.one لا يضمن دقة أو الاستنتاجات التي تم التوصل إليها في هذا الكتاب الأبيض،   ويتم توفير هذا الكتاب الأبيض "كما هو". block.one لا ينكر جميع التصريحات والضمانات، قانونية أو غير ذلك، أيا كان، بما في ذلك، على سبيل المثال لا تقتصر على: (1) ضمان قابلية التسويق أو الملاءمة لغرض معين أو الملاءمة أو الاستخدام أو الملكية أو عدم الانتهاك؛ (2) أن محتويات هذا الكتاب الأبيض خالية من الأخطاء؛ و (3) أن هذه المحتويات لن تنتهك حقوق الطرف الثالث. لا تتحمل block.one والشركات التابعة لها أية مسؤولية عن الأضرار من أي نوع تنشأ عن الاستخدام، إشارة أو الاعتماد على هذا الكتاب الأبيض أو أي من المحتوى الوارد في هذه الوثيقة،حتى إذا نصح بإمكانية حدوث مثل هذه الأضرار. In no event will block.one or its affiliates be liable to any person or entity for any damages, losses, liabilities, costs or expenses of any kind, whether direct or indirect, consequential, compensatory, incidental, actual, exemplary, punitive or special for the use of, reference to, or reliance on this white paper or any of the content contained herein, including, without limitation, any loss of business, revenues, profits, data, use, goodwill or other intangible losses.
+**تنويه:** تقنية الورقة بيضاء لEOS.IO هي لأغراض المعلومات فقط. block.one لا يضمن دقة أو الاستنتاجات التي تم التوصل إليها في هذا الكتاب الأبيض،   ويتم توفير هذا الكتاب الأبيض "كما هو". block.one لا ينكر جميع التصريحات والضمانات، قانونية أو غير ذلك، أيا كان، بما في ذلك، على سبيل المثال لا تقتصر على: (1) ضمان قابلية التسويق أو الملاءمة لغرض معين أو الملاءمة أو الاستخدام أو الملكية أو عدم الانتهاك؛ (2) أن محتويات هذا الكتاب الأبيض خالية من الأخطاء؛ و (3) أن هذه المحتويات لن تنتهك حقوق الطرف الثالث. لا تتحمل block.one والشركات التابعة لها أية مسؤولية عن الأضرار من أي نوع تنشأ عن الاستخدام، إشارة أو الاعتماد على هذا الكتاب الأبيض أو أي من المحتوى الوارد في هذه الوثيقة،حتى إذا نصح بإمكانية حدوث مثل هذه الأضرار. In no event will block.one or its affiliates be liable to any person or entity for any damages, losses, liabilities, costs or expenses of any kind, whether direct or indirect, consequential, compensatory, incidental, actual, exemplary, punitive or special for the use of, reference to, or reliance on this white paper or any of the content contained herein, including, without limitation, any loss of business, revenues, profits, data, use, goodwill or other intangible losses.
 
 - [الخلفية](#background)
 - [متطلبات تطبيقات بلوكشين](#requirements-for-blockchain-applications) 
@@ -83,9 +83,9 @@ In order to gain widespread use, applications on the blockchain require a platfo
 
 Disrupting businesses such as Ebay, Uber, AirBnB, and Facebook, require blockchain technology capable of handling tens of millions of active daily users. In certain cases, applications may not work unless a critical mass of users is reached and therefore a platform that can handle mass number of users is paramount.
 
-## Free Usage
+## الاستخدام المتاح
 
-مطوري التطبيقات بحاجة إلى المرونة لتقديم خدمات مجانية للمستخدمين. يجب أن المستخدمين لا يجب أن يدفعو من أجل لاستخدام منصة أو الاستفادة من خدماتها. منصة بلوكشين مجانية لاستخدامها للمستخدمين من المرجح أن يكتسب اعتماد أوسع نطاقا. Developers and businesses can then create effective monetization strategies.
+مطوري التطبيقات بحاجة إلى المرونة لتقديم خدمات مجانية للمستخدمين. يجب أن المستخدمين لا يجب أن يدفعو من أجل لاستخدام منصة أو الاستفادة من خدماتها. منصة بلوكشين مجانية لاستخدامها للمستخدمين من المرجح أن يكتسب اعتماد أوسع نطاقا. يمكن للمطورين والشركات بعد ذلك إنشاء استراتيجيات فعالة لتحقيق الدخل.
 
 ## Easy Upgrades and Bug Recovery
 
@@ -136,7 +136,7 @@ The EOS.IO software requires every transaction to include the hash of a recent b
 
 Over time all users end up directly confirming the blockchain which makes it difficult to forge counterfeit chains as the counterfeit would not be able to migrate transactions from the legitimate chain.
 
-# Accounts
+# الحسابات
 
 The EOS.IO software permits all accounts to be referenced by a unique human readable name of 2 to 32 characters in length. The name is chosen by the creator of the account. All accounts must be funded with the minimal account balance at the time they are created to cover the cost of storing account data. Account names also support namespaces such that the owner of account @domain is the only one who can create the account @user.domain.
 
@@ -329,7 +329,7 @@ A blockchain that adopts the EOS.IO software will award new tokens to a block pr
 
 In addition to electing block producers, pursuant to a blockchain based on the EOS.IO software, users can elect 3 community benefit applications also known as smart contracts. These 3 applications will receive tokens of up to a configured percent of the token supply per annum minus the tokens that have been paid to block producers. These smart contracts will receive tokens proportional to the votes each application has received from token holders. The elected applications or smart contracts can be replaced by newly elected applications or smart contracts by token holders.
 
-# Governance
+# الحوكمة
 
 Governance is the process by which people reach consensus on subjective matters that cannot be captured entirely by software algorithms. An EOS.IO software-based blockchain implements a governance process that efficiently directs the existing influence of block producers. Absent a defined governance process, prior blockchains relied ad hoc, informal, and often controversial governance processes that result in unpredictable outcomes.
 
@@ -439,6 +439,6 @@ When communicating with another outside blockchain, block producers must wait un
 
 When using merkle proofs from outside blockchains, there is a significant difference between knowing that all transactions processed are valid and knowing that no transactions have been skipped or omitted. While it is impossible to prove that all of the most recent transactions are known, it is possible to prove that there have been no gaps in the transaction history. The EOS.IO software facilitates this by assigning a sequence number to every message delivered to every account. A user can use these sequence numbers to prove that all messages intended for a particular account have been processed and that they were processed in order.
 
-# Conclusion
+# استنتاج
 
 The EOS.IO software is designed from experience with proven concepts and best practices, and represents fundamental advancements in blockchain technology. The software is part of a holistic blueprint for a globally scalable blockchain society in which decentralised applications can be easily deployed and governed.
