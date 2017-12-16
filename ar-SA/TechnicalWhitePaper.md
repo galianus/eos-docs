@@ -2,7 +2,7 @@
 
 **26 يونيو 2017**
 
-**نبذة مختصرة:** يقدم برنامج EOS.IO معمارية بلوكشين جديدة مصممة لتفعيل التوسع الرأسي والأفقي للبرامج اللامركزية. ويتحقق ذلك بإنشاء بنية تشبه أنظمة التشغيل حيث يمكن بناء التطبيقات عليها. يوفر البرنامج الحسابات والمصادقة وقواعد البيانات والإتصال الغير المتزامن وجدولة التطبيقات عبر مئات من النوى لوحدة المعالجة المركزية أو المجموعات. The resulting technology is a blockchain architecture that scales to millions of transactions per second, eliminates user fees, and allows for quick and easy deployment of decentralized applications.
+**نبذة مختصرة:** يقدم برنامج EOS.IO معمارية بلوكشين جديدة مصممة لتفعيل التوسع الرأسي والأفقي للبرامج اللامركزية. ويتحقق ذلك بإنشاء بنية تشبه أنظمة التشغيل حيث يمكن بناء التطبيقات عليها. يوفر البرنامج الحسابات والمصادقة وقواعد البيانات والإتصال الغير المتزامن وجدولة التطبيقات عبر مئات من النوى لوحدة المعالجة المركزية أو المجموعات. التكنولوجيا الناتجة هي هندسة بلوكشين التي تزن الملايين من المعاملات في الثانية الواحدة، تلغي رسوم وتسمح بالنشر السريع والسهل للتطبيقات اللامركزية.
 
 **المرجو الملاحظة: الرموز الكريبتوغرافية المشار إليها في هذه الورقة البيضاء ترجع إلى رموز كريبتوغرافية على بلوكشين مطلقة التي تقوم بتشغيل البرنامج EOS.IO. أنها لا ترجع إلى رموز ERC-20 المنسجمة التي تم توزيعها على بلوك إيثروم في اتصال مع توزيع رموز EOS.**
 
@@ -56,7 +56,7 @@ Without permission, anyone may use, reproduce or distribute any material in this
     - [Emergency Changes](#emergency-changes)
 - [Scripts & Virtual Machines](#scripts--virtual-machines) 
   - [Schema Defined Messages](#schema-defined-messages)
-  - [Schema Defined Database](#schema-defined-database)
+  - [تعريف مخطط قاعدة بيانات](#schema-defined-database)
   - [Separating Authentication from Application](#separating-authentication-from-application)
   - [Virtual Machine Independent Architecture](#virtual-machine-independent-architecture) 
     - [Web Assembly (WASM)](#web-assembly-wasm)
@@ -117,7 +117,7 @@ If a producer misses a block and has not produced any block within the last 24 h
 
 Under normal conditions a DPOS blockchain does not experience any forks because the block producers cooperate to produce blocks rather than compete. In the event there is a fork, consensus will automatically switch to the longest chain. This metric works because the rate at which blocks are added to a blockchain chain fork is directly correlated to the percentage of block producers that share the same consensus. In other words, a blockchain fork with more producers on it will grow in length faster than one with fewer producers. Furthermore, no block producer should be producing blocks on two forks at the same time. If a block producer is caught doing this then such block producer will likely be voted out. Cryptographic evidence of such double-production may also be used to automatically remove abusers.
 
-## Transaction Confirmation
+## تأكيد المعاملة
 
 Typical DPOS blockchains have 100% block producer participation. A transaction can be considered confirmed with 99.9% certainty after an average of 1.5 seconds from time of broadcast.
 
