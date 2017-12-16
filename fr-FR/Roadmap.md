@@ -10,11 +10,11 @@ L'objectif de cette phase est d'établir les API dont les développeurs auront b
 
 ### Nœud Autonome (Dan et Nathan)
 
-A standalone node operates a test blockchain and produces blocks while exposing an API. This node does not need to concern itself with any P2P networking code.
+Un nœud autonome opérés un blockhain de test et produit des blocs tandis qu'exposant une API. Cette nœud n'a pas besoin de se préoccuper des quelconque réseaux P2P code.
 
 ### Contrats Natives (Nathan)
 
-The EOS.IO software has a number of native contracts. These are contracts that manage the core operations of the blockchain and exist outside the Web Assembly interface. These contracts include:
+Le Software EOS.IO a un nombre de contrats natives. Ce sont des contrats que manageront les operations principales de le blockchain et qui existe dehors l'interface Web Assemblée. Ces contrats contiennent:
 
 1. @eos - manages EOS token transfers
 2. @stake - manages locked EOS, voting, and Producer Election
