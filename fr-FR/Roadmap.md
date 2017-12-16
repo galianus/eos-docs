@@ -1,6 +1,6 @@
-## EOS.IO Software Roadmap
+## EOS.IO Le plan d’évolution de Software
 
-This document outlines the development plan from a high level and will be updated as progress is made toward version 1.0. It should be noted that this roadmap applies only to the blockchain software and not to the other tools and utilities such as wallets and block explorers which will have their own teams and dedicated roadmaps once Phase 1 is complete.
+Ce document décrit le plan de développement à partir d'un niveau élevé et sera mis à jour de tant que que le progrès est fait vers la version 1.0. Il devrait été noté que cette plan d'évolution applique seulement à le Software blockchain et pas à le autres outils et utilitaires comme les portefeuilles et les explorateurs de blocs qui auront leurs propres équipes et des plan d’évolution une fois la phase 1 terminée.
 
 ***Everything contained in this document is in draft form and subject to change at any time and provided for information purposes only. block.one does not guarantee the accuracy of the information contained in this roadmap and the information is provided “as is” with no representations or warranties, express or implied.***
 
