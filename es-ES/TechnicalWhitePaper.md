@@ -93,9 +93,9 @@ Las empresas que crean aplicaciones basadas en blockchain necesitan la flexibili
 
 Todo software no-trivial está sujeto a fallos, incluso con las verificaciones formales más rigurosas. La plataforma debe ser lo suficientemente robusta como para arreglar los fallos cuando estos inevitablemente ocurran.
 
-## Low Latency
+## Baja Latencia
 
-A good user experience demands reliable feedback with delay of no more than a few seconds. Longer delays frustrate users and make applications built on a blockchain less competitive with existing non-blockchain alternatives.
+Una buena experiencia de usuario exige reacciones confiables con un retraso de no más de unos pocos segundos. Longer delays frustrate users and make applications built on a blockchain less competitive with existing non-blockchain alternatives.
 
 ## Sequential Performance
 
