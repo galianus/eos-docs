@@ -210,7 +210,7 @@ EOS.IO yazılımı, kullanıcılara anahtarları çalındığında, hesapların�
 
 Hacker'ın kurtarma sürecine girmeye çalışarak kazanacağı hiçbir şey yoktur çünkü zaten hesap "kontrol" edilmektedir. Dahası, süreci tamamladılarsa, kurtarma ortağı büyük olasılıkla kimlik tespiti ve çok faktörlü kimlik doğrulama (telefon ve e-posta) isteyecektir. Bu muhtemelen bilgisayar korsanına zarar verebilir ya da korsan hiçbir şey elde edemez.
 
-This process is also very different from a simple multi-signature arrangement. With a multi-signature transaction, there is another company that is party to every transaction that is executed, but with the recovery process the agent is only a party to the recovery process and has no power over the day-to-day transactions. This dramatically reduces costs and legal liabilities for everyone involved.
+Bu işlem aynı zamanda basit bir çoklu imza anlaşmasından çok farklıdır. Çok imzalı bir işlemle, yürütülen her işlem için taraf olan başka bir şirket vardır. Ancak kurtarma işlemi ile aracı kurtarma sürecine yalnızca bir taraftır ve günlük işlemler üzerinde hiçbir etkisi yoktur. Bu, ilgili herkes için maliyetleri ve yasal yükümlülükleri önemli ölçüde azaltır.
 
 # Deterministic Parallel Execution of Applications
 
