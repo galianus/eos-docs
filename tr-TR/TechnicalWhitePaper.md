@@ -218,11 +218,11 @@ Blok zinciri oy birliği, belirli (tekrarlanabilir) davranışlara bağlıdır. 
 
 EOS.IO yazılımı tabanlı bir blok zincirinde, blok üreticisinin işi; mesaj dağıtımın iş parçacıkları halinde organize edilmesidir. Böylece paralel olarak değerlendirme yapılabilir. Her hesabın durumu sadece ona iletilen mesajlara bağlıdır. Zamanlama takvimi, bir blok üreticisinin çıktısıdır. Ve rastgele olmadan belirli olarak icra edilmelidir. Ancak takvimin üretilme süreci belirlenimci zorunda değildir. Bu, blok üreticilerinin işlemleri planlamak için paralel algoritmalar kullanabilecekleri anlamına gelir.
 
-Part of parallel execution means that when a script generates a new message it does not get delivered immediately, instead it is scheduled to be delivered in the next cycle. The reason it cannot be delivered immediately is because the receiver may be actively modifying its own state in another thread.
+Paralel yürütmenin bir kısmı, bir komut dosyası yeni bir mesaj ürettiğinde derhal teslim edilmez, bunun yerine bir sonraki döngüde teslim edilmesinin planlanması işidir. Hemen teslim edilememesinin nedeni, alıcının aktif olarak kendi durumunu başka bir iş parçacığına değiştirmesi olabilir.
 
-## Minimizing Communication Latency
+## İletişim Gecikmesini Azaltma
 
-Latency is the time it takes for one account to send a message to another account and then receive a response. The goal is to enable two accounts to exchange messages back and forth within a single block without having to wait 3 seconds between each message. To enable this, the EOS.IO software divides each block into cycles. Each cycle is divided into threads and each thread contains a list of transactions. Each transaction contains a set of messages to be delivered. This structure can be visualized as a tree where alternating layers are processed sequentially and in parallel.
+Gecikme, bir hesabın başka bir hesaba mesaj göndermek ve ardından bir yanıt almak için geçen süreyi süreyi belirtir. The goal is to enable two accounts to exchange messages back and forth within a single block without having to wait 3 seconds between each message. To enable this, the EOS.IO software divides each block into cycles. Each cycle is divided into threads and each thread contains a list of transactions. Each transaction contains a set of messages to be delivered. This structure can be visualized as a tree where alternating layers are processed sequentially and in parallel.
 
         Block
     
