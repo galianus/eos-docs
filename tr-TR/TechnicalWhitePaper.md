@@ -249,13 +249,13 @@ Bazı hesaplar, bir iletiyi iç durumunu değiştirmeden geçiş/başarısız ol
 
 Bazen mesajların atomik olarak birden fazla hesaba iletildiğinden ve kabul edildiğinden emin olmak istenir. Bu durumda, her iki ileti de bir işleme yerleştirilir ve her iki hesaba da aynı iş parçacığı atanır ve iletiler sırayla uygulanır. Bu durum performans için ideal değildir ve kullanıcılar için "fatura" söz konusu olduğunda, bir işlem tarafından atıfta bulunulan farklı hesap sayısına göre faturalandırılacaktır.
 
-For performance and cost reasons it is best to minimize atomic operations involving two or more heavily utilized accounts.
+Performans ve maliyet nedenleriyle, iki veya daha fazla hesaptan yoğun kullanılan atomik işlemleri en aza indirmek en iyisidir.
 
-## Partial Evaluation of Blockchain State
+## Blok Zinciri Durumunun Kısmi Değerlendirilmesi
 
-Scaling blockchain technology necessitates that components are modular. Everyone should not have to run everything, especially if they only need to use a small subset of the applications.
+Blok zincir teknolojisini ölçekleme, bileşenlerin modüler olmasını gerektirir. Herkes her şeyi çalıştırmak zorunda kalmamalıdır, özellikle de yalnızca küçük bir uygulama kümesini kullanması gerekiyorsa.
 
-An exchange application developer runs full nodes for the purpose of displaying the exchange state to its users. This exchange application has no need for the state associated with social media applications. EOS.IO software allows any full node to pick any subset of applications to run. Messages delivered to other applications are safely ignored because an application's state is derived entirely from the messages that are delivered to it.
+Bir takas uygulama geliştiricisi, takas durumunu kullanıcılarına göstermek amacıyla tam düğümleri çalıştırır. This exchange application has no need for the state associated with social media applications. EOS.IO software allows any full node to pick any subset of applications to run. Messages delivered to other applications are safely ignored because an application's state is derived entirely from the messages that are delivered to it.
 
 This has some significant implications on communication with other accounts. Most significantly it cannot be assumed that the state of the other account is accessible on the same machine. It also means that while it is tempting to enable "locks" that allow one account to synchronously call another account, this design pattern breaks down if the other account is not resident in memory.
 
