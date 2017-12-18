@@ -224,20 +224,20 @@ Paralel yürütmenin bir kısmı, bir komut dosyası yeni bir mesaj ürettiğind
 
 Gecikme, bir hesabın başka bir hesaba mesaj göndermek ve ardından bir yanıt almak için geçen süreyi süreyi belirtir. Hedef, iki hesap arasında mesaj değişimi sırasında 3 saniye beklemek zorunda kalmadan, tek bir blok içinde ileri geri mesajları alış verişinde bulunmaktır. Bunu etkinleştirmek için, EOS.IO yazılımı her bloğu çevrimlere böler. Her döngü iş parçacıklarına bölünür ve her iş parçacığı bir işlem listesi içerir. Her işlem, teslim edilecek bir mesaj seti içerir. Bu yapı, alternatif katmanların ardışık ve paralel olarak işlendiği bir ağaç olarak görselleştirilebilir.
 
-        Block
+        Blok
     
-          Cycles (sequential)
+          Döngüler (sıralı)
     
-            Threads (parallel)
+            İş parcackları (paralel)
     
-              Transactions (sequential)
+              İşlemler (sıralı)
     
-                Messages (sequential)
+                Mesajlar (sıralı)
     
-                  Receiver and Notified Accounts (parallel)
+                  Alıcı ve Bildirilmiş Hesaplar (paralel)
     
 
-Transactions generated in one cycle can be delivered in any subsequent cycle or block. Block producers will keep adding cycles to a block until the maximum wall clock time has passed or there are no new generated transactions to deliver.
+Bir döngüde üretilen işlemler, sonraki herhangi bir döngü veya blokta teslim edilebilir. Blok üreticileri maksimum süre dolana kadar bir bloğa döngü eklemeye devam eder değilse dağıtacak yeni üretilmiş işlem yoktur.
 
 It is possible to use static analysis of a block to verify that within a given cycle no two threads contain transactions that modify the same account. So long as that invariant is maintained a block can be processed by running all threads in parallel.
 
