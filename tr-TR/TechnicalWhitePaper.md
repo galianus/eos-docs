@@ -239,11 +239,11 @@ Gecikme, bir hesabın başka bir hesaba mesaj göndermek ve ardından bir yanıt
 
 Bir döngüde üretilen işlemler, sonraki herhangi bir döngü veya blokta teslim edilebilir. Blok üreticileri maksimum süre dolana kadar bir bloğa döngü eklemeye devam eder değilse dağıtacak yeni üretilmiş işlem yoktur.
 
-Bir bloğun, aynı hesabı değiştiren iki işlem parçacığını içermediğini doğrulamak için statik analiz kullanmak mümkündür. So long as that invariant is maintained a block can be processed by running all threads in parallel.
+Bir bloğun, aynı hesabı değiştiren iki işlem parçacığını içermediğini doğrulamak için statik analiz kullanmak mümkündür. Bu değişmezin sürdüğü sürece bir blok, tüm konuları paralel olarak çalıştırarak işlenebilir.
 
-## Read-Only Message Handlers
+## Sadece Okunabilir Mesaj İşleyicileri
 
-Some accounts may be able to process a message on a pass/fail basis without modifying their internal state. If this is the case then these handlers can be executed in parallel so long as only read-only message handlers for a particular account are included in one or more threads within a particular cycle.
+Bazı hesaplar, bir iletiyi iç durumunu değiştirmeden geçiş/başarısız olarak işleyebilir. If this is the case then these handlers can be executed in parallel so long as only read-only message handlers for a particular account are included in one or more threads within a particular cycle.
 
 ## Atomic Transactions with Multiple Accounts
 
