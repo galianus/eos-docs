@@ -243,7 +243,7 @@ Bir bloğun, aynı hesabı değiştiren iki işlem parçacığını içermediği
 
 ## Sadece Okunabilir Mesaj İşleyicileri
 
-Bazı hesaplar, bir iletiyi iç durumunu değiştirmeden geçiş/başarısız olarak işleyebilir. If this is the case then these handlers can be executed in parallel so long as only read-only message handlers for a particular account are included in one or more threads within a particular cycle.
+Bazı hesaplar, bir iletiyi iç durumunu değiştirmeden geçiş/başarısız olarak işleyebilir. Bu durumda, bu işleyiciler belirli bir hesap için yalnızca salt okunur ileti işleyicileri belirli bir döngüdeki bir veya daha çok iş parçacığına dahil edildiği sürece paralel olarak yürütülebilir.
 
 ## Çoklu Hesaplarla Atomik İşlemler
 
