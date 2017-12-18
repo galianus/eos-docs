@@ -297,11 +297,11 @@ EOS.IO yazılımını benimseyen bir blok zincirinde, bant genişliği ve hesapl
 
 Daha önce belirtildiği gibi, hesaplama kullanım araçlarının performans ve optimizasyon üzerinde önemli bir etkisi vardır; Bu nedenle, tüm kaynak kullanımı kısıtlamaları nihai olarak özneldir ve uygulamanın kendi algoritmalarına ve tahminlerine göre blok üreticileri tarafından yapılır.
 
-That said, there are certain things that are trivial to measure objectively. The number of messages delivered and the size of the data stored in the internal database are cheap to measure objectively. The EOS.IO software enables block producers to apply the same algorithm over these objective measures but may choose to apply stricter subjective algorithms over subjective measurements.
+That said, there are certain things that are trivial to measure objectively. İletilen mesaj sayısı ve iç veritabanında saklanan verilerin boyutunu objektif olarak ölçmek ucuzdur. EOS.IO yazılımı, blok üreticilerinin aynı algoritmayı bu objektif ölçümlere uygulamasına olanak tanır; ancak öznel ölçümler üzerinde daha subjektif algoritmalar uygulamayı tercih edebilir.
 
-## Receiver Pays
+## Alıcı Ödemeleri
 
-Traditionally, it is the business that pays for office space, computational power, and other costs required to run the business. The customer buys specific products from the business and the revenue from those product sales is used to cover the business costs of operation. Similarly, no website obligates its visitors to make micropayments for visiting its website to cover hosting costs. Therefore, decentralized applications should not force its customers to pay the blockchain directly for the use of the blockchain.
+Geleneksel olarak, bir işletme, ofis alanını, hesaplama gücü ve işletmeyi yürütmek için gereken diğer maliyetleri öder. Müşteri, belirli ürünleri alır ve bu ürün satışlarından elde edilen gelir, işletme işletme maliyetlerini karşılamak için kullanılır. Similarly, no website obligates its visitors to make micropayments for visiting its website to cover hosting costs. Therefore, decentralized applications should not force its customers to pay the blockchain directly for the use of the blockchain.
 
 A launched blockchain that uses the EOS.IO software does not require its users to pay the blockchain directly for its use and therefore does not constrain or prevent a business from determining its own monetization strategy for its products.
 
