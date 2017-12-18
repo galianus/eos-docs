@@ -123,15 +123,15 @@ DPOS điển hình của blockchain có 100% nhà tạo khối tham gia. Một g
 
 Có một vài trường hợp đặc biệt hiếm khi mà một lỗi phần mềm, nghẽn Internet, hoặc là một nhà tạo khối độc hại sẽ tạo ra hai hoặc nhiều phân nhánh. Để hoàn toàn chắc chắn rằng một giao dịch không thể bị đảo ngược, một nốt có thể chọn để chờ xác nhận từ 15 trên tổng số 21 nhà tạo khối. Dựa trên cấu hình tiêu biểu của EOS.IO, điều này có thể mất trung bình 45 giây trong điều kiện bình thường. Theo mặc định, tất cả các nốt sẽ nhìn nhận một khối đã được xác nhận bởi 15 trên 21 nhà tạo khổi là không thể đảo ngược được và sẽ không nhảy sang một nhánh không chứa khối đó bất luận chiều dài như thế nào đi nữa.
 
-Có khả năng một nốt sẽ cảnh báo người dùng rằng có xác suất cao là nó đang ở trên một nhánh phụ trong vòng 9 giây kể từ thời gian bắt đầu rẽ nhánh. Sau 2 khối bị hụt liên tục, có khả năng 95% một nốt đang ở trên một nhánh phụ. Với 3 khối hụt liên tiếp, xác suất là 99% nốt đó đang ở trên một nhánh phụ. It is possible to generate a robust predictive model that will utilize information about which nodes missed, recent participation rates, and other factors to quickly warn operators that something is wrong.
+Có khả năng một nốt sẽ cảnh báo người dùng rằng có xác suất cao là nó đang ở trên một nhánh phụ trong vòng 9 giây kể từ thời gian bắt đầu rẽ nhánh. Sau 2 khối bị hụt liên tục, có khả năng 95% một nốt đang ở trên một nhánh phụ. Với 3 khối hụt liên tiếp, xác suất là 99% nốt đó đang ở trên một nhánh phụ. Việc tạo ra một mô hình tiên đoán mạnh mẽ là có khả năng, mà ở đó mô hình sẽ tận dụng thông tin về nối nào bị hụt, tỉ lệ tham gia gần đây nhất, và các yếu tố khác để nhanh chóng cảnh báo nhà vận hành rằng có điều gì đó không bình thường.
 
-The response to such a warning depends entirely upon the nature of the business transactions, but the simplest response is to wait for 15/21 confirmations until the warning stops.
+Phản ứng với cảnh báo như thế phụ thuộc hoàn toàn vào bản chất của giao dịch, nhưng phản ứng đơn giản nhất là đợi 15/31 xác nhận cho đến khi ngưng cảnh báo.
 
-## Transaction as Proof of Stake (TaPoS)
+## Giao Dịch Như Là Minh Chứng Sở Hữu (TaPoS)
 
-The EOS.IO software requires every transaction to include the hash of a recent block header. This hash serves two purposes:
+Phần mềm EOS.IO yêu cầu mỗi giao dịch phải có kèm theo hash của đầu khối mới nhất. Mã hash này phục vụ hai mục đích:
 
-1. prevents a replay of a transaction on forks that do not include the referenced block; and
+1. ngăn ngừa sự phát lại của một giao dịch trên các nhánh mà không kèm theo khối được tham khảo; và
 2. signals the network that a particular user and their stake are on a specific fork.
 
 Over time all users end up directly confirming the blockchain which makes it difficult to forge counterfeit chains as the counterfeit would not be able to migrate transactions from the legitimate chain.
