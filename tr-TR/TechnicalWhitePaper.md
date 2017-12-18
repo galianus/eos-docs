@@ -271,7 +271,7 @@ Genel olarak, 1 blok üreticisi bile bir işlemi geçerli ve kaynak kullanım s�
 
 Bazı durumlarda, bir üretici, kabul edilebilir aralıkların dışındaki büyüklükte bir sipariş içeren işlemleri içeren bir blok üretebilir. Bu durumda, bir sonraki blok üreticisi, bloğu reddetmek üzere seçebilir ve böylece üçüncü blok üreticisi bağlantıyı kesebilir. Bu, büyük bir bloğun ağ yayılımda gecikmelerine neden olduğunda olacaktan farklı değildir. Topluluk bir istismar örüntüsü fark eder ve nihayetinde sahtekâr üreticiden oyları kaldırır.
 
-Hesaplama maliyetin öznel olarak değerlendirilmesi, blok zincirini, tam ve belirli süre ölçme zorunluluğundan kurtarır. With this design there is no need to precisely count instructions which dramatically increases opportunities for optimization without breaking consensus.
+Hesaplama maliyetin öznel olarak değerlendirilmesi, blok zincirini, tam ve belirli süre ölçme zorunluluğundan kurtarır. Bu tasarımla, fikir birliğine varmadan da optimizasyon için, fırsatlarını önemli ölçüde artıran, talimatların kesin sayımına gerek yoktur.
 
 # Token Modeli ve Kaynak Kullanımı
 
