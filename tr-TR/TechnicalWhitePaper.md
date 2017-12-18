@@ -317,13 +317,13 @@ EOS.IO yazılımını kullanan bir blok zincirinde, her blok oluşurken, blok ü
 
 ## Durum Saklama Maliyetleri
 
-While bandwidth and computation can be delegated, storage of application state will require an application developer to hold tokens until that state is deleted. If state is never deleted then the tokens are effectively removed from circulation.
+Bant genişliği ve hesaplama devredilebilirken, uygulama durumunun depolanması, bir uygulama geliştiricisinin bu durum silmesine kadar jetonları tutulmasını gerektirir. Durum asla silinmezse, jetonlar dolaşımdan etkin biçimde kaldırılır.
 
-Every user account requires a certain amount of storage; therefore, every account must maintain a minimum balance. As storage capacity of the network increases this minimum required balance will fall.
+Her kullanıcı hesabına belirli bir miktarda depolama alanı gerekir; Bu nedenle, her hesap minimum bir bakiye sağlamalıdır. Ağın depolama kapasitesi arttıkça bu minimum bakiye düşecektir.
 
 ## Blok Ödülleri
 
-A blockchain that adopts the EOS.IO software will award new tokens to a block producer every time a block is produced. In these circumstances, the number of tokens created is determined by the median of the desired pay published by all block producers. The EOS.IO software may be configured to enforce a cap on producer awards such that the total annual increase in token supply does not exceed 5%.
+EOS.IO yazılımını benimseyen bir blok zincirinde, her 1 blok üretildiğinde, blok üreticisi yeni bir jetonla ödüllendirilir. In these circumstances, the number of tokens created is determined by the median of the desired pay published by all block producers. The EOS.IO software may be configured to enforce a cap on producer awards such that the total annual increase in token supply does not exceed 5%.
 
 ## Toplum Yararına Uygulamalar
 
