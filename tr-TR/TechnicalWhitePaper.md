@@ -269,7 +269,7 @@ EOS.IO yazılımını benimseyen bir blok zincirinde, bir ağ seviyesinde tüm i
 
 Genel olarak, 1 blok üreticisi bile bir işlemi geçerli ve kaynak kullanım sınırları altında kabul ettiği sürece diğer blok üreticileri de kabul eder, fakat işlemin o üreticiyi bulması 1 dakika sürebilir.
 
-In some cases a producer may create a block that includes transactions that are an order of magnitude outside of acceptable ranges. In this case the next block producer may opt to reject the block and the tie will be broken by the third producer. This is no different than what would happen if a large block caused network propagation delays. The community would notice a pattern of abuse and eventually remove votes from the rogue producer.
+Bazı durumlarda, bir üretici, kabul edilebilir aralıkların dışındaki büyüklükte bir sipariş içeren işlemleri içeren bir blok üretebilir. Bu durumda, bir sonraki blok üreticisi, bloğu reddetmek üzere seçebilir ve böylece üçüncü blok üreticisi bağlantıyı kesebilir. Bu, büyük bir bloğun ağ yayılımda gecikmelerine neden olduğunda olacaktan farklı değildir. The community would notice a pattern of abuse and eventually remove votes from the rogue producer.
 
 This subjective evaluation of computational cost frees the blockchain from having to precisely and deterministically measure how long something takes to run. With this design there is no need to precisely count instructions which dramatically increases opportunities for optimization without breaking consensus.
 
