@@ -119,11 +119,11 @@ Trong điều kiện thông thường, blockchain sử dụng DPOS không thực
 
 ## Xác Nhận Giao Dịch
 
-Typical DPOS blockchains have 100% block producer participation. A transaction can be considered confirmed with 99.9% certainty after an average of 1.5 seconds from time of broadcast.
+DPOS điển hình của blockchain có 100% nhà tạo khối tham gia. Một giao dịch có thể được xem là đã xác nhận với 99.9% chắc chắn sau trung bình 1.5 giây kể từ thời gian nó phát tín hiệu đi.
 
-There are some extraordinary cases where a software bug, Internet congestion, or a malicious block producer will create two or more forks. For absolute certainty that a transaction is irreversible, a node may choose to wait for confirmation by 15 out of the 21 block producers. Based on a typical configuration of the EOS.IO software, this will take an average of 45 seconds under normal circumstances. By default all nodes will consider a block confirmed by 15 of 21 producers irreversible and will not switch to a fork that excludes such a block regardless of length.
+Có một vài trường hợp đặc biệt hiếm khi mà một lỗi phần mềm, nghẽn Internet, hoặc là một nhà tạo khối độc hại sẽ tạo ra hai hoặc nhiều phân nhánh. Để hoàn toàn chắc chắn rằng một giao dịch không thể bị đảo ngược, một nốt có thể chọn để chờ xác nhận từ 15 trên tổng số 21 nhà tạo khối. Dựa trên cấu hình tiêu biểu của EOS.IO, điều này có thể mất trung bình 45 giây trong điều kiện bình thường. Theo mặc định, tất cả các nốt sẽ nhìn nhận một khối đã được xác nhận bởi 15 trên 21 nhà tạo khổi là không thể đảo ngược được và sẽ không nhảy sang một nhánh không chứa khối đó bất luận chiều dài như thế nào đi nữa.
 
-It is possible for a node to warn users that there is a high probability that they are on a minority fork within 9 seconds of the start of a fork. After 2 consecutive missed blocks there is a 95% probability a node is on a minority fork. With 3 consecutive missed blocks there is a 99% certainty of being on a minority fork. It is possible to generate a robust predictive model that will utilize information about which nodes missed, recent participation rates, and other factors to quickly warn operators that something is wrong.
+Có khả năng một nốt sẽ cảnh báo người dùng rằng có xác suất cao là nó đang ở trên một nhánh phụ trong vòng 9 giây kể từ thời gian bắt đầu rẽ nhánh. Sau 2 khối bị hụt liên tục, có khả năng 95% một nốt đang ở trên một nhánh phụ. Với 3 khối hụt liên tiếp, xác suất là 99% nốt đó đang ở trên một nhánh phụ. It is possible to generate a robust predictive model that will utilize information about which nodes missed, recent participation rates, and other factors to quickly warn operators that something is wrong.
 
 The response to such a warning depends entirely upon the nature of the business transactions, but the simplest response is to wait for 15/21 confirmations until the warning stops.
 
