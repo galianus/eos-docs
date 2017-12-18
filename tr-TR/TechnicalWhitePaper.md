@@ -323,7 +323,7 @@ Her kullanıcı hesabına belirli bir miktarda depolama alanı gerekir; Bu neden
 
 ## Blok Ödülleri
 
-EOS.IO yazılımını benimseyen bir blok zincirinde, her 1 blok üretildiğinde, blok üreticisi yeni bir jetonla ödüllendirilir. In these circumstances, the number of tokens created is determined by the median of the desired pay published by all block producers. The EOS.IO software may be configured to enforce a cap on producer awards such that the total annual increase in token supply does not exceed 5%.
+EOS.IO yazılımını benimseyen bir blok zincirinde, her 1 blok üretildiğinde, blok üreticisi yeni bir jetonla ödüllendirilir. Bu koşullarda, oluşturulan jetonların sayısı, tüm blok üreticileri tarafından yayınlanmış, talep edilen edilen ücretin ortanca değerine göre belirlenir. EOS.IO yazılımı, üretici ödüllerininin, toplam jeton arzının yıllık % 5'ini geçmeyecek şekilde sınırlandırılması için ayarlanabilir.
 
 ## Toplum Yararına Uygulamalar
 
