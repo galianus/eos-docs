@@ -327,7 +327,7 @@ EOS.IO yazılımını benimseyen bir blok zincirinde, her 1 blok üretildiğinde
 
 ## Toplum Yararına Uygulamalar
 
-In addition to electing block producers, pursuant to a blockchain based on the EOS.IO software, users can elect 3 community benefit applications also known as smart contracts. These 3 applications will receive tokens of up to a configured percent of the token supply per annum minus the tokens that have been paid to block producers. These smart contracts will receive tokens proportional to the votes each application has received from token holders. The elected applications or smart contracts can be replaced by newly elected applications or smart contracts by token holders.
+Kullanıcılar, EOS.IO yazılımına dayanan bir blok zincirine istinaden blok üreticilerini seçmenin yanı, sıra akıllı sözleşmeler olarak da bilinen 3 topluluk fayda uygulamasını seçebilirler. These 3 applications will receive tokens of up to a configured percent of the token supply per annum minus the tokens that have been paid to block producers. These smart contracts will receive tokens proportional to the votes each application has received from token holders. The elected applications or smart contracts can be replaced by newly elected applications or smart contracts by token holders.
 
 # Yönetim
 
