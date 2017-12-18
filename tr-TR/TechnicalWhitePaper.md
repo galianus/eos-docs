@@ -301,13 +301,13 @@ That said, there are certain things that are trivial to measure objectively. İl
 
 ## Alıcı Ödemeleri
 
-Geleneksel olarak, bir işletme, ofis alanını, hesaplama gücü ve işletmeyi yürütmek için gereken diğer maliyetleri öder. Müşteri, belirli ürünleri alır ve bu ürün satışlarından elde edilen gelir, işletme işletme maliyetlerini karşılamak için kullanılır. Similarly, no website obligates its visitors to make micropayments for visiting its website to cover hosting costs. Therefore, decentralized applications should not force its customers to pay the blockchain directly for the use of the blockchain.
+Geleneksel olarak, bir işletme, ofis alanını, hesaplama gücü ve işletmeyi yürütmek için gereken diğer maliyetleri öder. Müşteri, belirli ürünleri alır ve bu ürün satışlarından elde edilen gelir, işletme işletme maliyetlerini karşılamak için kullanılır. Benzer şekilde, hiçbir web sitesi, barındırma maliyetlerini karşılamak üzere, ziyaretçilerini mikro para ödemek zorunda bırakmaz. Bu nedenle, merkezi olmayan dağıtık uygulamalar, müşterilerini blok zincirinin kullanımı için ödemeye zorlamamalıdır.
 
-A launched blockchain that uses the EOS.IO software does not require its users to pay the blockchain directly for its use and therefore does not constrain or prevent a business from determining its own monetization strategy for its products.
+EOS.IO yazılımını kullanan bir blok zinciri, kullanıcılarından doğrudan ödemesi istemiz. Bu nedenle bir işletmenin ürünlerine ilişkin kendi para kazanma stratejini belirlemesini sınırlamaz veya engellemez.
 
-## Delegating Capacity
+## Yetkilendirme Kapasitesi
 
-A holder of tokens on a blockchain launched adopting the EOS.IO software who may not have an immediate need to consume all or part of the available bandwidth, can give or rent such unconsumed bandwidth to others; the block producers running EOS.IO software on such blockchain will recognize this delegation of capacity and allocate bandwidth accordingly.
+Mevcut bir bant genişliğinin tamamını veya bir kısmını tüketmek zorunda olmayan, başkalarına kullanılmayan bant genişliği verebilen veya kiralayabilen EOS.IO yazılımını benimseyen bir blok zincirdeki, jeton sahipleri, bu blok zincirinde EOS.IO yazılımını çalıştıran blok üreticilerine, kapasite kiralaması yapabilir ve buna göre bant genişliği tahsis edebilir.
 
 ## Separating Transaction costs from Token Value
 
