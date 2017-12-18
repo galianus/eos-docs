@@ -132,7 +132,7 @@ Phản ứng với cảnh báo như thế phụ thuộc hoàn toàn vào bản c
 Phần mềm EOS.IO yêu cầu mỗi giao dịch phải có kèm theo hash của đầu khối mới nhất. Mã hash này phục vụ hai mục đích:
 
 1. ngăn ngừa sự phát lại của một giao dịch trên các nhánh mà không kèm theo khối được tham khảo; và
-2. signals the network that a particular user and their stake are on a specific fork.
+2. phát tín hiệu tới mạng lưới rằng một người dùng nào đó và sở hữu của họ đang ở trên một nhánh cụ thể nào đó.
 
 Over time all users end up directly confirming the blockchain which makes it difficult to forge counterfeit chains as the counterfeit would not be able to migrate transactions from the legitimate chain.
 
