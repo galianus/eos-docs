@@ -245,9 +245,9 @@ Bir bloğun, aynı hesabı değiştiren iki işlem parçacığını içermediği
 
 Bazı hesaplar, bir iletiyi iç durumunu değiştirmeden geçiş/başarısız olarak işleyebilir. If this is the case then these handlers can be executed in parallel so long as only read-only message handlers for a particular account are included in one or more threads within a particular cycle.
 
-## Atomic Transactions with Multiple Accounts
+## Çoklu Hesaplarla Atomik İşlemler
 
-Sometimes it is desirable to ensure that messages are delivered to and accepted by multiple accounts atomically. In this case both messages are placed in one transaction and both accounts will be assigned the same thread and the messages applied sequentially. This situation is not ideal for performance and when it comes to "billing" users for usage, they will get billed by the number of unique accounts referenced by a transaction.
+Bazen mesajların atomik olarak birden fazla hesaba iletildiğinden ve kabul edildiğinden emin olmak istenir. Bu durumda, her iki ileti de bir işleme yerleştirilir ve her iki hesaba da aynı iş parçacığı atanır ve iletiler sırayla uygulanır. Bu durum performans için ideal değildir ve kullanıcılar için "fatura" söz konusu olduğunda, bir işlem tarafından atıfta bulunulan farklı hesap sayısına göre faturalandırılacaktır.
 
 For performance and cost reasons it is best to minimize atomic operations involving two or more heavily utilized accounts.
 
