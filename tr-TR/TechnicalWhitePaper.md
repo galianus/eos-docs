@@ -277,13 +277,13 @@ Hesaplama maliyetin öznel olarak değerlendirilmesi, blok zincirini, tam ve bel
 
 **LÜTFEN DİKKAT: BU TEKNİK DÖKÜMANDA ANILAN KRİPTOGRAFİK TOKENLER EOS.IO YAZILIMI KULLANAN BİR BLOK ZİNCİRİNDEN BAŞLATILAN KRİPTOGRAFİK TOKENLERİ KASTETMEKTEDİR. EOS TOKEN DAĞITIMI İLE BAĞLANTILI OLARAK ETHEREUM BLOK ZİNCİRİNDE DAĞITILMAKTA OLAN ERC-20 UYUMLU TOKENLER İLE İLGİSİ YOKTUR.**
 
-All blockchains are resource constrained and require a system to prevent abuse. With a blockchain that uses EOS.IO software, there are three broad classes of resources that are consumed by applications:
+Tüm blok zincirlerinde kaynak kısıtlıdır ve kötüye kullanımı önlemek için bir sistem gerekir. EOS.IO yazılımını kullanan bir blok zincirinde, uygulamalar tarafından tüketilen üç geniş kaynak sınıfı vardır:
 
-1. Bandwidth and Log Storage (Disk);
-2. Computation and Computational Backlog (CPU); and
-3. State Storage (RAM).
+1. Bant Genişliği ve Günlük Depolama Alanı (Disk);
+2. Hesaplama ve Hesaplamalı Geribildirim (İşlemci); ve
+3. Durum Depo Alanı (RAM).
 
-Bandwidth and computation have two components, instantaneous usage and long-term usage. A blockchain maintains a log of all messages and this log is ultimately stored and downloaded by all full nodes. With the log of messages it is possible to reconstruct the state of all applications.
+Bant genişliği ve hesaplama, anlık ve uzun süreli kullanım olmak üzere iki bileşene sahiptir. Bir blok zinciri tüm mesajların bir günlüğünü tutar ve bu günlük en nihayetinde tüm düğümler tarafından depolanır ve indirilir. Mesajların günlük kayıtlarıyla, tüm uygulamaların durumunu yeniden oluşturmak mümkündür.
 
 The computational debt is calculations that must be performed to regenerate state from the message log. If the computational debt grows too large then it becomes necessary to take snapshots of the blockchain's state and discard the blockchain's history. If computational debt grows too quickly then it may take 6 months to replay 1 year worth of transactions. It is critical, therefore, that the computational debt be carefully managed.
 
