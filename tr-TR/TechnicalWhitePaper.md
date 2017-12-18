@@ -331,11 +331,11 @@ Kullanıcılar, EOS.IO yazılımına dayanan bir blok zincirine istinaden blok �
 
 # Yönetim
 
-Yönetişim, insanların öznel algoritmalarla yakalanamayan öznel konularda fikir birliğine varma sürecidir. EOS.IO yazılımı tabanlı bir blok zinciri, blok üreticilerinin var olan etkisini, verimli bir şekilde yöneten bir yönetişim süreci uygular. Absent a defined governance process, prior blockchains relied ad hoc, informal, and often controversial governance processes that result in unpredictable outcomes.
+Yönetişim, insanların öznel algoritmalarla yakalanamayan öznel konularda fikir birliğine varma sürecidir. EOS.IO yazılımı tabanlı bir blok zinciri, blok üreticilerinin var olan etkisini, verimli bir şekilde yöneten bir yönetişim süreci uygular. Tanımlanmış bir yönetişim süreci bulunduğunda, önceki blok zincirleri, tahmin edilemeyen sonuçlarla sonuçlanacak geçici, gayrı resmi ve genellikle tartışmalı yönetişim süreçleri doğuyordu.
 
-A blockchain based on the EOS.IO software recognizes that power originates with the token holders who delegate that power to the block producers. The block producers are given limited and checked authority to freeze accounts, update defective applications, and propose hard forking changes to the underlying protocol.
+EOS.IO yazılımına dayanan bir blok zinciri, gücün, bu gücü blok üreticilere devreden jeton sahiplerinden kaynaklandığını kabul eder. Blok üreticilerine, hesapları dondurma, kusurlu uygulamaları güncelleme ve temel protokole çatal önermek için sınırlı yetkili ve denetimli yetkili verilir.
 
-Embedded into the EOS.IO software is the election of block producers. Before any change can be made to the blockchain these block producers must approve it. If the block producers refuse to make changes desired by the token holders then they can be voted out. If the block producers make changes without permission of the token holders then all other non-producing full-node validators (exchanges, etc) will reject the change.
+Blok üreticilerin seçimi EOS.IO yazılımına gömülüdür. Blok zincirinde herhangi bir değişiklik yapılmadan önce bu blok üreticilerinin bunu onaylaması gerekir. Blok üreticileri, jeton sahipleri tarafından arzulanan değişiklikleri yapmayı reddederse oy kullanamazlar. Eğer blok üreticileri jeton sahiplerinin izni olmaksızın değişiklikler yaparsa, üretilmeyen tam düğüm doğrulayıcıları (borsalar vb.) Tüm değişikliği reddedecektir.
 
 ## Hesapların Dondurulması
 
