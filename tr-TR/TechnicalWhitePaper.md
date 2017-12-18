@@ -311,11 +311,11 @@ Mevcut bir bant genişliğinin tamamını veya bir kısmını tüketmek zorunda 
 
 ## İşlem maliyetlerini Jeton Değeri'nden ayırma
 
-EOS.IO yazılımının en büyük faydalarından biri, bir uygulamaya sunulan bant genişliği miktarının, herhangi bir jeton fiyatından tamamen bağımsız olmasıdır. Bir uygulama sahibinin, EOS.IO yazılımını benimseyen bir blok zincir üzerinde ilgili sayıda jeton bulundurması durumunda, uygulama sabit bir durum ve bant genişliği kullanımıyla süresiz olarak çalışabilir. Böyle bir durumda, geliştiriciler ve kullanıcılar, jeton pazarındaki herhangi bir fiyat dalgalanmasından etkilenmez ve bu nedenle bir jetonun fiyatına bağlı değildirler. In other words, a blockchain that adopts the EOS.IO software enables block producers to naturally increase bandwidth, computation, and storage available per token independent of the token's value.
+EOS.IO yazılımının en büyük faydalarından biri, bir uygulamaya sunulan bant genişliği miktarının, herhangi bir jeton fiyatından tamamen bağımsız olmasıdır. Bir uygulama sahibinin, EOS.IO yazılımını benimseyen bir blok zincir üzerinde ilgili sayıda jeton bulundurması durumunda, uygulama sabit bir durum ve bant genişliği kullanımıyla süresiz olarak çalışabilir. Böyle bir durumda, geliştiriciler ve kullanıcılar, jeton pazarındaki herhangi bir fiyat dalgalanmasından etkilenmez ve bu nedenle bir jetonun fiyatına bağlı değildirler. Başka bir deyişle, EOS.IO yazılımını benimseyen bir blok zincirinde, blok üreticilerinin, jeton başına düşen hesaplama, bant genişliği ve depolama alanı, jeton fiyatından bağımsızdır.
 
-A blockchain using EOS.IO software also awards block producers tokens every time they produce a block. The value of the tokens will impact the amount of bandwidth, storage, and computation a producer can afford to purchase; this model naturally leverages rising token values to increase network performance.
+EOS.IO yazılımını kullanan bir blok zincirinde, her blok oluşurken, blok üreticileri jetonla ödüllendirilir. Jetonların değeri, bir yapımcının satın alabileceği bant genişliği, depolama alanı ve hesaplama miktarını etkiler; bu model, doğal olarak, ağ performansını artırmak için artan jeton değerlerinden yararlanır.
 
-## State Storage Costs
+## Durum Saklama Maliyetleri
 
 While bandwidth and computation can be delegated, storage of application state will require an application developer to hold tokens until that state is deleted. If state is never deleted then the tokens are effectively removed from circulation.
 
