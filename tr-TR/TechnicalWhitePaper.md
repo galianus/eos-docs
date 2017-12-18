@@ -291,11 +291,11 @@ Blok zinciri depolama durumu, uygulama mantığından erişilebilen bir bilgidir
 
 Blok üreticileri, bant genişliği, hesaplama ve durum için mevcut kapasitelerini yayınlarlar. EOS.IO yazılımı, her hesaba, mevcut kapasitenin belli bir yüzdesini; 3 günlük sözleşmesinde düzenlenen, jetonların miktarıyla orantılı olarak tüketmesine olanak tanır. Örneğin, EOS.IO yazılımına dayanan bir blok zinciri başlatılırsa ve bir hesap, bu blok zincirine göre dağıtılan toplam jetonların % 1'ini elinde tutarsa, bu hesap durum saklama kapasitesinin %1'inden yararlanma potansiyeline sahiptir.
 
-Adopting the EOS.IO software on a launched blockchain means bandwidth and computational capacity are allocated on a fractional reserve basis because they are transient (unused capacity cannot be saved for future use). The algorithm used by EOS.IO software is similar to the algorithm used by Steem to rate-limit bandwidth usage.
+EOS.IO yazılımını benimseyen bir blok zincirinde, bant genişliği ve hesaplama kapasitesi bir kısmi rezerv olarak ayrılır, çünkü bunlar geçicidir (kullanılmayan kapasite gelecekte kullanılmak üzere kaydedilemez). EOS.IO yazılımı tarafından kullanılan algoritma, Steem tarafından kullanılan, hız limitli bant genişliği algoritmasına benzer.
 
 ## Objektif ve Subjektif Ölçümler
 
-As discussed earlier, instrumenting computational usage has a significant impact on performance and optimization; therefore, all resource usage constraints are ultimately subjective and enforcement is done by block producers according to their individual algorithms and estimates.
+Daha önce belirtildiği gibi, hesaplama kullanım araçlarının performans ve optimizasyon üzerinde önemli bir etkisi vardır; Bu nedenle, tüm kaynak kullanımı kısıtlamaları nihai olarak özneldir ve uygulamanın kendi algoritmalarına ve tahminlerine göre blok üreticileri tarafından yapılır.
 
 That said, there are certain things that are trivial to measure objectively. The number of messages delivered and the size of the data stored in the internal database are cheap to measure objectively. The EOS.IO software enables block producers to apply the same algorithm over these objective measures but may choose to apply stricter subjective algorithms over subjective measurements.
 
