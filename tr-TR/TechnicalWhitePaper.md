@@ -239,7 +239,7 @@ Gecikme, bir hesabın başka bir hesaba mesaj göndermek ve ardından bir yanıt
 
 Bir döngüde üretilen işlemler, sonraki herhangi bir döngü veya blokta teslim edilebilir. Blok üreticileri maksimum süre dolana kadar bir bloğa döngü eklemeye devam eder değilse dağıtacak yeni üretilmiş işlem yoktur.
 
-It is possible to use static analysis of a block to verify that within a given cycle no two threads contain transactions that modify the same account. So long as that invariant is maintained a block can be processed by running all threads in parallel.
+Bir bloğun, aynı hesabı değiştiren iki işlem parçacığını içermediğini doğrulamak için statik analiz kullanmak mümkündür. So long as that invariant is maintained a block can be processed by running all threads in parallel.
 
 ## Read-Only Message Handlers
 
