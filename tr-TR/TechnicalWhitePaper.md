@@ -309,9 +309,9 @@ EOS.IO yazılımını kullanan bir blok zinciri, kullanıcılarından doğrudan 
 
 Mevcut bir bant genişliğinin tamamını veya bir kısmını tüketmek zorunda olmayan, başkalarına kullanılmayan bant genişliği verebilen veya kiralayabilen EOS.IO yazılımını benimseyen bir blok zincirdeki, jeton sahipleri, bu blok zincirinde EOS.IO yazılımını çalıştıran blok üreticilerine, kapasite kiralaması yapabilir ve buna göre bant genişliği tahsis edebilir.
 
-## Separating Transaction costs from Token Value
+## İşlem maliyetlerini Jeton Değeri'nden ayırma
 
-One of the major benefits of the EOS.IO software is that the amount of bandwidth available to an application is entirely independent of any token price. If an application owner holds a relevant number of tokens on a blockchain adopting EOS.IO software, then the application can run indefinitely within a fixed state and bandwidth usage. In such case, developers and users are unaffected from any price volatility in the token market and therefore not reliant on a price feed. In other words, a blockchain that adopts the EOS.IO software enables block producers to naturally increase bandwidth, computation, and storage available per token independent of the token's value.
+EOS.IO yazılımının en büyük faydalarından biri, bir uygulamaya sunulan bant genişliği miktarının, herhangi bir jeton fiyatından tamamen bağımsız olmasıdır. Bir uygulama sahibinin, EOS.IO yazılımını benimseyen bir blok zincir üzerinde ilgili sayıda jeton bulundurması durumunda, uygulama sabit bir durum ve bant genişliği kullanımıyla süresiz olarak çalışabilir. Böyle bir durumda, geliştiriciler ve kullanıcılar, jeton pazarındaki herhangi bir fiyat dalgalanmasından etkilenmez ve bu nedenle bir jetonun fiyatına bağlı değildirler. In other words, a blockchain that adopts the EOS.IO software enables block producers to naturally increase bandwidth, computation, and storage available per token independent of the token's value.
 
 A blockchain using EOS.IO software also awards block producers tokens every time they produce a block. The value of the tokens will impact the amount of bandwidth, storage, and computation a producer can afford to purchase; this model naturally leverages rising token values to increase network performance.
 
