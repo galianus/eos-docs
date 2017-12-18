@@ -257,7 +257,7 @@ Blok zincir teknolojisini ölçekleme, bileşenlerin modüler olmasını gerekti
 
 Bir takas uygulama geliştiricisi, takas durumunu kullanıcılarına göstermek amacıyla tam düğümleri çalıştırır. Bu takas uygulaması, sosyal medya uygulamaları ile ilişkili duruma ihtiyaç duymaz. EOS.IO yazılımı, herhangi bir düğüme, herhangi bir uygulama alt kümesini çalıştırmak için seçim yapmasına izin verir. Bir uygulamanın durumu tamamen ona iletilen mesajlardan türetildiğinden, diğer uygulamalara iletilen mesajlar güvenle yok sayılır.
 
-Bu, diğer hesaplarla iletişimde bazı önemli etkilere sahiptir. En önemlisi, diğer hesabın durumunun aynı makineden erişilebilir olduğu varsayılamaz. It also means that while it is tempting to enable "locks" that allow one account to synchronously call another account, this design pattern breaks down if the other account is not resident in memory.
+Bu, diğer hesaplarla iletişimde bazı önemli etkilere sahiptir. En önemlisi, diğer hesabın durumunun aynı makineden erişilebilir olduğu varsayılamaz. Aynı zamanda, bir hesabın başka bir hesabı eşzamanlı olarak çağırmasına izin veren "kilitler" i etkinleştirmek cazip olsa da, bu tasarım düzeni, diğer hesap bellekte değilse çöker.
 
 All state communication among accounts must be passed via messages included in the blockchain.
 
