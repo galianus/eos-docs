@@ -285,7 +285,7 @@ Tüm blok zincirlerinde kaynak kısıtlıdır ve kötüye kullanımı önlemek i
 
 Bant genişliği ve hesaplama, anlık ve uzun süreli kullanım olmak üzere iki bileşene sahiptir. Bir blok zinciri tüm mesajların bir günlüğünü tutar ve bu günlük en nihayetinde tüm düğümler tarafından depolanır ve indirilir. Mesajların günlük kayıtlarıyla, tüm uygulamaların durumunu yeniden oluşturmak mümkündür.
 
-The computational debt is calculations that must be performed to regenerate state from the message log. If the computational debt grows too large then it becomes necessary to take snapshots of the blockchain's state and discard the blockchain's history. If computational debt grows too quickly then it may take 6 months to replay 1 year worth of transactions. It is critical, therefore, that the computational debt be carefully managed.
+Hesaplama borcu, mesaj günlüğünden durumu yeniden oluşturmak için yapılması gereken hesaplamalardır. Hesaplama borcu çok büyürse, blok zincirinin anlık fotoğrafını / enstantanesini çekip, blok zincirinin geçmişini atmak gereklidir. If computational debt grows too quickly then it may take 6 months to replay 1 year worth of transactions. It is critical, therefore, that the computational debt be carefully managed.
 
 Blockchain state storage is information that is accessible from application logic. It includes information such as order books and account balances. If the state is never read by the application then it should not be stored. For example, blog post content and comments are not read by application logic so they should not be stored in the blockchain's state. Meanwhile the existence of a post/comment, the number of votes, and other properties do get stored as part of the blockchain's state.
 
