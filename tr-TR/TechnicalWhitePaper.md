@@ -363,13 +363,13 @@ EOS.IO yazılımı, canonical/kurallı kaynak kodu ve anayasa tarafından tanım
 4. Blok üreticileri, anayasa değişikliğini yansıtacak şekilde kaynak kodunda değişiklikler yapıyor ve bir git komutu hash'ini/karmasını kullanarak blok zincirine önerir.
 5. Blok üreticileri, ard arda 30 gün boyunca, yapılan yenilikler için 17/21 kabul oranını sürdürmelidir.
 6. Yeni kaynak kodun onaylanmasından bir hafta sonra, değişiklikler yürürlüğe girer. Tam düğümlere/nodelara yükseltme için bir hafta verilir.
-7. All nodes that do not upgrade to the new code shut down automatically.
+7. Bütün düğümler/node'lar yükseltilmiş olmazsa, yeni kodlar otomatik olarak kapatılır.
 
-By default configuration of the EOS.IO software, the process of updating the blockchain to add new features takes 2 to 3 months, while updates to fix non-critical bugs that do not require changes to the constitution can take 1 to 2 months.
+Varsayılan olarak EOS.IO yazılımının yapılandırması, yeni özellik eklemek için blok zinciri güncelleme işlemi 2-3 ay sürer. Anayasada değişikliği gerektirmeyen, kritik hataları düzeltmek için yapılan güncellemeler 1-2 ay sürebilir.
 
 ### Acil Durum Değişiklikleri
 
-The block producers may accelerate the process if a software change is required to fix a harmful bug or security exploit that is actively harming users. Generally speaking it could be against the constitution for accelerated updates to introduce new features or fix harmless bugs.
+Blok üreticileri, kullanıcılara fiilen zarar veren bir hata veya güvenlik açığını düzeltmek için bir yazılım değişikliği yapılması gerekiyorsa, süreci hızlandırabilir. Genel olarak konuşursak, bazı hızlandırılmış hata düzeltmeleri ya da yeni özellik eklemeleri, anayasaya aykırı olabilir.
 
 # Scripts & Virtual Machines
 
