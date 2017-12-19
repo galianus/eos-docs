@@ -349,11 +349,11 @@ Her şey ters gittiğin ve "durdurulamayan bir uygulama" öngörülemeyen bir ş
 
 ## Anayasa
 
-EOS.IO yazılımı, blok zincirlerin, bir "anayasa" olarak anılacak olan ve imzalayan kullanıcılar arasında bir peer-to-peer/eşler arası hizmet anlaşması ya da bağlayıcı bir sözleşme kurmasını sağlar. Bu anayasanın içeriği, kod tarafından tamamen uygulanamayan kullanıcı yükümlülükleri tanımlamaktadır. Diğer karşılıklı kabul edilen kurallarla birlikte, yargılama ve seçim yasası kurarak, anlaşmazlıklar için çözüm sunar. Every transaction broadcast on the network must incorporate the hash of the constitution as part of the signature and thereby explicitly binds the signer to the contract.
+EOS.IO yazılımı, blok zincirlerin, bir "anayasa" olarak anılacak olan ve imzalayan kullanıcılar arasında bir peer-to-peer/eşler arası hizmet anlaşması ya da bağlayıcı bir sözleşme kurmasını sağlar. Bu anayasanın içeriği, kod tarafından tamamen uygulanamayan kullanıcı yükümlülükleri tanımlamaktadır. Diğer karşılıklı kabul edilen kurallarla birlikte, yargılama ve seçim yasası kurarak, anlaşmazlıklar için çözüm sunar. Ağda yayınlanan her işlem, imzanın bir parçası olarak anayasanın hash'ini/karmasını içerir ve böylece imza atanlar, sözleşmeye açıkça bağlanmış olur.
 
-The constitution also defines the human-readable intent of the source code protocol. This intent is used to identify the difference between a bug and a feature when errors occur and guides the community on what fixes are proper or improper.
+Anayasa, kaynak kodların amacını, insanlar tarafından okunabilir şekilde tanımlar. Bu amaç beyanı, hata ve özellik arasındaki farkı belirlemek için kullanılır. Bir hata oluştuğunda, hangi düzeltmelerin doğru veya yanlış olduğu konusunda topluluk için bir klavuz olur.
 
-## Upgrading the Protocol & Constitution
+## Protokolün Yükseltilmesi ve Anayasa
 
 The EOS.IO software defines a process by which the protocol as defined by the canonical source code and its constitution, can be updated using the following process:
 
