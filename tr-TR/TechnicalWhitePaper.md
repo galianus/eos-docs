@@ -357,12 +357,12 @@ Anayasa, kaynak kodların amacını, insanlar tarafından okunabilir şekilde ta
 
 EOS.IO yazılımı, canonical/kurallı kaynak kodu ve anayasa tarafından tanımlanmış olan aşağıdaki süreçle protokol güncellemesi yapabilir:
 
-1. Blok üreticileri anayasada bir değişiklik önerdiğinde 17/21 onayı almalıdır.
+1. Blok üreticileri anayasada bir değişiklik önerisi için 17/21 onayı almalıdır.
 2. Blok üreticileri ard arda 30 gün boyunca 17/21 kabul oranını sürdürmelidir.
-3. All users are required to sign transactions using the hash of the new constitution.
-4. Block producers adopt changes to the source code to reflect the change in the constitution and propose it to the blockchain using the hash of a git commit.
-5. Block producers maintain 17/21 approval for 30 consecutive days.
-6. Changes to the code take effect 7 days later, giving all full nodes 1 week to upgrade after ratification of the source code.
+3. Tüm kullanıcılar, işlemleri, yeni anayasanın hash'ini/karmasını kullanarak imzalamalıdır.
+4. Blok üreticileri, anayasa değişikliğini yansıtacak şekilde kaynak kodunda değişiklikler yapıyor ve bir git komutu hash'ini/karmasını kullanarak blok zincirine önerir.
+5. Blok üreticileri, ard arda 30 gün boyunca, yapılan yenilikler için 17/21 kabul oranını sürdürmelidir.
+6. Yeni kaynak kodun onaylanmasından bir hafta sonra, değişiklikler yürürlüğe girer. Tam düğümlere/nodelara yükseltme için bir hafta verilir.
 7. All nodes that do not upgrade to the new code shut down automatically.
 
 By default configuration of the EOS.IO software, the process of updating the blockchain to add new features takes 2 to 3 months, while updates to fix non-critical bugs that do not require changes to the constitution can take 1 to 2 months.
