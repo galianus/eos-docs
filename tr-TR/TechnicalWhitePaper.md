@@ -355,10 +355,10 @@ Anayasa, kaynak kodların amacını, insanlar tarafından okunabilir şekilde ta
 
 ## Protokolün Yükseltilmesi ve Anayasa
 
-The EOS.IO software defines a process by which the protocol as defined by the canonical source code and its constitution, can be updated using the following process:
+EOS.IO yazılımı, canonical/kurallı kaynak kodu ve anayasa tarafından tanımlanmış olan aşağıdaki süreçle protokol güncellemesi yapabilir:
 
-1. Block producers propose a change to the constitution and obtains 17/21 approval.
-2. Block producers maintain 17/21 approval for 30 consecutive days.
+1. Blok üreticileri anayasada bir değişiklik önerdiğinde 17/21 onayı almalıdır.
+2. Blok üreticileri ard arda 30 gün boyunca 17/21 kabul oranını sürdürmelidir.
 3. All users are required to sign transactions using the hash of the new constitution.
 4. Block producers adopt changes to the source code to reflect the change in the constitution and propose it to the blockchain using the hash of a git commit.
 5. Block producers maintain 17/21 approval for 30 consecutive days.
