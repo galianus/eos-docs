@@ -341,13 +341,13 @@ Blok üreticilerin seçimi EOS.IO yazılımına gömülüdür. Blok zincirinde h
 
 Bazen akıllı sözleşmeler anormal veya öngörülemeyen bir şekilde davranır ve amacında başarısız olur; Bazen bir uygulama veya hesap kabul edilemez miktarda kaynak tüketimine olanak tanıyan bir istismarı keşfedebilir. Bu tür sorunlar kaçınılmaz olarak ortaya çıktığında, blok üreticileri bu tür durumlarda düzeltme yetkisine sahiptir.
 
-Tüm blok zincirlerdeki blok üreticileri, bloklara hangi işlemlerin dahil edildiğini seçme gücüne sahiptir. Bu da onlara hesapları dondurma yeteneği kazandırır. EOS.IO yazılımını kullanan bir blok zinciri, bir hesabı dondurmak için, aktif üreticilerin 17/21 oyunu alarak bu yetkiye sahip olur. If the producers abuse the power they can be voted out and an account will be unfrozen.
+Tüm blok zincirlerdeki blok üreticileri, bloklara hangi işlemlerin dahil edildiğini seçme gücüne sahiptir. Bu da onlara hesapları dondurma yeteneği kazandırır. EOS.IO yazılımını kullanan bir blok zinciri, bir hesabı dondurmak için, aktif üreticilerin 17/21 oyunu alarak bu yetkiye sahip olur. Üreticiler bu yetkiyi kötüye kullanırsa oy kullanamazlar ve hesap donmaz.
 
-## Changing Account Code
+## Hesap Kodunu Değiştirme
 
-When all else fails and an "unstoppable application" acts in an unpredictable manner, a blockchain using EOS.IO software allows the block producers to replace the account's code without hard forking the entire blockchain. Similar to the process of freezing an account, this replacement of the code requires a 17/21 vote of elected block producers.
+Her şey ters gittiğin ve "durdurulamayan bir uygulama" öngörülemeyen bir şekilde hareket ettiğinde; EOS.IO yazılımını kullanan bir blok zinciri, tüm blok zincirde çatal oluşmadan, blok üreticilerinin hesap kodunu değiştirmesine izin verir. Bir hesabı dondurma işlemine benzer şekilde, bu kodun değiştirilmesi de blok üreticilerinin 17/21 oyu gerekir.
 
-## Constitution
+## Tüzük
 
 The EOS.IO software enables blockchains to establish a peer-to-peer terms of service agreement or a binding contract among those users who sign it, referred to as a "constitution". The content of this constitution defines obligations among the users which cannot be entirely enforced by code and facilitates dispute resolution by establishing jurisdiction and choice of law along with other mutually accepted rules. Every transaction broadcast on the network must incorporate the hash of the constitution as part of the signature and thereby explicitly binds the signer to the contract.
 
