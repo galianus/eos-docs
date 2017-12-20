@@ -383,9 +383,9 @@ Hesaplar arasında gönderilen tüm mesajlar, blok zinciri uzlaşma durumunun bi
 
 Veritabanı durumu da benzer bir şema kullanılarak tanımlanır. Bu; tüm uygulamalar tarafından depolanan tüm verilerin, insan okuyabilir JSON biçiminde olmasını sağlar. Ancak daha verimli şekilde, Binary olarak değiştirilir ve depolanır.
 
-## Separating Authentication from Application
+## Kimlik Doğrulamayı Uygulamadan Ayırmak
 
-To maximize parallelization opportunities and minimize the computational debt associated with regenerating application state from the transaction log, EOS.IO software separates validation logic into three sections:
+Paralelleştirme fırsatlarını en üst düzeye çıkarmak ve işlem günlüğünden yeniden uygulama durumu oluşturma maliyetini en aza indirgemek için, EOS.IO yazılımı doğrulama mantığını üç bölüme ayırır:
 
 1. Validating that a message is internally consistent;
 2. Validating that all preconditions are valid; and
