@@ -140,13 +140,13 @@ Over time all users end up directly confirming the blockchain which makes it dif
 
 EOS.IO cho phép tất cả các tài khoản được tham chiếu bởi một chuỗi từ 2 đến 32 ký tự độc nhất mà con người có thể hiểu được. Tên tài khoản này được chọn bởi người tạo tài khoản. Tất cả tài khoản phải có số dư tối thiểu vào thời điểm mà nó được tạo ra nhằm để trang trải chi phí lưu trữ dữ liệu tài khoản. Tên tài khoản cũng hỗ trợ các không gian tên mà ở đó người sở hữ của tài khoản @domain là người duy nhất có thể tạo tài khoản @user.domain.
 
-Dưới phạm trù phân cấp, nhà phát triển ứng dụng sẽ trả một lệ phí tượng trưng cho việc tạo tài khoản để đăng ký một người dùng mới. Dịch vụ truyền thống phải trả một lượng tiền rất lớn cho mỗi khách hàng đăng kí. Chi phí cho việc tạo một tài khoản mới trên blockchain không đáng kể khi so sánh với các dịch vụ truyền thống đó. Người dùng nếu đã tạo tài khoản cho một ứng dụng thì không cần phải đăng kí lại khi sử dụng các ứng dụng khác trên blockchain.
+Dưới phạm trù phân cấp, nhà phát triển ứng dụng sẽ trả một lệ phí tượng trưng cho việc tạo tài khoản để đăng ký một người dùng mới. Các dịch vụ truyền thống đã trả một lượng lớn chi phí trên mỗi người dùng họ thu nạp được dưới hình thức quảng cáo, dịch vụ miễn phí. Chi phí hỗ trợ cho tài khoản mới trên blockchain sẽ không đáng kể nếu so sánh với các dịch vụ đó. May mắn là không cần phải tạo tài khoản cho người dùng đã được đăng ký bởi một ứng dụng khác.
 
 ## Tín hiệu & Xử lý
 
-Each account can send structured messages to other accounts and may define scripts to handle messages when they are received. The EOS.IO software gives each account its own private database which can only be accessed by its own message handlers. Message handling scripts can also send messages to other accounts. The combination of messages and automated message handlers is how EOS.IO defines smart contracts.
+Mỗi tài khoản có thể gửi nhiều tin nhắn có cấu trúc tới các tài khoản khác và có thể định nghĩa mã lệnh để xử lý các tin nhắn nhận được. EOS.IO tạo cho mỗi tài khoản một cơ sở dữ liệu riêng mà ở đó dữ liệu chỉ có thể được truy cập bởi mã xử lý tin nhắn của riêng nó. Mã xử lý tin nhắn cũng có thể gửi tin nhắn tới các tài khoản khác. Sự tổng hợp giữa tin nhắn và mã tạo tin nhắn tự động là cách mà EOS.IO định nghĩa hợp đồng thông minh (smart contract).
 
-## Role Based Permission Management
+## Quản Lý Cấp Phép Dựa Trên Vai Trò
 
 Permission management involves determining whether or not a message is properly authorized. The simplest form of permission management is checking that a transaction has the required signatures, but this implies that required signatures are already known. Generally authority is bound to individuals or groups of individuals and is often compartmentalized. The EOS.IO software provides a declarative permission management system that gives accounts fine grained and high level control over who can do what and when.
 
