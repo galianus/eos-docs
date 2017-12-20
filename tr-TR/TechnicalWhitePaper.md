@@ -377,11 +377,11 @@ EOS.IO yazılımı hesaplara teslim edilmesini koordine etmek için ilk ve önde
 
 ## Tanımlı Mesajlar Şeması
 
-Hesaplar arasında gönderilen tüm mesajlar, blok zinciri uzlaşma durumunun bir parçası olan bir şema tarafından tanımlanır. This schema allows seamless conversion between binary and JSON representation of the messages.
+Hesaplar arasında gönderilen tüm mesajlar, blok zinciri uzlaşma durumunun bir parçası olan bir şema tarafından tanımlanır. Bu şema, mesajların Binary ve JSON gösterimi arasında kesintisiz dönüşümünü sağlar.
 
-## Schema Defined Database
+## Tanımlı Veritabanı Şeması
 
-Database state is also defined using a similar schema. This ensures that all data stored by all applications is in a format that can be interpreted as human readable JSON but stored and manipulated with the efficiency of binary.
+Veritabanı durumu da benzer bir şema kullanılarak tanımlanır. Bu; tüm uygulamalar tarafından depolanan tüm verilerin, insan okuyabilir JSON biçiminde olmasını sağlar. Ancak daha verimli şekilde, Binary olarak değiştirilir ve depolanır.
 
 ## Separating Authentication from Application
 
