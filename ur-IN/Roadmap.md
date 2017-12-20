@@ -1,12 +1,12 @@
-## EOS.IO Software Roadmap
+## موضوع
 
-This document outlines the development plan from a high level and will be updated as progress is made toward version 1.0. It should be noted that this roadmap applies only to the blockchain software and not to the other tools and utilities such as wallets and block explorers which will have their own teams and dedicated roadmaps once Phase 1 is complete.
+پھراگداف عبادت.
 
-***Everything contained in this document is in draft form and subject to change at any time and provided for information purposes only. block.one does not guarantee the accuracy of the information contained in this roadmap and the information is provided “as is” with no representations or warranties, express or implied.***
+***مضبوط/ءم. مضبوط/ءم.***
 
-# Phase 1 - Minimal Viable Testing Environment - Summer 2017
+# موضوع 1 Xراستھ:/h1
 
-The goal of this phase is to establish the APIs that developers will require to start building and testing applications on EOS.IO. In order for developers to start testing their applications they will require the following to be implemented:
+Xداستھ: /] p[3. In order for developers to start testing their applications they will require the following to be implemented:
 
 ### Standalone Node (Dan & Nathan)
 
