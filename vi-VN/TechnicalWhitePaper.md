@@ -140,7 +140,7 @@ Over time all users end up directly confirming the blockchain which makes it dif
 
 EOS.IO cho phép tất cả các tài khoản được tham chiếu bởi một chuỗi từ 2 đến 32 ký tự độc nhất mà con người có thể hiểu được. Tên tài khoản này được chọn bởi người tạo tài khoản. Tất cả tài khoản phải có số dư tối thiểu vào thời điểm mà nó được tạo ra nhằm để trang trải chi phí lưu trữ dữ liệu tài khoản. Tên tài khoản cũng hỗ trợ các không gian tên mà ở đó người sở hữ của tài khoản @domain là người duy nhất có thể tạo tài khoản @user.domain.
 
-Dưới phạm trù phân cấp, nhà phát triển ứng dụng sẽ trả một lệ phí tượng trưng cho việc tạo tài khoản để đăng ký một người dùng mới. Các dịch vụ truyền thống đã trả một lượng lớn chi phí trên mỗi người dùng họ thu nạp được dưới hình thức quảng cáo, dịch vụ miễn phí. Chi phí hỗ trợ cho tài khoản mới trên blockchain sẽ không đáng kể nếu so sánh với các dịch vụ đó. May mắn là không cần phải tạo tài khoản cho người dùng đã được đăng ký bởi một ứng dụng khác.
+Dưới ngữ cảnh phân cấp, nhà phát triển ứng dụng sẽ trả một lệ phí tượng trưng cho việc tạo tài khoản để đăng ký một người dùng mới. Các dịch vụ truyền thống đã trả một lượng lớn chi phí trên mỗi người dùng họ thu nạp được dưới hình thức quảng cáo, dịch vụ miễn phí. Chi phí hỗ trợ cho tài khoản mới trên blockchain sẽ không đáng kể nếu so sánh với các dịch vụ đó. May mắn là không cần phải tạo tài khoản cho người dùng đã được đăng ký bởi một ứng dụng khác.
 
 ## Tín hiệu & Xử lý
 
@@ -148,7 +148,7 @@ Mỗi tài khoản có thể gửi nhiều tin nhắn có cấu trúc tới các
 
 ## Quản Lý Cấp Phép Dựa Trên Vai Trò
 
-Permission management involves determining whether or not a message is properly authorized. The simplest form of permission management is checking that a transaction has the required signatures, but this implies that required signatures are already known. Generally authority is bound to individuals or groups of individuals and is often compartmentalized. The EOS.IO software provides a declarative permission management system that gives accounts fine grained and high level control over who can do what and when.
+Việc quản lý cấp phép có dính dáng với việc xác định một tin nhắn đã được xác nhận đúng hay chưa. Dạng cấp phép đơn giản nhất là kiểm tra rằng một tài khoản đã nhận được một chữ ký theo yêu cầu, nhưng điều này cũng đồng nghĩa rằng chữ ký theo yêu cầu đã được biết. Nhìn chung, quyền lực được cấp cho các cá nhân hoặc các nhóm của các cá nhân và thường được phân cấp. The EOS.IO software provides a declarative permission management system that gives accounts fine grained and high level control over who can do what and when.
 
 It is critical that authentication and permission management be standardized and separate from the business logic of the application. This enables tools to be developed to manage permissions in a general purpose manner and also provide significant opportunities for performance optimization.
 
