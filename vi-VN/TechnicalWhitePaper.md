@@ -136,11 +136,11 @@ Phần mềm EOS.IO yêu cầu mỗi giao dịch phải có kèm theo hash của
 
 Over time all users end up directly confirming the blockchain which makes it difficult to forge counterfeit chains as the counterfeit would not be able to migrate transactions from the legitimate chain.
 
-# Accounts
+# Tài Khoản
 
-Phần mềm EOS.IO cho phép tạo tài khoản bằng chữ cái có thể đọc được với độ dài từ 2 đến 32 kí tự. Tên được chọn bởi người tạo tài khoản. Tất cả tài khoản phải có số dư tối thiểu lúc được tạo để trang trải chi phí cho việc lưu giữ thông tin trên blockchain. Tên tài khoản cũng hỗ trợ tên miền phụ. Ví dụ bạn sở hữu tài khoản @domain thì bạn là người duy nhất có thể tạo được tài khoản @user.domain.
+EOS.IO cho phép tất cả các tài khoản được tham chiếu bởi một chuỗi từ 2 đến 32 ký tự độc nhất mà con người có thể hiểu được. Tên tài khoản này được chọn bởi người tạo tài khoản. Tất cả tài khoản phải có số dư tối thiểu vào thời điểm mà nó được tạo ra nhằm để trang trải chi phí lưu trữ dữ liệu tài khoản. Tên tài khoản cũng hỗ trợ các không gian tên mà ở đó người sở hữ của tài khoản @domain là người duy nhất có thể tạo tài khoản @user.domain.
 
-Nhà phát triển ứng dụng không tập trung phải trả một mức tối thiểu nào đó cho việc tạo người dùng mới. Dịch vụ truyền thống phải trả một lượng tiền rất lớn cho mỗi khách hàng đăng kí. Chi phí cho việc tạo một tài khoản mới trên blockchain không đáng kể khi so sánh với các dịch vụ truyền thống đó. Người dùng nếu đã tạo tài khoản cho một ứng dụng thì không cần phải đăng kí lại khi sử dụng các ứng dụng khác trên blockchain.
+Dưới phạm trù phân cấp, nhà phát triển ứng dụng sẽ trả một lệ phí tượng trưng cho việc tạo tài khoản để đăng ký một người dùng mới. Dịch vụ truyền thống phải trả một lượng tiền rất lớn cho mỗi khách hàng đăng kí. Chi phí cho việc tạo một tài khoản mới trên blockchain không đáng kể khi so sánh với các dịch vụ truyền thống đó. Người dùng nếu đã tạo tài khoản cho một ứng dụng thì không cần phải đăng kí lại khi sử dụng các ứng dụng khác trên blockchain.
 
 ## Tín hiệu & Xử lý
 
