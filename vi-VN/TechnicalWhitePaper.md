@@ -148,9 +148,9 @@ Mỗi tài khoản có thể gửi nhiều tin nhắn có cấu trúc tới các
 
 ## Quản Lý Cấp Phép Dựa Trên Vai Trò
 
-Việc quản lý cấp phép có dính dáng với việc xác định một tin nhắn đã được xác nhận đúng hay chưa. Dạng cấp phép đơn giản nhất là kiểm tra rằng một tài khoản đã nhận được một chữ ký theo yêu cầu, nhưng điều này cũng đồng nghĩa rằng chữ ký theo yêu cầu đã được biết. Nhìn chung, quyền lực được cấp cho các cá nhân hoặc các nhóm của các cá nhân và thường được phân cấp. The EOS.IO software provides a declarative permission management system that gives accounts fine grained and high level control over who can do what and when.
+Việc quản lý cấp phép có dính dáng với việc xác định một tin nhắn đã được xác nhận đúng hay chưa. Dạng cấp phép đơn giản nhất là kiểm tra rằng một tài khoản đã nhận được một chữ ký theo yêu cầu, nhưng điều này cũng đồng nghĩa rằng chữ ký theo yêu cầu đã được biết. Nhìn chung, quyền lực được cấp cho các cá nhân hoặc các nhóm của các cá nhân và thường được phân cấp. EOS.IO cung cấp hệ thống quản lý cấp phép mang tính khởi tạo mà có thể cấp cho các tài khoản quyền điều khiển cao cấp và chính xác trên việc ai được làm gì và khi nào.
 
-It is critical that authentication and permission management be standardized and separate from the business logic of the application. This enables tools to be developed to manage permissions in a general purpose manner and also provide significant opportunities for performance optimization.
+Điều cực kỳ quan trọng là việc xác minh và quản lý cấp phép được chuẩn hoá và tách biệt khỏi bản chất hoạt động của ứng dụng. This enables tools to be developed to manage permissions in a general purpose manner and also provide significant opportunities for performance optimization.
 
 Every account may be controlled by any weighted combination of other accounts and private keys. This creates a hierarchical authority structure that reflects how permissions are organized in reality, and makes multi-user control over funds easier than ever. Multi-user control is the single biggest contributor to security, and, when used properly, it can greatly eliminate the risk of theft due to hacking.
 
