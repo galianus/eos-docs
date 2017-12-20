@@ -373,11 +373,11 @@ Blok üreticileri, kullanıcılara fiilen zarar veren bir hata veya güvenlik a�
 
 # Kodlar ve Sanal Makinalar
 
-The EOS.IO software will be first and foremost a platform for coordinating the delivery of authenticated messages to accounts. The details of scripting language and virtual machine are implementation specific details that are mostly independent from the design of the EOS.IO technology. Any language or virtual machine that is deterministic and properly sandboxed with sufficient performance can be integrated with the EOS.IO software API.
+EOS.IO yazılımı hesaplara teslim edilmesini koordine etmek için ilk ve önde gelen bir platform olacak. Komut dili ve sanal makine uygulamaları, çoğunlukla EOS.IO teknolojisinin tasarımından bağımsızdır. Belirli keslinkte olan ve yeterli performansla, düzgün bir şekilde sandbox haline getirilmiş herhangi bir dil veya sanal makine, EOS.IO yazılım API'si ile bütünleştirilebilir.
 
-## Schema Defined Messages
+## Tanımlı Mesajlar Şeması
 
-All messages sent between accounts are defined by a schema which is part of the blockchain consensus state. This schema allows seamless conversion between binary and JSON representation of the messages.
+Hesaplar arasında gönderilen tüm mesajlar, blok zinciri uzlaşma durumunun bir parçası olan bir şema tarafından tanımlanır. This schema allows seamless conversion between binary and JSON representation of the messages.
 
 ## Schema Defined Database
 
