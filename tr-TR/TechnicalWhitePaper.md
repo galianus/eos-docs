@@ -393,11 +393,11 @@ Paralelleştirme olanaklarını en üst düzeye çıkarmak ve işlem günlüğü
 
 Bir iletinin iç tutarlılığını doğrulamak salt okunurdur ve blok zinciri durumuna erişim gerektirmez. Bu, maksimum paralellikle gerçekleştirilebileceği anlamına gelir. Gerekli bakiye gibi ön koşulların doğrulanması salt okunurdur ve paralellikten de yararlanabilir. Yalnızca uygulama durumunun değiştirilmesi yazma erişimi gerektirir ve her uygulama için sırayla işlenmesi gerekir.
 
-Kimlik doğrulama, bir mesajın uygulanabilirliğini doğrulamak için salt okunur bir işlemdir. Application is actually doing the work. In real time both calculations are required to be performed, however once a transaction is included in the blockchain it is no longer necessary to perform the authentication operations.
+Kimlik doğrulama, bir mesajın uygulanabilirliğini doğrulamak için salt okunur bir işlemdir. Uygulama aslında işi yapmaktadır. Gerçek zamanlı olarak, her iki hesaplamanın da yapılması gerekir, ancak işlem bir kez blok zincirine dahil edildiğinde, kimlik doğrulama işlemleri artık gerekli değildir.
 
-## Virtual Machine Independent Architecture
+## Yapıdan Bağımsız Sanal Makine
 
-It is the intention of the EOS.IO software-based blockchain that multiple virtual machines can be supported and new virtual machines added over time as necessary. For this reason, this paper will not discuss the details of any particular language or virtual machine. That said, there are two virtual machines that are currently being evaluated for use with an EOS.IO software-based blockchain.
+EOS.IO yazılımı tabanlı blok zincirinin yönelimi, birden fazla sanal makinenin desteklenebilmesi ve zamanla, gerektiğinde yeni sanal makinelerin eklenebilmesi yönündedir. For this reason, this paper will not discuss the details of any particular language or virtual machine. That said, there are two virtual machines that are currently being evaluated for use with an EOS.IO software-based blockchain.
 
 ### Web Assembly (WASM)
 
