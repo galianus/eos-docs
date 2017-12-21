@@ -389,11 +389,11 @@ Paralelleştirme olanaklarını en üst düzeye çıkarmak ve işlem günlüğü
 
 1. Bir mesajın iç tutarlılığını doğrulama;
 2. Tüm ön koşulların geçerli olduğunu doğrulama; ve
-3. Modifying the application state.
+3. Uygulama durumunu değiştirme.
 
-Validating the internal consistency of a message is read-only and requires no access to blockchain state. This means that it can be performed with maximum parallelism. Validating preconditions, such as required balance, is read-only and therefore can also benefit from parallelism. Only modification of application state requires write access and must be processed sequentially for each application.
+Bir iletinin iç tutarlılığını doğrulamak salt okunurdur ve blok zinciri durumuna erişim gerektirmez. Bu, maksimum paralellikle gerçekleştirilebileceği anlamına gelir. Gerekli bakiye gibi ön koşulların doğrulanması salt okunurdur ve paralellikten de yararlanabilir. Yalnızca uygulama durumunun değiştirilmesi yazma erişimi gerektirir ve her uygulama için sırayla işlenmesi gerekir.
 
-Authentication is the read-only process of verifying that a message can be applied. Application is actually doing the work. In real time both calculations are required to be performed, however once a transaction is included in the blockchain it is no longer necessary to perform the authentication operations.
+Kimlik doğrulama, bir mesajın uygulanabilirliğini doğrulamak için salt okunur bir işlemdir. Application is actually doing the work. In real time both calculations are required to be performed, however once a transaction is included in the blockchain it is no longer necessary to perform the authentication operations.
 
 ## Virtual Machine Independent Architecture
 
