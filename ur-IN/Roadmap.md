@@ -2,7 +2,7 @@
 
 یہ دستاویز ترقیاتی منصوبہ بندی سے ایک اونچی سطحی چیزوں اور ورژن 1.0 کی جانب گامزن ھے اور تازہ کی جایے گی. یہ دھیان رکھیی کہ یی میپ صرف بلاکچین سوفٹوئد کے بادے میی ھے نھ کے باقی اوزار اور افادیت جیسے کہ بٹوے اور بلاک ایکسپلورر جنکے پاس اپنی ٹیمیے اور وقفشدہ میپ ھی ایکب بار فیز 1 مکمل ھوجایے.
 
-***Everything contained in this document is in draft form and subject to change at any time and provided for information purposes only. block.one does not guarantee the accuracy of the information contained in this roadmap and the information is provided “as is” with no representations or warranties, express or implied.***
+***جو بھی اس دستاویز میں یے وہ ڑرافٹ میں ھے اور کبھی بی بدل دیا جاسکتا ھے اور یہ محض معلومات کے لئے ھی. block.one does not guarantee the accuracy of the information contained in this roadmap and the information is provided “as is” with no representations or warranties, express or implied.***
 
 # Phase 1 - Minimal Viable Testing Environment - Summer 2017
 
