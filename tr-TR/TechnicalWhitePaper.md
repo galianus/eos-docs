@@ -397,11 +397,11 @@ Kimlik doğrulama, bir mesajın uygulanabilirliğini doğrulamak için salt okun
 
 ## Yapıdan Bağımsız Sanal Makine
 
-EOS.IO yazılımı tabanlı blok zincirinin yönelimi, birden fazla sanal makinenin desteklenebilmesi ve zamanla, gerektiğinde yeni sanal makinelerin eklenebilmesi yönündedir. For this reason, this paper will not discuss the details of any particular language or virtual machine. That said, there are two virtual machines that are currently being evaluated for use with an EOS.IO software-based blockchain.
+EOS.IO yazılımı tabanlı blok zincirinin yönelimi, birden fazla sanal makinenin desteklenebilmesi ve zamanla, gerektiğinde yeni sanal makinelerin eklenebilmesi yönündedir. Bu nedenle, bu yazıda, belirli bir dilin veya sanal makinenin ayrıntıları tartışılmayacaktır. Bununla birlikte, şu anda bir EOS.IO yazılımı tabanlı blok zincirlerinde kullanılmak üzere değerlendirilen iki sanal makine var.
 
 ### Web Assembly (WASM)
 
-Web Assembly is an emerging web standard for building high performance web applications. With a few small modifications Web Assembly can be made deterministic and sandboxed. The benefit of Web Assembly is the widespread support from industry and that it enables contracts to be developed in familiar languages such as C or C++.
+Web Assembly, yüksek performanslı web uygulamaları oluşturmak için ortaya çıkan bir web standardıdır. Birkaç küçük değişiklikle Web Assembly deterministik ve sandbox hale getirilebilir. Web Assembly'nin yararı, sözleşmelerin C veya C ++ gibi tanıdık dillerde geliştirilmesini sağlar ve endüstride yaygın bir desteği mevcuttur.
 
 Ethereum developers have already begun modifying Web Assembly to provide suitable sandboxing and determinism in with their [Ethereum flavored Web Assembly (WASM)](https://github.com/ewasm/design). This approach can be easily adapted and integrated with EOS.IO software.
 
