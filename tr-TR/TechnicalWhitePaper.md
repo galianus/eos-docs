@@ -385,10 +385,10 @@ Veritabanı durumu da benzer bir şema kullanılarak tanımlanır. Bu; tüm uygu
 
 ## Kimlik Doğrulamayı Uygulamadan Ayırmak
 
-Paralelleştirme fırsatlarını en üst düzeye çıkarmak ve işlem günlüğünden yeniden uygulama durumu oluşturma maliyetini en aza indirgemek için, EOS.IO yazılımı doğrulama mantığını üç bölüme ayırır:
+Paralelleştirme olanaklarını en üst düzeye çıkarmak ve işlem günlüğünden yeniden uygulama durumu oluşturma maliyetini en aza indirgemek için, EOS.IO yazılımı doğrulama mantığını üç bölüme ayırır:
 
-1. Validating that a message is internally consistent;
-2. Validating that all preconditions are valid; and
+1. Bir mesajın iç tutarlılığını doğrulama;
+2. Tüm ön koşulların geçerli olduğunu doğrulama; ve
 3. Modifying the application state.
 
 Validating the internal consistency of a message is read-only and requires no access to blockchain state. This means that it can be performed with maximum parallelism. Validating preconditions, such as required balance, is read-only and therefore can also benefit from parallelism. Only modification of application state requires write access and must be processed sequentially for each application.
