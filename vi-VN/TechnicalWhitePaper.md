@@ -152,9 +152,9 @@ Việc quản lý cấp phép có dính dáng với việc xác định một ti
 
 Điều cực kỳ quan trọng là việc xác minh và quản lý cấp phép được chuẩn hoá và tách biệt khỏi bản chất hoạt động của ứng dụng. Điều này giúp cho việc phát triển công cụ quản lý cấp phép theo định hướng tổng quát và cũng là để cung cấp cơ hội tốt để tối ưu hoá hiệu năng.
 
-Every account may be controlled by any weighted combination of other accounts and private keys. This creates a hierarchical authority structure that reflects how permissions are organized in reality, and makes multi-user control over funds easier than ever. Multi-user control is the single biggest contributor to security, and, when used properly, it can greatly eliminate the risk of theft due to hacking.
+Mỗi tài khoản có thể được quản lý bởi bất cứ kết hợp được gán gái trị của các tài khoản và mã khoá riêng tư khác. Chính điều này tạo ra cấu trúc quyền lực phân tầng mà ở đó phản ánh cách mà sự cấp phép được quản lý trong thực tế, và làm cho sự điều khiển đa người dùng với ngân quỹ dễ dàng hơn bao giờ hết. Điều khiển đa người dùng là một nhân đơn lớn nhất góp phần lớn nhất vào bảo mật, và khi được sử dụng đúng cách, nó có thể loại bỏ phần lớn nguy cơ bị mất trộm do bẻ khoá.
 
-EOS.IO software allows accounts to define what combination of keys and/or accounts can send a particular message type to another account. For example, it is possible to have one key for a user's social media account and another for access to the exchange. It is even possible to give other accounts permission to act on behalf of a user's account without assigning them keys.
+EOS.IO cho phép các tài khoản định nghĩa kết hợp nào của khoá và/hoặc tài khoản có thể gửi một loại tin nhắn cụ thể tới một tài khoản khác. For example, it is possible to have one key for a user's social media account and another for access to the exchange. It is even possible to give other accounts permission to act on behalf of a user's account without assigning them keys.
 
 ### Named Permission Levels
 
