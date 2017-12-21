@@ -160,7 +160,7 @@ EOS.IO cho phép các tài khoản định nghĩa kết hợp nào của khoá v
 
 <img align="right" src="http://eos.io/wpimg/diagram3.png" width="228.395px" height="300px" />
 
-Using the EOS.IO software, accounts can define named permission levels each of which can be derived from higher level named permissions. Each named permission level defines an authority; an authority is a threshold multi-signature check consisting of keys and/or named permission levels of other accounts. For example, an account's "Friend" permission level can be set for the account to be controlled equally by any of the account's friends.
+Dùng EOS.IO, các tài khoản có thể định nghĩa các mức độ cấp phép mà mỗi cấp độ có thể được suy ra từ mức độ cao hơn nó. Mỗi mức độ cấp phép được đặt tên xác định một thẩm quyền; một thẩm quyền là một ngưỡng kiểm tra đa chữ ký bao hàm các khoá và/hoặc các mức độ cho phép được đặt tên của các tài khoản khác. Ví dụ, một tài khoản với mức độ cấp phép "Bạn Bè" có thể được gán cho tài khoản được điều khiển ngang hàng bởi bất cứ tài khoản bạn bè khác.
 
 Another example is the Steem blockchain which has three hard-coded named permission levels: owner, active, and posting. The posting permission can only perform social actions such as voting and posting, while the active permission can do everything except change the owner. The owner permission is meant for cold storage and is able to do everything. The EOS.IO software generalizes this concept by allowing each account holder to define their own hierarchy as well as the grouping of actions.
 
