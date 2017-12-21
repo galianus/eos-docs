@@ -403,11 +403,11 @@ EOS.IO yazılımı tabanlı blok zincirinin yönelimi, birden fazla sanal makine
 
 Web Assembly, yüksek performanslı web uygulamaları oluşturmak için ortaya çıkan bir web standardıdır. Birkaç küçük değişiklikle Web Assembly deterministik ve sandbox hale getirilebilir. Web Assembly'nin yararı, sözleşmelerin C veya C ++ gibi tanıdık dillerde geliştirilmesini sağlar ve endüstride yaygın bir desteği mevcuttur.
 
-Ethereum developers have already begun modifying Web Assembly to provide suitable sandboxing and determinism in with their [Ethereum flavored Web Assembly (WASM)](https://github.com/ewasm/design). This approach can be easily adapted and integrated with EOS.IO software.
+Ethereum geliştiricileri, kendilerine uygun sandbox ve determinizm sağlamak için [Ethereum tadında Web Assembly (WASM)](https://github.com/ewasm/design) için Web Assembly'i değiştirmeye zaten başladı. Bu yaklaşım, EOS.IO yazılımı içinde kolayca uyarlanabilir ve entegre edilebilir.
 
-### Ethereum Virtual Machine (EVM)
+### Ethereum Sanal Makinesi (EVM)
 
-This virtual machine has been used for most existing smart contracts and could be adapted to work within an EOS.IO blockchain. It is conceivable that EVM contracts could be run within their own sandbox inside an EOS.IO software-based blockchain and that with some adaptation EVM contracts could communicate with other EOS.IO software blockchain applications.
+Bu sanal makine, mevcut akıllı sözleşmeler için kullanılmıştır ve bir EOS.IO tabanlı blok zincirinde çalışmak üzere uyarlanabilir. It is conceivable that EVM contracts could be run within their own sandbox inside an EOS.IO software-based blockchain and that with some adaptation EVM contracts could communicate with other EOS.IO software blockchain applications.
 
 # Blok Zincirleri Arası İletişim
 
