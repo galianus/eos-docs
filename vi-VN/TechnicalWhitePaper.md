@@ -154,9 +154,9 @@ Việc quản lý cấp phép có dính dáng với việc xác định một ti
 
 Mỗi tài khoản có thể được quản lý bởi bất cứ kết hợp được gán gái trị của các tài khoản và mã khoá riêng tư khác. Chính điều này tạo ra cấu trúc quyền lực phân tầng mà ở đó phản ánh cách mà sự cấp phép được quản lý trong thực tế, và làm cho sự điều khiển đa người dùng với ngân quỹ dễ dàng hơn bao giờ hết. Điều khiển đa người dùng là một nhân đơn lớn nhất góp phần lớn nhất vào bảo mật, và khi được sử dụng đúng cách, nó có thể loại bỏ phần lớn nguy cơ bị mất trộm do bẻ khoá.
 
-EOS.IO cho phép các tài khoản định nghĩa kết hợp nào của khoá và/hoặc tài khoản có thể gửi một loại tin nhắn cụ thể tới một tài khoản khác. For example, it is possible to have one key for a user's social media account and another for access to the exchange. It is even possible to give other accounts permission to act on behalf of a user's account without assigning them keys.
+EOS.IO cho phép các tài khoản định nghĩa kết hợp nào của khoá và/hoặc tài khoản có thể gửi một loại tin nhắn cụ thể tới một tài khoản khác. Ví dụ, có thể có việc dùng một khoá cho một tài khoản mạng xã hội và một cái khác để dành cho việc trao đổi. Thậm chí là cho phép các tài khoản khác thay mặt chủ tài khoản để thao tác mà không cần cấp khoá cho các tài khoản đó.
 
-### Named Permission Levels
+### Các Mức Độ Cấp Phép Được Đặt Tên
 
 <img align="right" src="http://eos.io/wpimg/diagram3.png" width="228.395px" height="300px" />
 
