@@ -411,7 +411,7 @@ Bu sanal makine, mevcut akıllı sözleşmeler için kullanılmıştır ve bir E
 
 # Blok Zincirleri Arası İletişim
 
-EOS.IO software is designed to facilitate inter-blockchain communication. This is achieved by making it easy to generate proof of message existence and proof of message sequence. These proofs combined with an application architecture designed around message passing enables the details of inter-blockchain communication and proof validation to be hidden from application developers.
+EOS.IO yazılımı, bloklar arası iletişimi kolaylaştıracak şekilde tasarlanmıştır. This is achieved by making it easy to generate proof of message existence and proof of message sequence. These proofs combined with an application architecture designed around message passing enables the details of inter-blockchain communication and proof validation to be hidden from application developers.
 
 <img align="right" src="http://eos.io/wpimg/Diagram1.jpg" width="362.84px" height="500px" />
 
