@@ -407,7 +407,7 @@ Ethereum geliştiricileri, kendilerine uygun sandbox ve determinizm sağlamak i�
 
 ### Ethereum Sanal Makinesi (EVM)
 
-Bu sanal makine, mevcut akıllı sözleşmeler için kullanılmıştır ve bir EOS.IO tabanlı blok zincirinde çalışmak üzere uyarlanabilir. It is conceivable that EVM contracts could be run within their own sandbox inside an EOS.IO software-based blockchain and that with some adaptation EVM contracts could communicate with other EOS.IO software blockchain applications.
+Bu sanal makine, mevcut akıllı sözleşmeler için kullanılmıştır ve bir EOS.IO tabanlı blok zincirinde çalışmak üzere uyarlanabilir. EVM sözleşmelerinin, kendi sandbox'ı içinde, EOS.IO blok zincirinde çalıştırılabileceği ve bazı uyarlamarla, diğer EOS.IO blok zinciri uygulamalarıyla iletişim kurabileceği akla uygundur.
 
 # Blok Zincirleri Arası İletişim
 
