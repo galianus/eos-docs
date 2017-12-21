@@ -297,7 +297,7 @@ EOS.IO yazılımını benimseyen bir blok zincirinde, bant genişliği ve hesapl
 
 Daha önce belirtildiği gibi, hesaplama kullanım araçlarının performans ve optimizasyon üzerinde önemli bir etkisi vardır; Bu nedenle, tüm kaynak kullanımı kısıtlamaları nihai olarak özneldir ve uygulamanın kendi algoritmalarına ve tahminlerine göre blok üreticileri tarafından yapılır.
 
-That said, there are certain things that are trivial to measure objectively. İletilen mesaj sayısı ve iç veritabanında saklanan verilerin boyutunu objektif olarak ölçmek ucuzdur. EOS.IO yazılımı, blok üreticilerinin aynı algoritmayı bu objektif ölçümlere uygulamasına olanak tanır; ancak öznel ölçümler üzerinde daha subjektif algoritmalar uygulamayı tercih edebilir.
+Nesnel olarak ölçmesi önemsiz olan bazı şeyler vardır. İletilen mesaj sayısı ve iç veritabanında saklanan verilerin boyutunu objektif olarak ölçmek ucuzdur. EOS.IO yazılımı, blok üreticilerinin aynı algoritmayı bu objektif ölçümlere uygulamasına olanak tanır; ancak öznel ölçümler üzerinde daha subjektif algoritmalar uygulamayı tercih edebilir.
 
 ## Alıcı Ödemeleri
 
