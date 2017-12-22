@@ -17,7 +17,7 @@ A standalone node operates a test blockchain and produces blocks while exposing 
 The EOS.IO software has a number of native contracts. These are contracts that manage the core operations of the blockchain and exist outside the Web Assembly interface. These contracts include:
 
 1. @eos - manages EOS token transfers
-2. @stake - manages locked EOS, voting, and Producer Election
+2. @stake _. مقفل ھوے EOS،ووٹنگ اور پرڈوسر انتخابات کا انتظام کرتا ہے
 3. @system - manages permissions, messages, and contact code updates
 
 ### Virtual Machine API (Dan)
