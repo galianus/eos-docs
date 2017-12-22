@@ -58,9 +58,9 @@ Des outils doivent être développés pour exporter des informations de l'etat d
 
 ### La Communication Interblockchain (Nathan)
 
-This feature involves verifying the Merkle hashing of transactions is proper.
+Cette fonctionnalité implique la vérification du hachage Merkle des transactions est correcte.
 
-# Phase 3 - Testing & Security Audits - Winter 2017, Spring 2018
+# La Phase 3 - Tests & Audits de Sécurité - Hiver 2017, Printemps 2018
 
 During this phase the platform will undergo heavy testing with a focus on finding security issues and bug. At the end of Phase 3 version 1.0 will be tagged.
 
