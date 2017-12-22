@@ -50,9 +50,9 @@ Le code WASM doit être nettoyé pour vérifier les comportements non détermini
 
 ### Suivi de L'utilisation des Ressources & Limitation du Débit (Arhag)
 
-To prevent abuse the resource monitoring and usage tracking rate limits users according to staked EOS.
+Pour éviter les abus le suivi des ressources et le taux de suivi de l'utilisation limitent les utilisateurs en fonction de l'EOS implanté.
 
-### Genesis Import Testing (DappHub)
+### Tests d'importation Genesis (DappHub)
 
 Tools need to be developed to export data from the EOS Token Distribution state and create a genesis configuration file. This will enable anyone participating in the Token Distribution to acquire some initial test EOS (TEOS).
 
