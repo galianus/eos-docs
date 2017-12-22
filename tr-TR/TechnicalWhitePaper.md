@@ -433,7 +433,7 @@ Belli bir yoğunluğun ardından, bir zincirin başka bir zincirin tüm blok ge�
 
 ## Zincirler Arası İletişimde Gecikme
 
-When communicating with another outside blockchain, block producers must wait until there is 100% certainty that a transaction has been irreversibly confirmed by the other blockchain before accepting it as a valid input. Using an EOS.IO software-based blockchain and DPOS with 3 second blocks and 21 producers, this takes approximately 45 seconds. If a chain's block producers do not wait for irreversibility it would be like an exchange accepting a deposit that was later reversed and could impact the validity of the blockchain's consensus.
+Blok üreticileri, başka bir blok zinciriyle iletişim kurarken; bir işlemi, geçerli bir girdi olarak kabul etmeden önce diğer blok zincir tarafından geri döndürülemez olarak onaylandığına % 100 emin oluncaya kadar beklemeliler. EOS.IO yazılımı tabanlı blok zinciri ve DPOS kullanıldığında, 3 saniyelik bloklar ve 21 üreticiyle, bu yaklaşık 45 saniye sürer. If a chain's block producers do not wait for irreversibility it would be like an exchange accepting a deposit that was later reversed and could impact the validity of the blockchain's consensus.
 
 ## Proof of Completeness
 
