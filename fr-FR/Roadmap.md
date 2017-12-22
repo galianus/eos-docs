@@ -54,9 +54,9 @@ Pour éviter les abus le suivi des ressources et le taux de suivi de l'utilisati
 
 ### Tests d'importation Genèse (DappHub)
 
-Des outils doivent être développés pour exporter des informations de l'etat de la distribution des jetons EOS et créer un fichier de configuration genèse. This will enable anyone participating in the Token Distribution to acquire some initial test EOS (TEOS).
+Des outils doivent être développés pour exporter des informations de l'etat de la distribution des jetons EOS et créer un fichier de configuration genèse. Cela permettra à toute personne participant à la Distribution de Jetons d'acquérir un EOS de test initial(TEOS). 
 
-### Interblockchain Communication (Nathan)
+### La Communication Interblockchain (Nathan)
 
 This feature involves verifying the Merkle hashing of transactions is proper.
 
