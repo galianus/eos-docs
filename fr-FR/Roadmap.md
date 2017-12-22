@@ -46,9 +46,9 @@ C'est un plugin qui est responsable de la synchronisation de l'état blockchain 
 
 ### Assainissement WASM & CPU sandboxing (Brian)
 
-The WASM code needs to be sanitized to check for non-deterministic behavior such as floating point operations and infinite loops.
+Le code WASM doit être nettoyé pour vérifier les comportements non déterministes tels que les opérations en point flottante et les boucles infinies.
 
-### Resource Usage Tracking & Rate Limiting (Arhag)
+### Suivi de L'utilisation des Ressources & Limitation du Débit (Arhag)
 
 To prevent abuse the resource monitoring and usage tracking rate limits users according to staked EOS.
 
