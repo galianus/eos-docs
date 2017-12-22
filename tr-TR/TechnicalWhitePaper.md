@@ -427,11 +427,11 @@ EOS.IO yazılımı, işlemin dahil edildiği noktadan sonra, geri döndürüleme
 
 Bu kanıtları etkinleştirmek için uygun hash/karma bağlantısıyla blok üretmek, çok az miktarda yük artışına sebep olur. Bu, blokları bu şekilde üretmemek için bir sebep yok demektir.
 
-Diğer zincirlerde kanıtları doğrulama zamanı geldiğinde, yapılabilecek çok geniş bir zaman/alan/bant genişliği optimizasyonu vardır. Tüm blok başlıkları izlendiğinde kanıt boyutları küçük olacaktır (420 MB/yıl). Yalnızca yeni başlıkları izlemek, minimum uzun vade depolama ve kanıt boyutu arasında takas sağlayabilir. Alternatif olarak, bir blok zinciri, geçmiş kanıtların orta hashlerini/karmalarını hatırladığı yerlerde, yavaş bir değerlendirme yaklaşımını kullanabilir. Yeni kanıtlar, sadece bilinen seyrek ağaca bağlantılar içermelidir. The exact approach used will necessarily depend upon the percentage of foreign blocks that include transactions referenced by merkle proof.
+Diğer zincirlerde kanıtları doğrulama zamanı geldiğinde, yapılabilecek çok geniş bir zaman/alan/bant genişliği optimizasyonu vardır. Tüm blok başlıkları izlendiğinde kanıt boyutları küçük olacaktır (420 MB/yıl). Yalnızca yeni başlıkları izlemek, minimum uzun vade depolama ve kanıt boyutu arasında takas sağlayabilir. Alternatif olarak, bir blok zinciri, geçmiş kanıtların orta hashlerini/karmalarını hatırladığı yerlerde, yavaş bir değerlendirme yaklaşımını kullanabilir. Yeni kanıtlar, sadece bilinen seyrek ağaca bağlantılar içermelidir. Kullanılan kesin yaklaşım, zorunlu olarak merkle kanıtıyla refere edilen işlemleri içeren yabancı blokların yüzdesine bağlı olacaktır.
 
-After a certain density of interconnectedness it becomes more efficient to simply have one chain contain the entire block history of another chain and eliminate the need for proofs all together. For performance reasons, it is ideal to minimize the frequency of inter-chain proofs.
+Belli bir yoğunluğun ardından, bir zincirin başka bir zincirin tüm blok geçmişini içermesi ve birlikte kanıtlara ihtiyaç duyulmaması daha etkin hale gelir. Performans için, zincir arası kanıtların sıklığını en aza indirgemek idealdir.
 
-## Latency of Interchain Communication
+## Zincirler Arası İletişimde Gecikme
 
 When communicating with another outside blockchain, block producers must wait until there is 100% certainty that a transaction has been irreversibly confirmed by the other blockchain before accepting it as a valid input. Using an EOS.IO software-based blockchain and DPOS with 3 second blocks and 21 producers, this takes approximately 45 seconds. If a chain's block producers do not wait for irreversibility it would be like an exchange accepting a deposit that was later reversed and could impact the validity of the blockchain's consensus.
 
