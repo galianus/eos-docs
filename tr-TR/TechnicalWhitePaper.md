@@ -433,12 +433,12 @@ Belli bir yoğunluğun ardından, bir zincirin başka bir zincirin tüm blok ge�
 
 ## Zincirler Arası İletişimde Gecikme
 
-Blok üreticileri, başka bir blok zinciriyle iletişim kurarken; bir işlemi, geçerli bir girdi olarak kabul etmeden önce diğer blok zincir tarafından geri döndürülemez olarak onaylandığına % 100 emin oluncaya kadar beklemeliler. EOS.IO yazılımı tabanlı blok zinciri ve DPOS kullanıldığında, 3 saniyelik bloklar ve 21 üreticiyle, bu yaklaşık 45 saniye sürer. If a chain's block producers do not wait for irreversibility it would be like an exchange accepting a deposit that was later reversed and could impact the validity of the blockchain's consensus.
+Blok üreticileri, başka bir blok zinciriyle iletişim kurarken; bir işlemi, geçerli bir girdi olarak kabul etmeden önce diğer blok zincir tarafından geri döndürülemez olarak onaylandığına % 100 emin oluncaya kadar beklemeliler. EOS.IO yazılımı tabanlı blok zinciri ve DPOS kullanıldığında, 3 saniyelik bloklar ve 21 üreticiyle, bu yaklaşık 45 saniye sürer. Bir zincirin blok üreticileri geri dönüşsüzlüğü beklemezse, daha sonra tersine çevrilen ve blok zincirinin uzlaşmasının geçerliliğini etkileyebilecek bir yatırmayı kabul eden bir takas olurdu.
 
-## Proof of Completeness
+## Tamamlama Kanıtı
 
-When using merkle proofs from outside blockchains, there is a significant difference between knowing that all transactions processed are valid and knowing that no transactions have been skipped or omitted. While it is impossible to prove that all of the most recent transactions are known, it is possible to prove that there have been no gaps in the transaction history. The EOS.IO software facilitates this by assigning a sequence number to every message delivered to every account. A user can use these sequence numbers to prove that all messages intended for a particular account have been processed and that they were processed in order.
+Dıştaki blok zincirlerden merkle provaları kullanırken, işlenen tüm işlemlerin geçerli olduğunu bilmekle, hiçbir işlemin atlanıp atlanmadığını bilmek arasında önemli bir fark vardır. En son işlemlerin hepsinin bilinmekte olduğunu kanıtlamak imkansız olmakla birlikte, işlem geçmişi üzerinde boşluk olmadığını ispatlamak mümkündür. EOS.IO yazılımı, her hesaba iletilen her mesaja, bir sıra numarası atayarak bunu kolaylaştırır. Bir kullanıcı, bu sıra numaralarını, belirli bir hesaba yönelik tüm mesajların işlendiğini ve sırayla işleme tabi tutulduğunu kanıtlamak için kullanabilir.
 
 # Sonuç
 
-The EOS.IO software is designed from experience with proven concepts and best practices, and represents fundamental advancements in blockchain technology. The software is part of a holistic blueprint for a globally scalable blockchain society in which decentralised applications can be easily deployed and governed.
+EOS.IO yazılımı, kanıtlanmış konseptler ve en iyi deneyimlerden tasarlanmıştır. Ve blok zinciri teknolojisindeki temel ilerlemeleri temsil etmektedir. The software is part of a holistic blueprint for a globally scalable blockchain society in which decentralised applications can be easily deployed and governed.
