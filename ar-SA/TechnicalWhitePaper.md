@@ -111,7 +111,7 @@ Disrupting businesses such as Ebay, Uber, AirBnB, and Facebook, require blockcha
 
 البرنامج EOS.IO يفعل بلوكات ليتم إنتاجها بالضبط كل 3 ثوان ومنتج واحد بالضبط هو المسموح له بإنتاج بلوك في أي لحظة معينة في الوقت المناسب. إذا لم يتم إنتاج البلوك في الوقت المحدد يتم تخطي البلوك لتلك الفسحة الزمنية. عندما يتم تخطي بلوك واحد أو أكثر، هناك 6 أو أكثر من فجوة ثانية في بلوكشين.
 
-Using the EOS.IO software blocks are produced in rounds of 21. At the start of each round 21 unique block producers are chosen. The top 20 by total approval are automatically chosen every round and the last producer is chosen proportional to their number of votes relative to other producers. The selected producers are shuffled using a pseudorandom number derived from the block time. This shuffling is done to ensure that all producers maintain balanced connectivity to all other producers.
+يتم إنتاج بلوكات البرنامج EOS.IO في 21 جولة. At the start of each round 21 unique block producers are chosen. The top 20 by total approval are automatically chosen every round and the last producer is chosen proportional to their number of votes relative to other producers. The selected producers are shuffled using a pseudorandom number derived from the block time. This shuffling is done to ensure that all producers maintain balanced connectivity to all other producers.
 
 If a producer misses a block and has not produced any block within the last 24 hours they are removed from consideration until they notify the blockchain of their intention to start producing blocks again. This ensures the network operates smoothly by minimizing the number of blocks missed by not scheduling those who are proven to be unreliable.
 
