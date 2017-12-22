@@ -52,9 +52,9 @@ Le code WASM doit être nettoyé pour vérifier les comportements non détermini
 
 Pour éviter les abus le suivi des ressources et le taux de suivi de l'utilisation limitent les utilisateurs en fonction de l'EOS implanté.
 
-### Tests d'importation Genesis (DappHub)
+### Tests d'importation Genèse (DappHub)
 
-Tools need to be developed to export data from the EOS Token Distribution state and create a genesis configuration file. This will enable anyone participating in the Token Distribution to acquire some initial test EOS (TEOS).
+Des outils doivent être développés pour exporter des informations de l'etat de la distribution des jetons EOS et créer un fichier de configuration genèse. This will enable anyone participating in the Token Distribution to acquire some initial test EOS (TEOS).
 
 ### Interblockchain Communication (Nathan)
 
