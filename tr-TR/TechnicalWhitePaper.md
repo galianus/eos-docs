@@ -423,7 +423,7 @@ LCV'nin amacı; nispeten hafif olan bir veri setini izleyen herkes tarafından o
 
 Bitcoin, tüm düğümlerin blok başlıklarının tam geçmişine erişebileceğini varsayarak işlemlerin doğrulamasını destekler ve bu da 4MB'lık blok başlıklarına karşılık gelir. Saniyede 10 işlemle, geçerli bir kanıt için yaklaşık 512 bayt gerekir. Bu, 10 dakikalık bir blok aralığı bulunan bir blok zinciri için iyi bir sonuçtur, ancak 3 saniyelik blok aralığı bulunan blok zincirleri için "hafif" değildir.
 
-EOS.IO yazılımı, işlemin dahil edildiği noktadan sonra, geri döndürülemez bir blok başlığına sahip olan herkes için, hafif kanıtlar sağlar. Aşağıda gösterilen hash/karma-bağlantılı yapıyı kullanarak, 1024 bayttan küçük bir kanıt ile herhangi bir işlemin varlığını kanıtlamak mümkündür. If it is assumed that validating nodes are keeping up with all block headers in the past day (2 MB of data), then proving these transactions will only require proofs 200 bytes long.
+EOS.IO yazılımı, işlemin dahil edildiği noktadan sonra, geri döndürülemez bir blok başlığına sahip olan herkes için, hafif kanıtlar sağlar. Aşağıda gösterilen hash/karma-bağlantılı yapıyı kullanarak, 1024 bayttan küçük bir kanıt ile herhangi bir işlemin varlığını kanıtlamak mümkündür. Son bir günde, doğrulanan düğümlerin tüm blok ile uyumlu olduğunu varsayılırsa (2MB ver), bu işlemlerin kanıtlanması yalnızca 200 bayt uzunluğunda ispatları gerektirir.
 
 There is little incremental overhead associated with producing blocks with the proper hash-linking to enable these proofs which means there is no reason not to generate blocks this way.
 
