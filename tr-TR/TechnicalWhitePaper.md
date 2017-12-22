@@ -441,4 +441,4 @@ Dıştaki blok zincirlerden merkle provaları kullanırken, işlenen tüm işlem
 
 # Sonuç
 
-EOS.IO yazılımı, kanıtlanmış konseptler ve en iyi deneyimlerden tasarlanmıştır. Ve blok zinciri teknolojisindeki temel ilerlemeleri temsil etmektedir. The software is part of a holistic blueprint for a globally scalable blockchain society in which decentralised applications can be easily deployed and governed.
+EOS.IO yazılımı, kanıtlanmış konseptler ve en iyi deneyimlerden tasarlanmıştır. Ve blok zinciri teknolojisindeki temel ilerlemeleri temsil etmektedir. Bu yazılım, merkezi olmayan uygulamaların kolayca dağıtılabileceği ve yönetilebileceği, küresel ölçekte ölçeklenebilir bir blok zinciri için bütüncül bir planın parçasıdır.
