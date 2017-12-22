@@ -23,7 +23,7 @@
 - [Consensus Algorithm (DPOS)](#consensus-algorithm-dpos) 
   - [Transaction Confirmation](#transaction-confirmation)
   - [Transaction as Proof of Stake (TaPoS)](#transaction-as-proof-of-stake-tapos)
-- [Accounts](#accounts) 
+- [الحسابات](#accounts) 
   - [الرسائل & معالجات](#messages--handlers)
   - [Role Based Permission Management](#role-based-permission-management) 
     - [Named Permission Levels](#named-permission-levels)
@@ -46,9 +46,9 @@
   - [Delegating Capacity](#delegating-capacity)
   - [Separating Transaction costs from Token Value](#separating-transaction-costs-from-token-value)
   - [State Storage Costs](#state-storage-costs)
-  - [Block Rewards](#block-rewards)
+  - [مكافئة البلوك](#block-rewards)
   - [Community Benefit Applications](#community-benefit-applications)
-- [Governance](#governance) 
+- [الحوكمة](#governance) 
   - [Freezing Accounts](#freezing-accounts)
   - [Changing Account Code](#changing-account-code)
   - [Constitution](#constitution)
@@ -65,7 +65,7 @@
   - [Merkle Proofs for Light Client Validation (LCV)](#merkle-proofs-for-light-client-validation-lcv)
   - [Latency of Interchain Communication](#latency-of-interchain-communication)
   - [Proof of Completeness](#proof-of-completeness)
-- [Conclusion](#conclusion)
+- [استنتاج](#conclusion)
 
 # الخلفية
 
@@ -75,11 +75,11 @@ While a number of blockchain platforms have struggled to support functional dece
 
 منصات بلوكشين الموجودة مرهقة برسوم كبيرة وقدرة حاسوبية محدودة تمنع إنتشار بلوكشين على نطاق واسع.
 
-# Requirements for Blockchain Applications
+# المتطلبات لتطبيقات بلوكشين
 
 In order to gain widespread use, applications on the blockchain require a platform that is flexible enough to meet the following requirements:
 
-## Support Millions of Users
+## دعم الملايين من المستخدمين
 
 Disrupting businesses such as Ebay, Uber, AirBnB, and Facebook, require blockchain technology capable of handling tens of millions of active daily users. In certain cases, applications may not work unless a critical mass of users is reached and therefore a platform that can handle mass number of users is paramount.
 
