@@ -87,13 +87,13 @@ Disrupting businesses such as Ebay, Uber, AirBnB, and Facebook, require blockcha
 
 مطوري التطبيقات بحاجة إلى المرونة لتقديم خدمات مجانية للمستخدمين. يجب أن المستخدمين لا يجب أن يدفعو من أجل لاستخدام منصة أو الاستفادة من خدماتها. منصة بلوكشين مجانية لاستخدامها للمستخدمين من المرجح أن يكتسب اعتماد أوسع نطاقا. يمكن للمطورين والشركات بعد ذلك إنشاء استراتيجيات فعالة لتحقيق الدخل.
 
-## Easy Upgrades and Bug Recovery
+## ترقيات سهلة ورصد الخلل
 
-Businesses building blockchain based applications need the flexibility to enhance their applications with new features.
+بناء بلوكشين للشركات القائمة على التطبيقات تحتاج إلى المرونة لتعزيز تطبيقاتها مع ميزات جديدة.
 
-All non-trivial software is subject to bugs, even with the most rigorous of formal verification. The platform must be robust enough to fix bugs when they inevitably occur.
+جميع البرامج الغير التافهة تخضع للخلل، حتى مع صرامة أكثر من التحقق الرسمي. يجب أن تكون منصة قوية بما فيه الكفاية لإصلاح الخلل عندما تحدث حتما.
 
-## Low Latency
+## القليل من الكمون
 
 A good user experience demands reliable feedback with delay of no more than a few seconds. Longer delays frustrate users and make applications built on a blockchain less competitive with existing non-blockchain alternatives.
 
