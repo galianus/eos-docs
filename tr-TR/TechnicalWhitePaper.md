@@ -417,7 +417,7 @@ EOS.IO yazılımı, bloklar arası iletişimi kolaylaştıracak şekilde tasarla
 
 ## Hafif İstemci Doğrulaması için Merkle Kanıtı (LCV)
 
-İstemcilerin tüm işlemleri işlemesi gerekmiyorsa, diğer blok zincirleriyle entegrasyon daha kolaydır. Sonuçta, bir borsa sadece borsaya giren ve çıkan işlemleri dikkate alır, fazlası değil. Borsa/takas zincirinin, merkle kanıtını hafif kullanabilmesi de ideal olacaktır. Kendi blok üreticilerine tamamen güvenmek zorunda kalmaktan ziyade varlık kanıtına bakar. Nihayetinde, bir zincirin blok üreticileri, başka bir blok zincirle senkronize edildiğinde mümkün olan en az yükü ister.
+İstemcilerin tüm işlemleri işlemesi gerekmiyorsa, diğer blok zincirleriyle entegrasyon daha kolaydır. Sonuçta, bir borsa sadece borsaya giren ve çıkan işlemleri dikkate alır, fazlası değil. Borsa/takas zincirinin, merkle kanıtını hafif kullanabilmesi de ideal olacaktır. Kendi blok üreticilerine tamamen güvenmek zorunda kalmaktan ziyade varlık kanıtına bakar. Nihayetinde, bir zincirin blok üreticileri, başka bir blok zincirle senkronizyonda mümkün olan en az yükü ister.
 
 LCV'nin amacı; nispeten hafif olan bir veri setini izleyen herkes tarafından onaylanabilen, nispeten hafif ağırlıklı bir varlığın üretilmesini sağlamaktır. Bu durumda amaç, belirli bir işlemin belirli bir bloğa dahil edildiğini ve bloğun belirli bir blok zincirinin doğrulanmış geçmişine sahip olduğunu kanıtlamaktır.
 
