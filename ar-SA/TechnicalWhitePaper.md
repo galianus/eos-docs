@@ -95,15 +95,15 @@ Disrupting businesses such as Ebay, Uber, AirBnB, and Facebook, require blockcha
 
 ## القليل من الكمون
 
-A good user experience demands reliable feedback with delay of no more than a few seconds. Longer delays frustrate users and make applications built on a blockchain less competitive with existing non-blockchain alternatives.
+تجربة المستخدم الجيدة تتطلب ردود فعل موثوقة مع تأخير لا يزيد عن بضع ثوان. تأخير إحباط المستخدمين لمدة اطول وجعل التطبيقات التي بنيت على بلوكشين أقل قدرة على المنافسة مع البدائل الغير القائمة على بلوكشين.
 
-## Sequential Performance
+## الأداء المتسلسل
 
-There are some applications that just cannot be implemented with parallel algorithms due to sequentially dependent steps. Applications such as exchanges need enough sequential performance to handle high volumes and therefore a platform with fast sequential performance is required.
+هناك بعض التطبيقات التي فقط لا يمكن تنفيذها مع خوارزميات متوازية بسبب الخطوات التي تعتمد على التتابع. التطبيقات مثل التبادلات تحتاج إلى أداء متسلسل بما فيه الكفاية للتعامل مع كميات كبيرة، وبالتالي هناك حاجة إلى منصة مع أداء سريع للتتابع.
 
-## Parallel Performance
+## الأداء الموازي
 
-Large scale applications need to divide the workload across multiple CPUs and computers.
+التطبيقات الواسعة النطاق تحتاج إلى تقسيم عبء العمل خلال وحدات المعالجة المركزية المتعددة وأجهزة الكمبيوتر.
 
 # Consensus Algorithm (DPOS)
 
