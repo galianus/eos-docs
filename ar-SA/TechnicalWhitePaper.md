@@ -105,9 +105,9 @@ Disrupting businesses such as Ebay, Uber, AirBnB, and Facebook, require blockcha
 
 التطبيقات الواسعة النطاق تحتاج إلى تقسيم عبء العمل خلال وحدات المعالجة المركزية المتعددة وأجهزة الكمبيوتر.
 
-# Consensus Algorithm (DPOS)
+# خوارزمية التوافق (DPOS)
 
-EOS.IO software utilizes the only decentralized consensus algorithm capable of meeting the performance requirements of applications on the blockchain, [Delegated Proof of Stake (DPOS)](https://steemit.com/dpos/@dantheman/dpos-consensus-algorithm-this-missing-white-paper). Under this algorithm, those who hold tokens on a blockchain adopting the EOS.IO software may select block producers through a continuous approval voting system and anyone may choose to participate in block production and will be given an opportunity to produce blocks proportional to the total votes they have received relative to all other producers. For private blockchains the management could use the tokens to add and remove IT staff.
+برنامج EOS.IO يستخدم خوارزمية التوافق اللامركزي الوحيد القادر على تلبية متطلبات الأداء للتطبيقات على بلوكشين، [ دليل مفوض من حصة (DPOS) ](https://steemit.com/dpos/@dantheman/dpos-consensus-algorithm-this-missing-white-paper). Under this algorithm, those who hold tokens on a blockchain adopting the EOS.IO software may select block producers through a continuous approval voting system and anyone may choose to participate in block production and will be given an opportunity to produce blocks proportional to the total votes they have received relative to all other producers. For private blockchains the management could use the tokens to add and remove IT staff.
 
 The EOS.IO software enables blocks to be produced exactly every 3 seconds and exactly one producer is authorized to produce a block at any given point in time. If the block is not produced at the scheduled time then the block for that time slot is skipped. When one or more blocks are skipped, there is a 6 or more second gap in the blockchain.
 
