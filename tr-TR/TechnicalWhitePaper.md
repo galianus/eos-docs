@@ -419,7 +419,7 @@ EOS.IO yazılımı, bloklar arası iletişimi kolaylaştıracak şekilde tasarla
 
 İstemcilerin tüm işlemleri işlemesi gerekmiyorsa, diğer blok zincirleriyle entegrasyon daha kolaydır. Sonuçta, bir borsa sadece borsaya giren ve çıkan işlemleri dikkate alır, fazlası değil. Borsa/takas zincirinin, merkle kanıtını hafif kullanabilmesi de ideal olacaktır. Kendi blok üreticilerine tamamen güvenmek zorunda kalmaktan ziyade varlık kanıtına bakar. At the very least a chain's block producers would like to maintain the smallest possible overhead when synchronizing with another blockchain.
 
-The goal of LCV is to enable the generation of relatively light-weight proof of existence that can be validated by anyone tracking a relatively light-weight data set. In this case the objective is to prove that a particular transaction was included in a particular block and that the block is included in the verified history of a particular blockchain.
+LCV'nin amacı; nispeten hafif olan bir veri setini izleyen herkes tarafından onaylanabilen, nispeten hafif ağırlıklı varlığın üretilmesini sağlamaktır. Bu durumda amaç, belirli bir işlemin belirli bir bloğa dahil edildiğini ve bloğun belirli bir blok zincirinin doğrulanmış geçmişine dahip olduğunu kanıtlamaktır.
 
 Bitcoin supports validation of transactions assuming all nodes have access to the full history of block headers which amounts to 4MB of block headers per year. At 10 transactions per second, a valid proof requires about 512 bytes. This works well for a blockchain with a 10 minute block interval, but is no longer "light" for blockchains with a 3 second block interval.
 
