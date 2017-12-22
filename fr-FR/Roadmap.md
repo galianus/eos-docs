@@ -38,13 +38,13 @@ Documents qui vont enseigner les développeurs comment commencer avec la constru
 
 # La Phase 2 - Réseau de test minimum viable - Automne 2017
 
-Everything in Phase 1 assumes a trusted environment that only runs the developer's own code. Before a test network can be deployed several additional features need to be implemented and tested.
+Tout dans la phase 1 suppose un environnement de confiance qui exécute uniquement le code du développeur. Avant qu'un réseau de test puisse être déployé, plusieurs fonctionnalités supplémentaires doivent être implémentées et testées.
 
-### P2P Network Code (Phil)
+### Code de réseau P2P (Phil)
 
-This is a plugin that is responsible for synchronizing the blockchain state between two standalone nodes.
+C'est un plugin qui est responsable de la synchronisation de l'état blockchain entre deux nœuds autonomes.
 
-### WASM Sanitation & CPU Sandboxing (Brian)
+### Assainissement WASM & CPU sandboxing (Brian)
 
 The WASM code needs to be sanitized to check for non-deterministic behavior such as floating point operations and infinite loops.
 
