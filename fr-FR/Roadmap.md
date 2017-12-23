@@ -62,9 +62,9 @@ Cette fonctionnalité implique la vérification du hachage Merkle des transactio
 
 # La Phase 3 - Tests & Audits de Sécurité - Hiver 2017, Printemps 2018
 
-During this phase the platform will undergo heavy testing with a focus on finding security issues and bug. At the end of Phase 3 version 1.0 will be tagged.
+Au cours de cette phase, la plate-forme va subir des tests exhaustifs avec une concentration dans la recherche de problèmes et de bugs. Version 1.0 sera marquée à la fin de la Phase 3.
 
-### Develop Example Applications
+### Développement d'exemples d'applications
 
 Example applications are critical to proving the platform provides the features required by real developers.
 
