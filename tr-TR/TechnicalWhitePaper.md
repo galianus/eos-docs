@@ -22,7 +22,7 @@ Herkes izin almaksızın, orijinal kaynak ve geçerli telif hakkı bilgisini bel
   - [Paralel Performans](#parallel-performance)
 - [Konsensüs Algoritması (DPOS)](#consensus-algorithm-dpos) 
   - [Hareket Konfirmasyonu](#transaction-confirmation)
-  - [Menfaati İspat olarak İşlem (MİSoİ)](#transaction-as-proof-of-stake-tapos)
+  - [Menfaati İspat olarak İşlem (TaPoS)](#transaction-as-proof-of-stake-tapos)
 - [Hesaplar](#accounts) 
   - [Mesajlar & İşleyiciler](#messages--handlers)
   - [Rol Tabanlı İzin Yönetimi](#role-based-permission-management) 
