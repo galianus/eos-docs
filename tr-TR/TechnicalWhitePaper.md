@@ -129,7 +129,7 @@ Böyle bir uyarının karşılığı, tamamen yapılan ticari işlemin doğasın
 
 ## Menfaati İspat olarak İşlem (TaPoS)
 
-EOS.IO yazılımı, her işlemin, son bloğun üstbilgisindeki hash'i içermesini gerekli kılar. Bu hash iki amaca hizmet eder:
+EOS.IO yazılımı, her işlemin, son bloğun üst bilgisindeki hash'i içermesini gerekli kılar. Bu hash iki amaca hizmet eder:
 
 1. referans bloğu içermeyen çatallarda bir işlemin tekrar edilmesini önler; ve
 2. ağa, belirli bir kullanıcının ve menfaatlerinin belirli bir çatal üzerinde olduğunun, sinyalini verir.
@@ -138,21 +138,21 @@ Zamanla tüm kullanıcılar, sahte zincirlerin işlemlerini, meşru zincirden ge
 
 # Hesaplar
 
-EOS.IO yazılımı, tüm hesapların, 2 ila 32 karakter uzunluğunda, benzersiz ve okunabilir bir adla referans alınmasına izin verir. İsim hesap yaratıcısı tarafından seçilir. Tüm hesaplar, yaratıkları anda, hesap verilerini saklamanın maliyetini karşılamak için oluşturulan minimum hesap bakiyesiyle finanse edilmelidir. Hesap adları isim uzaylarını da destekler ve bu @domain kullanıcısının @user.domain hesabı oluşturabilen tek kişi olduğu anlamına gelir.
+EOS.IO yazılımı, tüm hesapların, 2 ila 32 karakter uzunluğunda, benzersiz ve okunabilir bir adla referans alınmasına izin verir. İsim hesap yaratıcısı tarafından seçilir. Tüm hesaplar, yaratıldıkları anda, hesap verilerini saklamanın maliyetini karşılamak için oluşturulan minimum hesap bakiyesiyle finanse edilmelidir. Hesap adları isim uzaylarını da destekler ve bu @domain kullanıcısının @user.domain hesabı oluşturabilen tek kişi olduğu anlamına gelir.
 
 Merkezi olmayan bir bağlamda, uygulama geliştiricileri, yeni bir kullanıcı kaydetmek için hesap oluşturma maliyetini öderler. Geleneksel işletmeler halihazırda müşteri edinmek için, reklamcılık, ücretsiz hizmetler vb. şeklinde önemli miktarda para harcıyorlar. Yeni bir blok zinciri hesabının fonlama maliyeti, bunlarla karşılaştırıldığında önemsiz kalır. Neyse ki, daha önce başka bir uygulamaya kaydolmuş kullanıcıların yeni hesap oluşturmasına gerek yoktur.
 
 ## Mesajlar & İşleyiciler
 
-Her hesap, yapılandırılmış mesajları diğer hesaplara gönderebilir ve iletileri alındıklarında işlemek için komut dosyaları tanımlayabilir. EOS.IO yazılımı, her hesaba yalnızca kendi mesaj işleyicileri tarafından erişilebilen, ona özel bir veritabanını verir. Mesaj işleme komut dosyaları da diğer hesaplara mesaj gönderebilir. Mesajların ve otomatik mesaj işleyicilerin kombinasyonu, EOS.IO'nun akıllı sözleşmeleri tanımlama biçimidir.
+Her hesap, yapılandırılmış mesajları diğer hesaplara gönderebilir ve mesajları alındıklarında işlemek için komut dosyaları tanımlayabilir. EOS.IO yazılımı, her hesaba yalnızca kendi mesaj işleyicileri tarafından erişilebilen, ona özel bir veritabanı verir. Mesaj işleme komut dosyaları da diğer hesaplara mesaj gönderebilir. Mesajların ve otomatik mesaj işleyicilerin kombinasyonu, EOS.IO'nun akıllı sözleşmeleri tanımlama biçimidir.
 
 ## Rol Tabanlı İzin Yönetimi
 
-İzin yönetimi, bir mesajın düzgün şekilde yetkilendirilmiş olup olmadığını belirler. İzin yönetiminin en basit şekli, bir işlemin gerekli imzalarının bulunduğunu kontrol etmektir, ancak bu şu anlama gelmektedir; gerekli imzaların zaten bilinmektedir. Genel olarak yetki, bireylere veya birey gruplarına bağlıdır ve sıklıkla bölümlere ayrılmıştır. EOS.IO yazılımı, kimlerin ne zaman ne yapabileceği konusunda, hesapları ince bir hassasiyet ve yüksek seviyede kontrol eden bildirimsel bir izin yönetim sistemi sunmaktadır.
+İzin yönetimi, bir mesajın düzgün şekilde yetkilendirilmiş olup olmadığını belirler. İzin yönetiminin en basit şekli, bir işlemin gerekli imzalarının bulunduğunu kontrol etmektir, ancak bu şu anlama gelmektedir; gerekli imzaları zaten bilinmektedir. Genel olarak yetki, bireylere veya birey gruplarına bağlıdır ve sıklıkla bölümlere ayrılmıştır. EOS.IO yazılımı, kimlerin ne zaman ne yapabileceği konusunda, hesapları ince bir hassasiyet ve yüksek seviyede kontrol eden bildirimsel bir izin yönetim sistemi sunmaktadır.
 
 Kimlik doğrulama ve izin yönetiminin standart olması ve de uygulamanın iş mantığından ayrı olması kritik önem taşır. Bu, izinlerin genel amaçlı bir şekilde yönetilmesi için geliştirilen araçların kullanılmasını sağlar ve ayrıca performans optimizasyonu için de önemli fırsatlar sunar.
 
-Her hesap, diğer hesapların ağırlıklı kombinasyonu ve özel anahtarlar ile kontrol edilebilir. Bu, izinlerin gerçekte nasıl organize edildiğini yansıtan hiyerarşik bir yetki yapısı oluşturur ve çok kullanıcılı fonları her zamankinden daha kolay kontrol eder. Çok kullanıcılı kontrol, güvenlik için büyük katkıyı sağlar ve düzgün bir şekilde kullanıldığında, hackten kaynaklanan hırsızlık riskini büyük ölçüde ortadan kaldırabilir.
+Her hesap, diğer hesapların ağırlıklı kombinasyonu ve özel anahtarlar ile kontrol edilebilir. Bu, izinlerin gerçekte nasıl organize edildiğini yansıtan hiyerarşik bir yetki yapısı oluşturur ve çok kullanıcı, fonları her zamankinden daha kolay kontrol eder. Çok kullanıcılı kontrol, güvenlik için büyük katkıyı sağlar ve düzgün bir şekilde kullanıldığında, hackten kaynaklanan hırsızlık riskini büyük ölçüde ortadan kaldırabilir.
 
 EOS.IO yazılımı, hesaplara, hangi anahtarların ve/veya hesapların kombinasyonunun belirli bir mesaj türünü başka bir hesaba gönderebileceğini tanımlamasına izin verir. Örneğin, bir kullanıcının sosyal medya hesabı için bir anahtarı ve borsaya erişmek için başka bir anahtarı olması mümkündür. Hatta, anahtar verme hariç, başka hesaplara, bir kullanıcının hesabı adına hareket etmesine izin vermek bile mümkündür.
 
