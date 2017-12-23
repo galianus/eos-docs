@@ -303,7 +303,7 @@ EOS.IO 软件并不能为区块生产生者为任何其他帐户送达的任何�
 
 传统上来说，企业为办公场地、计算力和其他为了运行企业而需要的成本买单。 客户从企业购买具体的产品，产品销售产生的利润来盖过企业运作的成本。 类似的，没有哪个网站要求来访者为盖过运作成本而支付。 因此，去中心化应用也不应该强制用户因为使用了区块链而直接为区块链支付。
 
-A launched blockchain that uses the EOS.IO software does not require its users to pay the blockchain directly for its use and therefore does not constrain or prevent a business from determining its own monetization strategy for its products.
+使用EOS.IO软件的推出的区块链产品不要求其用户直接支付区块链使用的费用，因此不会限制或阻止企业确定其产品的货币化策略。
 
 ## 委托能力
 
@@ -313,7 +313,7 @@ A holder of tokens on a blockchain launched adopting the EOS.IO software who may
 
 EOS.IO 软件的一个主要优点就是应用可用的带宽完全独立于 token 的价格。 If an application owner holds a relevant number of tokens on a blockchain adopting EOS.IO software, then the application can run indefinitely within a fixed state and bandwidth usage. In such case, developers and users are unaffected from any price volatility in the token market and therefore not reliant on a price feed. In other words, a blockchain that adopts the EOS.IO software enables block producers to naturally increase bandwidth, computation, and storage available per token independent of the token's value.
 
-A blockchain using EOS.IO software also awards block producers tokens every time they produce a block. Token 的值将影响其能购买的带宽、存储和计算资源；这一模型会自然的利用 token 值的上涨来增加网络的性能。
+使用EOS.IO软件的区块链每次产生区块时都会奖励区块生产者代币。 代币的值将影响其能购买的带宽、存储和计算资源；这一模型会自然的利用代币值的上涨来增加网络的性能。
 
 ## 状态存储成本
 
