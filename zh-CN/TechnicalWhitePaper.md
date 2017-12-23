@@ -10,7 +10,7 @@ Copyright © 2017 block.one
 
 未经允许，在非用于商业和教育用途的前提下 (即，除了收取费用或商业目的)，如果注明原始出处并适用声明的版权，任何人可以使用、复制或发布本白皮书内的任何内容。
 
-**免责声明：** 本 EOS.IO 技术白皮书草案仅供参考。 block.one不对在本白皮书中得到的结论的准确性做出保证，本文件"按照原样"提供. block.one 不保证本文结论的准确性，并且白皮书提供“是”没有任何陈述和保证，明示或暗示，任何，包括，但不限于：(i) 保证的适销性，针对特定用途的适用性、标题或侵权；(ii) 本白皮书的内容没有错误或合适与所有目的 (iii) 这样的内容不会侵犯第三方权利。 block.one and its affiliates shall have no liability for damages of any kind arising out of the use, reference to, or reliance on this white paper or any of the content contained herein, even if advised of the possibility of such damages. In no event will block.one or its affiliates be liable to any person or entity for any damages, losses, liabilities, costs or expenses of any kind, whether direct or indirect, consequential, compensatory, incidental, actual, exemplary, punitive or special for the use of, reference to, or reliance on this white paper or any of the content contained herein, including, without limitation, any loss of business, revenues, profits, data, use, goodwill or other intangible losses.
+**免责声明：** 本 EOS.IO 技术白皮书草案仅供参考。 block.one不对在本白皮书中得到的结论的准确性做出保证，本文件"按照原样"提供. block.one 不保证本文结论的准确性，并且白皮书提供“是”没有任何陈述和保证，明示或暗示，任何，包括，但不限于：(i) 保证的适销性，针对特定用途的适用性、标题或侵权；(ii) 本白皮书的内容没有错误或合适与所有目的 (iii) 这样的内容不会侵犯第三方权利。 对于因使用，引用或依赖本白皮书或此处包含的任何内容而引起的任何形式的损失，即使已被告知存在此类损害的可能性，本公司及其附属公司概不负责。 在任何情况下，Block.one或其附属公司将不会对任何人或实体的任何损害，损失，责任，成本或费用负责，无论是直接的还是间接的。后果性的，补偿性的，附带的，实际的，惩戒性的，惩罚性的或特殊的 使用，引用或依赖本白皮书或此处包含的任何内容，包括但不限于业务，收入，利润，数据，使用，商誉或其他无形损失的任何损失。
 
 - [背景](#background)
 - [区块链应用的要求](#requirements-for-blockchain-applications) 
@@ -85,7 +85,7 @@ Copyright © 2017 block.one
 
 ## 免费使用
 
-Application developers need the flexibility to offer users free services; users should not have to pay in order to use the platform or benefit from its services. 一个可以免费供用户使用的区块链平台或许将赢得更为广泛的使用。 开发者和企业可以制订有效的货币化战略。
+应用程序开发者需要灵活地为用户提供免费服务; 用户不必为了使用平台或从其服务中受益而付费。 一个可以免费供用户使用的区块链平台或许将赢得更为广泛的使用。 开发者和企业可以制订有效的货币化战略。
 
 ## 简单升级和 bug 修复
 
@@ -107,7 +107,7 @@ Application developers need the flexibility to offer users free services; users 
 
 # 共识算法 (DPOS)
 
-EOS.IO 软件使用唯一能满足区块链之上应用性能需求的去中心化共识算法，[委托股权证明 (DPOS)](https://steemit.com/dpos/@dantheman/dpos-consensus-algorithm-this-missing-white-paper)。 Under this algorithm, those who hold tokens on a blockchain adopting the EOS.IO software may select block producers through a continuous approval voting system and anyone may choose to participate in block production and will be given an opportunity to produce blocks proportional to the total votes they have received relative to all other producers. For private blockchains the management could use the tokens to add and remove IT staff.
+EOS.IO 软件使用唯一能满足区块链之上应用性能需求的去中心化共识算法，[委托股权证明 (DPOS)](https://steemit.com/dpos/@dantheman/dpos-consensus-algorithm-this-missing-white-paper)。 在这种算法下，持有EOS.IO软件的区块链上代币的人可以通过持续地批准投票系统来选择区块生产者，任何人都可以选择参与区块生产，并且将按照其获得总票数在所有生产者获得票数的比例来赋予参与的机会。 对于私有的区块链，管理层可以使用代币来添加和删除IT人员。
 
 EOS.IO 软件使得区块准确的每 3 秒生成一个并且在任何时间点都只有一个被授权的生产者来生成区块。 如果一个区块在规定时间之内未被生产出来则这一区块将被跳过。 当一个或多个区块被跳过发生时，在区块链中会有一个 6 秒及以上的间隔。
 
@@ -140,7 +140,7 @@ EOS.IO 软件需要每一个交易包含最近一个区块头的哈希值。这�
 
 EOS.IO 软件允许所有的帐户使用一个唯一的人类可读的名称来索引，长度在 2 到 32 个字符之间。 这个名称由帐户创建者自己选择。 所有的帐户必须在创建时用极少的帐户余额来注资，从而覆盖存储帐户信息的成本。 帐户名称也支持命名空间，比如 @domain 这个帐户的拥有者是唯一可以创建 @user.domain 帐户的人。
 
-在一个去中心化的场景中，应用开发者将会为新用户注册成本买单。 Traditional businesses already spend significant sums of money per customer they acquire in the form of advertising, free services, etc. 比起来，资助一个新的区块链帐户的花费简直微不足道。 值得庆幸的是，对一个已经在另一个应用注册过的用户并不需要再创建新的帐户。
+在一个去中心化的场景中，应用开发者将会为新用户注册成本买单。 传统企业已经以广告，免费服务等形式为每位客户花费大量资金。 比起来，资助一个新的区块链帐户的花费简直微不足道。 值得庆幸的是，对一个已经在另一个应用注册过的用户并不需要再创建新的帐户。
 
 ## 消息 & 处理
 
@@ -154,7 +154,7 @@ EOS.IO 软件允许所有的帐户使用一个唯一的人类可读的名称来�
 
 每一个帐户可以被任何权重组合的其他帐户和私钥管控。 这创建了分层级的权利结构，这反映了现实中的权限分配方式，并且让多用户共同管理资产变得从未如此简单。 多用户控制是安全最大的贡献者，并且，当用户使用得当，它可以极大的消除因被黑而导致被盗窃的风险。
 
-EOS.IO software allows accounts to define what combination of keys and/or accounts can send a particular message type to another account. 举个例子，可以指定一个密钥给一个用户的社交媒体账号，同时另一个密钥访问交易所。 甚至可以给其他帐户权限来代表自己而无需分配给他们密钥。
+EOS.IO软件允许帐户定义什么样的密钥和/或帐户组合，并可以将特定的消息类型发送到另一个帐户。 举个例子，可以指定一个密钥给一个用户的社交媒体账号，同时另一个密钥访问交易所。 甚至可以给其他帐户权限来代表自己而无需分配给他们密钥。
 
 ### 命名的权限级别
 
@@ -162,7 +162,7 @@ EOS.IO software allows accounts to define what combination of keys and/or accoun
 
 在 EOS.IO 软件中，帐户可以定义命名的权限级别，每一个是由更高级别的命名权限派生而来。 每一个命名的权限级别定义了一个权威；一个权威是多重签名阈值校验，它包含密钥和／或其他帐户的命名权限级别。 打个比方，一个帐户的“朋友”权限级别可以被设置为由该帐户的任何一个朋友无差别的控制。
 
-另一个例子在 Steem 区块链中，它包含三个硬编码的命名权限级别：拥有，活跃和发帖。 发帖权限就只能进行如投票和发帖的社交活动，而活跃权限可以做除了变更拥有之外的所有的事情。 拥有权限的意思是冷存储并且有能力做任何事。 The EOS.IO software generalizes this concept by allowing each account holder to define their own hierarchy as well as the grouping of actions.
+另一个例子在 Steem 区块链中，它包含三个硬编码的命名权限级别：拥有，活跃和发帖。 发帖权限就只能进行如投票和发帖的社交活动，而活跃权限可以做除了变更拥有之外的所有的事情。 拥有权限的意思是冷存储并且有能力做任何事。 EOS.IO软件概括了这个概念，允许每个帐户持有者定义他们自己的层次结构以及行为分组。
 
 ### 命名的消息处理群组
 
