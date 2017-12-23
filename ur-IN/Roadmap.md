@@ -22,7 +22,7 @@ SOS. 10 سافٹویئر کے کیی بنیادی معاہدے بے یھی وہ 
 
 ### مجازی آلہAPI (دان)
 
-Contracts are compiled to WebAssembly (WASM) and WASM must interface with the blockchain via a defined API. This API is what developers depend upon to build applications and be relatively stable before developers can really start to build on EOS.
+معاہدے ویب اسمبلی WASIM)) سے منسلک ھے اور ایک وضاحتی API کے زریعے بلاکچین کے ساتھ وعسم مواجہ چاہیے. This API is what developers depend upon to build applications and be relatively stable before developers can really start to build on EOS.
 
 ### RPC Interface (Arhag, Nathan)
 
