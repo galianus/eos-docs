@@ -186,7 +186,7 @@ EOS.IO 软件允许每个帐户定义从任意帐户的一个命名的消息处�
 
 #### 默认权限群组
 
-The EOS.IO technology also allows all accounts to have an "owner" group which can do everything, and an "active" group which can do everything except change the owner group. 所有其他的全新群组派生自“活动”群组。
+EOS.IO技术还允许所有帐户拥有一个可以做所有事情的“所有者”组，并且可以做任何事情但除了更改所有者组的“动态”组。 所有其他的全新群组派生自“活动”群组。
 
 #### 权限并行评估
 
@@ -198,7 +198,7 @@ The EOS.IO technology also allows all accounts to have an "owner" group which ca
 
 ## 带强制性延时的消息
 
-时间是安全中的一个关键组成部分。 在大多数情况下，一个私钥在没有被使用前都无从知晓它是否被偷窃。 当人们有需要密钥的应用在每天联网使用的电脑上运行时，基于时间的安全会更为重要。 EOS.IO 软件让应用开发者可以指明消息必须在被加到一个区块之前等待最小的时间间隙。 During this time they can be cancelled.
+时间是安全中的一个关键组成部分。 在大多数情况下，一个私钥在没有被使用前都无从知晓它是否被偷窃。 当人们有需要密钥的应用在每天联网使用的电脑上运行时，基于时间的安全会更为重要。 EOS.IO 软件让应用开发者可以指明消息必须在被加到一个区块之前等待最小的时间间隙。 在此期间，它们可以被取消。
 
 用户可以在消息广播出去后通过邮件或者文字消息的形式收到通知。 如果他们没有授权，那么他们可以使用帐户恢复流程来恢复帐户，并收回消息。
 
@@ -216,7 +216,7 @@ EOS.IO 软件提供给用户一种找回自己失窃密钥控制权的方式。 
 
 区块链共识取决于确定性 (可重现的) 的行为。 这意味着所有的并行计算必须是不能互斥或者具有其他锁特性的。 没有了锁就必须有一些方式可以确保所有的帐户只可以读取和写入他们自己的私有数据库。 这也意味着每个帐户处理消息是顺序的，而并发只能在帐户层面进行。
 
-In an EOS.IO software-based blockchain, it is the job of the block producer to organize message delivery into independent threads so that they can be evaluated in parallel. 每个帐户的状态由且只由发送给它的消息决定。 进度表由区块生产者输出并且会被确定性的执行，但是生成进度表的过程却不一定是确定性的。 这意味着区块生产者可以使用并发算法来调度交易。
+在基于EOS.IO软件的区块链中，块生产者的工作是将消息传递组织成独立的线程，以便可以并行评估它们。 每个帐户的状态由且只由发送给它的消息决定。 进度表由区块生产者输出并且会被确定性的执行，但是生成进度表的过程却不一定是确定性的。 这意味着区块生产者可以使用并发算法来调度交易。
 
 并行执行的一方面意味着当一个脚本生成了一个新的消息，它不会立即被发送，而被安排在下一个轮询中发送。 不能立马发出的原因是接受者可能在另一个线程中活跃的变更自己的状态。
 
@@ -265,7 +265,7 @@ In an EOS.IO software-based blockchain, it is the job of the block producer to o
 
 EOS.IO 软件并不能为区块生产生者为任何其他帐户送达的任何信息负责。 每个区块生产者要对计算的发杂读和处理一个消息的时间自己进行主观上的预测。 这同时适用于用户生成的和脚本自动生成的交易。
 
-On a launched blockchain adopting the EOS.IO software, at a network level all transactions are billed a fixed computational bandwidth cost regardless of whether it took .01ms or a full 10 ms to execute it. 然而，每个单独的区块生产者要通过自己的算法来计算资源的消耗。 当一个区块生产者断定一个交易或者帐户消耗了不相称的大量的计算资源时，他们可以在生成自己的区块时拒绝该交易；但是，如果其他区块生产者认为交易是有效的，他们就仍需要处理交易。
+在推出采用EOS.IO软件的区块链上，在网络层面上，所有交易都会收取固定的计算带宽成本，无论是花费0.01毫米还是花费10毫秒来执行的交易。 然而，每个单独的区块生产者要通过自己的算法来计算资源的消耗。 当一个区块生产者断定一个交易或者帐户消耗了不相称的大量的计算资源时，他们可以在生成自己的区块时拒绝该交易；但是，如果其他区块生产者认为交易是有效的，他们就仍需要处理交易。
 
 一般而言，只要一个区块生产者认为交易在资源使用限度内是有效的，那么其他区块生产者就也要接受，但可能交易传递给生产者就要花费 1 分钟。
 
@@ -275,9 +275,9 @@ On a launched blockchain adopting the EOS.IO software, at a network level all tr
 
 # Token 模型与资源使用
 
-**PLEASE NOTE: CRYPTOGRAPHIC TOKENS REFERRED TO IN THIS WHITE PAPER REFER TO CRYPTOGRAPHIC TOKENS ON A LAUNCHED BLOCKCHAIN THAT ADOPTS THE EOS.IO SOFTWARE. THEY DO NOT REFER TO THE ERC-20 COMPATIBLE TOKENS BEING DISTRIBUTED ON THE ETHEREUM BLOCKCHAIN IN CONNECTION WITH THE EOS TOKEN DISTRIBUTION.**
+**请注意：在本白皮书中提到的加密代币，是指采用EOS.IO软件创建的区块链上所用的加密代币。 而不是在以太坊区块链上分发的EOS代币发售所关联的ERC-20兼容代币.**
 
-All blockchains are resource constrained and require a system to prevent abuse. With a blockchain that uses EOS.IO software, there are three broad classes of resources that are consumed by applications:
+所有区块链都是资源受限的，需要建立一个系统来防止滥用。 通过使用EOS.IO的区块链，应用程序可以使用三大类资源：
 
 1. 带宽和日志存储 (磁盘)；
 2. 计算与计算储备 (中央处理器)；
@@ -291,7 +291,7 @@ All blockchains are resource constrained and require a system to prevent abuse. 
 
 区块生产者对外发布她们可用的带宽，计算能力和状态。 EOS.IO 允许帐户按比例消耗一个 3 天对赌合约中的可用资源。 举个例子，如果一个基于 EOS.IO 的区块链启动了，一个帐户持有所有 token 发行总量的 1%，那么帐号就具有使用 1% 状态存储空间的能力。
 
-Adopting the EOS.IO software on a launched blockchain means bandwidth and computational capacity are allocated on a fractional reserve basis because they are transient (unused capacity cannot be saved for future use). The algorithm used by EOS.IO software is similar to the algorithm used by Steem to rate-limit bandwidth usage.
+在已启动的区块链中采用EOS.IO软件意味着带宽和计算能力在部分保留基础上进行分配，因为它们是暂时的（未使用的容量不能保存以供将来使用）。 EOS.IO软件使用的算法类似于Steem用来限制带宽使用率的算法。
 
 ## 客观与主观的度量
 
