@@ -20,7 +20,7 @@ SOS. 10 سافٹویئر کے کیی بنیادی معاہدے بے یھی وہ 
 2. @stake _. مقفل ھوے EOS،ووٹنگ اور پرڈوسر انتخابات کا انتظام کرتا ہے
 3. system@-رابطہ کوڈ کی تازہ ترین معلومات پیغامات کا انتظام کرتا ھے
 
-### Virtual Machine API (Dan)
+### مجازی آلہAPI (دان)
 
 Contracts are compiled to WebAssembly (WASM) and WASM must interface with the blockchain via a defined API. This API is what developers depend upon to build applications and be relatively stable before developers can really start to build on EOS.
 
