@@ -18,7 +18,7 @@ SOS. 10 سافٹویئر کے کیی بنیادی معاہدے بے یھی وہ 
 
 1. @EOS_eos ٹوکن کو منتقل کرنے کا انتظام کر تا بے
 2. @stake _. مقفل ھوے EOS،ووٹنگ اور پرڈوسر انتخابات کا انتظام کرتا ہے
-3. @system - manages permissions, messages, and contact code updates
+3. system@-رابطہ کوڈ کی تازہ ترین معلومات پیغامات کا انتظام کرتا ھے
 
 ### Virtual Machine API (Dan)
 
