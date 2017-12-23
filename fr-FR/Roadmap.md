@@ -66,7 +66,7 @@ Au cours de cette phase, la plate-forme va subir des tests exhaustifs avec une c
 
 ### Développement d'exemples d'applications
 
-Example applications are critical to proving the platform provides the features required by real developers.
+D'exemples d'applications sont criticales pour prouver la plate-forme fournit les fonctionnalités requises par les vrais développeurs.
 
 ### Bounties for Successfully Attacking Network
 
