@@ -22,9 +22,9 @@ SOS. 10 سافٹویئر کے کیی بنیادی معاہدے بے یھی وہ 
 
 ### مجازی آلہAPI (دان)
 
-معاہدے ویب اسمبلی WASIM)) سے منسلک ھے اور ایک وضاحتی API کے زریعے بلاکچین کے ساتھ وعسم مواجہ چاہیے. This API is what developers depend upon to build applications and be relatively stable before developers can really start to build on EOS.
+معاہدے ویب اسمبلی WASIM)) سے منسلک ھے اور ایک وضاحتی API کے زریعے بلاکچین کے ساتھ وعسم مواجہ چاہیے. یہ وہAPIھے جس پر ڈیولپرس منحصر ہے اپلیکیشنز بنانے کے لیے اورڈیولپرز واقعی EOS پر استوار کرنے کا آغاز کر سکتے ہیں جو کہ انحصار ھے.
 
-### RPC Interface (Arhag, Nathan)
+### RPC interface (ارھاگ اور ناتھن)
 
 A simple JSON RPC over HTTP interface will be provided that enables developers to broadcast transactions and query application state. This is critical for both publishing and interacting with test applications.
 
