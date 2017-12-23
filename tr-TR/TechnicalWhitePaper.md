@@ -180,7 +180,7 @@ EOS.IO yazılımı, her hesabın herhangi bir hesabın, Adlandırılmış Mesaj 
 
 **@ayse**'den **@aliye** **Action** tipinde mesaj gönderirken, EOS.IO yazılımı önce **@ayse**'nin, **@ali.groupa.subgroup.Action** için bir izin eşlemesi var mı diye kontrol eder. **@ali.groupa.subgroup** için hiçbir şey bulunamazsa **@ali.groupa** için kontrol yapar yine bulamazsa son olarak **@ali** için bir eşleme kontrolü yapar. Daha fazla eşleşme bulunmazsa, varsayılan eşleme **@ayse.active** olarak isimlendirilmiş izin grubu olacaktır.
 
-Bir eşleme belirlendikten sonra imzalama yetkisi, eşiğin çoklu imza süreci ve belirtilen izinle ilişkili yetkiyi kullanarak doğrulanır. Bu başarısız olursa, bir üst izine ve sonuçta, sahiplik iznine **@ayse.owner** geçilir.
+Bir eşleme belirlendikten sonra; imzalama yetkisi, çoklu imza eşiği süreci ve belirtilen izinle ilişkili yetki kullanarak doğrulama yapılır. Bu başarısız olursa, bir üst izine ve sonuçta, sahiplik iznine **@ayse.owner** geçilir.
 
 <img align="center" src="http://eos.io/wpimg/diagram2grayscale2.jpg" width="845.85px" height="500px" />
 
