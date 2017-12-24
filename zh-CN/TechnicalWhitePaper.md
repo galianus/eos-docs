@@ -311,7 +311,7 @@ EOS.IO 软件并不能为区块生产生者为任何其他帐户送达的任何�
 
 ## 分离交易成本与 Token 价值
 
-EOS.IO 软件的一个主要优点就是应用可用的带宽完全独立于 token 的价格。 如果应用程序所有者在采用EOS.IO软件的区块链上持有相关数量的代币，则应用程序可以在固定状态和带宽使用情况下无限期地运行。 在这种情况下，开发者和用户不会受到代币市场任何价格波动的影响，因此不依赖于价格的反馈。 In other words, a blockchain that adopts the EOS.IO software enables block producers to naturally increase bandwidth, computation, and storage available per token independent of the token's value.
+EOS.IO 软件的一个主要优点就是应用可用的带宽完全独立于 token 的价格。 如果应用程序所有者在采用EOS.IO软件的区块链上持有相关数量的代币，则应用程序可以在固定状态和带宽使用情况下无限期地运行。 在这种情况下，开发者和用户不会受到代币市场任何价格波动的影响，因此不依赖于价格的反馈。 换句话说，采用EOS.IO软件的区块链使区块生产者能够自然地增加每个标识的带宽，计算和存储空间，而不受代币价值的影响。
 
 使用EOS.IO软件的区块链每次产生区块时都会奖励区块生产者代币。 代币的值将影响其能购买的带宽、存储和计算资源；这一模型会自然的利用代币值的上涨来增加网络的性能。
 
@@ -323,19 +323,19 @@ EOS.IO 软件的一个主要优点就是应用可用的带宽完全独立于 tok
 
 ## 块奖励
 
-A blockchain that adopts the EOS.IO software will award new tokens to a block producer every time a block is produced. In these circumstances, the number of tokens created is determined by the median of the desired pay published by all block producers. EOS.IO 软件可以配置限定生产者回报的上限从而确保 token 的每年增长比例不会超过 5%。
+采用EOS.IO软件的区块链将在每次创建块时向块生产者授予新的代币。 在这种情况下，创建的代币数量由所有块生产者公布的期望收益的中位数决定。 EOS.IO 软件可以配置限定生产者回报的上限从而确保 token 的每年增长比例不会超过 5%。
 
 ## 社区效益应用
 
-In addition to electing block producers, pursuant to a blockchain based on the EOS.IO software, users can elect 3 community benefit applications also known as smart contracts. 这三个应用将接收至多一个按照配置百分比对应的 token 年供应量减去每年提供给区块生产者的 token 量。 这些智能合约将按照每个应用接收到的 token 持有者的票的比例对应的 token。 这些应用或者智能合约可以被 token 持有者选出的新的应用或智能合约所替代。
+除了选择区块生产者之外，根据基于EOS.IO软件的区块链，用户可以选择3个社区利益应用程序，也称为智能合约。 这三个应用将接收至多一个按照配置百分比对应的 token 年供应量减去每年提供给区块生产者的 token 量。 这些智能合约将按照每个应用接收到的 token 持有者的票的比例对应的 token。 这些应用或者智能合约可以被 token 持有者选出的新的应用或智能合约所替代。
 
 # 治理
 
-治理是人们在主观问题上达成共识的过程，而这无法完全用软件算法来捕获。 An EOS.IO software-based blockchain implements a governance process that efficiently directs the existing influence of block producers. 没有了定义好的治理流程，之前的区块链依赖临时的、非正式和常常充满争议的方式治理，直接导致不可预知的结果。
+治理是人们在主观问题上达成共识的过程，而这无法完全用软件算法来捕获。 基于EOS.IO软件的区块链实现了一个有效地指导区块生产者现有影响的治理过程。 没有了定义好的治理流程，之前的区块链依赖临时的、非正式和常常充满争议的方式治理，直接导致不可预知的结果。
 
-A blockchain based on the EOS.IO software recognizes that power originates with the token holders who delegate that power to the block producers. 区块生产者被授予有限的检查权威来冻结帐户，升级有缺陷的应用程序，对底层协议提出硬分叉的改进建议。
+基于EOS.IO软件的区块链认识到权力来源于权力拥有者，他们将权力委托给区块生产者。 区块生产者被授予有限的检查权威来冻结帐户，升级有缺陷的应用程序，对底层协议提出硬分叉的改进建议。
 
-Embedded into the EOS.IO software is the election of block producers. 在对区块链没有做任何变更之前他们必须认可它。 如果区块生产者拒绝 token 持有者所预期的变更他们就会被投出。 如果区块生产者未经 token 持有者的授权作出变更，其他的非生产、完整验证 (交易所等) 会拒绝这些变更。
+EOS.IO 软件的一部分是区块生产者的选举制。 在对区块链没有做任何变更之前他们必须认可它。 如果区块生产者拒绝 token 持有者所预期的变更他们就会被投出。 如果区块生产者未经 token 持有者的授权作出变更，其他的非生产、完整验证 (交易所等) 会拒绝这些变更。
 
 ## 冻结帐户
 
