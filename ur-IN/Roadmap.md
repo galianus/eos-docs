@@ -32,7 +32,7 @@ SOS. 10 سافٹویئر کے کیی بنیادی معاہدے بے یھی وہ 
 
 کمانڈ لائن آلہ RPC انٹرفیس کے ساتھ ڑیولپرز تعمیر ماحول میں شمولیت کی سھولیت فراہم ھے.
 
-### Basic Developer Documentation (Josh)
+### بنیادی تعمیراتی دستاویزات ( جوش)
 
 Documents that teach developers how to get started with building on EOS.IO blockchains. This includes documentations of the WASM API, RPC Interface, and Command Line Tools.
 
