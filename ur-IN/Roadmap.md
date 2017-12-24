@@ -48,7 +48,7 @@ Documents that teach developers how to get started with building on EOS.IO block
 
 WASM کوڈ کی صفائی کے لیے سیال نقطہ کاروایوں اور لا محدود تکمے جیسے غیر درمیان رویے کے لیے چیک کرنے کے لیے اس کی ضرورت ہے.
 
-### Resource Usage Tracking & Rate Limiting (Arhag)
+### وسائل استعمال کرنے کا کام؛ خرچہ محدود کرنے کا کام (ارحاگ)
 
 To prevent abuse the resource monitoring and usage tracking rate limits users according to staked EOS.
 
