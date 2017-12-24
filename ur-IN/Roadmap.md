@@ -26,9 +26,9 @@ SOS. 10 سافٹویئر کے کیی بنیادی معاہدے بے یھی وہ 
 
 ### RPC interface (ارھاگ اور ناتھن)
 
-ڈیولپرس کے لین دین کو نشر اور اپلیکیشن کا صورتحال طلب کرنے کے لیے ایک سادہ JASON HTTP RPC انٹرفیس اس کو قابل عمل بنانے کے لیے ضروری ہے. This is critical for both publishing and interacting with test applications.
+ڈیولپرس کے لین دین کو نشر اور اپلیکیشن کا صورتحال طلب کرنے کے لیے ایک سادہ JASON HTTP RPC انٹرفیس اس کو قابل عمل بنانے کے لیے ضروری ہے. اپلیکیشنز کو شایع کرنے اور ان کا ٹیسٹ کرنے کے لیے یہ بھت ھی اھم ھے.
 
-### Command line Tools (Arhag)
+### کمانڈ لائن آلہ (ارھاگ)
 
 Command line tools facilitate integrating the RPC interface with developer build environments.
 
