@@ -73,7 +73,7 @@ Copyright © 2017 block.one
 
 而一些区块链平台努力的支持可运作的去中心化应用，具体的应用比如 BitShares 去中心化交易所 (2014) 和 Steem 社交媒体平台 (2016) 已经成为每天被成千上万活跃用户重度使用的区块链。 他们成功的把性能提升到能每秒处理上千笔交易，延迟降低在1.5s以内，消除手续费，提供堪比已经存在的中心化服务的用户体验。
 
-现有的区块链平台交易费用高昂，计算能力有限，阻碍了区块链技术的广泛应用。
+现有的区块链平台交易费用高昂，计算能力有限，这阻碍了区块链技术的广泛应用。
 
 # 区块链应用的要求
 
@@ -385,7 +385,7 @@ EOS.IO 首先会是一个平台用于协同用户间认证消息的传递。 脚
 
 ## 分离授权与应用
 
-To maximize parallelization opportunities and minimize the computational debt associated with regenerating application state from the transaction log, EOS.IO software separates validation logic into three sections:
+为了最大限度地实现并行机会并最大限度地减少与事务日志中重新生成应用程序状态相关的计算债务，EOS.IO软件将验证逻辑分为三部分：
 
 1. 验证消息是否内部一致；
 2. 验证所有前提条件是否有效；
@@ -397,7 +397,7 @@ To maximize parallelization opportunities and minimize the computational debt as
 
 ## 虚拟机独立架构
 
-It is the intention of the EOS.IO software-based blockchain that multiple virtual machines can be supported and new virtual machines added over time as necessary. 因此，本文并不讨论任何特定的语言或者虚拟机。 That said, there are two virtual machines that are currently being evaluated for use with an EOS.IO software-based blockchain.
+基于EOS.IO软件的区块链旨在支持多个虚拟机，并根据需要随时添加新的虚拟机。 因此，本文并不讨论任何特定的语言或者虚拟机。 也就是说，目前有两个虚拟机正在使用基于EOS.IO软件的区块链进行评估。
 
 ### Web 组建 (WASM)
 
@@ -407,7 +407,7 @@ It is the intention of the EOS.IO software-based blockchain that multiple virtua
 
 ### 以太访虚拟机 (EVM)
 
-这个虚拟机已经被众多已有的智能合约所采用并且可以通过适配应用与 EOS.IO 区块链中。 It is conceivable that EVM contracts could be run within their own sandbox inside an EOS.IO software-based blockchain and that with some adaptation EVM contracts could communicate with other EOS.IO software blockchain applications.
+这个虚拟机已经被众多已有的智能合约所采用并且可以通过适配应用与 EOS.IO 区块链中。 可以想象的是，EVM合约可以在基于EOS.IO软件的区块链内的自己的沙盒中运行，并且通过一些适配，EVM合约可以与其他EOS.IO软件区块链应用程序进行通信。
 
 # 跨链通信
 
@@ -433,7 +433,7 @@ EOS.IO 软件使得任何一个人只要他拥有包含交易所对应区块之�
 
 ## 跨链通信的延时
 
-当与外部区块链进行通信时，区块生产者必须等待直到 100% 确信一个交易已经被另一个区块链确认为不可逆后才会接收它成为一个有效的输入。 Using an EOS.IO software-based blockchain and DPOS with 3 second blocks and 21 producers, this takes approximately 45 seconds. If a chain's block producers do not wait for irreversibility it would be like an exchange accepting a deposit that was later reversed and could impact the validity of the blockchain's consensus.
+当与外部区块链进行通信时，区块生产者必须等待直到 100% 确信一个交易已经被另一个区块链确认为不可逆后才会接收它成为一个有效的输入。 使用基于EOS.IO软件的区块链，DPOS3秒一个区块，21个生产者，大约需要45秒。 如果一个链的区块生产者不等待不可逆确认，那么就像一家交易所接受一笔存款，后来又被逆转，并可能影响到区块链共识的有效性。
 
 ## 完备性证明
 
