@@ -30,7 +30,7 @@ SOS. 10 سافٹویئر کے کیی بنیادی معاہدے بے یھی وہ 
 
 ### کمانڈ لائن آلہ (ارھاگ)
 
-Command line tools facilitate integrating the RPC interface with developer build environments.
+کمانڈ لائن آلہ RPC انٹرفیس کے ساتھ ڑیولپرز تعمیر ماحول میں شمولیت کی سھولیت فراہم ھے.
 
 ### Basic Developer Documentation (Josh)
 
