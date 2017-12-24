@@ -26,7 +26,7 @@ SOS. 10 سافٹویئر کے کیی بنیادی معاہدے بے یھی وہ 
 
 ### RPC interface (ارھاگ اور ناتھن)
 
-A simple JSON RPC over HTTP interface will be provided that enables developers to broadcast transactions and query application state. This is critical for both publishing and interacting with test applications.
+ڈیولپرس کے لین دین کو نشر اور اپلیکیشن کا صورتحال طلب کرنے کے لیے ایک سادہ JASON HTTP RPC انٹرفیس اس کو قابل عمل بنانے کے لیے ضروری ہے. This is critical for both publishing and interacting with test applications.
 
 ### Command line Tools (Arhag)
 
