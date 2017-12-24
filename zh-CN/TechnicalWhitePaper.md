@@ -307,11 +307,11 @@ EOS.IO 软件并不能为区块生产生者为任何其他帐户送达的任何�
 
 ## 委托能力
 
-A holder of tokens on a blockchain launched adopting the EOS.IO software who may not have an immediate need to consume all or part of the available bandwidth, can give or rent such unconsumed bandwidth to others; the block producers running EOS.IO software on such blockchain will recognize this delegation of capacity and allocate bandwidth accordingly.
+区块链上的代币持有者推出采用EOS.IO软件，可能不会立即需要消耗全部或部分可用带宽，可以向其他用户提供或租用这些未消耗的带宽; 在这样的区块链上运行EOS.IO软件的区块生产者将识别到这种容量授权并相应地分配带宽。
 
 ## 分离交易成本与 Token 价值
 
-EOS.IO 软件的一个主要优点就是应用可用的带宽完全独立于 token 的价格。 If an application owner holds a relevant number of tokens on a blockchain adopting EOS.IO software, then the application can run indefinitely within a fixed state and bandwidth usage. In such case, developers and users are unaffected from any price volatility in the token market and therefore not reliant on a price feed. In other words, a blockchain that adopts the EOS.IO software enables block producers to naturally increase bandwidth, computation, and storage available per token independent of the token's value.
+EOS.IO 软件的一个主要优点就是应用可用的带宽完全独立于 token 的价格。 如果应用程序所有者在采用EOS.IO软件的区块链上持有相关数量的代币，则应用程序可以在固定状态和带宽使用情况下无限期地运行。 在这种情况下，开发者和用户不会受到代币市场任何价格波动的影响，因此不依赖于价格的反馈。 In other words, a blockchain that adopts the EOS.IO software enables block producers to naturally increase bandwidth, computation, and storage available per token independent of the token's value.
 
 使用EOS.IO软件的区块链每次产生区块时都会奖励区块生产者代币。 代币的值将影响其能购买的带宽、存储和计算资源；这一模型会自然的利用代币值的上涨来增加网络的性能。
 
