@@ -42,11 +42,11 @@ Documents that teach developers how to get started with building on EOS.IO block
 
 ### P2P نیٹورک کوڈ (فل)
 
-This is a plugin that is responsible for synchronizing the blockchain state between two standalone nodes.
+یہ دو الگ الگ گھروں کے درمیان بلاکچین کی شکل کو ھم وقت سازی کے لیے ایک پلگ ان زمہ دار ہیں.
 
-### WASM Sanitation & CPU Sandboxing (Brian)
+### WASM صفائی اور حفظان؛ سینڈ بکسنگ (دماغ)
 
-The WASM code needs to be sanitized to check for non-deterministic behavior such as floating point operations and infinite loops.
+WASM کوڈ کی صفائی کے لیے سیال نقطہ کاروایوں اور لا محدود تکمے جیسے غیر درمیان رویے کے لیے چیک کرنے کے لیے اس کی ضرورت ہے.
 
 ### Resource Usage Tracking & Rate Limiting (Arhag)
 
