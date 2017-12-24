@@ -341,11 +341,11 @@ EOS.IO 软件的一部分是区块生产者的选举制。 在对区块链没有
 
 有时一个智能合约的行为处于一种一场或不可预测的状态并且无法按照预期执行；另一些时候一个应用或帐户也许发现了一个可以销毁不可想像数量资源的漏洞。 当这些问题不可避免的发生时，区块生产者有能力来扭转这一局面。
 
-所有区块链上的区块生产者都有能力来决定哪些交易被加到区块中，这给了他们冻结帐户的能力。 A blockchain using EOS.IO software formalizes this authority by subjecting the process of freezing an account to a 17/21 vote of active producers. 如果生产者滥用权利他们会被投出，而对应冻结帐户就将解冻。
+所有区块链上的区块生产者都有能力来决定哪些交易被加到区块中，这给了他们冻结帐户的能力。 EOS.IO 软件通过遵从活跃生产者投出 17/21 票形这一方式落实冻结一个帐户的权威。 如果生产者滥用权利他们会被投出，而对应冻结帐户就将解冻。
 
 ## 更改帐户代码
 
-When all else fails and an "unstoppable application" acts in an unpredictable manner, a blockchain using EOS.IO software allows the block producers to replace the account's code without hard forking the entire blockchain. 与冻结一个帐户类似，更改帐户代码需要 17/21 这样的生产者票形。
+如果这一些手段失败了，一个“不可阻挡的应用程序”以不可预知的方式发挥作用时，使用EOS.IO软件的区块链就可以让区块生产者代替账户的代码，而不会阻塞整个区块链。 与冻结一个帐户类似，更改帐户代码需要 17/21 这样的生产者票形。
 
 ## 宪法
 
@@ -355,7 +355,7 @@ EOS.IO 应用使得区块链创建了一个点对点的服务条款协议或者�
 
 ## 升级协议 & 宪法
 
-The EOS.IO software defines a process by which the protocol as defined by the canonical source code and its constitution, can be updated using the following process:
+EOS.IO软件定义了一个过程，通过该过程可以使用以下过程更新规范源代码定义的协议及其构成：
 
 1. 区块生产者对宪法提出改建意见并获得 17/21 批准。
 2. 区块生产者持续 17/21 品准连续 30 天。
