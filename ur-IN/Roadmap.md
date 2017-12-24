@@ -40,7 +40,7 @@ Documents that teach developers how to get started with building on EOS.IO block
 
 پھلا مرحلہ میں سب کچھ صرف ڈیولپرس کے اپنے ضابطہ سے چلتا ہے ایک قابل قدر ماحول مان لیا گیا ہے اس سے پہلے کہ ایک ٹیسٹ کے نیٹ ورک کو تاینات کیا جا سکتا کھی اضافی خصوصیات نافذ اور ٹیسٹ کرنے کی ضرورت ہے.
 
-### P2P Network Code (Phil)
+### P2P نیٹورک کوڈ (فل)
 
 This is a plugin that is responsible for synchronizing the blockchain state between two standalone nodes.
 
