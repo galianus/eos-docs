@@ -36,9 +36,9 @@ SOS. 10 سافٹویئر کے کیی بنیادی معاہدے بے یھی وہ 
 
 Documents that teach developers how to get started with building on EOS.IO blockchains. This includes documentations of the WASM API, RPC Interface, and Command Line Tools.
 
-# Phase 2 - Minimal Viable Test Network - Fall 2017
+# دوسرا مرحلہ کم از کم قابل قبول نیٹورک - fall 2017
 
-Everything in Phase 1 assumes a trusted environment that only runs the developer's own code. Before a test network can be deployed several additional features need to be implemented and tested.
+پھلا مرحلہ میں سب کچھ صرف ڈیولپرس کے اپنے ضابطہ سے چلتا ہے ایک قابل قدر ماحول مان لیا گیا ہے اس سے پہلے کہ ایک ٹیسٹ کے نیٹ ورک کو تاینات کیا جا سکتا کھی اضافی خصوصیات نافذ اور ٹیسٹ کرنے کی ضرورت ہے.
 
 ### P2P Network Code (Phil)
 
