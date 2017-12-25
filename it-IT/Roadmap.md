@@ -46,9 +46,9 @@ Questo plugin è responsabile della sincronizzazione dello stato della blockchai
 
 ### WASM Sanitation & CPU Sandboxing (Brian)
 
-The WASM code needs to be sanitized to check for non-deterministic behavior such as floating point operations and infinite loops.
+Il codice WASM dev'essere ripulito per poter verificare comportamenti non deterministici come operazioni in virgola mobile (FLOP - floating point operations) e loop infiniti.
 
-### Resource Usage Tracking & Rate Limiting (Arhag)
+### Monitoraggio Dell'Uso delle Risorse & Rate Limiting (Arhag)
 
 To prevent abuse the resource monitoring and usage tracking rate limits users according to staked EOS.
 
