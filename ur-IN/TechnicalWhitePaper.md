@@ -1,4 +1,4 @@
-# EOS.IO Technical White Paper
+# EOS. I تکنیکی سفیر کاغذ
 
 **June 26, 2017**
 
