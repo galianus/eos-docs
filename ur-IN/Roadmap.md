@@ -62,11 +62,11 @@ WASM کوڈ کی صفائی کے لیے سیال نقطہ کاروایوں او�
 
 # تیسرا مرحلہ - جانچ اور amp سلامتی کا آڈٹ-2017،موسم بہار،موسم خوشگوار سرما 2018
 
-During this phase the platform will undergo heavy testing with a focus on finding security issues and bug. At the end of Phase 3 version 1.0 will be tagged.
+اس مرحلے کے دوران سلامتی کے مسائل اور مسلوں کی تلاش پر پوری توجہ کے ساتھ بھاری جانچ کے راستے سے گزرنا ھو گا تیسرے مرحلے کے آخر میں ورجن 1.0ٹیگ کیا جائے گا -.
 
-### Develop Example Applications
+### مسالی دستاویزات بنانا -
 
-Example applications are critical to proving the platform provides the features required by real developers.
+مسالی دستاویزات ڈیولپرس کی طرف حقیقی خصوصیات سے آشناس کراتا ھے جو کافی اھمیت کے حامل ہے -.
 
 ### Bounties for Successfully Attacking Network
 
