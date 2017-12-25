@@ -81,9 +81,9 @@ In order to gain widespread use, applications on the blockchain require a platfo
 
 ## Support Millions of Users
 
-Disrupting businesses such as Ebay, Uber, AirBnB, and Facebook, require blockchain technology capable of handling tens of millions of active daily users. In certain cases, applications may not work unless a critical mass of users is reached and therefore a platform that can handle mass number of users is paramount.
+سوشل نیٹ ورکنگ ویب سائٹ جیسے ای بے، عبر، AirBnB, اور فیس بک کا کاروبار تباہ کرنے کے لیے، بلاکچین کے زیر اہتمام لاکھوں لوگ اس کا استعمال کرتے ہیں. کچھ معاملات میں اپلیکیشن تب تک کام نہیں کرتا جب تک صارفین کی ایک مخصوص تعداد نا آجائے بھت؛زیادہ اھمیت کا حامل ہے.
 
-## Free Usage
+## مفت استعمال
 
 Application developers need the flexibility to offer users free services; users should not have to pay in order to use the platform or benefit from its services. A blockchain platform that is free to use for users will likely gain more widespread adoption. Developers and businesses can then create effective monetization strategies.
 
