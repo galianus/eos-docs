@@ -6,7 +6,7 @@ Questo documento delinea un piano di sviluppo di alto livello e sarà aggiornato
 
 # Fase 1 - Ambiente di Testing Minimo Sostenibile - Estate 2017
 
-The goal of this phase is to establish the APIs that developers will require to start building and testing applications on EOS.IO. Affinché gli sviluppatori possano iniziare a testare le loro applicazioni, sarà necessario implementare quanto segue:
+L'obbiettivo di questa fase è di stabilire le API di cui gli sviluppatori avranno bisogno per iniziare a costruire e testare le applicazioni su EOS.IO. Affinché gli sviluppatori possano iniziare a testare le loro applicazioni, sarà necessario implementare quanto segue:
 
 ### Nodo Autonomo (Dan & Nathan)
 
@@ -22,7 +22,7 @@ Il software EOS.IO ha una serie di contratti nativi. Questi sono contratti che g
 
 ### API della Macchina Virtuale (Dan)
 
-I contratti sono compilati in WebAssembly (WASM) e WASM deve interfacciarsi con la blockchain tramite un'API definita. This API is what developers depend upon to build applications and be relatively stable before developers can really start to build on EOS.
+I contratti sono compilati in WebAssembly (WASM) e WASM deve interfacciarsi con la blockchain tramite un'API definita. Questa API è ciò su cui gli sviluppatori dipendono per creare applicazioni e renderle relativamente stabili prima che essi possano realmente iniziare a sviluppare su EOS.
 
 ### Interfaccia RPC (Arhag, Nathan)
 
