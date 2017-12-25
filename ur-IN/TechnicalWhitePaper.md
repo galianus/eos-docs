@@ -71,7 +71,7 @@
 
 بلاکچین تکنیک bitcoin رقم کے ساتھ سال 2008 میں متعارف کی گئی، اور اس کے بعد تاجروں اور ڈیولپرس نے تکنیک کو عام کرنے میں اور تمام بلاکچین کو ایک ہی راستہ لانے کے لیے اپنا تعاون بخوبی دیا ہے.
 
-While a number of blockchain platforms have struggled to support functional decentralized applications, application specific blockchains such as the BitShares decentralized exchange (2014) and Steem social media platform (2016) have become heavily used blockchains with tens of thousands of daily active users. They have achieved this by increasing performance to thousands of transactions per second, reducing latency to 1.5 seconds, eliminating fees, and providing a user experience similar to those currently provided by existing centralized services.
+وھی بلاکچین پلیٹ فارم کی ایک بڑی تعداد نے فنکشنل ڈیسنٹرالایزڈ اپلیکیشنز کے تعاون میں کافی جدوجہد کی، جبکہ مخصوص بلاکچین اپلیکیشنز جیسے کہ بٹشیر ڈیسنٹرالایزڈ ایکسچینج 2014 اور سٹیم سوشل میڈیا پلیٹفارم 2016 بھت زیادہ استعمال ہونے والی بلاکچین بن گیی ھے جس کا استعمال روزانہ ھزاروں صارف کرتے ہیں. They have achieved this by increasing performance to thousands of transactions per second, reducing latency to 1.5 seconds, eliminating fees, and providing a user experience similar to those currently provided by existing centralized services.
 
 Existing blockchain platforms are burdened by large fees and limited computational capacity that prevent widespread blockchain adoption.
 
