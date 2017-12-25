@@ -4,11 +4,11 @@
 
 **خلاصہ <0\> EOS. IO سوفٹویر ایک نیا پیمانہ کاری بلاکچین کو متعارف کرتا ہے جو ڈیسنٹرالایزڈ اپلیکیشنز کو عمودی اور افقی سکیلنگ کے لیے معیاری بناتا ہے -. یہ اپلیکیشن جس پر ڈیولپ کر سکتے ھے ایک آپریٹنگ سسٹم کی طرح تعمیر کی تشکیل کی طرف سے خاصل ھوتا ھے -. یہ سافٹویئر فراہم کرتا ھے اکاؤنٹ، توسیق کاری، ڈیٹابیس، ایسنچورنس، ابلاغ اور اپلیکیشنز کے سینکڑوں کروڑ CPU کلسٹرس فراہم کرتا ہے -. بنای گیی تکنیک ایک بلاکچین فن تعمیر ھے جو کروڑوں کا لین دین فی سیکنڈ کرتا ھے، صارف کا فیس ختم کرتا ہے اور ڈیسنٹرالایزڈ اپلیکیشنز کی فوری اور آسان ڈیپلایمنٹ کرتا ہے -.</p> 
 
-**مہربانی کر کے یاد رہے:اس سفید کاغذ میں جو کرپٹوگرافک ٹوکن ھے وہ کرپٹوگرافک ٹوکنز دراصل EOS. IO سوفٹویر سے منسلک ہے -. THEY DO NOT REFER TO THE ERC-20 COMPATIBLE TOKENS BEING DISTRIBUTED ON THE ETHEREUM BLOCKCHAIN IN CONNECTION WITH THE EOS TOKEN DISTRIBUTION.**
+**مہربانی کر کے یاد رہے:اس سفید کاغذ میں جو کرپٹوگرافک ٹوکن ھے وہ کرپٹوگرافک ٹوکنز دراصل EOS. IO سوفٹویر سے منسلک ہے -. ان کا تعلق ERC-20 ٹوکنز کے ساتھ نہیں ھے اتھیریم بلاکچین EOS ٹوکن تقسیم کے حوالے تقسیم ھو نے کی وجہ سے ھوتا ھے.**
 
-Copyright © 2017 block.one
+کاپیرایٹ © 2017 پھلا بلاگ
 
-Without permission, anyone may use, reproduce or distribute any material in this white paper for non-commercial and educational use (i.e., other than for a fee or for commercial purposes) provided that the original source and the applicable copyright notice are cited.
+اس سفید کاغذ پر بغیر کسی اجازت کے کوئی بھی اس کا استعمال، اس کی تقسیم غیر تجارتی کام یا تعلیماتی مقاصد کے استعمال میں لا سکتے ہیں بشرطیکہ اصل زرایع اور کابل اطلاق کاپی رائیٹ کا حوالہ دیا گیا ھو -.
 
 **DISCLAIMER:** This EOS.IO Technical White Paper is for information purposes only. block.one does not guarantee the accuracy of or the conclusions reached in this white paper, and this white paper is provided “as is”. block.one does not make and expressly disclaims all representations and warranties, express, implied, statutory or otherwise, whatsoever, including, but not limited to: (i) warranties of merchantability, fitness for a particular purpose, suitability, usage, title or noninfringement; (ii) that the contents of this white paper are free from error; and (iii) that such contents will not infringe third-party rights. block.one and its affiliates shall have no liability for damages of any kind arising out of the use, reference to, or reliance on this white paper or any of the content contained herein, even if advised of the possibility of such damages. In no event will block.one or its affiliates be liable to any person or entity for any damages, losses, liabilities, costs or expenses of any kind, whether direct or indirect, consequential, compensatory, incidental, actual, exemplary, punitive or special for the use of, reference to, or reliance on this white paper or any of the content contained herein, including, without limitation, any loss of business, revenues, profits, data, use, goodwill or other intangible losses.
 
