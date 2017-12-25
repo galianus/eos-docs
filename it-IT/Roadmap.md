@@ -4,7 +4,7 @@ Questo documento delinea un piano di sviluppo di alto livello e sarà aggiornato
 
 ***L'intero contenuto del documento è attualmente sotto forma di bozza e a solo scopo informativo e potrà essere soggetto a variazioni. block.one non garantisce l'accuratezza delle informazioni contenute nella roadmap, inoltre le informazioni vengono fornite "così come sono" senza dichiarazioni o garanzie, esplicite o implicite.***
 
-# Fase 1 - Ambiente di Testing Minimo Sostenibile - Estate 2017
+# Fase 1 - Ambiente di Testing Sostenibile - Estate 2017
 
 L'obbiettivo di questa fase è di stabilire le API di cui gli sviluppatori avranno bisogno per iniziare a costruire e testare le applicazioni su EOS.IO. Affinché gli sviluppatori possano iniziare a testare le loro applicazioni, sarà necessario implementare quanto segue:
 
@@ -34,9 +34,9 @@ Gli strumenti a riga di comando facilitano l'integrazione dell'interfaccia RPC c
 
 ### Documentazione di Base per Sviluppatori (Josh)
 
-Documents that teach developers how to get started with building on EOS.IO blockchains. This includes documentations of the WASM API, RPC Interface, and Command Line Tools.
+Documenti che istruiscono gli sviluppatori su come iniziare la procedura di sviluppo per la blockchain di EOS.IO. Ciò include documentazioni dell'API WASM, dell'interfaccia RPC e di strumenti a riga di comando (c.d. Command Line Tools)
 
-# Phase 2 - Minimal Viable Test Network - Fall 2017
+# Fase 2 - Test Network Sostenibile - Autunno 2017 
 
 Everything in Phase 1 assumes a trusted environment that only runs the developer's own code. Before a test network can be deployed several additional features need to be implemented and tested.
 
