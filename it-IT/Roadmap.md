@@ -38,11 +38,11 @@ Documenti che istruiscono gli sviluppatori su come iniziare la procedura di svil
 
 # Fase 2 - Test Network Sostenibile - Autunno 2017 
 
-Everything in Phase 1 assumes a trusted environment that only runs the developer's own code. Before a test network can be deployed several additional features need to be implemented and tested.
+Tutta la Fase 1 presuppone un ambiente affidabile che esegue solo il codice dello sviluppatore. Prima che un network di test possa essere implementato, è necessario implementare e testare diverse funzionalità aggiuntive.
 
-### P2P Network Code (Phil)
+### Codice di Rete P2P (Phill)
 
-This is a plugin that is responsible for synchronizing the blockchain state between two standalone nodes.
+Questo plugin è responsabile della sincronizzazione dello stato della blockchain tra due nodi autonomi.
 
 ### WASM Sanitation & CPU Sandboxing (Brian)
 
