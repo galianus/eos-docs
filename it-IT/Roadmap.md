@@ -2,7 +2,7 @@
 
 Questo documento delinea un piano di sviluppo di alto livello e sarà aggiornato in considerazione dei progressi compiuti verso la versione 1.0. Va notato che questa roadmap è da applicarsi esclusivamente al software della blockchain e non ad altri strumenti e risorse utili come portafogli e esploratori di blocchi (c.d. block explorers) che avranno i propri team e le proprie roadmap dedicate una volta raggiunto il completamento della Fase 1.
 
-***Everything contained in this document is in draft form and subject to change at any time and provided for information purposes only. block.one does not guarantee the accuracy of the information contained in this roadmap and the information is provided “as is” with no representations or warranties, express or implied.***
+***L'intero contenuto del documento è attualmente sotto forma di bozza e a solo scopo informativo e potrà essere soggetto a variazioni. block.one does not guarantee the accuracy of the information contained in this roadmap and the information is provided “as is” with no representations or warranties, express or implied.***
 
 # Phase 1 - Minimal Viable Testing Environment - Summer 2017
 
