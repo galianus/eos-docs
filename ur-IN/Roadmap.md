@@ -60,7 +60,7 @@ WASM کوڈ کی صفائی کے لیے سیال نقطہ کاروایوں او�
 
 اس فیچر کا کام مارکلی لین دین کی ھاشنگ اورتوسیق کا دھیان رکھنا ہے -.
 
-# Phase 3 - Testing & Security Audits - Winter 2017, Spring 2018
+# تیسرا مرحلہ - جانچ اور amp سلامتی کا آڈٹ-2017،موسم بہار،موسم خوشگوار سرما 2018
 
 During this phase the platform will undergo heavy testing with a focus on finding security issues and bug. At the end of Phase 3 version 1.0 will be tagged.
 
