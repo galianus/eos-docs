@@ -164,11 +164,11 @@ Dùng EOS.IO, các tài khoản có thể định nghĩa các mức độ cấp 
 
 Một ví dụ khác là blockchain Steem mà ở đó có 3 cấp độ cấp phép được đặt tên: chủ sở hữu, chủ động, và phát tin. Cấp độ "phát tin" có thể chỉ thực hiện các hoạt động cộng đồng như là bầu cử và phát tin, trong khi "chủ động" có thể làm mọi thứ trừ việc thay đổi người chủ sở hữu. Cấp độ "chủ sở hữu" được định nghĩa là bộ lưu trữ nguội và có thể làm mọi thứ. EOS.IO khái quát hoá khái niệm này bằng cách cho phép mỗi chủ tài khoản được định nghĩa hệ thống thứ bậc cũng như là gộp nhóm các hành động.
 
-### Named Message Handler Groups
+### Các Nhóm Xử Lý Tin Nhắn Được Đặt Tên
 
-The EOS.IO software allows each account to organize its own message handlers into named and nested groups. These named message handler groups can be referenced by other accounts when they configure their permission levels.
+EOS.IO cho phép mỗi tài khoản sắp xếp bộ xử lý tin nhắn thành các nhóm được đặt tên và lồng vào nhau. Các bộ xử lý tin nhắn được đặt tên này có thể được tham chiếu bởi các tài khoản khác khi chúng cấu hình các cấp độ cấp phép.
 
-The highest level message handler group is the account name and the lowest level is the individual message type being received by the account. These groups can be referenced like so: **@accountname.groupa.subgroupb.MessageType**.
+Nhóm xử lý tin nhắn ở cấp độ cao nhất là tên tài khoản và cấp độ thấp nhất là tin nhắn đơn lẻ được nhận bởi tài khoản. These groups can be referenced like so: **@accountname.groupa.subgroupb.MessageType**.
 
 Under this model it is possible for an exchange contract to group order creation and canceling separately from deposit and withdraw. This grouping by the exchange contract is a convenience for users of the exchange.
 
