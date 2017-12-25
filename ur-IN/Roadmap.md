@@ -58,7 +58,7 @@ WASM کوڈ کی صفائی کے لیے سیال نقطہ کاروایوں او�
 
 ### اندرونی بلاکچین کی گفتگو (ناتھن)
 
-This feature involves verifying the Merkle hashing of transactions is proper.
+اس فیچر کا کام مارکلی لین دین کی ھاشنگ اورتوسیق کا دھیان رکھنا ہے -.
 
 # Phase 3 - Testing & Security Audits - Winter 2017, Spring 2018
 
