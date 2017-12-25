@@ -22,13 +22,13 @@ Il software EOS.IO ha una serie di contratti nativi. Questi sono contratti che g
 
 ### API della Macchina Virtuale (Dan)
 
-Contracts are compiled to WebAssembly (WASM) and WASM must interface with the blockchain via a defined API. This API is what developers depend upon to build applications and be relatively stable before developers can really start to build on EOS.
+I contratti sono compilati in WebAssembly (WASM) e WASM deve interfacciarsi con la blockchain tramite un'API definita. This API is what developers depend upon to build applications and be relatively stable before developers can really start to build on EOS.
 
-### RPC Interface (Arhag, Nathan)
+### Interfaccia RPC (Arhag, Nathan)
 
-A simple JSON RPC over HTTP interface will be provided that enables developers to broadcast transactions and query application state. This is critical for both publishing and interacting with test applications.
+Verrà fornita una semplice interfaccia JSON RPC su HTTP che consente agli sviluppatori di trasmettere transazioni e interrogare lo stato dell'applicazione. Questo è critico sia per la pubblicazione che per l'interazione con le applicazioni di test.
 
-### Command line Tools (Arhag)
+### Strumenti a riga di comando (Arhag)
 
 Command line tools facilitate integrating the RPC interface with developer build environments.
 
