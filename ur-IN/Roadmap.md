@@ -54,9 +54,9 @@ WASM کوڈ کی صفائی کے لیے سیال نقطہ کاروایوں او�
 
 ### جنسس درآمد کی جانچ (داپھب)
 
-دستاویزات اور EOS ٹوکنز کو تقسیم کرنے کے لیے ایسے آلات بنانے کی ضرورت ہے جو کنفگریشن فائل کو بنانے اور اس کو اپنی اصل شکل میں موجود رکھتے ہیں. This will enable anyone participating in the Token Distribution to acquire some initial test EOS (TEOS).
+دستاویزات اور EOS ٹوکنز کو تقسیم کرنے کے لیے ایسے آلات بنانے کی ضرورت ہے جو کنفگریشن فائل کو بنانے اور اس کو اپنی اصل شکل میں موجود رکھتے ہیں. یہ کس کو اس قابل بناے گی کہ وہ شریک ھو سکے ٹوکن کی تقسیم میں اور EOS TEOS کی بنیادی جانچ میں.
 
-### Interblockchain Communication (Nathan)
+### اندرونی بلاکچین کی گفتگو (ناتھن)
 
 This feature involves verifying the Merkle hashing of transactions is proper.
 
