@@ -30,9 +30,9 @@ Verrà fornita una semplice interfaccia JSON RPC su HTTP che consente agli svilu
 
 ### Strumenti a riga di comando (Arhag)
 
-Command line tools facilitate integrating the RPC interface with developer build environments.
+Gli strumenti a riga di comando facilitano l'integrazione dell'interfaccia RPC con gli ambienti di sviluppo.
 
-### Basic Developer Documentation (Josh)
+### Documentazione di Base per Sviluppatori (Josh)
 
 Documents that teach developers how to get started with building on EOS.IO blockchains. This includes documentations of the WASM API, RPC Interface, and Command Line Tools.
 
