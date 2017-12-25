@@ -85,7 +85,7 @@ In order to gain widespread use, applications on the blockchain require a platfo
 
 ## مفت استعمال
 
-Application developers need the flexibility to offer users free services; users should not have to pay in order to use the platform or benefit from its services. A blockchain platform that is free to use for users will likely gain more widespread adoption. Developers and businesses can then create effective monetization strategies.
+اپلیکیشن ڈیولپرس کو لوگوں کو مفت خدمات فراہم کرنے کے لیے لچک کی ضرورت ہے؛ سارفین کو پلیٹ فارم کا استعمال کرنے اور اس سے فائدہ اٹھانے کے لیے فیس ادا نہیں کرنی ھو گی. ایسا بلاکچین پلیٹ فارم جو صارف کے لیے مفت دستیاب ھو سارفین اس کا استعمال بڈی؛تیزی سے کریں گے. Developers and businesses can then create effective monetization strategies.
 
 ## Easy Upgrades and Bug Recovery
 
