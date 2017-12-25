@@ -10,16 +10,16 @@
 
 اس سفید کاغذ پر بغیر کسی اجازت کے کوئی بھی اس کا استعمال، اس کی تقسیم غیر تجارتی کام یا تعلیماتی مقاصد کے استعمال میں لا سکتے ہیں بشرطیکہ اصل زرایع اور کابل اطلاق کاپی رائیٹ کا حوالہ دیا گیا ھو -.
 
-<0\>DISCLAIMER EOS. IO تکنیکی سفیر کاغذ صرف معلوماتی مقاصد کے لیے ھے. پھلا بلاک کسی بھی درستگی کی ضمانت نہیں دیتا ھے اور یہ سفید کاغذ بالکل اپنی اصل شکل میں موجود رہتا ہے. پھلا بلاک تمام معروضات کو واضح طور پر داسکلایم اور وارنٹی، ایکسپریس، مضمر، قانونی یا بصورت دیگر جو کچھ بھی، بشمول تک محدود نہیں ہے -1))مفت پزیرائی کی وارنٹی، کسی اھم مقصد یا مناسبت کے بارے میں، استعمال کے لیے معضونیت کا عنوان یا نانفراگمنٹ -2))یہ سفید کاغذ غلطیوں سے بالکل مفت ھے؛ اور (٣)ایسے مشمولات دوسرے لوگوں کے حقوق کی خلاف ورزی نہیں کرتا ھے -. پھلا بلاک اور اس کے ساتھ منسلک کسی بھی چیز کی زمہ داری سے کسی بھی قسم کے استعمال کرنے کے لیے حوالے سے پیدا ہونے والے نقصانات کے لیے ھو گا یا یہ سفید کاغذ یا مواد کسی پر منحصر نہیں یھان تک کہ خطرات کے امناکات کا مشورہ دیا گیا ھو -. In no event will block.one or its affiliates be liable to any person or entity for any damages, losses, liabilities, costs or expenses of any kind, whether direct or indirect, consequential, compensatory, incidental, actual, exemplary, punitive or special for the use of, reference to, or reliance on this white paper or any of the content contained herein, including, without limitation, any loss of business, revenues, profits, data, use, goodwill or other intangible losses.
+<0\>DISCLAIMER EOS. IO تکنیکی سفیر کاغذ صرف معلوماتی مقاصد کے لیے ھے. پھلا بلاک کسی بھی درستگی کی ضمانت نہیں دیتا ھے اور یہ سفید کاغذ بالکل اپنی اصل شکل میں موجود رہتا ہے. پھلا بلاک تمام معروضات کو واضح طور پر داسکلایم اور وارنٹی، ایکسپریس، مضمر، قانونی یا بصورت دیگر جو کچھ بھی، بشمول تک محدود نہیں ہے -1))مفت پزیرائی کی وارنٹی، کسی اھم مقصد یا مناسبت کے بارے میں، استعمال کے لیے معضونیت کا عنوان یا نانفراگمنٹ -2))یہ سفید کاغذ غلطیوں سے بالکل مفت ھے؛ اور (٣)ایسے مشمولات دوسرے لوگوں کے حقوق کی خلاف ورزی نہیں کرتا ھے -. پھلا بلاک اور اس کے ساتھ منسلک کسی بھی چیز کی زمہ داری سے کسی بھی قسم کے استعمال کرنے کے لیے حوالے سے پیدا ہونے والے نقصانات کے لیے ھو گا یا یہ سفید کاغذ یا مواد کسی پر منحصر نہیں یھان تک کہ خطرات کے امناکات کا مشورہ دیا گیا ھو -. پہلے بلاک کی کسی بھی تقریب یا اس کے الحاق، یا فتگان براہ راست، یا بالواسطہ نتیجتاً، کمپنسیٹری، اتفاقی، اصل، مسالی، کسی خاص شخص کے لئے تعزیری، جواب دہ نہیں بناتا - اس سفید کاغذ میں کسی بھی کاروباری نقصان، آمدنی، منافع، ڑیٹا کے استعمال کی خیر گالی یا دوسرے طریقوں کی ضمانت دیتا ہے اور اس کے ساتھ منسلک چھوٹے چھوٹے نقصانات -.
 
-- [Background](#background)
-- [Requirements for Blockchain Applications](#requirements-for-blockchain-applications) 
-  - [Support Millions of Users](#support-millions-of-users)
-  - [Free Usage](#free-usage)
-  - [Easy Upgrades and Bug Recovery](#easy-upgrades-and-bug-recovery)
-  - [Low Latency](#low-latency)
-  - [Sequential Performance](#sequential-performance)
-  - [Parallel Performance](#parallel-performance)
+- [پس منظر-](#background)
+- [بلاکچین اپلیکیشنز کے لیے ضروریات-](#requirements-for-blockchain-applications) 
+  - [یہ لاکھوں صارفین کی حمایت کرتا ہے-](#support-millions-of-users)
+  - [مفت استعمال-](#free-usage)
+  - [آسان اپگریڈ اور بگ کی وصولی-](#easy-upgrades-and-bug-recovery)
+  - [قلیل چھپاو-](#low-latency)
+  - [سلسلہ وار کارکردگی-](#sequential-performance)
+  - [متوازی کارکردگی-](#parallel-performance)
 - [Consensus Algorithm (DPOS)](#consensus-algorithm-dpos) 
   - [Transaction Confirmation](#transaction-confirmation)
   - [Transaction as Proof of Stake (TaPoS)](#transaction-as-proof-of-stake-tapos)
