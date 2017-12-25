@@ -4,7 +4,7 @@
 
 **خلاصہ <0\> EOS. IO سوفٹویر ایک نیا پیمانہ کاری بلاکچین کو متعارف کرتا ہے جو ڈیسنٹرالایزڈ اپلیکیشنز کو عمودی اور افقی سکیلنگ کے لیے معیاری بناتا ہے -. یہ اپلیکیشن جس پر ڈیولپ کر سکتے ھے ایک آپریٹنگ سسٹم کی طرح تعمیر کی تشکیل کی طرف سے خاصل ھوتا ھے -. یہ سافٹویئر فراہم کرتا ھے اکاؤنٹ، توسیق کاری، ڈیٹابیس، ایسنچورنس، ابلاغ اور اپلیکیشنز کے سینکڑوں کروڑ CPU کلسٹرس فراہم کرتا ہے -. بنای گیی تکنیک ایک بلاکچین فن تعمیر ھے جو کروڑوں کا لین دین فی سیکنڈ کرتا ھے، صارف کا فیس ختم کرتا ہے اور ڈیسنٹرالایزڈ اپلیکیشنز کی فوری اور آسان ڈیپلایمنٹ کرتا ہے -.</p> 
 
-**PLEASE NOTE: CRYPTOGRAPHIC TOKENS REFERRED TO IN THIS WHITE PAPER REFER TO CRYPTOGRAPHIC TOKENS ON A LAUNCHED BLOCKCHAIN THAT ADOPTS THE EOS.IO SOFTWARE. THEY DO NOT REFER TO THE ERC-20 COMPATIBLE TOKENS BEING DISTRIBUTED ON THE ETHEREUM BLOCKCHAIN IN CONNECTION WITH THE EOS TOKEN DISTRIBUTION.**
+**مہربانی کر کے یاد رہے:اس سفید کاغذ میں جو کرپٹوگرافک ٹوکن ھے وہ کرپٹوگرافک ٹوکنز دراصل EOS. IO سوفٹویر سے منسلک ہے -. THEY DO NOT REFER TO THE ERC-20 COMPATIBLE TOKENS BEING DISTRIBUTED ON THE ETHEREUM BLOCKCHAIN IN CONNECTION WITH THE EOS TOKEN DISTRIBUTION.**
 
 Copyright © 2017 block.one
 
