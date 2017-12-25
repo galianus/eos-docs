@@ -4,7 +4,7 @@ Questo documento delinea un piano di sviluppo di alto livello e sarà aggiornato
 
 ***L'intero contenuto del documento è attualmente sotto forma di bozza e a solo scopo informativo e potrà essere soggetto a variazioni. block.one non garantisce l'accuratezza delle informazioni contenute nella roadmap, inoltre le informazioni vengono fornite "così come sono" senza dichiarazioni o garanzie, esplicite o implicite.***
 
-# Phase 1 - Minimal Viable Testing Environment - Summer 2017
+# Fase 1 - Ambiente di Testing minimo sostenibile - Estate 2017
 
 The goal of this phase is to establish the APIs that developers will require to start building and testing applications on EOS.IO. In order for developers to start testing their applications they will require the following to be implemented:
 
