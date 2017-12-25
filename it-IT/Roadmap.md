@@ -4,19 +4,19 @@ Questo documento delinea un piano di sviluppo di alto livello e sarà aggiornato
 
 ***L'intero contenuto del documento è attualmente sotto forma di bozza e a solo scopo informativo e potrà essere soggetto a variazioni. block.one non garantisce l'accuratezza delle informazioni contenute nella roadmap, inoltre le informazioni vengono fornite "così come sono" senza dichiarazioni o garanzie, esplicite o implicite.***
 
-# Fase 1 - Ambiente di Testing minimo sostenibile - Estate 2017
+# Fase 1 - Ambiente di Testing Minimo Sostenibile - Estate 2017
 
-The goal of this phase is to establish the APIs that developers will require to start building and testing applications on EOS.IO. In order for developers to start testing their applications they will require the following to be implemented:
+The goal of this phase is to establish the APIs that developers will require to start building and testing applications on EOS.IO. Affinché gli sviluppatori possano iniziare a testare le loro applicazioni, sarà necessario implementare quanto segue:
 
-### Standalone Node (Dan & Nathan)
+### Nodo Autonomo (Dan & Nathan)
 
-A standalone node operates a test blockchain and produces blocks while exposing an API. This node does not need to concern itself with any P2P networking code.
+Un nodo autonomo gestisce una blockchain di test e produce blocchi durante l'esposizione di un'API. Questo nodo non deve occuparsi di alcun codice di rete P2P.
 
-### Native Contracts (Nathan)
+### Contratti Nativi (Nathan)
 
-The EOS.IO software has a number of native contracts. These are contracts that manage the core operations of the blockchain and exist outside the Web Assembly interface. These contracts include:
+Il software EOS.IO ha una serie di contratti nativi. Questi sono contratti che gestiscono le operazioni principali della blockchain e esistono al di fuori dell'interfaccia Web Assembly. Questi contratti includono:
 
-1. @eos - manages EOS token transfers
+1. @eos - gestisce i trasferimenti di token EOS
 2. @stake - manages locked EOS, voting, and Producer Election
 3. @system - manages permissions, messages, and contact code updates
 
