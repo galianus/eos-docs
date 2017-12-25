@@ -168,9 +168,9 @@ Một ví dụ khác là blockchain Steem mà ở đó có 3 cấp độ cấp p
 
 EOS.IO cho phép mỗi tài khoản sắp xếp bộ xử lý tin nhắn thành các nhóm được đặt tên và lồng vào nhau. Các bộ xử lý tin nhắn được đặt tên này có thể được tham chiếu bởi các tài khoản khác khi chúng cấu hình các cấp độ cấp phép.
 
-Nhóm xử lý tin nhắn ở cấp độ cao nhất là tên tài khoản và cấp độ thấp nhất là tin nhắn đơn lẻ được nhận bởi tài khoản. These groups can be referenced like so: **@accountname.groupa.subgroupb.MessageType**.
+Nhóm xử lý tin nhắn ở cấp độ cao nhất là tên tài khoản và cấp độ thấp nhất là tin nhắn đơn lẻ được nhận bởi tài khoản. Các nhóm này có thể được tham chiếu như sau: **@tên_tài_khoản.nhóm_a.nhóm_nhỏ_b.Loại_Tin_Nhắn**.
 
-Under this model it is possible for an exchange contract to group order creation and canceling separately from deposit and withdraw. This grouping by the exchange contract is a convenience for users of the exchange.
+Dưới mô hình này, hợp đồng trao đổi có thể nhóm việc tạo lệnh và huỷ lệnh tách bạch khỏi gửi và rút. Việc góp nhóm bằng hợp đồng giao dịch là một tiện lợi cho các người dùng của sàn giao dịch.
 
 ### Permission Mapping
 
