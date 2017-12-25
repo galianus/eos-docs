@@ -2,7 +2,7 @@
 
 **26 جون 2017-**
 
-**خلاصہ <0\> EOS. IO سوفٹویر ایک نیا پیمانہ کاری بلاکچین کو متعارف کرتا ہے جو ڈیسنٹرالایزڈ اپلیکیشنز کو عمودی اور افقی سکیلنگ کے لیے معیاری بناتا ہے -. This is achieved by creating an operating system-like construct upon which applications can be built. The software provides accounts, authentication, databases, asynchronous communication and the scheduling of applications across hundreds of CPU cores or clusters. The resulting technology is a blockchain architecture that scales to millions of transactions per second, eliminates user fees, and allows for quick and easy deployment of decentralized applications.</p> 
+**خلاصہ <0\> EOS. IO سوفٹویر ایک نیا پیمانہ کاری بلاکچین کو متعارف کرتا ہے جو ڈیسنٹرالایزڈ اپلیکیشنز کو عمودی اور افقی سکیلنگ کے لیے معیاری بناتا ہے -. یہ اپلیکیشن جس پر ڈیولپ کر سکتے ھے ایک آپریٹنگ سسٹم کی طرح تعمیر کی تشکیل کی طرف سے خاصل ھوتا ھے -. یہ سافٹویئر فراہم کرتا ھے اکاؤنٹ، توسیق کاری، ڈیٹابیس، ایسنچورنس، ابلاغ اور اپلیکیشنز کے سینکڑوں کروڑ CPU کلسٹرس فراہم کرتا ہے -. The resulting technology is a blockchain architecture that scales to millions of transactions per second, eliminates user fees, and allows for quick and easy deployment of decentralized applications.</p> 
 
 **PLEASE NOTE: CRYPTOGRAPHIC TOKENS REFERRED TO IN THIS WHITE PAPER REFER TO CRYPTOGRAPHIC TOKENS ON A LAUNCHED BLOCKCHAIN THAT ADOPTS THE EOS.IO SOFTWARE. THEY DO NOT REFER TO THE ERC-20 COMPATIBLE TOKENS BEING DISTRIBUTED ON THE ETHEREUM BLOCKCHAIN IN CONNECTION WITH THE EOS TOKEN DISTRIBUTION.**
 
