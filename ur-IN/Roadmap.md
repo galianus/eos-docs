@@ -52,7 +52,7 @@ WASM کوڈ کی صفائی کے لیے سیال نقطہ کاروایوں او�
 
 وسائل کی دیکھ بھال اور اس کے استعمال کو روکنے کے لیے EOS کے مطابق صارفین کی ٹریکنگ کی شرح محدود ہے َ.
 
-### Genesis Import Testing (DappHub)
+### جنسس درآمد کی جانچ (داپھب)
 
 Tools need to be developed to export data from the EOS Token Distribution state and create a genesis configuration file. This will enable anyone participating in the Token Distribution to acquire some initial test EOS (TEOS).
 
