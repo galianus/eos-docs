@@ -54,7 +54,7 @@ WASM کوڈ کی صفائی کے لیے سیال نقطہ کاروایوں او�
 
 ### جنسس درآمد کی جانچ (داپھب)
 
-Tools need to be developed to export data from the EOS Token Distribution state and create a genesis configuration file. This will enable anyone participating in the Token Distribution to acquire some initial test EOS (TEOS).
+دستاویزات اور EOS ٹوکنز کو تقسیم کرنے کے لیے ایسے آلات بنانے کی ضرورت ہے جو کنفگریشن فائل کو بنانے اور اس کو اپنی اصل شکل میں موجود رکھتے ہیں. This will enable anyone participating in the Token Distribution to acquire some initial test EOS (TEOS).
 
 ### Interblockchain Communication (Nathan)
 
