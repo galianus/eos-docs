@@ -170,9 +170,9 @@ EOS.IO cho phép mỗi tài khoản sắp xếp bộ xử lý tin nhắn thành 
 
 Nhóm xử lý tin nhắn ở cấp độ cao nhất là tên tài khoản và cấp độ thấp nhất là tin nhắn đơn lẻ được nhận bởi tài khoản. Các nhóm này có thể được tham chiếu như sau: **@tên_tài_khoản.nhóm_a.nhóm_nhỏ_b.Loại_Tin_Nhắn**.
 
-Dưới mô hình này, hợp đồng trao đổi có thể nhóm việc tạo lệnh và huỷ lệnh tách bạch khỏi gửi và rút. Việc góp nhóm bằng hợp đồng giao dịch là một tiện lợi cho các người dùng của sàn giao dịch.
+Dưới mô hình này, hợp đồng giao dịch có thể nhóm việc tạo lệnh và huỷ lệnh tách bạch khỏi gửi và rút. Việc góp nhóm bằng hợp đồng giao dịch là một tiện lợi cho các người dùng của sàn giao dịch.
 
-### Permission Mapping
+### Bản đồ cấp phép
 
 EOS.IO software allows each account to define a mapping between a Named Message Handler Group of any account and their own Named Permission Level. For example, an account holder could map the account holder's social media application to the account holder's "Friend" permission group. With this mapping, any friend could post as the account holder on the account holder's social media. Even though they would post as the account holder, they would still use their own keys to sign the message. This means it is always possible to identify which friends used the account and in what way.
 
