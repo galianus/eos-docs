@@ -63,11 +63,11 @@
     - [مجازی اتھیریم مشین EVM))](#ethereum-virtual-machine-evm)
 - [بلاکچین کی اندرونی گفتگو](#inter-blockchain-communication) 
   - [لائیٹ کلائینٹ جواز کے لیے مارکلی کے سبوت LVC))](#merkle-proofs-for-light-client-validation-lcv)
-  - [Latency of Interchain Communication](#latency-of-interchain-communication)
-  - [Proof of Completeness](#proof-of-completeness)
-- [Conclusion](#conclusion)
+  - [اندرونی چین اور ابلاغ کا چھپاو](#latency-of-interchain-communication)
+  - [اختتامی سبوت](#proof-of-completeness)
+- [مقصد](#conclusion)
 
-# Background
+# پس منظر
 
 Blockchain technology was introduced in 2008 with the launch of the bitcoin currency, and since then entrepreneurs and developers have been attempting to generalize the technology in order to support a wider range of applications on a single blockchain platform.
 
