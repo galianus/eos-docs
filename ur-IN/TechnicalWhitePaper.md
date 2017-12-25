@@ -85,9 +85,9 @@ In order to gain widespread use, applications on the blockchain require a platfo
 
 ## مفت استعمال
 
-اپلیکیشن ڈیولپرس کو لوگوں کو مفت خدمات فراہم کرنے کے لیے لچک کی ضرورت ہے؛ سارفین کو پلیٹ فارم کا استعمال کرنے اور اس سے فائدہ اٹھانے کے لیے فیس ادا نہیں کرنی ھو گی. ایسا بلاکچین پلیٹ فارم جو صارف کے لیے مفت دستیاب ھو سارفین اس کا استعمال بڈی؛تیزی سے کریں گے. Developers and businesses can then create effective monetization strategies.
+اپلیکیشن ڈیولپرس کو لوگوں کو مفت خدمات فراہم کرنے کے لیے لچک کی ضرورت ہے؛ سارفین کو پلیٹ فارم کا استعمال کرنے اور اس سے فائدہ اٹھانے کے لیے فیس ادا نہیں کرنی ھو گی. ایسا بلاکچین پلیٹ فارم جو صارف کے لیے مفت دستیاب ھو سارفین اس کا استعمال بڈی؛تیزی سے کریں گے. کاروباری اور ڈیولپرس اس کے بعد موثر حکمت عملی بنا سکتے ہیں.
 
-## Easy Upgrades and Bug Recovery
+## آسان ترقی اور بگ کی وصولی
 
 Businesses building blockchain based applications need the flexibility to enhance their applications with new features.
 
