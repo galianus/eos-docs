@@ -142,9 +142,9 @@ The EOS.IO software permits all accounts to be referenced by a unique human read
 
 In a decentralized context, application developers will pay the nominal cost of account creation to sign up a new user. Traditional businesses already spend significant sums of money per customer they acquire in the form of advertising, free services, etc. The cost of funding a new blockchain account should be insignificant in comparison. Fortunately, there is no need to create accounts for users already signed up by another application.
 
-## Messages & Handlers
+## الرسائل & المعالجات
 
-يمكن لكل حساب إرسال رسائل منظمة إلى حسابات أخرى وقد يحدد النصوص البرمجية للتعامل مع الرسائل عند استلامها. The EOS.IO software gives each account its own private database which can only be accessed by its own message handlers. Message handling scripts can also send messages to other accounts. The combination of messages and automated message handlers is how EOS.IO defines smart contracts.
+يمكن لكل حساب إرسال رسائل منظمة إلى حسابات أخرى وقد يحدد النصوص البرمجية للتعامل مع الرسائل عند استلامها. برنامج EOS.IO يعطي كل حساب قاعدة بيانات خاصة به والتي لا يمكن الوصول إليها إلا من قبل معالجات الرسائلها. سيناريو معالج الرسالة   يمكنه أيضا إرسال رسائل إلى حسابات أخرى. The combination of messages and automated message handlers is how EOS.IO defines smart contracts.
 
 ## Role Based Permission Management
 
