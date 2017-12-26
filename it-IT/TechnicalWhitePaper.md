@@ -71,17 +71,17 @@ Chiunque può utilizzare, riprodurre o distribuire qualsiasi materiale in questo
 
 La tecnologia Blockchain è stata introdotta nel 2008 con il lancio di Bitcoin e da allora imprenditori e sviluppatori hanno tentato di generalizzare la tecnologia in modo da supportare una sempre più ampia gamma di applicazioni su un'unica piattaforma blockchain.
 
-While a number of blockchain platforms have struggled to support functional decentralized applications, application specific blockchains such as the BitShares decentralized exchange (2014) and Steem social media platform (2016) have become heavily used blockchains with tens of thousands of daily active users. They have achieved this by increasing performance to thousands of transactions per second, reducing latency to 1.5 seconds, eliminating fees, and providing a user experience similar to those currently provided by existing centralized services.
+Sebbene un certo numero di piattaforme blockchain ha faticato a supportare applicazioni decentralizzate funzionali, blockchains di applicazioni specifiche come l'exchange decentralizzato BitShares (2014) e la piattaforma di social media chiamata Steem (2016) sono diventate blockchain pesantemente utilizzate con decine di migliaia di utenti attivi quotidianamente. Hanno ottenuto questo risultato aumentando le prestazioni fino a migliaia di transazioni al secondo, riducendo la latenza a 1,5 secondi, eliminando le tasse e fornendo un'esperienza utente simile a quelle attualmente fornite dai servizi centralizzati già esistenti.
 
-Existing blockchain platforms are burdened by large fees and limited computational capacity that prevent widespread blockchain adoption.
+Le piattaforme di blockchain esistenti sono gravate da tariffe elevate e da una capacità computazionale limitata che impedisce l'adozione diffusa della blockchain.
 
-# Requirements for Blockchain Applications
+# Requisiti per le applicazioni Blockchain
 
-In order to gain widespread use, applications on the blockchain require a platform that is flexible enough to meet the following requirements:
+Per ottenere un uso diffuso, le applicazioni sulla blockchain richiedono una piattaforma sufficientemente flessibile che possa soddisfare i seguenti requisiti:
 
-## Support Millions of Users
+## Supporto di Milioni di Utenti
 
-Disrupting businesses such as Ebay, Uber, AirBnB, and Facebook, require blockchain technology capable of handling tens of millions of active daily users. In certain cases, applications may not work unless a critical mass of users is reached and therefore a platform that can handle mass number of users is paramount.
+Per rivoluzionare imprese come Ebay, Uber, AirBnB e Facebook si richiede una tecnologia blockchain in grado di gestire decine di milioni di utenti attivi giornalmente. In certain cases, applications may not work unless a critical mass of users is reached and therefore a platform that can handle mass number of users is paramount.
 
 ## Free Usage
 
