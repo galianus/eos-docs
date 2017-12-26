@@ -50,7 +50,7 @@ Il codice WASM dev'essere ripulito per poter verificare comportamenti non determ
 
 ### Monitoraggio Dell'Uso delle Risorse & Rate Limiting (Arhag)
 
-To prevent abuse the resource monitoring and usage tracking rate limits users according to staked EOS.
+Per prevenire abusi della rete, il monitoraggio delle risorse e il tasso di controllo dell'utilizzo, limita gli utenti in base agli EOS accatastati (c.d. staked)
 
 ### Genesis Import Testing (DappHub)
 
