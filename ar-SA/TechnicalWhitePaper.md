@@ -150,7 +150,7 @@ In a decentralized context, application developers will pay the nominal cost of 
 
 وتتضمن إدارة الإذن تحديد ما إذا كانت الرسالة مأذون بها أم لا. أبسط شكل من أشكال إدارة الإذن هو التحقق من أن الصفقة لديها التوقيعات المطلوبة، ولكن هذا يعني أن التوقيعات المطلوبة معروفة بالفعل. وعموما فإن السلطة ملزمة بأفراد أو مجموعات من الأفراد وغالبا ما تكون مجزأة. يوفر البرنامج EOS.IO نظام إدارة إذن التصريح التي تعطي حسابات غرامة بالغة الدقة ومراقبة مستوى عال على ماذا يستطيع أن يفعل ومتى.
 
-أنه من المحرج أن تكون إدارة المصادقة والإذن موحدة ومنفصلة عن منطق الأعمال للتطبيق. This enables tools to be developed to manage permissions in a general purpose manner and also provide significant opportunities for performance optimization.
+أنه من المحرج أن تكون إدارة المصادقة والإذن موحدة ومنفصلة عن منطق الأعمال للتطبيق. وهذا يتيح للأدوات أن يتم تطويرها لإدارة الأذونات بطريقة عامة الغرض وأيضا توفير فرص كبيرة لتحسين الأداء.
 
 Every account may be controlled by any weighted combination of other accounts and private keys. This creates a hierarchical authority structure that reflects how permissions are organized in reality, and makes multi-user control over funds easier than ever. Multi-user control is the single biggest contributor to security, and, when used properly, it can greatly eliminate the risk of theft due to hacking.
 
