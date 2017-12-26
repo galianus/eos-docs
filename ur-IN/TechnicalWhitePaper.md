@@ -95,9 +95,9 @@ In order to gain widespread use, applications on the blockchain require a platfo
 
 ## قلیل چھپاو
 
-A good user experience demands reliable feedback with delay of no more than a few seconds. Longer delays frustrate users and make applications built on a blockchain less competitive with existing non-blockchain alternatives.
+صارف کو بھتر خدمات فراہم کرنے کے لیے چاہیے کہ جلد سے جلد جانکاری حاصل ھو. لمبی تاخیر صارفین کو پریشانی میں ڈالتی ھے اور بلاکچین کو پھلے سے چلنے والی بلاکچین اپلیکیشنز کے مقابلے میں کم اھمیت حاصل ھوتی ھے.
 
-## Sequential Performance
+## سلسلہ وار کارکردگی
 
 There are some applications that just cannot be implemented with parallel algorithms due to sequentially dependent steps. Applications such as exchanges need enough sequential performance to handle high volumes and therefore a platform with fast sequential performance is required.
 
