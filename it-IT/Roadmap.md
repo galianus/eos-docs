@@ -52,13 +52,13 @@ Il codice WASM dev'essere ripulito per poter verificare comportamenti non determ
 
 Per prevenire abusi della rete, il monitoraggio delle risorse e il tasso di controllo dell'utilizzo, limita gli utenti in base agli EOS accatastati (c.d. staked)
 
-### Genesis Import Testing (DappHub)
+### Test D'Importazione di Genesi (DappHub)
 
-Tools need to be developed to export data from the EOS Token Distribution state and create a genesis configuration file. This will enable anyone participating in the Token Distribution to acquire some initial test EOS (TEOS).
+È necessario sviluppare strumenti per esportare i dati dallo stato della distribuzione dei Token di EOS e creare un file di configurazione genesi. Ciò consentirà a chiunque partecipi alla distribuzione dei Token di acquisire qualche EOS di test iniziale (TEOS).
 
-### Interblockchain Communication (Nathan)
+### Comunicazione Interblockchain (Nathan)
 
-This feature involves verifying the Merkle hashing of transactions is proper.
+Questa funzionalità implica che la verifica dell'hash di Merkle delle transazioni sia corretta. 
 
 # Phase 3 - Testing & Security Audits - Winter 2017, Spring 2018
 
