@@ -134,9 +134,9 @@ The EOS.IO software requires every transaction to include the hash of a recent b
 1. لین دین کے محولہ کو روکنے کے لیے فورکس بلاک نہیں روکتا ہے؛ اور
 2. signals the network that a particular user and their stake are on a specific fork.
 
-Over time all users end up directly confirming the blockchain which makes it difficult to forge counterfeit chains as the counterfeit would not be able to migrate transactions from the legitimate chain.
+وقت کے ساتھ ساتھ تمام صارفین براہ راست بلاکچین کی تصدیق کرتا ہے جو جعلی لین دین جایزہ طریقہ سے منتقل کرنے کے قابل نہیں ہوگا جیسا کہ جعلی چین فورج کو مشکل بناتا ہے.
 
-# Accounts
+# اکاؤنٹ
 
 The EOS.IO software permits all accounts to be referenced by a unique human readable name of 2 to 32 characters in length. The name is chosen by the creator of the account. All accounts must be funded with the minimal account balance at the time they are created to cover the cost of storing account data. Account names also support namespaces such that the owner of account @domain is the only one who can create the account @user.domain.
 
