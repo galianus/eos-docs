@@ -89,11 +89,11 @@ In order to gain widespread use, applications on the blockchain require a platfo
 
 ## آسان ترقی اور بگ کی وصولی
 
-Businesses building blockchain based applications need the flexibility to enhance their applications with new features.
+کاروبار پر مبنی تعمیراتی پلاکچین اپلیکیشنز کو بڈھاوا دینے کے لیے اپلیکیشنز میں لچک کی ضرورت ہے-.
 
-All non-trivial software is subject to bugs, even with the most rigorous of formal verification. The platform must be robust enough to fix bugs when they inevitably occur.
+تمام غیر معلوماتی سافٹویئر کا انحصار بگ پر ھے، ختاکہ سب سے زیادہ سختی کی باقاعدہ تصدیق سے ھے بگ کو سنبھالنے لیے پلیٹفارم کا مضبوط ھونا کافی ضروری ھے.
 
-## Low Latency
+## قلیل چھپاو
 
 A good user experience demands reliable feedback with delay of no more than a few seconds. Longer delays frustrate users and make applications built on a blockchain less competitive with existing non-blockchain alternatives.
 
