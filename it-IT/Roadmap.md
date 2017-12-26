@@ -44,7 +44,7 @@ Tutta la Fase 1 presuppone un ambiente affidabile che esegue solo il codice dell
 
 Questo plugin è responsabile della sincronizzazione dello stato della blockchain tra due nodi autonomi.
 
-### WASM Sanitation & CPU Sandboxing (Brian)
+### Pulizia WASM & Sandboxing della CPU (Brian)
 
 Il codice WASM dev'essere ripulito per poter verificare comportamenti non deterministici come operazioni in virgola mobile (FLOP - floating point operations) e loop infiniti.
 
@@ -78,8 +78,8 @@ Aggiunta del supporto per ulteriori linguaggi di programmazione da compilare in 
 
 ### Documentazione & Tutorials
 
-# Fase 4 - Ottimizzazione Parallela Estate / Autunno 2018
+# Fase 4 - Ottimizzazione Parallela - Estate / Autunno 2018
 
-After getting a stable 1.0 product released, we will move toward optimizing the code for parallel execution.
+Dopo aver rilasciato la versione 1.0 stabile, ci avvieremo nell'ottimizzazione del codice per l'esecuzione parallela.
 
-# Phase 5 - Cluster Implementation The Future
+# Fase 5 - Implementazione del Cluster - In Futuro
