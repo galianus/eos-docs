@@ -60,9 +60,9 @@ Per prevenire abusi della rete, il monitoraggio delle risorse e il tasso di cont
 
 Questa funzionalità implica che la verifica dell'hash di Merkle delle transazioni sia corretta. 
 
-# Phase 3 - Testing & Security Audits - Winter 2017, Spring 2018
+# Fase 3 - Test & Verifiche di Sicurezza - Inverno 2017, Primavera 2018
 
-During this phase the platform will undergo heavy testing with a focus on finding security issues and bug. At the end of Phase 3 version 1.0 will be tagged.
+Durante questa fase la piattaforma sarà sottoposta a test approfonditi con particolare attenzione alla ricerca di problemi di sicurezza e bug. Alla fine della Fase 3 la versione 1.0 verrà contrassegnata.
 
 ### Develop Example Applications
 
