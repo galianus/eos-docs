@@ -77,9 +77,9 @@
 
 # Requirements for Blockchain Applications
 
-In order to gain widespread use, applications on the blockchain require a platform that is flexible enough to meet the following requirements:
+بڈے پیمانے پر اس کا استعمال کرنے کے لئے بلاکچین کو ایک اچھے پلیٹ فارم کی ضرورت ہے جو کافی لچک دار ھو اس کے لیے مندرجہ ذیل عکوپمنٹس درکار ہے:
 
-## Support Millions of Users
+## لاکھوں صارفین کی حمایت حاصل کرنا
 
 سوشل نیٹ ورکنگ ویب سائٹ جیسے ای بے، عبر، AirBnB, اور فیس بک کا کاروبار تباہ کرنے کے لیے، بلاکچین کے زیر اہتمام لاکھوں لوگ اس کا استعمال کرتے ہیں. کچھ معاملات میں اپلیکیشن تب تک کام نہیں کرتا جب تک صارفین کی ایک مخصوص تعداد نا آجائے بھت؛زیادہ اھمیت کا حامل ہے.
 
