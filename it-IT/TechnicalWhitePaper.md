@@ -1,10 +1,10 @@
-# EOS.IO Technical White Paper
+# White Paper Tecnico di EOS.IO 
 
 **26 giugno 2017**
 
-**Sommario:** Il software di EOS.IO introduce una nuova architettura blockchain progettata per consentire la scalabilità verticale e orizzontale delle applicazioni decentralizzate. This is achieved by creating an operating system-like construct upon which applications can be built. The software provides accounts, authentication, databases, asynchronous communication and the scheduling of applications across hundreds of CPU cores or clusters. The resulting technology is a blockchain architecture that scales to millions of transactions per second, eliminates user fees, and allows for quick and easy deployment of decentralized applications.
+**Sommario:** Il software di EOS.IO introduce una nuova architettura blockchain progettata per consentire la scalabilità verticale e orizzontale delle applicazioni decentralizzate. Ciò si ottiene creando un costrutto simile a un sistema operativo su cui possono essere sviluppate le applicazioni. Il software fornisce account, autenticazione, database, comunicazione asincrona e la pianificazione di applicazioni su centinaia di core di CPU o cluster. La tecnologia risultante è un'architettura blockchain che scalabile e che dunque si adatta a milioni di transazioni al secondo, eliminando le commissioni dell'utente e consentendo una distribuzione rapida e semplice delle applicazioni decentralizzate.
 
-**PLEASE NOTE: CRYPTOGRAPHIC TOKENS REFERRED TO IN THIS WHITE PAPER REFER TO CRYPTOGRAPHIC TOKENS ON A LAUNCHED BLOCKCHAIN THAT ADOPTS THE EOS.IO SOFTWARE. THEY DO NOT REFER TO THE ERC-20 COMPATIBLE TOKENS BEING DISTRIBUTED ON THE ETHEREUM BLOCKCHAIN IN CONNECTION WITH THE EOS TOKEN DISTRIBUTION.**
+**NOTA BENE: I TOKEN CRITTOGRAFICI DI CUI QUESTO WHITE PAPER FA RIFERIMENTO SONO I TOKEN CRITTOGRAFICI LANCIATI SULLA BLOCKCHAIN CHE UTILIZZA IL SOFTWARE EOS.IO. NON FANNO RIFERIMENTO AI TOKEN ERC-20 CHE SONO DISTRIBUITI SULLA BLOCKCHAIN DI ETHEREUM CONNESSI ALLA DISTRIBUZIONE DEI TOKEN DI EOS. **
 
 Copyright © 2017 block.one
 
