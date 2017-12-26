@@ -123,11 +123,11 @@ Blockchain DPOS tipiche hanno una partecipazione da parte dei produttori di bloc
 
 Esistono casi straordinari in cui un bug del software, una congestione della rete Internet o un produttore di blocchi dannoso creino due o più forks. Per avere la certezza assoluta che una transazione sia irreversibile, un nodo può scegliere di attendere la conferma di 15 dei 21 produttori di blocchi. Basandosi su una configurazione tipica del software EOS.IO, questa operazione in circostanze normali richiederà circa 45 secondi. Di default, tutti i nodi considerano irreversibile un blocco confermato da 15 dei 21 produttori e non passeranno a un fork che esclude tale blocco indipendentemente dalla lunghezza.
 
-It is possible for a node to warn users that there is a high probability that they are on a minority fork within 9 seconds of the start of a fork. After 2 consecutive missed blocks there is a 95% probability a node is on a minority fork. With 3 consecutive missed blocks there is a 99% certainty of being on a minority fork. It is possible to generate a robust predictive model that will utilize information about which nodes missed, recent participation rates, and other factors to quickly warn operators that something is wrong.
+È possibile che un nodo avvisi gli utenti che esiste un'alta probabilità che si trovino su un fork minoritario entro 9 secondi dall'avvio di un fork. Dopo 2 blocchi mancati consecutivamente c'è una probabilità del 95% che un nodo si trovi su un fork minoritario. Con 3 blocchi mancati consecutivamente c'è una certezza del 99% di essere su un fork minoritario. È possibile generare un modello predittivo affidabile che utilizzi le informazioni su quali nodi sono stati persi, sui tassi di partecipazione recenti e su altri fattori in modo da avvisare rapidamente gli operatori che c'è qualcosa non va.
 
-The response to such a warning depends entirely upon the nature of the business transactions, but the simplest response is to wait for 15/21 confirmations until the warning stops.
+La risposta di tale avviso dipende interamente dalla natura delle transazioni commerciali, ma la risposta più semplice è di attendere le 15/21 conferme fino a quando l'avviso non si fermi.
 
-## Transaction as Proof of Stake (TaPoS)
+## Transazione come Proof of Stake (TaPoS)
 
 The EOS.IO software requires every transaction to include the hash of a recent block header. This hash serves two purposes:
 
