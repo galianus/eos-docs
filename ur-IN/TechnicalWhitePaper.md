@@ -119,7 +119,7 @@ EOS. IO سافٹویئر کے استعمال سے اکیس مرحلوں میں �
 
 ## تصدیق لین دین
 
-Typical DPOS blockchains have 100% block producer participation. A transaction can be considered confirmed with 99.9% certainty after an average of 1.5 seconds from time of broadcast.
+بنیادی DPOS بلاکچین بلاک بنانے میں 100فیصد شراکت داری رکھتا ہے ایک ٹرانزکش کی تصدیق 99.9فیصد اوسط سے بڈا کاسٹ کا وقت 1.5سیکنڈ کے بعد سمجھا جا سکتا ہے-.
 
 There are some extraordinary cases where a software bug, Internet congestion, or a malicious block producer will create two or more forks. For absolute certainty that a transaction is irreversible, a node may choose to wait for confirmation by 15 out of the 21 block producers. Based on a typical configuration of the EOS.IO software, this will take an average of 45 seconds under normal circumstances. By default all nodes will consider a block confirmed by 15 of 21 producers irreversible and will not switch to a fork that excludes such a block regardless of length.
 
