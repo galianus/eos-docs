@@ -107,7 +107,7 @@
 
 # بہ اتفاق رائے الگورزم DPOS))
 
-EOS. IO سوفٹویر صرف ڈیسنٹرالایزڈ الگورزم کا استعمال کرتا ھے جو کارکردگی پر کھرا اتر سکے بلاکچین اپلیکیشنز پر، DPOS))<0\>کو سبوت کے طور پر استعمال کیا جاتا ہے. Under this algorithm, those who hold tokens on a blockchain adopting the EOS.IO software may select block producers through a continuous approval voting system and anyone may choose to participate in block production and will be given an opportunity to produce blocks proportional to the total votes they have received relative to all other producers. For private blockchains the management could use the tokens to add and remove IT staff.</p> 
+EOS. IO سوفٹویر صرف ڈیسنٹرالایزڈ الگورزم کا استعمال کرتا ھے جو کارکردگی پر کھرا اتر سکے بلاکچین اپلیکیشنز پر، DPOS))<0\>کو سبوت کے طور پر استعمال کیا جاتا ہے. اس الگورزم کے تحت، جو لوگ EOS. IO ٹوکن اپناے ایک بلاکچین رکھیں سافٹویئر بلاک بنانے والے ایک مسلسل انتخابی عمل کے زریعے منتخب کر سکتے ہیں اور کسی کو بھی اس کا حقدار بنا سکتے ہیں اور تمام پرڈوسدز کو ووٹس پر مناسب بلاکس پیدا کرنے کا موقع دیا جائے گا. For private blockchains the management could use the tokens to add and remove IT staff.</p> 
 
 The EOS.IO software enables blocks to be produced exactly every 3 seconds and exactly one producer is authorized to produce a block at any given point in time. If the block is not produced at the scheduled time then the block for that time slot is skipped. When one or more blocks are skipped, there is a 6 or more second gap in the blockchain.
 
