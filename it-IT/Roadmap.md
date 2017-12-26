@@ -64,9 +64,9 @@ Questa funzionalità implica che la verifica dell'hash di Merkle delle transazio
 
 Durante questa fase la piattaforma sarà sottoposta a test approfonditi con particolare attenzione alla ricerca di problemi di sicurezza e bug. Alla fine della Fase 3 la versione 1.0 verrà contrassegnata.
 
-### Develop Example Applications
+### Sviluppo di Esempi di Applicazioni 
 
-Example applications are critical to proving the platform provides the features required by real developers.
+Gli esempi di applicazioni sono fondamentali per dimostrare che la piattaforma fornisce le funzionalità richieste dai veri sviluppatori.
 
 ### Bounties for Successfully Attacking Network
 
