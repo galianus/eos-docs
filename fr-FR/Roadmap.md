@@ -68,7 +68,7 @@ Au cours de cette phase, la plate-forme va subir des tests exhaustifs avec une c
 
 D'exemples d'applications sont criticales pour prouver la plate-forme fournit les fonctionnalités requises par les vrais développeurs.
 
-### Bounties for Successfully Attacking Network
+### Récompenses pour attaquer avec succès le réseau
 
 Attacking the network with spam, virtual machine exploits, and bug crashes, and non-deterministic behavior will be a heavily involved process but necessary to ensure that version 1.0 is stable.
 
