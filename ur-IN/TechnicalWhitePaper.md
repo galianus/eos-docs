@@ -138,7 +138,7 @@ The EOS.IO software requires every transaction to include the hash of a recent b
 
 # اکاؤنٹ
 
-The EOS.IO software permits all accounts to be referenced by a unique human readable name of 2 to 32 characters in length. The name is chosen by the creator of the account. All accounts must be funded with the minimal account balance at the time they are created to cover the cost of storing account data. Account names also support namespaces such that the owner of account @domain is the only one who can create the account @user.domain.
+EOS.IO سافٹویئر تمام اکاونٹس کو ایک منفرد انسانی قابلِ مطالعہ 2سے32 الفاظ پر مشتمل حروف کا حوالہ دیا گیا ھو. نام اکاؤنٹ کا بنانے والا منتخب کرتا ہے. اکاونٹس کی دیکھ بھال کے لیے تمام اکاونٹس میں اکاونٹ بناتے وقت ایک چھوٹی رقم رکھنا ضروری ہے. Account names also support namespaces such that the owner of account @domain is the only one who can create the account @user.domain.
 
 In a decentralized context, application developers will pay the nominal cost of account creation to sign up a new user. Traditional businesses already spend significant sums of money per customer they acquire in the form of advertising, free services, etc. The cost of funding a new blockchain account should be insignificant in comparison. Fortunately, there is no need to create accounts for users already signed up by another application.
 
