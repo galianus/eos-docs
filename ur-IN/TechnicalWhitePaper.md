@@ -144,7 +144,7 @@ EOS.IO سافٹویئر تمام اکاونٹس کو ایک منفرد انسا�
 
 ## پیغامات اور ان کی دیکھ بھال کرنے والے
 
-Each account can send structured messages to other accounts and may define scripts to handle messages when they are received. The EOS.IO software gives each account its own private database which can only be accessed by its own message handlers. Message handling scripts can also send messages to other accounts. The combination of messages and automated message handlers is how EOS.IO defines smart contracts.
+ہر ایک اکاؤنٹ سے دوسرے اکاونٹ تک ساخت پیغامات پہنچانے جا سکتے ہیں اور موصول ہونے والے پیغامات سے نمٹنے کے لئے سکرپٹس کی وضاحت کی جاتی ہے. EOS.IO سافٹویئر ہر ایک اکاؤنٹ کو اس کا ایک مخصوص ڈیٹابیس دیتا ہے جن کو صرف پیغامات سنبھالنے والے استعمال کر سکتے ہیں. پیغامات سنبھالنے والے نوشوں کو بھی اکاونٹس میں منتقل کر دیا جا سکتا ہے. The combination of messages and automated message handlers is how EOS.IO defines smart contracts.
 
 ## Role Based Permission Management
 
