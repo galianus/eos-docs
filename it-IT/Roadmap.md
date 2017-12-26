@@ -68,17 +68,17 @@ Durante questa fase la piattaforma sarà sottoposta a test approfonditi con part
 
 Gli esempi di applicazioni sono fondamentali per dimostrare che la piattaforma fornisce le funzionalità richieste dai veri sviluppatori.
 
-### Bounties for Successfully Attacking Network
+### Ricompense per chi Attacca con Successo la Rete
 
-Attacking the network with spam, virtual machine exploits, and bug crashes, and non-deterministic behavior will be a heavily involved process but necessary to ensure that version 1.0 is stable.
+Attaccare la rete con spam, exploit di macchine virtuali, crash causati da bug, e comportamenti non deterministici sarà un processo molto complicato, ma ciò è necessario per assicurare che la versione 1.0 sia stabile.
 
-### Language Support
+### Supporto di Linguaggi di Programmazione
 
-Adding support for additional languages to be compiled to WASM: C++, Rust, etc.
+Aggiunta del supporto per ulteriori linguaggi di programmazione da compilare in WASM: C++, Rust, etc.
 
-### Documentation & Tutorials
+### Documentazione & Tutorials
 
-# Phase 4 - Parallel Optimization Summer / Fall 2018
+# Fase 4 - Ottimizzazione Parallela Estate / Autunno 2018
 
 After getting a stable 1.0 product released, we will move toward optimizing the code for parallel execution.
 
