@@ -91,23 +91,23 @@ Gli sviluppatori di applicazioni hanno bisogno della flessibilità di offrire ag
 
 Le aziende che creano applicazioni basate su una blockchain necessitano la flessibilità di migliorare le loro applicazioni con funzionalità nuove.
 
-All non-trivial software is subject to bugs, even with the most rigorous of formal verification. The platform must be robust enough to fix bugs when they inevitably occur.
+Tutti i software non banali sono soggetti a bug, anche con la verifica più rigorosa. La piattaforma deve essere abbastanza robusta da poter correggere bug quando questi si verificano inevitabilmente.
 
-## Low Latency
+## Bassa Latenza
 
-A good user experience demands reliable feedback with delay of no more than a few seconds. Longer delays frustrate users and make applications built on a blockchain less competitive with existing non-blockchain alternatives.
+Una buona esperienza utente richiede feedback affidabili con un ritardo di non più di pochi secondi. Ritardi più lunghi causano frustrazione per gli utenti e rendono le applicazioni basate su una blockchain meno competitive in confronto a alternative centralizzate e non facenti parte di una blockchain. 
 
-## Sequential Performance
+## Prestazioni Sequenziali
 
-There are some applications that just cannot be implemented with parallel algorithms due to sequentially dependent steps. Applications such as exchanges need enough sequential performance to handle high volumes and therefore a platform with fast sequential performance is required.
+Ci sono alcune applicazioni che non possono essere implementate con algoritmi paralleli a causa di passaggi sequenzialmente dipendenti. Applicazioni come gli exchange richiedono prestazioni sequenziali sufficienti a gestire elevati volumi e pertanto è necessaria una piattaforma con prestazioni sequenziali molto veloce.
 
-## Parallel Performance
+## Prestazioni Parallele
 
-Large scale applications need to divide the workload across multiple CPUs and computers.
+Le applicazioni su larga scala devono dividere il carico di lavoro su multiple CPU e più computer.
 
-# Consensus Algorithm (DPOS)
+# Algoritmi di Consensus (DPOS)
 
-EOS.IO software utilizes the only decentralized consensus algorithm capable of meeting the performance requirements of applications on the blockchain, [Delegated Proof of Stake (DPOS)](https://steemit.com/dpos/@dantheman/dpos-consensus-algorithm-this-missing-white-paper). Under this algorithm, those who hold tokens on a blockchain adopting the EOS.IO software may select block producers through a continuous approval voting system and anyone may choose to participate in block production and will be given an opportunity to produce blocks proportional to the total votes they have received relative to all other producers. For private blockchains the management could use the tokens to add and remove IT staff.
+Il software EOS.IO utilizza l'unico algoritmo di consensus decentralizzato in grado di soddisfare i requisiti prestazionali delle applicazioni sulla blockchain,  Delegated Proof of Stake (DPOS) </ 0>. Under this algorithm, those who hold tokens on a blockchain adopting the EOS.IO software may select block producers through a continuous approval voting system and anyone may choose to participate in block production and will be given an opportunity to produce blocks proportional to the total votes they have received relative to all other producers. For private blockchains the management could use the tokens to add and remove IT staff.</p> 
 
 The EOS.IO software enables blocks to be produced exactly every 3 seconds and exactly one producer is authorized to produce a block at any given point in time. If the block is not produced at the scheduled time then the block for that time slot is skipped. When one or more blocks are skipped, there is a 6 or more second gap in the blockchain.
 
