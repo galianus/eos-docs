@@ -50,26 +50,26 @@ Chiunque può utilizzare, riprodurre o distribuire qualsiasi materiale in questo
   - [Applicazioni a Beneficio della Comunità](#community-benefit-applications)
 - [Governance](#governance) 
   - [Congelamento dei Conti](#freezing-accounts)
-  - [Changing Account Code](#changing-account-code)
-  - [Constitution](#constitution)
-  - [Upgrading the Protocol & Constitution](#upgrading-the-protocol--constitution) 
-    - [Emergency Changes](#emergency-changes)
-- [Scripts & Virtual Machines](#scripts--virtual-machines) 
-  - [Schema Defined Messages](#schema-defined-messages)
-  - [Schema Defined Database](#schema-defined-database)
-  - [Separating Authentication from Application](#separating-authentication-from-application)
-  - [Virtual Machine Independent Architecture](#virtual-machine-independent-architecture) 
+  - [Modifica del Codice dell'Account](#changing-account-code)
+  - [Costituzione](#constitution)
+  - [Aggiornamento del Protocollo & Costituzione](#upgrading-the-protocol--constitution) 
+    - [Modifiche di Emergenza](#emergency-changes)
+- [Script & Macchine virtuali](#scripts--virtual-machines) 
+  - [Messaggi Definiti dallo Schema](#schema-defined-messages)
+  - [Database Definito dallo Schema](#schema-defined-database)
+  - [Separazione dell'Autenticazione dall'Applicazione](#separating-authentication-from-application)
+  - [Architettura Indipendente della Macchina Virtuale](#virtual-machine-independent-architecture) 
     - [Web Assembly (WASM)](#web-assembly-wasm)
-    - [Ethereum Virtual Machine (EVM)](#ethereum-virtual-machine-evm)
-- [Inter Blockchain Communication](#inter-blockchain-communication) 
-  - [Merkle Proofs for Light Client Validation (LCV)](#merkle-proofs-for-light-client-validation-lcv)
-  - [Latency of Interchain Communication](#latency-of-interchain-communication)
-  - [Proof of Completeness](#proof-of-completeness)
-- [Conclusion](#conclusion)
+    - [Macchina Virtuale di Ethereum (EVM)](#ethereum-virtual-machine-evm)
+- [Comunicazione Interblockchain](#inter-blockchain-communication) 
+  - [Prova di Merkle per la Validazione del Light Client (LVC)](#merkle-proofs-for-light-client-validation-lcv)
+  - [Latenza della Comunicazione Interchain](#latency-of-interchain-communication)
+  - [Prova di Completezza](#proof-of-completeness)
+- [Conclusione](#conclusion)
 
-# Background
+# Contesto
 
-Blockchain technology was introduced in 2008 with the launch of the bitcoin currency, and since then entrepreneurs and developers have been attempting to generalize the technology in order to support a wider range of applications on a single blockchain platform.
+La tecnologia Blockchain è stata introdotta nel 2008 con il lancio di Bitcoin e da allora imprenditori e sviluppatori hanno tentato di generalizzare la tecnologia in modo da supportare una sempre più ampia gamma di applicazioni su un'unica piattaforma blockchain.
 
 While a number of blockchain platforms have struggled to support functional decentralized applications, application specific blockchains such as the BitShares decentralized exchange (2014) and Steem social media platform (2016) have become heavily used blockchains with tens of thousands of daily active users. They have achieved this by increasing performance to thousands of transactions per second, reducing latency to 1.5 seconds, eliminating fees, and providing a user experience similar to those currently provided by existing centralized services.
 
