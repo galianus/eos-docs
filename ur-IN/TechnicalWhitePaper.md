@@ -140,7 +140,7 @@ The EOS.IO software requires every transaction to include the hash of a recent b
 
 EOS.IO سافٹویئر تمام اکاونٹس کو ایک منفرد انسانی قابلِ مطالعہ 2سے32 الفاظ پر مشتمل حروف کا حوالہ دیا گیا ھو. نام اکاؤنٹ کا بنانے والا منتخب کرتا ہے. اکاونٹس کی دیکھ بھال کے لیے تمام اکاونٹس میں اکاونٹ بناتے وقت ایک چھوٹی رقم رکھنا ضروری ہے. اکاونٹ کے نام ناموں کے درمیان مالک کا اکاونٹ @domainہےصارف صرف اسی domain پر اپنا اکاونٹ بنا سکتا ہے.
 
-ایک ڑیسنٹرالایزڈ سیاق و سباق میں، اپلیکیشن ڈیولپر کو نیا اکاونٹ بنانے کے لیے ایک معمولی فیس ادا کرنی ہوگی. Traditional businesses already spend significant sums of money per customer they acquire in the form of advertising, free services, etc. The cost of funding a new blockchain account should be insignificant in comparison. Fortunately, there is no need to create accounts for users already signed up by another application.
+ایک ڑیسنٹرالایزڈ سیاق و سباق میں، اپلیکیشن ڈیولپر کو نیا اکاونٹ بنانے کے لیے ایک معمولی فیس ادا کرنی ہوگی. روایتی کاروباریوں نے پہلے ہی کافی پیسہ صارفین کے لیے اشتہارات کی شکل میں، مفت خدمات، وغیرہ. نیے بلاکچین اکاؤنٹ کو فنڈ کرنے کی قیمت مقابلہ میں غیر معمولی ہونی چاہیے. Fortunately, there is no need to create accounts for users already signed up by another application.
 
 ## Messages & Handlers
 
