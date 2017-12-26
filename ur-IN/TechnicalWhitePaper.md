@@ -99,13 +99,13 @@ In order to gain widespread use, applications on the blockchain require a platfo
 
 ## سلسلہ وار کارکردگی
 
-There are some applications that just cannot be implemented with parallel algorithms due to sequentially dependent steps. Applications such as exchanges need enough sequential performance to handle high volumes and therefore a platform with fast sequential performance is required.
+کچھ اپلیکیشنز ایسی ھے جن کو ھم صرف جو ترتیب پر منحصر اقدامات کی وجہ سے متوازی الگورزم کے ساتھ لاگو نہیں کیا جاسکتا ہے. اپلیکیشنز جیسے کہ ایکسچینج بہت زیادہ ترتیبات کا حامل ہے کارکردگی کا مظاہرہ کرنے کے لیے لھزا اس کے لیے تیز تربیاتی پلیٹ فارم کی ضرورت ہے.
 
-## Parallel Performance
+## متوازی کارکردگی
 
-Large scale applications need to divide the workload across multiple CPUs and computers.
+بڈے پیمانے کی اپلیکیشنز کام تقسیم کرنے کے لیے متعدد CPU اور کمپیوٹرز کا استعمال کرتا ہے.
 
-# Consensus Algorithm (DPOS)
+# بہ اتفاق رائے الگورزم DPOS))
 
 EOS.IO software utilizes the only decentralized consensus algorithm capable of meeting the performance requirements of applications on the blockchain, [Delegated Proof of Stake (DPOS)](https://steemit.com/dpos/@dantheman/dpos-consensus-algorithm-this-missing-white-paper). Under this algorithm, those who hold tokens on a blockchain adopting the EOS.IO software may select block producers through a continuous approval voting system and anyone may choose to participate in block production and will be given an opportunity to produce blocks proportional to the total votes they have received relative to all other producers. For private blockchains the management could use the tokens to add and remove IT staff.
 
