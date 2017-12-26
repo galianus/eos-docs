@@ -119,9 +119,9 @@ In condizioni normali, una blockchain DPOS non ha forks perché i produttori di 
 
 ## Conferma della transazione
 
-Typical DPOS blockchains have 100% block producer participation. A transaction can be considered confirmed with 99.9% certainty after an average of 1.5 seconds from time of broadcast.
+Blockchain DPOS tipiche hanno una partecipazione da parte dei produttori di blocchi del 100%. Una transazione può essere considerata confermata con una certezza del 99,9% dopo una media di 1,5 secondi dal momento della trasmissione.
 
-There are some extraordinary cases where a software bug, Internet congestion, or a malicious block producer will create two or more forks. For absolute certainty that a transaction is irreversible, a node may choose to wait for confirmation by 15 out of the 21 block producers. Based on a typical configuration of the EOS.IO software, this will take an average of 45 seconds under normal circumstances. By default all nodes will consider a block confirmed by 15 of 21 producers irreversible and will not switch to a fork that excludes such a block regardless of length.
+Esistono casi straordinari in cui un bug del software, una congestione della rete Internet o un produttore di blocchi dannoso creino due o più forks. Per avere la certezza assoluta che una transazione sia irreversibile, un nodo può scegliere di attendere la conferma di 15 dei 21 produttori di blocchi. Basandosi su una configurazione tipica del software EOS.IO, questa operazione in circostanze normali richiederà circa 45 secondi. Di default, tutti i nodi considerano irreversibile un blocco confermato da 15 dei 21 produttori e non passeranno a un fork che esclude tale blocco indipendentemente dalla lunghezza.
 
 It is possible for a node to warn users that there is a high probability that they are on a minority fork within 9 seconds of the start of a fork. After 2 consecutive missed blocks there is a 95% probability a node is on a minority fork. With 3 consecutive missed blocks there is a 99% certainty of being on a minority fork. It is possible to generate a robust predictive model that will utilize information about which nodes missed, recent participation rates, and other factors to quickly warn operators that something is wrong.
 
