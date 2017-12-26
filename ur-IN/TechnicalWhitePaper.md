@@ -138,9 +138,9 @@ The EOS.IO software requires every transaction to include the hash of a recent b
 
 # اکاؤنٹ
 
-EOS.IO سافٹویئر تمام اکاونٹس کو ایک منفرد انسانی قابلِ مطالعہ 2سے32 الفاظ پر مشتمل حروف کا حوالہ دیا گیا ھو. نام اکاؤنٹ کا بنانے والا منتخب کرتا ہے. اکاونٹس کی دیکھ بھال کے لیے تمام اکاونٹس میں اکاونٹ بناتے وقت ایک چھوٹی رقم رکھنا ضروری ہے. Account names also support namespaces such that the owner of account @domain is the only one who can create the account @user.domain.
+EOS.IO سافٹویئر تمام اکاونٹس کو ایک منفرد انسانی قابلِ مطالعہ 2سے32 الفاظ پر مشتمل حروف کا حوالہ دیا گیا ھو. نام اکاؤنٹ کا بنانے والا منتخب کرتا ہے. اکاونٹس کی دیکھ بھال کے لیے تمام اکاونٹس میں اکاونٹ بناتے وقت ایک چھوٹی رقم رکھنا ضروری ہے. اکاونٹ کے نام ناموں کے درمیان مالک کا اکاونٹ @domainہےصارف صرف اسی domain پر اپنا اکاونٹ بنا سکتا ہے.
 
-In a decentralized context, application developers will pay the nominal cost of account creation to sign up a new user. Traditional businesses already spend significant sums of money per customer they acquire in the form of advertising, free services, etc. The cost of funding a new blockchain account should be insignificant in comparison. Fortunately, there is no need to create accounts for users already signed up by another application.
+ایک ڑیسنٹرالایزڈ سیاق و سباق میں، اپلیکیشن ڈیولپر کو نیا اکاونٹ بنانے کے لیے ایک معمولی فیس ادا کرنی ہوگی. Traditional businesses already spend significant sums of money per customer they acquire in the form of advertising, free services, etc. The cost of funding a new blockchain account should be insignificant in comparison. Fortunately, there is no need to create accounts for users already signed up by another application.
 
 ## Messages & Handlers
 
