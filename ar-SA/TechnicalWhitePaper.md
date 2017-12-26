@@ -144,7 +144,7 @@ In a decentralized context, application developers will pay the nominal cost of 
 
 ## Messages & Handlers
 
-Each account can send structured messages to other accounts and may define scripts to handle messages when they are received. The EOS.IO software gives each account its own private database which can only be accessed by its own message handlers. Message handling scripts can also send messages to other accounts. The combination of messages and automated message handlers is how EOS.IO defines smart contracts.
+يمكن لكل حساب إرسال رسائل منظمة إلى حسابات أخرى وقد يحدد النصوص البرمجية للتعامل مع الرسائل عند استلامها. The EOS.IO software gives each account its own private database which can only be accessed by its own message handlers. Message handling scripts can also send messages to other accounts. The combination of messages and automated message handlers is how EOS.IO defines smart contracts.
 
 ## Role Based Permission Management
 
