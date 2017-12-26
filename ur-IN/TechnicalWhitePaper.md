@@ -131,7 +131,7 @@ EOS. IO سافٹویئر کے استعمال سے اکیس مرحلوں میں �
 
 The EOS.IO software requires every transaction to include the hash of a recent block header. This hash serves two purposes:
 
-1. prevents a replay of a transaction on forks that do not include the referenced block; and
+1. لین دین کے محولہ کو روکنے کے لیے فورکس بلاک نہیں روکتا ہے؛ اور
 2. signals the network that a particular user and their stake are on a specific fork.
 
 Over time all users end up directly confirming the blockchain which makes it difficult to forge counterfeit chains as the counterfeit would not be able to migrate transactions from the legitimate chain.
