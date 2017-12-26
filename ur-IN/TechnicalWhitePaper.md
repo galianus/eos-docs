@@ -160,7 +160,7 @@ EOS.IO سافٹویئر اکاونٹ کیز اور اکاونٹ سے جانے و
 
 <img align="right" src="http://eos.io/wpimg/diagram3.png" width="228.395px" height="300px" />
 
-EOS.IO سافٹویئر کے استعمال سے، اکاؤنٹ نامی اجازات کو بیان کرسکتے ہیں جو اوپری سطح کے اجازت سے. نکالی گئی ہو. Each named permission level defines an authority; an authority is a threshold multi-signature check consisting of keys and/or named permission levels of other accounts. For example, an account's "Friend" permission level can be set for the account to be controlled equally by any of the account's friends.
+EOS.IO سافٹویئر کے استعمال سے، اکاؤنٹ نامی اجازات کو بیان کرسکتے ہیں جو اوپری سطح کے اجازت سے. نکالی گئی ہو. ہر نامی اجازتی حد ایک اتھارٹی کو بیان کرتی ہے؛ایک اتھارٹی متعدد دستخطوں کی جانچ کے لیے چابی کی طرح اور /دوسرے نامی اکاؤنٹس کی اجازاتی حدیں. For example, an account's "Friend" permission level can be set for the account to be controlled equally by any of the account's friends.
 
 Another example is the Steem blockchain which has three hard-coded named permission levels: owner, active, and posting. The posting permission can only perform social actions such as voting and posting, while the active permission can do everything except change the owner. The owner permission is meant for cold storage and is able to do everything. The EOS.IO software generalizes this concept by allowing each account holder to define their own hierarchy as well as the grouping of actions.
 
