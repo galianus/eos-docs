@@ -144,9 +144,9 @@ EOS.IO سافٹویئر تمام اکاونٹس کو ایک منفرد انسا�
 
 ## پیغامات اور ان کی دیکھ بھال کرنے والے
 
-ہر ایک اکاؤنٹ سے دوسرے اکاونٹ تک ساخت پیغامات پہنچانے جا سکتے ہیں اور موصول ہونے والے پیغامات سے نمٹنے کے لئے سکرپٹس کی وضاحت کی جاتی ہے. EOS.IO سافٹویئر ہر ایک اکاؤنٹ کو اس کا ایک مخصوص ڈیٹابیس دیتا ہے جن کو صرف پیغامات سنبھالنے والے استعمال کر سکتے ہیں. پیغامات سنبھالنے والے نوشوں کو بھی اکاونٹس میں منتقل کر دیا جا سکتا ہے. The combination of messages and automated message handlers is how EOS.IO defines smart contracts.
+ہر ایک اکاؤنٹ سے دوسرے اکاونٹ تک ساخت پیغامات پہنچانے جا سکتے ہیں اور موصول ہونے والے پیغامات سے نمٹنے کے لئے سکرپٹس کی وضاحت کی جاتی ہے. EOS.IO سافٹویئر ہر ایک اکاؤنٹ کو اس کا ایک مخصوص ڈیٹابیس دیتا ہے جن کو صرف پیغامات سنبھالنے والے استعمال کر سکتے ہیں. پیغامات سنبھالنے والے نوشوں کو بھی اکاونٹس میں منتقل کر دیا جا سکتا ہے. پیغامات کا مجموعہ اور خود کار پیغامات سنبھالنے والے EOS.IO زکی معاہدے کی وضاحت کرتا ہے.
 
-## Role Based Permission Management
+## انتظامی اجازت پر مبنی
 
 Permission management involves determining whether or not a message is properly authorized. The simplest form of permission management is checking that a transaction has the required signatures, but this implies that required signatures are already known. Generally authority is bound to individuals or groups of individuals and is often compartmentalized. The EOS.IO software provides a declarative permission management system that gives accounts fine grained and high level control over who can do what and when.
 
