@@ -148,7 +148,7 @@ EOS.IO سافٹویئر تمام اکاونٹس کو ایک منفرد انسا�
 
 ## انتظامی اجازت پر مبنی
 
-اجازاتی انتظام میں اس بات کی تصدیق ہوتی ہے کہ پیغام صحیح ہے یا غلط. اجازاتی انتظام کی سب سے سادہ شکل لین دین کی جانچ پڑتال دستخط دیکھنا، بشرطیکہ دستخط پہلے سے ہی پتہ ہو. Generally authority is bound to individuals or groups of individuals and is often compartmentalized. The EOS.IO software provides a declarative permission management system that gives accounts fine grained and high level control over who can do what and when.
+اجازاتی انتظام میں اس بات کی تصدیق ہوتی ہے کہ پیغام صحیح ہے یا غلط. اجازاتی انتظام کی سب سے سادہ شکل لین دین کی جانچ پڑتال دستخط دیکھنا، بشرطیکہ دستخط پہلے سے ہی پتہ ہو. عام طور پر اختیارات کسی فرد یا گروہ کو دیے جاتے ہیں اور یہ اکثر کمپارٹمنٹالایزڈ ہوتے ہیں. EOS.IO سافٹویئر ایک مدددل انتظامی اجازت نامہ فراہم کرتا ہے جو اکاؤنٹس کو اعلی سطح پر کنٹرول کرتا ہے کہ ان کا کب کہا کرنا ہے.
 
 It is critical that authentication and permission management be standardized and separate from the business logic of the application. This enables tools to be developed to manage permissions in a general purpose manner and also provide significant opportunities for performance optimization.
 
