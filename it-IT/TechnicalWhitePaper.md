@@ -81,15 +81,15 @@ Per ottenere un uso diffuso, le applicazioni sulla blockchain richiedono una pia
 
 ## Supporto di Milioni di Utenti
 
-Per rivoluzionare imprese come Ebay, Uber, AirBnB e Facebook si richiede una tecnologia blockchain in grado di gestire decine di milioni di utenti attivi giornalmente. In certain cases, applications may not work unless a critical mass of users is reached and therefore a platform that can handle mass number of users is paramount.
+Per rivoluzionare imprese come Ebay, Uber, AirBnB e Facebook si richiede una tecnologia blockchain in grado di gestire decine di milioni di utenti attivi giornalmente. In alcuni casi, le applicazioni potrebbero non funzionare a meno che non venga raggiunta una massa critica di utenti e quindi è fondamentale avere una piattaforma in grado di gestire una grande quantità di utenti.
 
-## Free Usage
+## Utilizzo Gratuito
 
-Application developers need the flexibility to offer users free services; users should not have to pay in order to use the platform or benefit from its services. A blockchain platform that is free to use for users will likely gain more widespread adoption. Developers and businesses can then create effective monetization strategies.
+Gli sviluppatori di applicazioni hanno bisogno della flessibilità di offrire agli utenti servizi gratuiti; gli utenti non dovrebbero pagare per utilizzare la piattaforma o per beneficiare dei suoi servizi. Una piattaforma blockchain gratuita ha una probabilità di ottenere una diffusione di adozione molto alta. Gli sviluppatori e le aziende possono quindi creare strategie di monetizzazione efficaci.
 
-## Easy Upgrades and Bug Recovery
+## Aggiornamenti Semplici e Correzione di Bug
 
-Businesses building blockchain based applications need the flexibility to enhance their applications with new features.
+Le aziende che creano applicazioni basate su una blockchain necessitano la flessibilità di migliorare le loro applicazioni con funzionalità nuove.
 
 All non-trivial software is subject to bugs, even with the most rigorous of formal verification. The platform must be robust enough to fix bugs when they inevitably occur.
 
