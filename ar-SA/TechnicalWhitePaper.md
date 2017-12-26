@@ -146,11 +146,11 @@ In a decentralized context, application developers will pay the nominal cost of 
 
 يمكن لكل حساب إرسال رسائل منظمة إلى حسابات أخرى وقد يحدد النصوص البرمجية للتعامل مع الرسائل عند استلامها. برنامج EOS.IO يعطي كل حساب قاعدة بيانات خاصة به والتي لا يمكن الوصول إليها إلا من قبل معالجات الرسائلها. سيناريو معالج الرسالة   يمكنه أيضا إرسال رسائل إلى حسابات أخرى. إن الجمع بين الرسائل ومعالجات الرسائل الآلية هو كيفية تعريف EOS.IO للعقود الذكية.
 
-## Role Based Permission Management
+## الدور القائم على إدارة الإذن
 
-Permission management involves determining whether or not a message is properly authorized. The simplest form of permission management is checking that a transaction has the required signatures, but this implies that required signatures are already known. Generally authority is bound to individuals or groups of individuals and is often compartmentalized. The EOS.IO software provides a declarative permission management system that gives accounts fine grained and high level control over who can do what and when.
+وتتضمن إدارة الإذن تحديد ما إذا كانت الرسالة مأذون بها أم لا. أبسط شكل من أشكال إدارة الإذن هو التحقق من أن الصفقة لديها التوقيعات المطلوبة، ولكن هذا يعني أن التوقيعات المطلوبة معروفة بالفعل. وعموما فإن السلطة ملزمة بأفراد أو مجموعات من الأفراد وغالبا ما تكون مجزأة. يوفر البرنامج EOS.IO نظام إدارة إذن التصريح التي تعطي حسابات غرامة بالغة الدقة ومراقبة مستوى عال على ماذا يستطيع أن يفعل ومتى.
 
-It is critical that authentication and permission management be standardized and separate from the business logic of the application. This enables tools to be developed to manage permissions in a general purpose manner and also provide significant opportunities for performance optimization.
+أنه من المحرج أن تكون إدارة المصادقة والإذن موحدة ومنفصلة عن منطق الأعمال للتطبيق. This enables tools to be developed to manage permissions in a general purpose manner and also provide significant opportunities for performance optimization.
 
 Every account may be controlled by any weighted combination of other accounts and private keys. This creates a hierarchical authority structure that reflects how permissions are organized in reality, and makes multi-user control over funds easier than ever. Multi-user control is the single biggest contributor to security, and, when used properly, it can greatly eliminate the risk of theft due to hacking.
 
