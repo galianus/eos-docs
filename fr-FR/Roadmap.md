@@ -70,9 +70,9 @@ D'exemples d'applications sont criticales pour prouver la plate-forme fournit le
 
 ### Récompenses pour attaquer avec succès le réseau
 
-Attacking the network with spam, virtual machine exploits, and bug crashes, and non-deterministic behavior will be a heavily involved process but necessary to ensure that version 1.0 is stable.
+Attaquer le réseau avec spam, des exploits de machines virtuelles, des accidents bug, et comportement non déterministe sera un processus fortement impliqué mais nécessaire pour s'assurer que la version 1.0 est stable.
 
-### Language Support
+### Support linguistique
 
 Adding support for additional languages to be compiled to WASM: C++, Rust, etc.
 
