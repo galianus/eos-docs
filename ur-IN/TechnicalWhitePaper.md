@@ -162,7 +162,7 @@ EOS.IO سافٹویئر اکاونٹ کیز اور اکاونٹ سے جانے و
 
 EOS.IO سافٹویئر کے استعمال سے، اکاؤنٹ نامی اجازات کو بیان کرسکتے ہیں جو اوپری سطح کے اجازت سے. نکالی گئی ہو. ہر نامی اجازتی حد ایک اتھارٹی کو بیان کرتی ہے؛ایک اتھارٹی متعدد دستخطوں کی جانچ کے لیے چابی کی طرح اور /دوسرے نامی اکاؤنٹس کی اجازاتی حدیں. مثال کے طور پر، ایک دوست کی اجازت پر اکاونٹ میں موجود تمام دوست اکاؤنٹ کو برابر کنٹرول کر سکتے ہیں.
 
-Another example is the Steem blockchain which has three hard-coded named permission levels: owner, active, and posting. The posting permission can only perform social actions such as voting and posting, while the active permission can do everything except change the owner. The owner permission is meant for cold storage and is able to do everything. The EOS.IO software generalizes this concept by allowing each account holder to define their own hierarchy as well as the grouping of actions.
+اور ایک مثال سٹیم بلاکچین ہے جس کے تین مظبوط کوڈڈ نامی اجازتی حدیں، مالک، فعال، اور پوسٹنگ. پوسٹنگ اجازت صرف سماجی کام جیسے ووٹنگ اور پوسٹنگ کر سکتا ہے، جبکہ فعال اجازت مالک کی تبدیلی کو چھوڑ کر سب کچھ کر سکتے ہیں. The owner permission is meant for cold storage and is able to do everything. The EOS.IO software generalizes this concept by allowing each account holder to define their own hierarchy as well as the grouping of actions.
 
 ### Named Message Handler Groups
 
