@@ -152,9 +152,9 @@ In a decentralized context, application developers will pay the nominal cost of 
 
 أنه من المحرج أن تكون إدارة المصادقة والإذن موحدة ومنفصلة عن منطق الأعمال للتطبيق. وهذا يتيح للأدوات أن يتم تطويرها لإدارة الأذونات بطريقة عامة الغرض وأيضا توفير فرص كبيرة لتحسين الأداء.
 
-يمكن التحكم في كل حساب من قبل أي مجموعة مرجحة من الحسابات الأخرى والمفاتيح الخاصة. هذا يخلق هيكل السلطة الهرمية التي تعكس كيفية تنظيم الأذونات في الواقع، ويجعل التحكم متعدد المستخدمين على الأموال أسهل من أي وقت مضى. Multi-user control is the single biggest contributor to security, and, when used properly, it can greatly eliminate the risk of theft due to hacking.
+يمكن التحكم في كل حساب من قبل أي مجموعة مرجحة من الحسابات الأخرى والمفاتيح الخاصة. هذا يخلق هيكل السلطة الهرمية التي تعكس كيفية تنظيم الأذونات في الواقع، ويجعل التحكم متعدد المستخدمين على الأموال أسهل من أي وقت مضى. التحكم متعدد المستخدمين هو أكبر مساهم وحيد في الأمن، وعندما يستخدم بشكل صحيح، يمكنه القضاء بشكل كبير على خطر السرقة بسبب القرصنة.
 
-EOS.IO software allows accounts to define what combination of keys and/or accounts can send a particular message type to another account. For example, it is possible to have one key for a user's social media account and another for access to the exchange. It is even possible to give other accounts permission to act on behalf of a user's account without assigning them keys.
+برنامج EOS.IO يسمح للحسابات بتحديد مجموعة المفاتيح أو الحسابات التي يمكن أن ترسل نوع الرسالة المعينة إلى حساب آخر. For example, it is possible to have one key for a user's social media account and another for access to the exchange. It is even possible to give other accounts permission to act on behalf of a user's account without assigning them keys.
 
 ### Named Permission Levels
 
