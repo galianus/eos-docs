@@ -166,9 +166,9 @@ EOS.IO سافٹویئر کے استعمال سے، اکاؤنٹ نامی اجا�
 
 ### نامی پیغامات نیٹ کار گروہ-
 
-EOS.IO سافٹویئر ہر ایک اکاؤنٹ کو یہ اجازت دیتا ہے کہ وہ اندرونی گروپس کو منظم کرنے کے لیے اجازت دیتا ہے. These named message handler groups can be referenced by other accounts when they configure their permission levels.
+EOS.IO سافٹویئر ہر ایک اکاؤنٹ کو یہ اجازت دیتا ہے کہ وہ اندرونی گروپس کو منظم کرنے کے لیے اجازت دیتا ہے. یہ نامی پیغامات دوسرے اکاونٹس میں ایک لاہ عمل کے طور پر اکاونٹس کی تشکیل اور اجازت کا کا حوالہ دے سکتے ہیں.
 
-The highest level message handler group is the account name and the lowest level is the individual message type being received by the account. These groups can be referenced like so: **@accountname.groupa.subgroupb.MessageType**.
+سب سے اعلٰی درجے کا پیغام اکاؤنٹ کا نام اور سب سے کم درجے کا پیغام انفرادی قصم کا پیغام جو کسی اکاؤنٹ سے حاصل ہوا ہو. These groups can be referenced like so: **@accountname.groupa.subgroupb.MessageType**.
 
 Under this model it is possible for an exchange contract to group order creation and canceling separately from deposit and withdraw. This grouping by the exchange contract is a convenience for users of the exchange.
 
