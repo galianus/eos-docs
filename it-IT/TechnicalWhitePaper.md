@@ -24,7 +24,7 @@ Chiunque può utilizzare, riprodurre o distribuire qualsiasi materiale in questo
   - [Conferma della transazione](#transaction-confirmation)
   - [Transazione come Proof of Stake (TaPoS)](#transaction-as-proof-of-stake-tapos)
 - [Account](#accounts) 
-  - [Messaggi & Handlers](#messages--handlers)
+  - [Messaggi & Gestori](#messages--handlers)
   - [Gestione dei Permessi Basata sui Ruoli](#role-based-permission-management) 
     - [Livelli di Autorizzazione Denominati](#named-permission-levels)
     - [Gruppi di Gestori di Messaggi Denominati](#named-message-handler-groups)
@@ -138,15 +138,15 @@ Col tempo, tutti gli utenti confermeranno direttamente la blockchain rendendo di
 
 # Account
 
-Il software EOS.IO consente a tutti gli account di essere referenziati da un nome unico e leggibile di 2 fino a 32 caratteri. Il nome è scelto dal creatore dell'account. All accounts must be funded with the minimal account balance at the time they are created to cover the cost of storing account data. Account names also support namespaces such that the owner of account @domain is the only one who can create the account @user.domain.
+Il software EOS.IO consente a tutti gli account di essere referenziati da un nome unico e leggibile di 2 fino a 32 caratteri. Il nome è scelto dal creatore dell'account. Tutti i conti devono essere finanziati con un saldo nel conto minimo questo avviene nel momento in cui vengono creati in modo da coprire il costo di archiviazione dei dati dell'account. I nomi degli account hanno anche il supporto dei namespace in modo tale che il proprietario dell'account @domain sia l'unico che può creare l'account @user.domain.
 
-In a decentralized context, application developers will pay the nominal cost of account creation to sign up a new user. Traditional businesses already spend significant sums of money per customer they acquire in the form of advertising, free services, etc. The cost of funding a new blockchain account should be insignificant in comparison. Fortunately, there is no need to create accounts for users already signed up by another application.
+In un contesto decentralizzato, gli sviluppatori di applicazioni pagheranno il costo nominale della creazione dell'account per poter iscrivere un nuovo utente. Le imprese tradizionali già spendono ingenti somme di denaro per ogni cliente, questo avviene sotto forma di pubblicità, servizi gratuiti, ecc. Il costo del finanziamento di un nuovo account nella blockchain dovrebbe impallidire in confronto. Fortunatamente, non è necessario creare account per gli utenti già registrati in un'altra applicazione.
 
-## Messages & Handlers
+## Messaggi & Gestori
 
-Each account can send structured messages to other accounts and may define scripts to handle messages when they are received. The EOS.IO software gives each account its own private database which can only be accessed by its own message handlers. Message handling scripts can also send messages to other accounts. The combination of messages and automated message handlers is how EOS.IO defines smart contracts.
+Ogni account può inviare messaggi strutturati ad altri account e può definire script per gestire i messaggi quando vengono ricevuti. Il software EOS.IO assegna ad ogni account il proprio database privato a cui possono accedere solo i propri gestori (c.d. handlers) di messaggi. Gli script di gestione messaggi possono anche inviare messaggi ad altri account. La combinazione tra i messaggi e i gestori automatici di messaggi definiscono il modo in cui EOS.IO gestisce i contratti intelligenti.
 
-## Role Based Permission Management
+## Gestione dei Permessi Basata sui Ruoli
 
 Permission management involves determining whether or not a message is properly authorized. The simplest form of permission management is checking that a transaction has the required signatures, but this implies that required signatures are already known. Generally authority is bound to individuals or groups of individuals and is often compartmentalized. The EOS.IO software provides a declarative permission management system that gives accounts fine grained and high level control over who can do what and when.
 
