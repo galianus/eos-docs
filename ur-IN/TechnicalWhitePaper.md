@@ -202,11 +202,11 @@ EOS.IO سافٹویئر تکنیک سب اکاونٹس کو یہ اجازت دی
 
 ان پیغامات کے نشر ہونے کے بعد صارفین کو ایمیل یا ٹیکسٹ کی شکل میں ایک نوٹس ملتا ہے. ان کی طرف سے اجازت نہ ملنے پر، وہ اکاونٹ کو ریکور کرنے کے لیے اور پیغامات کو نکالنے کے لیے ایک عمل کرتے ہیں.
 
-ضروری تاخیر آپریشن کے احساس پر منحصر ہے. ایک قافی کپ کی ادائیگی کرنے میں دھیری نہیں لگتی اس کے لیے بس چند سیکنڈ کا وقت درکار رہتا ہے وہی ایک مکان خریدنے کی ادائیگی میں 72 گھنٹے تک کا وقت لگ سکتا ہے. Transferring an entire account to new control may take up to 30 days. The exact delays chosen are up to application developers and users.
+ضروری تاخیر آپریشن کے احساس پر منحصر ہے. ایک قافی کپ کی ادائیگی کرنے میں دھیری نہیں لگتی اس کے لیے بس چند سیکنڈ کا وقت درکار رہتا ہے وہی ایک مکان خریدنے کی ادائیگی میں 72 گھنٹے تک کا وقت لگ سکتا ہے. پودا اکاونٹ ٹرانسفر کرنے کے لیے 30 دن لگ سکتے ہیں. برابر دھیری اپلیکیشن بنانے والے طے کرتے ہیں.
 
-## Recovery from Stolen Keys
+## چوری شدہ کیز سے وصولی-
 
-The EOS.IO software provides users a way to restore control of their account when their keys are stolen. An account owner can use any owner key that was active in the last 30 days along with approval from their designated account recovery partner to reset the owner key on their account. The account recovery partner cannot reset control of the account without the help of the owner.
+EOS.IO سافٹویئر صارفین کو چوری ہوے اکاونٹس کی چابیاں ریسٹور کرنے کا اختیار دیتا ہے. ایک اکاؤنٹ مالک کسی بھی مالک کی چابیاں استعمال میں لا سکتا ہے جو پچھلے 30 دنوں سے فعل رہا ہو دوسرے اکاونٹ شراکت دار سے اکاؤنٹ کی چابیاں ریکور کرنے کے لیے. The account recovery partner cannot reset control of the account without the help of the owner.
 
 There is nothing for the hacker to gain by attempting to go through the recovery process because they already "control" the account. Furthermore, if they did go through the process, the recovery partner would likely demand identification and multi-factor authentication (phone and email). This would likely compromise the hacker or gain the hacker nothing in the process.
 
