@@ -186,7 +186,7 @@ EOS.IO سافٹویئر ہر ایک اکاؤنٹ کو اجازت دیتا ہے �
 
 #### طے شدہ اجازاتی گروہ-
 
-The EOS.IO technology also allows all accounts to have an "owner" group which can do everything, and an "active" group which can do everything except change the owner group. All other permission groups are derived from "active".
+EOS.IO سافٹویئر تکنیک سب اکاونٹس کو یہ اجازت دیتا ہے کہ وہ اپنا ایک "مالک" گروپ رکھ سکتے ہے اور ایک فعال گروپ جو مالک کے گروپ کی تبدیلی کے سوا کچھ بھی کر سکتا ہے. All other permission groups are derived from "active".
 
 #### Parallel Evaluation of Permissions
 
