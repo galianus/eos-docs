@@ -152,9 +152,9 @@ La gestione delle autorizzazioni include il determinare se un messaggio è corre
 
 È fondamentale che l'autenticazione e la gestione dei permessi siano standardizzati e separati dalla logica aziendale dell'applicazione. Ciò consente di sviluppare strumenti per gestire le autorizzazioni in modo generico e offre anche opportunità significative per l'ottimizzazione delle prestazioni.
 
-Every account may be controlled by any weighted combination of other accounts and private keys. This creates a hierarchical authority structure that reflects how permissions are organized in reality, and makes multi-user control over funds easier than ever. Multi-user control is the single biggest contributor to security, and, when used properly, it can greatly eliminate the risk of theft due to hacking.
+Ogni account può essere controllato da una combinazione di altri account e chiavi private. Ciò crea una struttura autoritaria gerarchica che riflette il modo in cui le autorizzazioni sono organizzate e semplifica il controllo multiutente sui fondi. Il controllo multiutente è il singolo e più grande contributore alla sicurezza e, se usato correttamente, può eliminare notevolmente il rischio di furti dovuti a hacking.
 
-EOS.IO software allows accounts to define what combination of keys and/or accounts can send a particular message type to another account. For example, it is possible to have one key for a user's social media account and another for access to the exchange. It is even possible to give other accounts permission to act on behalf of a user's account without assigning them keys.
+Il software EOS.IO consente agli account di definire quale combinazione di chiavi e/o account può inviare un determinato tipo di messaggio a un'altro account. For example, it is possible to have one key for a user's social media account and another for access to the exchange. It is even possible to give other accounts permission to act on behalf of a user's account without assigning them keys.
 
 ### Named Permission Levels
 
