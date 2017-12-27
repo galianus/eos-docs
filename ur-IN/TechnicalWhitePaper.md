@@ -190,9 +190,9 @@ EOS.IO سافٹویئر تکنیک سب اکاونٹس کو یہ اجازت دی
 
 #### متوازی جایزہ کی اجازت-
 
-اجازات کے جایزہ کا عمل فقط پڈھنا ہے اور لین دین کی طرف سے بغیر اجازت کی تبدیلیاںایک بلاک کے آخر تک اثر انداز نہیں ہوتی. اس کا یہ مطلب ہے کہ تمام کیز اور اجازاتی تشخیص لین دین کے متوازی چلتا ہے. علاوہ ازیں، ایک تیز رفتار کا جواب دہی عمل قیمتی اپلیکیشنز کے منطق شروع کی جا سکتی ہے. Lastly, it means that transaction permissions can be evaluated as pending transactions are received and do not need to be re-evaluated as they are applied.
+اجازات کے جایزہ کا عمل فقط پڈھنا ہے اور لین دین کی طرف سے بغیر اجازت کی تبدیلیاںایک بلاک کے آخر تک اثر انداز نہیں ہوتی. اس کا یہ مطلب ہے کہ تمام کیز اور اجازاتی تشخیص لین دین کے متوازی چلتا ہے. علاوہ ازیں، ایک تیز رفتار کا جواب دہی عمل قیمتی اپلیکیشنز کے منطق شروع کی جا سکتی ہے. آخر میں، اس کا مطلب یہ ہے کہ لین دین کی اجازات کی تشخیص کے بعد دوبارہ تشخیص کی ضرورت نہیں.
 
-All things considered, permission verification represents a significant percentage of the computation required to validate transactions. Making this a read-only and trivially parallelizable process enables a dramatic increase in performance.
+تمام چیزوں کو مدنظر رکھتے ہوئے، اجازاتی تصدیق کے نمایندو کی ایک بڑی فیصد لین دین کی تصدیق کرتی ہے. Making this a read-only and trivially parallelizable process enables a dramatic increase in performance.
 
 When replaying the blockchain to regenerate the deterministic state from the log of messages there is no need to evaluate the permissions again. The fact that a transaction is included in a known good block is sufficient to skip this step. This dramatically reduces the computational load associated with replaying an ever growing blockchain.
 
