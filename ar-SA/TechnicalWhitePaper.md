@@ -160,9 +160,9 @@ In a decentralized context, application developers will pay the nominal cost of 
 
 <img align="right" src="http://eos.io/wpimg/diagram3.png" width="228.395px" height="300px" />
 
-باستخدام برنامج EOS.IO، يمكن للحسابات تحديد مستويات كل إذن مسمى الذي يمكن أن يكون مشتق من أعلى مستوى الأذونات المسمات. ويحدد كل مستوى من أذونات اسمه سلطة؛ السلطة هي بداية التحقق من التوقيع المتعدد المتكون من مفاتيح و/أو مستويات أذن اسمه من حسابات أخرى. For example, an account's "Friend" permission level can be set for the account to be controlled equally by any of the account's friends.
+باستخدام برنامج EOS.IO، يمكن للحسابات تحديد مستويات كل إذن مسمى الذي يمكن أن يكون مشتق من أعلى مستوى الأذونات المسمات. ويحدد كل مستوى من أذونات اسمه سلطة؛ السلطة هي بداية التحقق من التوقيع المتعدد المتكون من مفاتيح و/أو مستويات أذن اسمه من حسابات أخرى. على سبيل المثال، يمكن تعيين مستوى إذن "صديق" في الحساب ليتم التحكم فيه بالتساوي من قبل أي من أصدقاء الحساب.
 
-Another example is the Steem blockchain which has three hard-coded named permission levels: owner, active, and posting. The posting permission can only perform social actions such as voting and posting, while the active permission can do everything except change the owner. The owner permission is meant for cold storage and is able to do everything. The EOS.IO software generalizes this concept by allowing each account holder to define their own hierarchy as well as the grouping of actions.
+مثال آخر هو بلوكشين ستيم الذي يحتوي على ثلاثة مستويات إذن ذات برمجة صعبة والمسمات: owner، active، و posting. لا يمكن لإذن posting سوى تنفيذ الإجراءات الاجتماعية مثل التصويت والنشر، في حين أن الإذن active يمكن أن يفعل كل شيء ما عدا تغيير owner. The owner permission is meant for cold storage and is able to do everything. The EOS.IO software generalizes this concept by allowing each account holder to define their own hierarchy as well as the grouping of actions.
 
 ### Named Message Handler Groups
 
