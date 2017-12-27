@@ -138,7 +138,7 @@ Over time all users end up directly confirming the blockchain which makes it dif
 
 # الحسابات
 
-The EOS.IO software permits all accounts to be referenced by a unique human readable name of 2 to 32 characters in length. The name is chosen by the creator of the account. All accounts must be funded with the minimal account balance at the time they are created to cover the cost of storing account data. Account names also support namespaces such that the owner of account @domain is the only one who can create the account @user.domain.
+The EOS.IO software permits all accounts to be referenced by a unique human readable name of 2 to 32 characters in length. يتم اختيار الاسم من قبل منشئ الحساب. يجب أن تمول جميع الحسابات مع الحد الأدنى من رصيد الحساب في الوقت الذي يتم إنشاؤها لتغطية تكلفة تخزين بيانات الحساب. كما تدعم أسماء الحسابات مساحات الأسماء بحيث يكون مالك الحسابdomain @ هو الشخص الوحيد الذي يمكنه إنشاء حساب @user.domain.
 
 In a decentralized context, application developers will pay the nominal cost of account creation to sign up a new user. Traditional businesses already spend significant sums of money per customer they acquire in the form of advertising, free services, etc. The cost of funding a new blockchain account should be insignificant in comparison. Fortunately, there is no need to create accounts for users already signed up by another application.
 
@@ -162,7 +162,7 @@ In a decentralized context, application developers will pay the nominal cost of 
 
 باستخدام برنامج EOS.IO، يمكن للحسابات تحديد مستويات كل إذن مسمى الذي يمكن أن يكون مشتق من أعلى مستوى الأذونات المسمات. ويحدد كل مستوى من أذونات اسمه سلطة؛ السلطة هي بداية التحقق من التوقيع المتعدد المتكون من مفاتيح و/أو مستويات أذن اسمه من حسابات أخرى. على سبيل المثال، يمكن تعيين مستوى إذن "صديق" في الحساب ليتم التحكم فيه بالتساوي من قبل أي من أصدقاء الحساب.
 
-مثال آخر هو بلوكشين ستيم الذي يحتوي على ثلاثة مستويات إذن ذات برمجة صعبة والمسمات: owner، active، و posting. لا يمكن لإذن posting سوى تنفيذ الإجراءات الاجتماعية مثل التصويت والنشر، في حين أن الإذن active يمكن أن يفعل كل شيء ما عدا تغيير owner. The owner permission is meant for cold storage and is able to do everything. The EOS.IO software generalizes this concept by allowing each account holder to define their own hierarchy as well as the grouping of actions.
+مثال آخر هو بلوكشين ستيم الذي يحتوي على ثلاثة مستويات إذن ذات برمجة صعبة والمسمات: owner، active، و posting. لا يمكن لإذن posting سوى تنفيذ الإجراءات الاجتماعية مثل التصويت والنشر، في حين أن الإذن active يمكن أن يفعل كل شيء ما عدا تغيير owner. ويهدف إذن owner للتخزين الجامد والقدرة على القيام بكل شيء. برنامج EOS.IO يعمم هذا المفهوم من خلال السماح لكل صاحب حساب بتحديد التسلسل الهرمي الخاص به فضلا عن تجميع الإجراأت.
 
 ### Named Message Handler Groups
 
