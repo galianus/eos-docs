@@ -174,11 +174,11 @@ Dưới mô hình này, hợp đồng giao dịch có thể nhóm việc tạo l
 
 ### Ánh Xạ Cấp Phép
 
-EOS.IO cho phép mỗi tài khoản định nghĩa ánh xạ giữa Nhóm Xử Lý Tin Nhắn của bất cứ tài khoản nào và Cấp Độ Cấp Phép Được Đặt Tên của chúng. Ví dụ, một chủ tài khoản có thể tạo ánh xạ của chủ tài khoản trên ứng dụng trên mạng xã hội đến nhóm cấp phép tên là "Bạn bè" của chủ tài khoản. Với ánh xạ này, bất cứ bạn bè nào cũng có thể phát tin như là chủ tài khoản trên tài khoản mạng xã hội. Mặc dù họ sẽ phát tin như là chủ tài khoản, họ sẽ vẫn có thể dùng mã khoá của bản thân để xác thực cho tin nhắn. This means it is always possible to identify which friends used the account and in what way.
+EOS.IO cho phép mỗi tài khoản định nghĩa ánh xạ giữa Nhóm Xử Lý Tin Nhắn của bất cứ tài khoản nào và Cấp Độ Cấp Phép Được Đặt Tên của chúng. Ví dụ, một chủ tài khoản có thể tạo ánh xạ của chủ tài khoản trên ứng dụng trên mạng xã hội đến nhóm cấp phép tên là "Bạn bè" của chủ tài khoản. Với ánh xạ này, bất cứ bạn bè nào cũng có thể phát tin như là chủ tài khoản trên tài khoản mạng xã hội. Mặc dù họ sẽ phát tin như là chủ tài khoản, họ sẽ vẫn có thể dùng mã khoá của bản thân để xác thực cho tin nhắn. Điều này có nghĩa là sẽ luôn luôn có thể xác minh người bạn bè nào đó đã dùng tài khoản và dùng bằng cách nào.
 
-### Evaluating Permissions
+### Đánh Giá Cấp Phép
 
-When delivering a message of type "**Action**", from **@alice** to **@bob** the EOS.IO software will first check to see if **@alice** has defined a permission mapping for **@bob.groupa.subgroup.Action**. If nothing is found then a mapping for **@bob.groupa.subgroup** then **@bob.groupa**, and lastly **@bob** will be checked. If no further match is found, then the assumed mapping will be to the named permission group **@alice.active**.
+Khi truyền tin nhắn của loại "**Hành Động**", từ **@alice** đến **@bob** phần mềm EOS.IO sẽ trước tiên kiểm tra xem **@alice** đã định nghĩa ánh xạ cấp phép cho **@bob.groupa.subgroup.Action** hay chưa. Nếu không tìm thấy, ánh xạ cho **@bob.groupa.subgroup** sau đó là **@bob.groupa**, và cuối cùng là **@bob** sẽ được kiểm tra. If no further match is found, then the assumed mapping will be to the named permission group **@alice.active**.
 
 Once a mapping is identified then signing authority is validated using the threshold multi-signature process and the authority associated with the named permission. If that fails, then it traverses up to the parent permission and ultimately to the owner permission, **@alice.owner**.
 
