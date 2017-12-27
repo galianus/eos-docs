@@ -194,7 +194,7 @@ EOS.IO سافٹویئر تکنیک سب اکاونٹس کو یہ اجازت دی
 
 تمام چیزوں کو مدنظر رکھتے ہوئے، اجازاتی تصدیق کے نمایندو کی ایک بڑی فیصد لین دین کی تصدیق کرتی ہے. اسکو فقط ایک مطعالاتی اور متوازی عمل بنانے سے اس کی کارکردگی میں ڈرامائی اضافہ ہونے کے قابل بناتا ہے.
 
-بلاکچین کو جواب دیتے وقت کہ اس کی بنیادی شکل کو پیغامات کے لاگ سے تشخیص کرنے کے لیے دوبارہ اجازت لینے کی ضرورت نہیں. The fact that a transaction is included in a known good block is sufficient to skip this step. This dramatically reduces the computational load associated with replaying an ever growing blockchain.
+بلاکچین کو جواب دیتے وقت کہ اس کی بنیادی شکل کو پیغامات کے لاگ سے تشخیص کرنے کے لیے دوبارہ اجازت لینے کی ضرورت نہیں. حقیقت یہ ہے کہ لین دین ایک پہچان والے بلاک سے ہوتا ہے جو اس قدم کو سکپ کرنے کے لیے کافی ہے. This dramatically reduces the computational load associated with replaying an ever growing blockchain.
 
 ## Messages with Mandatory Delay
 
