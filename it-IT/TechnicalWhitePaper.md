@@ -23,7 +23,7 @@ Chiunque può utilizzare, riprodurre o distribuire qualsiasi materiale in questo
 - [Algoritmi di Consensus (DPOS)](#consensus-algorithm-dpos) 
   - [Conferma della transazione](#transaction-confirmation)
   - [Transazione come Proof of Stake (TaPoS)](#transaction-as-proof-of-stake-tapos)
-- [Accounts](#accounts) 
+- [Account](#accounts) 
   - [Messaggi & Handlers](#messages--handlers)
   - [Gestione dei Permessi Basata sui Ruoli](#role-based-permission-management) 
     - [Livelli di Autorizzazione Denominati](#named-permission-levels)
@@ -129,16 +129,16 @@ La risposta di tale avviso dipende interamente dalla natura delle transazioni co
 
 ## Transazione come Proof of Stake (TaPoS)
 
-The EOS.IO software requires every transaction to include the hash of a recent block header. This hash serves two purposes:
+Il software EOS.IO richiede che ogni transazione includa l'hash di un'intestazione di blocco recente. Questo hash ha due scopi:
 
-1. prevents a replay of a transaction on forks that do not include the referenced block; and
-2. signals the network that a particular user and their stake are on a specific fork.
+1. impedisce la riproduzione di una transazione sui fork che non includono il blocco di riferimento; e
+2. segnala alla rete che un particolare utente e la sua quota di partecipazione (c.d. stake) si trovano su un fork specifico.
 
-Over time all users end up directly confirming the blockchain which makes it difficult to forge counterfeit chains as the counterfeit would not be able to migrate transactions from the legitimate chain.
+Col tempo, tutti gli utenti confermeranno direttamente la blockchain rendendo difficile falsificare le chain contraffatte poiché la contraffazione non sarebbe in grado di migrare le transazioni dalla chain legittima.
 
-# Accounts
+# Account
 
-The EOS.IO software permits all accounts to be referenced by a unique human readable name of 2 to 32 characters in length. The name is chosen by the creator of the account. All accounts must be funded with the minimal account balance at the time they are created to cover the cost of storing account data. Account names also support namespaces such that the owner of account @domain is the only one who can create the account @user.domain.
+Il software EOS.IO consente a tutti gli account di essere referenziati da un nome unico e leggibile di 2 fino a 32 caratteri. Il nome è scelto dal creatore dell'account. All accounts must be funded with the minimal account balance at the time they are created to cover the cost of storing account data. Account names also support namespaces such that the owner of account @domain is the only one who can create the account @user.domain.
 
 In a decentralized context, application developers will pay the nominal cost of account creation to sign up a new user. Traditional businesses already spend significant sums of money per customer they acquire in the form of advertising, free services, etc. The cost of funding a new blockchain account should be insignificant in comparison. Fortunately, there is no need to create accounts for users already signed up by another application.
 
