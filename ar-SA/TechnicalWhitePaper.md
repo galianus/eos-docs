@@ -140,7 +140,7 @@ Over time all users end up directly confirming the blockchain which makes it dif
 
 ويسمح البرنامج ىOص.ىO بأن يشار إلى كافة الحسابات من قبل اسم فريد للقراءة البشرية من 2 إلى 32 حرفا في الطول. يتم اختيار الاسم من قبل منشئ الحساب. يجب أن تمول جميع الحسابات مع الحد الأدنى من رصيد الحساب في الوقت الذي يتم إنشاؤها لتغطية تكلفة تخزين بيانات الحساب. كما تدعم أسماء الحسابات مساحات الأسماء بحيث يكون مالك الحسابdomain @ هو الشخص الوحيد الذي يمكنه إنشاء حساب @user.domain.
 
-وفي السياق اللامركزي، سيدفع مطوري التطبيقات التكلفة الاسمية لإنشاء الحساب لتسجيل مستخدم جديد. تنفق مسبقا الشركات التقليدية مبالغ كبيرة من المال لكل عميل تكتسبه في شكل إعلانات وخدمات مجانية وما إلى ذلك. وينبغي أن تكون تكلفة تمويل حساب بلوكشين جديد غير هامة فالمقارنة. Fortunately, there is no need to create accounts for users already signed up by another application.
+وفي السياق اللامركزي، سيدفع مطوري التطبيقات التكلفة الاسمية لإنشاء الحساب لتسجيل مستخدم جديد. تنفق مسبقا الشركات التقليدية مبالغ كبيرة من المال لكل عميل تكتسبه في شكل إعلانات وخدمات مجانية وما إلى ذلك. وينبغي أن تكون تكلفة تمويل حساب بلوكشين جديد غير هامة فالمقارنة. لحسن الحظ، ليست هناك حاجة لإنشاء حسابات للمستخدمين الذين اشتركوا من قبل تطبيق آخر.
 
 ## الرسائل & المعالجات
 
@@ -166,7 +166,7 @@ Over time all users end up directly confirming the blockchain which makes it dif
 
 ### Named Message Handler Groups
 
-The EOS.IO software allows each account to organize its own message handlers into named and nested groups. These named message handler groups can be referenced by other accounts when they configure their permission levels.
+برنامج EOS.IO يسمح لكل حساب بتنظيم معالجات الرسائل الخاص به في مجموعات مسمات ومتداخلة. These named message handler groups can be referenced by other accounts when they configure their permission levels.
 
 The highest level message handler group is the account name and the lowest level is the individual message type being received by the account. These groups can be referenced like so: **@accountname.groupa.subgroupb.MessageType**.
 
