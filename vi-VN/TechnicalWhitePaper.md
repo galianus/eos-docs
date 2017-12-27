@@ -172,9 +172,9 @@ Nhóm xử lý tin nhắn ở cấp độ cao nhất là tên tài khoản và c
 
 Dưới mô hình này, hợp đồng giao dịch có thể nhóm việc tạo lệnh và huỷ lệnh tách bạch khỏi gửi và rút. Việc góp nhóm bằng hợp đồng giao dịch là một tiện lợi cho các người dùng của sàn giao dịch.
 
-### Bản đồ cấp phép
+### Ánh Xạ Cấp Phép
 
-EOS.IO software allows each account to define a mapping between a Named Message Handler Group of any account and their own Named Permission Level. For example, an account holder could map the account holder's social media application to the account holder's "Friend" permission group. With this mapping, any friend could post as the account holder on the account holder's social media. Even though they would post as the account holder, they would still use their own keys to sign the message. This means it is always possible to identify which friends used the account and in what way.
+EOS.IO cho phép mỗi tài khoản định nghĩa ánh xạ giữa Nhóm Xử Lý Tin Nhắn của bất cứ tài khoản nào và Cấp Độ Cấp Phép Được Đặt Tên của chúng. Ví dụ, một chủ tài khoản có thể tạo ánh xạ của chủ tài khoản trên ứng dụng trên mạng xã hội đến nhóm cấp phép tên là "Bạn bè" của chủ tài khoản. Với ánh xạ này, bất cứ bạn bè nào cũng có thể phát tin như là chủ tài khoản trên tài khoản mạng xã hội. Mặc dù họ sẽ phát tin như là chủ tài khoản, họ sẽ vẫn có thể dùng mã khoá của bản thân để xác thực cho tin nhắn. This means it is always possible to identify which friends used the account and in what way.
 
 ### Evaluating Permissions
 
