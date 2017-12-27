@@ -168,13 +168,13 @@ Un altro esempio è la blockchain di Steem che ha tre livelli di autorizzazione 
 
 Il software EOS.IO consente a ciascun account di organizzare i propri gestori di messaggi in gruppi denominati e nidificati. Questi gruppi di gestori di messaggi denominati possono essere referenziati da altri account quando configurano i loro livelli di autorizzazione.
 
-The highest level message handler group is the account name and the lowest level is the individual message type being received by the account. These groups can be referenced like so: **@accountname.groupa.subgroupb.MessageType**.
+Il gruppo di gestori di messaggi di livello più alto rappresenta il nome dell'account, mentre il livello più basso è il tipo di messaggio singolo ricevuto dall'account. Questi gruppi possono essere referenziati in questo modo: **@accountname.groupa.subgroupb.MessageType**.
 
-Under this model it is possible for an exchange contract to group order creation and canceling separately from deposit and withdraw. This grouping by the exchange contract is a convenience for users of the exchange.
+In base a questo modello, è possibile che un contratto di exchange raggruppi la creazione e l'annullamento dell'ordine separatamente dal deposito e dal prelievo. Questo raggruppamento in base al contratto di exchange è una comodità per gli utenti dell'exchange.
 
-### Permission Mapping
+### Mappatura delle Autorizzazioni
 
-EOS.IO software allows each account to define a mapping between a Named Message Handler Group of any account and their own Named Permission Level. For example, an account holder could map the account holder's social media application to the account holder's "Friend" permission group. With this mapping, any friend could post as the account holder on the account holder's social media. Even though they would post as the account holder, they would still use their own keys to sign the message. This means it is always possible to identify which friends used the account and in what way.
+Il software EOS.IO consente a ciascun account di definire una mappatura tra un gruppo di gestori di messaggi denominati di qualsiasi account e il proprio Livello di Autorizzazione Denominato. Ad esempio, un titolare del conto può mappare il titolare del conto di un applicazione social media al gruppo di autorizzazioni "Amico" del titolare del conto. Con questa mappatura, qualsiasi "amico" può postare come possessore dell'account sui social media del titolare dell'account. Even though they would post as the account holder, they would still use their own keys to sign the message. This means it is always possible to identify which friends used the account and in what way.
 
 ### Evaluating Permissions
 
