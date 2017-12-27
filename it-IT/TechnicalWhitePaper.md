@@ -194,9 +194,9 @@ Il processo di valutazione dell'autorizzazione è "di sola lettura" e le modific
 
 Tutto sommato, la verifica dell'autorizzazione rappresenta una percentuale significativa del calcolo richiesto per convalidare le transazioni. Rendendo questo un processo di sola lettura e parallelizzabile consente un notevole aumento delle prestazioni.
 
-Quando si riproduce la blockchain per rigenerare lo stato deterministico dal registro dei messaggi, non è necessario rivalutare le autorizzazioni. Il fatto che una transazione sia inclusa in un blocco valido noto è sufficiente per saltare questo passaggio. This dramatically reduces the computational load associated with replaying an ever growing blockchain.
+Quando si riproduce la blockchain per rigenerare lo stato deterministico dal registro dei messaggi, non è necessario rivalutare le autorizzazioni. Il fatto che una transazione sia inclusa in un blocco valido noto è sufficiente per saltare questo passaggio. Questo riduce drasticamente il carico computazionale associato alla riproduzione di una blockchain in continua crescita.
 
-## Messages with Mandatory Delay
+## Messaggi con Ritardo Obbligatorio
 
 Time is a critical component of security. In most cases, it is not possible to know if a private key has been stolen until it has been used. Time based security is even more critical when people have applications that require keys be kept on computers connected to the internet for daily use. The EOS.IO software enables application developers to indicate that certain messages must wait a minimum period of time after being included in a block before they can be applied. During this time they can be cancelled.
 
