@@ -222,22 +222,22 @@ Parte dell'esecuzione parallela significa che quando uno script genera un nuovo 
 
 ## Riduzione della Latenza delle Comunicazioni
 
-Latency is the time it takes for one account to send a message to another account and then receive a response. The goal is to enable two accounts to exchange messages back and forth within a single block without having to wait 3 seconds between each message. To enable this, the EOS.IO software divides each block into cycles. Each cycle is divided into threads and each thread contains a list of transactions. Each transaction contains a set of messages to be delivered. This structure can be visualized as a tree where alternating layers are processed sequentially and in parallel.
+La latenza è il tempo impiegato da un'account per inviare un messaggio a un altro account per poi ricevere una risposta. L'obiettivo è di consentire a due account di scambiare messaggi tra di loro all'interno di un singolo blocco senza dover attendere 3 secondi tra ogni messaggio. Per abilitare ciò, il software EOS.IO divide ciascun blocco in cicli. Ogni ciclo è diviso in thread e ogni thread contiene un elenco di transazioni. Ogni transazione contiene un insieme di messaggi da consegnare. La sua struttura può essere visualizzata come un albero in cui i layers alternati vengono elaborati in sequenza e in parallelo.
 
-        Block
+        Blocco
     
-          Cycles (sequential)
+          Cicli (sequenziali)
     
-            Threads (parallel)
+            Threads (paralleli)
     
-              Transactions (sequential)
+              Transazioni (sequenziali)
     
-                Messages (sequential)
+                Messaggi (sequenziali)
     
-                  Receiver and Notified Accounts (parallel)
+                  Ricevitore e Account Notificati (paralleli)
     
 
-Transactions generated in one cycle can be delivered in any subsequent cycle or block. Block producers will keep adding cycles to a block until the maximum wall clock time has passed or there are no new generated transactions to deliver.
+Le transazioni generate in un ciclo possono essere consegnate in qualsiasi ciclo o blocco successivo. I produttori di blocchi continueranno ad aggiungere cicli a un blocco fino a quando non sarà trascorso il tempo massimo di "wall time" o non ci saranno nuove transazioni generate da consegnare.
 
 It is possible to use static analysis of a block to verify that within a given cycle no two threads contain transactions that modify the same account. So long as that invariant is maintained a block can be processed by running all threads in parallel.
 
