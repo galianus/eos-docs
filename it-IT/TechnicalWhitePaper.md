@@ -148,9 +148,9 @@ Ogni account può inviare messaggi strutturati ad altri account e può definire 
 
 ## Gestione dei Permessi Basata sui Ruoli
 
-Permission management involves determining whether or not a message is properly authorized. The simplest form of permission management is checking that a transaction has the required signatures, but this implies that required signatures are already known. Generally authority is bound to individuals or groups of individuals and is often compartmentalized. The EOS.IO software provides a declarative permission management system that gives accounts fine grained and high level control over who can do what and when.
+La gestione delle autorizzazioni include il determinare se un messaggio è correttamente autorizzato o meno. La forma più semplice di gestione dei permessi consiste nel controllare che una transazione abbia le firme richieste, ma questo implica che le firme richieste siano già note. Generalmente l'autorità è legata a individui o gruppi di individui ed è spesso compartimentata. Il software EOS.IO fornisce un sistema di gestione dei permessi dichiarativo che offre agli account un controllo minuzioso e ad alto livello sul chi può fare cosa e quando lo si può fare.
 
-It is critical that authentication and permission management be standardized and separate from the business logic of the application. This enables tools to be developed to manage permissions in a general purpose manner and also provide significant opportunities for performance optimization.
+È fondamentale che l'autenticazione e la gestione dei permessi siano standardizzati e separati dalla logica aziendale dell'applicazione. Ciò consente di sviluppare strumenti per gestire le autorizzazioni in modo generico e offre anche opportunità significative per l'ottimizzazione delle prestazioni.
 
 Every account may be controlled by any weighted combination of other accounts and private keys. This creates a hierarchical authority structure that reflects how permissions are organized in reality, and makes multi-user control over funds easier than ever. Multi-user control is the single biggest contributor to security, and, when used properly, it can greatly eliminate the risk of theft due to hacking.
 
