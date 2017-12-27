@@ -239,19 +239,19 @@ La latenza è il tempo impiegato da un'account per inviare un messaggio a un alt
 
 Le transazioni generate in un ciclo possono essere consegnate in qualsiasi ciclo o blocco successivo. I produttori di blocchi continueranno ad aggiungere cicli a un blocco fino a quando non sarà trascorso il tempo massimo di "wall time" o non ci saranno nuove transazioni generate da consegnare.
 
-It is possible to use static analysis of a block to verify that within a given cycle no two threads contain transactions that modify the same account. So long as that invariant is maintained a block can be processed by running all threads in parallel.
+È possibile utilizzare l'analisi statica di un blocco per verificare che all'interno di un determinato ciclo non vi siano due thread contenenti transazioni che modificano lo stesso account. Finché tale invariante viene mantenuto, è possibile elaborare un blocco eseguendo tutti i thread in parallelo.
 
-## Read-Only Message Handlers
+## Gestori di Messaggi di Sola Lettura
 
-Some accounts may be able to process a message on a pass/fail basis without modifying their internal state. If this is the case then these handlers can be executed in parallel so long as only read-only message handlers for a particular account are included in one or more threads within a particular cycle.
+Alcuni account potrebbero essere in grado di elaborare un messaggio su base pass/fail senza modificare il loro stato interno. In tal caso, questi gestori possono essere eseguiti in parallelo a condizione che solo i gestori di messaggi di sola lettura per un determinato account siano inclusi in uno o più thread all'interno di un particolare ciclo.
 
-## Atomic Transactions with Multiple Accounts
+## Transazioni Atomiche con Multipli Account
 
-Sometimes it is desirable to ensure that messages are delivered to and accepted by multiple accounts atomically. In this case both messages are placed in one transaction and both accounts will be assigned the same thread and the messages applied sequentially. This situation is not ideal for performance and when it comes to "billing" users for usage, they will get billed by the number of unique accounts referenced by a transaction.
+A volte è desiderabile garantire che i messaggi vengano consegnati e accettati da più account atomicamente. In questo caso entrambi i messaggi vengono inseriti in una transazione e ad entrambi gli account verrà assegnato lo stesso thread e i messaggi verranno applicati in sequenza. Questa situazione non è ideale per le prestazioni e quando si tratta "di fatturare" gli utenti per l'utilizzo, verranno fatturati dal numero di account univoci a cui fa riferimento una transazione.
 
-For performance and cost reasons it is best to minimize atomic operations involving two or more heavily utilized accounts.
+Per motivi di prestazioni e costi, è meglio ridurre al minimo le operazioni atomiche che coinvolgono due o più account molto utilizzati.
 
-## Partial Evaluation of Blockchain State
+## Valutazione Parziale dello stato della Blockchain
 
 Scaling blockchain technology necessitates that components are modular. Everyone should not have to run everything, especially if they only need to use a small subset of the applications.
 
