@@ -174,23 +174,23 @@ In base a questo modello, è possibile che un contratto di exchange raggruppi la
 
 ### Mappatura delle Autorizzazioni
 
-Il software EOS.IO consente a ciascun account di definire una mappatura tra un gruppo di gestori di messaggi denominati di qualsiasi account e il proprio Livello di Autorizzazione Denominato. Ad esempio, un titolare del conto può mappare il titolare del conto di un applicazione social media al gruppo di autorizzazioni "Amico" del titolare del conto. Con questa mappatura, qualsiasi "amico" può postare come possessore dell'account sui social media del titolare dell'account. Even though they would post as the account holder, they would still use their own keys to sign the message. This means it is always possible to identify which friends used the account and in what way.
+Il software EOS.IO consente a ciascun account di definire una mappatura tra un gruppo di gestori di messaggi denominati di qualsiasi account e il proprio Livello di Autorizzazione Denominato. Ad esempio, un titolare del conto può mappare il titolare del conto di un applicazione social media al gruppo di autorizzazioni "Amico" del titolare del conto. Con questa mappatura, qualsiasi "amico" può postare come possessore dell'account sui social media del titolare dell'account. Anche se pubblicherebbero come titolari dell account, utilizzerebbero comunque le proprie chiavi per firmare il messaggio. Ciò significa che è sempre possibile identificare quali amici hanno utilizzato l'account e in che modo.
 
-### Evaluating Permissions
+### Valutazione delle Autorizzazioni
 
-When delivering a message of type "**Action**", from **@alice** to **@bob** the EOS.IO software will first check to see if **@alice** has defined a permission mapping for **@bob.groupa.subgroup.Action**. If nothing is found then a mapping for **@bob.groupa.subgroup** then **@bob.groupa**, and lastly **@bob** will be checked. If no further match is found, then the assumed mapping will be to the named permission group **@alice.active**.
+Quando si consegna un messaggio di tipo "**Action**", da **@alice** a **@bob** il software EOS.IO prima di tutto verificherà se **@alice** ha definito una mappatura delle autorizzazioni per **@bob.groupa.subgroup.Action**. Se non viene trovato nulla, sarà controllata una mappatura per **@bob.groupa.subgroup**, **@bob.groupa**, e infine **@bob**. Se non viene trovata alcuna ulteriore corrispondenza, la mappatura ipotizzata si troverà nel gruppo di autorizzazioni denominato **@alice.active**.
 
-Once a mapping is identified then signing authority is validated using the threshold multi-signature process and the authority associated with the named permission. If that fails, then it traverses up to the parent permission and ultimately to the owner permission, **@alice.owner**.
+Una volta identificata una mappatura, l'autorizzazione di firma viene convalidata utilizzando il processo di firma multipla e l'autorizzazione associata all'autorizzazione denominata. Se ciò dovesse fallire, allora passerà al permesso principale e, in definitiva, all'autorizzazione del proprietario, **@alice.owner**.
 
 <img align="center" src="http://eos.io/wpimg/diagram2grayscale2.jpg" width="845.85px" height="500px" />
 
-#### Default Permission Groups
+#### Gruppi di Autorizzazione Predefiniti
 
-The EOS.IO technology also allows all accounts to have an "owner" group which can do everything, and an "active" group which can do everything except change the owner group. All other permission groups are derived from "active".
+La tecnologia EOS.IO consente inoltre a tutti gli account di avere un gruppo "proprietario" che può fare tutto, e un gruppo "attivo" che può fare tutto tranne cambiare il gruppo proprietario. Tutti gli altri gruppi di autorizzazione sono derivati da quelli "attivi".
 
-#### Parallel Evaluation of Permissions
+#### Valutazione Parallela delle Autorizzazioni
 
-The permission evaluation process is "read-only" and changes to permissions made by transactions do not take effect until the end of a block. This means that all keys and permission evaluation for all transactions can be executed in parallel. Furthermore, this means that a rapid validation of permission is possible without starting the costly application logic that would have to be rolled back. Lastly, it means that transaction permissions can be evaluated as pending transactions are received and do not need to be re-evaluated as they are applied.
+Il processo di valutazione dell'autorizzazione è "di sola lettura" e le modifiche alle autorizzazioni effettuate dalle transazioni non hanno effetto fino alla fine di un blocco. Ciò significa che tutte le chiavi e la valutazione delle autorizzazioni per tutte le transazioni possono essere eseguite in parallelo. Furthermore, this means that a rapid validation of permission is possible without starting the costly application logic that would have to be rolled back. Lastly, it means that transaction permissions can be evaluated as pending transactions are received and do not need to be re-evaluated as they are applied.
 
 All things considered, permission verification represents a significant percentage of the computation required to validate transactions. Making this a read-only and trivially parallelizable process enables a dramatic increase in performance.
 
