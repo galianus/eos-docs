@@ -180,7 +180,7 @@ EOS.IO cho phép mỗi tài khoản định nghĩa ánh xạ giữa Nhóm Xử L
 
 Khi truyền tin nhắn của loại "**Hành Động**", từ **@alice** đến **@bob** phần mềm EOS.IO sẽ trước tiên kiểm tra xem **@alice** đã định nghĩa ánh xạ cấp phép cho **@bob.groupa.subgroup.Action** hay chưa. Nếu không tìm thấy, ánh xạ cho **@bob.groupa.subgroup** sau đó là **@bob.groupa**, và cuối cùng là **@bob** sẽ được kiểm tra. Nếu không có kết quả nào khớp, ánh xạ mặc định sẽ là nhóm cấp phép được đặt tên **@alice.active**.
 
-Một khi ánh xạ đã được xác định thì việc ký tên xác minh được được phê duyệt dùng quy trình đa-chữ-ký có giới hạn và thẩm quyền gắn với cấp phép được đặt tên. If that fails, then it traverses up to the parent permission and ultimately to the owner permission, **@alice.owner**.
+Một khi ánh xạ đã được xác định thì việc ký tên xác minh được được phê duyệt dùng quy trình đa-chữ-ký có giới hạn và thẩm quyền gắn với cấp phép được đặt tên. Nếu việc đó thất bại, nó sẽ tra ngược lên cấp phép của phân tử cấp trên và cao nhất là đến tận cấp phép của người sở hữu, **@alice.owner**.
 
 <img align="center" src="http://eos.io/wpimg/diagram2grayscale2.jpg" width="845.85px" height="500px" />
 
