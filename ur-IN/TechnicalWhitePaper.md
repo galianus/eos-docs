@@ -206,9 +206,9 @@ EOS.IO سافٹویئر تکنیک سب اکاونٹس کو یہ اجازت دی
 
 ## چوری شدہ کیز سے وصولی-
 
-EOS.IO سافٹویئر صارفین کو چوری ہوے اکاونٹس کی چابیاں ریسٹور کرنے کا اختیار دیتا ہے. ایک اکاؤنٹ مالک کسی بھی مالک کی چابیاں استعمال میں لا سکتا ہے جو پچھلے 30 دنوں سے فعل رہا ہو دوسرے اکاونٹ شراکت دار سے اکاؤنٹ کی چابیاں ریکور کرنے کے لیے. The account recovery partner cannot reset control of the account without the help of the owner.
+EOS.IO سافٹویئر صارفین کو چوری ہوے اکاونٹس کی چابیاں ریسٹور کرنے کا اختیار دیتا ہے. ایک اکاؤنٹ مالک کسی بھی مالک کی چابیاں استعمال میں لا سکتا ہے جو پچھلے 30 دنوں سے فعل رہا ہو دوسرے اکاونٹ شراکت دار سے اکاؤنٹ کی چابیاں ریکور کرنے کے لیے. اکاونٹ ریکوری شراکت دار مالک کی مدد کے بغیر اکاونٹ کو کنٹرول نہیں کر سکتا ہے.
 
-There is nothing for the hacker to gain by attempting to go through the recovery process because they already "control" the account. Furthermore, if they did go through the process, the recovery partner would likely demand identification and multi-factor authentication (phone and email). This would likely compromise the hacker or gain the hacker nothing in the process.
+ایک ھیکر اگر ریکوری عمل کی کوشش کریں تو اس سے اسکو کوئی فائدہ نہ ہوگا کیونکہ اس پر پہلے سے ہی ان کا کنٹرول رہتا ہے. Furthermore, if they did go through the process, the recovery partner would likely demand identification and multi-factor authentication (phone and email). This would likely compromise the hacker or gain the hacker nothing in the process.
 
 This process is also very different from a simple multi-signature arrangement. With a multi-signature transaction, there is another company that is party to every transaction that is executed, but with the recovery process the agent is only a party to the recovery process and has no power over the day-to-day transactions. This dramatically reduces costs and legal liabilities for everyone involved.
 
