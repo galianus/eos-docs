@@ -198,7 +198,7 @@ EOS.IO سافٹویئر تکنیک سب اکاونٹس کو یہ اجازت دی
 
 ## پیغامات لازمی تاخیر کے ساتھ-
 
-وقت سلامتی کا ایک اہم جز ہے. اکثر ضرورتوں میں، یہ جاننا ممکن نہیں ہے کہ پوشیدہ چابی کو کو چوری کے بعد استعمال کیا گیا ہے یا نہیں. Time based security is even more critical when people have applications that require keys be kept on computers connected to the internet for daily use. The EOS.IO software enables application developers to indicate that certain messages must wait a minimum period of time after being included in a block before they can be applied. During this time they can be cancelled.
+وقت سلامتی کا ایک اہم جز ہے. اکثر ضرورتوں میں، یہ جاننا ممکن نہیں ہے کہ پوشیدہ چابی کو کو چوری کے بعد استعمال کیا گیا ہے یا نہیں. وقت پر مبنی سلامتی کی اہمیت اس وقت بڈھ جاتی ہے جب لوگوں کے پاس وہ اپلیکیشنز ہو جن کے پاس روزانہ استعمال کے لیے کمپیوٹر اور انٹرنیٹ سے منسلک رہنے کے لئے چابیوں کی ضرورت پڈتی ہیں. EOS.IO سافٹویئر اپلیکیشن ڈیولپرس کو اس قابل بناتا ہے کہ کچھ پیغامات کو بلاک پر ڈالنے سے پہلے لازماً ایک چھوٹے سے وقفے کے لیے رکنا پڈتا ہے. During this time they can be cancelled.
 
 Users can then receive notice via email or text message when one of these messages is broadcast. If they did not authorize it, then they can use the account recovery process to recover their account and retract the message.
 
