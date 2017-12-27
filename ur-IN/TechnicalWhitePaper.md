@@ -186,9 +186,9 @@ EOS.IO سافٹویئر ہر ایک اکاؤنٹ کو اجازت دیتا ہے �
 
 #### طے شدہ اجازاتی گروہ-
 
-EOS.IO سافٹویئر تکنیک سب اکاونٹس کو یہ اجازت دیتا ہے کہ وہ اپنا ایک "مالک" گروپ رکھ سکتے ہے اور ایک فعال گروپ جو مالک کے گروپ کی تبدیلی کے سوا کچھ بھی کر سکتا ہے. All other permission groups are derived from "active".
+EOS.IO سافٹویئر تکنیک سب اکاونٹس کو یہ اجازت دیتا ہے کہ وہ اپنا ایک "مالک" گروپ رکھ سکتے ہے اور ایک فعال گروپ جو مالک کے گروپ کی تبدیلی کے سوا کچھ بھی کر سکتا ہے. دیگر تمام اجازاتی گروپ فعال سے نکلے ہوئے ہیں.
 
-#### Parallel Evaluation of Permissions
+#### متوازی جایزہ کی اجازت-
 
 The permission evaluation process is "read-only" and changes to permissions made by transactions do not take effect until the end of a block. This means that all keys and permission evaluation for all transactions can be executed in parallel. Furthermore, this means that a rapid validation of permission is possible without starting the costly application logic that would have to be rolled back. Lastly, it means that transaction permissions can be evaluated as pending transactions are received and do not need to be re-evaluated as they are applied.
 
