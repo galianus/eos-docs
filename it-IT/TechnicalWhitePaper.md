@@ -154,13 +154,13 @@ La gestione delle autorizzazioni include il determinare se un messaggio è corre
 
 Ogni account può essere controllato da una combinazione di altri account e chiavi private. Ciò crea una struttura autoritaria gerarchica che riflette il modo in cui le autorizzazioni sono organizzate e semplifica il controllo multiutente sui fondi. Il controllo multiutente è il singolo e più grande contributore alla sicurezza e, se usato correttamente, può eliminare notevolmente il rischio di furti dovuti a hacking.
 
-Il software EOS.IO consente agli account di definire quale combinazione di chiavi e/o account può inviare un determinato tipo di messaggio a un'altro account. For example, it is possible to have one key for a user's social media account and another for access to the exchange. It is even possible to give other accounts permission to act on behalf of a user's account without assigning them keys.
+Il software EOS.IO consente agli account di definire quale combinazione di chiavi e/o account può inviare un determinato tipo di messaggio a un'altro account. Ad esempio, è possibile avere una chiave per un social media account di un utente e un'altra per l'accesso all'exchange. È anche possibile concedere ad altri account il permesso di agire per conto dell'account di un utente senza assegnargli le chiavi.
 
-### Named Permission Levels
+### Livelli di Autorizzazione Denominati
 
 <img align="right" src="http://eos.io/wpimg/diagram3.png" width="228.395px" height="300px" />
 
-Using the EOS.IO software, accounts can define named permission levels each of which can be derived from higher level named permissions. Each named permission level defines an authority; an authority is a threshold multi-signature check consisting of keys and/or named permission levels of other accounts. For example, an account's "Friend" permission level can be set for the account to be controlled equally by any of the account's friends.
+Utilizzando il software EOS.IO, ciascun account può definire livelli di autorizzazione denominati che possono essere derivati da autorizzazioni denominate di livello superiore. Each named permission level defines an authority; an authority is a threshold multi-signature check consisting of keys and/or named permission levels of other accounts. For example, an account's "Friend" permission level can be set for the account to be controlled equally by any of the account's friends.
 
 Another example is the Steem blockchain which has three hard-coded named permission levels: owner, active, and posting. The posting permission can only perform social actions such as voting and posting, while the active permission can do everything except change the owner. The owner permission is meant for cold storage and is able to do everything. The EOS.IO software generalizes this concept by allowing each account holder to define their own hierarchy as well as the grouping of actions.
 
