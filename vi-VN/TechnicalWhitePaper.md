@@ -178,9 +178,9 @@ EOS.IO cho phép mỗi tài khoản định nghĩa ánh xạ giữa Nhóm Xử L
 
 ### Đánh Giá Cấp Phép
 
-Khi truyền tin nhắn của loại "**Hành Động**", từ **@alice** đến **@bob** phần mềm EOS.IO sẽ trước tiên kiểm tra xem **@alice** đã định nghĩa ánh xạ cấp phép cho **@bob.groupa.subgroup.Action** hay chưa. Nếu không tìm thấy, ánh xạ cho **@bob.groupa.subgroup** sau đó là **@bob.groupa**, và cuối cùng là **@bob** sẽ được kiểm tra. If no further match is found, then the assumed mapping will be to the named permission group **@alice.active**.
+Khi truyền tin nhắn của loại "**Hành Động**", từ **@alice** đến **@bob** phần mềm EOS.IO sẽ trước tiên kiểm tra xem **@alice** đã định nghĩa ánh xạ cấp phép cho **@bob.groupa.subgroup.Action** hay chưa. Nếu không tìm thấy, ánh xạ cho **@bob.groupa.subgroup** sau đó là **@bob.groupa**, và cuối cùng là **@bob** sẽ được kiểm tra. Nếu không có kết quả nào khớp, ánh xạ mặc định sẽ là nhóm cấp phép được đặt tên **@alice.active**.
 
-Once a mapping is identified then signing authority is validated using the threshold multi-signature process and the authority associated with the named permission. If that fails, then it traverses up to the parent permission and ultimately to the owner permission, **@alice.owner**.
+Một khi ánh xạ đã được xác định thì việc ký tên xác minh được được phê duyệt dùng quy trình đa-chữ-ký có giới hạn và thẩm quyền gắn với cấp phép được đặt tên. If that fails, then it traverses up to the parent permission and ultimately to the owner permission, **@alice.owner**.
 
 <img align="center" src="http://eos.io/wpimg/diagram2grayscale2.jpg" width="845.85px" height="500px" />
 
