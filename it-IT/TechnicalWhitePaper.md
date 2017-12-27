@@ -198,13 +198,13 @@ Quando si riproduce la blockchain per rigenerare lo stato deterministico dal reg
 
 ## Messaggi con Ritardo Obbligatorio
 
-Time is a critical component of security. In most cases, it is not possible to know if a private key has been stolen until it has been used. Time based security is even more critical when people have applications that require keys be kept on computers connected to the internet for daily use. The EOS.IO software enables application developers to indicate that certain messages must wait a minimum period of time after being included in a block before they can be applied. During this time they can be cancelled.
+Il tempo è un componente fondamentale della sicurezza. Nella maggior parte dei casi, non è possibile sapere se una chiave privata è stata rubata fino a quando non è stata utilizzata. La sicurezza basata sul tempo è ancora più importante quando le persone hanno applicazioni che richiedono che le chiavi vengano conservate su computer connessi a Internet per l'uso quotidiano. Il software EOS.IO consente agli sviluppatori di applicazioni di indicare che alcuni messaggi devono attendere un periodo di tempo minimo dopo essere stati inclusi in un blocco prima che possano essere applicati. Durante questo periodo possono essere cancellati.
 
-Users can then receive notice via email or text message when one of these messages is broadcast. If they did not authorize it, then they can use the account recovery process to recover their account and retract the message.
+Gli utenti possono quindi ricevere notifiche tramite e-mail o Sms quando uno di questi messaggi viene trasmesso. Se non l'hanno autorizzato, possono utilizzare la procedura di recupero dell'account per recuperare il proprio account e ritirare il messaggio.
 
-The required delay depends upon how sensitive an operation is. Paying for a coffee can have no delay and be irreversible in seconds, while buying a house may require a 72 hour clearing period. Transferring an entire account to new control may take up to 30 days. The exact delays chosen are up to application developers and users.
+Il ritardo richiesto dipende dal grado di sensibilità di un'operazione. Pagare un caffè può non avere ritardi ed essere irreversibile in pochi secondi, mentre l'acquisto di una casa può richiedere un periodo di compensazione di 72 ore. Il trasferimento di un intero account a un nuovo controllo può richiedere fino a 30 giorni. I ritardi esatti scelti dipendono dagli sviluppatori e dagli utenti dell'applicazione in questione.
 
-## Recovery from Stolen Keys
+## Recupero da Chiavi Rubate
 
 The EOS.IO software provides users a way to restore control of their account when their keys are stolen. An account owner can use any owner key that was active in the last 30 days along with approval from their designated account recovery partner to reset the owner key on their account. The account recovery partner cannot reset control of the account without the help of the owner.
 
