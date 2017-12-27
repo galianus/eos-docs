@@ -202,7 +202,7 @@ EOS.IO سافٹویئر تکنیک سب اکاونٹس کو یہ اجازت دی
 
 ان پیغامات کے نشر ہونے کے بعد صارفین کو ایمیل یا ٹیکسٹ کی شکل میں ایک نوٹس ملتا ہے. ان کی طرف سے اجازت نہ ملنے پر، وہ اکاونٹ کو ریکور کرنے کے لیے اور پیغامات کو نکالنے کے لیے ایک عمل کرتے ہیں.
 
-The required delay depends upon how sensitive an operation is. Paying for a coffee can have no delay and be irreversible in seconds, while buying a house may require a 72 hour clearing period. Transferring an entire account to new control may take up to 30 days. The exact delays chosen are up to application developers and users.
+ضروری تاخیر آپریشن کے احساس پر منحصر ہے. Paying for a coffee can have no delay and be irreversible in seconds, while buying a house may require a 72 hour clearing period. Transferring an entire account to new control may take up to 30 days. The exact delays chosen are up to application developers and users.
 
 ## Recovery from Stolen Keys
 
