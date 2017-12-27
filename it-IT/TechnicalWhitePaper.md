@@ -206,13 +206,13 @@ Il ritardo richiesto dipende dal grado di sensibilità di un'operazione. Pagare 
 
 ## Recupero da Chiavi Rubate
 
-The EOS.IO software provides users a way to restore control of their account when their keys are stolen. An account owner can use any owner key that was active in the last 30 days along with approval from their designated account recovery partner to reset the owner key on their account. The account recovery partner cannot reset control of the account without the help of the owner.
+Il software EOS.IO offre agli utenti un modo per ripristinare il controllo del proprio account quando le loro chiavi vengono rubate. Il proprietario di un account può utilizzare qualsiasi chiave del proprietario che fosse attiva negli ultimi 30 giorni e approvata dal partner di recupero dell'account designato per poter reimpostare la chiave del proprietario sul proprio account. Il partner per il recupero dell'account non può reimpostare il controllo dell'account senza l'aiuto del proprietario.
 
-There is nothing for the hacker to gain by attempting to go through the recovery process because they already "control" the account. Furthermore, if they did go through the process, the recovery partner would likely demand identification and multi-factor authentication (phone and email). This would likely compromise the hacker or gain the hacker nothing in the process.
+Non c'è nulla che l'hacker possa ottenere tentando di passare attraverso il processo di recupero perché già "controllano" l'account. Inoltre, se avessero seguito il processo, il partner per il recupero avrebbe probabilmente richiesto l'identificazione e l'autenticazione a più fattori (telefono ed e-mail). Ciò probabilmente comprometterebbe o non farebbe ottenere nulla all'hacker durante la procedura.
 
-This process is also very different from a simple multi-signature arrangement. With a multi-signature transaction, there is another company that is party to every transaction that is executed, but with the recovery process the agent is only a party to the recovery process and has no power over the day-to-day transactions. This dramatically reduces costs and legal liabilities for everyone involved.
+Questo processo è anche molto diverso da una semplice disposizione multi-firma. Con una transazione multi-firma, c'è un'altra società che prende parte a ogni transazione che viene eseguita, ma con la procedura di recupero l'agente è solo una parte del processo di ripristino e non ha alcun potere sulle transazioni giornaliere. Questo riduce drasticamente costi e responsabilità legali per tutti i soggetti coinvolti.
 
-# Deterministic Parallel Execution of Applications
+# Esecuzione Parallela Deterministica delle Applicazioni
 
 Blockchain consensus depends upon deterministic (reproducible) behavior. This means all parallel execution must be free from the use of mutexes or other locking primitives. Without locks there must be some way to guarantee that all accounts can only read and write their own private database. It also means that each account processes messages sequentially and that parallelism will be at the account level.
 
