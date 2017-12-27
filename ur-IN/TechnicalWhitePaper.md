@@ -198,9 +198,9 @@ EOS.IO سافٹویئر تکنیک سب اکاونٹس کو یہ اجازت دی
 
 ## پیغامات لازمی تاخیر کے ساتھ-
 
-وقت سلامتی کا ایک اہم جز ہے. اکثر ضرورتوں میں، یہ جاننا ممکن نہیں ہے کہ پوشیدہ چابی کو کو چوری کے بعد استعمال کیا گیا ہے یا نہیں. وقت پر مبنی سلامتی کی اہمیت اس وقت بڈھ جاتی ہے جب لوگوں کے پاس وہ اپلیکیشنز ہو جن کے پاس روزانہ استعمال کے لیے کمپیوٹر اور انٹرنیٹ سے منسلک رہنے کے لئے چابیوں کی ضرورت پڈتی ہیں. EOS.IO سافٹویئر اپلیکیشن ڈیولپرس کو اس قابل بناتا ہے کہ کچھ پیغامات کو بلاک پر ڈالنے سے پہلے لازماً ایک چھوٹے سے وقفے کے لیے رکنا پڈتا ہے. During this time they can be cancelled.
+وقت سلامتی کا ایک اہم جز ہے. اکثر ضرورتوں میں، یہ جاننا ممکن نہیں ہے کہ پوشیدہ چابی کو کو چوری کے بعد استعمال کیا گیا ہے یا نہیں. وقت پر مبنی سلامتی کی اہمیت اس وقت بڈھ جاتی ہے جب لوگوں کے پاس وہ اپلیکیشنز ہو جن کے پاس روزانہ استعمال کے لیے کمپیوٹر اور انٹرنیٹ سے منسلک رہنے کے لئے چابیوں کی ضرورت پڈتی ہیں. EOS.IO سافٹویئر اپلیکیشن ڈیولپرس کو اس قابل بناتا ہے کہ کچھ پیغامات کو بلاک پر ڈالنے سے پہلے لازماً ایک چھوٹے سے وقفے کے لیے رکنا پڈتا ہے. اس دوران انہیں منسوخ کیا جا سکتا ہے.
 
-Users can then receive notice via email or text message when one of these messages is broadcast. If they did not authorize it, then they can use the account recovery process to recover their account and retract the message.
+ان پیغامات کے نشر ہونے کے بعد صارفین کو ایمیل یا ٹیکسٹ کی شکل میں ایک نوٹس ملتا ہے. ان کی طرف سے اجازت نہ ملنے پر، وہ اکاونٹ کو ریکور کرنے کے لیے اور پیغامات کو نکالنے کے لیے ایک عمل کرتے ہیں.
 
 The required delay depends upon how sensitive an operation is. Paying for a coffee can have no delay and be irreversible in seconds, while buying a house may require a 72 hour clearing period. Transferring an entire account to new control may take up to 30 days. The exact delays chosen are up to application developers and users.
 
