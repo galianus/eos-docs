@@ -194,11 +194,11 @@ EOS.IO سافٹویئر تکنیک سب اکاونٹس کو یہ اجازت دی
 
 تمام چیزوں کو مدنظر رکھتے ہوئے، اجازاتی تصدیق کے نمایندو کی ایک بڑی فیصد لین دین کی تصدیق کرتی ہے. اسکو فقط ایک مطعالاتی اور متوازی عمل بنانے سے اس کی کارکردگی میں ڈرامائی اضافہ ہونے کے قابل بناتا ہے.
 
-بلاکچین کو جواب دیتے وقت کہ اس کی بنیادی شکل کو پیغامات کے لاگ سے تشخیص کرنے کے لیے دوبارہ اجازت لینے کی ضرورت نہیں. حقیقت یہ ہے کہ لین دین ایک پہچان والے بلاک سے ہوتا ہے جو اس قدم کو سکپ کرنے کے لیے کافی ہے. This dramatically reduces the computational load associated with replaying an ever growing blockchain.
+بلاکچین کو جواب دیتے وقت کہ اس کی بنیادی شکل کو پیغامات کے لاگ سے تشخیص کرنے کے لیے دوبارہ اجازت لینے کی ضرورت نہیں. حقیقت یہ ہے کہ لین دین ایک پہچان والے بلاک سے ہوتا ہے جو اس قدم کو سکپ کرنے کے لیے کافی ہے. بلاکچین پر پڈھنے والے شمارندگ لوڈ کو ڈرامائی طور پر کم کرتا ہے.
 
-## Messages with Mandatory Delay
+## پیغامات لازمی تاخیر کے ساتھ-
 
-Time is a critical component of security. In most cases, it is not possible to know if a private key has been stolen until it has been used. Time based security is even more critical when people have applications that require keys be kept on computers connected to the internet for daily use. The EOS.IO software enables application developers to indicate that certain messages must wait a minimum period of time after being included in a block before they can be applied. During this time they can be cancelled.
+وقت سلامتی کا ایک اہم جز ہے. اکثر ضرورتوں میں، یہ جاننا ممکن نہیں ہے کہ پوشیدہ چابی کو کو چوری کے بعد استعمال کیا گیا ہے یا نہیں. Time based security is even more critical when people have applications that require keys be kept on computers connected to the internet for daily use. The EOS.IO software enables application developers to indicate that certain messages must wait a minimum period of time after being included in a block before they can be applied. During this time they can be cancelled.
 
 Users can then receive notice via email or text message when one of these messages is broadcast. If they did not authorize it, then they can use the account recovery process to recover their account and retract the message.
 
