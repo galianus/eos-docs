@@ -170,11 +170,11 @@ EOS.IO سافٹویئر ہر ایک اکاؤنٹ کو یہ اجازت دیتا �
 
 سب سے اعلٰی درجے کا پیغام اکاؤنٹ کا نام اور سب سے کم درجے کا پیغام انفرادی قصم کا پیغام جو کسی اکاؤنٹ سے حاصل ہوا ہو. ان گروہوں کا حوالہ اس طرح سے دیا جا سکتا ہے: **ٹ@ اکاونٹ کا نام. groupa. subgroup. 0\>MessageType>.</p> 
 
-اس ماڈل کے تحت ایک ایکسچینج معاہدے کے لیے ممکن ہے کہ وہ آزادانہ طور پر گروہ آڈر کر سکتا ہے اور جمع اور نکال بھی سکتا ہے. This grouping by the exchange contract is a convenience for users of the exchange.
+اس ماڈل کے تحت ایک ایکسچینج معاہدے کے لیے ممکن ہے کہ وہ آزادانہ طور پر گروہ آڈر کر سکتا ہے اور جمع اور نکال بھی سکتا ہے. یہ گروپ بندی ایکسچینج کی طرف سے صارفین کے لیے ایک سہولت ہے.
 
-### Permission Mapping
+### نقشہ کاری کی اجازت-
 
-EOS.IO software allows each account to define a mapping between a Named Message Handler Group of any account and their own Named Permission Level. For example, an account holder could map the account holder's social media application to the account holder's "Friend" permission group. With this mapping, any friend could post as the account holder on the account holder's social media. Even though they would post as the account holder, they would still use their own keys to sign the message. This means it is always possible to identify which friends used the account and in what way.
+EOS.IO سافٹویئر ہر ایک اکاؤنٹ کو اجازت دیتا ہے کہ وہ گروہ نامی انتخابات کے درمیان ایک نقشہ واضح کرنے کے لیے اجازاتی حد. For example, an account holder could map the account holder's social media application to the account holder's "Friend" permission group. With this mapping, any friend could post as the account holder on the account holder's social media. Even though they would post as the account holder, they would still use their own keys to sign the message. This means it is always possible to identify which friends used the account and in what way.
 
 ### Evaluating Permissions
 
