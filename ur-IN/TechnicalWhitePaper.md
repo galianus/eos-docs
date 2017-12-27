@@ -174,7 +174,7 @@ EOS.IO سافٹویئر ہر ایک اکاؤنٹ کو یہ اجازت دیتا �
 
 ### نقشہ کاری کی اجازت-
 
-EOS.IO سافٹویئر ہر ایک اکاؤنٹ کو اجازت دیتا ہے کہ وہ گروہ نامی انتخابات کے درمیان ایک نقشہ واضح کرنے کے لیے اجازاتی حد. For example, an account holder could map the account holder's social media application to the account holder's "Friend" permission group. With this mapping, any friend could post as the account holder on the account holder's social media. Even though they would post as the account holder, they would still use their own keys to sign the message. This means it is always possible to identify which friends used the account and in what way.
+EOS.IO سافٹویئر ہر ایک اکاؤنٹ کو اجازت دیتا ہے کہ وہ گروہ نامی انتخابات کے درمیان ایک نقشہ واضح کرنے کے لیے اجازاتی حد. مثال کے طور پر، ایک اکاؤنٹ ہولڈر سوشل میڈیا اکاونٹ کی نقشہ کاری دوسرے دوست کے اجازاتی گروپ کے ساتھ ضم کرسکتا ہے. اس نقشہ کاری سے کوئی بھی دوست ایک اکاؤنٹ ھولڈر کا اکاونٹ سوشل میڈیا پر شائع کر سکتا ہے. Even though they would post as the account holder, they would still use their own keys to sign the message. This means it is always possible to identify which friends used the account and in what way.
 
 ### Evaluating Permissions
 
