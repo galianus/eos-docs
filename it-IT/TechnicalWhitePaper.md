@@ -190,11 +190,11 @@ La tecnologia EOS.IO consente inoltre a tutti gli account di avere un gruppo "pr
 
 #### Valutazione Parallela delle Autorizzazioni
 
-Il processo di valutazione dell'autorizzazione è "di sola lettura" e le modifiche alle autorizzazioni effettuate dalle transazioni non hanno effetto fino alla fine di un blocco. Ciò significa che tutte le chiavi e la valutazione delle autorizzazioni per tutte le transazioni possono essere eseguite in parallelo. Furthermore, this means that a rapid validation of permission is possible without starting the costly application logic that would have to be rolled back. Lastly, it means that transaction permissions can be evaluated as pending transactions are received and do not need to be re-evaluated as they are applied.
+Il processo di valutazione dell'autorizzazione è "di sola lettura" e le modifiche alle autorizzazioni effettuate dalle transazioni non hanno effetto fino alla fine di un blocco. Ciò significa che tutte le chiavi e la valutazione delle autorizzazioni per tutte le transazioni possono essere eseguite in parallelo. Inoltre, ciò significa che è possibile una rapida convalida dell'autorizzazione evitando l'avviamento della costosa logica di applicazione che dovrebbe poi essere ripristinata. Infine, ciò vuol dire che le autorizzazioni delle transazioni ricevute possono essere valutate come transazioni in sospeso e non devono essere rivalutate man mano che vengono applicate.
 
-All things considered, permission verification represents a significant percentage of the computation required to validate transactions. Making this a read-only and trivially parallelizable process enables a dramatic increase in performance.
+Tutto sommato, la verifica dell'autorizzazione rappresenta una percentuale significativa del calcolo richiesto per convalidare le transazioni. Rendendo questo un processo di sola lettura e parallelizzabile consente un notevole aumento delle prestazioni.
 
-When replaying the blockchain to regenerate the deterministic state from the log of messages there is no need to evaluate the permissions again. The fact that a transaction is included in a known good block is sufficient to skip this step. This dramatically reduces the computational load associated with replaying an ever growing blockchain.
+Quando si riproduce la blockchain per rigenerare lo stato deterministico dal registro dei messaggi, non è necessario rivalutare le autorizzazioni. Il fatto che una transazione sia inclusa in un blocco valido noto è sufficiente per saltare questo passaggio. This dramatically reduces the computational load associated with replaying an ever growing blockchain.
 
 ## Messages with Mandatory Delay
 
