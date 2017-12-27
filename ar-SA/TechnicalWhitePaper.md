@@ -77,7 +77,7 @@ While a number of blockchain platforms have struggled to support functional dece
 
 # المتطلبات لتطبيقات بلوكشين
 
-In order to gain widespread use, applications on the blockchain require a platform that is flexible enough to meet the following requirements:
+ومن أجل الحصول على استخدام واسع النطاق،  التطبيقات على بلوكشين تتطلب منصة مرنة بما فيه الكفاية لتلبية المتطلبات التالية:
 
 ## دعم الملايين من المستخدمين
 
