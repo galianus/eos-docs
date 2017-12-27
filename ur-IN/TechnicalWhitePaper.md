@@ -178,9 +178,9 @@ EOS.IO سافٹویئر ہر ایک اکاؤنٹ کو اجازت دیتا ہے �
 
 ### جایزہ لینے کی اجازت-
 
-اس قسم کا پیغام بھیجتے وقت " **Action**", from **@alice** to **@bob** the EOS.IO software will first check to see if **@alice** has defined a permission mapping for **@bob.groupa.subgroup.Action**. اگر کچھ بھی نہیں جاتا ہے تو **@bob.groupa.subgroup** then **@bob.groupa**, and lastly **@bob** کے لیے نقشہ کاری کی جانچ پڑتال ہوگی. If no further match is found, then the assumed mapping will be to the named permission group **@alice.active**.
+اس قسم کا پیغام بھیجتے وقت " **Action**", from **@alice** to **@bob** the EOS.IO software will first check to see if **@alice** has defined a permission mapping for **@bob.groupa.subgroup.Action**. اگر کچھ بھی نہیں جاتا ہے تو **@bob.groupa.subgroup** then **@bob.groupa**, and lastly **@bob** کے لیے نقشہ کاری کی جانچ پڑتال ہوگی. اگر مزید کوئی مشابہ نا ملے تو، نقشہ کاری کو نامی اجازتی گروپ **@alice.active**.تصور کیا جایے گا.
 
-Once a mapping is identified then signing authority is validated using the threshold multi-signature process and the authority associated with the named permission. If that fails, then it traverses up to the parent permission and ultimately to the owner permission, **@alice.owner**.
+نقشہ کاری کی نشاندہی کے بعد ایک بار پھر اتھارٹی پر دستخط کرنے کے چوکھٹ کثیر دستخط عمل اور اجازت نامے کے ساتھ وابستہ کا اختیار استعمال کرتے ہوئے درست قرار دیا ہے. If that fails, then it traverses up to the parent permission and ultimately to the owner permission, **@alice.owner**.
 
 <img align="center" src="http://eos.io/wpimg/diagram2grayscale2.jpg" width="845.85px" height="500px" />
 
