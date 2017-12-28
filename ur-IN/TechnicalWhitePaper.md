@@ -214,7 +214,7 @@ EOS.IO سافٹویئر صارفین کو چوری ہوے اکاونٹس کی چ
 
 # اپلیکیشنز کے درمیان متوازی نفاذ
 
-Blockchain consensus depends upon deterministic (reproducible) behavior. This means all parallel execution must be free from the use of mutexes or other locking primitives. Without locks there must be some way to guarantee that all accounts can only read and write their own private database. It also means that each account processes messages sequentially and that parallelism will be at the account level.
+کنسینس بلاکچین کا انحصار ڈٹرمنسٹک جنم کے روپ پر رہتا ہے. اس کا مطلب تمام متوازی عمل موٹیکسز اور دوسرے لانگ پرمیٹوز سے مفت ہونے چاہئیں. Without locks there must be some way to guarantee that all accounts can only read and write their own private database. It also means that each account processes messages sequentially and that parallelism will be at the account level.
 
 In an EOS.IO software-based blockchain, it is the job of the block producer to organize message delivery into independent threads so that they can be evaluated in parallel. The state of each account depends only upon the messages delivered to it. The schedule is the output of a block producer and will be deterministically executed, but the process for generating the schedule need not be deterministic. This means that block producers can utilize parallel algorithms to schedule transactions.
 
