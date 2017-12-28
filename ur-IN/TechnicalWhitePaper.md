@@ -214,9 +214,9 @@ EOS.IO سافٹویئر صارفین کو چوری ہوے اکاونٹس کی چ
 
 # اپلیکیشنز کے درمیان متوازی نفاذ
 
-کنسینس بلاکچین کا انحصار ڈٹرمنسٹک جنم کے روپ پر رہتا ہے. اس کا مطلب تمام متوازی عمل موٹیکسز اور دوسرے لانگ پرمیٹوز سے مفت ہونے چاہئیں. Without locks there must be some way to guarantee that all accounts can only read and write their own private database. It also means that each account processes messages sequentially and that parallelism will be at the account level.
+کنسینس بلاکچین کا انحصار ڈٹرمنسٹک جنم کے روپ پر رہتا ہے. اس کا مطلب تمام متوازی عمل موٹیکسز اور دوسرے لانگ پرمیٹوز سے مفت ہونے چاہئیں. تالو کے بغیر یہاں لازماً ایک ایسا راستہ ہونا چاہیے جو اس بات کی ضمانت دیں کہ اکاونٹس صرف ان کے پوشیدہ ڈیٹابیس سے پڈھ اور لکھ سکے. اس کا مطلب یہ بھی ہے کہ اکاونٹ کے ہر ایک عمل میں ایک مسلسل اور متوازی عمل ہر ایک اکاؤنٹ حد پر رہے.
 
-In an EOS.IO software-based blockchain, it is the job of the block producer to organize message delivery into independent threads so that they can be evaluated in parallel. The state of each account depends only upon the messages delivered to it. The schedule is the output of a block producer and will be deterministically executed, but the process for generating the schedule need not be deterministic. This means that block producers can utilize parallel algorithms to schedule transactions.
+EOS.IO سافٹویئر پر مبنی ایک بلاکچین میں، انتخابات کو آزادانہ طور پر ایک جگہ سے دوسری جگہ منتقل کرنے کا کام اور ان کے متوازی جانچ کا کام بلاک پرڈوسد کا ہے. ہر ایک اکاؤنٹ کی صورت اس پر بیجھے ہوے انتخابات پر منحصر ہے. The schedule is the output of a block producer and will be deterministically executed, but the process for generating the schedule need not be deterministic. This means that block producers can utilize parallel algorithms to schedule transactions.
 
 Part of parallel execution means that when a script generates a new message it does not get delivered immediately, instead it is scheduled to be delivered in the next cycle. The reason it cannot be delivered immediately is because the receiver may be actively modifying its own state in another thread.
 
