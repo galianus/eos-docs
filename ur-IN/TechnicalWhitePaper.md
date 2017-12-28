@@ -210,9 +210,9 @@ EOS.IO سافٹویئر صارفین کو چوری ہوے اکاونٹس کی چ
 
 ایک ھیکر اگر ریکوری عمل کی کوشش کریں تو اس سے اسکو کوئی فائدہ نہ ہوگا کیونکہ اس پر پہلے سے ہی ان کا کنٹرول رہتا ہے. علاوہ ازیں، اگر وہ ایک اچھا لاہ عمل اپناے گیں، ریکوری شراکت دار کثیر مرحلہ اجازت اور پہچان کی مانگ کرے گا (ایمیل اور فون). اس سے شاید ایک ھیکر کو اس عمل کے دوران شاید نہ ہو گا.
 
-یہ عمل متعدد دستخطی عمل سے کافی مختلف ہے. With a multi-signature transaction, there is another company that is party to every transaction that is executed, but with the recovery process the agent is only a party to the recovery process and has no power over the day-to-day transactions. This dramatically reduces costs and legal liabilities for everyone involved.
+یہ عمل متعدد دستخطی عمل سے کافی مختلف ہے. متعدد دستخطی لین دین کے عمل میں اس کے علاوہ اور ایک کمپنی شراکت رکھتی ہے مگر روزانہ وصولی کے عمل میں دوسرے شراکت داروں کا کوئی عمل دخل نہیں رہتا. یہ جڈے ہوئے تمام افراد کے حقیقی بقایاجات میں ڈرامائی کمی لاتا ہے.
 
-# Deterministic Parallel Execution of Applications
+# اپلیکیشنز کے درمیان متوازی نفاذ
 
 Blockchain consensus depends upon deterministic (reproducible) behavior. This means all parallel execution must be free from the use of mutexes or other locking primitives. Without locks there must be some way to guarantee that all accounts can only read and write their own private database. It also means that each account processes messages sequentially and that parallelism will be at the account level.
 
