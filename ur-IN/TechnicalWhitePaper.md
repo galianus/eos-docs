@@ -218,7 +218,7 @@ EOS.IO سافٹویئر صارفین کو چوری ہوے اکاونٹس کی چ
 
 EOS.IO سافٹویئر پر مبنی ایک بلاکچین میں، انتخابات کو آزادانہ طور پر ایک جگہ سے دوسری جگہ منتقل کرنے کا کام اور ان کے متوازی جانچ کا کام بلاک پرڈوسد کا ہے. ہر ایک اکاؤنٹ کی صورت اس پر بیجھے ہوے انتخابات پر منحصر ہے. ترتیب بلاک پرڈوسد کا مطبوعہ ہے اور اس کو عمل میں لانے کو آمادہ کرتا ہے. مگر اس عمل کو بڈھاوا دینے کے لیے عمل کا یقینی ہونا ضروری ہے. اس کا مطلب یہ ہے کہ بلاک پرڈوسد شڈول کے مطابق لین دین کو متوازی الگورزم کا استعمال کرسکتا ہے.
 
-Part of parallel execution means that when a script generates a new message it does not get delivered immediately, instead it is scheduled to be delivered in the next cycle. The reason it cannot be delivered immediately is because the receiver may be actively modifying its own state in another thread.
+متوازی عمل کا ایک حصہ کا مطلب ہے کہ یہ انتخابات کو فوری طور پر منتقل نہیں کرتا، اسکے بدلے میں یہ دوسری دفعہ میں منتقل کردے گا. The reason it cannot be delivered immediately is because the receiver may be actively modifying its own state in another thread.
 
 ## Minimizing Communication Latency
 
