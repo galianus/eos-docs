@@ -236,7 +236,7 @@ EOS.IO سافٹویئر پر مبنی ایک بلاکچین میں، انتخا�
     وصول کنندہ اور اطلاعی اکاونٹس (متوازی)
     
 
-Transactions generated in one cycle can be delivered in any subsequent cycle or block. Block producers will keep adding cycles to a block until the maximum wall clock time has passed or there are no new generated transactions to deliver.
+ایک چکر کے دوران تیار ہوچکے لین دین کو اس کے اگلے چکر یا بلاک میں منتقل کیا جا سکتا ہے. ایک بلاک پرڈوسد تب تک بلاک میں سائیکل جھوڈتا رہے گا جب تک نہ بلاک کی آخری حد پہنچ جائیں یا وہاں منتقلی کے لئے کوئی بھی لین دین نہ ہو.
 
 It is possible to use static analysis of a block to verify that within a given cycle no two threads contain transactions that modify the same account. So long as that invariant is maintained a block can be processed by running all threads in parallel.
 
