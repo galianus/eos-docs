@@ -74,9 +74,9 @@ Attaquer le réseau avec spam, des exploits de machines virtuelles, des accident
 
 ### Support linguistique
 
-Adding support for additional languages to be compiled to WASM: C++, Rust, etc.
+Ajout de support pour langues supplémentaires qui seront compilées en WASM: C++, Rust, etc.
 
-### Documentation & Tutorials
+### La Documentation & Tutoriels
 
 # Phase 4 - Parallel Optimization Summer / Fall 2018
 
