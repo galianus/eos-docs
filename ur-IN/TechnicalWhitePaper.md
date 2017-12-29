@@ -242,7 +242,7 @@ EOS.IO سافٹویئر پر مبنی ایک بلاکچین میں، انتخا�
 
 ## صرف ھینڈلرس کے انتخابات پڈھنا-
 
-Some accounts may be able to process a message on a pass/fail basis without modifying their internal state. If this is the case then these handlers can be executed in parallel so long as only read-only message handlers for a particular account are included in one or more threads within a particular cycle.
+کچھ اکاونٹس پیغاماتی عمل کو پاس/فیل کی بنا پر بغیر اندرونی ردوبدل کے کر سکتے ہیں. If this is the case then these handlers can be executed in parallel so long as only read-only message handlers for a particular account are included in one or more threads within a particular cycle.
 
 ## Atomic Transactions with Multiple Accounts
 
