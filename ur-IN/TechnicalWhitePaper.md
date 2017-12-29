@@ -266,7 +266,7 @@ EOS.IO سافٹویئر بلاک پرڈوسدز کو قانوناً اس بات 
 
 کسی چلنے والی بلاکچین پر جو EOS.IO سافٹویئر سے جڈ جات ہے، تمام لین دین کو ایک نیٹورک کی سطح پر ایک مقررہ شمارندگ بینڈوڈتھ کی ضرورت بنا پر طے کیا جاتا ہے اس سے قطع نظر کہ آیا اس کو عملانے میں 01 یا پورے 10ms لگے. تاہم، اس سافٹویئر کو استعمال کرنے والا ہر ایک فرد اس میں استعمال ہونے والے وسائل کی پیمائش اپنے الگورزم اور پیمائش سے شمار کر سکتا ہے. جب ایک بلاک پرڈوسد کو یہ لگتا ہے کہ لین دین کے دوران اکاونٹ سے متناسب رقم کی شمارندگ ہوئی ہے تو اس وقت وہ اپنا بلاک بنانے کے دوران اس ٹرانزکشن کو رد کریں گے، تاہم، وہ اس لین دین کے عمل کو پھر بھی چلا سکتے ہیں اگر دوسرے بلاکچین پدروسرز اس کو جایز ٹھہرایے.
 
-In general so long as even 1 block producer considers a transaction as valid and under the resource usage limits then all other block producers will also accept it, but it may take up to 1 minute for the transaction to find that producer.
+عام طور پر وسائل کی دستیابی کے وقت اگر کوئی ایک بلاک پرڈوسد لین دین کے عمل کو جایز ٹھہرایے تو اس حالت میں باقی تمام بلاک پرڈوسدز یہ تسلیم کریں گے، لیکن. پرڈوسد کو ڈھونڈنے میں لین دین کو ایک منٹ کا وقت لگ سکتا ہے.
 
 In some cases a producer may create a block that includes transactions that are an order of magnitude outside of acceptable ranges. In this case the next block producer may opt to reject the block and the tie will be broken by the third producer. This is no different than what would happen if a large block caused network propagation delays. The community would notice a pattern of abuse and eventually remove votes from the rogue producer.
 
