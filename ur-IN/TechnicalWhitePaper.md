@@ -248,11 +248,11 @@ EOS.IO سافٹویئر پر مبنی ایک بلاکچین میں، انتخا�
 
 کبھی کبھار اس خواہش کو یقینی بنایا ضروری ہے کہ پیغامات دوسرے اکاونٹس سے خود بخود موصول ہو. اس صورت میں دونوں پیغامات ایک ہی ٹرانزکشن میں رکھے جاتے ہیں اور دونوں اکاونٹس ایک ہی دھاگے کے ساتھ ترتیب سے تفویض ہوگے. یہ صورت عملی طور پر موزوں نہیں اور جب صارفین کو سہولیات کے استعمال کی ادائیگی کرنی ہو تو وہ بہت ساری تکنیکوں سے لین دین کی ادائیگی کر سکتے ہیں.
 
-For performance and cost reasons it is best to minimize atomic operations involving two or more heavily utilized accounts.
+لاگت اور کارکردگی کی وجوہات کے لیے یہ بہتر ہے کہ دو کافی استعمال ہونے والے اکاونٹس کے درمیان ہونے والے اٹمی آپریشنز کو کم کیا جائے.
 
-## Partial Evaluation of Blockchain State
+## بلاکچین کی صورتحال کی جزوی تشخیص-
 
-Scaling blockchain technology necessitates that components are modular. Everyone should not have to run everything, especially if they only need to use a small subset of the applications.
+پیمانہ کاری بلاکچین تکنیک کے لیے اجزاء کا معیاری ہونا لازمی ہے. ہر ایک کو سب کچھ چلانے کی ضرورت نہیں، خصوصاً اگر انہیں استعمال کے لیے اپلیکیشنز کا ایک چھوٹا طاقم درکار ہو.
 
 An exchange application developer runs full nodes for the purpose of displaying the exchange state to its users. This exchange application has no need for the state associated with social media applications. EOS.IO software allows any full node to pick any subset of applications to run. Messages delivered to other applications are safely ignored because an application's state is derived entirely from the messages that are delivered to it.
 
