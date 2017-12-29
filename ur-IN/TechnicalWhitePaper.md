@@ -242,11 +242,11 @@ EOS.IO سافٹویئر پر مبنی ایک بلاکچین میں، انتخا�
 
 ## صرف ھینڈلرس کے انتخابات پڈھنا-
 
-کچھ اکاونٹس پیغاماتی عمل کو پاس/فیل کی بنا پر بغیر اندرونی ردوبدل کے کر سکتے ہیں. If this is the case then these handlers can be executed in parallel so long as only read-only message handlers for a particular account are included in one or more threads within a particular cycle.
+کچھ اکاونٹس پیغاماتی عمل کو پاس/فیل کی بنا پر بغیر اندرونی ردوبدل کے کر سکتے ہیں. اگر یہ معاملہ ہو تو صرف فقط مطالعہ پیغام سہولت کار ایک مخصوص اکاؤنٹ کے لیے ایک یا زائد تریڈس میں ایک مخصوص سائیکل کے اندر شامل ہیں جب تک کہ تو ان کے رہبروں کے متوازی میں سرانجام دیا جائے کر سکتے ہیں ۔.
 
-## Atomic Transactions with Multiple Accounts
+## ایک سے زائد اکاؤنٹ سے اٹمی لین دین-
 
-Sometimes it is desirable to ensure that messages are delivered to and accepted by multiple accounts atomically. In this case both messages are placed in one transaction and both accounts will be assigned the same thread and the messages applied sequentially. This situation is not ideal for performance and when it comes to "billing" users for usage, they will get billed by the number of unique accounts referenced by a transaction.
+کبھی کبھار اس خواہش کو یقینی بنایا ضروری ہے کہ پیغامات دوسرے اکاونٹس سے خود بخود موصول ہو. In this case both messages are placed in one transaction and both accounts will be assigned the same thread and the messages applied sequentially. This situation is not ideal for performance and when it comes to "billing" users for usage, they will get billed by the number of unique accounts referenced by a transaction.
 
 For performance and cost reasons it is best to minimize atomic operations involving two or more heavily utilized accounts.
 
