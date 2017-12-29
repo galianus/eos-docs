@@ -20,7 +20,7 @@
   - [قلیل چھپاو-](#low-latency)
   - [سلسلہ وار کارکردگی-](#sequential-performance)
   - [متوازی کارکردگی-](#parallel-performance)
-- [الگورزم بہ اتفاق رائے DPOS))](#consensus-algorithm-dpos) 
+- [اتفاق رائے الگورزم (ڈی پی او)](#consensus-algorithm-dpos) 
   - [تصدیق لین دین-](#transaction-confirmation)
   - [داو پر لین دین کو سبوت کے طور پر رکھنا ( ٹاپوس)-](#transaction-as-proof-of-stake-tapos)
 - [اکاسنٹس-](#accounts) 
