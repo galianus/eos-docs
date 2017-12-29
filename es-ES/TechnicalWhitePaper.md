@@ -99,7 +99,7 @@ Una buena experiencia de usuario exige reacciones confiables con un retraso de n
 
 ## Rendimiento secuencial
 
-Hay algunas aplicaciones que simplemente no se pueden implementarse con algoritmos paralelos debido a pasos secuencialmente dependientes. Las aplicaciones como los exchanges necesitan un rendimiento secuencial suficiente para manejar grandes volúmenes y, por lo tanto, se requiere una plataforma con un rendimiento secuencial rápido.
+Hay algunas aplicaciones que simplemente no se pueden implementar con algoritmos paralelos debido a pasos secuencialmente dependientes. Las aplicaciones como los exchanges necesitan un rendimiento secuencial suficiente para manejar grandes volúmenes y, por lo tanto, se requiere una plataforma con un rendimiento secuencial rápido.
 
 ## Parallel Performance
 
