@@ -1,6 +1,6 @@
 # EOS.IO Documento Técnico
 
-**26 de Junio de 2017**
+**26 de Junio del año 2017**
 
 **Resumen:** El software EOS.IO presenta una nueva arquitectura Blockchain diseñada para facilitar la escalabilidad vertical y horizontal de aplicaciones descentralizadas. Esto se logra creando una construcción similar a un sistema operativo, sobre la cual se puedan construir aplicaciones. El software proporciona cuentas, autenticación, bases de datos, comunicación asíncrona y la ejecución programada de aplicaciones en cientos de núcleos CPU o clústeres. La tecnología resultante es una arquitectura blockchain que se adapta convenientemente a millones de transacciones por segundo, elimina las tarifas de los usuarios y permite el despliegue rápido y sencillo de aplicaciones descentralizadas.
 
