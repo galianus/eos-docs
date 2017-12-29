@@ -218,9 +218,9 @@ EOS.IO سافٹویئر صارفین کو چوری ہوے اکاونٹس کی چ
 
 EOS.IO سافٹویئر پر مبنی ایک بلاکچین میں، انتخابات کو آزادانہ طور پر ایک جگہ سے دوسری جگہ منتقل کرنے کا کام اور ان کے متوازی جانچ کا کام بلاک پرڈوسد کا ہے. ہر ایک اکاؤنٹ کی صورت اس پر بیجھے ہوے انتخابات پر منحصر ہے. ترتیب بلاک پرڈوسد کا مطبوعہ ہے اور اس کو عمل میں لانے کو آمادہ کرتا ہے. مگر اس عمل کو بڈھاوا دینے کے لیے عمل کا یقینی ہونا ضروری ہے. اس کا مطلب یہ ہے کہ بلاک پرڈوسد شڈول کے مطابق لین دین کو متوازی الگورزم کا استعمال کرسکتا ہے.
 
-متوازی عمل کا ایک حصہ کا مطلب ہے کہ یہ انتخابات کو فوری طور پر منتقل نہیں کرتا، اسکے بدلے میں یہ دوسری دفعہ میں منتقل کردے گا. The reason it cannot be delivered immediately is because the receiver may be actively modifying its own state in another thread.
+متوازی عمل کا ایک حصہ کا مطلب ہے کہ یہ انتخابات کو فوری طور پر منتقل نہیں کرتا، اسکے بدلے میں یہ دوسری دفعہ میں منتقل کردے گا. اس کا جلدی سے منتقل نا ہونے کی وجہ یہ ہوسکتی ہے کہ ریسیور حالیہ وقت میں اپنی صورت کو ترمیم کرنے میں لگا ہو.
 
-## Minimizing Communication Latency
+## مواصلاتی چھپاو کو کم کرنا-
 
 Latency is the time it takes for one account to send a message to another account and then receive a response. The goal is to enable two accounts to exchange messages back and forth within a single block without having to wait 3 seconds between each message. To enable this, the EOS.IO software divides each block into cycles. Each cycle is divided into threads and each thread contains a list of transactions. Each transaction contains a set of messages to be delivered. This structure can be visualized as a tree where alternating layers are processed sequentially and in parallel.
 
