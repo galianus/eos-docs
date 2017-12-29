@@ -238,7 +238,7 @@ EOS.IO سافٹویئر پر مبنی ایک بلاکچین میں، انتخا�
 
 ایک چکر کے دوران تیار ہوچکے لین دین کو اس کے اگلے چکر یا بلاک میں منتقل کیا جا سکتا ہے. ایک بلاک پرڈوسد تب تک بلاک میں سائیکل جھوڈتا رہے گا جب تک نہ بلاک کی آخری حد پہنچ جائیں یا وہاں منتقلی کے لئے کوئی بھی لین دین نہ ہو.
 
-It is possible to use static analysis of a block to verify that within a given cycle no two threads contain transactions that modify the same account. So long as that invariant is maintained a block can be processed by running all threads in parallel.
+ایک بلاک کی جامد جانچ کے لیے یہ ممکن ہے کہ کوئی بھی دو دھاگے ایک ہی اکاونٹ کے لین دین کو تبدیل کر سکے. So long as that invariant is maintained a block can be processed by running all threads in parallel.
 
 ## Read-Only Message Handlers
 
