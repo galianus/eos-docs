@@ -222,7 +222,7 @@ EOS.IO سافٹویئر پر مبنی ایک بلاکچین میں، انتخا�
 
 ## مواصلاتی چھپاو کو کم کرنا-
 
-Latency is the time it takes for one account to send a message to another account and then receive a response. The goal is to enable two accounts to exchange messages back and forth within a single block without having to wait 3 seconds between each message. To enable this, the EOS.IO software divides each block into cycles. Each cycle is divided into threads and each thread contains a list of transactions. Each transaction contains a set of messages to be delivered. This structure can be visualized as a tree where alternating layers are processed sequentially and in parallel.
+مواصلاتی وقت وہ وقت ہے جو ایک اکاؤنٹ کو دوسرے اکاونٹ تک پیغام پہنچانے میں اور اس کا جواب ملنے میں درکار رہتا ہے. اس کا اصل مقصد ایک اکاؤنٹ سے دوسرے اکاونٹ تک پیغامات پہنچانا اور تین سیکنڈ سے کم وقت میں پیغام کا جواب طلب کرنا. اس مقصد کے لیے EOS.IO سافٹویئر ہر ایک بلاک کو مختلف مرحلوں میں تقسیم کرتا ہے. ہر ایک سائیکل کو دھاگوں میں تقسیم کیا جاتا ہے اور ہر ایک دھاگے کے ساتھ لین دین کی ایک لسٹ ہوتی ہے. Each transaction contains a set of messages to be delivered. This structure can be visualized as a tree where alternating layers are processed sequentially and in parallel.
 
         Block
     
