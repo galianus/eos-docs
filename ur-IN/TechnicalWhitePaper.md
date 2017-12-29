@@ -240,7 +240,7 @@ EOS.IO سافٹویئر پر مبنی ایک بلاکچین میں، انتخا�
 
 ایک بلاک کی جامد جانچ کے لیے یہ ممکن ہے کہ کوئی بھی دو دھاگے ایک ہی اکاونٹ کے لین دین کو تبدیل کر سکے. So long as that invariant is maintained a block can be processed by running all threads in parallel.
 
-## Read-Only Message Handlers
+## صرف ھینڈلرس کے انتخابات پڈھنا-
 
 Some accounts may be able to process a message on a pass/fail basis without modifying their internal state. If this is the case then these handlers can be executed in parallel so long as only read-only message handlers for a particular account are included in one or more threads within a particular cycle.
 
