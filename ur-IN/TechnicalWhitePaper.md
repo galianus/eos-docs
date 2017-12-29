@@ -246,7 +246,7 @@ EOS.IO سافٹویئر پر مبنی ایک بلاکچین میں، انتخا�
 
 ## ایک سے زائد اکاؤنٹ سے اٹمی لین دین-
 
-کبھی کبھار اس خواہش کو یقینی بنایا ضروری ہے کہ پیغامات دوسرے اکاونٹس سے خود بخود موصول ہو. In this case both messages are placed in one transaction and both accounts will be assigned the same thread and the messages applied sequentially. This situation is not ideal for performance and when it comes to "billing" users for usage, they will get billed by the number of unique accounts referenced by a transaction.
+کبھی کبھار اس خواہش کو یقینی بنایا ضروری ہے کہ پیغامات دوسرے اکاونٹس سے خود بخود موصول ہو. اس صورت میں دونوں پیغامات ایک ہی ٹرانزکشن میں رکھے جاتے ہیں اور دونوں اکاونٹس ایک ہی دھاگے کے ساتھ ترتیب سے تفویض ہوگے. یہ صورت عملی طور پر موزوں نہیں اور جب صارفین کو سہولیات کے استعمال کی ادائیگی کرنی ہو تو وہ بہت ساری تکنیکوں سے لین دین کی ادائیگی کر سکتے ہیں.
 
 For performance and cost reasons it is best to minimize atomic operations involving two or more heavily utilized accounts.
 
