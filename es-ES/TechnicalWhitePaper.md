@@ -81,25 +81,25 @@ Para lograr un uso generalizado, las aplicaciones en el blockchain requieren una
 
 ## Soporte para Millones de Usuarios
 
-Reemplazar por completo negocios como Ebay, Uber, AirBnB y Facebook requiere de una tecnología Blockchain capaz de manejar decenas de millones de usuarios activos diariamente. En ciertos casos, las aplicaciones pueden no funcionar a menos que se alcance una masa crítica de usuarios y, por lo tanto, una plataforma que pueda manejar una cantidad masiva de usuarios es primordial.
+La interrupción de negocios como Ebay, Uber, AirBnB y Facebook requiere una tecnología blockchain capaz de manejar a decenas de millones de usuarios activos diariamente. En ciertos casos, las aplicaciones pueden no funcionar a menos que se alcance una masa crítica de usuarios y, por lo tanto, una plataforma que pueda manejar una cantidad masiva de usuarios es primordial.
 
-## Uso gratuito
+## Uso libre
 
-Los desarrolladores de aplicaciones necesitan la suficiente flexibilidad para ofrecer a sus usuarios servicios gratuitos; los usuarios no deberían tener que pagar para usar la plataforma o beneficiarse de sus servicios. Una plataforma Blockchain que sea de uso gratuito para los usuarios es muy probable que obtenga una adopción más generalizada. En tales condiciones, desarrolladores y empresas pueden crear estrategias efectivas de monetización.
+Los desarrolladores de aplicaciones necesitan la flexibilidad para ofrecer a los usuarios servicios gratuitos; los usuarios no deberían tener que pagar para usar la plataforma o beneficiarse de sus servicios. Una plataforma blockchain que sea de uso gratuita para los usuarios probablemente obtenga una adopción más generalizada. Los desarrolladores y las empresas pueden crear estrategias efectivas de monetización.
 
-## Actualizaciones fáciles y recuperación de errores
+## Actualizaciones Sencillas y Recuperación de Errores
 
 Las empresas que crean aplicaciones basadas en blockchain necesitan la flexibilidad para mejorar sus aplicaciones con nuevas funciones.
 
-Todo software no-trivial está sujeto a fallos, incluso con las verificaciones formales más rigurosas. La plataforma debe ser lo suficientemente robusta como para arreglar los fallos cuando estos inevitablemente ocurran.
+Todo el software no trivial está sujeto a errores, incluso con la verificación formal más rigurosa. La plataforma debe ser lo suficientemente robusta como para corregir errores cuando estos ocurran de forma inevitable.
 
-## Baja Latencia
+## Baja latencia
 
-Una buena experiencia de usuario exige reacciones confiables con un retraso de no más de unos pocos segundos. Longer delays frustrate users and make applications built on a blockchain less competitive with existing non-blockchain alternatives.
+Una buena experiencia de usuario exige reacciones confiables con un retraso de no más de unos pocos segundos. Demoras más largas frustran a los usuarios y hacen que las aplicaciones creadas en una blockchain sean menos competitivas con las alternativas existentes que no son blockchain.
 
-## Sequential Performance
+## Rendimiento secuencial
 
-There are some applications that just cannot be implemented with parallel algorithms due to sequentially dependent steps. Applications such as exchanges need enough sequential performance to handle high volumes and therefore a platform with fast sequential performance is required.
+Hay algunas aplicaciones que simplemente no se pueden implementarse con algoritmos paralelos debido a pasos secuencialmente dependientes. Las aplicaciones como los exchanges necesitan un rendimiento secuencial suficiente para manejar grandes volúmenes y, por lo tanto, se requiere una plataforma con un rendimiento secuencial rápido.
 
 ## Parallel Performance
 
