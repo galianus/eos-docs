@@ -268,7 +268,7 @@ EOS.IO سافٹویئر بلاک پرڈوسدز کو قانوناً اس بات 
 
 عام طور پر وسائل کی دستیابی کے وقت اگر کوئی ایک بلاک پرڈوسد لین دین کے عمل کو جایز ٹھہرایے تو اس حالت میں باقی تمام بلاک پرڈوسدز یہ تسلیم کریں گے، لیکن. پرڈوسد کو ڈھونڈنے میں لین دین کو ایک منٹ کا وقت لگ سکتا ہے.
 
-In some cases a producer may create a block that includes transactions that are an order of magnitude outside of acceptable ranges. In this case the next block producer may opt to reject the block and the tie will be broken by the third producer. This is no different than what would happen if a large block caused network propagation delays. The community would notice a pattern of abuse and eventually remove votes from the rogue producer.
+بعض صورتوں میں ایک پرڈوسد ایک بلاک بنا سکتا ہے جس میں ایسا لین دین موجود ہو جو قبول حد اطلاق سے باہر ہو. اس صورت میں دوسرا بلاک پرڈوسد بلاک کو مسترد کرنا چاہے گا اور اس صورت کو توڈنے میں تیسرے بلاک پرڈوسد کا عمل رہے گا. یہ اس سے مختلف نہیں کہ اس وقت کیا ہوگا جب ایک بڈے بلاک نیٹورک کی جالیات میں تاخیر ہوگی. The community would notice a pattern of abuse and eventually remove votes from the rogue producer.
 
 This subjective evaluation of computational cost frees the blockchain from having to precisely and deterministically measure how long something takes to run. With this design there is no need to precisely count instructions which dramatically increases opportunities for optimization without breaking consensus.
 
