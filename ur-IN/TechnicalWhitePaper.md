@@ -276,11 +276,11 @@ EOS.IO سافٹویئر بلاک پرڈوسدز کو قانوناً اس بات 
 
 **مہربانی کر کے یاد رہے:اس سفید کاغذ میں جو کرپٹوگرافک ٹوکن ھے وہ کرپٹوگرافک ٹوکنز دراصل EOS. IO سوفٹویر سے منسلک ہے -. ان کا تعلق ERC-20 ٹوکنز کے ساتھ نہیں ھے اتھیریم بلاکچین EOS ٹوکن تقسیم کے حوالے تقسیم ھو نے کی وجہ سے ھوتا ھے.**
 
-تمام بلاکچین وسائل کے ساتھ محدود ہے اور زیادتی سے بچنے کے لیے ایک نظام درکار ہے. With a blockchain that uses EOS.IO software, there are three broad classes of resources that are consumed by applications:
+تمام بلاکچین وسائل کے ساتھ محدود ہے اور زیادتی سے بچنے کے لیے ایک نظام درکار ہے. اس بلاکچین کے ساتھ جو EOS.IO سافٹویئر استعمال کرتا ہے، یہاں وسائل کے تین بڑے اقسام ہیں جو اپلیکیشنز کی طرف سے بہسم ہوتے ہیں:
 
-1. Bandwidth and Log Storage (Disk);
-2. Computation and Computational Backlog (CPU); and
-3. State Storage (RAM).
+1. بینڈوڈتھ اور لاگ اسٹوریج (ڈسک) ۔;
+2. کمپیوٹیش اور کمپیوٹیشنل بیک لاگ CPU))
+3. اصل صورت میں رکھنے کی لاگت-.
 
 Bandwidth and computation have two components, instantaneous usage and long-term usage. A blockchain maintains a log of all messages and this log is ultimately stored and downloaded by all full nodes. With the log of messages it is possible to reconstruct the state of all applications.
 
