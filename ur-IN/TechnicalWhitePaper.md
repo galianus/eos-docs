@@ -282,7 +282,7 @@ EOS.IO سافٹویئر بلاک پرڈوسدز کو قانوناً اس بات 
 2. کمپیوٹیش اور کمپیوٹیشنل بیک لاگ CPU))
 3. اصل صورت میں رکھنے کی لاگت-.
 
-بینڈوڈتھ اور محاسبہ کے تین جز ہے، فی الفور استعمال اور طویل المیعاد استعمال ہے. A blockchain maintains a log of all messages and this log is ultimately stored and downloaded by all full nodes. With the log of messages it is possible to reconstruct the state of all applications.
+بینڈوڈتھ اور محاسبہ کے تین جز ہے، فی الفور استعمال اور طویل المیعاد استعمال ہے. ایک بلاکچین انتخابات کے تمام لاگ کو منظم رکھتا ہے اور بالآخر تمام گروہ سے ڈاؤن لوڈ کر کے زخیرہ کیا جاتا ہے. اپلیکیشن کے لاگ کے ساتھ یہ اپلیکیشن کی تعمیر نو ممکن ہے.
 
 The computational debt is calculations that must be performed to regenerate state from the message log. If the computational debt grows too large then it becomes necessary to take snapshots of the blockchain's state and discard the blockchain's history. If computational debt grows too quickly then it may take 6 months to replay 1 year worth of transactions. It is critical, therefore, that the computational debt be carefully managed.
 
