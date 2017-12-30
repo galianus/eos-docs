@@ -101,9 +101,9 @@ Una buena experiencia de usuario exige reacciones confiables con un retraso de n
 
 Hay algunas aplicaciones que simplemente no se pueden implementar con algoritmos paralelos debido a pasos secuencialmente dependientes. Las aplicaciones como los exchanges necesitan un rendimiento secuencial suficiente para manejar grandes volúmenes y, por lo tanto, se requiere una plataforma con un rendimiento secuencial rápido.
 
-## Parallel Performance
+## Rendimiento Paralelo
 
-Large scale applications need to divide the workload across multiple CPUs and computers.
+Las aplicaciones a gran escala necesitan dividir la carga de trabajo entre múltiples CPU y computadoras.
 
 # Consensus Algorithm (DPOS)
 
