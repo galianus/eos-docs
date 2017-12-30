@@ -123,18 +123,18 @@ Los blockchains DPOS típicos tienen una participación del productor del 100% e
 
 Hay algunos casos extraordinarios en los que una falla de software, congestión de Internet, o un productor de bloque malicioso creará dos o más bifurcaciones. Para tener la certeza absoluta de que una transacción es irreversible, un nodo puede optar por esperar la confirmación de 15 de los 21 productores de bloques. Según una configuración típica del software EOS.IO, esto tomará un promedio de 45 segundos en circunstancias normales. Por defecto, todos los nodos considerarán que un bloque confirmado por 15 de los 21 productores es irreversible y no cambiarán a una bifurcación que excluya dicho bloque, independientemente de su longitud.
 
-Es posible que un nodo advierta a los usuarios que existe una alta probabilidad de que estén en una bifurcación minoritaria dentro de los 9 segundos posteriores al inicio de una bifurcación. Después de 2 bloques perdidos consecutivamente hay un 95% de probabilidad de que un nodo esté en una bifurcación minoritaria. With 3 consecutive missed blocks there is a 99% certainty of being on a minority fork. It is possible to generate a robust predictive model that will utilize information about which nodes missed, recent participation rates, and other factors to quickly warn operators that something is wrong.
+Es posible que un nodo advierta a los usuarios que existe una alta probabilidad de que estén en una bifurcación minoritaria dentro de los 9 segundos posteriores al inicio de una bifurcación. Después de 2 bloques perdidos consecutivamente hay un 95% de probabilidad de que un nodo esté en una bifurcación minoritaria. Con 3 bloques perdidos consecutivamente hay una certeza del 99% de estar en una bifurcación minoritaria. Es posible generar un modelo predictivo robusto que utilizará información sobre qué nodos omitidos, tasas de participación recientes y otros factores para advertir rápidamente a los operadores de que algo anda mal.
 
-The response to such a warning depends entirely upon the nature of the business transactions, but the simplest response is to wait for 15/21 confirmations until the warning stops.
+La respuesta a tal advertencia depende por completo de la naturaleza de las transacciones comerciales, pero la respuesta más simple es esperar 15/21 confirmaciones hasta que se detenga la advertencia.
 
-## Transaction as Proof of Stake (TaPoS)
+## Transacción como Prueba de Participación (TaPoS)
 
-The EOS.IO software requires every transaction to include the hash of a recent block header. This hash serves two purposes:
+El software EOS.IO requiere que cada transacción incluya el hash de un encabezado de bloque reciente. Este hash tiene dos propósitos:
 
-1. prevents a replay of a transaction on forks that do not include the referenced block; and
-2. signals the network that a particular user and their stake are on a specific fork.
+1. previene la repetición de una transacción en bifurcaciones que no incluyen el bloque referenciado; y
+2. señala a la red que un usuario en particular y su participación están en una bifurcación específica.
 
-Over time all users end up directly confirming the blockchain which makes it difficult to forge counterfeit chains as the counterfeit would not be able to migrate transactions from the legitimate chain.
+Con el tiempo, todos los usuarios terminan confirmando directamente el blockchain, lo que dificulta forjar cadenas falsas, ya que la falsificación no podría migrar transacciones de la cadena legítima.
 
 # Accounts
 
