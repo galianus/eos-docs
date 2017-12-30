@@ -268,9 +268,9 @@ EOS.IO سافٹویئر بلاک پرڈوسدز کو قانوناً اس بات 
 
 عام طور پر وسائل کی دستیابی کے وقت اگر کوئی ایک بلاک پرڈوسد لین دین کے عمل کو جایز ٹھہرایے تو اس حالت میں باقی تمام بلاک پرڈوسدز یہ تسلیم کریں گے، لیکن. پرڈوسد کو ڈھونڈنے میں لین دین کو ایک منٹ کا وقت لگ سکتا ہے.
 
-بعض صورتوں میں ایک پرڈوسد ایک بلاک بنا سکتا ہے جس میں ایسا لین دین موجود ہو جو قبول حد اطلاق سے باہر ہو. اس صورت میں دوسرا بلاک پرڈوسد بلاک کو مسترد کرنا چاہے گا اور اس صورت کو توڈنے میں تیسرے بلاک پرڈوسد کا عمل رہے گا. یہ اس سے مختلف نہیں کہ اس وقت کیا ہوگا جب ایک بڈے بلاک نیٹورک کی جالیات میں تاخیر ہوگی. The community would notice a pattern of abuse and eventually remove votes from the rogue producer.
+بعض صورتوں میں ایک پرڈوسد ایک بلاک بنا سکتا ہے جس میں ایسا لین دین موجود ہو جو قبول حد اطلاق سے باہر ہو. اس صورت میں دوسرا بلاک پرڈوسد بلاک کو مسترد کرنا چاہے گا اور اس صورت کو توڈنے میں تیسرے بلاک پرڈوسد کا عمل رہے گا. یہ اس سے مختلف نہیں کہ اس وقت کیا ہوگا جب ایک بڈے بلاک نیٹورک کی جالیات میں تاخیر ہوگی. کمیونیٹی زیادتیوں کا جائزہ لے گی اور بالآخر بدمعاش پرڈوسدز کے ووٹوں کو نکال دے گے.
 
-This subjective evaluation of computational cost frees the blockchain from having to precisely and deterministically measure how long something takes to run. With this design there is no need to precisely count instructions which dramatically increases opportunities for optimization without breaking consensus.
+یہ کتابی شمارندگ جانچ پڑتال بلاکچین کو اس لاگت سے مفت کرتی ہے کہ کون سی چیز کو چلانے اور اس کی پیمائش کرنے میں کتنا وقت لگتا ہے. With this design there is no need to precisely count instructions which dramatically increases opportunities for optimization without breaking consensus.
 
 # Token Model and Resource Usage
 
