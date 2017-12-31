@@ -330,7 +330,7 @@ EOS.IO سافٹویئر استعمال کرنے والی بلاکچین بلاک
 
 # حکمرانی
 
-Governance is the process by which people reach consensus on subjective matters that cannot be captured entirely by software algorithms. An EOS.IO software-based blockchain implements a governance process that efficiently directs the existing influence of block producers. Absent a defined governance process, prior blockchains relied ad hoc, informal, and often controversial governance processes that result in unpredictable outcomes.
+حکمرانی وہ عمل ہے جس کے زریعے لوگ ان معاملات کے نتائج تک پہنچ جاتے ہیں جو پوری طرح سے سافٹویئر الگورزم کی گرفت میں نہیں آ سکتے. EOS.IO سافٹویئر پر مبنی بلاکچین حکمرانی کا ایک ایسا لاہ عمل اپناتا ہے جو موجودہ بلاک پرڈوسد کے اثر کو بہتر طریقے سے چلاتا ہے. Absent a defined governance process, prior blockchains relied ad hoc, informal, and often controversial governance processes that result in unpredictable outcomes.
 
 A blockchain based on the EOS.IO software recognizes that power originates with the token holders who delegate that power to the block producers. The block producers are given limited and checked authority to freeze accounts, update defective applications, and propose hard forking changes to the underlying protocol.
 
