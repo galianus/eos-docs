@@ -316,7 +316,7 @@ EOS.IO سافٹویئر استعمال کرنے والی بلاکچین بلاک
 
 ## اصل صورت میں رکھنے کی لاگت-
 
-بینڈوڈتھ اور شمارندگ کی منتقلی کے دوران، سٹوریج اپلیکیشن سٹیٹ کو ٹوکن رکھنے کے لیے ایک اپلیکیشن بنانے والے کی ضرورت ہوگی جب تک کہ وہ سٹیٹ ڈلیٹ نہ ہو. If state is never deleted then the tokens are effectively removed from circulation.
+بینڈوڈتھ اور شمارندگ کی منتقلی کے دوران، سٹوریج اپلیکیشن سٹیٹ کو ٹوکن رکھنے کے لیے ایک اپلیکیشن بنانے والے کی ضرورت ہوگی جب تک کہ وہ سٹیٹ ڈلیٹ نہ ہو. صورت کےکبھی حدف نہ ہونے کی پاداش میں ٹوکن کو موثر طور پر گردش سے نکالا جاتا ہے.
 
 Every user account requires a certain amount of storage; therefore, every account must maintain a minimum balance. As storage capacity of the network increases this minimum required balance will fall.
 
