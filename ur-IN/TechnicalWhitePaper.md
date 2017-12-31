@@ -326,9 +326,9 @@ EOS.IO سافٹویئر استعمال کرنے والی بلاکچین بلاک
 
 ## لوگوں کے لیے اپلکیش کے فوائد-
 
-بلاک پرڈوسدز منتخب کرنے کے علاوہ، EOS.IO سافٹویئر پر مبنی بلاکچین صارفین تین کمیونٹی فائدہ اپلیکیشنز جنھیں سمارٹ کنٹریکٹ سے بھی جانا جاتا ہے منتخب کر سکتے ہیں. These 3 applications will receive tokens of up to a configured percent of the token supply per annum minus the tokens that have been paid to block producers. These smart contracts will receive tokens proportional to the votes each application has received from token holders. The elected applications or smart contracts can be replaced by newly elected applications or smart contracts by token holders.
+بلاک پرڈوسدز منتخب کرنے کے علاوہ، EOS.IO سافٹویئر پر مبنی بلاکچین صارفین تین کمیونٹی فائدہ اپلیکیشنز جنھیں سمارٹ کنٹریکٹ سے بھی جانا جاتا ہے منتخب کر سکتے ہیں. یہ تین اپلیکیشنز ان ٹوکنوں کی وصولی کریں گے جن کی ایک تشکیل شدہ فیصد سال میں فراہم کی جاتی ہے منفی وہ ٹوکن جو بلاک پرڈوسدز کو ادا کیے گئے ہوں. یہ سمارٹ معاہدے اتنے ووٹوں کے برابر ٹوکنوں کی وصولی کریں گے جتنے ہر اپلیکیشن اپنے ٹوکن ہولڈرو سے وصول کرتی ہے. منتخبہ اپلیکیشنز یا سمارٹ معاہدے نیے منتخبہ اپلیکیشنز یا ٹوکن حاملین کے سمارٹ معاہدوں سے بدلے جا سکتے ہیں.
 
-# Governance
+# حکمرانی
 
 Governance is the process by which people reach consensus on subjective matters that cannot be captured entirely by software algorithms. An EOS.IO software-based blockchain implements a governance process that efficiently directs the existing influence of block producers. Absent a defined governance process, prior blockchains relied ad hoc, informal, and often controversial governance processes that result in unpredictable outcomes.
 
