@@ -284,7 +284,7 @@ EOS.IO سافٹویئر بلاک پرڈوسدز کو قانوناً اس بات 
 
 بینڈوڈتھ اور محاسبہ کے تین جز ہے، فی الفور استعمال اور طویل المیعاد استعمال ہے. ایک بلاکچین انتخابات کے تمام لاگ کو منظم رکھتا ہے اور بالآخر تمام گروہ سے ڈاؤن لوڈ کر کے زخیرہ کیا جاتا ہے. اپلیکیشن کے لاگ کے ساتھ یہ اپلیکیشن کی تعمیر نو ممکن ہے.
 
-The computational debt is calculations that must be performed to regenerate state from the message log. اگر شمارندگ قرض میں کافی بڈھاوا ہو تو اس صورت میں یہ ضروری بن جاتا ہے کہ بلاکچین کے ماضی کو مسترد کرنے کے لیے بلاکچین کے سنیپ شاٹ لیے جائیں. اگر شمارندگ قرض میں کافی تیز بڈھاوا ہو اس صورت میں ایک ٹرانزکشن کا جواب طلب کرنے میں چھے ماہ کا وقت لگ سکتا ہے. It is critical, therefore, that the computational debt be carefully managed.
+شمارندگ قرض کا حساب انتخابات کے لاگ کو باز تخلیق صورت کو عملانے کے لیے ضروری ہیں. اگر شمارندگ قرض میں کافی بڈھاوا ہو تو اس صورت میں یہ ضروری بن جاتا ہے کہ بلاکچین کے ماضی کو مسترد کرنے کے لیے بلاکچین کے سنیپ شاٹ لیے جائیں. اگر شمارندگ قرض میں کافی تیز بڈھاوا ہو اس صورت میں ایک سال پرانی ٹرانزکشن کا جواب طلب کرنے میں چھے ماہ کا وقت لگ سکتا ہے. It is critical, therefore, that the computational debt be carefully managed.
 
 Blockchain state storage is information that is accessible from application logic. It includes information such as order books and account balances. If the state is never read by the application then it should not be stored. For example, blog post content and comments are not read by application logic so they should not be stored in the blockchain's state. Meanwhile the existence of a post/comment, the number of votes, and other properties do get stored as part of the blockchain's state.
 
