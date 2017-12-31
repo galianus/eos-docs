@@ -312,9 +312,9 @@ EOS.IO سافٹویئر بلاک پرڈوسدز کو قانوناً اس بات 
 
 EOS.IO سافٹویئر کا ایک اہم فائدہ یہ ہے کہ اپلیکیشن کو دستیاب بینڈوڈتھ ٹوکن کی قیمت سے بالکل آزاد ہیں. اگر بلاکچین پر ایک اپلیکیشن مالک کے پاس EOS.IO سافٹویئر اپنانے کے لیے مناسب ٹوکن دستیاب ہو تو اپلیکیشن ایک مخصوص بینڈوڈتھ استعمال کے لیے چل سکتی ہے. ایسی صورت میں ڈویلپرز اور صارفین سے ٹوکن مارکیٹ میں کسی بھی قیمت مؤثر سے متاثر نہیں ہوں گے. دوسسرے الفاظ میں، ایک بلاکچین جو EOS.IO سافٹویئر کو اپناتا ہے بلاک چین پرڈوسدز کی بینڈوڈتھ، شمارندگ، اور ہر ٹوکن کے لیے دستیاب سٹوریج کو قدرتی طور پر بڈھاتا ہے ٹوکن کی قیمت کو بالا تر رکھتے ہوئے.
 
-EOS.IO سافٹویئر استعمال کرنے والی بلاکچین بلاک پرڈوسدز کو بلاک بنانے کے لیے ہر وقت نیا بلاک بنانے کے لیے انعامات سے نوازتا ہے. The value of the tokens will impact the amount of bandwidth, storage, and computation a producer can afford to purchase; this model naturally leverages rising token values to increase network performance.
+EOS.IO سافٹویئر استعمال کرنے والی بلاکچین بلاک پرڈوسدز کو بلاک بنانے کے لیے ہر وقت نیا بلاک بنانے کے لیے انعامات سے نوازتا ہے. ٹوکن کی قیمت کا اثر بینڈوڈتھ کی مقدار، سٹوریج، اور شمارندگ جو ایک پرڈوسد برداشت کرسکتا ہے؛ یہ ماڈل ٹوکن کی قیمت اور نیٹورک کی کارکردگی کے بڈھ تے عمل کو قدرتی طور پر قابو کرتا ہے.
 
-## State Storage Costs
+## اصل صورت میں رکھنے کی لاگت-
 
 While bandwidth and computation can be delegated, storage of application state will require an application developer to hold tokens until that state is deleted. If state is never deleted then the tokens are effectively removed from circulation.
 
