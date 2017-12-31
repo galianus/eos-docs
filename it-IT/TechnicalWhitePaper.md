@@ -269,15 +269,15 @@ In una blockchain operativa che adotta il software EOS.IO, a livello di rete tut
 
 In generale, purché anche solo un produttore di blocchi consideri una transazione valida e ai limiti dell'utilizzo delle risorse, tutti gli altri produttori di blocchi lo accetteranno, ma potrebbe essere necessario fino a 1 minuto necessari alla transazione per trovare quel produttore.
 
-In alcuni casi, un produttore può creare un blocco che include transazioni di un ordine di grandezza al di fuori degli intervalli accettabili. In questo caso il produttore del blocco successivo può scegliere di rifiutare il blocco e il legame verrà interrotto dal terzo produttore. Ciò non è diverso da quello che succederebbe se un blocco di grande dimensioni causasse ritardi nella propagazione della rete. The community would notice a pattern of abuse and eventually remove votes from the rogue producer.
+In alcuni casi, un produttore può creare un blocco che include transazioni di un ordine di grandezza al di fuori degli intervalli accettabili. In questo caso il produttore del blocco successivo può scegliere di rifiutare il blocco e il legame verrà interrotto dal terzo produttore. Ciò non è diverso da quello che succederebbe se un blocco di grande dimensioni causasse ritardi nella propagazione della rete. La comunità noterebbe un modello di abuso e avrebbe rimosso i voti dal produttore disonesto.
 
-This subjective evaluation of computational cost frees the blockchain from having to precisely and deterministically measure how long something takes to run. With this design there is no need to precisely count instructions which dramatically increases opportunities for optimization without breaking consensus.
+Questa valutazione soggettiva del costo computazionale libera la blockchain dal bisogno di misurare in modo preciso e deterministico quanto tempo ci vuole per eseguire. Con questo design non è necessario contare con precisione le istruzioni ciò aumenta notevolmente le opportunità di ottimizzazione senza infrangere il consensus/consenso.
 
-# Token Model and Resource Usage
+# Modello di Token e Utilizzo delle Risorse
 
-**PLEASE NOTE: CRYPTOGRAPHIC TOKENS REFERRED TO IN THIS WHITE PAPER REFER TO CRYPTOGRAPHIC TOKENS ON A LAUNCHED BLOCKCHAIN THAT ADOPTS THE EOS.IO SOFTWARE. THEY DO NOT REFER TO THE ERC-20 COMPATIBLE TOKENS BEING DISTRIBUTED ON THE ETHEREUM BLOCKCHAIN IN CONNECTION WITH THE EOS TOKEN DISTRIBUTION.**
+**NOTA BENE: I TOKEN CRITTOGRAFICI DI CUI QUESTO WHITE PAPER FA RIFERIMENTO SONO I TOKEN CRITTOGRAFICI LANCIATI SULLA BLOCKCHAIN CHE UTILIZZA IL SOFTWARE EOS.IO. NON FANNO RIFERIMENTO AI TOKEN ERC-20 CHE SONO DISTRIBUITI SULLA BLOCKCHAIN DI ETHEREUM CONNESSI ALLA DISTRIBUZIONE DEI TOKEN DI EOS. **
 
-All blockchains are resource constrained and require a system to prevent abuse. With a blockchain that uses EOS.IO software, there are three broad classes of resources that are consumed by applications:
+Tutte le blockchain sono limitate in termini di risorse e richiedono un sistema per prevenire gli abusi. Con una blockchain che utilizza il software EOS.IO, vi sono tre ampie classi di risorse che vengono utilizzate dalle applicazioni:
 
 1. Bandwidth and Log Storage (Disk);
 2. Computation and Computational Backlog (CPU); and
