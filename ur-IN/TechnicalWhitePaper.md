@@ -310,7 +310,7 @@ EOS.IO سافٹویئر بلاک پرڈوسدز کو قانوناً اس بات 
 
 ## لین دین کو ٹوکن کی قیمت سے الگ کرنا-
 
-EOS.IO سافٹویئر کا ایک اہم فائدہ یہ ہے کہ اپلیکیشن کو دستیاب بینڈوڈتھ ٹوکن کی قیمت سے بالکل آزاد ہیں. اگر بلاکچین پر ایک اپلیکیشن مالک کے پاس EOS.IO سافٹویئر اپنانے کے لیے مناسب ٹوکن دستیاب ہو تو اپلیکیشن ایک مخصوص بینڈوڈتھ استعمال کے لیے چل سکتی ہے. In such case, developers and users are unaffected from any price volatility in the token market and therefore not reliant on a price feed. In other words, a blockchain that adopts the EOS.IO software enables block producers to naturally increase bandwidth, computation, and storage available per token independent of the token's value.
+EOS.IO سافٹویئر کا ایک اہم فائدہ یہ ہے کہ اپلیکیشن کو دستیاب بینڈوڈتھ ٹوکن کی قیمت سے بالکل آزاد ہیں. اگر بلاکچین پر ایک اپلیکیشن مالک کے پاس EOS.IO سافٹویئر اپنانے کے لیے مناسب ٹوکن دستیاب ہو تو اپلیکیشن ایک مخصوص بینڈوڈتھ استعمال کے لیے چل سکتی ہے. ایسی صورت میں ڈویلپرز اور صارفین سے ٹوکن مارکیٹ میں کسی بھی قیمت مؤثر سے متاثر نہیں ہوں گے. In other words, a blockchain that adopts the EOS.IO software enables block producers to naturally increase bandwidth, computation, and storage available per token independent of the token's value.
 
 A blockchain using EOS.IO software also awards block producers tokens every time they produce a block. The value of the tokens will impact the amount of bandwidth, storage, and computation a producer can afford to purchase; this model naturally leverages rising token values to increase network performance.
 
