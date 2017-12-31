@@ -302,9 +302,9 @@ EOS.IO سافٹویئر بلاک پرڈوسدز کو قانوناً اس بات 
 
 تجارتی طور پر، دفتری جگہ کے لیے، شمارندگ طاقت، اور کاروبار کو چلانے کے لیے دوسرے اخراجات کاروبار سے ہی ادا کیے جاتے ہیں. صارف کاروبار سے مخصوص چیزیں خریدتا ہی اور اس آمدنی سے کمایا ہوا منافع کاروبار کو چلانے کے لیے دوسرے اخراجات کے لیے استعمال ہوتا ہے. اسی طرح، کوئی ویب سائٹ اس ویب سائٹ کو دیکھنے کے لیے اپنے صارفین سے مہمان نوازی کے اخراجات کی ادائیگی لازم نہیں رکھتا. لہٰذا، ڈیسنٹرالایزڈ اپلیکیشنز کو بلاکچین کے استعمال کے لیے صارفین سے زبردستی ادائیگی نہیں کرنی چاہیے.
 
-A launched blockchain that uses the EOS.IO software does not require its users to pay the blockchain directly for its use and therefore does not constrain or prevent a business from determining its own monetization strategy for its products.
+ایک شروع بلاکچین جو EOS.IO سافٹویئر استعمال کرتی ہوں اپنے صارفین سے براہ راست ادائیگی نہیں چاہتی لہذا یہ اپنے مصنوعات کے تعین اپنے لاہ عمل کو عملانے میں کاروبار میں بندشیں نہیں رکھتا.
 
-## Delegating Capacity
+## صلاحیت کو استعمال کرنا-
 
 A holder of tokens on a blockchain launched adopting the EOS.IO software who may not have an immediate need to consume all or part of the available bandwidth, can give or rent such unconsumed bandwidth to others; the block producers running EOS.IO software on such blockchain will recognize this delegation of capacity and allocate bandwidth accordingly.
 
