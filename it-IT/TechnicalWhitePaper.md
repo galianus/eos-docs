@@ -279,13 +279,13 @@ Questa valutazione soggettiva del costo computazionale libera la blockchain dal 
 
 Tutte le blockchain sono limitate in termini di risorse e richiedono un sistema per prevenire gli abusi. Con una blockchain che utilizza il software EOS.IO, vi sono tre ampie classi di risorse che vengono utilizzate dalle applicazioni:
 
-1. Bandwidth and Log Storage (Disk);
-2. Computation and Computational Backlog (CPU); and
-3. State Storage (RAM).
+1. Larghezza di banda e archiviazione dei registri (disco);
+2. Computazione e Backlog Computazionale (CPU); e
+3. Archiviazione di Stato (RAM).
 
-Bandwidth and computation have two components, instantaneous usage and long-term usage. A blockchain maintains a log of all messages and this log is ultimately stored and downloaded by all full nodes. With the log of messages it is possible to reconstruct the state of all applications.
+Il bandwidth e il calcolo computazionale hanno due componenti, l'uso istantaneo e l'uso a lungo termine. Una blockchain mantiene un registro di tutti i messaggi e questo registro viene infine archiviato e scaricato da tutti i nodi completi. Con il registro dei messaggi è possibile ricostruire lo stato di tutte le applicazioni.
 
-The computational debt is calculations that must be performed to regenerate state from the message log. If the computational debt grows too large then it becomes necessary to take snapshots of the blockchain's state and discard the blockchain's history. If computational debt grows too quickly then it may take 6 months to replay 1 year worth of transactions. It is critical, therefore, that the computational debt be carefully managed.
+Il debito computazionale è formato da calcoli che devono essere eseguiti per rigenerare lo stato dal registro messaggi. Se il debito computazionale diventa troppo grande allora diventa necessario fare uno snapshot dello stato della blockchain e scartare la storia della blockchain. Se il debito computazionale cresce troppo rapidamente, potrebbero essere necessari 6 mesi per ripetere il valore di 1 anno di transazioni. È quindi fondamentale che il debito computazionale sia gestito con cura.
 
 Blockchain state storage is information that is accessible from application logic. It includes information such as order books and account balances. If the state is never read by the application then it should not be stored. For example, blog post content and comments are not read by application logic so they should not be stored in the blockchain's state. Meanwhile the existence of a post/comment, the number of votes, and other properties do get stored as part of the blockchain's state.
 
