@@ -334,9 +334,9 @@ EOS.IO سافٹویئر استعمال کرنے والی بلاکچین بلاک
 
 EOS.IO سافٹویئر پر مبنی بلاکچین یہ پہچان لیتی ہے کہ طاقت ٹوکن مالکان کے پاس ہوتی ہے جو وہ بلاک پرڈوسدز کو منتقل کرتے ہیں. بلاک پرڈوسدز کو اکاؤنٹ منجمد کرنے کے لیے، ناقص اپلیکیشنز کی تازہ کاری اور موجودہ اساسوں میں مشکل فورکنگ کی تبدیلیاں کرنے کی محدود اجازت دی جاتی ہے.
 
-Embedded into the EOS.IO software is the election of block producers. Before any change can be made to the blockchain these block producers must approve it. If the block producers refuse to make changes desired by the token holders then they can be voted out. If the block producers make changes without permission of the token holders then all other non-producing full-node validators (exchanges, etc) will reject the change.
+EOS.IO سافٹویئر میں شامل بلاک پرڈوسدز کا انتخاب. بلاکچین میں کوئی تبدیلی کرنے سے پہلے ان بلاک پرڈوسدز کی منظوری ضروری ہے. اگر بلاک پرڈوسد ٹوکن ہولڈرو کی چاہت کے مطابق تبدیلی کرنا مسترد کرتا ہے اس صورت میں انہیں باہر کیا جا سکتا ہے. اگر ایک بلاک پرڈوسد ٹوکن ہولڈرو کی اجازت کے بغیر کوئی تبدیلی کرتا ہے اس صورت میں ایک باقی تمام گروہ اس تبدیلی کو مسترد کریں گے.
 
-## Freezing Accounts
+## اکاؤنٹ منجمد کرنا
 
 Sometimes a smart contact behaves in an aberrant or unpredictable manner and fails to perform as intended; other times an application or account may discover an exploit that enables it to consume an unreasonable amount of resources. When such issues inevitably occur, the block producers have the power to rectify such situations.
 
