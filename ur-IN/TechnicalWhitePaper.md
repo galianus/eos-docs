@@ -318,7 +318,7 @@ EOS.IO سافٹویئر استعمال کرنے والی بلاکچین بلاک
 
 بینڈوڈتھ اور شمارندگ کی منتقلی کے دوران، سٹوریج اپلیکیشن سٹیٹ کو ٹوکن رکھنے کے لیے ایک اپلیکیشن بنانے والے کی ضرورت ہوگی جب تک کہ وہ سٹیٹ ڈلیٹ نہ ہو. صورت کےکبھی حدف نہ ہونے کی پاداش میں ٹوکن کو موثر طور پر گردش سے نکالا جاتا ہے.
 
-Every user account requires a certain amount of storage; therefore, every account must maintain a minimum balance. As storage capacity of the network increases this minimum required balance will fall.
+ہر صارف کے اکاونٹ کے لیے ایک مخصوص سٹوریج کی ضرورت پڈتی ہیں، لہٰذا، ہر اکاونٹ کو کم از کم توازن برقرار رکھنا ضروری ہے. جوں ہی نیٹورک کی سٹوریج صلاحیت بڈھ جائے گی ضرورت شدہ کم از کم توازن گر جائے گا.
 
 ## Block Rewards
 
