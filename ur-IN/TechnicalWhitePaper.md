@@ -320,9 +320,9 @@ EOS.IO سافٹویئر استعمال کرنے والی بلاکچین بلاک
 
 ہر صارف کے اکاونٹ کے لیے ایک مخصوص سٹوریج کی ضرورت پڈتی ہیں، لہٰذا، ہر اکاونٹ کو کم از کم توازن برقرار رکھنا ضروری ہے. جوں ہی نیٹورک کی سٹوریج صلاحیت بڈھ جائے گی ضرورت شدہ کم از کم توازن گر جائے گا.
 
-## Block Rewards
+## بلاک کے انعامات-
 
-A blockchain that adopts the EOS.IO software will award new tokens to a block producer every time a block is produced. In these circumstances, the number of tokens created is determined by the median of the desired pay published by all block producers. The EOS.IO software may be configured to enforce a cap on producer awards such that the total annual increase in token supply does not exceed 5%.
+ای بلاکچین جو EOS.IO سافٹویئر کو اپناتا ہے بلاک پرڈوسد نیے ٹوکن کو ہر بلاک بنانے کے لیے انعام دے گا. ان حالات میں، ٹوکن بنانے کی تعداد کو بلاک پرڈوسدز کے زریعے مطلوبہ تنخواہ میں متعین کیا جاتا ہے. The EOS.IO software may be configured to enforce a cap on producer awards such that the total annual increase in token supply does not exceed 5%.
 
 ## Community Benefit Applications
 
