@@ -296,7 +296,7 @@ EOS.IO سافٹویئر بلاک پرڈوسدز کو قانوناً اس بات 
 
 جیسے کہ پہلے تبادلہ کیا گیا ہے، انسٹرومنٹنگ شمارندگ کا ایک واضح اثر ریاضیات کی کارکردگی پر ہے؛ لہذا، تمام وصالِ انتظام رکاوٹیں بالآخر بلاک پرڈوسدز انفرادی الگورزم اور اندازے کے مطابق کیا جاتا ہے.
 
-That said, there are certain things that are trivial to measure objectively. The number of messages delivered and the size of the data stored in the internal database are cheap to measure objectively. The EOS.IO software enables block producers to apply the same algorithm over these objective measures but may choose to apply stricter subjective algorithms over subjective measurements.
+جیسا کہا گیا ہے کہ، یہاں کچھ ایسی چیزیں ہیں جن کو معروضی طور پر ناپنا معمولی ہے. پیغامات کی منتقلی کی تعداد اور اندرونی ڈیٹا بیس میں محفوظ کوائف معروضی طور پر جائزہ کو ناپنے کے لئے سستے ہیں ۔. The EOS.IO software enables block producers to apply the same algorithm over these objective measures but may choose to apply stricter subjective algorithms over subjective measurements.
 
 ## Receiver Pays
 
