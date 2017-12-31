@@ -290,7 +290,7 @@ EOS.IO سافٹویئر بلاک پرڈوسدز کو قانوناً اس بات 
 
 بلاک پرڈوسد بینڈوڈتھ ،شمارندگ اور سٹیٹ کی دستیاب صلاحیت کو شایع کرتے ہیں. EOS.IO سافٹویئر دستیاب صلاحیت کی ایک فیصد کو استعمال کرنے کے لیے ہر اکاونٹ کو سٹاکنگ ٹوکن کی مقدار تین روزہ معاہدے میں استعمال کرنے کی اجازت دیتا ہے. مثال کے طور پر، EOS.IO سافٹویئر پر مبنی ایک بلاکچین کا اگر آغاز کیا جائے اور اگر اس میں ایک فیصدی ٹوکن تقسیم کرنے کی صلاحیت ہو، اس صورت میں اکاونٹ کو اتنی طاقت ہے کہ وہ اپنی زخیرہ صورتی صلاحیت کا ایک فیصد استعمال کر سکتا ہے.
 
-Adopting the EOS.IO software on a launched blockchain means bandwidth and computational capacity are allocated on a fractional reserve basis because they are transient (unused capacity cannot be saved for future use). The algorithm used by EOS.IO software is similar to the algorithm used by Steem to rate-limit bandwidth usage.
+ایک پہلے سے چلنے والی پر EOS.IO سافٹویئر کو اپنانے کا مطلب بینڈوڈتھ اور شمارندگ صلاحیت کو ایک کسری زخییراتی بنیاد پر کیونکہ وہ عارضی ہے (غیر استعمال شدہ صلاحیت مستقبل میں استعمال کے لیے محفوظ نہیں رکھ سکتے ہیں). The algorithm used by EOS.IO software is similar to the algorithm used by Steem to rate-limit bandwidth usage.
 
 ## Objective and Subjective Measurements
 
