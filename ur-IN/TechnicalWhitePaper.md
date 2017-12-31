@@ -316,7 +316,7 @@ EOS.IO سافٹویئر استعمال کرنے والی بلاکچین بلاک
 
 ## اصل صورت میں رکھنے کی لاگت-
 
-While bandwidth and computation can be delegated, storage of application state will require an application developer to hold tokens until that state is deleted. If state is never deleted then the tokens are effectively removed from circulation.
+بینڈوڈتھ اور شمارندگ کی منتقلی کے دوران، سٹوریج اپلیکیشن سٹیٹ کو ٹوکن رکھنے کے لیے ایک اپلیکیشن بنانے والے کی ضرورت ہوگی جب تک کہ وہ سٹیٹ ڈلیٹ نہ ہو. If state is never deleted then the tokens are effectively removed from circulation.
 
 Every user account requires a certain amount of storage; therefore, every account must maintain a minimum balance. As storage capacity of the network increases this minimum required balance will fall.
 
