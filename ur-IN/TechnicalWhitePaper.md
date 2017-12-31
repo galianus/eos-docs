@@ -332,7 +332,7 @@ EOS.IO سافٹویئر استعمال کرنے والی بلاکچین بلاک
 
 حکمرانی وہ عمل ہے جس کے زریعے لوگ ان معاملات کے نتائج تک پہنچ جاتے ہیں جو پوری طرح سے سافٹویئر الگورزم کی گرفت میں نہیں آ سکتے. EOS.IO سافٹویئر پر مبنی بلاکچین حکمرانی کا ایک ایسا لاہ عمل اپناتا ہے جو موجودہ بلاک پرڈوسد کے اثر کو بہتر طریقے سے چلاتا ہے. ایک وضاحتی حکمرانی عمل کی غیر موجودگی میں، بلاکچین کا انحصار ad hoc،غیر رسمی ،اور اکثر متنازعہ اسلوب حکمرانی عمل کے نتیجے میں غیر متوقع نتائج نکلتے ہیں.
 
-A blockchain based on the EOS.IO software recognizes that power originates with the token holders who delegate that power to the block producers. The block producers are given limited and checked authority to freeze accounts, update defective applications, and propose hard forking changes to the underlying protocol.
+EOS.IO سافٹویئر پر مبنی بلاکچین یہ پہچان لیتی ہے کہ طاقت ٹوکن مالکان کے پاس ہوتی ہے جو وہ بلاک پرڈوسدز کو منتقل کرتے ہیں. The block producers are given limited and checked authority to freeze accounts, update defective applications, and propose hard forking changes to the underlying protocol.
 
 Embedded into the EOS.IO software is the election of block producers. Before any change can be made to the blockchain these block producers must approve it. If the block producers refuse to make changes desired by the token holders then they can be voted out. If the block producers make changes without permission of the token holders then all other non-producing full-node validators (exchanges, etc) will reject the change.
 
