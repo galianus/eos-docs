@@ -269,7 +269,7 @@ In una blockchain operativa che adotta il software EOS.IO, a livello di rete tut
 
 In generale, purché anche solo un produttore di blocchi consideri una transazione valida e ai limiti dell'utilizzo delle risorse, tutti gli altri produttori di blocchi lo accetteranno, ma potrebbe essere necessario fino a 1 minuto necessari alla transazione per trovare quel produttore.
 
-In alcuni casi, un produttore può creare un blocco che include transazioni di un ordine di grandezza al di fuori degli intervalli accettabili. In questo caso il produttore del blocco successivo può scegliere di rifiutare il blocco e il legame verrà interrotto dal terzo produttore. This is no different than what would happen if a large block caused network propagation delays. The community would notice a pattern of abuse and eventually remove votes from the rogue producer.
+In alcuni casi, un produttore può creare un blocco che include transazioni di un ordine di grandezza al di fuori degli intervalli accettabili. In questo caso il produttore del blocco successivo può scegliere di rifiutare il blocco e il legame verrà interrotto dal terzo produttore. Ciò non è diverso da quello che succederebbe se un blocco di grande dimensioni causasse ritardi nella propagazione della rete. The community would notice a pattern of abuse and eventually remove votes from the rogue producer.
 
 This subjective evaluation of computational cost frees the blockchain from having to precisely and deterministically measure how long something takes to run. With this design there is no need to precisely count instructions which dramatically increases opportunities for optimization without breaking consensus.
 
