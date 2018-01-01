@@ -372,7 +372,7 @@ EOS.IO سافٹویئر کی طے شدہ ترتیب، بلاکچین کو اپڈ
 
 # مجازی اور نوشہ جات مشینیں
 
-The EOS.IO software will be first and foremost a platform for coordinating the delivery of authenticated messages to accounts. The details of scripting language and virtual machine are implementation specific details that are mostly independent from the design of the EOS.IO technology. Any language or virtual machine that is deterministic and properly sandboxed with sufficient performance can be integrated with the EOS.IO software API.
+EOS.IO سافٹویئر توثیق شدہ پیغامات کو منتقل کرنے کے لیے سب سے پہلا اور اہم پلیٹ فارم ہوگا. سکرپٹنگ زبان کی تفصیلات اور مجازی مشینوں کی عمل آوری اکثر EOS.IO تکنیک کے ڈیزائن سے آزاد ہوتی ہے. Any language or virtual machine that is deterministic and properly sandboxed with sufficient performance can be integrated with the EOS.IO software API.
 
 ## Schema Defined Messages
 
