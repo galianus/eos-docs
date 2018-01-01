@@ -390,7 +390,7 @@ EOS.IO سافٹویئر توثیق شدہ پیغامات کو منتقل کرن�
 2. جواز دہی پیشگی شرائط کے تمام جائز ہیں ۔ اور
 3. ایپلی کیشن کی حالت میں تبدیلی ۔.
 
-Validating the internal consistency of a message is read-only and requires no access to blockchain state. This means that it can be performed with maximum parallelism. Validating preconditions, such as required balance, is read-only and therefore can also benefit from parallelism. Only modification of application state requires write access and must be processed sequentially for each application.
+ایک پیغام کے اندرونی تواتر کی جوازدہی صرف پڈھی جاتی ہے اور بلاکچین سٹیٹ تک پہنچنے کے لیے کسی چیز کی ضرورت نہیں. اس کا مطلب ہے اسے زیادہ سے زیادہ مساوات کے ساتھ انجام دیا جا سکتا کہ ۔. پیشگی شرائط کی جواز دہی، مطلوبہ توازن فقط مطالعہ ہے اور اس لئے بھی مساوات سے فائدہ اٹھا سکتے ہیں ۔. صرف اپلیکیشن سٹیٹ کی ترمیم کے لیے تحریری رسائی کی ضرورت پڈتی ہیں اور ہر ایک اپلیکیشن کے لیے ترتیب سے عملانا چاہیے.
 
 Authentication is the read-only process of verifying that a message can be applied. Application is actually doing the work. In real time both calculations are required to be performed, however once a transaction is included in the blockchain it is no longer necessary to perform the authentication operations.
 
