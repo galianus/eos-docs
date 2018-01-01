@@ -368,7 +368,7 @@ EOS.IO سافٹویئر کی طے شدہ ترتیب، بلاکچین کو اپڈ
 
 ### ھنگامی تبدیلیاں-
 
-The block producers may accelerate the process if a software change is required to fix a harmful bug or security exploit that is actively harming users. Generally speaking it could be against the constitution for accelerated updates to introduce new features or fix harmless bugs.
+اگر سافٹویئر میں تبدیلی لانے کی ضرورت ہو خطرناک بگ کو سنبھالنے میں یا سلامتی کے استحصال کو ٹھیک کرنے کی صورت میں جو فعل صارفین کو نقصان پہنچاتا ہو اس صورت میں بلاک پرڈوسد اپنے عمل میں تیزی لاسکتا ہے. Generally speaking it could be against the constitution for accelerated updates to introduce new features or fix harmless bugs.
 
 # Scripts & Virtual Machines
 
