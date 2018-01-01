@@ -374,13 +374,13 @@ EOS.IO سافٹویئر کی طے شدہ ترتیب، بلاکچین کو اپڈ
 
 EOS.IO سافٹویئر توثیق شدہ پیغامات کو منتقل کرنے کے لیے سب سے پہلا اور اہم پلیٹ فارم ہوگا. سکرپٹنگ زبان کی تفصیلات اور مجازی مشینوں کی عمل آوری اکثر EOS.IO تکنیک کے ڈیزائن سے آزاد ہوتی ہے. کوئی بھی زبان یا مجازی مشین جو ظہرانہ اور اچھی کارکردگی کے ساتھ سیندبکس ہو اسے EOS.IO سافٹویئر API کے ساتھ منسلک کیا جا سکتا ہے.
 
-## Schema Defined Messages
+## شجرہ پیغامات کی وضاحت-
 
-All messages sent between accounts are defined by a schema which is part of the blockchain consensus state. This schema allows seamless conversion between binary and JSON representation of the messages.
+اکاؤنٹس کے درمیان بجھی جانے والے تمام پیغامات کی وضاحت بہ اتفاق رائے کے ساتھ ایک ایک شجرہ کی طرف سے متعین ہوتے ہیں. یہ شجرہ ثنائی اور JSON کی نمایندگی کے پیغامات کے درمیان سیملیس تبادلوں کی اجازت فراہم کرتا ہے.
 
-## Schema Defined Database
+## وضاحتی شجرہ ڈیٹابیس
 
-Database state is also defined using a similar schema. This ensures that all data stored by all applications is in a format that can be interpreted as human readable JSON but stored and manipulated with the efficiency of binary.
+ڈیٹا بیس کی حالت بھی اسی طرح شجرہ استعمال کرتے ہوئے متعین ہوتے ہیں ۔. This ensures that all data stored by all applications is in a format that can be interpreted as human readable JSON but stored and manipulated with the efficiency of binary.
 
 ## Separating Authentication from Application
 
