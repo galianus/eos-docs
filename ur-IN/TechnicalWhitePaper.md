@@ -410,7 +410,7 @@ EOS.IO سافٹویئر توثیق شدہ پیغامات کو منتقل کرن�
 
 # بلاکچین کی اندرونی گفتگو
 
-EOS.IO software is designed to facilitate inter-blockchain communication. This is achieved by making it easy to generate proof of message existence and proof of message sequence. These proofs combined with an application architecture designed around message passing enables the details of inter-blockchain communication and proof validation to be hidden from application developers.
+EOS.IO سافٹ ویئر انٹر بلوککچاان مواصلات کی سہولت کے لئے ڈیزائن کیا گیا ہے ۔. پیغامات کی ترتیب اور ان کی موجودگی کا ثبوت آسانی سے نکالنے کی بنا پر اسے حاصل کیا جا سکتا ہے. These proofs combined with an application architecture designed around message passing enables the details of inter-blockchain communication and proof validation to be hidden from application developers.
 
 <img align="right" src="http://eos.io/wpimg/Diagram1.jpg" width="362.84px" height="500px" />
 
