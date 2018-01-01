@@ -354,9 +354,9 @@ EOS.IO سافٹویئر بلاکچین کو ہمتا بہ ہمتا خدمات ا
 
 ## آیین اور دستور کو بڈھاوا دینا-
 
-The EOS.IO software defines a process by which the protocol as defined by the canonical source code and its constitution, can be updated using the following process:
+EOS.IO سافٹویئر اس عمل کی وضاحت کرتا ہے جو پروٹوکول کے مستند ماخز کوڈ اور اس کے آیین کی طرف سے واضع طور پر درج ذیل عمل استعمال کرتے ہوئے تازہ کاری کے عمل کی وضاحت کرتا ہے:
 
-1. Block producers propose a change to the constitution and obtains 17/21 approval.
+1. بلاک پروڈیوسرز آئین تبدیلی کی تجویز اور 17/21 منظوری کا تعین کرے گی ۔.
 2. Block producers maintain 17/21 approval for 30 consecutive days.
 3. All users are required to sign transactions using the hash of the new constitution.
 4. Block producers adopt changes to the source code to reflect the change in the constitution and propose it to the blockchain using the hash of a git commit.
