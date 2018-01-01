@@ -313,9 +313,9 @@ Un detentore di token su una blockchain lanciata che adotta il software EOS.IO c
 
 Uno dei principali vantaggi del software EOS.IO è che la quantità della bandwidth disponibile per un'applicazione è completamente indipendente dal prezzo dei token. Se il proprietario di un'applicazione detiene un numero rilevante di token su una blockchain che adotta il software EOS.IO, l'applicazione può essere eseguita a tempo indeterminato all'interno di uno stato fisso e dell'utilizzo della bandwidth. In tal caso, gli sviluppatori e gli utenti non sono influenzati da alcuna volatilità dei prezzi del mercato dei token e quindi non dipendono da un feed dei prezzi. In altre parole, una blockchain che adotta il software EOS.IO consente ai produttori di blocchi di poter aumentare naturalmente la bandwidth, il calcolo e l'archiviazione disponibili per il token indipendentemente dal valore di quest'ultimo.
 
-Una blockchain che utilizza il software EOS.IO premia i produttori di blocchi con token ogni volta che producono un blocco. The value of the tokens will impact the amount of bandwidth, storage, and computation a producer can afford to purchase; this model naturally leverages rising token values to increase network performance.
+Una blockchain che utilizza il software EOS.IO premia i produttori di blocchi con token ogni volta che producono un blocco. Il valore dei token influirà sulla quantità della bandwidth, dello spazio di archiviazione e del calcolo che un produttore può permettersi di acquistare; questo modello sfrutta naturalmente i valori dei token in aumento in modo da aumentare le prestazioni della rete.
 
-## State Storage Costs
+## Costi di Archiviazione dello Stato
 
 While bandwidth and computation can be delegated, storage of application state will require an application developer to hold tokens until that state is deleted. If state is never deleted then the tokens are effectively removed from circulation.
 
