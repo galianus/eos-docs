@@ -346,7 +346,7 @@ EOS.IO سافٹویئر میں شامل بلاک پرڈوسدز کا انتخا�
 
 سب کچھ ناکام ہونے پر " ادغام اپلیکیشنز" غیر متوقع طور پر کام کرتی ہے، EOS.IO سافٹویئر پر مبنی بلاکچین بلاک پرڈوسدز کو اکاؤنٹ کوڈ تبدیل کرنے کی اجازت دیتا ہے تمام بلاکچین کی مشکل فورکنگ کو چھوڑ کر. اکاؤنٹ منجمد کرنے کے عمل کے مشابہ، یہ اس کی تبدیلی کے لئے منتخبہ بلاک پرڈوسدز کے 17/21 ووٹوں کی ضرورت ہے.
 
-## Constitution
+## دستور
 
 The EOS.IO software enables blockchains to establish a peer-to-peer terms of service agreement or a binding contract among those users who sign it, referred to as a "constitution". The content of this constitution defines obligations among the users which cannot be entirely enforced by code and facilitates dispute resolution by establishing jurisdiction and choice of law along with other mutually accepted rules. Every transaction broadcast on the network must incorporate the hash of the constitution as part of the signature and thereby explicitly binds the signer to the contract.
 
