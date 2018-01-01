@@ -156,11 +156,11 @@ Cada cuenta puede ser controlada mediante cualquier combinación ponderada de ot
 
 El software EOS.IO permite a las cuentas definir qué combinación de claves y/o cuentas puede enviar un tipo de mensaje particular a otra cuenta. Por ejemplo, es posible tener una clave para la cuenta de redes sociales de un usuario y otra para acceder al exchange. Incluso es posible dar permiso a otras cuentas para actuar en nombre de la cuenta de un usuario sin asignarles claves.
 
-### Named Permission Levels
+### Nominación de Niveles de Permisos
 
 <img align="right" src="http://eos.io/wpimg/diagram3.png" width="228.395px" height="300px" />
 
-Using the EOS.IO software, accounts can define named permission levels each of which can be derived from higher level named permissions. Each named permission level defines an authority; an authority is a threshold multi-signature check consisting of keys and/or named permission levels of other accounts. For example, an account's "Friend" permission level can be set for the account to be controlled equally by any of the account's friends.
+Con el software EOS.IO, las cuentas pueden definir niveles de permisos con nombre, cada uno de los cuales puede derivarse de permisos nombrados de mayor nivel. Cada nivel de permiso nombrado define una autoridad; una autoridad es un control de múltiples firmas de umbral que consiste en claves y/o niveles de permisos nombrados de otras cuentas. Por ejemplo, se puede configurar el nivel de permiso "Amigo" de una cuenta para que la cuenta sea controlada por igual por cualquiera de los amigos de la cuenta.
 
 Another example is the Steem blockchain which has three hard-coded named permission levels: owner, active, and posting. The posting permission can only perform social actions such as voting and posting, while the active permission can do everything except change the owner. The owner permission is meant for cold storage and is able to do everything. The EOS.IO software generalizes this concept by allowing each account holder to define their own hierarchy as well as the grouping of actions.
 
