@@ -368,9 +368,9 @@ EOS.IO سافٹویئر کی طے شدہ ترتیب، بلاکچین کو اپڈ
 
 ### ھنگامی تبدیلیاں-
 
-اگر سافٹویئر میں تبدیلی لانے کی ضرورت ہو خطرناک بگ کو سنبھالنے میں یا سلامتی کے استحصال کو ٹھیک کرنے کی صورت میں جو فعل صارفین کو نقصان پہنچاتا ہو اس صورت میں بلاک پرڈوسد اپنے عمل میں تیزی لاسکتا ہے. Generally speaking it could be against the constitution for accelerated updates to introduce new features or fix harmless bugs.
+اگر سافٹویئر میں تبدیلی لانے کی ضرورت ہو خطرناک بگ کو سنبھالنے میں یا سلامتی کے استحصال کو ٹھیک کرنے کی صورت میں جو فعل صارفین کو نقصان پہنچاتا ہو اس صورت میں بلاک پرڈوسد اپنے عمل میں تیزی لاسکتا ہے. عمومی طور پر یہ آیین کے خلاف ہو سکتا ہے کہ کوئی اپڈیٹس میں تیزی لایے اور خطرناک بگ کو قابو کرنے کے لیے نیی خصوصیات متعارف کریں.
 
-# Scripts & Virtual Machines
+# مجازی اور نوشہ جات مشینیں
 
 The EOS.IO software will be first and foremost a platform for coordinating the delivery of authenticated messages to accounts. The details of scripting language and virtual machine are implementation specific details that are mostly independent from the design of the EOS.IO technology. Any language or virtual machine that is deterministic and properly sandboxed with sufficient performance can be integrated with the EOS.IO software API.
 
