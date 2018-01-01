@@ -364,9 +364,9 @@ EOS.IO سافٹویئر اس عمل کی وضاحت کرتا ہے جو پروٹ�
 6. کوڈ میں تبدیلیوں کا اثر سات دن کے بعد ہوتا ہے، تمام مکمل گرہ ایک ہفتے کے بعد پوری طرح سورس کوڈ کی منظوری کے بعد اپگریڈ ہوتا ہے.
 7. وہ سب گرہ جو نیے کوڈ سے اپگریڈ نہیں ہوتے خودبخود بند ہونگے.
 
-By default configuration of the EOS.IO software, the process of updating the blockchain to add new features takes 2 to 3 months, while updates to fix non-critical bugs that do not require changes to the constitution can take 1 to 2 months.
+EOS.IO سافٹویئر کی طے شدہ ترتیب، بلاکچین کو اپڈیٹ کرنے کے عمل میں نیی خصوصیات شامل کرنے میں دو سے تین ماہ لگ سکتے ہیں، اپڈیٹس کو غیر اہم بگ جو آیین کی تبدیلی کے لئے ضروری نہیں اس میں ایک یا دو ماہ لگتے ہیں.
 
-### Emergency Changes
+### ھنگامی تبدیلیاں-
 
 The block producers may accelerate the process if a software change is required to fix a harmful bug or security exploit that is actively harming users. Generally speaking it could be against the constitution for accelerated updates to introduce new features or fix harmless bugs.
 
