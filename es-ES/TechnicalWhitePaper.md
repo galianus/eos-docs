@@ -148,13 +148,13 @@ Cada cuenta puede enviar mensajes estructurados a otras cuentas y puede definir 
 
 ## Gestión de Permisos Basada en Roles
 
-La gestión de permisos implica determinar si un mensaje está o no debidamente autorizado. La forma más simple de administración de permisos es verificar que una transacción tenga las firmas requeridas, pero esto implica que las firmas requeridas ya sean conocidas. Generally authority is bound to individuals or groups of individuals and is often compartmentalized. The EOS.IO software provides a declarative permission management system that gives accounts fine grained and high level control over who can do what and when.
+La gestión de permisos implica determinar si un mensaje está o no debidamente autorizado. La forma más simple de administración de permisos es verificar que una transacción tenga las firmas requeridas, pero esto implica que las firmas requeridas ya sean conocidas. En general, la autoridad está ligada a individuos o grupos de individuos y, a menudo, está compartimentada. El software EOS.IO proporciona un sistema de gestión de permisos declarativos que proporciona cuentas de granularidad y control de alto nivel sobre quién puede hacer qué y cuándo.
 
-It is critical that authentication and permission management be standardized and separate from the business logic of the application. This enables tools to be developed to manage permissions in a general purpose manner and also provide significant opportunities for performance optimization.
+Es fundamental que la autenticación y la gestión de permisos estén estandarizadas y separadas de la lógica comercial de la aplicación. Esto permite el desarrollo de herramientas para administrar permisos de una manera general y también brinda oportunidades significativas para la optimización del rendimiento.
 
-Every account may be controlled by any weighted combination of other accounts and private keys. This creates a hierarchical authority structure that reflects how permissions are organized in reality, and makes multi-user control over funds easier than ever. Multi-user control is the single biggest contributor to security, and, when used properly, it can greatly eliminate the risk of theft due to hacking.
+Cada cuenta puede ser controlada mediante cualquier combinación ponderada de otras cuentas y claves privadas. Esto crea una estructura de autoridad jerárquica que refleja cómo se organizan los permisos en la realidad, y hace que el control multiusuario de los fondos sea más fácil que nunca. El control de múltiples usuarios es el principal factor que contribuye a la seguridad y, cuando es usado adecuadamente, puede eliminar en gran medida el riesgo de robo debido a la piratería.
 
-EOS.IO software allows accounts to define what combination of keys and/or accounts can send a particular message type to another account. For example, it is possible to have one key for a user's social media account and another for access to the exchange. It is even possible to give other accounts permission to act on behalf of a user's account without assigning them keys.
+El software EOS.IO permite a las cuentas definir qué combinación de claves y/o cuentas puede enviar un tipo de mensaje particular a otra cuenta. Por ejemplo, es posible tener una clave para la cuenta de redes sociales de un usuario y otra para acceder al exchange. Incluso es posible dar permiso a otras cuentas para actuar en nombre de la cuenta de un usuario sin asignarles claves.
 
 ### Named Permission Levels
 
