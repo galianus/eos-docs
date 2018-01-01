@@ -359,10 +359,10 @@ EOS.IO سافٹویئر اس عمل کی وضاحت کرتا ہے جو پروٹ�
 1. بلاک پروڈیوسرز آئین تبدیلی کی تجویز اور 17/21 منظوری کا تعین کرے گی ۔.
 2. بلاک پرڈوسدز مسلسل 30 دن کے لیے 17/21 کی منظوری کو قایم رکھتے ہیں.
 3. تمام صارفین کو لین دین کے لیے نیے آیین کا ہیش استعمال کرنا ہو گا.
-4. Block producers adopt changes to the source code to reflect the change in the constitution and propose it to the blockchain using the hash of a git commit.
-5. Block producers maintain 17/21 approval for 30 consecutive days.
-6. Changes to the code take effect 7 days later, giving all full nodes 1 week to upgrade after ratification of the source code.
-7. All nodes that do not upgrade to the new code shut down automatically.
+4. بلاک پرڈوسد ان تبدیلیوں کو اپناتا ہے جو آیین میں کوڈ کی تبدیلیاں اور اسے گٹ ارتکاب استعمال کرنے کی تجویز دیتا ہے.
+5. بلاک پرڈوسدز مسلسل 30 دن کے لیے 17/21 کی منظوری کو قایم رکھتے ہیں.
+6. کوڈ میں تبدیلیوں کا اثر سات دن کے بعد ہوتا ہے، تمام مکمل گرہ ایک ہفتے کے بعد پوری طرح سورس کوڈ کی منظوری کے بعد اپگریڈ ہوتا ہے.
+7. وہ سب گرہ جو نیے کوڈ سے اپگریڈ نہیں ہوتے خودبخود بند ہونگے.
 
 By default configuration of the EOS.IO software, the process of updating the blockchain to add new features takes 2 to 3 months, while updates to fix non-critical bugs that do not require changes to the constitution can take 1 to 2 months.
 
