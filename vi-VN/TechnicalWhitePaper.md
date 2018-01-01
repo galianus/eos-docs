@@ -186,11 +186,11 @@ Một khi ánh xạ đã được xác định thì việc ký tên xác minh đ
 
 #### Default Permission Groups
 
-The EOS.IO technology also allows all accounts to have an "owner" group which can do everything, and an "active" group which can do everything except change the owner group. All other permission groups are derived from "active".
+Công nghệ của EOS.IO cũng cho phép tất cả các tài khoản có được một "người sở hữu" của nhóm mà cá nhân đó có thể làm đượuc mọi thứ, và một nhóm "chủ động" mà ở đó có thể làm mọi thứ ngoại trừ việc thay đổi chủ nhóm. Tất cả các nhóm cấp phép khác được tạo ra dựa trên nhóm "chủ động".
 
-#### Parallel Evaluation of Permissions
+#### Xác Minh Cấp Phép Song Song
 
-The permission evaluation process is "read-only" and changes to permissions made by transactions do not take effect until the end of a block. This means that all keys and permission evaluation for all transactions can be executed in parallel. Furthermore, this means that a rapid validation of permission is possible without starting the costly application logic that would have to be rolled back. Lastly, it means that transaction permissions can be evaluated as pending transactions are received and do not need to be re-evaluated as they are applied.
+Quy trình xác minh cấp phép là "chỉ đọc" và thay đổi cấp phép tạo ra bởi các giao dịch sẽ không có hiệu lực cho tới cuối khối. Điều này có nghĩa là tất cả các khoá và việc xác minh cấp phép cho tất cả các giao dịch có thể thực hiện song song. Furthermore, this means that a rapid validation of permission is possible without starting the costly application logic that would have to be rolled back. Lastly, it means that transaction permissions can be evaluated as pending transactions are received and do not need to be re-evaluated as they are applied.
 
 All things considered, permission verification represents a significant percentage of the computation required to validate transactions. Making this a read-only and trivially parallelizable process enables a dramatic increase in performance.
 
