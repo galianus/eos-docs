@@ -410,13 +410,13 @@ EOS.IO سافٹویئر توثیق شدہ پیغامات کو منتقل کرن�
 
 # بلاکچین کی اندرونی گفتگو
 
-EOS.IO سافٹ ویئر انٹر بلوککچاان مواصلات کی سہولت کے لئے ڈیزائن کیا گیا ہے ۔. پیغامات کی ترتیب اور ان کی موجودگی کا ثبوت آسانی سے نکالنے کی بنا پر اسے حاصل کیا جا سکتا ہے. These proofs combined with an application architecture designed around message passing enables the details of inter-blockchain communication and proof validation to be hidden from application developers.
+EOS.IO سافٹ ویئر انٹر بلوککچاان مواصلات کی سہولت کے لئے ڈیزائن کیا گیا ہے ۔. پیغامات کی ترتیب اور ان کی موجودگی کا ثبوت آسانی سے نکالنے کی بنا پر اسے حاصل کیا جا سکتا ہے. اپلیکیشن کی تعمیر کے ساتھ جڈے یہ ثبوت اور پیغامات سے جڈے ڈیزائن بلاکچین کو اس قابل بناتا ہے کہ وہ تبادلے کی توثیق کاری کا ثبوت اپلیکیشن ڈیولپرس سے چھپائے رکھے.
 
 <img align="right" src="http://eos.io/wpimg/Diagram1.jpg" width="362.84px" height="500px" />
 
-## Merkle Proofs for Light Client Validation (LCV)
+## لائیٹ کلائینٹ جواز کے لیے مارکلی کے سبوت LVC))
 
-Integrating with other blockchains is much easier if clients do not need to process all transactions. After all, an exchange only cares about transfers in and out of the exchange and nothing more. It would also be ideal if the exchange chain could utilize lightweight merkle proofs of deposit rather than having to trust its own block producers entirely. At the very least a chain's block producers would like to maintain the smallest possible overhead when synchronizing with another blockchain.
+کلاینٹس کے لین دین کو نا عملانے کی صورت میں دوسرے بلاکچین کے ساتھ منتقلی بہت ہی آسان ہے. آخر کار، ایک ایکسچینج صرف اندر باہر کی منتقلی کی پرواہ کے علاوہ کسی کی پرواہ نہیں کرتا. It would also be ideal if the exchange chain could utilize lightweight merkle proofs of deposit rather than having to trust its own block producers entirely. At the very least a chain's block producers would like to maintain the smallest possible overhead when synchronizing with another blockchain.
 
 The goal of LCV is to enable the generation of relatively light-weight proof of existence that can be validated by anyone tracking a relatively light-weight data set. In this case the objective is to prove that a particular transaction was included in a particular block and that the block is included in the verified history of a particular blockchain.
 
