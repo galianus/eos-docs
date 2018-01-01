@@ -382,13 +382,13 @@ EOS.IO سافٹویئر توثیق شدہ پیغامات کو منتقل کرن�
 
 ڈیٹا بیس کی حالت بھی اسی طرح شجرہ استعمال کرتے ہوئے متعین ہوتے ہیں ۔. اس سے یہ ثابت ہوتا ہے کہ تمام زخیرہ کیا ہوا ڈاٹا تمام اپلیکیشنز کے زریعے اس صورت میں رکھا جاتا ہے جو انسان کے قابل پڈھے جانے والے جساون اختیار کر سکتے ہیں لیکن ثنائی کی کارکردگی کے ساتھ مینوپلیٹ کیے جا سکتے ہیں.
 
-## Separating Authentication from Application
+## توسیق کاری کو اپلیکیشن سے الگ کرنا
 
-To maximize parallelization opportunities and minimize the computational debt associated with regenerating application state from the transaction log, EOS.IO software separates validation logic into three sections:
+متوازی مواقع بڈھانا اور اپلیکیشنز سے جڈے شمارندگ قرض کو لین دین کے لاگ سے کم کرنا ، EOS.IO سافٹویئر جوازدہی منطق کو تین حصوں میں الگ کرتی ہے:
 
-1. Validating that a message is internally consistent;
-2. Validating that all preconditions are valid; and
-3. Modifying the application state.
+1. جواز دہی ایک پیغام داخلی طور پر ہم آہنگ ہے ۔;
+2. جواز دہی پیشگی شرائط کے تمام جائز ہیں ۔ اور
+3. ایپلی کیشن کی حالت میں تبدیلی ۔.
 
 Validating the internal consistency of a message is read-only and requires no access to blockchain state. This means that it can be performed with maximum parallelism. Validating preconditions, such as required balance, is read-only and therefore can also benefit from parallelism. Only modification of application state requires write access and must be processed sequentially for each application.
 
