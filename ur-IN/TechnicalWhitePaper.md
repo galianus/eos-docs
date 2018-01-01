@@ -400,11 +400,11 @@ EOS.IO سافٹویئر توثیق شدہ پیغامات کو منتقل کرن�
 
 ### ویب اسمبلی WASIM))
 
-ویب ساز اسمبلی ایک ابھرتی ہوئی ویب ہے جو ویب اپلیکیشنز کی اعلٰی کارکردگی کے لیے ویب معیار بناتا ہے. With a few small modifications Web Assembly can be made deterministic and sandboxed. The benefit of Web Assembly is the widespread support from industry and that it enables contracts to be developed in familiar languages such as C or C++.
+ویب ساز اسمبلی ایک ابھرتی ہوئی ویب ہے جو ویب اپلیکیشنز کی اعلٰی کارکردگی کے لیے ویب معیار بناتا ہے. چند چھوٹی تبدیلیوں کے ساتھ ویب اسمبلی کو واضح کرنے سندبوااد بنایا جا سکتا ہے ۔. ویب اسمبلی کا فائدہ یہ ہے کہ اس وسیع تجارتی سپورٹ حاصل ہے جو ٹھیکیداروں کو مشہور زبانوں کو بڈھاوا دینے کے قابل بناتا ہے. جیسے کہ C اور++ C.
 
-Ethereum developers have already begun modifying Web Assembly to provide suitable sandboxing and determinism in with their [Ethereum flavored Web Assembly (WASM)](https://github.com/ewasm/design). This approach can be easily adapted and integrated with EOS.IO software.
+اتریوم ڈویلپرز پہلے ہی ویب مناسب سندبواانگ اور جبریت ان [ویب اسمبلی (وعسم) اتریوم فلاووقرید](https://github.com/ewasm/design) کے ساتھ فراہم کرنے کے لئے اسمبلی ترمیم شروع کر دیا ہے ۔. یہ انداز فکر آسانی سے EOS.IO سافٹویئر کے زریعے اپنایا جا سکتا ہے اور اس میں منتقل کر دیا جا سکتا ہے.
 
-### Ethereum Virtual Machine (EVM)
+### مجازی اتھیریم مشین EVM))
 
 This virtual machine has been used for most existing smart contracts and could be adapted to work within an EOS.IO blockchain. It is conceivable that EVM contracts could be run within their own sandbox inside an EOS.IO software-based blockchain and that with some adaptation EVM contracts could communicate with other EOS.IO software blockchain applications.
 
