@@ -406,9 +406,9 @@ EOS.IO سافٹویئر توثیق شدہ پیغامات کو منتقل کرن�
 
 ### مجازی اتھیریم مشین EVM))
 
-This virtual machine has been used for most existing smart contracts and could be adapted to work within an EOS.IO blockchain. It is conceivable that EVM contracts could be run within their own sandbox inside an EOS.IO software-based blockchain and that with some adaptation EVM contracts could communicate with other EOS.IO software blockchain applications.
+یہ مجازی مشین اکثر لوگ پہلے سے چلنے والے سمارٹ معاہدوں کے لیے استعمال کیے جاتے ہیں اور انہیں EOS.IO بلاکچین میں اپنایا جا سکتا ہے. یہ م معاہدوں اپنا سینڈبکس ایک EOS کے اندر اندر چل سکا کہ گمان ہے ۔ IO سافٹ ویئر کی بنیاد پر بلاکچاان اور معاہدوں کہ کچھ ردوبدل کے ساتھ م دیگر EOS کے ساتھ بات چیت کر سکتے ہیں ۔ IO سافٹ ویئر بلاکچاان ایپلی کیشنز ۔.
 
-# Inter Blockchain Communication
+# بلاکچین کی اندرونی گفتگو
 
 EOS.IO software is designed to facilitate inter-blockchain communication. This is achieved by making it easy to generate proof of message existence and proof of message sequence. These proofs combined with an application architecture designed around message passing enables the details of inter-blockchain communication and proof validation to be hidden from application developers.
 
