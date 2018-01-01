@@ -190,7 +190,7 @@ Công nghệ của EOS.IO cũng cho phép tất cả các tài khoản có đư�
 
 #### Xác Minh Cấp Phép Song Song
 
-Quy trình xác minh cấp phép là "chỉ đọc" và thay đổi cấp phép tạo ra bởi các giao dịch sẽ không có hiệu lực cho tới cuối khối. Điều này có nghĩa là tất cả các khoá và việc xác minh cấp phép cho tất cả các giao dịch có thể thực hiện song song. Furthermore, this means that a rapid validation of permission is possible without starting the costly application logic that would have to be rolled back. Lastly, it means that transaction permissions can be evaluated as pending transactions are received and do not need to be re-evaluated as they are applied.
+Quy trình xác minh cấp phép là "chỉ đọc" và thay đổi cấp phép tạo ra bởi các giao dịch sẽ không có hiệu lực cho tới cuối khối. Điều này có nghĩa là tất cả các khoá và việc xác minh cấp phép cho tất cả các giao dịch có thể thực hiện song song. Hơn nữa, điều này có nghĩa là việc xác minh cấp phép nhanh là có thể thực hiện được mà không cần phải bắt đầu logic ứng dụng cần phải được truy hồi. Cuối cùng, nó có nghĩa là cấp phép giao dịch có thể được xác định như là giao dịch đang tiến hành mà sẽ được chấp nhận và không cần phải được xác minh lại khi chúng đã có hiệu lực.
 
 All things considered, permission verification represents a significant percentage of the computation required to validate transactions. Making this a read-only and trivially parallelizable process enables a dramatic increase in performance.
 
