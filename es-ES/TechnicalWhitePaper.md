@@ -136,19 +136,19 @@ El software EOS.IO requiere que cada transacción incluya el hash de un encabeza
 
 Con el tiempo, todos los usuarios terminan confirmando directamente el blockchain, lo que dificulta forjar cadenas falsas, ya que la falsificación no podría migrar transacciones de la cadena legítima.
 
-# Accounts
+# Cuentas
 
-The EOS.IO software permits all accounts to be referenced by a unique human readable name of 2 to 32 characters in length. The name is chosen by the creator of the account. All accounts must be funded with the minimal account balance at the time they are created to cover the cost of storing account data. Account names also support namespaces such that the owner of account @domain is the only one who can create the account @user.domain.
+El software EOS.IO permite que todas las cuentas estén referenciadas por un nombre único legible por humanos de 2 a 32 caracteres de longitud. El nombre es elegido por el creador de la cuenta. Todas las cuentas se deben financiar con el saldo mínimo de la cuenta en el momento en que se crean para cubrir el costo del almacenamiento de los datos de la cuenta. Los nombres de cuenta también admiten espacios de nombres, de modo que el propietario de la cuenta @domain es el único que puede crear la cuenta @user.domain.
 
-In a decentralized context, application developers will pay the nominal cost of account creation to sign up a new user. Traditional businesses already spend significant sums of money per customer they acquire in the form of advertising, free services, etc. The cost of funding a new blockchain account should be insignificant in comparison. Fortunately, there is no need to create accounts for users already signed up by another application.
+En un contexto descentralizado, los desarrolladores de aplicaciones pagarán el costo nominal de la creación de la cuenta para registrar un nuevo usuario. Las empresas tradicionales ya gastan sumas importantes de dinero por los clientes que adquieren en forma de publicidad, servicios gratuitos, etc. El costo de financiación de una nueva cuenta de blockchain debería ser insignificante en comparación. Afortunadamente, no es necesario crear cuentas para usuarios que ya se hayan registrado en otra aplicación.
 
-## Messages & Handlers
+## Mensajes & Controladores
 
-Each account can send structured messages to other accounts and may define scripts to handle messages when they are received. The EOS.IO software gives each account its own private database which can only be accessed by its own message handlers. Message handling scripts can also send messages to other accounts. The combination of messages and automated message handlers is how EOS.IO defines smart contracts.
+Cada cuenta puede enviar mensajes estructurados a otras cuentas y puede definir scripts para manejar los mensajes cuando se reciben. El software EOS.IO proporciona a cada cuenta su propia base de datos privada a la que solo pueden acceder sus propios controladores de mensajes. Los scripts de manejo de mensajes también pueden enviar mensajes a otras cuentas. La combinación de mensajes y controladores automáticos de mensajes es la forma en que EOS.IO define los contratos inteligentes.
 
-## Role Based Permission Management
+## Gestión de Permisos Basada en Roles
 
-Permission management involves determining whether or not a message is properly authorized. The simplest form of permission management is checking that a transaction has the required signatures, but this implies that required signatures are already known. Generally authority is bound to individuals or groups of individuals and is often compartmentalized. The EOS.IO software provides a declarative permission management system that gives accounts fine grained and high level control over who can do what and when.
+La gestión de permisos implica determinar si un mensaje está o no debidamente autorizado. La forma más simple de administración de permisos es verificar que una transacción tenga las firmas requeridas, pero esto implica que las firmas requeridas ya sean conocidas. Generally authority is bound to individuals or groups of individuals and is often compartmentalized. The EOS.IO software provides a declarative permission management system that gives accounts fine grained and high level control over who can do what and when.
 
 It is critical that authentication and permission management be standardized and separate from the business logic of the application. This enables tools to be developed to manage permissions in a general purpose manner and also provide significant opportunities for performance optimization.
 
