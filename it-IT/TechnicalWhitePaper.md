@@ -291,13 +291,13 @@ L'archiviazione di stato della blockchain è un'informazione accessibile dalla l
 
 I produttori di blocchi pubblicano la capacità a loro disponibile per la bandwidth, per il calcolo e per lo stato. Il software EOS.IO consente a ciascun account di utilizzare una percentuale della capacità disponibile proporzionale alla quantità di token detenuti in un contratto di staking di 3 giorni. Ad esempio, se viene lanciata una blockchain basata sul software EOS.IO e se un account detiene l'1% del totale dei token distribuibili in base a tale blockchain, allora tale account ha il potenziale di utilizzare l'1% della capacità di archiviazione di stato.
 
-Adopting the EOS.IO software on a launched blockchain means bandwidth and computational capacity are allocated on a fractional reserve basis because they are transient (unused capacity cannot be saved for future use). The algorithm used by EOS.IO software is similar to the algorithm used by Steem to rate-limit bandwidth usage.
+L'adozione del software EOS.IO su una blockchain in esecuzione significa che la bandwidth e la capacità computazionale sono allocate su una base di riserva frazionaria poiché sono transitori (la capacità non utilizzata non può essere salvata per un uso futuro). L'algoritmo utilizzato dal software EOS.IO è simile all'algoritmo utilizzato da Steem per il limite di frequenza della bandwidth usata.
 
-## Objective and Subjective Measurements
+## Misure Oggettive e Soggettive
 
-As discussed earlier, instrumenting computational usage has a significant impact on performance and optimization; therefore, all resource usage constraints are ultimately subjective and enforcement is done by block producers according to their individual algorithms and estimates.
+Come discusso in precedenza, la strumentazione dell'uso computazionale ha un impatto significativo sulle prestazioni e sull'ottimizzazione; pertanto, tutti i vincoli di utilizzo delle risorse sono in definitiva soggettivi e l'applicazione viene eseguita dai produttori di blocchi in base ai loro singoli algoritmi e le loro stime.
 
-That said, there are certain things that are trivial to measure objectively. The number of messages delivered and the size of the data stored in the internal database are cheap to measure objectively. The EOS.IO software enables block producers to apply the same algorithm over these objective measures but may choose to apply stricter subjective algorithms over subjective measurements.
+Detto questo, ci sono alcune cose che sono triviali da misurare obiettivamente. The number of messages delivered and the size of the data stored in the internal database are cheap to measure objectively. The EOS.IO software enables block producers to apply the same algorithm over these objective measures but may choose to apply stricter subjective algorithms over subjective measurements.
 
 ## Receiver Pays
 
