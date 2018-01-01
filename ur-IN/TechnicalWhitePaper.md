@@ -396,11 +396,11 @@ EOS.IO سافٹویئر توثیق شدہ پیغامات کو منتقل کرن�
 
 ## فن تعمیر سے آزاد مجازی مشین
 
-It is the intention of the EOS.IO software-based blockchain that multiple virtual machines can be supported and new virtual machines added over time as necessary. For this reason, this paper will not discuss the details of any particular language or virtual machine. That said, there are two virtual machines that are currently being evaluated for use with an EOS.IO software-based blockchain.
+یہ EOS.IO سافٹویئر پر مبنی بلاکچین کی نیت ہے کہ کہی مجازی مشینوں اور ضرورت کے وقت جوڈی گیی مشینوں کا سپورٹ کیا جا سکتا ہے. ان وجوہات کی بنا پر، یہ کاغذ کسی خاص زبان یا مجازی مشین کی تفصیلات پر بات چیت نہیں کرے گی. جیسا پہلے ہی کہا گیا، EOS.IO سافٹویئر پر مبنی بلاکچین کے لیے موجودہ وقت میں دو دو مجازی مشینوں کی جانچ پڑتال کی جاتی ہے.
 
-### Web Assembly (WASM)
+### ویب اسمبلی WASIM))
 
-Web Assembly is an emerging web standard for building high performance web applications. With a few small modifications Web Assembly can be made deterministic and sandboxed. The benefit of Web Assembly is the widespread support from industry and that it enables contracts to be developed in familiar languages such as C or C++.
+ویب ساز اسمبلی ایک ابھرتی ہوئی ویب ہے جو ویب اپلیکیشنز کی اعلٰی کارکردگی کے لیے ویب معیار بناتا ہے. With a few small modifications Web Assembly can be made deterministic and sandboxed. The benefit of Web Assembly is the widespread support from industry and that it enables contracts to be developed in familiar languages such as C or C++.
 
 Ethereum developers have already begun modifying Web Assembly to provide suitable sandboxing and determinism in with their [Ethereum flavored Web Assembly (WASM)](https://github.com/ewasm/design). This approach can be easily adapted and integrated with EOS.IO software.
 
