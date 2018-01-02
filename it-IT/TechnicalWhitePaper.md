@@ -46,7 +46,7 @@ Chiunque può utilizzare, riprodurre o distribuire qualsiasi materiale in questo
   - [Capacità di Delegazione](#delegating-capacity)
   - [Separazione dei Costi di Transazione dal Valore dei Token](#separating-transaction-costs-from-token-value)
   - [Costi di Archiviazione dello Stato](#state-storage-costs)
-  - [Ricompense per blocco](#block-rewards)
+  - [Ricompense di blocco](#block-rewards)
   - [Applicazioni a Beneficio della Comunità](#community-benefit-applications)
 - [Governance](#governance) 
   - [Congelamento dei Conti](#freezing-accounts)
@@ -317,13 +317,13 @@ Una blockchain che utilizza il software EOS.IO premia i produttori di blocchi co
 
 ## Costi di Archiviazione dello Stato
 
-While bandwidth and computation can be delegated, storage of application state will require an application developer to hold tokens until that state is deleted. If state is never deleted then the tokens are effectively removed from circulation.
+Mentre la bandwidth e il calcolo computazionale possono essere delegati, l'archiviazione dello stato dell'applicazione richiederà allo sviluppatore di applicazioni di conservare i token fino a quando tale stato non viene eliminato. Se lo stato non viene mai cancellato, i token vengono effettivamente rimossi dalla circolazione.
 
-Every user account requires a certain amount of storage; therefore, every account must maintain a minimum balance. As storage capacity of the network increases this minimum required balance will fall.
+Ogni account di un qualunque utente richiede una certa quantità di spazio di archiviazione; pertanto, ogni account deve mantenere un saldo minimo. Con l'aumentare della capacità di archiviazione della rete, questo equilibrio minimo richiesto diminuirà.
 
-## Block Rewards
+## Ricompense di blocco
 
-A blockchain that adopts the EOS.IO software will award new tokens to a block producer every time a block is produced. In these circumstances, the number of tokens created is determined by the median of the desired pay published by all block producers. The EOS.IO software may be configured to enforce a cap on producer awards such that the total annual increase in token supply does not exceed 5%.
+Una blockchain che adotta il software EOS.IO assegnerà nuovi token a un produttore di blocchi ogni volta che viene prodotto un blocco. In queste circostanze, il numero di token creati è determinato dalla mediana della retribuzione desiderata pubblicata da tutti i produttori di blocchi. Il software EOS.IO può essere configurato per imporre un limite alle ricompense del produttore in modo tale che l'aumento annuo totale dell'erogazione di token non superi il 5%.
 
 ## Community Benefit Applications
 
