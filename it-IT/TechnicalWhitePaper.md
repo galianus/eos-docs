@@ -377,7 +377,7 @@ Il software EOS.IO sarà prima di tutto una piattaforma per il coordinamento del
 
 ## Messaggi Definiti dallo Schema
 
-All messages sent between accounts are defined by a schema which is part of the blockchain consensus state. This schema allows seamless conversion between binary and JSON representation of the messages.
+Tutti i messaggi inviati tra account sono definiti da uno schema che fa parte dello stato del consensus della blockchain. This schema allows seamless conversion between binary and JSON representation of the messages.
 
 ## Schema Defined Database
 
