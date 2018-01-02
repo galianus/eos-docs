@@ -428,11 +428,11 @@ EOS.IO سافٹویئر کسی کے لیے بھی کم وزنی ثبوت بنا 
 
 دوسسرے چینوں پر ثبوتوں کی توثیق کاری کے وقت اس صورت میں وسیع قسم کا وقت /جگہ /بینڈوڈتھ کی توثیق کی جاتی ہے. تمام بلاک سرتحریر (420 MB/سال) کا کھوج لگانا ثبوت سائز چھوٹے رکھیں گے ۔. صرف تازہ ہیڈرس کی کھوج کرنا ثبوت کی مقدار اور کم از کم لمبی وقت والی سٹوریج کے درمیان تجارت کو بڈھاوا دے سکتی ہے. متبادل طور پر، ایک بلاکچین ایک سست تشخیص نقطہ نظر استعمال کرے گا جہاں یہ ہے کہ گزشتہ انٹرمیڈیٹ ہیش ثبوتوں کو یاد کرتا ہے. نیے ثبوتوں کو صرف منتشر درخت میں لنکس شامل کرنا ہے. استعمال شدہ اصل عمل لا ضرور اس بات پر منحصر ہے مارکلی ثبوت زریعے باہری بلاکس کو ریفر کیے گئے لین دین پر منحصر ہے.
 
-باہم دگر مربوط ہونے کا ایک مخصوص کثافت کے بعد یہ ہے صرف ایک زنجیر پورے بلاک کی تاریخ کا ایک اور سلسلہ کا حامل اور ثبوت اکٹھا کی حاجت کے لیے زیادہ مؤثر ہو جاتا ہے ۔. For performance reasons, it is ideal to minimize the frequency of inter-chain proofs.
+باہم دگر مربوط ہونے کا ایک مخصوص کثافت کے بعد یہ ہے صرف ایک زنجیر پورے بلاک کی تاریخ کا ایک اور سلسلہ کا حامل اور ثبوت اکٹھا کی حاجت کے لیے زیادہ مؤثر ہو جاتا ہے ۔. کارکردگی کی بنیاد پر، یہ بہتر ہے کہ چین کے اندر ثبوتوں کے دلائل کم کرنے کے لیے بہترین ہے.
 
-## Latency of Interchain Communication
+## اندرونی چین اور ابلاغ کا چھپاو
 
-When communicating with another outside blockchain, block producers must wait until there is 100% certainty that a transaction has been irreversibly confirmed by the other blockchain before accepting it as a valid input. Using an EOS.IO software-based blockchain and DPOS with 3 second blocks and 21 producers, this takes approximately 45 seconds. If a chain's block producers do not wait for irreversibility it would be like an exchange accepting a deposit that was later reversed and could impact the validity of the blockchain's consensus.
+دوسری باہری بلاکچین سے تبادلہ کے دوران، ایک بلاک پرڈوسد کو تب تک انتظار کرنا ہوگا جب تک کہ اس بات کی 100فیصد تشخیص نہ ہو کہ لین دین کی نا قابل طلافی کنفرمیشن ہوئی ہے، اسے ایک وید ان پٹ تصور کرنے سے پہلے. EOS.IO سافٹویئر پر مبنی بلاکچین کو استعمال کرنا اور تین سیکنڈ والے DPOS اور 21 پرڈوسدز، یہ اندازے کے طور پر 45 سیکنڈ کا وقت لیتا ہے. If a chain's block producers do not wait for irreversibility it would be like an exchange accepting a deposit that was later reversed and could impact the validity of the blockchain's consensus.
 
 ## Proof of Completeness
 
