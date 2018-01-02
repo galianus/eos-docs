@@ -61,7 +61,7 @@ Chiunque può utilizzare, riprodurre o distribuire qualsiasi materiale in questo
   - [Architettura Indipendente della Macchina Virtuale](#virtual-machine-independent-architecture) 
     - [Web Assembly (WASM)](#web-assembly-wasm)
     - [Macchina Virtuale di Ethereum (EVM)](#ethereum-virtual-machine-evm)
-- [Comunicazione Interblockchain](#inter-blockchain-communication) 
+- [Comunicazione Inter-Blockchain](#inter-blockchain-communication) 
   - [Prova di Merkle per la Validazione del Light Client (LVC)](#merkle-proofs-for-light-client-validation-lcv)
   - [Latenza della Comunicazione Interchain](#latency-of-interchain-communication)
   - [Prova di Completezza](#proof-of-completeness)
@@ -407,17 +407,17 @@ Gli sviluppatori di Ethereum hanno già iniziato a modificare il Web Assembly pe
 
 ### Macchina Virtuale di Ethereum (EVM)
 
-Questa macchina virtuale è stata utilizzata per la maggior parte degli smart contract esistenti e potrebbe essere adattata per funzionare all'interno di una blockchain EOS.IO. It is conceivable that EVM contracts could be run within their own sandbox inside an EOS.IO software-based blockchain and that with some adaptation EVM contracts could communicate with other EOS.IO software blockchain applications.
+Questa macchina virtuale è stata utilizzata per la maggior parte degli smart contract esistenti e potrebbe essere adattata per funzionare all'interno di una blockchain EOS.IO. È concepibile che i contratti EVM possano essere eseguiti all'interno della propria sandbox in una blockchain basata sul software EOS.IO e che con alcuni contratti di adattamento EVM si possa comunicare con altre applicazioni blockchain del software EOS.IO.
 
-# Inter Blockchain Communication
+# Comunicazione Inter-Blockchain
 
-EOS.IO software is designed to facilitate inter-blockchain communication. This is achieved by making it easy to generate proof of message existence and proof of message sequence. These proofs combined with an application architecture designed around message passing enables the details of inter-blockchain communication and proof validation to be hidden from application developers.
+Il software EOS.IO è progettato per facilitare la comunicazione inter-blockchain. Ciò si ottiene rendendo semplice la dimostrazione dell'esistenza del messaggio e la dimostrazione della sequenza dei messaggi. Queste dimostrazioni combinate con un'architettura su applicazione progettata per il passaggio dei messaggi, consentono di nascondere i dettagli della comunicazione tra blockchain (inter-blockchain) e la convalida delle prove dagli sviluppatori di applicazioni.
 
 <img align="right" src="http://eos.io/wpimg/Diagram1.jpg" width="362.84px" height="500px" />
 
-## Merkle Proofs for Light Client Validation (LCV)
+## Prova di Merkle per la Validazione del Light Client (LVC)
 
-Integrating with other blockchains is much easier if clients do not need to process all transactions. After all, an exchange only cares about transfers in and out of the exchange and nothing more. It would also be ideal if the exchange chain could utilize lightweight merkle proofs of deposit rather than having to trust its own block producers entirely. At the very least a chain's block producers would like to maintain the smallest possible overhead when synchronizing with another blockchain.
+L'integrazione con altre blockchain è molto più semplice se i client non devono elaborare tutte le transazioni. Dopotutto, un exchange si preoccupa solo dei trasferimenti IN e OUT dall'exchange e nulla più. It would also be ideal if the exchange chain could utilize lightweight merkle proofs of deposit rather than having to trust its own block producers entirely. At the very least a chain's block producers would like to maintain the smallest possible overhead when synchronizing with another blockchain.
 
 The goal of LCV is to enable the generation of relatively light-weight proof of existence that can be validated by anyone tracking a relatively light-weight data set. In this case the objective is to prove that a particular transaction was included in a particular block and that the block is included in the verified history of a particular blockchain.
 
