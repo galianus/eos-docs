@@ -433,12 +433,12 @@ Dopo una certa densità di interconnessione diventa più efficiente avere sempli
 
 ## Latenza della Comunicazione Interchain
 
-Quando si comunica con una blockchain esterna, i produttori di blocchi devono attendere fino a quando non vi è la certezza del 100% che una transazione sia stata confermata in modo irreversibile dall'altra blockchain prima di accettarla come input valido. Utilizzando una blockchain basata sul software EOS.IO e DPOS con 3 secondi per ogni blocco e con 21 produttori, sono necessari circa 45 secondi. If a chain's block producers do not wait for irreversibility it would be like an exchange accepting a deposit that was later reversed and could impact the validity of the blockchain's consensus.
+Quando si comunica con una blockchain esterna, i produttori di blocchi devono attendere fino a quando non vi è la certezza del 100% che una transazione sia stata confermata in modo irreversibile dall'altra blockchain prima di accettarla come input valido. Utilizzando una blockchain basata sul software EOS.IO e DPOS con 3 secondi per ogni blocco e con 21 produttori, sono necessari circa 45 secondi. Se i produttori di blocchi di una catena non aspettano l'irreversibilità, sarebbe come se un exchange accettasse un deposito che è stato successivamente annullato e che potrebbe influire sulla validità del consensus della blockchain.
 
-## Proof of Completeness
+## Prova di Completezza
 
-When using merkle proofs from outside blockchains, there is a significant difference between knowing that all transactions processed are valid and knowing that no transactions have been skipped or omitted. While it is impossible to prove that all of the most recent transactions are known, it is possible to prove that there have been no gaps in the transaction history. The EOS.IO software facilitates this by assigning a sequence number to every message delivered to every account. A user can use these sequence numbers to prove that all messages intended for a particular account have been processed and that they were processed in order.
+Quando si usano le prove di merkle da blockchain esterne, c'è una differenza significativa tra il sapere che tutte le transazioni processate sono valide e il sapere che nessuna transazione è stata saltata o omessa. Sebbene sia impossibile dimostrare che tutte le transazioni più recenti siano conosciute, è possibile dimostrare che non ci sono stati vuoti nella cronologia delle transazioni. Il software EOS.IO facilita ciò assegnando un numero di sequenza a ogni messaggio consegnato a ogni account. Un utente può utilizzare questi numeri di sequenza per dimostrare che tutti i messaggi destinati a un determinato account sono stati elaborati e che sono stati elaborati in ordine.
 
-# Conclusion
+# Conclusione
 
-The EOS.IO software is designed from experience with proven concepts and best practices, and represents fundamental advancements in blockchain technology. The software is part of a holistic blueprint for a globally scalable blockchain society in which decentralised applications can be easily deployed and governed.
+Il software EOS.IO è progettato in base all'esperienza di concetti collaudati e di pratiche ottimali e rappresenta un progresso fondamentale nella tecnologia della blockchain. Il software fa parte di un modello olistico per una sistema blockchain scalabile a livello globale in cui le applicazioni decentralizzate possono essere facilmente distribuite e governate.
