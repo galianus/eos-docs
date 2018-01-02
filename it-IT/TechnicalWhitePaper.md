@@ -393,11 +393,11 @@ Per massimizzare le opportunità di parallelizzazione e ridurre al minimo il deb
 
 La convalida della coerenza interna di un messaggio è di sola lettura e non richiede l'accesso allo stato della blockchain. Ciò significa che può essere eseguito con il massimo parallelismo. La convalida delle precondizioni, come il saldo richiesto, è di sola lettura e pertanto può anche questo beneficiare del parallelismo. Solo la modifica dello stato dell'applicazione richiede l'accesso in scrittura e deve essere elaborata in sequenza per ogni applicazione.
 
-Authentication is the read-only process of verifying that a message can be applied. Application is actually doing the work. In real time both calculations are required to be performed, however once a transaction is included in the blockchain it is no longer necessary to perform the authentication operations.
+L'autenticazione è il processo di sola lettura che verifica se un messaggio può essere applicato. L'applicazione sta effettivamente effettuando il lavoro. In tempo reale è necessario eseguire entrambi i calcoli, tuttavia una volta inclusa una transazione nella blockchain non è più necessario eseguire le operazioni di autenticazione.
 
-## Virtual Machine Independent Architecture
+## Architettura Indipendente della Macchina Virtuale
 
-It is the intention of the EOS.IO software-based blockchain that multiple virtual machines can be supported and new virtual machines added over time as necessary. For this reason, this paper will not discuss the details of any particular language or virtual machine. That said, there are two virtual machines that are currently being evaluated for use with an EOS.IO software-based blockchain.
+È intenzione della blockchain basata sul software EOS.IO che sia possibile supportare più macchine virtuali e nuove macchine virtuali aggiunte in futuro a seconda delle necessità. Per questo motivo, questo documento non discuterà i dettagli di un particolare linguaggio di programmazione o macchina virtuale. Detto questo, vi sono due macchine virtuali che vengono attualmente valutate per l'uso di una blockchain basata sul software EOS.IO.
 
 ### Web Assembly (WASM)
 
