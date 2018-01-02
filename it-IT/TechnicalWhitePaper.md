@@ -341,9 +341,9 @@ Incorporato nel software EOS.IO vi è l'elezione dei produttori di blocchi. Prim
 
 A volte un contatto intelligente si comporta in modo aberrante o imprevedibile e non riesce a funzionare come previsto; altre volte un'applicazione o un account possono scoprire un exploit che gli consente di consumare una quantità irragionevole di risorse. Quando si verificano inevitabilmente tali problemi, i produttori di blocchi hanno il potere di correggere tali situazioni.
 
-I produttori di blocchi di tutte le blockchain hanno il potere di selezionare quali transazioni sono incluse in blocchi che danno loro la possibilità di congelare o meglio bloccare gli account. A blockchain using EOS.IO software formalizes this authority by subjecting the process of freezing an account to a 17/21 vote of active producers. If the producers abuse the power they can be voted out and an account will be unfrozen.
+I produttori di blocchi di tutte le blockchain hanno il potere di selezionare quali transazioni sono incluse in blocchi che danno loro la possibilità di congelare o meglio bloccare gli account. Una blockchain che utilizza il software EOS.IO formalizza questa autorità sottoponendo il processo di congelamento di un account a un voto di 17/21 dei produttori attivi. Se i produttori abusano del potere, questi possono essere rimossi e l'account verrà sbloccato.
 
-## Changing Account Code
+## Modifica del Codice dell'Account
 
 When all else fails and an "unstoppable application" acts in an unpredictable manner, a blockchain using EOS.IO software allows the block producers to replace the account's code without hard forking the entire blockchain. Similar to the process of freezing an account, this replacement of the code requires a 17/21 vote of elected block producers.
 
