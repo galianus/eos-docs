@@ -95,11 +95,11 @@ Tutti i software non banali sono soggetti a bug, anche con la verifica più rigo
 
 ## Bassa Latenza
 
-Una buona esperienza utente richiede feedback affidabili con un ritardo di non più di pochi secondi. Ritardi più lunghi causano frustrazione per gli utenti e rendono le applicazioni basate su una blockchain meno competitive in confronto a alternative centralizzate e non facenti parte di una blockchain. 
+Una buona esperienza utente richiede feedback affidabili con un ritardo di non più di pochi secondi. Ritardi più lunghi causano frustrazione negli utenti e rendono le applicazioni basate su una blockchain meno competitive in confronto alle alternative esistenti non basate su blockchain.
 
 ## Prestazioni Sequenziali
 
-Ci sono alcune applicazioni che non possono essere implementate con algoritmi paralleli a causa di passaggi sequenzialmente dipendenti. Applicazioni come gli exchange richiedono prestazioni sequenziali sufficienti a gestire elevati volumi e pertanto è necessaria una piattaforma con prestazioni sequenziali molto veloce.
+Ci sono alcune applicazioni che non possono essere implementate con algoritmi paralleli a causa di passi sequenzialmente dipendenti. Applicazioni come gli exchange richiedono prestazioni sequenziali sufficienti a gestire elevati volumi e pertanto è necessaria una piattaforma con prestazioni sequenziali molto veloce.
 
 ## Prestazioni Parallele
 
@@ -109,9 +109,9 @@ Le applicazioni su larga scala devono dividere il carico di lavoro su multiple C
 
 Il software EOS.IO utilizza l'unico algoritmo di consensus decentralizzato in grado di soddisfare i requisiti prestazionali delle applicazioni sulla blockchain,  Delegated Proof of Stake (DPOS) </ 0>. In base a questo algoritmo, coloro che detengono i token su una blockchain che adotta il software EOS.IO possono selezionare produttori di blocchi tramite un sistema di approvazione di votazione continua e chiunque può scegliere di partecipare alla produzione di blocchi, inoltre verrà data l'opportunità di produrre blocchi proporzionali ai voti totali che hanno ricevuto rispetto a tutti gli altri produttori. Per le blockchain private la gestione potrebbe utilizzare i token per aggiungere e rimuovere il personale informatico.</p> 
 
-Il software EOS.IO consente di produrre blocchi esattamente ogni 3 secondi inoltre un produttore è autorizzato a produrre un blocco in qualsiasi momento. Se il blocco non viene prodotto all'orario pianificato, il blocco per quella fascia oraria viene trascurato. Quando uno o più blocchi vengono trascurati, vi è un divario di 6 o più secondi nella blockchain.
+Il software EOS.IO consente di produrre blocchi esattamente ogni 3 secondi e un produttore è autorizzato a produrre un blocco in qualsiasi momento. Se il blocco non viene prodotto all'orario pianificato, il blocco per quella fascia oraria viene trascurato. Quando uno o più blocchi vengono trascurati, vi è un divario di 6 o più secondi nella blockchain.
 
-Utilizzando il software EOS.IO i blocchi sono prodotti a turni (c.d. rounds) di 21. All'inizio di ogni turno vengono scelti 21 produttori di blocchi unici. I primi 20 per approvazione totale vengono automaticamente scelti ogni turno e l'ultimo produttore viene scelto in proporzione al numero di voti rispetto ad altri produttori. I produttori selezionati vengono mescolati usando un numero pseudocasuale derivato dal tempo di blocco. Questo mescolamento è fatto per garantire che tutti i produttori mantengano una connettività bilanciata verso tutti gli altri produttori.
+Utilizzando il software EOS.IO i blocchi sono prodotti a turni (c.d. rounds) di 21. All'inizio di ogni turno vengono scelti 21 produttori di blocchi unici. I primi 20 per approvazione totale vengono automaticamente scelti ad ogni turno e l'ultimo produttore viene scelto in proporzione al numero di voti rispetto agli altri. I produttori selezionati vengono mescolati usando un numero pseudocasuale derivato dal tempo di blocco. Questo mescolamento è fatto per garantire che tutti i produttori mantengano una connettività bilanciata verso tutti gli altri produttori.
 
 Se un produttore salta un blocco e non ha prodotto alcun blocco nelle ultime 24 ore, non viene più considerato fino a quando non notifica alla blockchain la propria intenzione di iniziare a produrre nuovamente altri blocchi. Ciò garantisce che la rete funzioni senza intoppi riducendo al minimo il numero di blocchi persi non programmando quelli che si sono dimostrati inaffidabili.
 
