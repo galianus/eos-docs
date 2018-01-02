@@ -297,29 +297,29 @@ L'adozione del software EOS.IO su una blockchain in esecuzione significa che la 
 
 Come discusso in precedenza, la strumentazione dell'uso computazionale ha un impatto significativo sulle prestazioni e sull'ottimizzazione; pertanto, tutti i vincoli di utilizzo delle risorse sono in definitiva soggettivi e l'applicazione viene eseguita dai produttori di blocchi in base ai loro singoli algoritmi e le loro stime.
 
-Detto questo, ci sono alcune cose che sono triviali da misurare obiettivamente. Il numero di messaggi consegnati e la dimensione dei dati memorizzati nel database interno sono semplici e possono essere misurati oggettivamente. Il software EOS.IO consente ai produttori di blocchi di applicare lo stesso algoritmo su queste misure oggettive, ma si può scegliere di applicare algoritmi soggettivi più rigidi rispetto alle misurazioni soggettive.
+Detto questo, ci sono alcune cose che sono banali da misurare in modo oggettivo. Il numero di messaggi consegnati e la dimensione dei dati memorizzati nel database interno sono semplici e possono essere misurati oggettivamente. Il software EOS.IO consente ai produttori di blocchi di applicare lo stesso algoritmo su queste misure oggettive, ma si può scegliere di applicare algoritmi soggettivi più rigidi rispetto alle misurazioni soggettive.
 
 ## Pagamento Ricevitore
 
 Tradizionalmente, è l'azienda che paga per lo spazio di un ufficio oltre che alla potenza di calcolo e altri costi necessari per gestire l'attività. Il cliente acquista prodotti specifici dall'azienda e le entrate derivanti da tali vendite di prodotti vengono utilizzate per coprire i costi operativi dell'attività. Allo stesso modo, nessun sito Web obbliga i suoi visitatori a effettuare micropagamenti per visitare il sito in modo da coprire i costi di hosting. Pertanto, le applicazioni decentralizzate non dovrebbero costringere i propri clienti a pagare direttamente la blockchain per l'uso della stessa.
 
-Una blockchain lanciata che utilizza il software EOS.IO non richiede che i suoi utenti paghino la blockchain direttamente per il suo utilizzo e pertanto non limita o impedisce a un'azienda di determinare la propria strategia di monetizzazione per i propri prodotti.
+Una blockchain che utilizza il software EOS.IO non richiede che i suoi utenti paghino la blockchain direttamente per il suo utilizzo e pertanto non limita o impedisce a un'azienda di determinare la propria strategia di monetizzazione per i propri prodotti.
 
 ## Capacità di Delegazione
 
-Un detentore di token su una blockchain lanciata che adotta il software EOS.IO che potrebbe non avere la necessità immediata di consumare tutta o parte della bandwidth disponibile, può dare o affittare tale bandwidth non consumata ad altri; i produttori di blocchi che eseguono il software EOS.IO su tale blockchain riconosceranno questa delega di capacità e assegneranno di conseguenza la bandwidth.
+Un detentore di token su una blockchain basata su EOS.IO che potrebbe non avere la necessità immediata di consumare tutta o parte della banda disponibile, può dare o affittare tale banda non consumata ad altri; i produttori di blocchi che eseguono il software EOS.IO su tale blockchain riconosceranno questa delega di capacità e assegneranno di conseguenza la banda.
 
 ## Separazione dei Costi di Transazione dal Valore dei Token
 
-Uno dei principali vantaggi del software EOS.IO è che la quantità della bandwidth disponibile per un'applicazione è completamente indipendente dal prezzo dei token. Se il proprietario di un'applicazione detiene un numero rilevante di token su una blockchain che adotta il software EOS.IO, l'applicazione può essere eseguita a tempo indeterminato all'interno di uno stato fisso e dell'utilizzo della bandwidth. In tal caso, gli sviluppatori e gli utenti non sono influenzati da alcuna volatilità dei prezzi del mercato dei token e quindi non dipendono da un feed dei prezzi. In altre parole, una blockchain che adotta il software EOS.IO consente ai produttori di blocchi di poter aumentare naturalmente la bandwidth, il calcolo e l'archiviazione disponibili per il token indipendentemente dal valore di quest'ultimo.
+Uno dei principali vantaggi del software EOS.IO è che la quantità della banda disponibile per un'applicazione è completamente indipendente dal prezzo dei token. Se il proprietario di un'applicazione detiene un numero rilevante di token su una blockchain che adotta il software EOS.IO, l'applicazione può essere eseguita a tempo indeterminato con un medesimo stato e utilizzo di banda. In tal caso, gli sviluppatori e gli utenti non sono influenzati da alcuna volatilità dei prezzi del mercato dei token e quindi non dipendono dall'andamento dei prezzi. In altre parole, una blockchain che adotta il software EOS.IO consente ai produttori di blocchi di poter aumentare naturalmente la banda, le capacità computazionali e di storage disponibili per il token indipendentemente dal valore di quest'ultimo.
 
-Una blockchain che utilizza il software EOS.IO premia i produttori di blocchi con token ogni volta che producono un blocco. Il valore dei token influirà sulla quantità della bandwidth, dello spazio di archiviazione e del calcolo che un produttore può permettersi di acquistare; questo modello sfrutta naturalmente i valori dei token in aumento in modo da aumentare le prestazioni della rete.
+Una blockchain che utilizza il software EOS.IO premia i produttori di blocchi con token ogni volta che producono un blocco. Il valore dei token influirà sulla quantità di banda, storage e potenza computazionale che un produttore può permettersi di acquistare; questo modello sfrutta naturalmente i valori dei token in aumento in modo da aumentare le prestazioni della rete.
 
 ## Costi di Archiviazione dello Stato
 
-Mentre la bandwidth e il calcolo computazionale possono essere delegati, l'archiviazione dello stato dell'applicazione richiederà allo sviluppatore di applicazioni di conservare i token fino a quando tale stato non viene eliminato. Se lo stato non viene mai cancellato, i token vengono effettivamente rimossi dalla circolazione.
+Mentre la banda e il calcolo computazionale possono essere delegati, l'archiviazione dello stato dell'applicazione richiederà allo sviluppatore applicativo di conservare i token fino a quando tale stato non viene eliminato. Se lo stato non viene mai cancellato, i token vengono effettivamente rimossi dalla circolazione.
 
-Ogni account di un qualunque utente richiede una certa quantità di spazio di archiviazione; pertanto, ogni account deve mantenere un saldo minimo. Con l'aumentare della capacità di archiviazione della rete, questo equilibrio minimo richiesto diminuirà.
+Ogni account di un qualunque utente richiede una certa quantità di spazio di archiviazione; pertanto, ogni account deve mantenere un saldo minimo. Con l'aumentare della capacità di archiviazione della rete, questa quantità minima richiesta diminuirà.
 
 ## Ricompense di blocco
 
@@ -329,9 +329,9 @@ Una blockchain che adotta il software EOS.IO assegnerà nuovi token a un produtt
 
 Oltre a eleggere i produttori di blocchi, in base a una blockchain basata sul software EOS.IO, gli utenti possono scegliere 3 applicazioni a beneficio della comunità, note anche come smart contract. Queste 3 applicazioni riceveranno token fino a una percentuale configurata della disponibilità di token all'anno meno i token che sono stati pagati ai produttori di blocchi. Questi smart contract riceveranno token proporzionali ai voti che ogni applicazione ha ricevuto dai titolari dei token. Le applicazioni elettive o gli smart contract possono essere sostituiti da nuove applicazioni o da smart contract da parte dei titolari di token.
 
-# Governanza
+# La governance
 
-La governanza è il processo attraverso il quale le persone raggiungono il consenso su questioni soggettive che non possono essere acquisite interamente da algoritmi software. Una blockchain basata su software EOS.IO implementa un processo di governanza che affronta l'influenza esistente dei produttori di blocchi. In assenza di un processo di governanza definito, le blockchain precedenti si basavano su processi di governanza ad hoc, informali e spesso controversi che hanno prodotto esiti imprevedibili.
+La governanza è il processo attraverso il quale le persone raggiungono il consenso su questioni soggettive che non possono essere acquisite interamente da algoritmi software. Una blockchain basata su software EOS.IO implementa un processo di governance che affronta l'influenza esistente dei produttori di blocchi. In assenza di un processo di governance definito, le blockchain precedenti si basavano su processi di governance ad hoc, informali e spesso controversi che hanno prodotto esiti imprevedibili.
 
 Una blockchain basata sul software EOS.IO riconosce che il potere ha origine dai titolari di token che delegano tale potere ai produttori di blocchi. Ai produttori di blocchi viene concessa un'autorizzazione limitata e controllata che consente di bloccare gli account, di aggiornare le applicazioni difettose e di proporre modifiche difficoltose riguardanti il protocollo sottostante.
 
