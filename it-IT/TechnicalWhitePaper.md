@@ -349,33 +349,33 @@ Una volta fallite tutte le possibilità e un'applicazione "inarrestabile" agisce
 
 ## Costituzione
 
-Il software EOS.IO consente alle blockchain di stabilire un contratto di servizio peer-to-peer o un contratto vincolante tra gli utenti che lo firmano, definito "costituzione". The content of this constitution defines obligations among the users which cannot be entirely enforced by code and facilitates dispute resolution by establishing jurisdiction and choice of law along with other mutually accepted rules. Every transaction broadcast on the network must incorporate the hash of the constitution as part of the signature and thereby explicitly binds the signer to the contract.
+Il software EOS.IO consente alle blockchain di stabilire un contratto di servizio peer-to-peer o un contratto vincolante tra gli utenti che lo firmano, definito "costituzione". Il contenuto di questa costituzione definisce gli obblighi tra gli utenti che non possono essere interamente applicati mediante codice, inoltre facilita la risoluzione delle controversie stabilendo la giurisdizione e la scelta della legge insieme ad altre regole reciprocamente accettate. Ogni transazione trasmessa sulla rete deve incorporare l'hash della costituzione come parte della firma e quindi vincola esplicitamente il firmatario del contratto.
 
-The constitution also defines the human-readable intent of the source code protocol. This intent is used to identify the difference between a bug and a feature when errors occur and guides the community on what fixes are proper or improper.
+La costituzione definisce anche l'intento comunemente leggibile del protocollo del codice sorgente. Questo intento viene utilizzato per identificare la differenza tra un bug e una funzionalità quando si verificano errori e guida la comunità su quali correzioni sono giuste o improprie.
 
-## Upgrading the Protocol & Constitution
+## Aggiornamento del Protocollo & Costituzione
 
-The EOS.IO software defines a process by which the protocol as defined by the canonical source code and its constitution, can be updated using the following process:
+Il software EOS.IO definisce un processo mediante il quale il protocollo come definito dal codice sorgente canonico e dalla sua costituzione, può essere aggiornato utilizzando il seguente processo:
 
-1. Block producers propose a change to the constitution and obtains 17/21 approval.
-2. Block producers maintain 17/21 approval for 30 consecutive days.
-3. All users are required to sign transactions using the hash of the new constitution.
-4. Block producers adopt changes to the source code to reflect the change in the constitution and propose it to the blockchain using the hash of a git commit.
-5. Block producers maintain 17/21 approval for 30 consecutive days.
-6. Changes to the code take effect 7 days later, giving all full nodes 1 week to upgrade after ratification of the source code.
-7. All nodes that do not upgrade to the new code shut down automatically.
+1. I produttori di blocchi propongono una modifica della costituzione e ottengono 17/21 approvazioni.
+2. I produttori di blocchi mantengono 17/21 approvazioni per 30 giorni consecutivi.
+3. Tutti gli utenti sono tenuti a firmare le transazioni utilizzando l'hash della nuova costituzione.
+4. I produttori di blocchi adottano le modifiche al codice sorgente per riflettere il cambiamento nella costituzione e lo propongono alla blockchain usando l'hash di un commit git.
+5. I produttori di blocchi mantengono 17/21 approvazioni per 30 giorni consecutivi.
+6. Le modifiche al codice vanno in vigore 7 giorni dopo, dando a tutti i nodi completi 1 settimana per effettuare l'aggiornamento dopo la ratifica del codice sorgente.
+7. Tutti i nodi che non si aggiornano al nuovo codice si spengono automaticamente.
 
-By default configuration of the EOS.IO software, the process of updating the blockchain to add new features takes 2 to 3 months, while updates to fix non-critical bugs that do not require changes to the constitution can take 1 to 2 months.
+Per impostazione predefinita del software EOS.IO, il processo di aggiornamento della blockchain per aggiungere nuove funzionalità richiede dai 2 ai 3 mesi, mentre per aggiornamenti che correggono bug non critici e che non richiedono modifiche alla costituzione possono necessitare da 1 a 2 mesi.
 
-### Emergency Changes
+### Modifiche di Emergenza
 
-The block producers may accelerate the process if a software change is required to fix a harmful bug or security exploit that is actively harming users. Generally speaking it could be against the constitution for accelerated updates to introduce new features or fix harmless bugs.
+I produttori di blocchi possono accelerare il processo se è necessaria una modifica del software volta a correggere un bug nocivo o un exploit di sicurezza che sta danneggiando attivamente gli utenti. In generale, potrebbe essere contro la costituzione effettuare aggiornamenti accelerati che introducono nuove funzionalità o che correggono bug innocui.
 
-# Scripts & Virtual Machines
+# Script & Macchine virtuali
 
-The EOS.IO software will be first and foremost a platform for coordinating the delivery of authenticated messages to accounts. The details of scripting language and virtual machine are implementation specific details that are mostly independent from the design of the EOS.IO technology. Any language or virtual machine that is deterministic and properly sandboxed with sufficient performance can be integrated with the EOS.IO software API.
+Il software EOS.IO sarà prima di tutto una piattaforma per il coordinamento della consegna di messaggi autenticati agli account. I dettagli del linguaggio di scripting e della macchina virtuale sono dettagli specifici dell'implementazione che sono per lo più indipendenti dal design della tecnologia di EOS.IO. Qualsiasi linguaggio o macchina virtuale che sia deterministica e che sia in una sandbox adeguata con prestazioni sufficienti può essere integrata con l'API del software EOS.IO.
 
-## Schema Defined Messages
+## Messaggi Definiti dallo Schema
 
 All messages sent between accounts are defined by a schema which is part of the blockchain consensus state. This schema allows seamless conversion between binary and JSON representation of the messages.
 
