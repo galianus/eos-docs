@@ -377,21 +377,21 @@ Il software EOS.IO sarà prima di tutto una piattaforma per il coordinamento del
 
 ## Messaggi Definiti dallo Schema
 
-Tutti i messaggi inviati tra account sono definiti da uno schema che fa parte dello stato del consensus della blockchain. This schema allows seamless conversion between binary and JSON representation of the messages.
+Tutti i messaggi inviati tra account sono definiti da uno schema che fa parte dello stato del consensus della blockchain. Questo schema consente una conversione perfetta tra la rappresentazione binaria e JSON dei messaggi.
 
-## Schema Defined Database
+## Database Definito dallo Schema
 
-Database state is also defined using a similar schema. This ensures that all data stored by all applications is in a format that can be interpreted as human readable JSON but stored and manipulated with the efficiency of binary.
+Anche lo stato del database viene definito utilizzando uno schema simile. Ciò garantisce che tutti i dati memorizzati da tutte le applicazioni siano in un formato che può essere interpretato come JSON comunemente leggibile, ma memorizzato e manipolato con la stessa efficienza del binario.
 
-## Separating Authentication from Application
+## Separazione dell'Autenticazione dall'Applicazione
 
-To maximize parallelization opportunities and minimize the computational debt associated with regenerating application state from the transaction log, EOS.IO software separates validation logic into three sections:
+Per massimizzare le opportunità di parallelizzazione e ridurre al minimo il debito computazionale associato alla rigenerazione dello stato dell'applicazione dal log delle transazioni, il software EOS.IO separa la logica di convalida in tre sezioni:
 
-1. Validating that a message is internally consistent;
-2. Validating that all preconditions are valid; and
-3. Modifying the application state.
+1. Convalida che un messaggio sia internamente coerente;
+2. Convalida che tutte le condizioni preliminari siano valide; e
+3. Modifica dello stato dell'applicazione.
 
-Validating the internal consistency of a message is read-only and requires no access to blockchain state. This means that it can be performed with maximum parallelism. Validating preconditions, such as required balance, is read-only and therefore can also benefit from parallelism. Only modification of application state requires write access and must be processed sequentially for each application.
+La convalida della coerenza interna di un messaggio è di sola lettura e non richiede l'accesso allo stato della blockchain. Ciò significa che può essere eseguito con il massimo parallelismo. La convalida delle precondizioni, come il saldo richiesto, è di sola lettura e pertanto può anche questo beneficiare del parallelismo. Solo la modifica dello stato dell'applicazione richiede l'accesso in scrittura e deve essere elaborata in sequenza per ogni applicazione.
 
 Authentication is the read-only process of verifying that a message can be applied. Application is actually doing the work. In real time both calculations are required to be performed, however once a transaction is included in the blockchain it is no longer necessary to perform the authentication operations.
 
