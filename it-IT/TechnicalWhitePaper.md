@@ -2,7 +2,7 @@
 
 **26 giugno 2017**
 
-**Sommario:** Il software di EOS.IO introduce una nuova architettura blockchain progettata per consentire la scalabilità verticale e orizzontale delle applicazioni decentralizzate. Ciò si ottiene creando un costrutto simile a un sistema operativo su cui possono essere sviluppate le applicazioni. Il software fornisce account, autenticazione, database, comunicazione asincrona e la pianificazione di applicazioni su centinaia di core di CPU o cluster. La tecnologia risultante è un'architettura blockchain che scalabile e che dunque si adatta a milioni di transazioni al secondo, eliminando le commissioni dell'utente e consentendo una distribuzione rapida e semplice delle applicazioni decentralizzate.
+**Sommario:** Il software di EOS.IO introduce una nuova architettura blockchain progettata per abilitare la scalabilità verticale e orizzontale delle applicazioni decentralizzate. Ciò si ottiene creando un costrutto simile a un sistema operativo su cui possono essere sviluppate le applicazioni. Il software fornisce account, autenticazione, database, comunicazione asincrona e la pianificazione di applicazioni su centinaia di core di CPU o cluster. La tecnologia risultante è un'architettura blockchain scalabile e che si adatta a milioni di transazioni al secondo, elimina le commissioni dell'utente e consente una distribuzione rapida e semplice delle applicazioni decentralizzate.
 
 **NOTA BENE: I TOKEN CRITTOGRAFICI DI CUI QUESTO WHITE PAPER FA RIFERIMENTO SONO I TOKEN CRITTOGRAFICI LANCIATI SULLA BLOCKCHAIN CHE UTILIZZA IL SOFTWARE EOS.IO. NON FANNO RIFERIMENTO AI TOKEN ERC-20 CHE SONO DISTRIBUITI SULLA BLOCKCHAIN DI ETHEREUM CONNESSI ALLA DISTRIBUZIONE DEI TOKEN DI EOS. **
 
