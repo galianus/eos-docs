@@ -214,9 +214,9 @@ Questo processo è anche molto diverso da una semplice disposizione multi-firma.
 
 # Esecuzione Parallela Deterministica delle Applicazioni
 
-Il consensus o consenso della blockchain dipende dal comportamento deterministico (riproducibile). Ciò significa che tutte le esecuzioni parallele devono essere libere dall'uso di mutex o altri chiusure primitive (c.d. locking primitives). Senza chiusure ci deve essere un modo per garantire che tutti gli account possano solo leggere e scrivere il proprio database privato. Significa anche che ciascun account elabora i messaggi in sequenza e che il parallelismo sarà a livello di account.
+Il consenso (c.d. consensus) della blockchain dipende dal comportamento deterministico (riproducibile). Ciò significa che tutte le esecuzioni parallele devono essere libere dall'uso di mutex o altre primitive bloccanti (c.d. locking primitives). Senza chiusure ci deve essere un modo per garantire che tutti gli account possano solo leggere e scrivere il proprio database privato. Significa anche che ciascun account elabora i messaggi in sequenza e che il parallelismo sarà a livello di account.
 
-In una blockchain basata sul software EOS.IO, è compito del produttore di blocchi di organizzare il recapito dei messaggi in thread indipendenti in modo che possano essere valutati in parallelo. Lo stato di ciascun account dipende solo dai messaggi consegnati a quest'ultimo. L'agenda (c.d. schedule) è l'output di un produttore di blocchi e verrà eseguito in modo deterministico, ma il processo per generare l'agenda non deve essere deterministico. Ciò significa che i produttori di blocchi possono utilizzare algoritmi paralleli per pianificare le transazioni.
+In una blockchain basata sul software EOS.IO, è compito del produttore di blocchi organizzare il recapito dei messaggi in thread indipendenti in modo che possano essere valutati in parallelo. Lo stato di ciascun account dipende solo dai messaggi consegnati a quest'ultimo. L'agenda (c.d. schedule) è l'output di un produttore di blocchi e verrà eseguito in modo deterministico, ma il processo per generare l'agenda non deve essere deterministico. Ciò significa che i produttori di blocchi possono utilizzare algoritmi paralleli per pianificare le transazioni.
 
 Parte dell'esecuzione parallela significa che quando uno script genera un nuovo messaggio non viene consegnato immediatamente, ma è pianificato per essere consegnato nel ciclo successivo. Il motivo per cui non può essere consegnato immediatamente è perché il ricevitore potrebbe modificare attivamente il proprio stato in un altro thread.
 
@@ -275,7 +275,7 @@ Questa valutazione soggettiva del costo computazionale libera la blockchain dal 
 
 # Modello di Token e Utilizzo delle Risorse
 
-**NOTA BENE: I TOKEN CRITTOGRAFICI DI CUI QUESTO WHITE PAPER FA RIFERIMENTO SONO I TOKEN CRITTOGRAFICI LANCIATI SULLA BLOCKCHAIN CHE UTILIZZA IL SOFTWARE EOS.IO. NON FANNO RIFERIMENTO AI TOKEN ERC-20 CHE SONO DISTRIBUITI SULLA BLOCKCHAIN DI ETHEREUM CONNESSI ALLA DISTRIBUZIONE DEI TOKEN DI EOS. **
+**NOTA BENE: I TOKEN CRITTOGRAFICI A CUI QUESTO WHITE PAPER FA RIFERIMENTO SONO I TOKEN CRITTOGRAFICI LANCIATI SULLA BLOCKCHAIN CHE UTILIZZA IL SOFTWARE EOS.IO. NON FANNO RIFERIMENTO AI TOKEN ERC-20 CHE SONO DISTRIBUITI SULLA BLOCKCHAIN DI ETHEREUM CONNESSI ALLA DISTRIBUZIONE DEI TOKEN DI EOS. **
 
 Tutte le blockchain sono limitate in termini di risorse e richiedono un sistema per prevenire gli abusi. Con una blockchain che utilizza il software EOS.IO, vi sono tre ampie classi di risorse che vengono utilizzate dalle applicazioni:
 
@@ -283,15 +283,15 @@ Tutte le blockchain sono limitate in termini di risorse e richiedono un sistema 
 2. Computazione e Backlog Computazionale (CPU); e
 3. Archiviazione di Stato (RAM).
 
-Il bandwidth e il calcolo computazionale hanno due componenti, l'uso istantaneo e l'uso a lungo termine. Una blockchain mantiene un registro di tutti i messaggi e questo registro viene infine archiviato e scaricato da tutti i nodi completi. Con il registro dei messaggi è possibile ricostruire lo stato di tutte le applicazioni.
+La banda e il calcolo computazionale hanno due componenti, l'uso istantaneo e l'uso a lungo termine. Una blockchain mantiene un registro di tutti i messaggi e questo registro viene infine archiviato e scaricato da tutti i nodi completi. Con il registro dei messaggi è possibile ricostruire lo stato di tutte le applicazioni.
 
 Il debito computazionale è formato da calcoli che devono essere eseguiti per rigenerare lo stato dal registro messaggi. Se il debito computazionale diventa troppo grande allora diventa necessario fare uno snapshot dello stato della blockchain e scartare la storia della blockchain. Se il debito computazionale cresce troppo rapidamente, potrebbero essere necessari 6 mesi per ripetere il valore di 1 anno di transazioni. È quindi fondamentale che il debito computazionale sia gestito con cura.
 
 L'archiviazione di stato della blockchain è un'informazione accessibile dalla logica dell'applicazione. Include informazioni quali ordini e saldi contabili. Se lo stato non viene mai letto dall'applicazione, non dovrebbe essere memorizzato. Ad esempio, i contenuti dei post di un blog e i commenti non vengono letti dalla logica dell'applicazione, quindi non devono essere archiviati nello stato della blockchain. Nel frattempo l'esistenza di un post/commento, il numero di voti e altre proprietà vengono memorizzate come parte dello stato della blockchain.
 
-I produttori di blocchi pubblicano la capacità a loro disponibile per la bandwidth, per il calcolo e per lo stato. Il software EOS.IO consente a ciascun account di utilizzare una percentuale della capacità disponibile proporzionale alla quantità di token detenuti in un contratto di staking di 3 giorni. Ad esempio, se viene lanciata una blockchain basata sul software EOS.IO e se un account detiene l'1% del totale dei token distribuibili in base a tale blockchain, allora tale account ha il potenziale di utilizzare l'1% della capacità di archiviazione di stato.
+I produttori di blocchi pubblicano la capacità a loro disponibile per la banda, per il calcolo e per lo stato. Il software EOS.IO consente a ciascun account di utilizzare una percentuale della capacità disponibile proporzionale alla quantità di token detenuti in un contratto di staking di 3 giorni. Ad esempio, se viene lanciata una blockchain basata sul software EOS.IO e se un account detiene l'1% del totale dei token distribuibili in base a tale blockchain, allora tale account ha il potenziale di utilizzare l'1% della capacità di archiviazione di stato.
 
-L'adozione del software EOS.IO su una blockchain in esecuzione significa che la bandwidth e la capacità computazionale sono allocate su una base di riserva frazionaria poiché sono transitori (la capacità non utilizzata non può essere salvata per un uso futuro). L'algoritmo utilizzato dal software EOS.IO è simile all'algoritmo utilizzato da Steem per il limite di frequenza della bandwidth usata.
+L'adozione del software EOS.IO su una blockchain in esecuzione significa che la banda e la capacità computazionale sono allocate sulla base di una riserva frazionaria poiché sono transitori (la capacità non utilizzata non può essere salvata per un uso futuro). L'algoritmo utilizzato dal software EOS.IO è simile all'algoritmo utilizzato da Steem per il limite di frequenza della bandwidth usata.
 
 ## Misure Oggettive e Soggettive
 
