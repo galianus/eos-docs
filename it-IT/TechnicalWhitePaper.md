@@ -333,15 +333,15 @@ Oltre a eleggere i produttori di blocchi, in base a una blockchain basata sul so
 
 La governanza è il processo attraverso il quale le persone raggiungono il consenso su questioni soggettive che non possono essere acquisite interamente da algoritmi software. Una blockchain basata su software EOS.IO implementa un processo di governance che affronta l'influenza esistente dei produttori di blocchi. In assenza di un processo di governance definito, le blockchain precedenti si basavano su processi di governance ad hoc, informali e spesso controversi che hanno prodotto esiti imprevedibili.
 
-Una blockchain basata sul software EOS.IO riconosce che il potere ha origine dai titolari di token che delegano tale potere ai produttori di blocchi. Ai produttori di blocchi viene concessa un'autorizzazione limitata e controllata che consente di bloccare gli account, di aggiornare le applicazioni difettose e di proporre modifiche difficoltose riguardanti il protocollo sottostante.
+Una blockchain basata sul software EOS.IO riconosce che il potere ha origine dai titolari dei token che delegano tale potere ai produttori di blocchi. Ai produttori di blocchi viene concessa un'autorizzazione limitata e controllata che consente di bloccare gli account, di aggiornare le applicazioni difettose e di proporre modifiche difficoltose riguardanti il protocollo sottostante.
 
-Incorporato nel software EOS.IO vi è l'elezione dei produttori di blocchi. Prima che qualsiasi cambiamento possa essere apportato alla blockchain questi produttori di blocchi devono approvarlo. Se i produttori di blocchi rifiutano di apportare modifiche desiderate dai titolari dei token, questi produttori di blocchi possono essere rimossi. Se i produttori di blocchi apportano modifiche senza il permesso dei titolari di token, tutti gli altri validatori del node completo non in produzione (exchanges, ecc.) rifiuteranno la modifica.
+Incorporato nel software EOS.IO vi è l'elezione dei produttori di blocchi. Prima che qualsiasi cambiamento possa essere apportato alla blockchain questi produttori di blocchi devono approvarlo. Se i produttori di blocchi rifiutano di apportare modifiche desiderate dai titolari dei token, questi produttori di blocchi possono essere rimossi. Se i produttori di blocchi apportano modifiche senza il permesso dei titolari di token, tutti gli altri nodi non-produttori e validatori (exchanges, ecc.) rifiuteranno la modifica.
 
 ## Congelamento dei Conti
 
-A volte un contatto intelligente si comporta in modo aberrante o imprevedibile e non riesce a funzionare come previsto; altre volte un'applicazione o un account possono scoprire un exploit che gli consente di consumare una quantità irragionevole di risorse. Quando si verificano inevitabilmente tali problemi, i produttori di blocchi hanno il potere di correggere tali situazioni.
+A volte uno smart-contract si comporta in modo aberrante o imprevedibile e non riesce a funzionare come previsto; altre volte un'applicazione o un account possono scoprire un exploit che gli consente di consumare una quantità irragionevole di risorse. Quando si verificano inevitabilmente tali problemi, i produttori di blocchi hanno il potere di correggere tali situazioni.
 
-I produttori di blocchi di tutte le blockchain hanno il potere di selezionare quali transazioni sono incluse in blocchi che danno loro la possibilità di congelare o meglio bloccare gli account. Una blockchain che utilizza il software EOS.IO formalizza questa autorità sottoponendo il processo di congelamento di un account a un voto di 17/21 dei produttori attivi. Se i produttori abusano del potere, questi possono essere rimossi e l'account verrà sbloccato.
+I produttori di blocchi di tutte le blockchain hanno il potere di selezionare quali transazioni sono incluse nei blocchi, questo dà loro la possibilità di congelare o meglio bloccare gli account. Una blockchain che utilizza il software EOS.IO formalizza questa autorità sottoponendo il processo di congelamento di un account a un voto di 17/21 dei produttori attivi. Se i produttori abusano del potere, questi possono essere rimossi e l'account verrà sbloccato.
 
 ## Modifica del Codice dell'Account
 
@@ -377,7 +377,7 @@ Il software EOS.IO sarà prima di tutto una piattaforma per il coordinamento del
 
 ## Messaggi Definiti dallo Schema
 
-Tutti i messaggi inviati tra account sono definiti da uno schema che fa parte dello stato del consensus della blockchain. Questo schema consente una conversione perfetta tra la rappresentazione binaria e JSON dei messaggi.
+Tutti i messaggi inviati tra account sono definiti da uno schema che fa parte dello stato del consenso della blockchain. Questo schema consente una conversione perfetta tra la rappresentazione binaria e JSON dei messaggi.
 
 ## Database Definito dallo Schema
 
