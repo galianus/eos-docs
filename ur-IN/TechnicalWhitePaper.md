@@ -426,7 +426,7 @@ EOS.IO سافٹویئر کسی کے لیے بھی کم وزنی ثبوت بنا 
 
 جس کا مطلب بلاکس اس طرح نہیں پیدا کرنے کے لئے کوئی وجہ نہیں ہے مناسب ہیش-ان دلائل کو اہل بنانے کے لیے ربط کاری کے ساتھ بلاکس کی پیداوار کے ساتھ وابستہ چھوٹی سی اضافی ہیڈ ہے ۔.
 
-When it comes time to validate proofs on other chains there are a wide variety of time/ space/ bandwidth optimizations that can be made. Tracking all block headers (420 MB/year) will keep proof sizes small. Tracking only recent headers can offer a trade off between minimal long-term storage and proof size. Alternatively, a blockchain can use a lazy evaluation approach where it remembers intermediate hashes of past proofs. New proofs only have to include links to the known sparse tree. The exact approach used will necessarily depend upon the percentage of foreign blocks that include transactions referenced by merkle proof.
+دوسسرے چینوں پر ثبوتوں کی توثیق کاری کے وقت اس صورت میں وسیع قسم کا وقت /جگہ /بینڈوڈتھ کی توثیق کی جاتی ہے. تمام بلاک سرتحریر (420 MB/سال) کا کھوج لگانا ثبوت سائز چھوٹے رکھیں گے ۔. صرف تازہ ہیڈرس کی کھوج کرنا ثبوت کی مقدار اور کم از کم لمبی وقت والی سٹوریج کے درمیان تجارت کو بڈھاوا دے سکتی ہے. متبادل طور پر، ایک بلاکچین ایک سست تشخیص نقطہ نظر استعمال کرے گا جہاں یہ ہے کہ گزشتہ انٹرمیڈیٹ ہیش ثبوتوں کو یاد کرتا ہے. نیے ثبوتوں کو صرف منتشر درخت میں لنکس شامل کرنا ہے. The exact approach used will necessarily depend upon the percentage of foreign blocks that include transactions referenced by merkle proof.
 
 After a certain density of interconnectedness it becomes more efficient to simply have one chain contain the entire block history of another chain and eliminate the need for proofs all together. For performance reasons, it is ideal to minimize the frequency of inter-chain proofs.
 
