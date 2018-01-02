@@ -401,13 +401,13 @@ L'autenticazione è il processo di sola lettura che verifica se un messaggio pu�
 
 ### Web Assembly (WASM)
 
-Web Assembly is an emerging web standard for building high performance web applications. With a few small modifications Web Assembly can be made deterministic and sandboxed. The benefit of Web Assembly is the widespread support from industry and that it enables contracts to be developed in familiar languages such as C or C++.
+Web Assembly è uno standard Web emergente per la creazione di applicazioni Web ad alte prestazioni. Con alcune piccole modifiche, il Web Assembly può essere reso deterministico e in modalità sandbox. Il vantaggio di Web Assembly è il supporto diffuso dell'industria e che consente di sviluppare contratti in linguaggi familiari come C o C ++.
 
-Ethereum developers have already begun modifying Web Assembly to provide suitable sandboxing and determinism in with their [Ethereum flavored Web Assembly (WASM)](https://github.com/ewasm/design). This approach can be easily adapted and integrated with EOS.IO software.
+Gli sviluppatori di Ethereum hanno già iniziato a modificare il Web Assembly per fornire sandboxing e determinismo idonei con il loro [Ethereum flavored Web Assembly (WASM)](https://github.com/ewasm/design). Questo approccio può essere facilmente adattato e integrato con il software EOS.IO.
 
-### Ethereum Virtual Machine (EVM)
+### Macchina Virtuale di Ethereum (EVM)
 
-This virtual machine has been used for most existing smart contracts and could be adapted to work within an EOS.IO blockchain. It is conceivable that EVM contracts could be run within their own sandbox inside an EOS.IO software-based blockchain and that with some adaptation EVM contracts could communicate with other EOS.IO software blockchain applications.
+Questa macchina virtuale è stata utilizzata per la maggior parte degli smart contract esistenti e potrebbe essere adattata per funzionare all'interno di una blockchain EOS.IO. It is conceivable that EVM contracts could be run within their own sandbox inside an EOS.IO software-based blockchain and that with some adaptation EVM contracts could communicate with other EOS.IO software blockchain applications.
 
 # Inter Blockchain Communication
 
