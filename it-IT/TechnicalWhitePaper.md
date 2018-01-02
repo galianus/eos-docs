@@ -48,7 +48,7 @@ Chiunque può utilizzare, riprodurre o distribuire qualsiasi materiale in questo
   - [Costi di Archiviazione dello Stato](#state-storage-costs)
   - [Ricompense di blocco](#block-rewards)
   - [Applicazioni a Beneficio della Comunità](#community-benefit-applications)
-- [Governance](#governance) 
+- [Governanza](#governance) 
   - [Congelamento dei Conti](#freezing-accounts)
   - [Modifica del Codice dell'Account](#changing-account-code)
   - [Costituzione](#constitution)
@@ -323,15 +323,15 @@ Ogni account di un qualunque utente richiede una certa quantità di spazio di ar
 
 ## Ricompense di blocco
 
-Una blockchain che adotta il software EOS.IO assegnerà nuovi token a un produttore di blocchi ogni volta che viene prodotto un blocco. In queste circostanze, il numero di token creati è determinato dalla mediana della retribuzione desiderata pubblicata da tutti i produttori di blocchi. Il software EOS.IO può essere configurato per imporre un limite alle ricompense del produttore in modo tale che l'aumento annuo totale dell'erogazione di token non superi il 5%.
+Una blockchain che adotta il software EOS.IO assegnerà nuovi token a un produttore di blocchi ogni volta che viene prodotto un blocco. In queste circostanze, il numero di token creati è determinato dalla mediana della retribuzione desiderata pubblicata da tutti i produttori di blocchi. Il software EOS.IO può essere configurato per imporre un limite alle ricompense del produttore in modo tale che l'aumento annuo totale della disponibilità di token non superi il 5%.
 
-## Community Benefit Applications
+## Applicazioni a Beneficio della Comunità
 
-In addition to electing block producers, pursuant to a blockchain based on the EOS.IO software, users can elect 3 community benefit applications also known as smart contracts. These 3 applications will receive tokens of up to a configured percent of the token supply per annum minus the tokens that have been paid to block producers. These smart contracts will receive tokens proportional to the votes each application has received from token holders. The elected applications or smart contracts can be replaced by newly elected applications or smart contracts by token holders.
+Oltre a eleggere i produttori di blocchi, in base a una blockchain basata sul software EOS.IO, gli utenti possono scegliere 3 applicazioni a beneficio della comunità, note anche come smart contract. Queste 3 applicazioni riceveranno token fino a una percentuale configurata della disponibilità di token all'anno meno i token che sono stati pagati ai produttori di blocchi. Questi smart contract riceveranno token proporzionali ai voti che ogni applicazione ha ricevuto dai titolari dei token. Le applicazioni elettive o gli smart contract possono essere sostituiti da nuove applicazioni o da smart contract da parte dei titolari di token.
 
-# Governance
+# Governanza
 
-Governance is the process by which people reach consensus on subjective matters that cannot be captured entirely by software algorithms. An EOS.IO software-based blockchain implements a governance process that efficiently directs the existing influence of block producers. Absent a defined governance process, prior blockchains relied ad hoc, informal, and often controversial governance processes that result in unpredictable outcomes.
+La governanza è il processo attraverso il quale le persone raggiungono il consenso su questioni soggettive che non possono essere acquisite interamente da algoritmi software. Una blockchain basata su software EOS.IO implementa un processo di governanza che affronta l'influenza esistente dei produttori di blocchi. Absent a defined governance process, prior blockchains relied ad hoc, informal, and often controversial governance processes that result in unpredictable outcomes.
 
 A blockchain based on the EOS.IO software recognizes that power originates with the token holders who delegate that power to the block producers. The block producers are given limited and checked authority to freeze accounts, update defective applications, and propose hard forking changes to the underlying protocol.
 
