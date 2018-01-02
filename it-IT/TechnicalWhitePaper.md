@@ -331,11 +331,11 @@ Oltre a eleggere i produttori di blocchi, in base a una blockchain basata sul so
 
 # Governanza
 
-La governanza è il processo attraverso il quale le persone raggiungono il consenso su questioni soggettive che non possono essere acquisite interamente da algoritmi software. Una blockchain basata su software EOS.IO implementa un processo di governanza che affronta l'influenza esistente dei produttori di blocchi. Absent a defined governance process, prior blockchains relied ad hoc, informal, and often controversial governance processes that result in unpredictable outcomes.
+La governanza è il processo attraverso il quale le persone raggiungono il consenso su questioni soggettive che non possono essere acquisite interamente da algoritmi software. Una blockchain basata su software EOS.IO implementa un processo di governanza che affronta l'influenza esistente dei produttori di blocchi. In assenza di un processo di governanza definito, le blockchain precedenti si basavano su processi di governanza ad hoc, informali e spesso controversi che hanno prodotto esiti imprevedibili.
 
-A blockchain based on the EOS.IO software recognizes that power originates with the token holders who delegate that power to the block producers. The block producers are given limited and checked authority to freeze accounts, update defective applications, and propose hard forking changes to the underlying protocol.
+Una blockchain basata sul software EOS.IO riconosce che il potere ha origine dai titolari di token che delegano tale potere ai produttori di blocchi. Ai produttori di blocchi viene concessa un'autorizzazione limitata e controllata che consente di bloccare gli account, di aggiornare le applicazioni difettose e di proporre modifiche difficoltose riguardanti il protocollo sottostante.
 
-Embedded into the EOS.IO software is the election of block producers. Before any change can be made to the blockchain these block producers must approve it. If the block producers refuse to make changes desired by the token holders then they can be voted out. If the block producers make changes without permission of the token holders then all other non-producing full-node validators (exchanges, etc) will reject the change.
+Incorporato nel software EOS.IO vi è l'elezione dei produttori di blocchi. Prima che qualsiasi cambiamento possa essere apportato alla blockchain questi produttori di blocchi devono approvarlo. If the block producers refuse to make changes desired by the token holders then they can be voted out. If the block producers make changes without permission of the token holders then all other non-producing full-node validators (exchanges, etc) will reject the change.
 
 ## Freezing Accounts
 
