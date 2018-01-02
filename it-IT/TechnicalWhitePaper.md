@@ -335,13 +335,13 @@ La governanza è il processo attraverso il quale le persone raggiungono il conse
 
 Una blockchain basata sul software EOS.IO riconosce che il potere ha origine dai titolari di token che delegano tale potere ai produttori di blocchi. Ai produttori di blocchi viene concessa un'autorizzazione limitata e controllata che consente di bloccare gli account, di aggiornare le applicazioni difettose e di proporre modifiche difficoltose riguardanti il protocollo sottostante.
 
-Incorporato nel software EOS.IO vi è l'elezione dei produttori di blocchi. Prima che qualsiasi cambiamento possa essere apportato alla blockchain questi produttori di blocchi devono approvarlo. If the block producers refuse to make changes desired by the token holders then they can be voted out. If the block producers make changes without permission of the token holders then all other non-producing full-node validators (exchanges, etc) will reject the change.
+Incorporato nel software EOS.IO vi è l'elezione dei produttori di blocchi. Prima che qualsiasi cambiamento possa essere apportato alla blockchain questi produttori di blocchi devono approvarlo. Se i produttori di blocchi rifiutano di apportare modifiche desiderate dai titolari dei token, questi produttori di blocchi possono essere rimossi. Se i produttori di blocchi apportano modifiche senza il permesso dei titolari di token, tutti gli altri validatori del node completo non in produzione (exchanges, ecc.) rifiuteranno la modifica.
 
-## Freezing Accounts
+## Congelamento dei Conti
 
-Sometimes a smart contact behaves in an aberrant or unpredictable manner and fails to perform as intended; other times an application or account may discover an exploit that enables it to consume an unreasonable amount of resources. When such issues inevitably occur, the block producers have the power to rectify such situations.
+A volte un contatto intelligente si comporta in modo aberrante o imprevedibile e non riesce a funzionare come previsto; altre volte un'applicazione o un account possono scoprire un exploit che gli consente di consumare una quantità irragionevole di risorse. Quando si verificano inevitabilmente tali problemi, i produttori di blocchi hanno il potere di correggere tali situazioni.
 
-The block producers on all blockchains have the power to select which transactions are included in blocks which gives them the ability to freeze accounts. A blockchain using EOS.IO software formalizes this authority by subjecting the process of freezing an account to a 17/21 vote of active producers. If the producers abuse the power they can be voted out and an account will be unfrozen.
+I produttori di blocchi di tutte le blockchain hanno il potere di selezionare quali transazioni sono incluse in blocchi che danno loro la possibilità di congelare o meglio bloccare gli account. A blockchain using EOS.IO software formalizes this authority by subjecting the process of freezing an account to a 17/21 vote of active producers. If the producers abuse the power they can be voted out and an account will be unfrozen.
 
 ## Changing Account Code
 
