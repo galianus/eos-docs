@@ -329,9 +329,9 @@ Una blockchain che adotta il software EOS.IO assegnerà nuovi token a un produtt
 
 Oltre a eleggere i produttori di blocchi, in base a una blockchain basata sul software EOS.IO, gli utenti possono scegliere 3 applicazioni a beneficio della comunità, note anche come smart contract. Queste 3 applicazioni riceveranno token fino a una percentuale configurata della disponibilità di token all'anno meno i token che sono stati pagati ai produttori di blocchi. Questi smart contract riceveranno token proporzionali ai voti che ogni applicazione ha ricevuto dai titolari dei token. Le applicazioni elettive o gli smart contract possono essere sostituiti da nuove applicazioni o da smart contract da parte dei titolari di token.
 
-# La governance
+# La Governance
 
-La governanza è il processo attraverso il quale le persone raggiungono il consenso su questioni soggettive che non possono essere acquisite interamente da algoritmi software. Una blockchain basata su software EOS.IO implementa un processo di governance che affronta l'influenza esistente dei produttori di blocchi. In assenza di un processo di governance definito, le blockchain precedenti si basavano su processi di governance ad hoc, informali e spesso controversi che hanno prodotto esiti imprevedibili.
+La governance è il processo attraverso il quale le persone raggiungono il consenso su questioni soggettive che non possono essere acquisite interamente da algoritmi software. Una blockchain basata su software EOS.IO implementa un processo di governance che affronta l'influenza esistente dei produttori di blocchi. In assenza di un processo di governance definito, le blockchain precedenti si basavano su processi di governance ad hoc, informali e spesso controversi che hanno prodotto esiti imprevedibili.
 
 Una blockchain basata sul software EOS.IO riconosce che il potere ha origine dai titolari dei token che delegano tale potere ai produttori di blocchi. Ai produttori di blocchi viene concessa un'autorizzazione limitata e controllata che consente di bloccare gli account, di aggiornare le applicazioni difettose e di proporre modifiche difficoltose riguardanti il protocollo sottostante.
 
