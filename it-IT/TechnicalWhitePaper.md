@@ -48,7 +48,7 @@ Chiunque può utilizzare, riprodurre o distribuire qualsiasi materiale in questo
   - [Costi di Archiviazione dello Stato](#state-storage-costs)
   - [Ricompense di blocco](#block-rewards)
   - [Applicazioni a Beneficio della Comunità](#community-benefit-applications)
-- [Governanza](#governance) 
+- [La Governance](#governance) 
   - [Congelamento dei Conti](#freezing-accounts)
   - [Modifica del Codice dell'Account](#changing-account-code)
   - [Costituzione](#constitution)
