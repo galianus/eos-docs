@@ -194,7 +194,7 @@ El proceso de evaluación de permisos es de "solo lectura" y los cambios en los 
 
 Considerando todo, la verificación de permisos representa un porcentaje significativo del cálculo requerido para validar las transacciones. Hacer esto un proceso de solo lectura y trivialmente paralelizable permite un aumento dramático en el rendimiento.
 
-Al reproducir el blockchain para regenerar el estado determinístico del registro de mensajes, no hay necesidad de evaluar los permisos nuevamente. El hecho de que una transacción esté incluida en un buen bloque conocido es suficiente para omitir este paso. This dramatically reduces the computational load associated with replaying an ever growing blockchain.
+Al reproducir el blockchain para regenerar el estado determinístico del registro de mensajes, no hay necesidad de evaluar los permisos nuevamente. El hecho de que una transacción esté incluida en un buen bloque conocido es suficiente para omitir este paso. Esto reduce drásticamente la carga computacional asociada con la reproducción de una blockchain cada vez mayor.
 
 ## Messages with Mandatory Delay
 
