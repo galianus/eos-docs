@@ -164,13 +164,13 @@ Con el software EOS.IO, las cuentas pueden definir niveles de permisos con nombr
 
 Otro ejemplo es el blockchain de Steem, que tiene nombres para los tres niveles de permiso de codificado duro: propietario, activo y publicación. El permiso de publicación solo puede realizar acciones sociales como votar y publicar, mientras que el permiso activo puede hacer todo excepto cambiar al propietario. El permiso del propietario está destinado al almacenamiento en frío y puede hacer todo. El software EOS.IO generaliza este concepto al permitir que cada titular de la cuenta defina su propia jerarquía, así como la agrupación de acciones.
 
-### Grupos de Manejo de Mensajes Nominados
+### Grupos de Controladores de Mensajes Nominados
 
-The EOS.IO software allows each account to organize its own message handlers into named and nested groups. These named message handler groups can be referenced by other accounts when they configure their permission levels.
+El software de EOS.IO permite que cada cuenta organice sus propios controladores de mensajes en grupos nominados y anidados. Estos grupos de controladores de mensajes nominados pueden ser referenciados por otras cuentas cuando configuran sus niveles de permisos.
 
-The highest level message handler group is the account name and the lowest level is the individual message type being received by the account. These groups can be referenced like so: **@accountname.groupa.subgroupb.MessageType**.
+El grupo de controladores de mensajes de nivel más alto es el nombre de la cuenta y el nivel más bajo es el tipo de mensaje individual que recibe la cuenta. Estos grupos pueden ser referenciados así:   **@accountname.groupa.subgroupb.MessageType**.
 
-Under this model it is possible for an exchange contract to group order creation and canceling separately from deposit and withdraw. This grouping by the exchange contract is a convenience for users of the exchange.
+Bajo este modelo, es posible que un contrato de intercambio agrupe la creación de orden y la cancelación por separado del depósito y el retiro. Esta agrupación según el contrato de intercambio es una conveniencia para los usuarios del intercambio.
 
 ### Permission Mapping
 
