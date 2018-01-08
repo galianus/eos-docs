@@ -184,7 +184,7 @@ Una vez que se identifica una asignación, la autoridad de firma se valida utili
 
 <img align="center" src="http://eos.io/wpimg/diagram2grayscale2.jpg" width="845.85px" height="500px" />
 
-#### Default Permission Groups
+#### Grupos de Permisos Predeterminados
 
 The EOS.IO technology also allows all accounts to have an "owner" group which can do everything, and an "active" group which can do everything except change the owner group. All other permission groups are derived from "active".
 
