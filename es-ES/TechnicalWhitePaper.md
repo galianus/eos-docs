@@ -190,9 +190,9 @@ La tecnología EOS.IO también permite que todas las cuentas tengan un grupo "pr
 
 #### Evaluación Paralela de Permisos
 
-El proceso de evaluación de permisos es de "solo lectura" y los cambios en los permisos realizados por las transacciones no surten efecto hasta el final de un bloque. Esto significa que todas las claves y la evaluación de permisos para todas las transacciones se pueden ejecutar en paralelo. Furthermore, this means that a rapid validation of permission is possible without starting the costly application logic that would have to be rolled back. Lastly, it means that transaction permissions can be evaluated as pending transactions are received and do not need to be re-evaluated as they are applied.
+El proceso de evaluación de permisos es de "solo lectura" y los cambios en los permisos realizados por las transacciones no surten efecto hasta el final de un bloque. Esto significa que todas las claves y la evaluación de permisos para todas las transacciones se pueden ejecutar en paralelo. Además, esto significa que es posible una validación rápida del permiso sin iniciar la costosa lógica de la aplicación que tendría que revertirse. Por último, significa que los permisos de transacción pueden evaluarse a medida que se reciben las transacciones pendientes y no es necesario volver a evaluarlas a medida que se aplican.
 
-All things considered, permission verification represents a significant percentage of the computation required to validate transactions. Making this a read-only and trivially parallelizable process enables a dramatic increase in performance.
+Considerando todo, la verificación de permisos representa un porcentaje significativo del cálculo requerido para validar las transacciones. Making this a read-only and trivially parallelizable process enables a dramatic increase in performance.
 
 When replaying the blockchain to regenerate the deterministic state from the log of messages there is no need to evaluate the permissions again. The fact that a transaction is included in a known good block is sufficient to skip this step. This dramatically reduces the computational load associated with replaying an ever growing blockchain.
 
