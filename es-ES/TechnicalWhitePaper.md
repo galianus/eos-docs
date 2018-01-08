@@ -172,9 +172,9 @@ El grupo de controladores de mensajes de nivel más alto es el nombre de la cuen
 
 Bajo este modelo, es posible que un contrato de intercambio agrupe la creación de orden y la cancelación por separado del depósito y el retiro. Esta agrupación según el contrato de intercambio es una conveniencia para los usuarios del intercambio.
 
-### Permission Mapping
+### Asignación de Permisos
 
-EOS.IO software allows each account to define a mapping between a Named Message Handler Group of any account and their own Named Permission Level. For example, an account holder could map the account holder's social media application to the account holder's "Friend" permission group. With this mapping, any friend could post as the account holder on the account holder's social media. Even though they would post as the account holder, they would still use their own keys to sign the message. This means it is always possible to identify which friends used the account and in what way.
+El software de EOS.IO permite que cada cuenta defina una asignación entre un Grupo de Controladores de Mensajes Nominados de cualquier cuenta y su propio Nivel de Permiso Nominado. Por ejemplo, un titular de cuenta puede asignar la aplicación de medios sociales del titular de la cuenta al grupo de permisos "Amigo" del titular de la cuenta. Con esta asignación, cualquier amigo podría publicar como titular de la cuenta en las redes sociales del titular de la cuenta. Aunque publiquen como titular de la cuenta, aún usarían sus propias claves para firmar el mensaje. This means it is always possible to identify which friends used the account and in what way.
 
 ### Evaluating Permissions
 
