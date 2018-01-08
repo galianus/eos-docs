@@ -1,6 +1,6 @@
 ## EOS.IO Roadmap do Software
 
-Este documento descreve o plano de desenvolvimento de alto nível e será atualizado conforme é feito progresso em direção a versão 1.0. Este roadmap se aplica unicamente ao software do blockchain e não as outras ferramentas e utilitários como carteiras e exploradores de blocos que que terão os seus próprios times e roadmaps assim que a Fase 1 seja finalizada.
+Este documento descreve genericamente o plano de desenvolvimento e será atualizado conforme o progresso para a versão 1.0. Este roadmap aplica-se unicamente ao software do blockchain e não às outras ferramentas e utilitários, como carteiras e exploradores de blocos, que que terão os seus próprios times e roadmaps, assim que a Fase 1 for finalizada.
 
 ***Todo o conteúdo deste documento é rascunho e sujeito a alterações a qualquer momento e é publicado apenas para fins informativos. block.one não garante a exatidão das informações contidas neste roadmap e a informação é oferecida sem nenhum tipo de garantias, expressas ou implícitas.***
 
