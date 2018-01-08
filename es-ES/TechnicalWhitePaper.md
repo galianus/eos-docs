@@ -186,7 +186,7 @@ Una vez que se identifica una asignación, la autoridad de firma se valida utili
 
 #### Grupos de Permisos Predeterminados
 
-The EOS.IO technology also allows all accounts to have an "owner" group which can do everything, and an "active" group which can do everything except change the owner group. All other permission groups are derived from "active".
+La tecnología EOS.IO también permite que todas las cuentas tengan un grupo "propietario" que puede hacer todo, y un grupo "activo" que puede hacer todo excepto cambiar el grupo propietario. Todos los demás grupos de permisos se derivan de "activo".
 
 #### Parallel Evaluation of Permissions
 
