@@ -214,11 +214,11 @@ Este proceso también es muy diferente de un arreglo simple de múltiples firmas
 
 # Ejecución Paralela Determinista de Aplicaciones
 
-El consenso de la blockchain depende del comportamiento determinista (reproducible). Esto significa que toda ejecución paralela debe estar libre del uso de exclusiones mutuas u otras formas primitivas de bloqueo. Sin bloqueos debe haber alguna forma de garantizar que todas las cuentas solo puedan leer y escribir su propia base de datos privada. It also means that each account processes messages sequentially and that parallelism will be at the account level.
+El consenso de la blockchain depende del comportamiento determinista (reproducible). Esto significa que toda ejecución paralela debe estar libre del uso de exclusiones mutuas u otras formas primitivas de bloqueo. Sin bloqueos debe haber alguna forma de garantizar que todas las cuentas solo puedan leer y escribir su propia base de datos privada. También significa que cada cuenta procesa los mensajes secuencialmente y que el paralelismo estará en el nivel de la cuenta.
 
-In an EOS.IO software-based blockchain, it is the job of the block producer to organize message delivery into independent threads so that they can be evaluated in parallel. The state of each account depends only upon the messages delivered to it. The schedule is the output of a block producer and will be deterministically executed, but the process for generating the schedule need not be deterministic. This means that block producers can utilize parallel algorithms to schedule transactions.
+En un blockchain basado en software EOS.IO, el trabajo del productor de bloque consiste en organizar la entrega de mensajes en hilos independientes para que puedan evaluarse en paralelo. El estado de cada cuenta depende solo de los mensajes que se le envían. El cronograma es el resultado de un productor de bloques y se ejecutará de manera determinista, pero el proceso para generar el cronograma no necesita ser determinista. Esto significa que los productores de bloques pueden utilizar algoritmos paralelos para programar transacciones.
 
-Part of parallel execution means that when a script generates a new message it does not get delivered immediately, instead it is scheduled to be delivered in the next cycle. The reason it cannot be delivered immediately is because the receiver may be actively modifying its own state in another thread.
+Parte de la ejecución paralela significa que cuando una secuencia de comandos genera un nuevo mensaje, no se entrega inmediatamente, sino que se programa para entregarse en el siguiente ciclo. La razón por la que no se puede entregar inmediatamente es porque el receptor puede estar modificando activamente su propio estado en otro hilo.
 
 ## Minimizing Communication Latency
 
