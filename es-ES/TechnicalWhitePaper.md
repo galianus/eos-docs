@@ -196,19 +196,19 @@ Considerando todo, la verificación de permisos representa un porcentaje signifi
 
 Al reproducir el blockchain para regenerar el estado determinístico del registro de mensajes, no hay necesidad de evaluar los permisos nuevamente. El hecho de que una transacción esté incluida en un buen bloque conocido es suficiente para omitir este paso. Esto reduce drásticamente la carga computacional asociada con la reproducción de una blockchain cada vez mayor.
 
-## Messages with Mandatory Delay
+## Mensajes con Retraso Obligatorio
 
-Time is a critical component of security. In most cases, it is not possible to know if a private key has been stolen until it has been used. Time based security is even more critical when people have applications that require keys be kept on computers connected to the internet for daily use. The EOS.IO software enables application developers to indicate that certain messages must wait a minimum period of time after being included in a block before they can be applied. During this time they can be cancelled.
+El tiempo es un componente crítico en lo referente a la seguridad. En la mayoría de los casos, no es posible saber si una clave privada ha sido robada hasta que se haya utilizado. La seguridad basada en el tiempo es aún más crítica cuando las personas tienen aplicaciones que requieren que se mantengan claves en las computadoras conectadas a Internet para el uso diario. El software EOS.IO permite a los desarrolladores de aplicaciones indicar que ciertos mensajes deben esperar un período de tiempo mínimo después de ser incluidos en un bloque antes de poder aplicarse. Durante este tiempo pueden ser cancelados.
 
-Users can then receive notice via email or text message when one of these messages is broadcast. If they did not authorize it, then they can use the account recovery process to recover their account and retract the message.
+Los usuarios pueden recibir un aviso por correo electrónico o mensaje de texto cuando se transmite uno de estos mensajes. Si no lo autorizaron, pueden usar el proceso de recuperación de la cuenta para recuperar su cuenta y retraer el mensaje.
 
-The required delay depends upon how sensitive an operation is. Paying for a coffee can have no delay and be irreversible in seconds, while buying a house may require a 72 hour clearing period. Transferring an entire account to new control may take up to 30 days. The exact delays chosen are up to application developers and users.
+La demora requerida depende de qué tan sensible sea una operación. Pagar por un café no puede tener demoras y ser irreversible en segundos, mientras que comprar una casa puede requerir un período de limpieza de 72 horas. La transferencia de una cuenta completa a un nuevo control puede demorar hasta 30 días. Los retrasos exactos elegidos corresponden a desarrolladores de aplicaciones y usuarios.
 
-## Recovery from Stolen Keys
+## Recuperación de Llaves Robadas
 
-The EOS.IO software provides users a way to restore control of their account when their keys are stolen. An account owner can use any owner key that was active in the last 30 days along with approval from their designated account recovery partner to reset the owner key on their account. The account recovery partner cannot reset control of the account without the help of the owner.
+El software EOS.IO proporciona a los usuarios una forma de restaurar el control de su cuenta cuando le son robadas las claves. El propietario de una cuenta puede usar cualquier clave de propietario que estuvo activa en los últimos 30 días junto con la aprobación de su asociado de recuperación de cuenta designado para restablecer la clave de propietario en su cuenta. El socio de recuperación de cuenta no puede restablecer el control de la cuenta sin la ayuda del propietario.
 
-There is nothing for the hacker to gain by attempting to go through the recovery process because they already "control" the account. Furthermore, if they did go through the process, the recovery partner would likely demand identification and multi-factor authentication (phone and email). This would likely compromise the hacker or gain the hacker nothing in the process.
+El hacker no tiene nada que ganar al intentar pasar por el proceso de recuperación porque ya "controlan" la cuenta. Además, si pasaran por el proceso, el socio de recuperación probablemente exigiría identificación y autenticación de múltiples factores (teléfono y correo electrónico). This would likely compromise the hacker or gain the hacker nothing in the process.
 
 This process is also very different from a simple multi-signature arrangement. With a multi-signature transaction, there is another company that is party to every transaction that is executed, but with the recovery process the agent is only a party to the recovery process and has no power over the day-to-day transactions. This dramatically reduces costs and legal liabilities for everyone involved.
 
