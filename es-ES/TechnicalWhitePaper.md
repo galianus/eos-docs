@@ -247,17 +247,17 @@ Algunas cuentas pueden ser capaces de procesar un mensaje en forma pasa/no pasa 
 
 ## Transacciones Atómicas con Múltiples Cuentas
 
-A veces es deseable asegurar que los mensajes son entregados a y aceptados por múltiples cuentas simultáneamente. En este caso los mensajes son colocados en una transacción y a ambas cuentas les serán asignadas el mismo hilo y los mensajes aplicarán secuencialmente. This situation is not ideal for performance and when it comes to "billing" users for usage, they will get billed by the number of unique accounts referenced by a transaction.
+A veces es deseable asegurar que los mensajes son entregados a y aceptados por múltiples cuentas simultáneamente. En este caso los mensajes son colocados en una transacción y a ambas cuentas les serán asignadas el mismo hilo y los mensajes aplicarán secuencialmente. La situación no es ideal para el funcionamiento cuando se trata de ¨facturar¨ usuarios por su uso, ellos serán facturados por el número de cuentas únicas referenciadas por la transacción.
 
-For performance and cost reasons it is best to minimize atomic operations involving two or more heavily utilized accounts.
+Por razones de rendimiento y costo es mejor minimizar las operaciones atómicas que involucran dos o mas cuentas fuertemente utilizadas.
 
-## Partial Evaluation of Blockchain State
+## Evaluación Parcial del Estado de la Blockchain
 
-Scaling blockchain technology necessitates that components are modular. Everyone should not have to run everything, especially if they only need to use a small subset of the applications.
+Escalar la tecnología Blockchain necesita que los componentes sean modulares. No todo el mundo debe ejecutar todo, especialmente si solo es necesario usar un pequeño subconjunto de aplicaciones.
 
-An exchange application developer runs full nodes for the purpose of displaying the exchange state to its users. This exchange application has no need for the state associated with social media applications. EOS.IO software allows any full node to pick any subset of applications to run. Messages delivered to other applications are safely ignored because an application's state is derived entirely from the messages that are delivered to it.
+Un desarrollador de aplicaciones de intercambio ejecuta nodos completos con el fin de mostrar el estado de cambio a sus usuarios. Esta aplicación de intercambio no necesita al estado asociado con aplicaciones de redes sociales. El software EOS.IO permite que cualquier nodo completo escoja un subconjunto de aplicaciones a ejecutar. Los mensajes entregados a otras aplicaciones son omitidos debido a que el estado de una aplicación es derivado enteramente de los mensajes que son entregados a esta.
 
-This has some significant implications on communication with other accounts. Most significantly it cannot be assumed that the state of the other account is accessible on the same machine. It also means that while it is tempting to enable "locks" that allow one account to synchronously call another account, this design pattern breaks down if the other account is not resident in memory.
+Esto tiene algunas implicaciones en la comunicación con otras cuentas. Most significantly it cannot be assumed that the state of the other account is accessible on the same machine. It also means that while it is tempting to enable "locks" that allow one account to synchronously call another account, this design pattern breaks down if the other account is not resident in memory.
 
 All state communication among accounts must be passed via messages included in the blockchain.
 
