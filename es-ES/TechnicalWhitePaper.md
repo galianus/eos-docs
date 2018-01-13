@@ -222,7 +222,7 @@ Parte de la ejecución paralela significa que cuando una secuencia de comandos g
 
 ## Minimizando la Latencia en la Comunicación
 
-La latencia es el tiempo que toma una cuenta en enviar un mensaje a otra cuenta y luego recibir una respuesta. The goal is to enable two accounts to exchange messages back and forth within a single block without having to wait 3 seconds between each message. To enable this, the EOS.IO software divides each block into cycles. Each cycle is divided into threads and each thread contains a list of transactions. Each transaction contains a set of messages to be delivered. This structure can be visualized as a tree where alternating layers are processed sequentially and in parallel.
+La latencia es el tiempo que toma una cuenta en enviar un mensaje a otra cuenta y luego recibir una respuesta. El objetivo es permitir que las dos cuentas intercambien mensajes de un lado a otro en un mismo bloque sin tener que esperar 3 segundos entre cada mensaje. Para permitir esto, el software de EOS.IO se divide cada bloque en ciclos. Cada ciclo está dividido en hilos y cada hilo contiene una lista de transacciones. Cada transacción contiene un conjunto de mensajes a ser entregados. Esta estructura puede visualizarse como un árbol donde las capas alternantes son procesadas secuencialmente y en paralelo.
 
         Block
     
