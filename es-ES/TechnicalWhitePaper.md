@@ -271,15 +271,15 @@ En general mientras al menos un productor considere la transacción como válida
 
 En algunos casos un productor puede crear un bloque que incluya transacciones que son un orden de magnitud fuera de los rangos aceptables. En este caso el siguiente productor de bloque puede optar por rechazar el bloque y el empate será roto por el tercer productor. Esto no es diferente de lo que sucedería si un bloque grande causase retardos de propagación en la red. La comunidad observaría un patrón de abuso y eventualmente removerá votos del productor incoherente.
 
-This subjective evaluation of computational cost frees the blockchain from having to precisely and deterministically measure how long something takes to run. With this design there is no need to precisely count instructions which dramatically increases opportunities for optimization without breaking consensus.
+La evaluación subjetiva del costo computacional libera a la Blockchain de tener que determinar precisamente y de medir con carácter determinista cuanto tiempo tardaría algo en ejecutarse. Con este diseño no hay necesidad de contar precisamente las instrucciones lo que incrementa dramáticamente las oportunidades de optimización sin romper el consenso.
 
-# Token Model and Resource Usage
+# Modelo de Fichas(Token) y Uso de Recursos
 
-**PLEASE NOTE: CRYPTOGRAPHIC TOKENS REFERRED TO IN THIS WHITE PAPER REFER TO CRYPTOGRAPHIC TOKENS ON A LAUNCHED BLOCKCHAIN THAT ADOPTS THE EOS.IO SOFTWARE. THEY DO NOT REFER TO THE ERC-20 COMPATIBLE TOKENS BEING DISTRIBUTED ON THE ETHEREUM BLOCKCHAIN IN CONNECTION WITH THE EOS TOKEN DISTRIBUTION.**
+**TENGA EN CUENTA: LAS FICHAS (TOKENS) CRIPTOGRÁFICAS MENCIONADAS EN ESTE DOCUMENTO SE REFIEREN A LAS FICHAS CRIPTOGRÁFICAS LANZADAS EN LA BLOCKCHAIN QUE ADOPTA EL SOFTWARE EOS.IO. NO SE REFIEREN A LAS FICHAS (TOKENS) DE COMPATIBILIDAD ERC-20 QUE ESTÁN SIENDO DISTRIBUIDAS SOBRE LA BLOCKCHAIN DE ETHEREUM EN RELACIÓN CON LA DISTRIBUCIÓN DE FICHAS EOS.**
 
-All blockchains are resource constrained and require a system to prevent abuse. With a blockchain that uses EOS.IO software, there are three broad classes of resources that are consumed by applications:
+Todas las Blockchains son limitadas por recursos y requieren un sistema para prevenir abusos. Con una Blockchain que use el software EOS.IO, hay tres clases de recursos consumidos por las aplicaciones:
 
-1. Bandwidth and Log Storage (Disk);
+1. Ancho de banda y almacenamiento de registros (disco duro);
 2. Computation and Computational Backlog (CPU); and
 3. State Storage (RAM).
 
