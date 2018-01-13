@@ -269,7 +269,7 @@ En un blockchain puesto en marcha adoptando el software EOS.IO, a nivel de red t
 
 En general mientras al menos un productor considere la transacción como válida y bajo los limites de recursos utilizables entonces todos los otros productores de bloques también la aceptarán, pero puede tardar hasta 1 minuto para que la transacción encuentre a ese productor.
 
-En algunos casos un productor puede crear un bloque que incluya transacciones que son un orden de magnitud fuera de los rangos aceptables. En este caso el siguiente productor de bloque puede optar por rechazar el bloque y el empate será roto por el tercer productor. This is no different than what would happen if a large block caused network propagation delays. The community would notice a pattern of abuse and eventually remove votes from the rogue producer.
+En algunos casos un productor puede crear un bloque que incluya transacciones que son un orden de magnitud fuera de los rangos aceptables. En este caso el siguiente productor de bloque puede optar por rechazar el bloque y el empate será roto por el tercer productor. Esto no es diferente de lo que sucedería si un bloque grande causase retardos de propagación en la red. La comunidad observaría un patrón de abuso y eventualmente removerá votos del productor incoherente.
 
 This subjective evaluation of computational cost frees the blockchain from having to precisely and deterministically measure how long something takes to run. With this design there is no need to precisely count instructions which dramatically increases opportunities for optimization without breaking consensus.
 
