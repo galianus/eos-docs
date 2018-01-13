@@ -1,85 +1,85 @@
-## EOS.IO Yazılımı Yol Haritası
+## EOS.IO Software Roadmap
 
-Bu doküman geliştirme planının çerçevesini kuşbakışı çizer ve versiyon 1.0'a doğru ilerleme kaydedildikçe güncellenecektir. Bilinmelidir ki, bu yol haritası sadece blok zinciri yazılımı için geçerli olup Faz 1'in tamamlanması ile birlikte kendi takımlarına ve kendilerine özgü yol haritalarına sahip olacak olan cüzdanlar, blok tarayıcılar gibi araç ve yardımcı yazılımlar için geçerli değildir.
+This document outlines the development plan from a high level and will be updated as progress is made toward version 1.0. It should be noted that this roadmap applies only to the blockchain software and not to the other tools and utilities such as wallets and block explorers which will have their own teams and dedicated roadmaps once Phase 1 is complete.
 
-***Bu dökümanda bulunan her şey taslak halindedir ve her an değiştirilebilir ve sadece bilgi amaçlı sunulmaktadır. block.one bu yol haritası içeriğindeki bilgilerin doğruluğunu garanti etmemektedir ve bilgiler açıktan veya ima yoluyla hiçbir beyanı veya garantiyi içermeksizin "olduğu gibi" sunulmuştur.***
+***Everything contained in this document is in draft form and subject to change at any time and provided for information purposes only. block.one does not guarantee the accuracy of the information contained in this roadmap and the information is provided “as is” with no representations or warranties, express or implied.***
 
-# Faz 1 - Asgari Uygun Test Ortamı - Yaz 2017
+# Phase 1 - Minimal Viable Testing Environment - Summer 2017
 
-Bu fazın amacı geliştiricilerin EOS.IO üzerinde uygulamaları oluşturmaya başlamaları ve test etmeleri için gereksinim duyacakları API'leri (Uygulama Programlama Arayüzü) belirlemektir. Geliştiricilerin uygulamalarını test etmeye başlayabilmesi için aşağıdakilerin tamamlanmış olması gerekir:
+The goal of this phase is to establish the APIs that developers will require to start building and testing applications on EOS.IO. In order for developers to start testing their applications they will require the following to be implemented:
 
-### Bağımsız Düğüm (Dan ve Nathan)
+### Standalone Node (Dan & Nathan)
 
-Bağımsız bir düğüm bir API sunarken bir test blok zinciri çalıştırır ve bloklar üretir. Bu düğümün herhangi bir P2P ağ kodu ile ilgilenmesi gerekmez.
+A standalone node operates a test blockchain and produces blocks while exposing an API. This node does not need to concern itself with any P2P networking code.
 
-### Doğal Sözleşmeler (Nathan)
+### Native Contracts (Nathan)
 
-EOS.IO yazılımı bir dizi doğal sözleşmeye sahiptir. Bunlar blok zincirinin çekirdek işlemlerini yöneten kontratlardır ve Web Assembly Arabirimi dışında bulunurlar. Bu kontratlar şunlardır:
+The EOS.IO software has a number of native contracts. These are contracts that manage the core operations of the blockchain and exist outside the Web Assembly interface. These contracts include:
 
-1. @eos - EOS token transferlerini yönetir
-2. @pay algoritması - kilitli EOS'ları, oylamaları ve Yapımcı Seçimlerini yönetir
-3. @sistem - izinleri, mesajları ve sözleşme kod güncellemelerini yönetir
+1. @eos - manages EOS token transfers
+2. @stake - manages locked EOS, voting, and Producer Election
+3. @system - manages permissions, messages, and contact code updates
 
-### Sanal Makine API'si (Dan)
+### Virtual Machine API (Dan)
 
-WebAssembly (WASM) ve WASM'a derlenen sözleşmeler blok zincirine belirlenmiş bir arayüz ile bağlanmalıdır. Geliştiricilerin EOS üzerinde gerçekten uygulamalar oluşturmaya başlaması bu API'ye ve onun nispeten stabil olmasına bağlıdır.
+Contracts are compiled to WebAssembly (WASM) and WASM must interface with the blockchain via a defined API. This API is what developers depend upon to build applications and be relatively stable before developers can really start to build on EOS.
 
-### RPC arabirimi (Arhag, Nathan)
+### RPC Interface (Arhag, Nathan)
 
-HTTP arayüzü üzerinden basit bir JSON RPC aracılığıyla geliştiricilerin hareketleri yayınlamasına ve uygulama durumunu sorgulamalarına olanak tanıyan mimari sağlanacaktır. Bu, test uygulamalarının yayınlanması ve etkileşimi için hayati önem taşımaktadır.
+A simple JSON RPC over HTTP interface will be provided that enables developers to broadcast transactions and query application state. This is critical for both publishing and interacting with test applications.
 
-### Komut Satırı Araçları (Arhag)
+### Command line Tools (Arhag)
 
-Komut satırı araçları RPC arabirimininin geliştirici derleme ortamları ile entegrasyonuna olanak sağlar.
+Command line tools facilitate integrating the RPC interface with developer build environments.
 
-### Temel Geliştirici Belgeleri (Josh)
+### Basic Developer Documentation (Josh)
 
-Geliştiricilere EOS.IO blok zincirleri üzerinde nasıl geliştirme yapmaya başlayacaklarını öğreten dökümanlardır. Bunlar WASM API, RPC Arabirimi ve Komut Satırı Araçları dökümanlarını içerir.
+Documents that teach developers how to get started with building on EOS.IO blockchains. This includes documentations of the WASM API, RPC Interface, and Command Line Tools.
 
-# Faz 2 - Asgari Uygun Test Ağı - Sonbahar 2017
+# Phase 2 - Minimal Viable Test Network - Fall 2017
 
-Faz 1'deki her şey sadece geliştiricinin kendi kodunu çalıştıran güvenilir bir ortam olduğunu varsayar. Bir test ağı kurulmasından önce birçok ilave özelliğin gerçekleştirilmesi ve test edilmesi gereklidir.
+Everything in Phase 1 assumes a trusted environment that only runs the developer's own code. Before a test network can be deployed several additional features need to be implemented and tested.
 
-### P2P Ağ Kodu (Phil)
+### P2P Network Code (Phil)
 
-Bu, iki bağımsız düğüm arasındaki blok zinciri durumunu senkronize etmekten sorumlu bir eklentidir.
+This is a plugin that is responsible for synchronizing the blockchain state between two standalone nodes.
 
-### WASM Sanitasyonu ve CPU düzeyinde güvenlik (Brian)
+### WASM Sanitation & CPU Sandboxing (Brian)
 
-Kayan nokta işlemleri ve sonsuz döngüler gibi deterministik olmayan davranışları denetlemek için WASM kodunun sanitize edilmesi gerekir.
+The WASM code needs to be sanitized to check for non-deterministic behavior such as floating point operations and infinite loops.
 
-### Kaynak Kullanımı Takibi ve Oran Sınırlaması (Arhag)
+### Resource Usage Tracking & Rate Limiting (Arhag)
 
-Kötüye kullanımı engellemek amacıyla kaynak izleme ve kullanım oranı takibi kullanıcıları EOS pay algoritmasına göre sınırlandırır.
+To prevent abuse the resource monitoring and usage tracking rate limits users according to staked EOS.
 
-### Başlangıç İmport Testi (DappHub)
+### Genesis Import Testing (DappHub)
 
-EOS Token Dağıtımı sürecinde veri çıkartmak ve bir başlangıç konfigürasyon dosyası oluşturmak için araçların geliştirilmesi gereklidir. Bu sayede Token Dağıtımına katılan herkesin bir miktar başlangıç test EOS'u (TEOS) edinmesi sağlanabilir.
+Tools need to be developed to export data from the EOS Token Distribution state and create a genesis configuration file. This will enable anyone participating in the Token Distribution to acquire some initial test EOS (TEOS).
 
-### Blok Zincirleri Arası İletişim (Nathan)
+### Interblockchain Communication (Nathan)
 
-Bu özellik aktarımlara ait Merkle hash işleminin doğru yürüdüğünün teyidini içerir.
+This feature involves verifying the Merkle hashing of transactions is proper.
 
-# Faz 3 - Test Etme ve Güvenlik Denetimleri - Kış 2017, İlkbahar 2018
+# Phase 3 - Testing & Security Audits - Winter 2017, Spring 2018
 
-Bu faz sırasında platform güvenlik sorunları ve hataların tespiti odakta tutularak yoğun bir teste tabi tutulacaktır. Faz 3 sonunda versiyon 1.0 etiketi verilecektir.
+During this phase the platform will undergo heavy testing with a focus on finding security issues and bug. At the end of Phase 3 version 1.0 will be tagged.
 
-### Örnek Uygulamaların Geliştirilmesi
+### Develop Example Applications
 
-Örnek uygulamalar platformun gerçek geliştiriciler tarafından ihtiyaç duyulan özelliklere sahip olduğunu kanıtlaması açısından için kritik öneme sahiptir.
+Example applications are critical to proving the platform provides the features required by real developers.
 
-### Başarılı Ağ Saldırıları için Ödüller
+### Bounties for Successfully Attacking Network
 
-Versiyon 1.0'ın istikrarlı olmasını garanti etmek için ağa spam, sanal makine açıkları, bug çökertmeleri ve deterministik olmayan davranışlar ile saldırılar gerekli olacaktır ve süreçte yoğun olarak yer alacaktır. 
+Attacking the network with spam, virtual machine exploits, and bug crashes, and non-deterministic behavior will be a heavily involved process but necessary to ensure that version 1.0 is stable.
 
-### Dil Desteği
+### Language Support
 
-WASM: C++, Rust, vb. dillerine derlenecek ilave diller için destek ekleme.
+Adding support for additional languages to be compiled to WASM: C++, Rust, etc.
 
-### Dökümantasyon ve Kılavuzlar
+### Documentation & Tutorials
 
-# Faz 4 - Paralel Optimizasyon - Yaz / Sonbahar 2018
+# Phase 4 - Parallel Optimization Summer / Fall 2018
 
-Stabil bir 1.0 ürünü yayınlandıktan sonra, paralel yürütme kodunun optimizasyonu çalışmalarına yöneleceğiz.
+After getting a stable 1.0 product released, we will move toward optimizing the code for parallel execution.
 
-# Faz 5 - Küme Uygulaması - Gelecek
+# Phase 5 - Cluster Implementation The Future
