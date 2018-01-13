@@ -257,7 +257,7 @@ Escalar la tecnología Blockchain necesita que los componentes sean modulares. N
 
 Un desarrollador de aplicaciones de intercambio ejecuta nodos completos con el fin de mostrar el estado de cambio a sus usuarios. Esta aplicación de intercambio no necesita al estado asociado con aplicaciones de redes sociales. El software EOS.IO permite que cualquier nodo completo escoja un subconjunto de aplicaciones a ejecutar. Los mensajes entregados a otras aplicaciones son omitidos debido a que el estado de una aplicación es derivado enteramente de los mensajes que son entregados a esta.
 
-Esto tiene algunas implicaciones en la comunicación con otras cuentas. Most significantly it cannot be assumed that the state of the other account is accessible on the same machine. It also means that while it is tempting to enable "locks" that allow one account to synchronously call another account, this design pattern breaks down if the other account is not resident in memory.
+Esto tiene algunas implicaciones en la comunicación con otras cuentas. Significativamente no puede ser asumido que el estado de la otra cuenta es accesible en la misma máquina. It also means that while it is tempting to enable "locks" that allow one account to synchronously call another account, this design pattern breaks down if the other account is not resident in memory.
 
 All state communication among accounts must be passed via messages included in the blockchain.
 
