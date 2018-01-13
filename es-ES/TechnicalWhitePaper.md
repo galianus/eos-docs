@@ -237,9 +237,9 @@ La latencia es el tiempo que toma una cuenta en enviar un mensaje a otra cuenta 
                                 Receptor y Cuentas Notificadas (paralelos)
     
 
-Las transacciones generadas en un ciclo se pueden entregar en cualquier ciclo subsecuente o bloque. Block producers will keep adding cycles to a block until the maximum wall clock time has passed or there are no new generated transactions to deliver.
+Las transacciones generadas en un ciclo se pueden entregar en cualquier ciclo subsecuente o bloque. Los Productores de Bloques siguen añadiendo ciclos al bloque hasta que el tiempo máximo pase o no hayan nuevas transacciones para ser entregadas.
 
-It is possible to use static analysis of a block to verify that within a given cycle no two threads contain transactions that modify the same account. So long as that invariant is maintained a block can be processed by running all threads in parallel.
+Es posible usar el análisis estático de un bloque para comprobar que dentro un ciclo dado dos hilos no pueden contener transacciones que modifican la misma cuenta. So long as that invariant is maintained a block can be processed by running all threads in parallel.
 
 ## Read-Only Message Handlers
 
