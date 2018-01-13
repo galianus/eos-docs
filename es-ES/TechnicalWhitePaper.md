@@ -224,17 +224,17 @@ Parte de la ejecución paralela significa que cuando una secuencia de comandos g
 
 La latencia es el tiempo que toma una cuenta en enviar un mensaje a otra cuenta y luego recibir una respuesta. El objetivo es permitir que las dos cuentas intercambien mensajes de un lado a otro en un mismo bloque sin tener que esperar 3 segundos entre cada mensaje. Para permitir esto, el software de EOS.IO se divide cada bloque en ciclos. Cada ciclo está dividido en hilos y cada hilo contiene una lista de transacciones. Cada transacción contiene un conjunto de mensajes a ser entregados. Esta estructura puede visualizarse como un árbol donde las capas alternantes son procesadas secuencialmente y en paralelo.
 
-        Block
+        Bloque
     
-          Cycles (sequential)
+          Ciclos(secuenciales)
     
-            Threads (parallel)
-    
-              Transactions (sequential)
-    
-                Messages (sequential)
-    
-                  Receiver and Notified Accounts (parallel)
+                    Hilos(paralelos)
+                        
+                        Transacciones(secuenciales)
+                                        
+                            Mensajes(secuenciales)
+                                
+                                Receptor y Cuentas Notificadas (paralelos)
     
 
 Transactions generated in one cycle can be delivered in any subsequent cycle or block. Block producers will keep adding cycles to a block until the maximum wall clock time has passed or there are no new generated transactions to deliver.
