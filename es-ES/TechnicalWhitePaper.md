@@ -239,15 +239,15 @@ La latencia es el tiempo que toma una cuenta en enviar un mensaje a otra cuenta 
 
 Las transacciones generadas en un ciclo se pueden entregar en cualquier ciclo subsecuente o bloque. Los Productores de Bloques siguen añadiendo ciclos al bloque hasta que el tiempo máximo pase o no hayan nuevas transacciones para ser entregadas.
 
-Es posible usar el análisis estático de un bloque para comprobar que dentro un ciclo dado dos hilos no pueden contener transacciones que modifican la misma cuenta. So long as that invariant is maintained a block can be processed by running all threads in parallel.
+Es posible usar el análisis estático de un bloque para comprobar que dentro un ciclo dado dos hilos no pueden contener transacciones que modifican la misma cuenta. Mientras esa invariante sea mantenida un bloque puede ser procesado mediante la ejecución de todos los hilos en paralelo.
 
-## Read-Only Message Handlers
+## Controladores de Mensajes de Sólo Lectura
 
-Some accounts may be able to process a message on a pass/fail basis without modifying their internal state. If this is the case then these handlers can be executed in parallel so long as only read-only message handlers for a particular account are included in one or more threads within a particular cycle.
+Algunas cuentas pueden ser capaces de procesar un mensaje en forma pasa/no pasa sin modificar sus estados internos. Si este es el caso entonces estos controladores pueden ser ejecutados en paralelos siempre y cuando los controladores de mensaje de sólo lectura sean incluidos en uno o más hilos en un ciclo particular.
 
-## Atomic Transactions with Multiple Accounts
+## Transacciones Atómicas con Múltiples Cuentas
 
-Sometimes it is desirable to ensure that messages are delivered to and accepted by multiple accounts atomically. In this case both messages are placed in one transaction and both accounts will be assigned the same thread and the messages applied sequentially. This situation is not ideal for performance and when it comes to "billing" users for usage, they will get billed by the number of unique accounts referenced by a transaction.
+A veces es deseable asegurar que los mensajes son entregados a y aceptados por múltiples cuentas simultáneamente. En este caso los mensajes son colocados en una transacción y a ambas cuentas les serán asignadas el mismo hilo y los mensajes aplicarán secuencialmente. This situation is not ideal for performance and when it comes to "billing" users for usage, they will get billed by the number of unique accounts referenced by a transaction.
 
 For performance and cost reasons it is best to minimize atomic operations involving two or more heavily utilized accounts.
 
