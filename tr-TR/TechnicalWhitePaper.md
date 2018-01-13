@@ -1,31 +1,31 @@
-# EOS.IO Teknik Döküman
+# EOS.IO Technical White Paper
 
-**26 Haziran 2017**
+**June 26, 2017**
 
-** Özet: </ 0> EOS.IO yazılımı, merkezi olmayan uygulamaların dikey ve yatay ölçeklenebilirliğini sağlamak üzere tasarlanmış yeni bir blok zinciri mimarisi sunar. Bu, üzerinde uygulamaların oluşturulabileceği işletim sistemi benzeri bir yapı oluşturularak sağlanır. Bu yazılım hesaplar, kimlik doğrulamaları, veritabanları, asenkron iletişim ve yüzlerce CPU çekirdeği veya kümesi arasında uygulamaların zamanlamalarını sağlar. Sonuçta ortaya çıkan teknoloji saniyede milyonlarca işlemi ölçeklendirebilen, kullanıcı ücretlerini ortadan kaldıran ve merkezi olmayan uygulamaların hızlı ve kolay bir şekilde kurulmasına izin veren bir blok zinciri mimarisidir.</p> 
+**Abstract:** The EOS.IO software introduces a new blockchain architecture designed to enable vertical and horizontal scaling of decentralized applications. This is achieved by creating an operating system-like construct upon which applications can be built. The software provides accounts, authentication, databases, asynchronous communication and the scheduling of applications across hundreds of CPU cores or clusters. The resulting technology is a blockchain architecture that scales to millions of transactions per second, eliminates user fees, and allows for quick and easy deployment of decentralized applications.
 
-**LÜTFEN DİKKAT: BU TEKNİK DÖKÜMANDA ANILAN KRİPTOGRAFİK TOKENLER EOS.IO YAZILIMI KULLANAN BİR BLOK ZİNCİRİNDEN BAŞLATILAN KRİPTOGRAFİK TOKENLERİ KASTETMEKTEDİR. EOS TOKEN DAĞITIMI İLE BAĞLANTILI OLARAK ETHEREUM BLOK ZİNCİRİNDE DAĞITILMAKTA OLAN ERC-20 UYUMLU TOKENLER İLE İLGİSİ YOKTUR.**
+**PLEASE NOTE: CRYPTOGRAPHIC TOKENS REFERRED TO IN THIS WHITE PAPER REFER TO CRYPTOGRAPHIC TOKENS ON A LAUNCHED BLOCKCHAIN THAT ADOPTS THE EOS.IO SOFTWARE. THEY DO NOT REFER TO THE ERC-20 COMPATIBLE TOKENS BEING DISTRIBUTED ON THE ETHEREUM BLOCKCHAIN IN CONNECTION WITH THE EOS TOKEN DISTRIBUTION.**
 
-Telif Hakkı © 2017 block.one
+Copyright © 2017 block.one
 
-Herkes izin almaksızın, orijinal kaynak ve geçerli telif hakkı bilgisini belirtmek koşuluyla, bu teknik dokümandaki herhangi bir materyali ticari amaçlı olmadan (kar amacı veya ticari amaç gütmeden) eğitim amaçlı olarak kullanabilir, çoğaltabilir veya dağıtabilir.
+Without permission, anyone may use, reproduce or distribute any material in this white paper for non-commercial and educational use (i.e., other than for a fee or for commercial purposes) provided that the original source and the applicable copyright notice are cited.
 
-**YASAL UYARI:** Bu EOS. IO teknik dokümanı yalnızca bilgi amaçlıdır. block.one bu teknik dokümanda varılan sonuçların doğruluğunu garanti etmemektedir ve bu teknik doküman "olduğu gibi" sunulmaktadır. block.one açıktan veya ima yolu ile hiçbir temsil yapmaz, garanti vermez, burada sayılanlarla birlikte ve bunlarla sınırlı olmaksızın: (i) ticari garantiler, belirli bir amaç için uyumluluk, uygunluk, kullanım, unvan veya hak ihlali; (ii) bu teknik dokümandaki bilgilerin hatasız oluşu; ve (iii) bu tür içeriklerin üçüncü taraf hakları ihlallerine ilişkin hukuki veya her ne şekilde olursa olsun her türlü temsil ve garantileri açıkça reddeder. block.one ve iştirakleri bu teknik dokümandan veya buradaki herhangi bir içeriğin zarar verme olasılığı olduğu belirtilmiş olsa dahi, kullanımından, referans gösterilmesinden, veya bu dokümana güvenilmesinden kaynaklanan hiç bir zararlardan yasal olarak sorumlu tutulamayacaklardır. Hiçbir durumda block.one veya iştirakleri bu teknik dokümanın veya burada bulunan, bunlarla sınırlı olmayan herhangi bir içeriğin kullanılması, referans alınması, güvenilmesi sonucunda oluşacak doğrudan veya dolaylı, netice olarak ortaya çıkmış, telafi edici, tesadüfi, fiili, örnek, cezai veya özel zararlar, kayıplar, yasal yükümlülükler, her türlü maliyet ve giderler, herhangi bir iş, gelir, kar, iyi niyet kaybı ve maddi olmayan diğer kayıplar için herhangi bir kişi veya kuruluşa karşı sorumlu olmayacaktır.
+**DISCLAIMER:** This EOS.IO Technical White Paper is for information purposes only. block.one does not guarantee the accuracy of or the conclusions reached in this white paper, and this white paper is provided “as is”. block.one does not make and expressly disclaims all representations and warranties, express, implied, statutory or otherwise, whatsoever, including, but not limited to: (i) warranties of merchantability, fitness for a particular purpose, suitability, usage, title or noninfringement; (ii) that the contents of this white paper are free from error; and (iii) that such contents will not infringe third-party rights. block.one and its affiliates shall have no liability for damages of any kind arising out of the use, reference to, or reliance on this white paper or any of the content contained herein, even if advised of the possibility of such damages. In no event will block.one or its affiliates be liable to any person or entity for any damages, losses, liabilities, costs or expenses of any kind, whether direct or indirect, consequential, compensatory, incidental, actual, exemplary, punitive or special for the use of, reference to, or reliance on this white paper or any of the content contained herein, including, without limitation, any loss of business, revenues, profits, data, use, goodwill or other intangible losses.
 
-- [Geçmiş](#background)
-- [Blok Zincirİ Uygulamaları için Gereksinimler](#requirements-for-blockchain-applications) 
-  - [Milyonlarca Kullanıcı Desteği](#support-millions-of-users)
-  - [Ücretsiz Kullanım](#free-usage)
-  - [Kolay Yükseltmeler ve Hata Kurtarma](#easy-upgrades-and-bug-recovery)
-  - [Düşük Gecikme](#low-latency)
-  - [Sıralı Performans](#sequential-performance)
-  - [Paralel Performans](#parallel-performance)
-- [Konsensüs Algoritması (DPOS)](#consensus-algorithm-dpos) 
-  - [Hareket Konfirmasyonu](#transaction-confirmation)
+- [Background](#background)
+- [Requirements for Blockchain Applications](#requirements-for-blockchain-applications) 
+  - [Support Millions of Users](#support-millions-of-users)
+  - [Free Usage](#free-usage)
+  - [Easy Upgrades and Bug Recovery](#easy-upgrades-and-bug-recovery)
+  - [Low Latency](#low-latency)
+  - [Sequential Performance](#sequential-performance)
+  - [Parallel Performance](#parallel-performance)
+- [Consensus Algorithm (DPOS)](#consensus-algorithm-dpos) 
+  - [Transaction Confirmation](#transaction-confirmation)
   - [Menfaati İspat olarak İşlem (TaPoS)](#transaction-as-proof-of-stake-tapos)
-- [Hesaplar](#accounts) 
+- [Accounts](#accounts) 
   - [Mesajlar & İşleyiciler](#messages--handlers)
-  - [Rol Tabanlı İzin Yönetimi](#role-based-permission-management) 
+  - [Role Based Permission Management](#role-based-permission-management) 
     - [İsimlendirilmiş İzin Seviyeleri](#named-permission-levels)
     - [İsimlendirilmiş Mesaj İşleyici Grupları](#named-message-handler-groups)
     - [İzin Haritası](#permission-mapping)
@@ -67,27 +67,27 @@ Herkes izin almaksızın, orijinal kaynak ve geçerli telif hakkı bilgisini bel
   - [Tamlığın Kanıtı](#proof-of-completeness)
 - [Sonuç](#conclusion)
 
-# Geçmiş
+# Background
 
-Blok zinciri teknolojisi 2008 yılında bitcoin para biriminin oluşturulmasıyla birlikte ortaya çıkmıştır ve o zamandan beri tek bir blok zinciri platformunda daha geniş bir uygulama yelpazesi desteklemek amacıyla bu teknoloji girişimciler ve geliştiriciler tarafından yaygınlaştırılmaya çalışılmaktadır.
+Blockchain technology was introduced in 2008 with the launch of the bitcoin currency, and since then entrepreneurs and developers have been attempting to generalize the technology in order to support a wider range of applications on a single blockchain platform.
 
-Bir dizi blok zinciri platformları fonksiyonel merkezi olmayan uygulamaları desteklemek için çalışırken, merkezi olmayan borsa BitShares (2014) ve sosyal medya platformu Steem (2016) gibi uygulamaya özgü blok zincirleri on binlerce günlük aktif kullanıcıya sahip olarak yoğun biçimde kullanılan blok zincirlerine dönüştü. Performansı saniyede binlerce harekete yükselterek, gecikmeyi 1,5 saniyeye indirerek, ücretleri ortadan kaldırarak ve mevcut merkezi hizmetlerin sunduğuna benzer kullanıcı deneyimleri sağlayarak bunu başarmışlardır.
+While a number of blockchain platforms have struggled to support functional decentralized applications, application specific blockchains such as the BitShares decentralized exchange (2014) and Steem social media platform (2016) have become heavily used blockchains with tens of thousands of daily active users. They have achieved this by increasing performance to thousands of transactions per second, reducing latency to 1.5 seconds, eliminating fees, and providing a user experience similar to those currently provided by existing centralized services.
 
-Mevcut blok zinciri platformları blok zincirinin yaygın kabulüne engel olan yüksek ücretler ve sınırlı hesaplama kapasiteleri nedeniyle ağır yük altındadırlar.
+Existing blockchain platforms are burdened by large fees and limited computational capacity that prevent widespread blockchain adoption.
 
-# Blok Zinciri Uygulamaları için Gereksinimler
+# Requirements for Blockchain Applications
 
-Yaygın kullanım sağlamak için blok zinciri üzerindeki uygulamaların aşağıdaki gereklilikleri sağlayacak kadar esnek bir platforma sahip olmaları gerekir:
+In order to gain widespread use, applications on the blockchain require a platform that is flexible enough to meet the following requirements:
 
-## Milyonlarca Kullanıcı Desteği
+## Support Millions of Users
 
-Ebay, Uber, AirBnB ve Facebook gibi karmaşık iş yürüten şirketler on milyonlarca aktif günlük kullanıcıyı işleyebilecek bir blok zincir teknolojisine ihtiyaç duyarlar. Bazı durumlarda, kritik sayıda kullanıcı kitlesine ulaşılmadığı taktirde uygulamalar çalışmayabilirler ve bu nedenle çok sayıda kullanıcıyı işleyebilecek bir platform çok önemlidir.
+Disrupting businesses such as Ebay, Uber, AirBnB, and Facebook, require blockchain technology capable of handling tens of millions of active daily users. In certain cases, applications may not work unless a critical mass of users is reached and therefore a platform that can handle mass number of users is paramount.
 
-## Ücretsiz Kullanım
+## Free Usage
 
 Uygulama geliştiricilerine, kullanıcılara ücretsiz hizmetler sunma esnekliği gerekir; kullanıcıları platformu kullanma veya hizmetlerinden yararlanmak için ödeme yapmamalı. Bir blok zinciri platformu kullanıcılar için ücretsiz olduğunda, muhtemelen daha fazla benimsenecektir. Geliştiriciler ve işletmeler daha sonra etkin kazanç stratejileri oluşturabilir.
 
-## Kolay Yükseltmeler ve Hata Kurtarma
+## Easy Upgrades and Bug Recovery
 
 Blok zinciri tabanlı uygulama üreten işletmeler yeni özellik geliştirmek için esnekliğe ihtiyaç duyar.
 
@@ -97,15 +97,15 @@ Açık olmayan yazılımlar, en titiz resmi doğrulamalarla bile hatalara açık
 
 İyi bir kullanıcı deneyimi, birkaç saniyeden fazla olmayan bir gecikmeyle güvenilir geri bildirim istemektedir. Daha uzun gecikmeler, kullanıcıları hayal kırıklığına uğratır ve uygulamaları, bir blok zinciri yapısında olmayan mevcut alternatiflerle daha rekabetçi hale getirir.
 
-## Sıralı Performans
+## Sequential Performance
 
 Sıralı bağımlı adımlar nedeniyle paralel algoritmalar uygulanamayan bazı uygulamalar vardır. Borsa tarzı uygulamalar, yüksek hacimleri idare etmek için yeterli miktarda sıralı performansa ihtiyaç duyar ve bu nedenle sıralı performansa sahip bir hızlı platform gereklidir.
 
-## Paralel Performans
+## Parallel Performance
 
-Büyük ölçekli uygulamalar, iş yükünü birden fazla CPU ve bilgisayar arasında bölmelidir.
+Large scale applications need to divide the workload across multiple CPUs and computers.
 
-# Konsensüs Algoritması (DPOS)
+# Consensus Algorithm (DPOS)
 
 EOS.IO yazılımı, blok zinciri üzerinde [Yetkili Menfaat Kanıtı, Delegated Proof of Stake(DPOS)](https://steemit.com/dpos/@dantheman/dpos-consensus-algorithm-this-missing-white-paper) uygulamalarının performans gereksinimlerini karşılayabilen, merkezi olmayan uzlaşma algoritmasını kullanır. Bu algoritma altında, EOS.IO yazılımının benimsediği blok zincirinde jetonlarını tutanlar, devam eden oylama sistemiyle blok üreticilerini seçebilirler. Herkes blok üretimine katılmayı seçebilir. Diğer üreticilerin ve kendilerinin aldıkları oylarla orantılı olarak blok üretmek için bir fırsat verilir. Özel blok zincirler için yönetim IT personelini eklemek veya çıkarmak için jetonları kullanabilir.
 
@@ -136,9 +136,9 @@ EOS.IO yazılımı, her işlemin, son bloğun üst bilgisindeki hash'i içermesi
 
 Zamanla tüm kullanıcılar, sahte zincirlerin işlemlerini, meşru zincirden geçiremeyecekleri için, sahte zincirlerin oluşturulmasını zorlaştıran blok zincirini doğrudan teyit ederler.
 
-# Hesaplar
+# Accounts
 
-EOS.IO yazılımı, tüm hesapların, 2 ila 32 karakter uzunluğunda, benzersiz ve okunabilir bir adla referans alınmasına izin verir. İsim hesap yaratıcısı tarafından seçilir. Tüm hesaplar, yaratıldıkları anda, hesap verilerini saklamanın maliyetini karşılamak için oluşturulan minimum hesap bakiyesiyle finanse edilmelidir. Hesap adları isim uzaylarını da destekler ve bu @domain kullanıcısının @user.domain hesabı oluşturabilen tek kişi olduğu anlamına gelir.
+EOS.IO yazılımı, tüm hesapların, 2 ila 32 karakter uzunluğunda, benzersiz ve okunabilir bir adla referans alınmasına izin verir. The name is chosen by the creator of the account. Tüm hesaplar, yaratıldıkları anda, hesap verilerini saklamanın maliyetini karşılamak için oluşturulan minimum hesap bakiyesiyle finanse edilmelidir. Hesap adları isim uzaylarını da destekler ve bu @domain kullanıcısının @user.domain hesabı oluşturabilen tek kişi olduğu anlamına gelir.
 
 Merkezi olmayan bir bağlamda, uygulama geliştiricileri, yeni bir kullanıcı kaydetmek için hesap oluşturma maliyetini öderler. Geleneksel işletmeler halihazırda müşteri edinmek için, reklamcılık, ücretsiz hizmetler vb. şeklinde önemli miktarda para harcıyorlar. Yeni bir blok zinciri hesabının fonlama maliyeti, bunlarla karşılaştırıldığında önemsiz kalır. Neyse ki, daha önce başka bir uygulamaya kaydolmuş kullanıcıların yeni hesap oluşturmasına gerek yoktur.
 
@@ -146,7 +146,7 @@ Merkezi olmayan bir bağlamda, uygulama geliştiricileri, yeni bir kullanıcı k
 
 Her hesap, yapılandırılmış mesajları diğer hesaplara gönderebilir ve mesajları alındıklarında işlemek için komut dosyaları tanımlayabilir. EOS.IO yazılımı, her hesaba yalnızca kendi mesaj işleyicileri tarafından erişilebilen, ona özel bir veritabanı verir. Mesaj işleme komut dosyaları da diğer hesaplara mesaj gönderebilir. Mesajların ve otomatik mesaj işleyicilerin kombinasyonu, EOS.IO'nun akıllı sözleşmeleri tanımlama biçimidir.
 
-## Rol Tabanlı İzin Yönetimi
+## Role Based Permission Management
 
 İzin yönetimi, bir mesajın düzgün şekilde yetkilendirilmiş olup olmadığını belirler. İzin yönetiminin en basit şekli, bir işlemin gerekli imzalarının bulunduğunu kontrol etmektir, ancak bu şu anlama gelmektedir; gerekli imzaları zaten bilinmektedir. Genel olarak yetki, bireylere veya birey gruplarına bağlıdır ve sıklıkla bölümlere ayrılmıştır. EOS.IO yazılımı, kimlerin ne zaman ne yapabileceği konusunda, hesapları ince bir hassasiyet ve yüksek seviyede kontrol eden bildirimsel bir izin yönetim sistemi sunmaktadır.
 
@@ -204,7 +204,7 @@ Daha sonra bu mesajlardan biri yayınlandığında kullanıcılar, e-posta veya 
 
 Gerekli gecikme, işlemin ne kadar hassas olduğuna bağlıdır. Kahve ödemesi saniyeler içinde ve geri dönüşsüz olarak yapabilir. Ev satın alırken 72 saatlik takas süresi gerekli olabilir. Bir hesabın tamamını yeni kontrole aktarmak 30 güne kadar sürebilir. Doğru bir gecikme süresi seçimi, geliştiricilere ve kullanıcılara kalmıştır.
 
-## Anahtar Çalınması Sonrası Kurtarma
+## Recovery from Stolen Keys
 
 EOS.IO yazılımı, kullanıcılara anahtarları çalındığında, hesaplarını kontrol etme imkanı sağlar. Bir hesap sahibi, hesabındaki owner anahtarını sıfırlamak için, belirlenen hesap kurtarma ortağının onayıyla birlikte, onun hesabında son 30 günde etkin olan herhangi bir owner anahtarını kullanabilir. Hesap kurtarma iş ortağı, hesap sahibin yardımı olmaksızın hesabın denetimini sıfırlayamaz.
 
@@ -273,9 +273,9 @@ Bazı durumlarda, bir üretici, kabul edilebilir aralıkların dışındaki büy
 
 Hesaplama maliyetin öznel olarak değerlendirilmesi, blok zincirini, tam ve belirli süre ölçme zorunluluğundan kurtarır. Bu tasarımla, fikir birliğine varmadan da optimizasyon için, fırsatlarını önemli ölçüde artıran, talimatların kesin sayımına gerek yoktur.
 
-# Token Modeli ve Kaynak Kullanımı
+# Jeton Modeli ve Kaynak Kullanımı
 
-**LÜTFEN DİKKAT: BU TEKNİK DÖKÜMANDA ANILAN KRİPTOGRAFİK TOKENLER EOS.IO YAZILIMI KULLANAN BİR BLOK ZİNCİRİNDEN BAŞLATILAN KRİPTOGRAFİK TOKENLERİ KASTETMEKTEDİR. EOS TOKEN DAĞITIMI İLE BAĞLANTILI OLARAK ETHEREUM BLOK ZİNCİRİNDE DAĞITILMAKTA OLAN ERC-20 UYUMLU TOKENLER İLE İLGİSİ YOKTUR.**
+**LÜTFEN DİKKAT: BU BEYAZ SAYFALARDA BELİRTİLEN KRİPTOGRAFİK TOKENLAR, EOS.IO YAZILIMINI KULLANAN BIR BLOK ZİNCİRİNDE ÇIKARILMIŞ KRİPTOGRAFİK TOKENLARA ATIF YAPMAKTADIR. THEY DO NOT REFER TO THE ERC-20 COMPATIBLE TOKENS BEING DISTRIBUTED ON THE ETHEREUM BLOCKCHAIN IN CONNECTION WITH THE EOS TOKEN DISTRIBUTION.**
 
 Tüm blok zincirlerinde kaynak kısıtlıdır ve kötüye kullanımı önlemek için bir sistem gerekir. EOS.IO yazılımını kullanan bir blok zincirinde, uygulamalar tarafından tüketilen üç geniş kaynak sınıfı vardır:
 
@@ -293,7 +293,7 @@ Blok üreticileri, bant genişliği, hesaplama ve durum için mevcut kapasiteler
 
 EOS.IO yazılımını benimseyen bir blok zincirinde, bant genişliği ve hesaplama kapasitesi bir kısmi rezerv olarak ayrılır, çünkü bunlar geçicidir (kullanılmayan kapasite gelecekte kullanılmak üzere kaydedilemez). EOS.IO yazılımı tarafından kullanılan algoritma, Steem tarafından kullanılan, hız limitli bant genişliği algoritmasına benzer.
 
-## Objektif ve Subjektif Ölçümler
+## Objective and Subjective Measurements
 
 Daha önce belirtildiği gibi, hesaplama kullanım araçlarının performans ve optimizasyon üzerinde önemli bir etkisi vardır; Bu nedenle, tüm kaynak kullanımı kısıtlamaları nihai olarak özneldir ve uygulamanın kendi algoritmalarına ve tahminlerine göre blok üreticileri tarafından yapılır.
 
@@ -321,15 +321,15 @@ Bant genişliği ve hesaplama devredilebilirken, uygulama durumunun depolanması
 
 Her kullanıcı hesabına belirli bir miktarda depolama alanı gerekir; Bu nedenle, her hesap minimum bir bakiye sağlamalıdır. Ağın depolama kapasitesi arttıkça bu minimum bakiye düşecektir.
 
-## Blok Ödülleri
+## Block Rewards
 
 EOS.IO yazılımını benimseyen bir blok zincirinde, her 1 blok üretildiğinde, blok üreticisi yeni bir jetonla ödüllendirilir. Bu koşullarda, oluşturulan jetonların sayısı, tüm blok üreticileri tarafından yayınlanmış, talep edilen edilen ücretin ortanca değerine göre belirlenir. EOS.IO yazılımı, üretici ödüllerininin, toplam jeton arzının yıllık % 5'ini geçmeyecek şekilde sınırlandırılması için ayarlanabilir.
 
-## Toplum Yararına Uygulamalar
+## Community Benefit Applications
 
 Kullanıcılar, EOS.IO yazılımına dayanan bir blok zincirine istinaden blok üreticilerini seçmenin yanı, sıra akıllı sözleşmeler olarak da bilinen 3 topluluk fayda uygulamasını seçebilirler. Yıllık olarak belirlenmiş arzın, belli bir yüzdesi kadar jeton, blok üreticilerine ödenen jetonlardan düşülür ve bunu bu 3 uygulama alır. Bu akıllı sözleşmeler, her uygulamanın jeton sahiplerinden aldığı oylarla orantılı olarak jeton alacaktır. Seçilen uygulamalar veya akıllı sözleşmeler, jeton sahipleri tarafından akıllı sözleşmelerle, yenileriyle değiştirilebilir.
 
-# Yönetim
+# Governance
 
 Yönetişim, insanların öznel algoritmalarla yakalanamayan öznel konularda fikir birliğine varma sürecidir. EOS.IO yazılımı tabanlı bir blok zinciri, blok üreticilerinin var olan etkisini, verimli bir şekilde yöneten bir yönetişim süreci uygular. Tanımlanmış bir yönetişim süreci bulunduğunda, önceki blok zincirleri, tahmin edilemeyen sonuçlarla sonuçlanacak geçici, gayrı resmi ve genellikle tartışmalı yönetişim süreçleri doğuyordu.
 
@@ -337,7 +337,7 @@ EOS.IO yazılımına dayanan bir blok zinciri, gücün, bu gücü blok üreticil
 
 Blok üreticilerin seçimi EOS.IO yazılımına gömülüdür. Blok zincirinde herhangi bir değişiklik yapılmadan önce bu blok üreticilerinin bunu onaylaması gerekir. Blok üreticileri, jeton sahipleri tarafından arzulanan değişiklikleri yapmayı reddederse oy kullanamazlar. Eğer blok üreticileri jeton sahiplerinin izni olmaksızın değişiklikler yaparsa, üretilmeyen tam düğüm doğrulayıcıları (borsalar vb.) Tüm değişikliği reddedecektir.
 
-## Hesapların Dondurulması
+## Freezing Accounts
 
 Bazen akıllı sözleşmeler anormal veya öngörülemeyen bir şekilde davranır ve amacında başarısız olur; Bazen bir uygulama veya hesap kabul edilemez miktarda kaynak tüketimine olanak tanıyan bir istismarı keşfedebilir. Bu tür sorunlar kaçınılmaz olarak ortaya çıktığında, blok üreticileri bu tür durumlarda düzeltme yetkisine sahiptir.
 
@@ -367,7 +367,7 @@ EOS.IO yazılımı, canonical/kurallı kaynak kodu ve anayasa tarafından tanım
 
 Varsayılan olarak EOS.IO yazılımının yapılandırması, yeni özellik eklemek için blok zinciri güncelleme işlemi 2-3 ay sürer. Anayasada değişikliği gerektirmeyen, kritik hataları düzeltmek için yapılan güncellemeler 1-2 ay sürebilir.
 
-### Acil Durum Değişiklikleri
+### Emergency Changes
 
 Blok üreticileri, kullanıcılara fiilen zarar veren bir hata veya güvenlik açığını düzeltmek için bir yazılım değişikliği yapılması gerekiyorsa, süreci hızlandırabilir. Genel olarak konuşursak, bazı hızlandırılmış hata düzeltmeleri ya da yeni özellik eklemeleri, anayasaya aykırı olabilir.
 
@@ -409,7 +409,7 @@ Ethereum geliştiricileri, kendilerine uygun sandbox ve determinizm sağlamak i�
 
 Bu sanal makine, mevcut akıllı sözleşmeler için kullanılmıştır ve bir EOS.IO tabanlı blok zincirinde çalışmak üzere uyarlanabilir. EVM sözleşmelerinin, kendi sandbox'ı içinde, EOS.IO blok zincirinde çalıştırılabileceği ve bazı uyarlamarla, diğer EOS.IO blok zinciri uygulamalarıyla iletişim kurabileceği akla uygundur.
 
-# Blok Zincirleri Arası İletişim
+# Inter Blockchain Communication
 
 EOS.IO yazılımı, bloklar arası iletişimi kolaylaştıracak şekilde tasarlanmıştır. Bunu, mesaj varlığının ve mesaj dizisinin kanıtlarını kolayca üretmesiyle başarılır. Bu kanıtlar, mesaj geçişi etrafında tasarlanmış bir uygulama mimarisiyle birleştiğinde, bloklar arası iletişim ve kanıt doğrulama detaylarının geliştiricilerden gizlenmesini sağlar.
 
@@ -439,6 +439,6 @@ Blok üreticileri, başka bir blok zinciriyle iletişim kurarken; bir işlemi, g
 
 Dıştaki blok zincirlerden merkle provaları kullanırken, işlenen tüm işlemlerin geçerli olduğunu bilmekle, hiçbir işlemin atlanıp atlanmadığını bilmek arasında önemli bir fark vardır. En son işlemlerin hepsinin bilinmekte olduğunu kanıtlamak imkansız olmakla birlikte, işlem geçmişi üzerinde boşluk olmadığını ispatlamak mümkündür. EOS.IO yazılımı, her hesaba iletilen her mesaja, bir sıra numarası atayarak bunu kolaylaştırır. Bir kullanıcı, bu sıra numaralarını, belirli bir hesaba yönelik tüm mesajların işlendiğini ve sırayla işleme tabi tutulduğunu kanıtlamak için kullanabilir.
 
-# Sonuç
+# Conclusion
 
 EOS.IO yazılımı, kanıtlanmış konseptler ve en iyi deneyimlerden tasarlanmıştır. Ve blok zinciri teknolojisindeki temel ilerlemeleri temsil etmektedir. Bu yazılım, merkezi olmayan uygulamaların kolayca dağıtılabileceği ve yönetilebileceği, küresel ölçekte ölçeklenebilir bir blok zinciri için bütüncül bir planın parçasıdır.
