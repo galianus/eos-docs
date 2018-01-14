@@ -407,11 +407,11 @@ Desarrolladores de Ethereum ya han comenzado a modificar Web Assembly para prove
 
 ### Máquina Virtual de Ethereum (MVE)
 
-This virtual machine has been used for most existing smart contracts and could be adapted to work within an EOS.IO blockchain. It is conceivable that EVM contracts could be run within their own sandbox inside an EOS.IO software-based blockchain and that with some adaptation EVM contracts could communicate with other EOS.IO software blockchain applications.
+Esta máquina virtual ha sido usada por la mayoría de los contratos inteligentes existentes y pueden ser adaptadas para trabajar dentro de una blockchain EOS.IO. Es concebible que los contratos MVE puedan correr dentro de su propio ambiente aislado en una Blockchain basada en el software EOS.IO y que con algunas adaptaiones los contratos MVE puedan comunicarse con otras aplicaciones de la blockchain basada en el software EOS.IO.
 
-# Inter Blockchain Communication
+# Comunicación Inter Blockchain
 
-EOS.IO software is designed to facilitate inter-blockchain communication. This is achieved by making it easy to generate proof of message existence and proof of message sequence. These proofs combined with an application architecture designed around message passing enables the details of inter-blockchain communication and proof validation to be hidden from application developers.
+El software EOS.IO está diseñada para facilitar la comunicación Inter-Blockchain. This is achieved by making it easy to generate proof of message existence and proof of message sequence. These proofs combined with an application architecture designed around message passing enables the details of inter-blockchain communication and proof validation to be hidden from application developers.
 
 <img align="right" src="http://eos.io/wpimg/Diagram1.jpg" width="362.84px" height="500px" />
 
