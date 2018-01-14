@@ -355,12 +355,12 @@ La constitución también define la intención de que el protocolo de código fu
 
 ## Actualizando el Protocolo & la Constitución
 
-The EOS.IO software defines a process by which the protocol as defined by the canonical source code and its constitution, can be updated using the following process:
+El software EOS.IO define un proceso por el cual el protocolo definido por el código fuente canónico y su constitución pueden ser actualizados utilizando el siguiente proceso:
 
-1. Block producers propose a change to the constitution and obtains 17/21 approval.
-2. Block producers maintain 17/21 approval for 30 consecutive days.
-3. All users are required to sign transactions using the hash of the new constitution.
-4. Block producers adopt changes to the source code to reflect the change in the constitution and propose it to the blockchain using the hash of a git commit.
+1. Los productores de bloques proponen un cambio a la constitución y obtiene aprobación 17/21.
+2. Los productores de bloques mantienen la aprobación 17/21 por 30 días consecutivos.
+3. Todos los usuarios están obligados a firmar las transacciones utilizando el hash de la nueva constitución.
+4. Los productores de bloques adoptan los cambios en el código fuente para reflejar el cambio en la constitución y lo proponen a la blockchain usando el hash de un compromiso git.
 5. Block producers maintain 17/21 approval for 30 consecutive days.
 6. Changes to the code take effect 7 days later, giving all full nodes 1 week to upgrade after ratification of the source code.
 7. All nodes that do not upgrade to the new code shut down automatically.
