@@ -2,7 +2,7 @@
 
 Bu belge, gelişme planının ana hatlarını, üst düzeyde özetlemektedir ve 1.0 sürümüne doğru ilerledikçe güncellenecektir. Bu yol haritasının, sadece blok zinciri yazılımına yönelik olduğuna dikkat edin, cüzdanlar ve blok kaşifleri gibi yardımcı servisler ve diğer araçlarla ilgili değildir. 1. Aşama tamamlandıktan sonra bunlar kendi ekiplerine ve yol haritalarına sahip olacaklar.
 
-***Bu belge içeriğinde her şey henüz taslak halindedir ve sadece bilgilendirme amaçlıdır. Her an değiştirilebilir. block.one does not guarantee the accuracy of the information contained in this roadmap and the information is provided “as is” with no representations or warranties, express or implied.***
+***Bu belge içeriğinde her şey henüz taslak halindedir ve sadece bilgilendirme amaçlıdır. Her an değiştirilebilir. block.one şirketi, bu yol haritasının içeriğindeki bilgilerin doğruluğunu garanti etmez ve bilgiler sarih veya zımni hiçbir beyan ya da garanti olmaksızın "olduğu gibi" sunulmuştur.***
 
 # Phase 1 - Minimal Viable Testing Environment - Summer 2017
 
