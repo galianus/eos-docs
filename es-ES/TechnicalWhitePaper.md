@@ -283,9 +283,9 @@ Todas las blockchains tienen recursos limitados y requieren un sistema para evit
 2. Computación y Acumulación Computacional (CPU); y
 3. Estado de Almacenamiento (RAM).
 
-Ancho de banda y cómputo tienen dos componentes, uso instantáneo y uso a largo plazo. Una Blockchain mantiene un registro de todos los mensajes y este registro es, en definitiva, descargado por todos los nodos completos. Con el registro de los mensajes es posible reconstruir el estado de todas las aplicaciones.
+El ancho de banda y la computación tienen dos componentes, el uso instantáneo y el uso a largo plazo. Un blockchain mantiene un registro de todos los mensajes y este registro finalmente se almacena y descarga por todos los nodos completos. Con el registro de mensajes es posible reconstruir el estado de todas las aplicaciones.
 
-La deuda computacional son cálculos que deben realizarse para regenerar el estado desde el registro de mensajes. Si la deuda computacional crece demasiado grande se vuelve necesario tomar fotos instantáneas del estado de la Blockchain y descartar la historia de la blockchain. Si la deuda computacional crece rápidamente entonces puedo tomar hasta 6 meses para volver a recrear 1 año de valor de las transacciones. It is critical, therefore, that the computational debt be carefully managed.
+La deuda computacional son cálculos que se deben realizar para regenerar el estado del registro de mensajes. Si la deuda computacional crece demasiado, será necesario tomar instantáneas del estado de la blockchain y descartar la historia de la blockchain. Si la deuda computacional crece demasiado rápido, puede llevar 6 meses repetir las transacciones por un año. Esto es crítico, por lo tanto, la deuda computacional debe ser cuidadosamente administrada.
 
 Blockchain state storage is information that is accessible from application logic. It includes information such as order books and account balances. If the state is never read by the application then it should not be stored. For example, blog post content and comments are not read by application logic so they should not be stored in the blockchain's state. Meanwhile the existence of a post/comment, the number of votes, and other properties do get stored as part of the blockchain's state.
 
