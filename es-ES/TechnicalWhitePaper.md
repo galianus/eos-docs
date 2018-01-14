@@ -222,28 +222,28 @@ Parte de la ejecución paralela significa que cuando una secuencia de comandos g
 
 ## Minimizando Latencia de Comunicación
 
-La latencia es el tiempo que le toma a una cuenta para enviar un mensaje a otra cuenta y luego recibir una respuesta. El objetivo es permitir que las dos cuentas intercambien mensajes de un lado a otro en un mismo bloque sin tener que esperar 3 segundos entre cada mensaje. Para permitir esto, el software de EOS.IO se divide cada bloque en ciclos. Cada ciclo está dividido en hilos y cada hilo contiene una lista de transacciones. Cada transacción contiene un conjunto de mensajes a ser entregados. Esta estructura puede visualizarse como un árbol donde las capas alternantes son procesadas secuencialmente y en paralelo.
+La latencia es el tiempo que le toma a una cuenta para enviar un mensaje a otra cuenta y luego recibir una respuesta. El objetivo es habilitar dos cuentas para poder intercambiar mensajes dentro y fuera de un bloque sin tener que esperar 3 segundos entre cada mensaje. Para habilitar esto, el software EOS.IO dividirá cada bloque en ciclos. Cada ciclo se divide en hilos y cada hilo contiene a su vez una lista de transacciones. Cada transacción contiene un conjunto de mensajes para que sean entregados. Esta estructura se puede visualizar como un árbol donde las capas alternas serán procesadas secuencialmente y en paralelo.
 
         Bloque
     
-          Ciclos(secuenciales)
+          Ciclos (secuenciales)
     
-                    Hilos(paralelos)
-                        
-                        Transacciones(secuenciales)
-                                        
-                            Mensajes(secuenciales)
-                                
-                                Receptor y Cuentas Notificadas (paralelos)
+            Hilos (paralelo)
+    
+              Transacciones (secuenciales)
+    
+                Mensajes (secuenciales)
+    
+                  Receptor y Cuentas Notificadas (paralelo)
     
 
-Las transacciones generadas en un ciclo se pueden entregar en cualquier ciclo subsecuente o bloque. Los Productores de Bloques siguen añadiendo ciclos al bloque hasta que el tiempo máximo pase o no hayan nuevas transacciones para ser entregadas.
+Las transacciones que son generadas en un ciclo se pueden entregar en cualquier ciclo o bloque subsiguiente. Los productores de bloques seguirán agregando ciclos a un bloque hasta que haya transcurrido el tiempo máximo del reloj o no existan nuevas transacciones generadas para entregar.
 
-Es posible usar el análisis estático de un bloque para comprobar que dentro un ciclo dado dos hilos no pueden contener transacciones que modifican la misma cuenta. Mientras esa invariante sea mantenida un bloque puede ser procesado mediante la ejecución de todos los hilos en paralelo.
+Es posible utilizar el análisis estático de un bloque para verificar si dentro de un ciclo dado no hay dos subprocesos que contengan transacciones que modifiquen la misma cuenta. Siempre que se mantenga este invariante, se puede procesar un bloque ejecutando todos los hilos en paralelo.
 
-## Controladores de Mensajes de Sólo Lectura
+## Controladores de Mensajes para Sólo Lectura
 
-Algunas cuentas pueden ser capaces de procesar un mensaje en forma pasa/no pasa sin modificar sus estados internos. Si este es el caso entonces estos controladores pueden ser ejecutados en paralelos siempre y cuando los controladores de mensaje de sólo lectura sean incluidos en uno o más hilos en un ciclo particular.
+Algunas cuentas pueden procesar un mensaje con aprobación o sin aprobación sin ver modificado su estado interno. De ser este es el caso, estos controladores se pueden ejecutar en paralelo, siempre que solo los controladores de mensajes de solo lectura para una cuenta en particular estén incluidos en uno o más subprocesos dentro de un ciclo en particular.
 
 ## Transacciones Atómicas con Múltiples Cuentas
 
