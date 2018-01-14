@@ -335,9 +335,9 @@ La gobernanza es el proceso mediante el cual las personas llegan a un consenso s
 
 Un blockchain basada en el software EOS.IO reconoce que la potencia se origina con los titulares de tokens que delegan esa potencia a los productores de bloques. A los productores de bloques se les concede una autoridad limitada y verificada para congelar cuentas, actualizar aplicaciones defectuosas y proponer cambios difíciles para el protocolo subyacente.
 
-Incrustar en el software EOS.IO es la elección de los productores de bloques. Antes de que se pueda realizar cualquier cambio en el blockchain, estos productores de bloque deben aprobarlo. If the block producers refuse to make changes desired by the token holders then they can be voted out. If the block producers make changes without permission of the token holders then all other non-producing full-node validators (exchanges, etc) will reject the change.
+Incrustar en el software EOS.IO es la elección de los productores de bloques. Antes de que se pueda realizar cualquier cambio en el blockchain, estos productores de bloque deben aprobarlo. Si los productores de bloque se niegan a realizar los cambios deseados por los poseedores de las fichas (tokens) entonces ellos pueden ser retirado mediante una votación. Si los productores de bloques hacen cambios sin el permiso de los poseedores de las fichas(tokens) entonces todos los otros validadores de nodos completos no productores(servicios de intercambio de criptomonedas, etc) rechazarán el cambio.
 
-## Freezing Accounts
+## Congelación de Cuentas
 
 Sometimes a smart contact behaves in an aberrant or unpredictable manner and fails to perform as intended; other times an application or account may discover an exploit that enables it to consume an unreasonable amount of resources. When such issues inevitably occur, the block producers have the power to rectify such situations.
 
