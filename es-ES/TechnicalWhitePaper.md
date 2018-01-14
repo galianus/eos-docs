@@ -345,9 +345,9 @@ Los productores de bloques en todas las Blockhains tienen el poder de selecciona
 
 ## Cambiar el Código de Cuenta
 
-When all else fails and an "unstoppable application" acts in an unpredictable manner, a blockchain using EOS.IO software allows the block producers to replace the account's code without hard forking the entire blockchain. Similar to the process of freezing an account, this replacement of the code requires a 17/21 vote of elected block producers.
+Cuando todo lo demás falla y una "aplicación indetenible" actúa de una forma impredecible, una Blockchain usando el software de IOS.IO permite a los productores reemplazar el código de la cuenta sin tener que actualizar la Blockchain entera. Parecido al proceso de congelar las cuentas, este reemplazo del código requiere de una votación 17/21 por los productores de bloques elegidos.
 
-## Constitution
+## Constitución
 
 The EOS.IO software enables blockchains to establish a peer-to-peer terms of service agreement or a binding contract among those users who sign it, referred to as a "constitution". The content of this constitution defines obligations among the users which cannot be entirely enforced by code and facilitates dispute resolution by establishing jurisdiction and choice of law along with other mutually accepted rules. Every transaction broadcast on the network must incorporate the hash of the constitution as part of the signature and thereby explicitly binds the signer to the contract.
 
