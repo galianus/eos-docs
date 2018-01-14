@@ -4,9 +4,9 @@ Bu belge, gelişme planının ana hatlarını, üst düzeyde özetlemektedir ve 
 
 ***Bu belge içeriğinde her şey henüz taslak halindedir ve sadece bilgilendirme amaçlıdır. Her an değiştirilebilir. block.one şirketi, bu yol haritasının içeriğindeki bilgilerin doğruluğunu garanti etmez ve bilgiler sarih veya zımni hiçbir beyan ya da garanti olmaksızın "olduğu gibi" sunulmuştur.***
 
-# Aşama 1 - Geçerli Minimum Seviye Uygun Sınama Ortamı - Yaz 2017
+# Aşama 1 - Geçerli Minimum Seviye için Sınama Ortamı - Yaz 2017
 
-The goal of this phase is to establish the APIs that developers will require to start building and testing applications on EOS.IO. In order for developers to start testing their applications they will require the following to be implemented:
+Bu aşamanın amacı, EOS.IO üzerinde uygulama oluşturmak ve test etmek için geliştiricilere gerekli olan API'ları oluşturmaktır. In order for developers to start testing their applications they will require the following to be implemented:
 
 ### Standalone Node (Dan & Nathan)
 
