@@ -385,15 +385,15 @@ El estado de la base de datos es también definido utilizando un esquema similar
 
 ## Separando Autenticación de Aplicación
 
-To maximize parallelization opportunities and minimize the computational debt associated with regenerating application state from the transaction log, EOS.IO software separates validation logic into three sections:
+Para maximizar las oportunidades de paralelización y minimizar la deuda computacional asociada con la regeneración del estado de la aplicación del registro de transacciones, el software EOS.IO separa la validación lógica en tres secciones:
 
-1. Validating that a message is internally consistent;
-2. Validating that all preconditions are valid; and
-3. Modifying the application state.
+1. Validar que un mensaje es internamente consistente;
+2. Validad que todas las precondiciones son válidas; y
+3. Modificar el estado de la aplicación.
 
-Validating the internal consistency of a message is read-only and requires no access to blockchain state. This means that it can be performed with maximum parallelism. Validating preconditions, such as required balance, is read-only and therefore can also benefit from parallelism. Only modification of application state requires write access and must be processed sequentially for each application.
+La validación de la consistencia interna de un mensaje es solamente leíble y requiere que no se tenga acceso al estado de la Blockchain. Esto significa que puede realizarse con paralelismo maximo. La validación de las precondiciones, como los fondos requeridos, es solamente leíble y, por lo tanto también se puede beneficiar del paralelismo. Solo modificaciones al estado de la aplicación requieren acceso de escritura y deben ser procesados secuencialmente por cada aplicación.
 
-Authentication is the read-only process of verifying that a message can be applied. Application is actually doing the work. In real time both calculations are required to be performed, however once a transaction is included in the blockchain it is no longer necessary to perform the authentication operations.
+Autenticación es el proceso de solo lectura de verificar que un mensaje pueda ser aplicado. La aplicación esté realmente haciendo el trabajo. Ambos cálculos requieren ser realizados en tiempo real, sin embargo una vez una transacción es incluida en la Blockchain ya no es necesario realizar las operaciones de autenticación.
 
 ## Virtual Machine Independent Architecture
 
