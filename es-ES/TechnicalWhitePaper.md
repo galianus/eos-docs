@@ -220,9 +220,9 @@ En un blockchain basado en software EOS.IO, el trabajo del productor de bloque c
 
 Parte de la ejecución paralela significa que cuando una secuencia de comandos genera un nuevo mensaje, no se entrega inmediatamente, sino que se programa para entregarse en el siguiente ciclo. La razón por la que no se puede entregar inmediatamente es porque el receptor puede estar modificando activamente su propio estado en otro hilo.
 
-## Minimizando la Latencia en la Comunicación
+## Minimizando Latencia de Comunicación
 
-La latencia es el tiempo que toma una cuenta en enviar un mensaje a otra cuenta y luego recibir una respuesta. El objetivo es permitir que las dos cuentas intercambien mensajes de un lado a otro en un mismo bloque sin tener que esperar 3 segundos entre cada mensaje. Para permitir esto, el software de EOS.IO se divide cada bloque en ciclos. Cada ciclo está dividido en hilos y cada hilo contiene una lista de transacciones. Cada transacción contiene un conjunto de mensajes a ser entregados. Esta estructura puede visualizarse como un árbol donde las capas alternantes son procesadas secuencialmente y en paralelo.
+La latencia es el tiempo que le toma a una cuenta para enviar un mensaje a otra cuenta y luego recibir una respuesta. El objetivo es permitir que las dos cuentas intercambien mensajes de un lado a otro en un mismo bloque sin tener que esperar 3 segundos entre cada mensaje. Para permitir esto, el software de EOS.IO se divide cada bloque en ciclos. Cada ciclo está dividido en hilos y cada hilo contiene una lista de transacciones. Cada transacción contiene un conjunto de mensajes a ser entregados. Esta estructura puede visualizarse como un árbol donde las capas alternantes son procesadas secuencialmente y en paralelo.
 
         Bloque
     
