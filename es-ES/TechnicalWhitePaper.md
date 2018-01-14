@@ -269,19 +269,19 @@ En un blockchain lanzado que adopta el software EOS.IO, a nivel de red se factur
 
 En general, siempre que 1 productor de bloques considere que una transacción es válida y está por debajo de los límites de uso de recursos, todos los demás productores de bloques también la aceptarán, pero la transacción puede demorar hasta 1 minuto en encontrar a ese productor.
 
-En algunos casos, un productor puede crear un bloque que incluya transacciones que son de un orden de magnitud fuera de los rangos aceptables. En este caso, el próximo productor de bloques puede optar por rechazar el bloque y el tercer productor romperá el empate. Esto no es diferente a lo que sucedería si un bloque grande causara retrasos en la propagación de la red. La comunidad observaría un patrón de abuso y eventualmente removerá votos del productor incoherente.
+En algunos casos, un productor puede crear un bloque que incluya transacciones que son de un orden de magnitud fuera de los rangos aceptables. En este caso, el próximo productor de bloques puede optar por rechazar el bloque y el tercer productor romperá el empate. Esto no es diferente a lo que sucedería si un bloque grande causara retrasos en la propagación de la red. La comunidad notaría un patrón de abuso y eventualmente eliminaría los votos asignados al productor deshonesto.
 
-La evaluación subjetiva del costo computacional libera a la Blockchain de tener que determinar precisamente y de medir con carácter determinista cuanto tiempo tardaría algo en ejecutarse. Con este diseño no hay necesidad de contar precisamente las instrucciones lo que incrementa dramáticamente las oportunidades de optimización sin romper el consenso.
+Esta evaluación subjetiva del costo computacional libera la blockchain de tener que medir de forma precisa y determinista cuánto tarda algo en ejecutarse. Con este diseño, no es necesario contar las instrucciones con precisión, lo que aumenta drásticamente las oportunidades de optimización sin romper el consenso.
 
-# Modelo de Fichas(Token) y Uso de Recursos
+# Modelo de Tokens (fichas) y Uso de Recursos
 
-**TENGA EN CUENTA: LAS FICHAS (TOKENS) CRIPTOGRÁFICAS MENCIONADAS EN ESTE DOCUMENTO SE REFIEREN A LAS FICHAS CRIPTOGRÁFICAS LANZADAS EN LA BLOCKCHAIN QUE ADOPTA EL SOFTWARE EOS.IO. NO SE REFIEREN A LAS FICHAS (TOKENS) DE COMPATIBILIDAD ERC-20 QUE ESTÁN SIENDO DISTRIBUIDAS SOBRE LA BLOCKCHAIN DE ETHEREUM EN RELACIÓN CON LA DISTRIBUCIÓN DE FICHAS EOS.**
+**TOME EN CUENTA: LOS TOKENS CRIPTOGRÁFICOS MENCIONADOS EN ESTE DOCUMENTO SE REFIEREN A LOS TOKENS CRIPTOGRÁFICoS EN UNA BLOCKCHAIN LANZADA QUE ADOPTA EL SOFTWARE EOS.IO. NO SE REFIEREN A LOS TOKENS COMPATIBLES ERC-20 DISTRIBUIDOS EN EL BLOCKCHIAN DE ETHEREUM EN RELACIÓN CON LA DISTRIBUCIÓN DE LOS TOKEN EOS.**
 
-Todas las Blockchains son limitadas por recursos y requieren un sistema para prevenir abusos. Con una Blockchain que use el software EOS.IO, hay tres clases de recursos consumidos por las aplicaciones:
+Todas las blockchains tienen recursos limitados y requieren un sistema para evitar el abuso. Con un blockchain que usa el software EOS.IO, hay tres clases amplias de recursos consumidos por las aplicaciones:
 
-1. Ancho de banda y almacenamiento de registros (disco duro);
-2. Cómputo y acumulación computacional (CPU); y
-3. Almacenamiento de información de estado (RAM).
+1. Ancho de banda y almacenamiento de registro (Disco);
+2. Computación y Acumulación Computacional (CPU); y
+3. Estado de Almacenamiento (RAM).
 
 Ancho de banda y cómputo tienen dos componentes, uso instantáneo y uso a largo plazo. Una Blockchain mantiene un registro de todos los mensajes y este registro es, en definitiva, descargado por todos los nodos completos. Con el registro de los mensajes es posible reconstruir el estado de todas las aplicaciones.
 
