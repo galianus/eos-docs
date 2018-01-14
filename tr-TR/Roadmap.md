@@ -6,11 +6,11 @@ Bu belge, gelişme planının ana hatlarını, üst düzeyde özetlemektedir ve 
 
 # Aşama 1 - Geçerli Minimum Seviye için Sınama Ortamı - Yaz 2017
 
-Bu aşamanın amacı, EOS.IO üzerinde uygulama oluşturmak ve test etmek için geliştiricilere gerekli olan API'ları oluşturmaktır. In order for developers to start testing their applications they will require the following to be implemented:
+Bu aşamanın amacı, EOS.IO üzerinde uygulama oluşturmak ve test etmek için geliştiricilere gerekli olan API'ları oluşturmaktır. Geliştiriciler, kendi uygulamalarını test etmeye başlamak için, aşağıdakilerin uygulanmasına ihtiyaç duyacaklardır:
 
-### Standalone Node (Dan & Nathan)
+### Tek başına bağımsız olarak çalışan Node / Düğüm (Dan & Nathan)
 
-A standalone node operates a test blockchain and produces blocks while exposing an API. This node does not need to concern itself with any P2P networking code.
+Bağımsız bir düğüm, API sunarken, bir test blok zincirini çalıştırır ve yeni bloklar üretir. Bu düğümün kendisinin herhangi bir P2P ağ koduyla ilgilenmesi gerekmez.
 
 ### Native Contracts (Nathan)
 
