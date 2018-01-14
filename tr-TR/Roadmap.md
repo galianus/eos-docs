@@ -4,7 +4,7 @@ Bu belge, gelişme planının ana hatlarını, üst düzeyde özetlemektedir ve 
 
 ***Bu belge içeriğinde her şey henüz taslak halindedir ve sadece bilgilendirme amaçlıdır. Her an değiştirilebilir. block.one şirketi, bu yol haritasının içeriğindeki bilgilerin doğruluğunu garanti etmez ve bilgiler sarih veya zımni hiçbir beyan ya da garanti olmaksızın "olduğu gibi" sunulmuştur.***
 
-# Phase 1 - Minimal Viable Testing Environment - Summer 2017
+# Aşama 1 - Geçerli Minimum Seviye Uygun Sınama Ortamı - Yaz 2017
 
 The goal of this phase is to establish the APIs that developers will require to start building and testing applications on EOS.IO. In order for developers to start testing their applications they will require the following to be implemented:
 
