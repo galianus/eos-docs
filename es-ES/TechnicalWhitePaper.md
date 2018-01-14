@@ -361,13 +361,13 @@ El software EOS.IO define un proceso por el cual el protocolo definido por el c�
 2. Los productores de bloques mantienen la aprobación 17/21 por 30 días consecutivos.
 3. Todos los usuarios están obligados a firmar las transacciones utilizando el hash de la nueva constitución.
 4. Los productores de bloques adoptan los cambios en el código fuente para reflejar el cambio en la constitución y lo proponen a la blockchain usando el hash de un compromiso git.
-5. Block producers maintain 17/21 approval for 30 consecutive days.
-6. Changes to the code take effect 7 days later, giving all full nodes 1 week to upgrade after ratification of the source code.
-7. All nodes that do not upgrade to the new code shut down automatically.
+5. Los productores de bloques mantienen la aprobación 17/21 por 30 días consecutivos.
+6. Cambios en el código toman efecto 7 días luego, dándoles a los nodos completos 1 semana para actualizarlo luego de la ratificación del código fuente.
+7. Todos los nodos que no se actualicen al nuevo código se apagarán automáticamente.
 
-By default configuration of the EOS.IO software, the process of updating the blockchain to add new features takes 2 to 3 months, while updates to fix non-critical bugs that do not require changes to the constitution can take 1 to 2 months.
+Por configuración predeterminada el software de EOS.IO, el proceso de actualización de la Blockchain para añadir nuevas funciones toma 2 a 3 meses, mientras actualizaciones para arreglar errores no críticos que no requieran cambios en la constitución toman 1 o 2 meses.
 
-### Emergency Changes
+### Cambios de Emergencia
 
 The block producers may accelerate the process if a software change is required to fix a harmful bug or security exploit that is actively harming users. Generally speaking it could be against the constitution for accelerated updates to introduce new features or fix harmless bugs.
 
