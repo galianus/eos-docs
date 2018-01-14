@@ -379,11 +379,11 @@ El software EOS.IO será ante todo una plataforma para coordinar la entrega de m
 
 Todos los mensajes enviados entre cuentas son definidos por un esquema que es parte del estado de consenso de la Blockchain. Este esquema permite la perfecta conversión entre binario y representación JSON de los mensajes.
 
-## Schema Defined Database
+## Base de Datos definida por esquema
 
-Database state is also defined using a similar schema. This ensures that all data stored by all applications is in a format that can be interpreted as human readable JSON but stored and manipulated with the efficiency of binary.
+El estado de la base de datos es también definido utilizando un esquema similar. Esto asegura que todos los datos almacenados por todas las aplicaciones estén en un formato que pueda ser interpretado como de alto nivel(leído por humanos) de tipo JSON pero almacenado y manipulado con la eficiencia del binario.
 
-## Separating Authentication from Application
+## Separando Autenticación de Aplicación
 
 To maximize parallelization opportunities and minimize the computational debt associated with regenerating application state from the transaction log, EOS.IO software separates validation logic into three sections:
 
