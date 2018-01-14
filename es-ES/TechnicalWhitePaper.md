@@ -247,17 +247,17 @@ Algunas cuentas pueden procesar un mensaje con aprobación o sin aprobación sin
 
 ## Transacciones Atómicas con Múltiples Cuentas
 
-A veces es deseable asegurar que los mensajes son entregados a y aceptados por múltiples cuentas simultáneamente. En este caso los mensajes son colocados en una transacción y a ambas cuentas les serán asignadas el mismo hilo y los mensajes aplicarán secuencialmente. La situación no es ideal para el funcionamiento cuando se trata de ¨facturar¨ usuarios por su uso, ellos serán facturados por el número de cuentas únicas referenciadas por la transacción.
+En algunas oportunidades es deseable asegurar que los mensajes sean entregados y aceptados por múltiples cuentas atómicamente. En estos casos, ambos mensajes se colocan en una transacción y a ambas se les asigna el mismo subproceso y los mensajes se aplicarán secuencialmente. Esta situación no es ideal para el rendimiento y, cuando se trata de "facturar" a los usuarios por el uso, se facturará por el número de cuentas únicas a las que se haga referencia en una transacción.
 
-Por razones de rendimiento y costo es mejor minimizar las operaciones atómicas que involucran dos o mas cuentas fuertemente utilizadas.
+Por razones de rendimiento y costo, es mejor minimizar las operaciones atómicas que involucren dos o más cuentas muy utilizadas.
 
 ## Evaluación Parcial del Estado de la Blockchain
 
-Escalar la tecnología Blockchain necesita que los componentes sean modulares. No todo el mundo debe ejecutar todo, especialmente si solo es necesario usar un pequeño subconjunto de aplicaciones.
+La escalada de la tecnología blockchain requiere que los componentes sean modulares. Todos no deberían tener que ejecutar todo, especialmente si solo necesitan usar un pequeño subconjunto de las aplicaciones.
 
-Un desarrollador de aplicaciones de intercambio ejecuta nodos completos con el fin de mostrar el estado de cambio a sus usuarios. Esta aplicación de intercambio no necesita al estado asociado con aplicaciones de redes sociales. El software EOS.IO permite que cualquier nodo completo escoja un subconjunto de aplicaciones a ejecutar. Los mensajes entregados a otras aplicaciones son omitidos debido a que el estado de una aplicación es derivado enteramente de los mensajes que son entregados a esta.
+Un desarrollador de aplicaciones de exchange ejecuta nodos completos con el fin de mostrar el estado del exchange a sus usuarios. Esta aplicación del exchange no necesita el estado asociado con las aplicaciones de redes sociales. El software EOS.IO permite que cualquier nodo completo seleccione cualquier subconjunto de aplicaciones para que sea ejecutado. Los mensajes entregados a otras aplicaciones se ignoran de forma segura porque el estado de una aplicación se deriva completamente de los mensajes que se le envían.
 
-Esto tiene algunas implicaciones en la comunicación con otras cuentas. Significativamente no puede ser asumido que el estado de la otra cuenta es accesible en la misma máquina. También significa que mientras es tentador para activar ¨cerraduras¨ que le permiten a una cuenta sincrónicamente llamar a otra cuenta, este patrón de diseño se descompone si la otra cuenta no es residente en la memoria.
+Esto tiene algunas implicaciones significativas en la comunicación con otras cuentas. Significativamente no puede ser asumido que el estado de la otra cuenta es accesible en la misma máquina. También significa que mientras es tentador para activar ¨cerraduras¨ que le permiten a una cuenta sincrónicamente llamar a otra cuenta, este patrón de diseño se descompone si la otra cuenta no es residente en la memoria.
 
 Toda la comunicación de estado entre cuenta debe pasar via mensajes incluidos en la Blockchain.
 
