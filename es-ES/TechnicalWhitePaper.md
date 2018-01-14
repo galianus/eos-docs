@@ -411,7 +411,7 @@ Esta máquina virtual ha sido usada por la mayoría de los contratos inteligente
 
 # Comunicación Inter Blockchain
 
-El software EOS.IO está diseñada para facilitar la comunicación Inter-Blockchain. This is achieved by making it easy to generate proof of message existence and proof of message sequence. These proofs combined with an application architecture designed around message passing enables the details of inter-blockchain communication and proof validation to be hidden from application developers.
+El software EOS.IO está diseñada para facilitar la comunicación Inter-Blockchain. Esto se logra haciendo que sea sencillo generar la prueba de la existencia del mensaje y prueba de la secuencia del mensaje. These proofs combined with an application architecture designed around message passing enables the details of inter-blockchain communication and proof validation to be hidden from application developers.
 
 <img align="right" src="http://eos.io/wpimg/Diagram1.jpg" width="362.84px" height="500px" />
 
