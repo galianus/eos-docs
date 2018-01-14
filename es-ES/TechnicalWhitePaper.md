@@ -327,15 +327,15 @@ Una blockchain que adopte el software EOS.IO otorgará nuevos tokens a un produc
 
 ## Aplicaciones de Beneficios Comunitarios
 
-Además de elegir a los productores de bloques, de acuerdo con un blockchain basado en el software EOS.IO, los usuarios pueden elegir 3 aplicaciones de beneficio comunitario también conocidas como contratos inteligentes. Estas 3 aplicaciones recibirán tokens de un porcentaje configurado anualmente del suministro de tokens menos los tokens que se han pagado para bloquear a los productores. These smart contracts will receive tokens proportional to the votes each application has received from token holders. The elected applications or smart contracts can be replaced by newly elected applications or smart contracts by token holders.
+Además de elegir a los productores de bloques, de acuerdo con un blockchain basado en el software EOS.IO, los usuarios pueden elegir 3 aplicaciones de beneficio comunitario también conocidas como contratos inteligentes. Estas 3 aplicaciones recibirán tokens de un porcentaje configurado anualmente del suministro de tokens menos los tokens que se han pagado para bloquear a los productores. Estos contratos inteligentes recibirán tokens proporcionales a los votos que cada aplicación ha recibido de los titulares de tokens. Las aplicaciones elegidas o los contratos inteligentes pueden ser reemplazados por aplicaciones recién elegidas o contratos inteligentes por titulares de tokens.
 
-# Governance
+# Gobernanza
 
-Governance is the process by which people reach consensus on subjective matters that cannot be captured entirely by software algorithms. An EOS.IO software-based blockchain implements a governance process that efficiently directs the existing influence of block producers. Absent a defined governance process, prior blockchains relied ad hoc, informal, and often controversial governance processes that result in unpredictable outcomes.
+La gobernanza es el proceso mediante el cual las personas llegan a un consenso sobre asuntos subjetivos que no pueden ser captados completamente por algoritmos de software. Un blockchain basado en software EOS.IO implementa un proceso de gobierno que dirige eficientemente la influencia existente de los productores de bloques. En ausencia de un proceso de gobernanza definido, las blockchain anteriores dependían de procesos de gobierno ad hoc, informales y, a menudo, muy controvertidos, que generaban resultados impredecibles.
 
-A blockchain based on the EOS.IO software recognizes that power originates with the token holders who delegate that power to the block producers. The block producers are given limited and checked authority to freeze accounts, update defective applications, and propose hard forking changes to the underlying protocol.
+Un blockchain basada en el software EOS.IO reconoce que la potencia se origina con los titulares de tokens que delegan esa potencia a los productores de bloques. A los productores de bloques se les concede una autoridad limitada y verificada para congelar cuentas, actualizar aplicaciones defectuosas y proponer cambios difíciles para el protocolo subyacente.
 
-Embedded into the EOS.IO software is the election of block producers. Before any change can be made to the blockchain these block producers must approve it. If the block producers refuse to make changes desired by the token holders then they can be voted out. If the block producers make changes without permission of the token holders then all other non-producing full-node validators (exchanges, etc) will reject the change.
+Incrustar en el software EOS.IO es la elección de los productores de bloques. Antes de que se pueda realizar cualquier cambio en el blockchain, estos productores de bloque deben aprobarlo. If the block producers refuse to make changes desired by the token holders then they can be voted out. If the block producers make changes without permission of the token holders then all other non-producing full-node validators (exchanges, etc) will reject the change.
 
 ## Freezing Accounts
 
