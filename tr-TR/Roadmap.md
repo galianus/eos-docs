@@ -12,7 +12,7 @@ Bu aşamanın amacı, EOS.IO üzerinde uygulama oluşturmak ve test etmek için 
 
 Bağımsız bir düğüm, API sunarken, bir test blok zincirini çalıştırır ve yeni bloklar üretir. Bu düğümün kendisinin herhangi bir P2P ağ koduyla ilgilenmesi gerekmez.
 
-### Native Contracts (Nathan)
+### Yerel Sözleşmeler (Nathan)
 
 The EOS.IO software has a number of native contracts. These are contracts that manage the core operations of the blockchain and exist outside the Web Assembly interface. These contracts include:
 
