@@ -311,23 +311,23 @@ Un titular de tokens en un blockchain lanzado que adopte el software EOS.IO que 
 
 ## Separación de los Costos de Transacción del Valor del Token
 
-Uno de los principales beneficios del software EOS.IO es que la cantidad de ancho de banda disponible para una aplicación es totalmente independiente de cualquier precio simbólico. Si el propietario de una aplicación posee un número relevante de tokens en una blockchain que adopta el software EOS.IO, entonces la aplicación puede ejecutarse indefinidamente dentro de un estado fijo y uso de ancho de banda. In such case, developers and users are unaffected from any price volatility in the token market and therefore not reliant on a price feed. In other words, a blockchain that adopts the EOS.IO software enables block producers to naturally increase bandwidth, computation, and storage available per token independent of the token's value.
+Uno de los principales beneficios del software EOS.IO es que la cantidad de ancho de banda disponible para una aplicación es totalmente independiente de cualquier precio simbólico. Si el propietario de una aplicación posee un número relevante de tokens en una blockchain que adopta el software EOS.IO, entonces la aplicación puede ejecutarse indefinidamente dentro de un estado fijo y uso de ancho de banda. En tal caso, los desarrolladores y usuarios no se ven afectados por la volatilidad de los precios en el mercado de tokens y, por lo tanto, no dependen de un precio de alimentación. En otras palabras, un blockchain que adopta el software EOS.IO permite a los productores de bloques aumentar de forma natural el ancho de banda, el cálculo y el almacenamiento disponibles por token independientemente del valor del token.
 
-A blockchain using EOS.IO software also awards block producers tokens every time they produce a block. The value of the tokens will impact the amount of bandwidth, storage, and computation a producer can afford to purchase; this model naturally leverages rising token values to increase network performance.
+Una blockchain que usa el software EOS.IO también otorga tokens a los productores de bloques cada vez que producen un bloque. El valor de los tokens tendrá un impacto en la cantidad de ancho de banda, almacenamiento y computación que un productor puede permitirse comprar; este modelo aprovechará de forma natural los valores de token ascendentes para aumentar el rendimiento de la red.
 
-## State Storage Costs
+## Costos de Almacenamiento del Estado
 
-While bandwidth and computation can be delegated, storage of application state will require an application developer to hold tokens until that state is deleted. If state is never deleted then the tokens are effectively removed from circulation.
+Si bien se puede delegar el ancho de banda y el cálculo, el almacenamiento del estado de la aplicación requerirá que el desarrollador de la aplicación tenga tokens hasta que se elimine ese estado. Si el estado nunca se elimina, los tokens se eliminan efectivamente de la circulación.
 
-Every user account requires a certain amount of storage; therefore, every account must maintain a minimum balance. As storage capacity of the network increases this minimum required balance will fall.
+Cada cuenta de usuario requiere una cierta cantidad de almacenamiento; por lo tanto, cada cuenta debe mantener un saldo mínimo. A medida que la capacidad de almacenamiento de la red aumenta, este mínimo requerido se reducirá.
 
-## Block Rewards
+## Recompensas de Bloque
 
-A blockchain that adopts the EOS.IO software will award new tokens to a block producer every time a block is produced. In these circumstances, the number of tokens created is determined by the median of the desired pay published by all block producers. The EOS.IO software may be configured to enforce a cap on producer awards such that the total annual increase in token supply does not exceed 5%.
+Una blockchain que adopte el software EOS.IO otorgará nuevos tokens a un productor de bloques cada vez que se produzca un bloque. En estas circunstancias, el número de tokens creados está determinado por la media del salario deseado publicado por todos los productores de bloques. El software EOS.IO puede configurarse para imponer un tope a los premios al productor de manera que el aumento anual total en el suministro del token no exceda el 5%.
 
-## Community Benefit Applications
+## Aplicaciones de Beneficios Comunitarios
 
-In addition to electing block producers, pursuant to a blockchain based on the EOS.IO software, users can elect 3 community benefit applications also known as smart contracts. These 3 applications will receive tokens of up to a configured percent of the token supply per annum minus the tokens that have been paid to block producers. These smart contracts will receive tokens proportional to the votes each application has received from token holders. The elected applications or smart contracts can be replaced by newly elected applications or smart contracts by token holders.
+Además de elegir a los productores de bloques, de acuerdo con un blockchain basado en el software EOS.IO, los usuarios pueden elegir 3 aplicaciones de beneficio comunitario también conocidas como contratos inteligentes. Estas 3 aplicaciones recibirán tokens de un porcentaje configurado anualmente del suministro de tokens menos los tokens que se han pagado para bloquear a los productores. These smart contracts will receive tokens proportional to the votes each application has received from token holders. The elected applications or smart contracts can be replaced by newly elected applications or smart contracts by token holders.
 
 # Governance
 
