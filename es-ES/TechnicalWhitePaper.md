@@ -349,11 +349,11 @@ Cuando todo lo demás falla y una "aplicación indetenible" actúa de una forma 
 
 ## Constitución
 
-The EOS.IO software enables blockchains to establish a peer-to-peer terms of service agreement or a binding contract among those users who sign it, referred to as a "constitution". The content of this constitution defines obligations among the users which cannot be entirely enforced by code and facilitates dispute resolution by establishing jurisdiction and choice of law along with other mutually accepted rules. Every transaction broadcast on the network must incorporate the hash of the constitution as part of the signature and thereby explicitly binds the signer to the contract.
+El software EOS.IO permite a las Blockchains establecer términos de servicio P2P (usuario-usuario) o un contrato vinculando entre aquellos que lo firme, referido como una "constitución". El contenido de esta constitución define las obligaciones entre los usuarios que no pueden aplicarse enteramente por código y facilita la resolución de conflictos al establecer una jurisdicción y ley junto con tras reglas mutualmente aceptadas. Cada transacción enviada en la red debe incorporar el hash de la constitución como parte de sus firma y así expresamente se une el firmante al contrato.
 
-The constitution also defines the human-readable intent of the source code protocol. This intent is used to identify the difference between a bug and a feature when errors occur and guides the community on what fixes are proper or improper.
+La constitución también define la intención de que el protocolo de código fuente sea leído por humanos. Esta intención es usada para identificar la diferencia entre un error y una función cuando se producen errores y guía a la comunidad en que arreglos son los adecuados o los inadecuados.
 
-## Upgrading the Protocol & Constitution
+## Actualizando el Protocolo & la Constitución
 
 The EOS.IO software defines a process by which the protocol as defined by the canonical source code and its constitution, can be updated using the following process:
 
