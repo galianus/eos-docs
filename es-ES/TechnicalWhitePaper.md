@@ -369,15 +369,15 @@ Por configuración predeterminada el software de EOS.IO, el proceso de actualiza
 
 ### Cambios de Emergencia
 
-The block producers may accelerate the process if a software change is required to fix a harmful bug or security exploit that is actively harming users. Generally speaking it could be against the constitution for accelerated updates to introduce new features or fix harmless bugs.
+Los productores de bloques pueden acelerar el proceso si un cambio de software es requerida para arreglar un error o exploit de seguridad que este activamente dañando a los usuarios. Generalmente hablando podría estar en contra de la constitución realizar actualizaciones aceleradas para introducir nuevas funcione o arreglar errores inofensivos.
 
-# Scripts & Virtual Machines
+# Máquinas Virtuales & Scripts
 
-The EOS.IO software will be first and foremost a platform for coordinating the delivery of authenticated messages to accounts. The details of scripting language and virtual machine are implementation specific details that are mostly independent from the design of the EOS.IO technology. Any language or virtual machine that is deterministic and properly sandboxed with sufficient performance can be integrated with the EOS.IO software API.
+El software EOS.IO será ante todo una plataforma para coordinar la entrega de mensajes autenticados a cuentas. Los detalles de este lenguaje y máquina virtual son implementaciones específicas que en su mayoía son independientes del diseño de la tecnología EOS.IO. Cualquier lenguaje o máquina virtual que sea determinista y propiamente aislada con un rendimiento suficiente puede ser integrada al API del software EOS.IO.
 
-## Schema Defined Messages
+## Mensajes Definidos por Esquema
 
-All messages sent between accounts are defined by a schema which is part of the blockchain consensus state. This schema allows seamless conversion between binary and JSON representation of the messages.
+Todos los mensajes enviados entre cuentas son definidos por un esquema que es parte del estado de consenso de la Blockchain. Este esquema permite la perfecta conversión entre binario y representación JSON de los mensajes.
 
 ## Schema Defined Database
 
