@@ -395,17 +395,17 @@ La validación de la consistencia interna de un mensaje es solamente leíble y r
 
 Autenticación es el proceso de solo lectura de verificar que un mensaje pueda ser aplicado. La aplicación esté realmente haciendo el trabajo. Ambos cálculos requieren ser realizados en tiempo real, sin embargo una vez una transacción es incluida en la Blockchain ya no es necesario realizar las operaciones de autenticación.
 
-## Virtual Machine Independent Architecture
+## Arquitectura Independiente de la Máquina Virtual
 
-It is the intention of the EOS.IO software-based blockchain that multiple virtual machines can be supported and new virtual machines added over time as necessary. For this reason, this paper will not discuss the details of any particular language or virtual machine. That said, there are two virtual machines that are currently being evaluated for use with an EOS.IO software-based blockchain.
+Es la intención de la blockchain basade en el software EOS.IO que múltiples máquinas virtuales puedan ser sostenidas y nuevas máquinas virtuales añadidas con el tiempo que sea necesario. Por esta razón este trabajo no discutirá los detalles de un lenguaje particular o máquina virtual. Dicho esto, hay dos máquinas virtuales que actualmente están siendo evaluadas para su uso con las blockchains basadas en el software EOS.IO.
 
 ### Web Assembly (WASM)
 
-Web Assembly is an emerging web standard for building high performance web applications. With a few small modifications Web Assembly can be made deterministic and sandboxed. The benefit of Web Assembly is the widespread support from industry and that it enables contracts to be developed in familiar languages such as C or C++.
+¨Web Assembly" es un estándar web emergente para la construcción de aplicaciones web de alto rendimiento. Con algunas pequeñas modificaciones Web Assembly puede volverse determista y aislado. El beneficio de Web Assembly es el apoyo generalizado de la industria y que permite que contratos sean desarrollados en lenguajes familiares como C o C++.
 
-Ethereum developers have already begun modifying Web Assembly to provide suitable sandboxing and determinism in with their [Ethereum flavored Web Assembly (WASM)](https://github.com/ewasm/design). This approach can be easily adapted and integrated with EOS.IO software.
+Desarrolladores de Ethereum ya han comenzado a modificar Web Assembly para proveer un ambiente aislado y determinista con su [Web Assembly (WASM) Ethereum](https://github.com/ewasm/design). Este enfoque puede ser fácilmente adoptado e integrado con el software EOS.IO.
 
-### Ethereum Virtual Machine (EVM)
+### Máquina Virtual de Ethereum (MVE)
 
 This virtual machine has been used for most existing smart contracts and could be adapted to work within an EOS.IO blockchain. It is conceivable that EVM contracts could be run within their own sandbox inside an EOS.IO software-based blockchain and that with some adaptation EVM contracts could communicate with other EOS.IO software blockchain applications.
 
