@@ -75,21 +75,21 @@
 
 موجودہ بلاکچین پلیٹ فارم بھاری فیس کے دباؤ میں ھے جس وجہ سے صارفین اس کو بڈے پیمانے پر استعمال کرنے سے کتراتے ھے.
 
-# Requirements for Blockchain Applications
+# بلاکچین اپلیکیشنز کے لیے ضروریات
 
-In order to gain widespread use, applications on the blockchain require a platform that is flexible enough to meet the following requirements:
+بڈے پیمانے پر اس کا استعمال کرنے کے لئے بلاکچین کو ایک اچھے پلیٹ فارم کی ضرورت ہے جو کافی لچک دار ھو اس کے لیے مندرجہ ذیل عکوپمنٹس درکار ضروریات درکار ہے:
 
-## Support Millions of Users
+## لاکھوں صارفین کی حمایت حاصل کرنا
 
-Disrupting businesses such as Ebay, Uber, AirBnB, and Facebook, require blockchain technology capable of handling tens of millions of active daily users. In certain cases, applications may not work unless a critical mass of users is reached and therefore a platform that can handle mass number of users is paramount.
+سوشل نیٹ ورکنگ ویب سائٹ جیسے ای بے، عبر، AirBnB, اور فیس بک کا کاروبار تباہ کرنے کے لیے، بلاکچین کے زیر اہتمام لاکھوں لوگ اس کا استعمال کرتے ہیں. کچھ معاملات میں اپلیکیشن تب تک کام نہیں کرتی جب تک صارفین کی ایک مخصوص تعداد نہ آجائے لہذا ایک ایسے پلیٹ فارم کو اہمیت دی جاتی ہے جو زیادہ سے زیادہ صارفین کا دباؤ سحن کر سکے.
 
-## Free Usage
+## مفت استعمال
 
-Application developers need the flexibility to offer users free services; users should not have to pay in order to use the platform or benefit from its services. A blockchain platform that is free to use for users will likely gain more widespread adoption. Developers and businesses can then create effective monetization strategies.
+صارفین کو مفت خدمات فراہم کرنے کے لیے اپلیکیشن ڈیولپرس کو لچک کی ضرورت ہے؛ سارفین کو پلیٹ فارم کا استعمال کرنے اور اس سے فائدہ اٹھانے کے لیے فیس ادا نہیں کرنی ھو گی. ایسا بلاکچین پلیٹ فارم جو صارف کے لیے مفت دستیاب ھو سارفین اس کو بڈی تیزی سے اپنائے گے. کاروباری اور ڈیولپرس اس کے بعد موثر حکمت عملی بنا سکتے ہیں.
 
-## Easy Upgrades and Bug Recovery
+## آسان ترقی اور بگ کی وصولی
 
-Businesses building blockchain based applications need the flexibility to enhance their applications with new features.
+کاروبار پر مبنی تعمیراتی پلاکچین اپلیکیشنز کو بڈھاوا دینے کے لیے اپلیکیشنز میں لچک کی ضرورت ہے-.
 
 All non-trivial software is subject to bugs, even with the most rigorous of formal verification. The platform must be robust enough to fix bugs when they inevitably occur.
 
