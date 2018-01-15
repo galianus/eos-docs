@@ -1,14 +1,14 @@
-## EOS ۔ IO سافٹ ویئرروڈ میپ
+## IO.EOS سوفٹؤر روڈ میپ
 
 یہ دستاویز ترقیاتی منصوبہ بندی سے ایک اونچی سطحی شے اور ورژن 1.0 کی جانب گامزن ھے اور تازہ کی جایے گی. یہ دھیان رکھیی کہ یی میپ صرف بلاکچین سوفٹوئد کے بارے میی ھے نہ کہ باقی اوزار اور افادیت جیسے کہ بٹوے اور بلاک ایکسپلورر جنکے پاس اپنی ٹیمیے اور وقفشدہ میپ ہیں ایک بار فیز 1 مکمل ھوجایے.
 
-***اس دستاویزمین موجود تمام معلومات ڈرافٹ یعنی مسودے پر کی صورت میں ھے جو کسی بھی وقت تبدیل کی جاسکتی ھے اور یہ محض معلوماتی مقاصد کے لیے فراہم کی جاتی ھے".". block.one does not guarantee the accuracy of the information contained in this roadmap and the information is provided “as is” with no representations or warranties, express or implied.***
+***اس دستاویزمین موجود تمام معلومات ڈرافٹ یعنی مسودے پر کی صورت میں ھے جو کسی بھی وقت تبدیل کی جاسکتی ھے اور یہ محض معلوماتی مقاصد کے لیے فراہم کی جاتی ھے".". دستاویز میں موجود اول نقطہ معلومات کی درستگی بےجوفراھم کی جاتی ہے " جیسا کہ" کویی نمایندگی یاکسی چیز کے صحیح یا کھرے ھونے کی ضمانت، ظاہر کرنا یا مضمر کے ساتھ اس بات کی کویی ضمانت نھی.***
 
-# Phase 1 - Minimal Viable Testing Environment - Summer 2017
+# پھلا مرحلہ-موسم گرما 2017-کم سے کم قابلِ عمل؛ماحولیاتی جانچ
 
-The goal of this phase is to establish the APIs that developers will require to start building and testing applications on EOS.IO. In order for developers to start testing their applications they will require the following to be implemented:
+اس مرحلے کا مقصد ان APIs کو تشکیل دینا ہے جو تعمیر کرنے والوں کو EOS. IO کی بناوٹ اور اس کی جانچ میں ضرورت ہونگے. درخواستوں کی جانچ شروع کر کے لیے ڈیولپرز کومندر جہ زیل معاہدے پر عمل کرنا ہوگا:
 
-### Standalone Node (Dan & Nathan)
+### کسی سسٹم سے الگ آزادانہ طور پر کام کرنا ہوگا (Dan & Nathan)
 
 A standalone node operates a test blockchain and produces blocks while exposing an API. This node does not need to concern itself with any P2P networking code.
 
