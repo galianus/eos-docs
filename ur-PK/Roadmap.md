@@ -74,12 +74,12 @@ WASM کوڈ کی صفائی کے لیے سیال نقطہ کاروایوں او�
 
 ### زبانی معاونت
 
-Adding support for additional languages to be compiled to WASM: C++, Rust, etc.
+WASM کے ساتھ مزید زبانوں کو منسلک کرنا اور حمایت کا اضافہ C++, Rust, etc.
 
-### Documentation & Tutorials
+### دستاویزات اور تعلیمات
 
-# Phase 4 - Parallel Optimization Summer / Fall 2018
+# چوتھا مرحلہ - متوازی (ریاضیات) موسم گرما میں 2018
 
-After getting a stable 1.0 product released, we will move toward optimizing the code for parallel execution.
+1.0مصنوعات کے مستحکم شروعات کے بعد ھم متوازن نفاد کے لیے کوڈ احسن کر رہے ہیں اس کے کامیاب عمل کے لیے -.
 
-# Phase 5 - Cluster Implementation The Future
+# پانچواں مرحلہ - جھرمٹ کے مستقبل کا نفاذ -
