@@ -39,41 +39,41 @@
   - [صرف ھینڈلرس کے انتخابات پڈھنا-](#read-only-message-handlers)
   - [ایک سے زائد اکاؤنٹ کے ساتھ اٹمی لین دین-](#atomic-transactions-with-multiple-accounts)
   - [بلاکچین کی صورتحال کی جزوی تشخیص-](#partial-evaluation-of-blockchain-state)
-  - [Subjective Best Effort Scheduling](#subjective-best-effort-scheduling)
-- [Token Model and Resource Usage](#token-model-and-resource-usage) 
-  - [Objective and Subjective Measurements](#objective-and-subjective-measurements)
-  - [Receiver Pays](#receiver-pays)
-  - [Delegating Capacity](#delegating-capacity)
-  - [Separating Transaction costs from Token Value](#separating-transaction-costs-from-token-value)
-  - [State Storage Costs](#state-storage-costs)
-  - [Block Rewards](#block-rewards)
-  - [Community Benefit Applications](#community-benefit-applications)
-- [Governance](#governance) 
-  - [Freezing Accounts](#freezing-accounts)
-  - [Changing Account Code](#changing-account-code)
-  - [Constitution](#constitution)
-  - [Upgrading the Protocol & Constitution](#upgrading-the-protocol--constitution) 
-    - [Emergency Changes](#emergency-changes)
-- [Scripts & Virtual Machines](#scripts--virtual-machines) 
-  - [Schema Defined Messages](#schema-defined-messages)
-  - [Schema Defined Database](#schema-defined-database)
-  - [Separating Authentication from Application](#separating-authentication-from-application)
-  - [Virtual Machine Independent Architecture](#virtual-machine-independent-architecture) 
-    - [Web Assembly (WASM)](#web-assembly-wasm)
-    - [Ethereum Virtual Machine (EVM)](#ethereum-virtual-machine-evm)
-- [Inter Blockchain Communication](#inter-blockchain-communication) 
-  - [Merkle Proofs for Light Client Validation (LCV)](#merkle-proofs-for-light-client-validation-lcv)
-  - [Latency of Interchain Communication](#latency-of-interchain-communication)
-  - [Proof of Completeness](#proof-of-completeness)
-- [Conclusion](#conclusion)
+  - [بھترین کوشش اس کے لیے شرط ہے-کی](#subjective-best-effort-scheduling)
+- [ٹوکن ماڈل اور وسائل کا استعمال](#token-model-and-resource-usage) 
+  - [معروضی اور کتابی پیمائش-](#objective-and-subjective-measurements)
+  - [صارف کا ادا کرنا-](#receiver-pays)
+  - [صلاحیت کو استعمال کرنا-](#delegating-capacity)
+  - [لین دین کو ٹوکن کی قیمت سے الگ کرنا-](#separating-transaction-costs-from-token-value)
+  - [اصل صورت میں رکھنے کی لاگت-](#state-storage-costs)
+  - [بلاک کے انعامات-](#block-rewards)
+  - [لوگوں کے لیے اپلکیش کے فوائد-](#community-benefit-applications)
+- [حکمرانی](#governance) 
+  - [اکاؤنٹ منجمد کرنا](#freezing-accounts)
+  - [اکاؤنٹ کوڈ بدلنا-](#changing-account-code)
+  - [دستور](#constitution)
+  - [آیین اور دستور کو بڈھاوا دینا-](#upgrading-the-protocol--constitution) 
+    - [ھنگامی تبدیلیاں-](#emergency-changes)
+- [مجازی اور نوشہ جات مشینیں](#scripts--virtual-machines) 
+  - [شجرہ پیغامات کی وضاحت-](#schema-defined-messages)
+  - [وضاحتی شجرہ ڈیٹابیس](#schema-defined-database)
+  - [توسیق کاری کو اپلیکیشن سے الگ کرنا](#separating-authentication-from-application)
+  - [فن تعمیر سے آزاد مجازی مشین](#virtual-machine-independent-architecture) 
+    - [ویب اسمبلی (WASM)](#web-assembly-wasm)
+    - [مجازی اتھیریم مشین EVM))](#ethereum-virtual-machine-evm)
+- [بلاکچین کی اندرونی گفتگو](#inter-blockchain-communication) 
+  - [لائیٹ کلائینٹ جواز کے لیے مارکلی کے سبوت LVC))](#merkle-proofs-for-light-client-validation-lcv)
+  - [اندرونی چین اور ابلاغ کا چھپاو](#latency-of-interchain-communication)
+  - [اختتامی سبوت](#proof-of-completeness)
+- [مقصد](#conclusion)
 
-# Background
+# پس منظر
 
-Blockchain technology was introduced in 2008 with the launch of the bitcoin currency, and since then entrepreneurs and developers have been attempting to generalize the technology in order to support a wider range of applications on a single blockchain platform.
+بلاکچین تکنیک bitcoin رقم کے ساتھ سال 2008 میں متعارف کی گئی، اور اس کے بعد تاجروں اور ڈیولپرس نے تکنیک کو عام کرنے میں اور تمام بلاکچین کو ایک ہی راستہ پر لانے کے لیے اپنا تعاون بخوبی دیا ہے.
 
-While a number of blockchain platforms have struggled to support functional decentralized applications, application specific blockchains such as the BitShares decentralized exchange (2014) and Steem social media platform (2016) have become heavily used blockchains with tens of thousands of daily active users. They have achieved this by increasing performance to thousands of transactions per second, reducing latency to 1.5 seconds, eliminating fees, and providing a user experience similar to those currently provided by existing centralized services.
+چونکہ بلاکچین پلیٹ فارم کی ایک بڑی تعداد نے فنکشنل ڈیسنٹرالایزڈ اپلیکیشنز کے تعاون میں کافی جدوجہد کی، جبکہ مخصوص بلاکچین اپلیکیشنز جیسے کہ بٹشیر ڈیسنٹرالایزڈ ایکسچینج 2014 اور سٹیم سوشل میڈیا پلیٹ فارم 2016 بھت زیادہ استعمال ہونے والی بلاکچین بن گیی ھے جس کا استعمال روزانہ ھزاروں صارف کرتے ہیں. انھوں نے یہ ایک سیکنڈ میں ھزاروں لین دین کرنا جیسے کارکردگی میں اضافہ کرنے سے حاصل کیا، اخفاء کو ١. ٥ سیکنڈ سے کم کرنا، فیس ختم کرنا، اور سارفین کو ایسی خدمات دینا جو کہ موجودہ مرکزی خدمات فراہم کرتا ہے.
 
-Existing blockchain platforms are burdened by large fees and limited computational capacity that prevent widespread blockchain adoption.
+موجودہ بلاکچین پلیٹ فارم بھاری فیس کے دباؤ میں ھے جس وجہ سے صارفین اس کو بڈے پیمانے پر استعمال کرنے سے کتراتے ھے.
 
 # Requirements for Blockchain Applications
 
