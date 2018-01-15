@@ -32,7 +32,7 @@ Geliştiricilere, HTTP üzerinden, işlemleri yayınlama ve uygulama durumunu so
 
 Komut satırı araçları, RPC arabirimi ile geliştirici ortamının bütünleşmesini kolaylaştırır.
 
-### Basic Developer Documentation (Josh)
+### Temel Geliştirici Dokümanları Hazırlama (Josh)
 
 Documents that teach developers how to get started with building on EOS.IO blockchains. This includes documentations of the WASM API, RPC Interface, and Command Line Tools.
 
