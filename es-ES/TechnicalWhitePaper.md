@@ -401,25 +401,25 @@ La intención de la blockchain basada en software EOS.IO es que se puedan admiti
 
 ### Asamblea Web (Web Assembly - WASM)
 
-¨Web Assembly" es un estándar web emergente para la construcción de aplicaciones web de alto rendimiento. Con algunas pequeñas modificaciones Web Assembly puede volverse determista y aislado. El beneficio de Web Assembly es el apoyo generalizado de la industria y que permite que contratos sean desarrollados en lenguajes familiares como C o C++.
+"Web Assembly" es un estándar web emergente para la creación de aplicaciones web de alto rendimiento. Con algunas pequeñas modificaciones, el Web Assembly se puede hacer de forma determinista y separada. El beneficio del Web Assembly es el amplio apoyo de la industria y que permite que los contratos se desarrollen en lenguajes familiares como C o C++.
 
-Desarrolladores de Ethereum ya han comenzado a modificar Web Assembly para proveer un ambiente aislado y determinista con su [Web Assembly (WASM) Ethereum](https://github.com/ewasm/design). Este enfoque puede ser fácilmente adoptado e integrado con el software EOS.IO.
+Los desarrolladores de Ethereum ya han comenzado a modificar Web Assembly para proporcionar un entorno de pruebas y un determinismo adecuado con su [Ethereum Web Assembly (WASM)](https://github.com/ewasm/design). Este enfoque se puede adaptar e integrar fácilmente con el software EOS.IO.
 
 ### Máquina Virtual de Ethereum (MVE)
 
-Esta máquina virtual ha sido usada por la mayoría de los contratos inteligentes existentes y pueden ser adaptadas para trabajar dentro de una blockchain EOS.IO. Es concebible que los contratos MVE puedan correr dentro de su propio ambiente aislado en una Blockchain basada en el software EOS.IO y que con algunas adaptaiones los contratos MVE puedan comunicarse con otras aplicaciones de la blockchain basada en el software EOS.IO.
+Esta máquina virtual se ha utilizado para la mayoría de los contratos inteligentes existentes y podría adaptarse para trabajar dentro de una blockchain EOS.IO. Es concebible que los contratos de MVE se puedan ejecutar dentro de su propia ambiente separado dentro de una blockchain basada en software EOS.IO y que con cierta adaptación los contratos de MVE puedan comunicarse con otras aplicaciones de blockchain de software EOS.IO.
 
 # Comunicación Inter Blockchain
 
-El software EOS.IO está diseñada para facilitar la comunicación Inter-Blockchain. Esto se logra haciendo que sea sencillo generar la prueba de la existencia del mensaje y prueba de la secuencia del mensaje. Estas pruebas combinadas con una arquitectura de aplicación diseñada alrededor de envíos de mensajes permite que los detalles de intercomunicación entre las Blockchain y pruebas de validación estén escondidos de los desarrolladores de la aplicación.
+El software EOS.IO está diseñado para facilitar la comunicación entre bloques. Esto se logra al facilitar la generación de la prueba de existencia del mensaje y la prueba de la secuencia del mensaje. Estas pruebas combinadas con una arquitectura de aplicación diseñada en torno a la transmisión de mensajes permite ocultar los detalles de la comunicación entre bloques y la validación de pruebas a los desarrolladores de aplicaciones.
 
 <img align="right" src="http://eos.io/wpimg/Diagram1.jpg" width="362.84px" height="500px" />
 
-## Pruebas Merkle para Validación de Cliente Ligero (VCL)
+## Pruebas de Merkle para la Validación de Cliente Ligeros (LCV)
 
-Integrarse con otras blockchains es mucho más fácil si los clientes no necesitan procesar todas las transacciones. Después de todo, un servicio de intercambio solo le interesan las transferencias que entran y salen de sus mercados y nada más. También seria ideal si la blockchain del servicio de intercambio podría utilizar pruebas ligeras de merkle de depósito en lugar de tener que confiar en sus propios productores de bloques totalmente. Al menos los productores de bloque de una blockchain les gustaría mantener la menor sobrecargposible al sincronizarse con otra blockchain.
+La integración con otras blockchains es mucho más fácil si los clientes no necesitan procesar todas las transacciones. Después de todo, un intercambio solo se preocupa por las transferencias dentro y fuera del intercambio y nada más. También sería ideal si la cadena de intercambio pudiera utilizar pruebas de depósito ligeras de merkle en lugar de tener que confiar por completo en sus propios productores de bloques. Por lo menos, a los productores de bloques de una cadena les gustaría mantener la sobrecarga más pequeña posible cuando se sincronizan con otra blockchain.
 
-El objetivo de VCL es habilitar la generación de pruebas de existencia relativamente ligeras que puedan ser validadas por cualquiera que siga un conjunto de datos relativamente ligero. En este caso el objetivo es probar que una transacción fue incluida en un bloque particular y que ese bloque es incluido en la historia verificada de una Blockchain en particular.
+El objetivo de LCV es permitir la generación de una prueba de existencia relativamente ligeras que pueda ser validada por cualquier persona que rastree un conjunto de datos relativamente ligero. En este caso el objetivo es probar que una transacción fue incluida en un bloque particular y que ese bloque es incluido en la historia verificada de una Blockchain en particular.
 
 Bitcoin sostiene la validación de transacciones asumiendo que todos los nodos tengan acceso a la historia completa de los principales bloques lo cual asciende a 4mb de bloques principales por año. A 10 transacciones por segundo, una prueba válida requiere alrededor de 512 bytes. Esto funciona bien para una Blockchain con un intervalo de bloques de 10 minutos, pero no sería "ligero" para unas Blockchains con intervalos de bloques de 3 segundos.
 
