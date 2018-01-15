@@ -381,63 +381,63 @@ Todos los mensajes enviados entre cuentas son definidos por un esquema que es pa
 
 ## Base de Datos definida por esquema
 
-El estado de la base de datos también se define utilizando un esquema similar. Esto garantiza que todos los datos almacenados por las aplicaciones se encuentren en un formato que pueda interpretarse como JSON legible para el ser humano, pero que se almacenen y manipule con la eficiencia del sistema binario.
+El estado de la base de datos es también definido utilizando un esquema similar. Esto asegura que todos los datos almacenados por todas las aplicaciones estén en un formato que pueda ser interpretado como de alto nivel(leído por humanos) de tipo JSON pero almacenado y manipulado con la eficiencia del binario.
 
 ## Separando Autenticación de Aplicación
 
-Para maximizar las oportunidades de paralelización y minimizar la deuda computacional asociada con la regeneración del estado de la aplicación del registro de transacciones, el software EOS.IO separa la lógica de validación en tres secciones:
+Para maximizar las oportunidades de paralelización y minimizar la deuda computacional asociada con la regeneración del estado de la aplicación del registro de transacciones, el software EOS.IO separa la validación lógica en tres secciones:
 
 1. Validar que un mensaje es internamente consistente;
 2. Validad que todas las precondiciones son válidas; y
 3. Modificar el estado de la aplicación.
 
-La validación de la coherencia interna de un mensaje es de solo lectura y no requiere acceso al estado de la blockchain. Esto significa que se puede realizar con el máximo paralelismo. La validación de las condiciones previas, como el equilibrio requerido, es de solo lectura y, por lo tanto, también puede beneficiarse del paralelismo. Solo la modificación del estado de la aplicación requerirá acceso de escritura y debe procesarse secuencialmente para cada aplicación.
+La validación de la consistencia interna de un mensaje es solamente leíble y requiere que no se tenga acceso al estado de la Blockchain. Esto significa que puede realizarse con paralelismo maximo. La validación de las precondiciones, como los fondos requeridos, es solamente leíble y, por lo tanto también se puede beneficiar del paralelismo. Solo modificaciones al estado de la aplicación requieren acceso de escritura y deben ser procesados secuencialmente por cada aplicación.
 
-La autenticación es el proceso de solo lectura de verificar que un mensaje puede ser aplicado. La aplicación está realmente haciendo el trabajo. Ambos cálculos deben realizarse en tiempo real, sin embargo, una vez que se incluye una transacción en el blockchain, ya no es necesario realizar las operaciones de autenticación.
+Autenticación es el proceso de solo lectura de verificar que un mensaje pueda ser aplicado. La aplicación esté realmente haciendo el trabajo. Ambos cálculos requieren ser realizados en tiempo real, sin embargo una vez una transacción es incluida en la Blockchain ya no es necesario realizar las operaciones de autenticación.
 
 ## Arquitectura Independiente de la Máquina Virtual
 
-La intención de la blockchain basada en software EOS.IO es que se puedan admitir múltiples máquinas virtuales y agregar nuevas máquinas virtuales a lo largo del tiempo, según sea necesario. Por este motivo, este documento no analizará los detalles de ningún idioma o máquina virtual en particular. Dicho esto, hay dos máquinas virtuales que se están evaluando para su uso con una blockchain basada en software EOS.IO.
+Es la intención de la blockchain basade en el software EOS.IO que múltiples máquinas virtuales puedan ser sostenidas y nuevas máquinas virtuales añadidas con el tiempo que sea necesario. Por esta razón este trabajo no discutirá los detalles de un lenguaje particular o máquina virtual. Dicho esto, hay dos máquinas virtuales que actualmente están siendo evaluadas para su uso con las blockchains basadas en el software EOS.IO.
 
-### Asamblea Web (Web Assembly - WASM)
+### Web Assembly (WASM)
 
-"Web Assembly" es un estándar web emergente para la creación de aplicaciones web de alto rendimiento. Con algunas pequeñas modificaciones, el Web Assembly se puede hacer de forma determinista y separada. El beneficio del Web Assembly es el amplio apoyo de la industria y que permite que los contratos se desarrollen en lenguajes familiares como C o C++.
+¨Web Assembly" es un estándar web emergente para la construcción de aplicaciones web de alto rendimiento. Con algunas pequeñas modificaciones Web Assembly puede volverse determista y aislado. El beneficio de Web Assembly es el apoyo generalizado de la industria y que permite que contratos sean desarrollados en lenguajes familiares como C o C++.
 
-Los desarrolladores de Ethereum ya han comenzado a modificar Web Assembly para proporcionar un entorno de pruebas y un determinismo adecuado con su [Ethereum Web Assembly (WASM)](https://github.com/ewasm/design). Este enfoque se puede adaptar e integrar fácilmente con el software EOS.IO.
+Desarrolladores de Ethereum ya han comenzado a modificar Web Assembly para proveer un ambiente aislado y determinista con su [Web Assembly (WASM) Ethereum](https://github.com/ewasm/design). Este enfoque puede ser fácilmente adoptado e integrado con el software EOS.IO.
 
 ### Máquina Virtual de Ethereum (MVE)
 
-Esta máquina virtual se ha utilizado para la mayoría de los contratos inteligentes existentes y podría adaptarse para trabajar dentro de una blockchain EOS.IO. Es concebible que los contratos de MVE se puedan ejecutar dentro de su propia ambiente separado dentro de una blockchain basada en software EOS.IO y que con cierta adaptación los contratos de MVE puedan comunicarse con otras aplicaciones de blockchain de software EOS.IO.
+Esta máquina virtual ha sido usada por la mayoría de los contratos inteligentes existentes y pueden ser adaptadas para trabajar dentro de una blockchain EOS.IO. Es concebible que los contratos MVE puedan correr dentro de su propio ambiente aislado en una Blockchain basada en el software EOS.IO y que con algunas adaptaiones los contratos MVE puedan comunicarse con otras aplicaciones de la blockchain basada en el software EOS.IO.
 
 # Comunicación Inter Blockchain
 
-El software EOS.IO está diseñado para facilitar la comunicación entre bloques. Esto se logra al facilitar la generación de la prueba de existencia del mensaje y la prueba de la secuencia del mensaje. Estas pruebas combinadas con una arquitectura de aplicación diseñada en torno a la transmisión de mensajes permite ocultar los detalles de la comunicación entre bloques y la validación de pruebas a los desarrolladores de aplicaciones.
+El software EOS.IO está diseñada para facilitar la comunicación Inter-Blockchain. Esto se logra haciendo que sea sencillo generar la prueba de la existencia del mensaje y prueba de la secuencia del mensaje. Estas pruebas combinadas con una arquitectura de aplicación diseñada alrededor de envíos de mensajes permite que los detalles de intercomunicación entre las Blockchain y pruebas de validación estén escondidos de los desarrolladores de la aplicación.
 
 <img align="right" src="http://eos.io/wpimg/Diagram1.jpg" width="362.84px" height="500px" />
 
-## Pruebas de Merkle para la Validación de Cliente Ligeros (LCV)
+## Pruebas Merkle para Validación de Cliente Ligero (VCL)
 
-La integración con otras blockchains es mucho más fácil si los clientes no necesitan procesar todas las transacciones. Después de todo, un intercambio solo se preocupa por las transferencias dentro y fuera del intercambio y nada más. También sería ideal si la cadena de intercambio pudiera utilizar pruebas de depósito ligeras de merkle en lugar de tener que confiar por completo en sus propios productores de bloques. Por lo menos, a los productores de bloques de una cadena les gustaría mantener la sobrecarga más pequeña posible cuando se sincronizan con otra blockchain.
+Integrarse con otras blockchains es mucho más fácil si los clientes no necesitan procesar todas las transacciones. Después de todo, un servicio de intercambio solo le interesan las transferencias que entran y salen de sus mercados y nada más. También seria ideal si la blockchain del servicio de intercambio podría utilizar pruebas ligeras de merkle de depósito en lugar de tener que confiar en sus propios productores de bloques totalmente. Al menos los productores de bloque de una blockchain les gustaría mantener la menor sobrecargposible al sincronizarse con otra blockchain.
 
-El objetivo de LCV es permitir la generación de una prueba de existencia relativamente ligeras que pueda ser validada por cualquier persona que rastree un conjunto de datos relativamente ligero. En este caso, el objetivo es demostrar que una transacción particular se incluyó en un bloque en particular y que el bloque se incluye en la historia verificada de un blockchain en particular.
+El objetivo de VCL es habilitar la generación de pruebas de existencia relativamente ligeras que puedan ser validadas por cualquiera que siga un conjunto de datos relativamente ligero. En este caso el objetivo es probar que una transacción fue incluida en un bloque particular y que ese bloque es incluido en la historia verificada de una Blockchain en particular.
 
-Bitcoin admite la validación de transacciones suponiendo que todos los nodos tienen acceso al historial completo de encabezados de bloque, lo que equivale a 4 Mb de encabezados de bloque por año. En 10 transacciones por segundo, una prueba válida requiere aproximadamente 512 bytes. Esto funciona bien para un blockchain con un intervalo de bloque de 10 minutos, pero ya no es "ligero" para blockchains con un intervalo de bloque de 3 segundos.
+Bitcoin sostiene la validación de transacciones asumiendo que todos los nodos tengan acceso a la historia completa de los principales bloques lo cual asciende a 4mb de bloques principales por año. A 10 transacciones por segundo, una prueba válida requiere alrededor de 512 bytes. Esto funciona bien para una Blockchain con un intervalo de bloques de 10 minutos, pero no sería "ligero" para unas Blockchains con intervalos de bloques de 3 segundos.
 
-El software EOS.IO permite pruebas ligeras para cualquier persona que tenga un encabezado de bloque irreversible después del punto en que se incluyó la transacción. Usando la estructura enlazada por hash que se muestra a continuación, es posible probar la existencia de cualquier transacción con una prueba de menos de 1024 bytes de tamaño. Si se supone que los nodos de validación se mantienen al día con todos los encabezados de bloque en el último día (2 MB de datos), la comprobación de estas transacciones solo requerirá pruebas de 200 bytes de longitud.
+El software de EOS.IO permite pruebas ligeras para cualquiera que tenga un bloque principl irreversible luego del punto en el cual la transacción fue incluida. Usando la estructura hash-ligado mostrada a continuación es posible probar la existencia de cualquier transacción con una prueba de menos de 1024 bytes en tamaño. Si se asume que los nodos de validación se mantienen con los bloques principales en el día pasado (2mb de data), entonces probar estas transacciones solo requiere pruebas de 200 bytes de longitud.
 
-Hay pocos incrementos en los gastos asociados con la producción de bloques con el enlace hash adecuado para permitir estas pruebas, lo que significa que no hay ninguna razón para no generar bloques de esta manera.
+Hay pocos incrementos en los gastos asociados con la producción de bloques con el enlace de hashes adecuados para permitir estas pruebas lo que significa que no hay razón para no generar bloques de esta manera.
 
-Cuando llega el momento de validar las pruebas en otras cadenas, hay una gran variedad de optimizaciones de tiempo / espacio / ancho de banda que se pueden realizar. El seguimiento de todos los encabezados de bloque (420 MB/año) mantendrá los tamaños de prueba pequeños. El seguimiento de encabezados recientes puede ofrecer una compensación entre el almacenamiento mínimo a largo plazo y el tamaño de la prueba. Alternativamente, una blockchain puede usar un enfoque de evaluación perezosa donde recuerda hashes intermedios de pruebas pasadas. Las nuevas pruebas solo deben incluir enlaces al árbol disperso conocido. El enfoque exacto utilizado dependerá necesariamente del porcentaje de bloques extranjeros que incluyan transacciones referenciadas por la Prueba de Merkle.
+Cuando llega el momento de validar pruebas en otras blockchains hay una gran variedad de optimizaciones de ancho de banda/tiempo/espacio que pueden hacerse. Rastrear todos los bloques principales (420mb/año) mantendrá el tamaño de las pruebas pequeño. Rastrear solo los últimos bloques principales ofrece una ventaja entre almacenamiento a largo plazo y tamaño de la prueba. Alternativamente, una blockchain puede utilizar un enfoque de evaluación perezosa donde recuerda hashes intermedias de pruebas anteriores. Nuevas pruebas solo tienen que incluir enlaces al árbol disperso conocido. El enfoque exacto usado necesariamente dependerá del porcentaje de bloques extranjeros que incluyan la transacción referenciada en la prueba merkle.
 
-Después de una cierta densidad de interconexión, se vuelve más eficiente simplemente tener una cadena que contenga todo el historial de bloques de otra cadena y eliminar la necesidad de pruebas en conjunto. Por motivos de rendimiento, es ideal para minimizar la frecuencia de pruebas entre cadenas.
+Después de una cierta densidad de interconexión se vuelve más eficiente simplemente hacer una sola blockchain que contenga el historial entero del bloque de otra blockchain y así eliminar la necesidad de hacer pruebas. Por motivos de rendimiento, es ideal para reducir al mínimo frecuencia de las pruebas inter-blockchains.
 
-## Latencia de la Comunicación Entre Cadenas
+## Latencia de la Comunicación Interblockchain
 
-Al comunicarse con otra blockchain externa, los productores de bloques deben esperar hasta que haya una certeza del 100% de que una transacción ha sido confirmada irreversiblemente por la otra blockchain antes de aceptarla como una entrada válida. Usando un blockchain basado en software EOS.IO y DPOS con bloques de 3 segundos y 21 productores, esto toma aproximadamente 45 segundos. Si los productores de un bloque de una cadena no esperan la irreversibilidad, sería como un intercambio aceptando un depósito que luego se invirtió y podría afectar la validez del consenso del blockchain.
+Al comunicarse con otra blockchain externa, los productores de bloques deben esperar hasta que haya certeza al 100% que una transacción ha sido confirmada irreversiblemente por la otra blockchain antes de aceptarla como una entrada válida. Usando una blockchain basada en el software de EOS.IO y Pruebas Delegadas de Participación con bloques de 3 segundos y 21 productores, esto tomaria aproximadamente 45 segundos. Si los productores de una cadena de bloques no esperan por la irreversibilidad sería como si un servicio de intercambio aceptando un depósito que luego fue devuelto y podría afectar la validez de consenso de la blockchain.
 
 ## Prueba de Integridad
 
-Cuando se utilizan pruebas merkle de cadenas externas, hay una diferencia significativa entre saber que todas las transacciones procesadas son válidas y saber que no se han omitido ni omitido transacciones. Si bien es imposible probar que se conocen todas las transacciones recientes, es posible demostrar que no ha habido lagunas en el historial de transacciones. El software EOS.IO lo facilita asignando un número de secuencia a cada mensaje entregado a cada cuenta. Un usuario puede usar estos números de secuencia para probar que todos los mensajes destinados a una cuenta en particular se han procesado y que se procesaron en orden.
+Cuando se utiliza pruebas de merkle de blockchains externa, hay una diferencia significativa entre conocer que todas las transacciones procesadas son válidas y que ninguna ha sido saltada u omitida. Si bien es imposible provar que todas las transacciones más recientes son conocidas, es posible para probar que no ha habido ninguna brecha en el historial de transacciones. El software EOS.IO facilita esto al asingnar una secuencia de números a cada mensaje entregado a cada cuenta. Un usuario puede usar esta secuencia de números para probar que todos los mensajes dirigidos a una cuenta en particular han sido procesados y que fueron procesados en orden.
 
 # Conclusión
 
