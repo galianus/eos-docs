@@ -335,13 +335,13 @@ La gobernanza es el proceso mediante el cual las personas llegan a un consenso s
 
 Un blockchain basada en el software EOS.IO reconoce que la potencia se origina con los titulares de tokens que delegan esa potencia a los productores de bloques. A los productores de bloques se les concede una autoridad limitada y verificada para congelar cuentas, actualizar aplicaciones defectuosas y proponer cambios difíciles para el protocolo subyacente.
 
-Incrustar en el software EOS.IO es la elección de los productores de bloques. Antes de que se pueda realizar cualquier cambio en el blockchain, estos productores de bloque deben aprobarlo. Si los productores de bloque se niegan a realizar los cambios deseados por los poseedores de las fichas (tokens) entonces ellos pueden ser retirado mediante una votación. Si los productores de bloques hacen cambios sin el permiso de los poseedores de las fichas(tokens) entonces todos los otros validadores de nodos completos no productores(servicios de intercambio de criptomonedas, etc) rechazarán el cambio.
+Incrustar en el software EOS.IO es la elección de los productores de bloques. Antes de que se pueda realizar cualquier cambio en el blockchain, estos productores de bloque deben aprobarlo. Si los productores de bloques se niegan a realizar los cambios deseados por los titulares de los tokens (fichas), pueden ser expulsados. Si los productores del bloque realizan cambios sin el permiso de los titulares del token, entonces todos los demás validadores de nodos completos no productores (exchanges, entre otros) rechazarán el cambio.
 
 ## Congelación de Cuentas
 
-A veces un contrato inteligente se comporta en una forma aberrante o impredecible y no funciona como se pretende; otras veces una aplicación o cuenta puede descubrir un exploit que le permite consumir una cantidad irrazonable de recursos. Cuando esos problemas inevitablemente ocurren, los productores de bloques tienen el poder para rectificar esas situaciones.
+A veces, un contrato inteligente se comporta de una manera impredecible o aberrante y no funciona según lo previsto; otras veces una aplicación o cuenta puede descubrir un exploit que le permite consumir una cantidad irrazonable de recursos. Cuando tales problemas ocurren de forma inevitable, los productores del bloque tienen el poder de rectificar tales situaciones.
 
-Los productores de bloques en todas las Blockhains tienen el poder de seleccionar cuales transacciones son incluidas en bloques que les da la capacidad de congelar cuentas. Una Blockchain usando el software EOS.IO formaliza esta autoridad sometiendo el el proceso de congelación de una cuenta a un voto de 17/21 de los productores activos. Si los productores abusan de su poder ellos pueden ser retirados a través del voto y la cuenta será descongelada.
+Los productores de bloques en todas las blockchains cuentan con la capacidad de seleccionar qué transacciones se incluyen en los bloques, lo que les da la capacidad de congelar las cuentas. Una Blockchain usando el software EOS.IO formaliza esta autoridad sometiendo el el proceso de congelación de una cuenta a un voto de 17/21 de los productores activos. Si los productores abusan de su poder ellos pueden ser retirados a través del voto y la cuenta será descongelada.
 
 ## Cambiar el Código de Cuenta
 
