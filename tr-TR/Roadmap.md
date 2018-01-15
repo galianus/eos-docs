@@ -26,9 +26,9 @@ Sözleşmeler WebAssembly'ye (WASM) derlenir. WASM, tanımlanmış bir API kulla
 
 ### RPC Arabirimi (Arhag, Nathan)
 
-A simple JSON RPC over HTTP interface will be provided that enables developers to broadcast transactions and query application state. This is critical for both publishing and interacting with test applications.
+Geliştiricilere, HTTP üzerinden, işlemleri yayınlama ve uygulama durumunu sorgulama imkanı veren basit bir JSON RPC sağlanacaktır. Bu, hem yayınlama hem de test uygulamalarıyla etkileşim için kritik önemlidir.
 
-### Command line Tools (Arhag)
+### Komut satırı Araçları (Arhag)
 
 Command line tools facilitate integrating the RPC interface with developer build environments.
 
