@@ -30,7 +30,7 @@ Geliştiricilere, HTTP üzerinden, işlemleri yayınlama ve uygulama durumunu so
 
 ### Komut satırı Araçları (Arhag)
 
-Command line tools facilitate integrating the RPC interface with developer build environments.
+Komut satırı araçları, RPC arabirimi ile geliştirici ortamının bütünleşmesini kolaylaştırır.
 
 ### Basic Developer Documentation (Josh)
 
