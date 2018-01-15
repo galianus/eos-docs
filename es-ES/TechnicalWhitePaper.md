@@ -343,9 +343,9 @@ A veces un contrato inteligente se comporta en una forma aberrante o impredecibl
 
 Los productores de bloques en todas las Blockhains tienen el poder de seleccionar cuales transacciones son incluidas en bloques lo que les da la capacidad de congelar cuentas. Una Blockchain usando el software EOS.IO formaliza esta autoridad sometiendo el proceso de congelación de una cuenta a un voto de 17/21 de los productores activos. Si los productores abusan de su poder ellos pueden ser retirados a través del voto y la cuenta será descongelada.
 
-## Cambiar Código de Cuenta
+## Cambiar el Código de Cuenta
 
-Cuando todo lo demás falla y una "aplicación imparable" actúa de forma impredecible, una blockchain que utiliza el software EOS.IO permite a los productores de bloques reemplazar el código de la cuenta sin forzar completamente la blockchain. De igual forma al proceso de congelar una cuenta, este reemplazo del código requiere un voto de 17/21 de los productores de bloque elegidos.
+Cuando todo lo demás falla y una "aplicación indetenible" actúa de una forma impredecible, una Blockchain usando el software de IOS.IO permite a los productores reemplazar el código de la cuenta sin tener que actualizar la Blockchain entera. Parecido al proceso de congelar las cuentas, este reemplazo del código requiere de una votación 17/21 de los productores de bloques elegidos.
 
 ## Constitución
 
