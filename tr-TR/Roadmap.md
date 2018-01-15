@@ -16,7 +16,7 @@ Bağımsız bir düğüm, API sunarken, bir test blok zincirini çalıştırır 
 
 EOS.IO yazılımında birçok yerel sözleşme vardır. Bunlar, blok zincirinin temel işlemlerini yöneten ve Web Assembly arayüzü dışında olan sözleşmelerdir. Bu sözleşmeler şunları içerir:
 
-1. @eos - manages EOS token transfers
+1. @eos - EOS token transferlerini yönetir
 2. @stake - manages locked EOS, voting, and Producer Election
 3. @system - manages permissions, messages, and contact code updates
 
