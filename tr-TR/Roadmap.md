@@ -17,12 +17,12 @@ Bağımsız bir düğüm, API sunarken, bir test blok zincirini çalıştırır 
 EOS.IO yazılımında birçok yerel sözleşme vardır. Bunlar, blok zincirinin temel işlemlerini yöneten ve Web Assembly arayüzü dışında olan sözleşmelerdir. Bu sözleşmeler şunları içerir:
 
 1. @eos - EOS token transferlerini yönetir
-2. @stake - manages locked EOS, voting, and Producer Election
-3. @system - manages permissions, messages, and contact code updates
+2. @stake - EOS kilidini, oylamaları ve Üretici Seçimini yönetir
+3. @system - izinleri, mesajları ve iletişim kodu güncellemelerini yönetir
 
-### Virtual Machine API (Dan)
+### Sanal Makina API'yı (Dan)
 
-Contracts are compiled to WebAssembly (WASM) and WASM must interface with the blockchain via a defined API. This API is what developers depend upon to build applications and be relatively stable before developers can really start to build on EOS.
+Sözleşmeler WebAssembly'ye (WASM) derlenir. WASM, tanımlanmış bir API kullanarak blok zinciri ile arabirim oluşturmalıdır. This API is what developers depend upon to build applications and be relatively stable before developers can really start to build on EOS.
 
 ### RPC Interface (Arhag, Nathan)
 
