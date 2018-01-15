@@ -10,19 +10,19 @@
 
 ### کسی سسٹم سے الگ آزادانہ طور پر کام کرنا ہوگا (Dan & Nathan)
 
-A standalone node operates a test blockchain and produces blocks while exposing an API. This node does not need to concern itself with any P2P networking code.
+ایک یکتا گرہ ایک جانچ کرنے والی بلاکچین چلاتا بے اور APIکو دکھاتے ھوے بلاکچین کی تشکیل دیتا ہے اس گروہ کو بزات خود کسی P2Pنیٹورکنگ کوڈ کے ساتھ تعلق رکھنے کی کوئی ضرورت نھین.
 
-### Native Contracts (Nathan)
+### بنیادی معاہدہ (Nathan)
 
-The EOS.IO software has a number of native contracts. These are contracts that manage the core operations of the blockchain and exist outside the Web Assembly interface. These contracts include:
+SOS. 10 سافٹویئر کے پاس بہت سے بنیادی معاہدے ہیں. یہ وہ معاہدے ہے جو بلاکچین اوربنیادی عمل کا انتظام کرتے ہیں جوویب اسمبلی انٹرفیس کے باھر موجود رھتے ھے ان معاہدوں میں موجود ھیں:
 
-1. @eos - manages EOS token transfers
-2. @stake - manages locked EOS, voting, and Producer Election
-3. @system - manages permissions, messages, and contact code updates
+1. @EOS_eos ٹوکن کی منتقلی کا انتظام کر تا بے
+2. @stake _. مقفل ھوے EOS،ووٹنگ اور پرڈوسر انتخابات کا انتظام کرتا ہے
+3. system@-رابطہ کوڈ کی تازہ ترین معلومات پیغامات کا انتظام کرتا ھے
 
-### Virtual Machine API (Dan)
+### مجازی آلہAPI (دان)
 
-Contracts are compiled to WebAssembly (WASM) and WASM must interface with the blockchain via a defined API. This API is what developers depend upon to build applications and be relatively stable before developers can really start to build on EOS.
+معاہدے ویب اسمبلی WASIM)) سے منسلک ھے اور ایک وضاحتی API کے زریعے بلاکچین کے ساتھ وعسم مواجہ چاہیے. This API is what developers depend upon to build applications and be relatively stable before developers can really start to build on EOS.
 
 ### RPC Interface (Arhag, Nathan)
 
