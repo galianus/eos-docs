@@ -427,11 +427,11 @@ El software de EOS.IO permite pruebas ligeras para cualquiera que tenga un bloqu
 
 Hay pocos incrementos en los gastos asociados con la producción de bloques con el enlace de hashes adecuados para permitir estas pruebas lo que significa que no hay razón para no generar bloques de esta manera.
 
-Cuando llega el momento de validar pruebas en otras blockchains hay una gran variedad de optimizaciones de ancho de banda/tiempo/espacio que pueden hacerse. Tracking all block headers (420 MB/year) will keep proof sizes small. Tracking only recent headers can offer a trade off between minimal long-term storage and proof size. Alternatively, a blockchain can use a lazy evaluation approach where it remembers intermediate hashes of past proofs. New proofs only have to include links to the known sparse tree. The exact approach used will necessarily depend upon the percentage of foreign blocks that include transactions referenced by merkle proof.
+Cuando llega el momento de validar pruebas en otras blockchains hay una gran variedad de optimizaciones de ancho de banda/tiempo/espacio que pueden hacerse. Rastrear todos los bloques principales (420mb/año) mantendrá el tamaño de las pruebas pequeño. Rastrear solo los últimos bloques principales ofrece una ventaja entre almacenamiento a largo plazo y tamaño de la prueba. Alternativamente, una blockchain puede utilizar un enfoque de evaluación perezosa donde recuerda hashes intermedias de pruebas anteriores. Nuevas pruebas solo tienen que incluir enlaces al árbol disperso conocido. El enfoque exacto usado necesariamente dependerá del porcentaje de bloques extranjeros que incluyan la transacción referenciada en la prueba merkle.
 
-After a certain density of interconnectedness it becomes more efficient to simply have one chain contain the entire block history of another chain and eliminate the need for proofs all together. For performance reasons, it is ideal to minimize the frequency of inter-chain proofs.
+Después de una cierta densidad de interconexión se vuelve más eficiente simplemente hacer una sola blockchain que contenga el historial entero del bloque de otra blockchain y así eliminar la necesidad de hacer pruebas. Por motivos de rendimiento, es ideal para reducir al mínimo frecuencia de las pruebas inter-blockchains.
 
-## Latency of Interchain Communication
+## Latencia de la Comunicación Interblockchain
 
 When communicating with another outside blockchain, block producers must wait until there is 100% certainty that a transaction has been irreversibly confirmed by the other blockchain before accepting it as a valid input. Using an EOS.IO software-based blockchain and DPOS with 3 second blocks and 21 producers, this takes approximately 45 seconds. If a chain's block producers do not wait for irreversibility it would be like an exchange accepting a deposit that was later reversed and could impact the validity of the blockchain's consensus.
 
