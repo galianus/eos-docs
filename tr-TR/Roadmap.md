@@ -14,7 +14,7 @@ Bağımsız bir düğüm, API sunarken, bir test blok zincirini çalıştırır 
 
 ### Yerel Sözleşmeler (Nathan)
 
-The EOS.IO software has a number of native contracts. These are contracts that manage the core operations of the blockchain and exist outside the Web Assembly interface. These contracts include:
+EOS.IO yazılımında birçok yerel sözleşme vardır. Bunlar, blok zincirinin temel işlemlerini yöneten ve Web Assembly arayüzü dışında olan sözleşmelerdir. Bu sözleşmeler şunları içerir:
 
 1. @eos - manages EOS token transfers
 2. @stake - manages locked EOS, voting, and Producer Election
