@@ -363,23 +363,23 @@ El software EOS.IO define un proceso por el cual el protocolo definido por el c�
 4. Los productores de bloques adoptan los cambios en el código fuente para reflejar el cambio en la constitución y lo proponen a la blockchain usando el hash de un compromiso git.
 5. Los productores de bloques mantienen la aprobación 17/21 por 30 días consecutivos.
 6. Los cambios en el código entran en vigencia 7 días después, dando a todos los nodos completos 1 semana para actualizar después de la ratificación del código fuente.
-7. Todos los nodos que no sean actualizados al nuevo código se apagarán automáticamente.
+7. Todos los nodos que no se actualicen al nuevo código se apagarán automáticamente.
 
 Por una configuración predeterminada del software EOS.IO, el proceso de actualización de la blockchain para agregar nuevas características lleva de 2 a 3 meses, mientras que las actualizaciones para corregir errores no críticos que no requieren cambios en la constitución pueden tomar de 1 a 2 meses.
 
 ### Cambios de Emergencia
 
-Los productores de bloques pueden acelerar el proceso si se requiere un cambio de software para solucionar un error dañino o un ataque de seguridad que pueda estar dañando activamente a los usuarios. En términos generales, podría ser contrario a la constitución de las actualizaciones aceleradas introducir nuevas características o corregir errores inofensivos.
+Los productores de bloques pueden acelerar el proceso si se requiere un cambio de software para solucionar un error dañino o un ataque de seguridad que pueda estar dañando activamente a los usuarios. Generalmente hablando podría estar en contra de la constitución realizar actualizaciones aceleradas para introducir nuevas funciones o arreglar errores inofensivos.
 
-# Scripts & Maquinas Virtuales
+# Máquinas Virtuales & Scripts
 
-El software EOS.IO será ante todo una plataforma para coordinar la entrega de mensajes autenticados a las cuentas. Los detalles del lenguaje de scripts y la máquina virtual son implementaciones con detalles específicos en su mayoría independientes del diseño de la tecnología EOS.IO. Cualquier lenguaje o máquina virtual que sea determinista y esté adecuadamente aislada con un rendimiento suficiente se puede integrar con la API del software EOS.IO.
+El software EOS.IO será ante todo una plataforma para coordinar la entrega de mensajes autenticados a cuentas. Los detalles del lenguaje de scripts y la máquina virtual son implementaciones con detalles específicos en su mayoría independientes del diseño de la tecnología EOS.IO. Cualquier lenguaje o máquina virtual que sea determinista y propiamente aislada con un rendimiento suficiente puede ser integrada al API del software EOS.IO.
 
 ## Mensajes Definidos por Esquema
 
-Todos los mensajes enviados entre cuentas están definidos por un esquema que es parte del estado de consenso de la blockchain. Este esquema permite la conversión perfecta entre representación binaria y JSON de los mensajes.
+Todos los mensajes enviados entre cuentas son definidos por un esquema que es parte del estado de consenso de la Blockchain. Este esquema permite la perfecta conversión entre binario y representación JSON de los mensajes.
 
-## Base de Datos Definida por Esquema
+## Base de Datos definida por esquema
 
 El estado de la base de datos también se define utilizando un esquema similar. Esto garantiza que todos los datos almacenados por las aplicaciones se encuentren en un formato que pueda interpretarse como JSON legible para el ser humano, pero que se almacenen y manipule con la eficiencia del sistema binario.
 
