@@ -22,9 +22,9 @@ EOS.IO yazılımında birçok yerel sözleşme vardır. Bunlar, blok zincirinin 
 
 ### Sanal Makina API'yı (Dan)
 
-Sözleşmeler WebAssembly'ye (WASM) derlenir. WASM, tanımlanmış bir API kullanarak blok zinciri ile arabirim oluşturmalıdır. This API is what developers depend upon to build applications and be relatively stable before developers can really start to build on EOS.
+Sözleşmeler WebAssembly'ye (WASM) derlenir. WASM, tanımlanmış bir API kullanarak blok zinciri ile arabirim oluşturmalıdır. Geliştiricilerin uygulama inşa etmesi bu API'ye bağlıdır. EOS üzerinde gerçekten çalışmaya başlamalarından önce görece kararlı olmalıdır.
 
-### RPC Interface (Arhag, Nathan)
+### RPC Arabirimi (Arhag, Nathan)
 
 A simple JSON RPC over HTTP interface will be provided that enables developers to broadcast transactions and query application state. This is critical for both publishing and interacting with test applications.
 
