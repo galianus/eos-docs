@@ -34,45 +34,45 @@ SOS. 10 سافٹویئر کے پاس بہت سے بنیادی معاہدے ہی�
 
 ### بنیادی تعمیراتی دستاویزات ( جوش)
 
-Documents that teach developers how to get started with building on EOS.IO blockchains. This includes documentations of the WASM API, RPC Interface, and Command Line Tools.
+وہ دستاویزات جو ڈیولپرس کو EOS. I Oبلاکچین بنانے کی شروعات سمجھاتا ھے اس میں API, RPC انٹرفیس اور کمانڈ لائن آلہ کے دستاویزات شامل ہے -.
 
-# Phase 2 - Minimal Viable Test Network - Fall 2017
+# دوسرا مرحلہ کم از کم قابل قبول نیٹورک - fall 2017
 
-Everything in Phase 1 assumes a trusted environment that only runs the developer's own code. Before a test network can be deployed several additional features need to be implemented and tested.
+پہلے مرحلہ میں سب کچھ صرف ڈیولپرس کے اپنے ضابطہ سے چلتا ہے جس کو ایک قابل قدر ماحول مان لیا گیا ہے اس سے پہلے کہ ایک ٹیسٹ کے نیٹ ورک کو تاینات کیا جا سکتا ہو اضافی خصوصیات نافذ اور ٹیسٹ کرنے کی ضرورت ہے.
 
-### P2P Network Code (Phil)
+### P2P نیٹورک کوڈ (فل)
 
-This is a plugin that is responsible for synchronizing the blockchain state between two standalone nodes.
+یہ دو الگ الگ گرہوں کے درمیان بلاکچین کی شکل کو ھم وقت سازی کے لیے ایک پلگ ان زمہ دار ہیں.
 
-### WASM Sanitation & CPU Sandboxing (Brian)
+### WASM صفائی اور حفظان؛ سینڈ بکسنگ (دماغ)
 
-The WASM code needs to be sanitized to check for non-deterministic behavior such as floating point operations and infinite loops.
+WASM کوڈ کی صفائی کے لیے سیال نقطہ کاروایوں اور لا محدود تکمے جیسے غیر درمیان رویے کے لیے چیک کرنے کے لیے اس کی ضرورت ہے.
 
-### Resource Usage Tracking & Rate Limiting (Arhag)
+### وسائل استعمال کرنے کا کام؛ خرچہ محدود کرنے کا کام (ارحاگ)
 
-To prevent abuse the resource monitoring and usage tracking rate limits users according to staked EOS.
+وسائل کی دیکھ بھال اور اس کے استعمال کو روکنے کے لیے EOS کے مطابق صارفین کی ٹریکنگ کی شرح محدود ہے َ.
 
-### Genesis Import Testing (DappHub)
+### جنسس درآمد کی جانچ (داپھب)
 
-Tools need to be developed to export data from the EOS Token Distribution state and create a genesis configuration file. This will enable anyone participating in the Token Distribution to acquire some initial test EOS (TEOS).
+دستاویزات اور EOS ٹوکنز کو تقسیم کرنے کے لیے ایسے آلات بنانے کی ضرورت ہے جو کنفگریشن فائل کو بنانے اور اس کو اپنی اصل شکل میں موجود رکھ سکے. یہ کس کو اس قابل بناے گی کہ وہ شریک ھو سکے ٹوکن کی تقسیم میں اور EOS TEOS کی بنیادی جانچ میں.
 
-### Interblockchain Communication (Nathan)
+### اندرونی بلاکچین کی گفتگو (ناتھن)
 
-This feature involves verifying the Merkle hashing of transactions is proper.
+اس فیچر کا کام مارکلی لین دین کی ھاشنگ اورتوسیق کا دھیان رکھنا ہے -.
 
-# Phase 3 - Testing & Security Audits - Winter 2017, Spring 2018
+# تیسرا مرحلہ - جانچ اور amp سلامتی کا آڈٹ-2017،موسم بہار،موسم خوشگوار سرما 2018
 
-During this phase the platform will undergo heavy testing with a focus on finding security issues and bug. At the end of Phase 3 version 1.0 will be tagged.
+اس مرحلے کے دوران سلامتی کے مسائل اور مسلوں کی تلاش پر پوری توجہ کے ساتھ بھاری جانچ کے راستے سے گزرنا ھو گا تیسرے مرحلے کے آخر میں ورجن 1.0ٹیگ کیا جائے گا -.
 
-### Develop Example Applications
+### مسالی دستاویزات بنانا -
 
-Example applications are critical to proving the platform provides the features required by real developers.
+مسالی دستاویزات ڈیولپرس کی طرف حقیقی خصوصیات سے آشناس کراتا ھے جو کافی اھمیت کے حامل ہے -.
 
-### Bounties for Successfully Attacking Network
+### نیٹورک پر کامیابی سے حملہ کرنے کے لیے بھاروں
 
-Attacking the network with spam, virtual machine exploits, and bug crashes, and non-deterministic behavior will be a heavily involved process but necessary to ensure that version 1.0 is stable.
+مجازی مشین مذدورو کا استعمال، سپام اور بگ کے ساتھ نیٹورک پر حملہ اور گر کر تباہ، اور غیر درمیان رویے ایک بھاری مصروف کام ھو گا لیکن ورجن 1.0کو یقینی اور مستحکم بنانے کے لیے ضروری ہے -.
 
-### Language Support
+### زبانی معاونت
 
 Adding support for additional languages to be compiled to WASM: C++, Rust, etc.
 
