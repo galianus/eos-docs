@@ -349,19 +349,19 @@ Cuando todo lo demás falla y una "aplicación indetenible" actúa de una forma 
 
 ## Constitución
 
-El software EOS.IO permite a las blockchains establecer un acuerdo de términos de servicio de punto a punto, o un contrato vinculante entre los usuarios que lo firman, denominado "constitución". El contenido de esta constitución define las obligaciones entre los usuarios que no pueden ser aplicadas por completo por el código y facilita la resolución de disputas al establecer la jurisdicción y la elección de la ley junto con otras reglas aceptadas en mutuo acuerdo. Cada transacción emitida en la red debe incorporar el hash de la constitución como parte de la firma y, por lo tanto, vincula explícitamente al firmante con el contrato.
+El software EOS.IO permite a las Blockchains establecer términos de servicio P2P (usuario-usuario) o un contrato vinculando entre aquellos que lo firme, referido como una "constitución". El contenido de esta constitución define las obligaciones entre los usuarios que no pueden aplicarse enteramente por código y facilita la resolución de conflictos al establecer una jurisdicción y ley junto con otras reglas mutualmente aceptadas. Cada transacción emitida en la red debe incorporar el hash de la constitución como parte de la firma y, por lo tanto, vincula explícitamente al firmante con el contrato.
 
-La constitución también define la intención humana legible del protocolo de código fuente. Esta intención se usa para identificar la diferencia entre un error y una característica cuando ocurren errores y guía a la comunidad sobre qué correcciones son apropiadas o inapropiadas.
+La constitución también define la intención de que el protocolo de código fuente sea leído por humanos. Esta intención es usada para identificar la diferencia entre un error y una función cuando se producen errores y guía a la comunidad en que arreglos son los adecuados o los inadecuados.
 
-## Actualizando el Protocolo & Constitución
+## Actualizando el Protocolo & la Constitución
 
-El software EOS.IO define un proceso mediante el cual el protocolo definido por el código fuente canónico y su constitución se pueden actualizar mediante el siguiente proceso:
+El software EOS.IO define un proceso por el cual el protocolo definido por el código fuente canónico y su constitución pueden ser actualizados utilizando el siguiente proceso:
 
-1. Los productores de bloques proponen un cambio a la constitución y obtienen la aprobación 17/21.
-2. Los productores de bloques mantienen la aprobación 17/21 durante 30 días consecutivos.
-3. Todos los usuarios deben firmar transacciones usando el hash de la nueva constitución.
-4. Los productores de bloques adoptan los cambios en el código fuente para reflejar el cambio en la constitución y proponerlo a la blockchain usando el hash de un compromiso de git.
-5. Los productores de bloques mantienen la aprobación 17/21 durante 30 días consecutivos.
+1. Los productores de bloques proponen un cambio a la constitución y obtiene aprobación 17/21.
+2. Los productores de bloques mantienen la aprobación 17/21 por 30 días consecutivos.
+3. Todos los usuarios están obligados a firmar las transacciones utilizando el hash de la nueva constitución.
+4. Los productores de bloques adoptan los cambios en el código fuente para reflejar el cambio en la constitución y lo proponen a la blockchain usando el hash de un compromiso git.
+5. Los productores de bloques mantienen la aprobación 17/21 por 30 días consecutivos.
 6. Los cambios en el código entran en vigencia 7 días después, dando a todos los nodos completos 1 semana para actualizar después de la ratificación del código fuente.
 7. Todos los nodos que no sean actualizados al nuevo código se apagarán automáticamente.
 
