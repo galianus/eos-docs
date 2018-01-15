@@ -22,17 +22,17 @@ SOS. 10 سافٹویئر کے پاس بہت سے بنیادی معاہدے ہی�
 
 ### مجازی آلہAPI (دان)
 
-معاہدے ویب اسمبلی WASIM)) سے منسلک ھے اور ایک وضاحتی API کے زریعے بلاکچین کے ساتھ وعسم مواجہ چاہیے. This API is what developers depend upon to build applications and be relatively stable before developers can really start to build on EOS.
+معاہدے ویب اسمبلی WASIM)) سے منسلک ھے اور ایک وضاحتی API کے زریعے بلاکچین کے ساتھ وعسم مواجہ چاہیے. یہ وہAPIھے جس پر ڈیولپرس اپلیکیشنز بنانے کے لیے گرین پلس منحصر ہے اورڈیولپرز واقعی EOS پر استوار کرنے کا آغاز کر سکتے ہیں جو کہ انحصار ھے.
 
-### RPC Interface (Arhag, Nathan)
+### RPC interface (ارھاگ اور ناتھن)
 
-A simple JSON RPC over HTTP interface will be provided that enables developers to broadcast transactions and query application state. This is critical for both publishing and interacting with test applications.
+ڈیولپرس کے لین دین کو نشر اور اپلیکیشن کی صورتحال طلب کرنے کے لیے ایک سادہ JASON HTTP RPC انٹرفیس اس کو قابل عمل بنانے کے لیے ضروری ہے. اپلیکیشنز کو شایع کرنے اور ٹیسٹ اپلیکیشنز سے تبادلہ کے لیے بہت اہم ہے.
 
-### Command line Tools (Arhag)
+### کمانڈ لائن آلہ (ارھاگ)
 
-Command line tools facilitate integrating the RPC interface with developer build environments.
+کمانڈ لائن آلہ RPC انٹرفیس کے ساتھ ڑیولپرز تعمیر ماحول میں شمولیت کی سھولیت فراہم ھے.
 
-### Basic Developer Documentation (Josh)
+### بنیادی تعمیراتی دستاویزات ( جوش)
 
 Documents that teach developers how to get started with building on EOS.IO blockchains. This includes documentations of the WASM API, RPC Interface, and Command Line Tools.
 
