@@ -381,25 +381,25 @@ Todos los mensajes enviados entre cuentas están definidos por un esquema que es
 
 ## Base de Datos Definida por Esquema
 
-El estado de la base de datos también se define utilizando un esquema similar. Esto asegura que todos los datos almacenados por todas las aplicaciones estén en un formato que pueda ser interpretado como de alto nivel(leído por humanos) de tipo JSON pero almacenado y manipulado con la eficiencia del binario.
+El estado de la base de datos también se define utilizando un esquema similar. Esto garantiza que todos los datos almacenados por las aplicaciones se encuentren en un formato que pueda interpretarse como JSON legible para el ser humano, pero que se almacenen y manipule con la eficiencia del sistema binario.
 
 ## Separando Autenticación de Aplicación
 
-Para maximizar las oportunidades de paralelización y minimizar la deuda computacional asociada con la regeneración del estado de la aplicación del registro de transacciones, el software EOS.IO separa la validación lógica en tres secciones:
+Para maximizar las oportunidades de paralelización y minimizar la deuda computacional asociada con la regeneración del estado de la aplicación del registro de transacciones, el software EOS.IO separa la lógica de validación en tres secciones:
 
 1. Validar que un mensaje es internamente consistente;
 2. Validad que todas las precondiciones son válidas; y
 3. Modificar el estado de la aplicación.
 
-La validación de la consistencia interna de un mensaje es solamente leíble y requiere que no se tenga acceso al estado de la Blockchain. Esto significa que puede realizarse con paralelismo maximo. La validación de las precondiciones, como los fondos requeridos, es solamente leíble y, por lo tanto también se puede beneficiar del paralelismo. Solo modificaciones al estado de la aplicación requieren acceso de escritura y deben ser procesados secuencialmente por cada aplicación.
+La validación de la coherencia interna de un mensaje es de solo lectura y no requiere acceso al estado de la blockchain. Esto significa que se puede realizar con el máximo paralelismo. La validación de las condiciones previas, como el equilibrio requerido, es de solo lectura y, por lo tanto, también puede beneficiarse del paralelismo. Solo la modificación del estado de la aplicación requerirá acceso de escritura y debe procesarse secuencialmente para cada aplicación.
 
-Autenticación es el proceso de solo lectura de verificar que un mensaje pueda ser aplicado. La aplicación esté realmente haciendo el trabajo. Ambos cálculos requieren ser realizados en tiempo real, sin embargo una vez una transacción es incluida en la Blockchain ya no es necesario realizar las operaciones de autenticación.
+La autenticación es el proceso de solo lectura de verificar que un mensaje puede ser aplicado. La aplicación está realmente haciendo el trabajo. Ambos cálculos deben realizarse en tiempo real, sin embargo, una vez que se incluye una transacción en el blockchain, ya no es necesario realizar las operaciones de autenticación.
 
 ## Arquitectura Independiente de la Máquina Virtual
 
-Es la intención de la blockchain basade en el software EOS.IO que múltiples máquinas virtuales puedan ser sostenidas y nuevas máquinas virtuales añadidas con el tiempo que sea necesario. Por esta razón este trabajo no discutirá los detalles de un lenguaje particular o máquina virtual. Dicho esto, hay dos máquinas virtuales que actualmente están siendo evaluadas para su uso con las blockchains basadas en el software EOS.IO.
+La intención de la blockchain basada en software EOS.IO es que se puedan admitir múltiples máquinas virtuales y agregar nuevas máquinas virtuales a lo largo del tiempo, según sea necesario. Por este motivo, este documento no analizará los detalles de ningún idioma o máquina virtual en particular. Dicho esto, hay dos máquinas virtuales que se están evaluando para su uso con una blockchain basada en software EOS.IO.
 
-### Web Assembly (WASM)
+### Asamblea Web (Web Assembly - WASM)
 
 ¨Web Assembly" es un estándar web emergente para la construcción de aplicaciones web de alto rendimiento. Con algunas pequeñas modificaciones Web Assembly puede volverse determista y aislado. El beneficio de Web Assembly es el apoyo generalizado de la industria y que permite que contratos sean desarrollados en lenguajes familiares como C o C++.
 
