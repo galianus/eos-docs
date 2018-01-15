@@ -362,26 +362,26 @@ El software EOS.IO define un proceso mediante el cual el protocolo definido por 
 3. Todos los usuarios deben firmar transacciones usando el hash de la nueva constitución.
 4. Los productores de bloques adoptan los cambios en el código fuente para reflejar el cambio en la constitución y proponerlo a la blockchain usando el hash de un compromiso de git.
 5. Los productores de bloques mantienen la aprobación 17/21 durante 30 días consecutivos.
-6. Cambios en el código toman efecto 7 días luego, dándoles a los nodos completos 1 semana para actualizarlo luego de la ratificación del código fuente.
-7. Todos los nodos que no se actualicen al nuevo código se apagarán automáticamente.
+6. Los cambios en el código entran en vigencia 7 días después, dando a todos los nodos completos 1 semana para actualizar después de la ratificación del código fuente.
+7. Todos los nodos que no sean actualizados al nuevo código se apagarán automáticamente.
 
-Por configuración predeterminada el software de EOS.IO, el proceso de actualización de la Blockchain para añadir nuevas funciones toma 2 a 3 meses, mientras actualizaciones para arreglar errores no críticos que no requieran cambios en la constitución toman 1 o 2 meses.
+Por una configuración predeterminada del software EOS.IO, el proceso de actualización de la blockchain para agregar nuevas características lleva de 2 a 3 meses, mientras que las actualizaciones para corregir errores no críticos que no requieren cambios en la constitución pueden tomar de 1 a 2 meses.
 
 ### Cambios de Emergencia
 
-Los productores de bloques pueden acelerar el proceso si un cambio de software es requerida para arreglar un error o exploit de seguridad que este activamente dañando a los usuarios. Generalmente hablando podría estar en contra de la constitución realizar actualizaciones aceleradas para introducir nuevas funcione o arreglar errores inofensivos.
+Los productores de bloques pueden acelerar el proceso si se requiere un cambio de software para solucionar un error dañino o un ataque de seguridad que pueda estar dañando activamente a los usuarios. En términos generales, podría ser contrario a la constitución de las actualizaciones aceleradas introducir nuevas características o corregir errores inofensivos.
 
-# Máquinas Virtuales & Scripts
+# Scripts & Maquinas Virtuales
 
-El software EOS.IO será ante todo una plataforma para coordinar la entrega de mensajes autenticados a cuentas. Los detalles de este lenguaje y máquina virtual son implementaciones específicas que en su mayoía son independientes del diseño de la tecnología EOS.IO. Cualquier lenguaje o máquina virtual que sea determinista y propiamente aislada con un rendimiento suficiente puede ser integrada al API del software EOS.IO.
+El software EOS.IO será ante todo una plataforma para coordinar la entrega de mensajes autenticados a las cuentas. Los detalles del lenguaje de scripts y la máquina virtual son implementaciones con detalles específicos en su mayoría independientes del diseño de la tecnología EOS.IO. Cualquier lenguaje o máquina virtual que sea determinista y esté adecuadamente aislada con un rendimiento suficiente se puede integrar con la API del software EOS.IO.
 
 ## Mensajes Definidos por Esquema
 
-Todos los mensajes enviados entre cuentas son definidos por un esquema que es parte del estado de consenso de la Blockchain. Este esquema permite la perfecta conversión entre binario y representación JSON de los mensajes.
+Todos los mensajes enviados entre cuentas están definidos por un esquema que es parte del estado de consenso de la blockchain. Este esquema permite la conversión perfecta entre representación binaria y JSON de los mensajes.
 
-## Base de Datos definida por esquema
+## Base de Datos Definida por Esquema
 
-El estado de la base de datos es también definido utilizando un esquema similar. Esto asegura que todos los datos almacenados por todas las aplicaciones estén en un formato que pueda ser interpretado como de alto nivel(leído por humanos) de tipo JSON pero almacenado y manipulado con la eficiencia del binario.
+El estado de la base de datos también se define utilizando un esquema similar. Esto asegura que todos los datos almacenados por todas las aplicaciones estén en un formato que pueda ser interpretado como de alto nivel(leído por humanos) de tipo JSON pero almacenado y manipulado con la eficiencia del binario.
 
 ## Separando Autenticación de Aplicación
 
