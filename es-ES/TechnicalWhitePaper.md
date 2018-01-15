@@ -433,7 +433,7 @@ Después de una cierta densidad de interconexión se vuelve más eficiente simpl
 
 ## Latencia de la Comunicación Interblockchain
 
-Al comunicarse con otra blockchain externa, los productores de bloques deben esperar hasta que haya certeza al 100% que una transacción ha sido confirmada irreversiblemente por la otra blockchain antes de aceptarla como una entrada válida. Using an EOS.IO software-based blockchain and DPOS with 3 second blocks and 21 producers, this takes approximately 45 seconds. If a chain's block producers do not wait for irreversibility it would be like an exchange accepting a deposit that was later reversed and could impact the validity of the blockchain's consensus.
+Al comunicarse con otra blockchain externa, los productores de bloques deben esperar hasta que haya certeza al 100% que una transacción ha sido confirmada irreversiblemente por la otra blockchain antes de aceptarla como una entrada válida. Usando una blockchain basada en el software de EOS.IO y Pruebas Delegadas de Participación con bloques de 3 segundos y 21 productores, esto tomaria aproximadamente 45 segundos. If a chain's block producers do not wait for irreversibility it would be like an exchange accepting a deposit that was later reversed and could impact the validity of the blockchain's consensus.
 
 ## Proof of Completeness
 
