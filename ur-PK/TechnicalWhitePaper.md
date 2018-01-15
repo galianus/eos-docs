@@ -91,19 +91,19 @@
 
 کاروبار پر مبنی تعمیراتی پلاکچین اپلیکیشنز کو بڈھاوا دینے کے لیے اپلیکیشنز میں لچک کی ضرورت ہے-.
 
-All non-trivial software is subject to bugs, even with the most rigorous of formal verification. The platform must be robust enough to fix bugs when they inevitably occur.
+تمام غیر معلوماتی سافٹویئر کا انحصار بگ پر ھے، ختاکہ سب سے زیادہ سختی کی باقاعدہ تصدیق سے ھے. بگ کو سنبھالنے کے لیے پلیٹ فارم کا مضبوط ھونا کافی ضروری ھے.
 
-## Low Latency
+## قلیل چھپاو
 
-A good user experience demands reliable feedback with delay of no more than a few seconds. Longer delays frustrate users and make applications built on a blockchain less competitive with existing non-blockchain alternatives.
+صارف کو بھتر خدمات فراہم کرنے کے لیے چاہیے کہ جواب الجواب میں کچھ سیکنڈ سے زیادہ وقت نا لگے. لمبی تاخیر صارفین کو پریشانی میں ڈالتی ھے اور بلاکچین کو پھلے سے چلنے والی بلاکچین اپلیکیشنز کے مقابلے میں کم اھمیت حاصل ھوتی ھے.
 
-## Sequential Performance
+## سلسلہ وار کارکردگی
 
-There are some applications that just cannot be implemented with parallel algorithms due to sequentially dependent steps. Applications such as exchanges need enough sequential performance to handle high volumes and therefore a platform with fast sequential performance is required.
+کچھ اپلیکیشنز ایسی ھے جن کو ھم صرف جو ترتیب پر منحصر اقدامات کی وجہ سے متوازی الگورزم کے ساتھ لاگو نہیں کر سکتے ہیں. اپلیکیشنز جیسے کہ ایکسچینج بہت زیادہ ترتیبات کی حامل ہے کارکردگی کا مظاہرہ کرنے کے لیے. لھزا اس کے لیے تیز تربیاتی پلیٹ فارم کی ضرورت ہے.
 
-## Parallel Performance
+## متوازی کارکردگی
 
-Large scale applications need to divide the workload across multiple CPUs and computers.
+بڈے پیمانے کی اپلیکیشنز کام تقسیم کرنے کے لیے متعدد CPU اور کمپیوٹرز کا استعمال کرتا ہے.
 
 # Consensus Algorithm (DPOS)
 
