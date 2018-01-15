@@ -339,9 +339,9 @@ Incrustar en el software EOS.IO es la elección de los productores de bloques. A
 
 ## Congelación de Cuentas
 
-A veces un contrato inteligente se comporta en una forma aberrante o impredecible y no funciona como se pretende; otras veces una aplicación o cuenta puede descubrir un exploit que le permite consumir una cantidad irrazonable de recursos. Cuando tales problemas ocurren de forma inevitable, los productores del bloque tienen el poder de rectificar tales situaciones.
+A veces un contrato inteligente se comporta en una forma aberrante o impredecible y no funciona como se pretende; otras veces una aplicación o cuenta puede descubrir un exploit que le permite consumir una cantidad irrazonable de recursos. Cuando esos problemas inevitablemente ocurren, los productores de bloques tienen el poder para rectificar esas situaciones.
 
-Los productores de bloques en todas las blockchains cuentan con la capacidad de seleccionar qué transacciones se incluyen en los bloques, lo que les da la capacidad de congelar las cuentas. Un blockchain que utiliza el software EOS.IO formaliza esta autoridad al someter el proceso de congelación de una cuenta al voto de 17/21 de los productores activos. Si los productores llegan a abusar de tal poder, pueden ser expulsados y una cuenta se descongelará.
+Los productores de bloques en todas las Blockhains tienen el poder de seleccionar cuales transacciones son incluidas en bloques lo que les da la capacidad de congelar cuentas. Una Blockchain usando el software EOS.IO formaliza esta autoridad sometiendo el proceso de congelación de una cuenta a un voto de 17/21 de los productores activos. Si los productores abusan de su poder ellos pueden ser retirados a través del voto y la cuenta será descongelada.
 
 ## Cambiar Código de Cuenta
 
