@@ -105,13 +105,13 @@
 
 بڈے پیمانے کی اپلیکیشنز کام تقسیم کرنے کے لیے متعدد CPU اور کمپیوٹرز کا استعمال کرتا ہے.
 
-# Consensus Algorithm (DPOS)
+# اتفاق رائے الگورزم (ڈی پی اوس)
 
-EOS.IO software utilizes the only decentralized consensus algorithm capable of meeting the performance requirements of applications on the blockchain, [Delegated Proof of Stake (DPOS)](https://steemit.com/dpos/@dantheman/dpos-consensus-algorithm-this-missing-white-paper). Under this algorithm, those who hold tokens on a blockchain adopting the EOS.IO software may select block producers through a continuous approval voting system and anyone may choose to participate in block production and will be given an opportunity to produce blocks proportional to the total votes they have received relative to all other producers. For private blockchains the management could use the tokens to add and remove IT staff.
+EOS. IO سوفٹویر صرف ڈیسنٹرالایزڈ الگورزم کا استعمال کرتا ھے جو کارکردگی پر کھرا اتر سکے بلاکچین اپلیکیشنز پر، DPOS))<0\>کو سبوت کے طور پر استعمال کیا جاتا ہے. اس الگورزم کے تحت، جو لوگ EOS. IO ٹوکن اپناے ایک بلاکچین رکھیں. سافٹویئر بلاک بنانے والے ایک مسلسل انتخابی عمل کے زریعے منتخب کر سکتے ہیں. اور کسی کو بھی اس کا حقدار بنا سکتے ہیں اور تمام پرڈوسدز کو ووٹس پر مناسب بلاکس پیدا کرنے کا موقع دیا جائے گا. زاتی بلاکچین کا انتظام اور ٹوکن کا استعمال کرنے کے لیے اور عملے کو ھٹانے کے لیے استعمال کر سکتے ہیں.</p> 
 
-The EOS.IO software enables blocks to be produced exactly every 3 seconds and exactly one producer is authorized to produce a block at any given point in time. If the block is not produced at the scheduled time then the block for that time slot is skipped. When one or more blocks are skipped, there is a 6 or more second gap in the blockchain.
+EOS. IO سوفٹویر ہر تین سیکنڈ کے بعد پیدا ہونے والے بلاکس کو بناتا ھے اور ایک پڑوسی کو کسی بھی بلاک پر پیدا کرنے کے لیے اجازت حاصل ہے. If the block is not produced at the scheduled time then the block for that time slot is skipped. جب ایک سے زائد بلاک سکپ کیے جاتے ہیں تب بلاکچین میں چھے سیکنڈ کا ایک وقفہ دیا جاتا ہے.
 
-Using the EOS.IO software blocks are produced in rounds of 21. At the start of each round 21 unique block producers are chosen. The top 20 by total approval are automatically chosen every round and the last producer is chosen proportional to their number of votes relative to other producers. The selected producers are shuffled using a pseudorandom number derived from the block time. This shuffling is done to ensure that all producers maintain balanced connectivity to all other producers.
+EOS. IO سافٹویئر کے استعمال سے اکیس چکروں میں بلاکس تیار ہوتے ہیں. اکیسویں چکر کے منفرد بلاک کے شروع میں پرڈوسدز کا انتخاب کیا جاتا ہے. ھر مرحلے کے بعد اوپری 20 منظور شدہ پرڈوسدز کا خود بہ خود انتخاب ھوتا ھے اور آخری پرڈوسدز متناسب کا ووٹ دوسرے پرڈوسدز، ان کی نسبت کا انتخاب کیا جاتا ہے. منتخب کیے گئے پرڈوسدز بلاک وقت سے ماخوذ کازبی تصادفی عمل کا استعمال کرتے ہوئے شفل کرتے ہیں. یہ ردوبدل اس مقصد کے لیے کی جاتی ہے تاکہ دوسرے پرڈوسدز کا توازن برقرار رکھا جا سکے-.
 
 If a producer misses a block and has not produced any block within the last 24 hours they are removed from consideration until they notify the blockchain of their intention to start producing blocks again. This ensures the network operates smoothly by minimizing the number of blocks missed by not scheduling those who are proven to be unreliable.
 
