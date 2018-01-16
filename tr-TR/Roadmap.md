@@ -34,9 +34,9 @@ Komut satırı araçları, RPC arabirimi ile geliştirici ortamının bütünle�
 
 ### Temel Geliştirici Dokümanları Hazırlama (Josh)
 
-Documents that teach developers how to get started with building on EOS.IO blockchains. This includes documentations of the WASM API, RPC Interface, and Command Line Tools.
+Geliştiricilere EOS.IO blok zincirleri üzerine inşa etmeye başlamayı öğreten belgeler. Bu, WASM API, RPC Arabirimi ve Komut Satırı Araçları belgelerini içerir. Dokümanlar, geliştiricilerin, EOS.IO blok zinciri üzerinde uygulama geliştirmeye nasıl başlayacaklarını öğretir. Bunlara WASM API, RPC Arabirimi ve Komut Satırı Araçları, belgeleri de dahildir.
 
-# Phase 2 - Minimal Viable Test Network - Fall 2017
+# Aşama 2 - Geçerli Minimum Seviye için Test Ağı - Yaz 2017
 
 Everything in Phase 1 assumes a trusted environment that only runs the developer's own code. Before a test network can be deployed several additional features need to be implemented and tested.
 
