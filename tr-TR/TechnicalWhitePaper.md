@@ -1,8 +1,8 @@
-# EOS.IO Technical White Paper
+# EOS.IO Teknik Beyaz Kağıdı
 
-**June 26, 2017**
+**26 Haziran 2017**
 
-**Abstract:** The EOS.IO software introduces a new blockchain architecture designed to enable vertical and horizontal scaling of decentralized applications. This is achieved by creating an operating system-like construct upon which applications can be built. The software provides accounts, authentication, databases, asynchronous communication and the scheduling of applications across hundreds of CPU cores or clusters. The resulting technology is a blockchain architecture that scales to millions of transactions per second, eliminates user fees, and allows for quick and easy deployment of decentralized applications.
+**Özet:** EOS.IO yazılımı, merkezi olmayan uygulamalarda dikey ve yatay ölçeklendirmeyi sağlamak için tasarlanmış, yeni bir blok zinciri mimarisi sunar. Bu, üzerinde uygulama oluşturulabilen işletim sistemi benzeri bir yapı oluşturarak sağlanır. Yazılım; hesaplar, kimlik doğrulama, veritabanları, asenkron iletişim ve yüzlerce CPU çekirdeği veya sunucu kümesinde uygulamaların zamanlamasını sağlar. The resulting technology is a blockchain architecture that scales to millions of transactions per second, eliminates user fees, and allows for quick and easy deployment of decentralized applications.
 
 **PLEASE NOTE: CRYPTOGRAPHIC TOKENS REFERRED TO IN THIS WHITE PAPER REFER TO CRYPTOGRAPHIC TOKENS ON A LAUNCHED BLOCKCHAIN THAT ADOPTS THE EOS.IO SOFTWARE. THEY DO NOT REFER TO THE ERC-20 COMPATIBLE TOKENS BEING DISTRIBUTED ON THE ETHEREUM BLOCKCHAIN IN CONNECTION WITH THE EOS TOKEN DISTRIBUTION.**
 
