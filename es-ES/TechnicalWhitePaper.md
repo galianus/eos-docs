@@ -4,21 +4,21 @@
 
 **Resumen:** El software EOS.IO introduce una nueva arquitectura Blockchain diseñada para facilitar la escalabilidad vertical y horizontal de aplicaciones descentralizadas. Esto se logra creando una construcción similar a un sistema operativo sobre la cual se pueden construir aplicaciones. El software proporciona cuentas, autenticación, bases de datos, comunicación asíncrona y la ejecución programada de aplicaciones en cientos de núcleos CPU o clústeres. La tecnología resultante es una arquitectura blockchain que se adapta a millones de transacciones por segundo, elimina las tarifas de los usuarios y permite el despliegue rápido y sencillo de aplicaciones descentralizadas.
 
-**ATENCIÓN: TENGA EN CUENTA QUE LOS TOKENS CRIPTOGRÁFICOS MENCIONADOS EN ESTE DOCUMENTO SE REFIEREN A LOS TOKENS CRIPTOGRÁFICOS PROPIOS DE UNA BLOCKCHAIN QUE HA SIDO ADOPTADA POR EL SOFTWARE EOS.IO. NO SE REFIEREN A LOS TOKENS COMPATIBLES ERC-20 DISTRIBUIDOS EN LA BLOCKCHAIN DE ETHEREUM EN CONEXIÓN CON LA DISTRIBUCIÓN DE TOKEN EOS.**
+**ATENCIÓN: TENGA EN CUENTA QUE LOS TOKENS CRIPTOGRÁFICOS MENCIONADOS EN ESTE DOCUMENTO SE REFIEREN A LOS TOKENS CRIPTOGRÁFICOS PROPIOS DE UNA BLOCKCHAIN QUE HA SIDO DESARROLLADA POR EL SOFTWARE EOS.IO. NO SE REFIEREN A LOS TOKENS COMPATIBLES ERC-20 DISTRIBUIDOS EN LA BLOCKCHAIN DE ETHEREUM EN CONEXIÓN CON LA DISTRIBUCIÓN DE TOKEN EOS.**
 
 Copyright © 2017 block.one
 
 Sin permiso, cualquier persona puede usar, reproducir o distribuir cualquier material en este documento técnico para uso no comercial y educativo (es decir, que no sea a cambio de una comisión o con fines comerciales) siempre que se cite la fuente original y el aviso de copyright correspondiente.
 
-**DESCARGO DE RESPONSABILIDAD:** Este documento técnico de EOS.IO es solo para fines informativos. block.one no garantiza la exactitud o las conclusiones alcanzadas en este documento, y este documento se proporciona "tal cual". block.one no realiza y renuncia expresamente a todas las representaciones y garantías, expresas, implícitas, legales o de otro tipo, incluidas, entre otras, las siguientes: (i) garantías de comerciabilidad, idoneidad para un propósito particular, conveniencia, uso, título o no infracción; (ii) que el contenido de este documento no contiene errores; y (iii) que dichos contenidos no infrinjan los derechos de terceros. block.one y sus afiliados no tendrán responsabilidad por daños y perjuicios de cualquier tipo que surjan del uso, referencia o confianza en este documento o en cualquier contenido aquí incluido, incluso si es informada la posibilidad de dichos daños. En ningún caso block.one o sus afiliados serán responsables ante cualquier persona o entidad por los daños, pérdidas, responsabilidades, costos o gastos de cualquier tipo, ya sean directos o indirectos, consecuentes, compensatorios, incidentales, reales, ejemplares, punitivos o especiales. por el uso, la referencia o la confianza en este documento o cualquier contenido aquí incluido, que incluye, entre otros, cualquier pérdida de negocios, ingresos, ganancias, datos, uso, buena voluntad u otras pérdidas intangibles.
+**DESCARGO DE RESPONSABILIDAD:** Este documento técnico de EOS.IO solo tiene fines informativos. block.one no garantiza la exactitud o las conclusiones alcanzadas en este documento, y este documento se proporciona "tal cual". block.one no realiza y renuncia expresamente a todas las representaciones y garantías, expresas, implícitas, legales o de otro tipo, incluidas, entre otras, las siguientes: (i) garantías de comerciabilidad, idoneidad para un propósito particular, conveniencia, uso, título o no infracción; (ii) que el contenido de este documento no contiene errores; y (iii) que dichos contenidos no infrinjan los derechos de terceros. block.one y sus afiliados no tendrán responsabilidad por daños y perjuicios de cualquier tipo que surjan del uso, referencia o confianza en este documento o en cualquier contenido aquí incluido, incluso si es informada la posibilidad de dichos daños. En ningún caso block.one o sus afiliados serán responsables ante cualquier persona o entidad por los daños, pérdidas, responsabilidades, costos o gastos de cualquier tipo, ya sean directos o indirectos, consecuentes, compensatorios, incidentales, reales, ejemplares, punitivos o especiales. por el uso, la referencia o la confianza en este documento o cualquier contenido aquí incluido, que incluye, entre otros, cualquier pérdida de negocios, ingresos, ganancias, datos, uso, buena voluntad u otras pérdidas intangibles.
 
 - [Antecedentes](#background)
-- [Requisitos para Aplicaciones Blockchain](#requirements-for-blockchain-applications) 
-  - [Soporte para millones de usuarios](#support-millions-of-users)
+- [Requisitos para las Aplicaciones Blockchain](#requirements-for-blockchain-applications) 
+  - [Soporte para Millones de Usuarios](#support-millions-of-users)
   - [Uso Libre](#free-usage)
   - [Actualizaciones Sencillas y Recuperación de Errores](#easy-upgrades-and-bug-recovery)
   - [Baja Latencia](#low-latency)
-  - [Rendimiento secuencial](#sequential-performance)
+  - [Rendimiento Secuencial](#sequential-performance)
   - [Rendimiento paralelo](#parallel-performance)
 - [Algoritmo de Consenso (DPOS)](#consensus-algorithm-dpos) 
   - [Confirmación de Transacción](#transaction-confirmation)
