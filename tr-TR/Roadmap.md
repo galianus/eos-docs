@@ -44,7 +44,7 @@ Aşama 1'deki her şey, geliştiricinin kendi kodunu çalıştırdığı güveni
 
 Bu eklenti, iki bağımsız düğüm arasındaki blok zinciri durumunu senkronize etmekten sorumludur.
 
-### WASM Sanitation & CPU Sandboxing (Brian)
+### WASM'in Sağlıklı Çalışması & CPU Test Ortamı (Brian)
 
 The WASM code needs to be sanitized to check for non-deterministic behavior such as floating point operations and infinite loops.
 
