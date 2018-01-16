@@ -138,7 +138,7 @@ Zamanla tüm kullanıcılar, sahte zincirlerin işlemlerini, meşru zincirden ge
 
 # Hesaplar
 
-EOS.IO yazılımı, tüm hesapların, 2 ila 32 karakter uzunluğunda, benzersiz ve okunabilir bir adla referans alınmasına izin verir. The name is chosen by the creator of the account. Tüm hesaplar, yaratıldıkları anda, hesap verilerini saklamanın maliyetini karşılamak için oluşturulan minimum hesap bakiyesiyle finanse edilmelidir. Hesap adları isim uzaylarını da destekler ve bu @domain kullanıcısının @user.domain hesabı oluşturabilen tek kişi olduğu anlamına gelir.
+EOS.IO yazılımı, tüm hesapların, 2 ila 32 karakter uzunluğunda, benzersiz ve okunabilir bir adla referans alınmasına izin verir. Ad, hesap yaratıcısı tarafından seçilir. Tüm hesaplar, yaratıldıkları anda, hesap verilerini saklamanın maliyetini karşılamak için oluşturulan minimum hesap bakiyesiyle finanse edilmelidir. Hesap adları isim uzaylarını da destekler ve bu @domain kullanıcısının @user.domain hesabı oluşturabilen tek kişi olduğu anlamına gelir.
 
 Merkezi olmayan bir bağlamda, uygulama geliştiricileri, yeni bir kullanıcı kaydetmek için hesap oluşturma maliyetini öderler. Geleneksel işletmeler halihazırda müşteri edinmek için, reklamcılık, ücretsiz hizmetler vb. şeklinde önemli miktarda para harcıyorlar. Yeni bir blok zinciri hesabının fonlama maliyeti, bunlarla karşılaştırıldığında önemsiz kalır. Neyse ki, daha önce başka bir uygulamaya kaydolmuş kullanıcıların yeni hesap oluşturmasına gerek yoktur.
 
@@ -146,7 +146,7 @@ Merkezi olmayan bir bağlamda, uygulama geliştiricileri, yeni bir kullanıcı k
 
 Her hesap, yapılandırılmış mesajları diğer hesaplara gönderebilir ve mesajları alındıklarında işlemek için komut dosyaları tanımlayabilir. EOS.IO yazılımı, her hesaba yalnızca kendi mesaj işleyicileri tarafından erişilebilen, ona özel bir veritabanı verir. Mesaj işleme komut dosyaları da diğer hesaplara mesaj gönderebilir. Mesajların ve otomatik mesaj işleyicilerin kombinasyonu, EOS.IO'nun akıllı sözleşmeleri tanımlama biçimidir.
 
-## Role Based Permission Management
+## Rol Bazlılı İzin Yönetimi
 
 İzin yönetimi, bir mesajın düzgün şekilde yetkilendirilmiş olup olmadığını belirler. İzin yönetiminin en basit şekli, bir işlemin gerekli imzalarının bulunduğunu kontrol etmektir, ancak bu şu anlama gelmektedir; gerekli imzaları zaten bilinmektedir. Genel olarak yetki, bireylere veya birey gruplarına bağlıdır ve sıklıkla bölümlere ayrılmıştır. EOS.IO yazılımı, kimlerin ne zaman ne yapabileceği konusunda, hesapları ince bir hassasiyet ve yüksek seviyede kontrol eden bildirimsel bir izin yönetim sistemi sunmaktadır.
 
@@ -204,7 +204,7 @@ Daha sonra bu mesajlardan biri yayınlandığında kullanıcılar, e-posta veya 
 
 Gerekli gecikme, işlemin ne kadar hassas olduğuna bağlıdır. Kahve ödemesi saniyeler içinde ve geri dönüşsüz olarak yapabilir. Ev satın alırken 72 saatlik takas süresi gerekli olabilir. Bir hesabın tamamını yeni kontrole aktarmak 30 güne kadar sürebilir. Doğru bir gecikme süresi seçimi, geliştiricilere ve kullanıcılara kalmıştır.
 
-## Recovery from Stolen Keys
+## Çalıntı Anahtarlardan Kurtarma
 
 EOS.IO yazılımı, kullanıcılara anahtarları çalındığında, hesaplarını kontrol etme imkanı sağlar. Bir hesap sahibi, hesabındaki owner anahtarını sıfırlamak için, belirlenen hesap kurtarma ortağının onayıyla birlikte, onun hesabında son 30 günde etkin olan herhangi bir owner anahtarını kullanabilir. Hesap kurtarma iş ortağı, hesap sahibin yardımı olmaksızın hesabın denetimini sıfırlayamaz.
 
@@ -275,7 +275,7 @@ Hesaplama maliyetin öznel olarak değerlendirilmesi, blok zincirini, tam ve bel
 
 # Jeton Modeli ve Kaynak Kullanımı
 
-**LÜTFEN DİKKAT: BU BEYAZ SAYFALARDA BELİRTİLEN KRİPTOGRAFİK TOKENLAR, EOS.IO YAZILIMINI KULLANAN BIR BLOK ZİNCİRİNDE ÇIKARILMIŞ KRİPTOGRAFİK TOKENLARA ATIF YAPMAKTADIR. THEY DO NOT REFER TO THE ERC-20 COMPATIBLE TOKENS BEING DISTRIBUTED ON THE ETHEREUM BLOCKCHAIN IN CONNECTION WITH THE EOS TOKEN DISTRIBUTION.**
+**LÜTFEN DİKKAT: BU BEYAZ SAYFALARDA BELİRTİLEN KRİPTOGRAFİK TOKENLAR, EOS.IO YAZILIMINI KULLANAN BIR BLOK ZİNCİRİNDE ÇIKARILMIŞ KRİPTOGRAFİK TOKENLARA ATIF YAPMAKTADIR. EOS TOKEN DAĞITIMI İLE BAĞLANTILI OLARAK ETHEREUM BLOCK ZİNCİRİ ÜZERİNDE DAĞITILAN ERC-20 UYUMLU TOKENSLERLA İLGİLİ DEĞİLDİR.**
 
 Tüm blok zincirlerinde kaynak kısıtlıdır ve kötüye kullanımı önlemek için bir sistem gerekir. EOS.IO yazılımını kullanan bir blok zincirinde, uygulamalar tarafından tüketilen üç geniş kaynak sınıfı vardır:
 
@@ -293,7 +293,7 @@ Blok üreticileri, bant genişliği, hesaplama ve durum için mevcut kapasiteler
 
 EOS.IO yazılımını benimseyen bir blok zincirinde, bant genişliği ve hesaplama kapasitesi bir kısmi rezerv olarak ayrılır, çünkü bunlar geçicidir (kullanılmayan kapasite gelecekte kullanılmak üzere kaydedilemez). EOS.IO yazılımı tarafından kullanılan algoritma, Steem tarafından kullanılan, hız limitli bant genişliği algoritmasına benzer.
 
-## Objective and Subjective Measurements
+## Objektif ve Öznel Ölçümler
 
 Daha önce belirtildiği gibi, hesaplama kullanım araçlarının performans ve optimizasyon üzerinde önemli bir etkisi vardır; Bu nedenle, tüm kaynak kullanımı kısıtlamaları nihai olarak özneldir ve uygulamanın kendi algoritmalarına ve tahminlerine göre blok üreticileri tarafından yapılır.
 
@@ -321,15 +321,15 @@ Bant genişliği ve hesaplama devredilebilirken, uygulama durumunun depolanması
 
 Her kullanıcı hesabına belirli bir miktarda depolama alanı gerekir; Bu nedenle, her hesap minimum bir bakiye sağlamalıdır. Ağın depolama kapasitesi arttıkça bu minimum bakiye düşecektir.
 
-## Block Rewards
+## Blok Ödülleri
 
 EOS.IO yazılımını benimseyen bir blok zincirinde, her 1 blok üretildiğinde, blok üreticisi yeni bir jetonla ödüllendirilir. Bu koşullarda, oluşturulan jetonların sayısı, tüm blok üreticileri tarafından yayınlanmış, talep edilen edilen ücretin ortanca değerine göre belirlenir. EOS.IO yazılımı, üretici ödüllerininin, toplam jeton arzının yıllık % 5'ini geçmeyecek şekilde sınırlandırılması için ayarlanabilir.
 
-## Community Benefit Applications
+## Toplum Yararına Uygulamalar
 
 Kullanıcılar, EOS.IO yazılımına dayanan bir blok zincirine istinaden blok üreticilerini seçmenin yanı, sıra akıllı sözleşmeler olarak da bilinen 3 topluluk fayda uygulamasını seçebilirler. Yıllık olarak belirlenmiş arzın, belli bir yüzdesi kadar jeton, blok üreticilerine ödenen jetonlardan düşülür ve bunu bu 3 uygulama alır. Bu akıllı sözleşmeler, her uygulamanın jeton sahiplerinden aldığı oylarla orantılı olarak jeton alacaktır. Seçilen uygulamalar veya akıllı sözleşmeler, jeton sahipleri tarafından akıllı sözleşmelerle, yenileriyle değiştirilebilir.
 
-# Governance
+# Yönetim
 
 Yönetişim, insanların öznel algoritmalarla yakalanamayan öznel konularda fikir birliğine varma sürecidir. EOS.IO yazılımı tabanlı bir blok zinciri, blok üreticilerinin var olan etkisini, verimli bir şekilde yöneten bir yönetişim süreci uygular. Tanımlanmış bir yönetişim süreci bulunduğunda, önceki blok zincirleri, tahmin edilemeyen sonuçlarla sonuçlanacak geçici, gayrı resmi ve genellikle tartışmalı yönetişim süreçleri doğuyordu.
 
@@ -337,7 +337,7 @@ EOS.IO yazılımına dayanan bir blok zinciri, gücün, bu gücü blok üreticil
 
 Blok üreticilerin seçimi EOS.IO yazılımına gömülüdür. Blok zincirinde herhangi bir değişiklik yapılmadan önce bu blok üreticilerinin bunu onaylaması gerekir. Blok üreticileri, jeton sahipleri tarafından arzulanan değişiklikleri yapmayı reddederse oy kullanamazlar. Eğer blok üreticileri jeton sahiplerinin izni olmaksızın değişiklikler yaparsa, üretilmeyen tam düğüm doğrulayıcıları (borsalar vb.) Tüm değişikliği reddedecektir.
 
-## Freezing Accounts
+## Hesapların Dondurulması
 
 Bazen akıllı sözleşmeler anormal veya öngörülemeyen bir şekilde davranır ve amacında başarısız olur; Bazen bir uygulama veya hesap kabul edilemez miktarda kaynak tüketimine olanak tanıyan bir istismarı keşfedebilir. Bu tür sorunlar kaçınılmaz olarak ortaya çıktığında, blok üreticileri bu tür durumlarda düzeltme yetkisine sahiptir.
 
@@ -367,7 +367,7 @@ EOS.IO yazılımı, canonical/kurallı kaynak kodu ve anayasa tarafından tanım
 
 Varsayılan olarak EOS.IO yazılımının yapılandırması, yeni özellik eklemek için blok zinciri güncelleme işlemi 2-3 ay sürer. Anayasada değişikliği gerektirmeyen, kritik hataları düzeltmek için yapılan güncellemeler 1-2 ay sürebilir.
 
-### Emergency Changes
+### Acil Durum Değişiklikleri
 
 Blok üreticileri, kullanıcılara fiilen zarar veren bir hata veya güvenlik açığını düzeltmek için bir yazılım değişikliği yapılması gerekiyorsa, süreci hızlandırabilir. Genel olarak konuşursak, bazı hızlandırılmış hata düzeltmeleri ya da yeni özellik eklemeleri, anayasaya aykırı olabilir.
 
@@ -409,7 +409,7 @@ Ethereum geliştiricileri, kendilerine uygun sandbox ve determinizm sağlamak i�
 
 Bu sanal makine, mevcut akıllı sözleşmeler için kullanılmıştır ve bir EOS.IO tabanlı blok zincirinde çalışmak üzere uyarlanabilir. EVM sözleşmelerinin, kendi sandbox'ı içinde, EOS.IO blok zincirinde çalıştırılabileceği ve bazı uyarlamarla, diğer EOS.IO blok zinciri uygulamalarıyla iletişim kurabileceği akla uygundur.
 
-# Inter Blockchain Communication
+# Blok Zincirleri Arası İletişim
 
 EOS.IO yazılımı, bloklar arası iletişimi kolaylaştıracak şekilde tasarlanmıştır. Bunu, mesaj varlığının ve mesaj dizisinin kanıtlarını kolayca üretmesiyle başarılır. Bu kanıtlar, mesaj geçişi etrafında tasarlanmış bir uygulama mimarisiyle birleştiğinde, bloklar arası iletişim ve kanıt doğrulama detaylarının geliştiricilerden gizlenmesini sağlar.
 
@@ -439,6 +439,6 @@ Blok üreticileri, başka bir blok zinciriyle iletişim kurarken; bir işlemi, g
 
 Dıştaki blok zincirlerden merkle provaları kullanırken, işlenen tüm işlemlerin geçerli olduğunu bilmekle, hiçbir işlemin atlanıp atlanmadığını bilmek arasında önemli bir fark vardır. En son işlemlerin hepsinin bilinmekte olduğunu kanıtlamak imkansız olmakla birlikte, işlem geçmişi üzerinde boşluk olmadığını ispatlamak mümkündür. EOS.IO yazılımı, her hesaba iletilen her mesaja, bir sıra numarası atayarak bunu kolaylaştırır. Bir kullanıcı, bu sıra numaralarını, belirli bir hesaba yönelik tüm mesajların işlendiğini ve sırayla işleme tabi tutulduğunu kanıtlamak için kullanabilir.
 
-# Conclusion
+# Sonuç
 
 EOS.IO yazılımı, kanıtlanmış konseptler ve en iyi deneyimlerden tasarlanmıştır. Ve blok zinciri teknolojisindeki temel ilerlemeleri temsil etmektedir. Bu yazılım, merkezi olmayan uygulamaların kolayca dağıtılabileceği ve yönetilebileceği, küresel ölçekte ölçeklenebilir bir blok zinciri için bütüncül bir planın parçasıdır.
