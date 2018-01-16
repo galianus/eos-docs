@@ -48,7 +48,7 @@ Bu eklenti, iki bağımsız düğüm arasındaki blok zinciri durumunu senkroniz
 
 The WASM code needs to be sanitized to check for non-deterministic behavior such as floating point operations and infinite loops.
 
-### Resource Usage Tracking & Rate Limiting (Arhag)
+### Kaynak Kullanımını İzleme & Hız Sınırlaması (Arhag)
 
 To prevent abuse the resource monitoring and usage tracking rate limits users according to staked EOS.
 
