@@ -10,22 +10,22 @@ Copyright © 2017 block.one
 
 Herhangi bir kişi (ücret karşılığı veya ticari amaç gütmeden) bu teknik incelemedeki herhangi bir malzemeyi, ticari olmayan amaçlar ve eğitim amacıyla kullanabilir, çoğaltabilir veya dağıtabilir. Ancak orijinal kaynak ve telif hakkı bildiriminin belirtilmesi şarttır.
 
-**YASAL UYARI:** Bu EOS.IO Teknik Beyaz Kağıdı, sadece bilgi amaçlıdır. block.one, bu beyaz kağıtta ulaşılan sonuçların doğruluğunu veya sonuca ulaşmayı garanti etmez, beyaz kağıt "olduğu gibi" sunulur. block.one aşağıdakileri kapsayan, ancak bunlarla sınırlı olmayan herhangi bir ifade, ima, sarih ve zımni tüm beyan ve garantileri açıkça reddeder: (i) satılabilir olduğu, belirli bir amaca ve kullanıma uygun olduğunu, unvan veya hak ihlali yapılmadığı beyanını reddeder; (ii) bu beyaz kağıdın içeriğinin hatasız olduğu beyanını reddder (iii) bu tür içeriklerin üçüncü taraf hakları ihlal etmediği beyanını reddeder. block.one ve yan kuruluşları, bu beyaz kağıda güvenmekten ve başvurmaktan, bu belgede yer alan içeriklerin kullanılmasından doğacak zarardan, hiçbir şekilde sorumlu tutulamaz. In no event will block.one or its affiliates be liable to any person or entity for any damages, losses, liabilities, costs or expenses of any kind, whether direct or indirect, consequential, compensatory, incidental, actual, exemplary, punitive or special for the use of, reference to, or reliance on this white paper or any of the content contained herein, including, without limitation, any loss of business, revenues, profits, data, use, goodwill or other intangible losses.
+**YASAL UYARI:** Bu EOS.IO Teknik Beyaz Kağıdı, sadece bilgi amaçlıdır. block.one, bu beyaz kağıtta ulaşılan sonuçların doğruluğunu veya sonuca ulaşmayı garanti etmez, beyaz kağıt "olduğu gibi" sunulur. block.one aşağıdakileri kapsayan, ancak bunlarla sınırlı olmayan herhangi bir ifade, ima, sarih ve zımni tüm beyan ve garantileri açıkça reddeder: (i) satılabilir olduğu, belirli bir amaca ve kullanıma uygun olduğunu, unvan veya hak ihlali yapılmadığı beyanını reddeder; (ii) bu beyaz kağıdın içeriğinin hatasız olduğu beyanını reddder (iii) bu tür içeriklerin üçüncü taraf hakları ihlal etmediği beyanını reddeder. block.one ve yan kuruluşları, bu beyaz kağıda güvenmekten ve başvurmaktan, bu belgede yer alan içeriklerin kullanılmasından doğacak zarardan, hiçbir şekilde sorumlu tutulamaz. Block.one şirketi; herhangi bir kişi ya da kuruluşa karşı; bu beyaz kağıtta yer alan veya burada atıfta bulunan herhangi bir içeriği kullanılmasından ve bunlara güvenilmesinden kaynaklanan doğrudan ya da dolaylı ortaya çıkan; telafi edici, tesadüfi, fiili, örnek niteliğinde, cezai ya da özel ya da herhangi bir şekilde gelir, kâr, veri, kullanım, iyi niyet veya diğer maddi olmayan kayıplar da dahil ancak bunlarla sınırlı olmaksızın; herhangi bir zarar, kayıp, yükümlülük, maliyet ya da harcamadan; hiçbir durumda sorumlu değildir.
 
-- [Background](#background)
-- [Requirements for Blockchain Applications](#requirements-for-blockchain-applications) 
-  - [Support Millions of Users](#support-millions-of-users)
-  - [Free Usage](#free-usage)
-  - [Easy Upgrades and Bug Recovery](#easy-upgrades-and-bug-recovery)
-  - [Low Latency](#low-latency)
-  - [Sequential Performance](#sequential-performance)
-  - [Parallel Performance](#parallel-performance)
-- [Consensus Algorithm (DPOS)](#consensus-algorithm-dpos) 
-  - [Transaction Confirmation](#transaction-confirmation)
+- [Arkaplan](#background)
+- [Blockchain Uygulamaları İçin Gerekenler](#requirements-for-blockchain-applications) 
+  - [Milyonlarca Kullanıcıyı Destekleme](#support-millions-of-users)
+  - [Ücretsiz Kullanım](#free-usage)
+  - [Kolay Yükseltmeler ve Hata Ayıklamalar](#easy-upgrades-and-bug-recovery)
+  - [Düşük Gecikme Süresi](#low-latency)
+  - [Sıralı Performans](#sequential-performance)
+  - [Paralel Performans](#parallel-performance)
+- [Uzlaşma Algoritması (DPOS)](#consensus-algorithm-dpos) 
+  - [İşlem Onayı](#transaction-confirmation)
   - [Menfaati İspat olarak İşlem (TaPoS)](#transaction-as-proof-of-stake-tapos)
-- [Accounts](#accounts) 
+- [Hesaplar](#accounts) 
   - [Mesajlar & İşleyiciler](#messages--handlers)
-  - [Role Based Permission Management](#role-based-permission-management) 
+  - [Rol Bazlı İzin Yönetimi](#role-based-permission-management) 
     - [İsimlendirilmiş İzin Seviyeleri](#named-permission-levels)
     - [İsimlendirilmiş Mesaj İşleyici Grupları](#named-message-handler-groups)
     - [İzin Haritası](#permission-mapping)
@@ -67,9 +67,9 @@ Herhangi bir kişi (ücret karşılığı veya ticari amaç gütmeden) bu teknik
   - [Tamlığın Kanıtı](#proof-of-completeness)
 - [Sonuç](#conclusion)
 
-# Background
+# Arkaplan
 
-Blockchain technology was introduced in 2008 with the launch of the bitcoin currency, and since then entrepreneurs and developers have been attempting to generalize the technology in order to support a wider range of applications on a single blockchain platform.
+Block zinciri teknolojisi, 2008 yılında bitcoin para biriminin lansmanıyla piyasaya sunuldu ve o günden bu yana girişimciler ve geliştiriciler, tek bir blok platformunda daha geniş bir uygulama yelpazesini desteklemek için teknolojiyi genelleştirmeye çalışıyorlardı.
 
 While a number of blockchain platforms have struggled to support functional decentralized applications, application specific blockchains such as the BitShares decentralized exchange (2014) and Steem social media platform (2016) have become heavily used blockchains with tens of thousands of daily active users. They have achieved this by increasing performance to thousands of transactions per second, reducing latency to 1.5 seconds, eliminating fees, and providing a user experience similar to those currently provided by existing centralized services.
 
