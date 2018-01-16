@@ -71,9 +71,9 @@ Herhangi bir kişi (ücret karşılığı veya ticari amaç gütmeden) bu teknik
 
 Block zinciri teknolojisi, 2008 yılında bitcoin para biriminin lansmanıyla piyasaya sunuldu ve o günden bu yana girişimciler ve geliştiriciler, tek bir blok platformunda daha geniş bir uygulama yelpazesini desteklemek için teknolojiyi genelleştirmeye çalışıyorlardı.
 
-While a number of blockchain platforms have struggled to support functional decentralized applications, application specific blockchains such as the BitShares decentralized exchange (2014) and Steem social media platform (2016) have become heavily used blockchains with tens of thousands of daily active users. They have achieved this by increasing performance to thousands of transactions per second, reducing latency to 1.5 seconds, eliminating fees, and providing a user experience similar to those currently provided by existing centralized services.
+Bir dizi blok platformu işlevsel merkezi olmayan uygulamaları desteklemek için uğraşırken, Merkezi olmayan borsa BitShares (2014) ve Sosyal medya platformu Steem (2016) gibi uygulamaya özel blok zincirleri, onbinlerce günlük aktif kullanıcısıyla, çokça kullanılan blok zincir haline geldi. Bunlar, performansı saniyede binlerce işleme çıkarama, bekleme süresini 1,5 saniyeye düşürme, ücretleri ortadan kaldırma ve şu anki merkezi hizmetler tarafından sağlananlara benzer bir kullanıcı deneyimi sunma gibi eylemlerle bunu başardılar.
 
-Existing blockchain platforms are burdened by large fees and limited computational capacity that prevent widespread blockchain adoption.
+Mevcut blok zinciri platformları, geniş blok zincirinin kabulünü engelleyen yüksek ücretler ve sınırlı hesaplama kapasitesi gibi yükler altındadır.
 
 # Requirements for Blockchain Applications
 
