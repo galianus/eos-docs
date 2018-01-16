@@ -12,7 +12,7 @@ Herhangi bir kişi (ücret karşılığı veya ticari amaç gütmeden) bu teknik
 
 **YASAL UYARI:** Bu EOS.IO Teknik Beyaz Kağıdı, sadece bilgi amaçlıdır. block.one, bu beyaz kağıtta ulaşılan sonuçların doğruluğunu veya sonuca ulaşmayı garanti etmez, beyaz kağıt "olduğu gibi" sunulmuştur. block.one aşağıdakileri kapsayan, ancak bunlarla sınırlı olmayan herhangi bir ifade, ima, sarih ve zımni tüm beyan ve garantileri açıkça reddeder: (i) satılabilir olduğu, belirli bir amaca ve kullanıma uygun olduğunu, unvan veya hak ihlali yapılmadığı beyanını reddeder; (ii) bu beyaz kağıdın içeriğinin hatasız olduğu beyanını reddder (iii) bu tür içeriklerin üçüncü taraf hakları ihlal etmediği beyanını reddeder. block.one ve yan kuruluşları, bu beyaz kağıda güvenmekten ve başvurmaktan, bu belgede yer alan içeriklerin kullanılmasından doğacak zarardan, hiçbir şekilde sorumlu tutulamaz. Block.one şirketi; herhangi bir kişi ya da kuruluşa karşı; bu beyaz kağıtta yer alan veya burada atıfta bulunan herhangi bir içeriği kullanılmasından ve bunlara güvenilmesinden kaynaklanan doğrudan ya da dolaylı ortaya çıkan; telafi edici, tesadüfi, fiili, örnek niteliğinde, cezai veya özel ya da herhangi bir şekilde gelir, kâr, veri, kullanım, iyi niyet veya diğer maddi olmayan kayıplar da dahil ancak bunlarla sınırlı olmaksızın; herhangi bir zarar, kayıp, yükümlülük, maliyet ya da harcamadan; hiçbir durumda sorumlu değildir.
 
-- [Arkaplan](#background)
+- [Arka Plan](#background)
 - [Blockchain Uygulamaları İçin Gerekenler](#requirements-for-blockchain-applications) 
   - [Milyonlarca Kullanıcıyı Destekleme](#support-millions-of-users)
   - [Ücretsiz Kullanım](#free-usage)
@@ -67,7 +67,7 @@ Herhangi bir kişi (ücret karşılığı veya ticari amaç gütmeden) bu teknik
   - [Tamlığın Kanıtı](#proof-of-completeness)
 - [Sonuç](#conclusion)
 
-# Arkaplan
+# Arka Plan
 
 Block zinciri teknolojisi, 2008 yılında bitcoin para biriminin lansmanıyla piyasaya sunuldu ve o günden bu yana girişimciler ve geliştiriciler, tek bir blok platformunda daha geniş bir uygulama yelpazesini desteklemek için teknolojiyi genelleştirmeye çalışıyorlardı.
 
