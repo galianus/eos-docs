@@ -55,23 +55,23 @@ Sin permiso, cualquier persona puede usar, reproducir o distribuir cualquier mat
   - [Actualizando el Protocolo & Constitución](#upgrading-the-protocol--constitution) 
     - [Cambios de Emergencia](#emergency-changes)
 - [Scripts & Máquinas Virtuales](#scripts--virtual-machines) 
-  - [Mensajes definidos por esquema](#schema-defined-messages)
-  - [Base de datos definida por esquema](#schema-defined-database)
-  - [Separación de la autenticación de la aplicación](#separating-authentication-from-application)
+  - [Mensajes Definidos por Esquema](#schema-defined-messages)
+  - [Base de Datos Definida por Esquema](#schema-defined-database)
+  - [Separación de la Autenticación de la Aplicación](#separating-authentication-from-application)
   - [Arquitectura Independiente de la Máquina Virtual](#virtual-machine-independent-architecture) 
     - [Web Assembly (WASM)](#web-assembly-wasm)
     - [Máquina Virtual de Ethereum (EVM)](#ethereum-virtual-machine-evm)
 - [Comunicación Inter Blockchain](#inter-blockchain-communication) 
-  - [Pruebas Merkle para validación de cliente ligero (LCV)](#merkle-proofs-for-light-client-validation-lcv)
-  - [Latencia de la comunicación Interchain](#latency-of-interchain-communication)
-  - [Prueba de integridad](#proof-of-completeness)
+  - [Pruebas Merkle para validaciones en Clientes Ligeros (LCV)](#merkle-proofs-for-light-client-validation-lcv)
+  - [Latencia de la Comunicación Interchain](#latency-of-interchain-communication)
+  - [Prueba de Integridad](#proof-of-completeness)
 - [Conclusión](#conclusion)
 
 # Antecedentes
 
-La tecnología Blockchain se introdujo en el año 2008 con el lanzamiento de la moneda de bitcoin, y desde entonces los empresarios y desarrolladores han intentado generalizar la tecnología para admitir una gama más amplia de aplicaciones en una sola plataforma de blockchain.
+La tecnología Blockchain se introdujo en el año 2008 con el lanzamiento de la moneda de bitcoin, y desde entonces los empresarios y desarrolladores han intentado generalizar la tecnología para admitir una gama más amplia de aplicaciones en una sola plataforma blockchain.
 
-Mientras que varias plataformas blockchain han tenido dificultades para soportar aplicaciones funcionales descentralizadas, blockchains específicos de aplicaciones como el Exchange Descentralizado de BitShares (2014) y la Plataforma de la Red Social Steem (2016) se han convertido en blockchains muy utilizados con decenas de miles de usuarios activos diariamente. Lo han logrado aumentando el rendimiento a miles de transacciones por segundo, lo que reduce la latencia a 1,5 segundos, eliminando las tarifas y brindando a los usuarios una experiencia similar a la que ofrecen actualmente los servicios centralizados.
+Mientras que varias plataformas blockchain han tenido dificultades para soportar aplicaciones funcionales descentralizadas, aplicaciones blockchains específicas como el Exchange Descentralizado de BitShares (2014) y la Plataforma de la Red Social Steem (2016) se han convertido en blockchains muy utilizados con decenas de miles de usuarios activos diariamente. Lo han logrado aumentando el rendimiento a miles de transacciones por segundo, reduciendo la latencia a 1,5 segundos, eliminando las tarifas y ofreciendo a los usuarios una experiencia similar a la que ofrecen actualmente los servicios centralizados.
 
 Las plataformas existentes de blockchain están cargadas de grandes tarifas y sus capacidades computacionales limitadas impiden la adopción generalizada de la blockchain.
 
