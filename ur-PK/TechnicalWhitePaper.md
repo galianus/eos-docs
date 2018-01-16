@@ -142,13 +142,13 @@ EOS.IO سافٹویئر تمام اکاونٹس کو ایک منفرد انسا�
 
 ایک ڑیسنٹرالایزڈ سیاق و سباق میں، اپلیکیشن ڈیولپر کو نیا اکاونٹ بنانے کے لیے ایک معمولی فیس ادا کرنی ہوگی. روایتی کاروباریوں نے پہلے ہی کافی پیسہ صارفین کے لیے اشتہارات کی شکل میں، مفت خدمات، وغیرہ. نیے بلاکچین اکاؤنٹ کو فنڈ کرنے کی قیمت مقابلہ میں غیر معمولی ہونی چاہیے. خوش قسمتی سے، ان صارفین کو اکاؤنٹ بنانے کی ضرورت نہیں جنھوں پہلے سے ہی دوسری اپلیکیشنز میں اپنا اکاونٹ بنایا ہو.
 
-## Messages & Handlers
+## پیغامات اور ان کی دیکھ بھال کرنے والے
 
-Each account can send structured messages to other accounts and may define scripts to handle messages when they are received. The EOS.IO software gives each account its own private database which can only be accessed by its own message handlers. Message handling scripts can also send messages to other accounts. The combination of messages and automated message handlers is how EOS.IO defines smart contracts.
+ہر ایک اکاؤنٹ سے دوسرے اکاونٹ تک ساخت پیغامات پہنچانے جا سکتے ہیں اور موصول ہونے والے پیغامات سے نمٹنے کے لئے سکرپٹس کی وضاحت کی جاتی ہے. EOS.IO سافٹویئر ہر ایک اکاؤنٹ کو اس کا ایک مخصوص ڈیٹابیس دیتا ہے جن کو صرف پیغامات سنبھالنے والے استعمال کر سکتے ہیں. پیغامات سنبھالنے والے نوشوں کو بھی اکاونٹس میں منتقل کر دیا جا سکتا ہے. پیغامات کا مجموعہ اور خود کار پیغامات سنبھالنے والے EOS.IO زکی معاہدوں کی وضاحت کرتا ہے.
 
-## Role Based Permission Management
+## کارکردگی پر مبنی اجازاتی انتظام
 
-Permission management involves determining whether or not a message is properly authorized. The simplest form of permission management is checking that a transaction has the required signatures, but this implies that required signatures are already known. Generally authority is bound to individuals or groups of individuals and is often compartmentalized. The EOS.IO software provides a declarative permission management system that gives accounts fine grained and high level control over who can do what and when.
+اجازاتی انتظام میں اس بات کی تصدیق ہوتی ہے کہ پیغام صحیح ہے یا غلط. اجازاتی انتظام کی سب سے سادہ شکل لین دین کی جانچ پڑتال دستخط دیکھنا، بشرطیکہ دستخط پہلے سے ہی پتہ ہو. عام طور پر اختیارات کسی فرد یا گروہ کو دیے جاتے ہیں اور یہ اکثر کمپارٹمنٹالایزڈ ہوتے ہیں. EOS.IO سافٹویئر ایک مدددل انتظامی اجازت نامہ فراہم کرتا ہے جو اکاؤنٹس کو اعلٰی سطح پر کنٹرول کرتا ہے کہ ان کا کب کہا کرنا ہے.
 
 It is critical that authentication and permission management be standardized and separate from the business logic of the application. This enables tools to be developed to manage permissions in a general purpose manner and also provide significant opportunities for performance optimization.
 
