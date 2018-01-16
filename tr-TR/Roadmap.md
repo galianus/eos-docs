@@ -38,11 +38,11 @@ Geliştiricilere EOS.IO blok zincirleri üzerine inşa etmeye başlamayı öğre
 
 # Aşama 2 - Geçerli Minimum Seviye için Test Ağı - Yaz 2017
 
-Everything in Phase 1 assumes a trusted environment that only runs the developer's own code. Before a test network can be deployed several additional features need to be implemented and tested.
+Aşama 1'deki her şey, geliştiricinin kendi kodunu çalıştırdığı güvenilir bir ortamı varsayar. Bir test ağı kurulmadan önce birkaç ek özellik uygulanmalı ve test edilmelidir.
 
-### P2P Network Code (Phil)
+### P2P Ağ Kodu (Phil)
 
-This is a plugin that is responsible for synchronizing the blockchain state between two standalone nodes.
+Bu eklenti, iki bağımsız düğüm arasındaki blok zinciri durumunu senkronize etmekten sorumludur.
 
 ### WASM Sanitation & CPU Sandboxing (Brian)
 
