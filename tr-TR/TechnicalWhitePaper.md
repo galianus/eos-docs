@@ -4,7 +4,7 @@
 
 **Özet:** EOS.IO yazılımı, merkezi olmayan uygulamalarda dikey ve yatay ölçeklendirmeyi sağlamak için tasarlanmış, yeni bir blok zinciri mimarisi sunar. Bu, üzerinde uygulama oluşturulabilen işletim sistemi benzeri bir yapı oluşturarak sağlanır. Yazılım; hesaplar, kimlik doğrulama, veritabanları, asenkron iletişim ve yüzlerce CPU çekirdeği veya sunucu kümesinde uygulamaların zamanlamasını sağlar. Ortaya çıkan teknoloji, saniyede milyonlarca işlemci ile ölçeklendirilen, kullanıcı ücretlerini ortadan kaldıran ve merkezi olmayan uygulamaların hızlı ve kolay bir şekilde kurulmasına olanak tanıyan bir blok zinciri mimarisi sunar.
 
-**LÜTFEN DİKKAT EDİN: BU BEYAZ KAĞITTA BELİRTİLEN KRİPTO TOKENLAR, EOS.IO YAZILIMINI KULLANAN BİR BLOK ZİNCİRİNDEKİ KRİPTO TOKENLARA ATIF YAPMAKTADIR. THEY DO NOT REFER TO THE ERC-20 COMPATIBLE TOKENS BEING DISTRIBUTED ON THE ETHEREUM BLOCKCHAIN IN CONNECTION WITH THE EOS TOKEN DISTRIBUTION.**
+**LÜTFEN DİKKAT EDİN: BU BEYAZ KAĞITTA BELİRTİLEN KRİPTO TOKENLAR, EOS.IO YAZILIMINI KULLANAN BİR BLOK ZİNCİRİNDEKİ KRİPTO TOKENLARA ATIF YAPMAKTADIR. EOS TOKEN DAĞITIMI İLE BAĞLANTILI OLARAK ETHEREUM BLOCK ZİNCİRİ ÜZERİNDE DAĞITILAN ERC-20 UYUMLU TOKENSLERLA İLGİLİ DEĞİLDİR.**
 
 Copyright © 2017 block.one
 
