@@ -127,20 +127,20 @@ EOS. IO سافٹویئر کے استعمال سے اکیس چکروں میں ب�
 
 ایسی تنبیہ کا پورا دارومدار اور جوابی عمل مکمل طور پر کاروباری لین دین کی نوعیت پر منحصر ہے مگر سب سے سادہ عمل15/ 21کنفرمیشن کا انتظار کرنا ہ. ے-.
 
-## Transaction as Proof of Stake (TaPoS)
+## لین دین کو داو پر سبوت کے طور پر رکھنا TaPos))
 
-The EOS.IO software requires every transaction to include the hash of a recent block header. This hash serves two purposes:
+EOS. IO سوفٹویر سے لین دین کی ایک حالیہ بلاک سر تحریر پیش کرنے کے لیے ہیش شامل کرنا ضروری ہے یہ ہیش دومقاصد کے لیے اپنی خدمات فراہم کرتا ہے:
 
-1. prevents a replay of a transaction on forks that do not include the referenced block; and
-2. signals the network that a particular user and their stake are on a specific fork.
+1. لین دین کے محولہ کو روکنے کے لیے فورکس بلاک نہیں روکتا ہے؛ اور
+2. اشارہ نیٹورک کاکسی مخصوص صارف اور اس داو پر ایک مخصوص فورک ہے.
 
-Over time all users end up directly confirming the blockchain which makes it difficult to forge counterfeit chains as the counterfeit would not be able to migrate transactions from the legitimate chain.
+وقت کے ساتھ ساتھ تمام صارفین براہ راست بلاکچین کی تصدیق کرتا ہے جو جعلی لین دین جایز طریقہ سے منتقل کرنے کے قابل نہیں ہوگا جیسا کہ جعلی چین فورج کو مشکل بناتا ہے.
 
-# Accounts
+# اکاؤنٹ
 
-The EOS.IO software permits all accounts to be referenced by a unique human readable name of 2 to 32 characters in length. The name is chosen by the creator of the account. All accounts must be funded with the minimal account balance at the time they are created to cover the cost of storing account data. Account names also support namespaces such that the owner of account @domain is the only one who can create the account @user.domain.
+EOS.IO سافٹویئر تمام اکاونٹس کو ایک منفرد انسانی قابلِ مطالعہ 2سے32 الفاظ پر مشتمل حروف کا حوالہ دیا گیا ھو. نام اکاؤنٹ کی تخلیق کرنے والا منتخب کرتا ہے. اکاونٹس کی دیکھ بھال کے لیے تمام اکاونٹس میں اکاونٹ بناتے وقت ایک چھوٹی رقم رکھنا ضروری ہے. اکاونٹ کے نام ناموں کے درمیان مالک کا اکاونٹ @domainہےصارف صرف اسی domain پر اپنا اکاونٹ بنا سکتا ہے.
 
-In a decentralized context, application developers will pay the nominal cost of account creation to sign up a new user. Traditional businesses already spend significant sums of money per customer they acquire in the form of advertising, free services, etc. The cost of funding a new blockchain account should be insignificant in comparison. Fortunately, there is no need to create accounts for users already signed up by another application.
+ایک ڑیسنٹرالایزڈ سیاق و سباق میں، اپلیکیشن ڈیولپر کو نیا اکاونٹ بنانے کے لیے ایک معمولی فیس ادا کرنی ہوگی. روایتی کاروباریوں نے پہلے ہی کافی پیسہ صارفین کے لیے اشتہارات کی شکل میں، مفت خدمات، وغیرہ. نیے بلاکچین اکاؤنٹ کو فنڈ کرنے کی قیمت مقابلہ میں غیر معمولی ہونی چاہیے. خوش قسمتی سے، ان صارفین کو اکاؤنٹ بنانے کی ضرورت نہیں جنھوں پہلے سے ہی دوسری اپلیکیشنز میں اپنا اکاونٹ بنایا ہو.
 
 ## Messages & Handlers
 
