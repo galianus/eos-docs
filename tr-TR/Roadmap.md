@@ -22,7 +22,7 @@ EOS.IO yazılımında birçok yerel sözleşme vardır. Bunlar, blok zincirinin 
 
 ### Sanal Makina API'yı (Dan)
 
-Sözleşmeler WebAssembly'ye (WASM) derlenir. WASM, tanımlanmış bir API kullanarak blok zinciri ile arabirim oluşturmalıdır. Geliştiricilerin uygulama inşa etmesi bu API'ye bağlıdır. EOS üzerinde gerçekten çalışmaya başlamalarından önce görece kararlı olmalıdır.
+Sözleşmeler WebAssembly'ye (WASM) derlenir. WASM, tanımlanmış bir API kullanarak blok zinciri ile ara birim oluşturmalıdır. Geliştiricilerin uygulama inşa etmesi bu API'ye bağlıdır. EOS üzerinde gerçekten çalışmaya başlamalarından önce görece kararlı olmalıdır.
 
 ### RPC Arabirimi (Arhag, Nathan)
 
@@ -46,13 +46,13 @@ Bu eklenti, iki bağımsız düğüm arasındaki blok zinciri durumunu senkroniz
 
 ### WASM'in Sağlıklı Çalışması & CPU Test Ortamı (Brian)
 
-Kayan nokta işlemleri ve sonsuz döngüler gibi belirsiz olmayan davranışları denetlemek için WASM kodunun ayıklanması edilmesi gerekir.
+Kayan nokta işlemleri ve sonsuz döngüler gibi belirsiz olmayan davranışları denetlemek için WASM kodunun ayıklanması gerekir.
 
 ### Kaynak Kullanımını İzleme & Hız Sınırlaması (Arhag)
 
-EOS öz kaynağına göre, kaynak izleme ve hız sınırlama, kötüye kullanımı sınırlar.
+EOS öz kaynağına göre, kaynak izleme ve hız limiti, kötüye kullanımı sınırlar.
 
-### Yaratılış İçe Akartma (DappHub)
+### Yaratılış İçe Aktarma Testi (DappHub)
 
 Yaratılış yapılandırma dosyası oluşturmak ve Token Dağıtım durumu için; verilerin EOS'tan dışa aktarılmasını sağlayan araçlar geliştirilmelidir. Bu, Token Dağıtımına katılan herkesin; bazı EOS başlangıç testlerini (TEOS) edinmesini sağlayacaktır.
 
@@ -62,15 +62,15 @@ Bu özellik, işlemlerin Merkle karmasını doğrulamakla ilgilidir.
 
 # Aşama 3 - Test & Güvenlik Denetimleri - Kış 2017, Bahar 2018
 
-Bu aşamada, platform; güvenlik sorunları ve böcek bulma odaklı ağır testlere tabi tutulacak. Faz 3'ün sonunda, sürüm numarası 1.0 olarak etiketlenecek.
+Bu aşamada, platform; güvenlik sorunları ve hata bulma odaklı ağır testlere tabi tutulacak. Faz 3'ün sonunda, sürüm numarası 1.0 olarak etiketlenecek.
 
 ### Örnek Uygulamaların Geliştirilmesi
 
-Örnek uygulamalar; platformun, ciddi geliştiricilerin ihtiyaç duyduğu gerekli özelliklerin sağladığını ispatlamak için kritik önem taşır.
+Örnek uygulamalar; platformun, ciddi geliştiricilerin ihtiyaç duyduğu, gerekli özelliklerin sağladığını ispatlamak için kritik önem taşır.
 
 ### Başarılı Ağ Saldırıları için Ödüller
 
-Spamlerle ağa saldırmak, sanal makine yetki aşımları, hata çökmeleri ve öngörülemeyen davranışların olduğu çok katı bir süreç olacak. Ancak 1.0 sürümünün istikrarlı olmasını sağlamak için bu gereklidir.
+Spam'lerle ağa saldırmak, sanal makine yetki aşımları, hata çökmeleri ve öngörülemeyen davranışların olduğu çok katı bir süreç olacak. Ancak 1.0 sürümünün istikrarlı olmasını sağlamak için bu gereklidir.
 
 ### Dil desteği
 
