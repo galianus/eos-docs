@@ -2,20 +2,20 @@
 
 **26 de Junio de 2017**
 
-**Resumen:** El software EOS.IO introduce una nueva arquitectura Blockchain diseñada para facilitar la escalabilidad vertical y horizontal de aplicaciones descentralizadas. Esto es logrado creando una construcción similar a un sistema operativo sobre la cual se pueden construir aplicaciones. El software proporciona cuentas, autenticación, bases de datos, comunicación asíncrona y la ejecución programada de aplicaciones en cientos de núcleos CPU o clústeres. La tecnología resultante es una arquitectura blockchain que se adapta a millones de transacciones por segundo, elimina las tarifas de los usuarios y permite el despliegue rápido y sencillo de aplicaciones descentralizadas.
+**Resumen:** El software EOS.IO introduce una nueva arquitectura Blockchain diseñada para facilitar la escalabilidad vertical y horizontal de aplicaciones descentralizadas. Esto se logra creando una construcción similar a un sistema operativo sobre la cual se pueden construir aplicaciones. El software proporciona cuentas, autenticación, bases de datos, comunicación asíncrona y la ejecución programada de aplicaciones en cientos de núcleos CPU o clústeres. La tecnología resultante es una arquitectura blockchain que se adapta a millones de transacciones por segundo, elimina las tarifas de los usuarios y permite el despliegue rápido y sencillo de aplicaciones descentralizadas.
 
 **ATENCIÓN: TENGA EN CUENTA QUE LOS TOKENS CRIPTOGRÁFICOS MENCIONADOS EN ESTE DOCUMENTO SE REFIEREN A LOS TOKENS CRIPTOGRÁFICOS PROPIOS DE UNA BLOCKCHAIN QUE HA SIDO ADOPTADA POR EL SOFTWARE EOS.IO. NO SE REFIEREN A LOS TOKENS COMPATIBLES ERC-20 DISTRIBUIDOS EN LA BLOCKCHAIN DE ETHEREUM EN CONEXIÓN CON LA DISTRIBUCIÓN DE TOKEN EOS.**
 
 Copyright © 2017 block.one
 
-Sin permiso, cualquier persona puede usar, reproducir o distribuir cualquier material en este documento técnico para uso no comercial y educativo (es decir, que no sea por una tarifa o con fines comerciales) siempre que se cite la fuente original y el aviso de copyright correspondiente.
+Sin permiso, cualquier persona puede usar, reproducir o distribuir cualquier material en este documento técnico para uso no comercial y educativo (es decir, que no sea a cambio de una comisión o con fines comerciales) siempre que se cite la fuente original y el aviso de copyright correspondiente.
 
 **DESCARGO DE RESPONSABILIDAD:** Este documento técnico de EOS.IO es solo para fines informativos. block.one no garantiza la exactitud o las conclusiones alcanzadas en este documento, y este documento se proporciona "tal cual". block.one no realiza y renuncia expresamente a todas las representaciones y garantías, expresas, implícitas, legales o de otro tipo, incluidas, entre otras, las siguientes: (i) garantías de comerciabilidad, idoneidad para un propósito particular, conveniencia, uso, título o no infracción; (ii) que el contenido de este documento no contiene errores; y (iii) que dichos contenidos no infrinjan los derechos de terceros. block.one y sus afiliados no tendrán responsabilidad por daños y perjuicios de cualquier tipo que surjan del uso, referencia o confianza en este documento o en cualquier contenido aquí incluido, incluso si es informada la posibilidad de dichos daños. En ningún caso block.one o sus afiliados serán responsables ante cualquier persona o entidad por los daños, pérdidas, responsabilidades, costos o gastos de cualquier tipo, ya sean directos o indirectos, consecuentes, compensatorios, incidentales, reales, ejemplares, punitivos o especiales. por el uso, la referencia o la confianza en este documento o cualquier contenido aquí incluido, que incluye, entre otros, cualquier pérdida de negocios, ingresos, ganancias, datos, uso, buena voluntad u otras pérdidas intangibles.
 
 - [Antecedentes](#background)
-- [Requisitos para aplicaciones Blockchain](#requirements-for-blockchain-applications) 
+- [Requisitos para Aplicaciones Blockchain](#requirements-for-blockchain-applications) 
   - [Soporte para millones de usuarios](#support-millions-of-users)
-  - [Uso libre](#free-usage)
+  - [Uso Libre](#free-usage)
   - [Actualizaciones Sencillas y Recuperación de Errores](#easy-upgrades-and-bug-recovery)
   - [Baja latencia](#low-latency)
   - [Rendimiento secuencial](#sequential-performance)
@@ -26,8 +26,8 @@ Sin permiso, cualquier persona puede usar, reproducir o distribuir cualquier mat
 - [Cuentas](#accounts) 
   - [Mensajes & Manejadores](#messages--handlers)
   - [Gestión de Permisos Basada en Roles](#role-based-permission-management) 
-    - [Niveles de Permisos Nominados](#named-permission-levels)
-    - [Grupos de Manejo de Mensajes Nominados](#named-message-handler-groups)
+    - [Niveles de Permisos Designados](#named-permission-levels)
+    - [Grupos de Manejo de Mensajes Designados](#named-message-handler-groups)
     - [Asignación de Permisos](#permission-mapping)
     - [Evaluación de Permisos](#evaluating-permissions) 
       - [Grupos de Permisos Predeterminados](#default-permission-groups)
@@ -83,7 +83,7 @@ Para lograr un uso generalizado, las aplicaciones blockchain requieren una plata
 
 Reemplazar por completo negocios como Ebay, Uber, AirBnB y Facebook requiere de una tecnología Blockchain capaz de manejar decenas de millones de usuarios activos diariamente. En ciertos casos, las aplicaciones pueden no funcionar a menos que se alcance una masa crítica de usuarios y, por lo tanto, una plataforma que pueda manejar una cantidad masiva de usuarios es primordial.
 
-## Uso libre
+## Uso Libre
 
 Los desarrolladores de aplicaciones necesitan la flexibilidad para ofrecer a los usuarios servicios gratuitos; los usuarios no deberían tener que pagar para usar la plataforma o beneficiarse de sus servicios. Una plataforma blockchain que sea de uso gratuita para los usuarios probablemente obtenga una adopción más generalizada. Los desarrolladores y las empresas pueden crear estrategias efectivas de monetización.
 
@@ -423,7 +423,7 @@ El objetivo de VCL es habilitar la generación de pruebas de existencia relativa
 
 Bitcoin sostiene la validación de transacciones asumiendo que todos los nodos tengan acceso a la historia completa de los principales bloques lo cual asciende a 4mb de bloques principales por año. A 10 transacciones por segundo, una prueba válida requiere alrededor de 512 bytes. Esto funciona bien para una Blockchain con un intervalo de bloques de 10 minutos, pero no sería "ligero" para unas Blockchains con intervalos de bloques de 3 segundos.
 
-El software de EOS.IO permite pruebas ligeras para cualquiera que tenga un bloque principl irreversible luego del punto en el cual la transacción fue incluida. Usando la estructura hash-ligado mostrada a continuación es posible probar la existencia de cualquier transacción con una prueba de menos de 1024 bytes en tamaño. Si se asume que los nodos de validación se mantienen con los bloques principales en el día pasado (2mb de data), entonces probar estas transacciones solo requiere pruebas de 200 bytes de longitud.
+El software de EOS.IO permite pruebas ligeras para cualquiera que tenga una cabecera de bloque irreversible una vez la transacción haya sido incluida. Usando la estructura hash-enlazado mostrada a continuación es posible probar la existencia de cualquier transacción con una prueba de menos de 1024 bytes en tamaño. Si se asume que los nodos validadores mantienen las cabeceras de los bloques del día pasado (2mb de datos), entonces probar estas transacciones solo requiere pruebas de 200 bytes de longitud.
 
 Hay pocos incrementos en los gastos asociados con la producción de bloques con el enlace de hashes adecuados para permitir estas pruebas lo que significa que no hay razón para no generar bloques de esta manera.
 
