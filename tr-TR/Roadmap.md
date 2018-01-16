@@ -50,7 +50,7 @@ The WASM code needs to be sanitized to check for non-deterministic behavior such
 
 ### Kaynak Kullanımını İzleme & Hız Sınırlaması (Arhag)
 
-To prevent abuse the resource monitoring and usage tracking rate limits users according to staked EOS.
+EOS öz kaynağına göre, kaynak izleme ve hız sınırlama, kötüye kullanımı sınırlar.
 
 ### Genesis Import Testing (DappHub)
 
