@@ -397,7 +397,7 @@ Autenticación es el proceso de solo lectura de verificar que un mensaje pueda s
 
 ## Arquitectura Independiente de la Máquina Virtual
 
-Es la intención de la blockchain basade en el software EOS.IO que múltiples máquinas virtuales puedan ser sostenidas y nuevas máquinas virtuales añadidas con el tiempo que sea necesario. Por esta razón este trabajo no discutirá los detalles de un lenguaje particular o máquina virtual. Dicho esto, hay dos máquinas virtuales que actualmente están siendo evaluadas para su uso con las blockchains basadas en el software EOS.IO.
+Es la intención de la blockchain basada en el software EOS.IO que múltiples máquinas virtuales puedan ser sostenidas y nuevas máquinas virtuales añadidas con el tiempo que sea necesario. Por esta razón este trabajo no discutirá los detalles de un lenguaje particular o máquina virtual. Dicho esto, hay dos máquinas virtuales que actualmente están siendo evaluadas para su uso con las blockchains basadas en el software EOS.IO.
 
 ### Web Assembly (WASM)
 
