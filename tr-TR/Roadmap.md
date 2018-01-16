@@ -62,11 +62,11 @@ Bu özellik, işlemlerin Merkle karmasını doğrulamakla ilgilidir.
 
 # Aşama 3 - Test & Güvenlik Denetimleri - Kış 2017, Bahar 2018
 
-During this phase the platform will undergo heavy testing with a focus on finding security issues and bug. At the end of Phase 3 version 1.0 will be tagged.
+Bu aşamada, platform; güvenlik sorunları ve böcek bulma odaklı ağır testlere tabi tutulacak. Faz 3'ün sonunda, sürüm numarası 1.0 olarak etiketlenecek.
 
-### Develop Example Applications
+### Örnek Uygulamaların Geliştirilmesi
 
-Example applications are critical to proving the platform provides the features required by real developers.
+Örnek uygulamalar; platformun, ciddi geliştiricilerin ihtiyaç duyduğu gerekli özelliklerin sağladığını ispatlamak için kritik önem taşır.
 
 ### Bounties for Successfully Attacking Network
 
