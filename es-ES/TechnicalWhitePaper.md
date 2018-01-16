@@ -17,7 +17,7 @@ Sin permiso, cualquier persona puede usar, reproducir o distribuir cualquier mat
   - [Soporte para millones de usuarios](#support-millions-of-users)
   - [Uso Libre](#free-usage)
   - [Actualizaciones Sencillas y Recuperación de Errores](#easy-upgrades-and-bug-recovery)
-  - [Baja latencia](#low-latency)
+  - [Baja Latencia](#low-latency)
   - [Rendimiento secuencial](#sequential-performance)
   - [Rendimiento paralelo](#parallel-performance)
 - [Algoritmo de Consenso (DPOS)](#consensus-algorithm-dpos) 
@@ -93,7 +93,7 @@ Las empresas que crean aplicaciones basadas en blockchain necesitan la flexibili
 
 Todo el software no trivial está sujeto a errores, incluso con la verificación formal más rigurosa. La plataforma debe ser lo suficientemente robusta como para corregir errores cuando estos ocurran de forma inevitable.
 
-## Baja latencia
+## Baja Latencia
 
 Una buena experiencia de usuario exige reacciones confiables con un retraso de no más de unos pocos segundos. Demoras más largas frustran a los usuarios y hacen que las aplicaciones creadas en una blockchain sean menos competitivas con las alternativas existentes que no son blockchain.
 
