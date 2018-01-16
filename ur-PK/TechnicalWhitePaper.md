@@ -160,13 +160,13 @@ EOS.IO سافٹویئر اکاونٹ کیز اور اکاونٹ سے جانے و
 
 <img align="right" src="http://eos.io/wpimg/diagram3.png" width="228.395px" height="300px" />
 
-EOS.IO سافٹویئر کے استعمال سے، اکاؤنٹ نامی اجازات کو بیان کرسکتے ہیں جو اوپری سطح کے اجازت سےنکالی گئی ہو. ہر نامی اجازتی حد ایک اتھارٹی کو بیان کرتی ہے؛ایک اتھارٹی متعدد دستخطوں کی جانچ کے لیے چابی کی طرح اور /یا دوسرے نامی اکاؤنٹس کی اجازاتی حدیں. For example, an account's "Friend" permission level can be set for the account to be controlled equally by any of the account's friends.
+EOS.IO سافٹویئر کے استعمال سے، اکاؤنٹ نامی اجازات کو بیان کرسکتے ہیں جو اوپری سطح کے اجازت سےنکالی گئی ہو. ہر نامی اجازتی حد ایک اتھارٹی کو بیان کرتی ہے؛ایک اتھارٹی متعدد دستخطوں کی جانچ کے لیے چابی کی طرح اور /یا دوسرے نامی اکاؤنٹس کی اجازاتی حدیں. مثال کے طور پر، ایک دوست کی اجازت پر اکاونٹ میں موجود تمام دوست اکاؤنٹ کو برابر کنٹرول کر سکتے ہیں.
 
-Another example is the Steem blockchain which has three hard-coded named permission levels: owner, active, and posting. The posting permission can only perform social actions such as voting and posting, while the active permission can do everything except change the owner. The owner permission is meant for cold storage and is able to do everything. The EOS.IO software generalizes this concept by allowing each account holder to define their own hierarchy as well as the grouping of actions.
+اور ایک مثال سٹیم بلاکچین ہے جس کے تین مظبوط کوڈڈ نامی اجازتی حدیں، مالک، فعال، اور پوسٹنگ. پوسٹنگ اجازت صرف سماجی کام جیسے ووٹنگ اور پوسٹنگ کر سکتا ہے، جبکہ فعال اجازت مالک کی تبدیلی کو چھوڑ کر سب کچھ کر سکتے ہیں. مالک کی اجازت کو سرد سٹوریج کے لیے بنایا جاتا ہے اور یہ کچھ بھی کر سکتا ہے. EOS.IO سافٹویئر اس تصور کو عام کرنے کے لیے ہر ایک اکاؤنٹ ھولڈر کی درجہ بندی اور درجہ بندی کے کام کی وضاحت کرتا ہے.
 
-### Named Message Handler Groups
+### نامی پیغامات نیٹ کار گروہ-
 
-The EOS.IO software allows each account to organize its own message handlers into named and nested groups. These named message handler groups can be referenced by other accounts when they configure their permission levels.
+EOS.IO سافٹویئر ہر ایک اکاؤنٹ کو یہ اجازت دیتا ہے کہ وہ اندرونی گروہوں کو منظم کرنے کے لیے اجازت دیتا ہے. These named message handler groups can be referenced by other accounts when they configure their permission levels.
 
 The highest level message handler group is the account name and the lowest level is the individual message type being received by the account. These groups can be referenced like so: **@accountname.groupa.subgroupb.MessageType**.
 
