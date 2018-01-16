@@ -73,15 +73,15 @@ La tecnología Blockchain se introdujo en el año 2008 con el lanzamiento de la 
 
 Mientras que varias plataformas blockchain han tenido dificultades para soportar aplicaciones funcionales descentralizadas, aplicaciones blockchains específicas como el Exchange Descentralizado de BitShares (2014) y la Plataforma de la Red Social Steem (2016) se han convertido en blockchains muy utilizados con decenas de miles de usuarios activos diariamente. Lo han logrado aumentando el rendimiento a miles de transacciones por segundo, reduciendo la latencia a 1,5 segundos, eliminando las tarifas y ofreciendo a los usuarios una experiencia similar a la que ofrecen actualmente los servicios centralizados.
 
-Las plataformas existentes de blockchain están cargadas de grandes tarifas y sus capacidades computacionales limitadas impiden la adopción generalizada de la blockchain.
+Las plataformas blockchain existentes son sustentadas por costosas tarifas y sus capacidades computacionales son limitadas lo que impide la adopción generalizada de dichas tecnologías.
 
 # Requisitos para Aplicaciones Blockchain
 
-Para lograr un uso generalizado, las aplicaciones en el blockchain requieren una plataforma lo suficientemente flexible como para cumplir con los siguientes requisitos:
+Para lograr un uso generalizado, las aplicaciones blockchain requieren una plataforma lo suficientemente flexible como para cumplir con los siguientes requisitos:
 
 ## Soporte para Millones de Usuarios
 
-La interrupción de negocios como Ebay, Uber, AirBnB y Facebook requiere una tecnología blockchain capaz de manejar a decenas de millones de usuarios activos diariamente. En ciertos casos, las aplicaciones pueden no funcionar a menos que se alcance una masa crítica de usuarios y, por lo tanto, una plataforma que pueda manejar una cantidad masiva de usuarios es primordial.
+Reemplazar por completo negocios como Ebay, Uber, AirBnB y Facebook requiere de una tecnología Blockchain capaz de manejar decenas de millones de usuarios activos diariamente. En ciertos casos, las aplicaciones pueden no funcionar a menos que se alcance una masa crítica de usuarios y, por lo tanto, una plataforma que pueda manejar una cantidad masiva de usuarios es primordial.
 
 ## Uso libre
 
