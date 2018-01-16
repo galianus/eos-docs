@@ -70,15 +70,15 @@ Bu aşamada, platform; güvenlik sorunları ve böcek bulma odaklı ağır testl
 
 ### Başarılı Ağ Saldırıları için Ödüller
 
-Attacking the network with spam, virtual machine exploits, and bug crashes, and non-deterministic behavior will be a heavily involved process but necessary to ensure that version 1.0 is stable.
+Spamlerle ağa saldırmak, sanal makine yetki aşımları, hata çökmeleri ve öngörülemeyen davranışların olduğu çok katı bir süreç olacak. Ancak 1.0 sürümünün istikrarlı olmasını sağlamak için bu gereklidir.
 
-### Language Support
+### Dil desteği
 
-Adding support for additional languages to be compiled to WASM: C++, Rust, etc.
+WASM'ye derlemek için, ek dil desteği ekleme: C ++, Rust, vb.
 
-### Documentation & Tutorials
+### Belgeler & Öğreticiler
 
-# Phase 4 - Parallel Optimization Summer / Fall 2018
+# Aşama 4 - Paralel Optimizasyon, Yaz / Güz 2018
 
 After getting a stable 1.0 product released, we will move toward optimizing the code for parallel execution.
 
