@@ -80,6 +80,6 @@ WASM'ye derlemek için, ek dil desteği ekleme: C ++, Rust, vb.
 
 # Aşama 4 - Paralel Optimizasyon, Yaz / Güz 2018
 
-After getting a stable 1.0 product released, we will move toward optimizing the code for parallel execution.
+Kararlı 1.0 sürümünün yayınlanmasından sonra; paralel yürütme için kodun optimize edilmesi yolunda ilerleyeceğiz.
 
-# Phase 5 - Cluster Implementation The Future
+# Aşama 5 - Sunucu Kümeleri Uygulaması, Gelecekte
