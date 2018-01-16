@@ -20,9 +20,9 @@ EOS.IO yazılımında birçok yerel sözleşme vardır. Bunlar, blok zincirinin 
 2. @stake - EOS kilidini, oylamaları ve Üretici Seçimini yönetir
 3. @system - izinleri, mesajları ve iletişim kodu güncellemelerini yönetir
 
-### Sanal Makina API'yı (Dan)
+### Sanal Makina API (Dan)
 
-Sözleşmeler WebAssembly'ye (WASM) derlenir. WASM, tanımlanmış bir API kullanarak blok zinciri ile ara birim oluşturmalıdır. Geliştiricilerin uygulama inşa etmesi bu API'ye bağlıdır. EOS üzerinde gerçekten çalışmaya başlamalarından önce görece kararlı olmalıdır.
+Sözleşmeler WebAssembly'ye (WASM) derlenir. WASM, tanımlanmış bir API kullanarak blok zinciri ile ara birim oluşturmalıdır. Geliştiricilerin uygulama inşa etmesi bu API'ye bağlıdır. EOS üzerinde gerçekten çalışmaya başlamalarından önce, görece kararlı olmalıdır.
 
 ### RPC Arabirimi (Arhag, Nathan)
 
