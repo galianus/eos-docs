@@ -68,7 +68,7 @@ Bu aşamada, platform; güvenlik sorunları ve böcek bulma odaklı ağır testl
 
 Örnek uygulamalar; platformun, ciddi geliştiricilerin ihtiyaç duyduğu gerekli özelliklerin sağladığını ispatlamak için kritik önem taşır.
 
-### Bounties for Successfully Attacking Network
+### Başarılı Ağ Saldırıları için Ödüller
 
 Attacking the network with spam, virtual machine exploits, and bug crashes, and non-deterministic behavior will be a heavily involved process but necessary to ensure that version 1.0 is stable.
 
