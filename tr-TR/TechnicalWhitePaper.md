@@ -75,19 +75,19 @@ Bir dizi blok platformu işlevsel merkezi olmayan uygulamaları desteklemek içi
 
 Mevcut blok zinciri platformları, geniş blok zincirinin kabulünü engelleyen yüksek ücretler ve sınırlı hesaplama kapasitesi gibi yükler altındadır.
 
-# Requirements for Blockchain Applications
+# Block Zinciri Uygulamaları İçin Gerekenler
 
-In order to gain widespread use, applications on the blockchain require a platform that is flexible enough to meet the following requirements:
+Yaygın kullanım için aşağıdaki gereksinimleri karşılayacak kadar esnek bir platform gereklidir:
 
-## Support Millions of Users
+## Milyonlarca Kullanıcıyı Destekleme
 
-Disrupting businesses such as Ebay, Uber, AirBnB, and Facebook, require blockchain technology capable of handling tens of millions of active daily users. In certain cases, applications may not work unless a critical mass of users is reached and therefore a platform that can handle mass number of users is paramount.
+Ebay, Uber, AirBnB ve Facebook gibi şirketleri rahatsız etmek için, on milyonlarca aktif günlük kullanıcıyı işleyebilecek bir blok zinciri teknolojisine ihtiyaç vardır. Belli bazı durumlarda, kritik bir kullanıcı kitlesine ulaşılmadığı sürece uygulamalar başarısız olabilir ve bu nedenle, çok sayıda kullanıcıyı işleyebilecek bir platform çok önemlidir.
 
-## Free Usage
+## Ücretsiz Kullanım
 
 Uygulama geliştiricilerine, kullanıcılara ücretsiz hizmetler sunma esnekliği gerekir; kullanıcıları platformu kullanma veya hizmetlerinden yararlanmak için ödeme yapmamalı. Bir blok zinciri platformu kullanıcılar için ücretsiz olduğunda, muhtemelen daha fazla benimsenecektir. Geliştiriciler ve işletmeler daha sonra etkin kazanç stratejileri oluşturabilir.
 
-## Easy Upgrades and Bug Recovery
+## Kolay Yükseltmeler ve Hata Ayıklamalar
 
 Blok zinciri tabanlı uygulama üreten işletmeler yeni özellik geliştirmek için esnekliğe ihtiyaç duyar.
 
@@ -97,15 +97,15 @@ Açık olmayan yazılımlar, en titiz resmi doğrulamalarla bile hatalara açık
 
 İyi bir kullanıcı deneyimi, birkaç saniyeden fazla olmayan bir gecikmeyle güvenilir geri bildirim istemektedir. Daha uzun gecikmeler, kullanıcıları hayal kırıklığına uğratır ve uygulamaları, bir blok zinciri yapısında olmayan mevcut alternatiflerle daha rekabetçi hale getirir.
 
-## Sequential Performance
+## Sıralı Performans
 
 Sıralı bağımlı adımlar nedeniyle paralel algoritmalar uygulanamayan bazı uygulamalar vardır. Borsa tarzı uygulamalar, yüksek hacimleri idare etmek için yeterli miktarda sıralı performansa ihtiyaç duyar ve bu nedenle sıralı performansa sahip bir hızlı platform gereklidir.
 
-## Parallel Performance
+## Paralel Performans
 
-Large scale applications need to divide the workload across multiple CPUs and computers.
+Büyük ölçekli uygulamalar, iş yükünü birden çok CPU ve bilgisayar arasında bölmeye ihtiyaç duyar.
 
-# Consensus Algorithm (DPOS)
+# Uzlaşma Algoritması (DPOS)
 
 EOS.IO yazılımı, blok zinciri üzerinde [Yetkili Menfaat Kanıtı, Delegated Proof of Stake(DPOS)](https://steemit.com/dpos/@dantheman/dpos-consensus-algorithm-this-missing-white-paper) uygulamalarının performans gereksinimlerini karşılayabilen, merkezi olmayan uzlaşma algoritmasını kullanır. Bu algoritma altında, EOS.IO yazılımının benimsediği blok zincirinde jetonlarını tutanlar, devam eden oylama sistemiyle blok üreticilerini seçebilirler. Herkes blok üretimine katılmayı seçebilir. Diğer üreticilerin ve kendilerinin aldıkları oylarla orantılı olarak blok üretmek için bir fırsat verilir. Özel blok zincirler için yönetim IT personelini eklemek veya çıkarmak için jetonları kullanabilir.
 
@@ -136,7 +136,7 @@ EOS.IO yazılımı, her işlemin, son bloğun üst bilgisindeki hash'i içermesi
 
 Zamanla tüm kullanıcılar, sahte zincirlerin işlemlerini, meşru zincirden geçiremeyecekleri için, sahte zincirlerin oluşturulmasını zorlaştıran blok zincirini doğrudan teyit ederler.
 
-# Accounts
+# Hesaplar
 
 EOS.IO yazılımı, tüm hesapların, 2 ila 32 karakter uzunluğunda, benzersiz ve okunabilir bir adla referans alınmasına izin verir. The name is chosen by the creator of the account. Tüm hesaplar, yaratıldıkları anda, hesap verilerini saklamanın maliyetini karşılamak için oluşturulan minimum hesap bakiyesiyle finanse edilmelidir. Hesap adları isim uzaylarını da destekler ve bu @domain kullanıcısının @user.domain hesabı oluşturabilen tek kişi olduğu anlamına gelir.
 
