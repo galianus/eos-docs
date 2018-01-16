@@ -54,13 +54,13 @@ EOS öz kaynağına göre, kaynak izleme ve hız sınırlama, kötüye kullanım
 
 ### Yaratılış İçe Akartma (DappHub)
 
-Tools need to be developed to export data from the EOS Token Distribution state and create a genesis configuration file. This will enable anyone participating in the Token Distribution to acquire some initial test EOS (TEOS).
+Yaratılış yapılandırma dosyası oluşturmak ve Token Dağıtım durumu için; verilerin EOS'tan dışa aktarılmasını sağlayan araçlar geliştirilmelidir. Bu, Token Dağıtımına katılan herkesin; bazı EOS başlangıç testlerini (TEOS) edinmesini sağlayacaktır.
 
-### Interblockchain Communication (Nathan)
+### Blok Zincirleri Arası İletişim (Nathan)
 
-This feature involves verifying the Merkle hashing of transactions is proper.
+Bu özellik, işlemlerin Merkle karmasını doğrulamakla ilgilidir.
 
-# Phase 3 - Testing & Security Audits - Winter 2017, Spring 2018
+# Aşama 3 - Test & Güvenlik Denetimleri - Kış 2017, Bahar 2018
 
 During this phase the platform will undergo heavy testing with a focus on finding security issues and bug. At the end of Phase 3 version 1.0 will be tagged.
 
