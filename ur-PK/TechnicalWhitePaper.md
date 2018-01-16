@@ -166,15 +166,15 @@ EOS.IO سافٹویئر کے استعمال سے، اکاؤنٹ نامی اجا�
 
 ### نامی پیغامات نیٹ کار گروہ-
 
-EOS.IO سافٹویئر ہر ایک اکاؤنٹ کو یہ اجازت دیتا ہے کہ وہ اندرونی گروہوں کو منظم کرنے کے لیے اجازت دیتا ہے. These named message handler groups can be referenced by other accounts when they configure their permission levels.
+EOS.IO سافٹویئر ہر ایک اکاؤنٹ کو یہ اجازت دیتا ہے کہ وہ اندرونی گروہوں کو منظم کرنے کے لیے اجازت دیتا ہے. یہ نامی پیغامات دوسرے اکاونٹس میں ایک لاہ عمل کے طور پر اکاونٹس کی تشکیل اور اجازت کا حوالہ دے سکتے ہیں.
 
-The highest level message handler group is the account name and the lowest level is the individual message type being received by the account. These groups can be referenced like so: **@accountname.groupa.subgroupb.MessageType**.
+سب سے اعلٰی درجے کا پیغام اکاؤنٹ کا نام اور سب سے کم درجے کا پیغام انفرادی قصم کا پیغام جو کسی اکاؤنٹ سے حاصل ہوا ہو. ان گروہوں کا حوالہ اس طرح سے دیا جا سکتا ہے: **ٹ@ اکاونٹ کا نام. groupa. subgroup. 0\>MessageType>.</p> 
 
-Under this model it is possible for an exchange contract to group order creation and canceling separately from deposit and withdraw. This grouping by the exchange contract is a convenience for users of the exchange.
+اس ماڈل کے تحت ایک ایکسچینج معاہدے کے لیے ممکن ہے کہ وہ آزادانہ طور پر گروہ آڈر کر سکتا ہے اور جمع اور نکال بھی سکتا ہے. یہ گروپ بندی ایکسچینج کی طرف سے صارفین کے لیے ایک سہولت ہے.
 
-### Permission Mapping
+### نقشہ کاری کی اجازت-
 
-EOS.IO software allows each account to define a mapping between a Named Message Handler Group of any account and their own Named Permission Level. For example, an account holder could map the account holder's social media application to the account holder's "Friend" permission group. With this mapping, any friend could post as the account holder on the account holder's social media. Even though they would post as the account holder, they would still use their own keys to sign the message. This means it is always possible to identify which friends used the account and in what way.
+EOS.IO سافٹویئر ہر ایک اکاؤنٹ کو اجازت دیتا ہے کہ وہ گروہ نامی انتخابات کے درمیان ایک نقشہ واضح کرنے کے لیے اجازاتی حد. مثال کے طور پر، ایک اکاؤنٹ ہولڈر سوشل میڈیا اکاونٹ کی نقشہ کاری دوسرے دوست کے اجازاتی گروپ کے ساتھ ضم کرسکتا ہے. اس نقشہ کاری سے کوئی بھی دوست ایک اکاؤنٹ ھولڈر کا اکاونٹ سوشل میڈیا پر شائع کر سکتا ہے. Even though they would post as the account holder, they would still use their own keys to sign the message. This means it is always possible to identify which friends used the account and in what way.
 
 ### Evaluating Permissions
 
