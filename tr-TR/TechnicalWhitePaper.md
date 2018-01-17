@@ -317,13 +317,13 @@ EOS.IO yazılımını kullanan bir blok zinciri, blok üreticilerini ürettikler
 
 ## Durum Saklama Maliyetleri
 
-Bant genişliği ve hesaplama devredilebilirken, uygulama durumunun depolanması, bir uygulama geliştiricisinin bu durum silmesine kadar jetonları tutulmasını gerektirir. Durum asla silinmezse, jetonlar dolaşımdan etkin biçimde kaldırılır.
+Bant genişliği ve hesaplama devredilebilirken; uygulama durumunun depolanması, uygulama geliştiricisinin bu durum silininceye kadar tokenları tutmasını gerektirir. Durum asla silinmezse, tokenlar dolaşımdan etkin biçimde kaldırılır.
 
-Her kullanıcı hesabına belirli bir miktarda depolama alanı gerekir; Bu nedenle, her hesap minimum bir bakiye sağlamalıdır. Ağın depolama kapasitesi arttıkça bu minimum bakiye düşecektir.
+Her kullanıcı hesabına belirli bir miktarda depolama alanı gerekir; bu nedenle, her hesap bir minimum bakiye sağlamalıdır. Ağın depolama kapasitesi arttıkça bu gereksinilen minimum bakiye düşecektir.
 
 ## Blok Ödülleri
 
-EOS.IO yazılımını benimseyen bir blok zincirinde, her 1 blok üretildiğinde, blok üreticisi yeni bir jetonla ödüllendirilir. Bu koşullarda, oluşturulan jetonların sayısı, tüm blok üreticileri tarafından yayınlanmış, talep edilen edilen ücretin ortanca değerine göre belirlenir. EOS.IO yazılımı, üretici ödüllerininin, toplam jeton arzının yıllık % 5'ini geçmeyecek şekilde sınırlandırılması için ayarlanabilir.
+EOS.IO yazılımını benimseyen bir blok zinciri, blok üreticisini, her bir blok üretildiğinde yeni tokenlarla ödüllendirecektir. Bu koşullarda, oluşturulan jetonların sayısı, tüm blok üreticileri tarafından yayınlanmış, talep edilen edilen ücretin ortanca değerine göre belirlenir. EOS.IO yazılımı, üretici ödüllerininin, toplam jeton arzının yıllık % 5'ini geçmeyecek şekilde sınırlandırılması için ayarlanabilir.
 
 ## Toplum Yararına Uygulamalar
 
