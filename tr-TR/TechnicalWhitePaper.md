@@ -327,9 +327,9 @@ EOS.IO yazılımını benimseyen bir blok zinciri, blok üreticisini, her bir bl
 
 ## Topluluk Yararına Uygulamalar
 
-Kullanıcılar, EOS.IO yazılımına dayanan bir blok zincirine istinaden blok üreticilerini seçmenin yanı, sıra akıllı sözleşmeler olarak da bilinen 3 topluluk fayda uygulamasını seçebilirler. Yıllık olarak belirlenmiş arzın, belli bir yüzdesi kadar jeton, blok üreticilerine ödenen jetonlardan düşülür ve bunu bu 3 uygulama alır. Bu akıllı sözleşmeler, her uygulamanın jeton sahiplerinden aldığı oylarla orantılı olarak jeton alacaktır. Seçilen uygulamalar veya akıllı sözleşmeler, jeton sahipleri tarafından akıllı sözleşmelerle, yenileriyle değiştirilebilir.
+Kullanıcılar -EOS.IO yazılımına dayanan blok zinciri uyarınca- blok üreticilerini seçmenin yanı sıra, akıllı sözleşmeler olarak da bilinen 3 topluluk yararına yönelik uyululamayı da seçebilirler. Yıllık olarak belirlenmiş arzın belli bir yüzdesi kadar token, blok üreticilerine ödenen tokenlardan düşülür ve bunu bu 3 uygulama alır. Bu akıllı sözleşmeler, her uygulamanın token sahiplerinden aldığı oylarla orantılı olarak token alacaktır. Seçilen uygulamalar veya akıllı sözleşmeler, token sahipleri tarafından seçilen yeni uygulamalarla veya akıllı sözleşmelerle değiştirilebilir.
 
-# Yönetim
+# Yönetişim
 
 Yönetişim, insanların öznel algoritmalarla yakalanamayan öznel konularda fikir birliğine varma sürecidir. EOS.IO yazılımı tabanlı bir blok zinciri, blok üreticilerinin var olan etkisini, verimli bir şekilde yöneten bir yönetişim süreci uygular. Tanımlanmış bir yönetişim süreci bulunduğunda, önceki blok zincirleri, tahmin edilemeyen sonuçlarla sonuçlanacak geçici, gayrı resmi ve genellikle tartışmalı yönetişim süreçleri doğuyordu.
 
