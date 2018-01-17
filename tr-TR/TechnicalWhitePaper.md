@@ -267,9 +267,9 @@ EOS.IO yazılımı, blok üreticilerini herhangi bir hesaba herhangi bir mesajı
 
 EOS.IO yazılımını benimseyen bir blok zincirinde, bir ağ seviyesinde tüm işlemlere, .01ms ya da 10ms sürdüğüne bakılmaksızın, sabit bir bant genişliği hesabına göre maliyet çıkarılır. Bununla birlikte, yazılımı kullanan her bir blok üreticisi kendi algoritmasını ve ölçümlerini kullanarak, kaynak kullanımını hesaplayabilir. Bir blok üreticisi, bir işlemin veya hesabın hesaplama kapasitesinin orantısız bir miktarını tükettiğine karar verdiğinde, kendi bloğunu üretirken işlemi basitçe reddeder; Ancak, diğer blok üreticileri (bu işlemin) geçerli olduğunu düşündüğü takdirde (blok üreticisi) işlemi yine de işlemeye devam eder.
 
-Genel olarak, 1 blok üreticisi bile bir işlemi geçerli ve kaynak kullanım sınırları altında kabul ettiği sürece diğer blok üreticileri de kabul eder, fakat işlemin o üreticiyi bulması 1 dakika sürebilir.
+Genel olarak, 1 blok üreticisi bile bir işlemi geçerli ve kaynak kullanım sınırları altında kabul ettiği sürece diğer blok üreticileri de bunu kabul eder, fakat işlemin o üreticiyi bulması 1 dakika sürebilir.
 
-Bazı durumlarda, bir üretici, kabul edilebilir aralıkların dışındaki büyüklükte bir sipariş içeren işlemleri içeren bir blok üretebilir. Bu durumda, bir sonraki blok üreticisi, bloğu reddetmek üzere seçebilir ve böylece üçüncü blok üreticisi bağlantıyı kesebilir. Bu, büyük bir bloğun ağ yayılımda gecikmelerine neden olduğunda olacaktan farklı değildir. Topluluk bir istismar örüntüsü fark eder ve nihayetinde sahtekâr üreticiden oyları kaldırır.
+Bazı durumlarda, bir üretici, kabul edilebilir aralıkların dışındaki büyüklükte bir sipariş içeren işlemleri içeren bir blok üretebilir. Bu durumda, bir sonraki blok üreticisi bloğu reddetmeyi seçebilir ve bağlantı üçüncü blok üreticisi tarafından kesebilir. Bu, büyük bir bloğun ağ yayılımda gecikmelerine neden olduğunda olacaktan farklı değildir. Topluluk bir istismar örüntüsü fark eder ve nihayetinde sahtekâr üreticiden oyları kaldırır.
 
 Hesaplama maliyetin öznel olarak değerlendirilmesi, blok zincirini, tam ve belirli süre ölçme zorunluluğundan kurtarır. Bu tasarımla, fikir birliğine varmadan da optimizasyon için, fırsatlarını önemli ölçüde artıran, talimatların kesin sayımına gerek yoktur.
 
