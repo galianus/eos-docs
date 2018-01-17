@@ -311,9 +311,9 @@ Mevcut bir bant genişliğinin tamamını veya bir kısmını tüketmek zorunda 
 
 ## İşlem maliyetlerini Token Değeri'nden ayırma
 
-EOS.IO yazılımının en büyük faydalarından biri, bir uygulamaya sunulan bant genişliği miktarının, herhangi bir token fiyatından tamamen bağımsız olmasıdır. Bir uygulama sahibinin, EOS.IO yazılımını benimseyen bir blok zincir üzerinde ilgili sayıda jeton bulundurması durumunda, uygulama sabit bir durum ve bant genişliği kullanımıyla süresiz olarak çalışabilir. Böyle bir durumda, geliştiriciler ve kullanıcılar, token piyasasındaki herhangi bir fiyat dalgalanmasından etkilenmezler ve bu nedenle fiyat yayınına bağlı değillerdir. Başka bir deyişle, EOS.IO yazılımını benimseyen bir blok zincirinde, blok üreticilerinin, jeton başına düşen hesaplama, bant genişliği ve depolama alanı, jeton fiyatından bağımsızdır.
+EOS.IO yazılımının en büyük faydalarından biri, bir uygulamaya sunulan bant genişliği miktarının, herhangi bir token fiyatından tamamen bağımsız olmasıdır. Bir uygulama sahibinin, EOS.IO yazılımını benimseyen bir blok zincir üzerinde ilgili sayıda jeton bulundurması durumunda, uygulama sabit bir durum ve bant genişliği kullanımıyla süresiz olarak çalışabilir. Böyle bir durumda, geliştiriciler ve kullanıcılar, token piyasasındaki herhangi bir fiyat dalgalanmasından etkilenmezler ve bu nedenle fiyat yayınına bağlı değillerdir. Başka bir deyişle, EOS.IO yazılımını benimseyen bir blok zinciri doğal olarak, token fiyatından bağımsız bir şekilde, blok üreticilerine token başına düşen hesaplama, bant genişliği ve depolama alanını artırma izni verir.
 
-EOS.IO yazılımını kullanan bir blok zincirinde, her blok oluşurken, blok üreticileri jetonla ödüllendirilir. Jetonların değeri, bir yapımcının satın alabileceği bant genişliği, depolama alanı ve hesaplama miktarını etkiler; bu model, doğal olarak, ağ performansını artırmak için artan jeton değerlerinden yararlanır.
+EOS.IO yazılımını kullanan bir blok zinciri, blok üreticilerini ürettikleri her blokta tokenlarla ödüllendirir. Tokenların değeri, bir üreticinin satın alabileceği bant genişliği, depolama alanı ve hesaplama miktarını etkiler; bu model, doğal olarak, ağ performansını artırmak için artan token değerlerinden yararlanır.
 
 ## Durum Saklama Maliyetleri
 
