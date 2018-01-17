@@ -331,7 +331,7 @@ Kullanıcılar -EOS.IO yazılımına dayanan blok zinciri uyarınca- blok üreti
 
 # Yönetişim
 
-Yönetişim, insanların öznel algoritmalarla yakalanamayan öznel konularda fikir birliğine varma sürecidir. EOS.IO yazılımı tabanlı bir blok zinciri, blok üreticilerinin var olan etkisini, verimli bir şekilde yöneten bir yönetişim süreci uygular. Tanımlanmış bir yönetişim süreci bulunduğunda, önceki blok zincirleri, tahmin edilemeyen sonuçlarla sonuçlanacak geçici, gayrı resmi ve genellikle tartışmalı yönetişim süreçleri doğuyordu.
+Yönetişim, insanların tümden yazılımsal algoritmalarla yakalanamayan öznel konularda oydaşmaya varma sürecidir. EOS.IO yazılımı tabanlı bir blok zinciri, blok üreticilerinin var olan etkisini verimli bir şekilde yönlendiren bir yönetişim süreci uygular. Tanımlanmış bir yönetişim süreci bulunduğunda, önceki blok zincirleri, tahmin edilemeyen sonuçlarla sonuçlanacak geçici, gayrı resmi ve genellikle tartışmalı yönetişim süreçleri doğuyordu.
 
 EOS.IO yazılımına dayanan bir blok zinciri, gücün, bu gücü blok üreticilere devreden jeton sahiplerinden kaynaklandığını kabul eder. Blok üreticilerine, hesapları dondurma, kusurlu uygulamaları güncelleme ve temel protokole çatal önermek için sınırlı yetkili ve denetimli yetkili verilir.
 
