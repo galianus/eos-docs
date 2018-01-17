@@ -212,11 +212,11 @@ Hacker'ın hesap kurtarma sürecine girmeye çalışarak elde edebileceği hiçb
 
 Bu işlem aynı zamanda basit bir çoklu imza anlaşmasından çok farklıdır. Çoklu-imzalı bir işlemle, yürütülen her işlem için taraf olan başka bir şirket vardır. Ancak, kurtarma işlemi ile aracı, kurtarma sürecine yalnızca bir taraftır ve günlük işlemler üzerinde hiçbir etkisi yoktur. Bu, ilgili herkes için maliyetleri ve yasal yükümlülükleri önemli ölçüde azaltır.
 
-# Uygulamaların Belirli Paralel İcrası
+# Uygulamaların Belirlenimli Paralel İcrası
 
 Blok zinciri oy birliği, belirli (tekrarlanabilir) davranışlara bağlıdır. Bu, tüm paralel yürütmelerin; karşılıklı dışlama ilkeleri (sırayla iş yapma) veya ilkel kilitlerden uzak olması gerektiği anlamına gelir. Kilitler olmadan tüm hesapların yalnızca kendilerine özel veritabanlarını okuyup yazabileceğini garanti etmenin bir yolu olmalıdır. Bu ayrıca, her hesabın iletileri sıralı bir şekilde işlediği ve paralelliğin her hesap düzeyinde olacağı anlamına gelir.
 
-EOS.IO yazılımı tabanlı bir blok zincirinde, blok üreticisinin işi; mesaj dağıtımın iş parçacıkları halinde organize edilmesidir. Böylece paralel olarak değerlendirme yapılabilir. Her hesabın durumu sadece ona iletilen mesajlara bağlıdır. Zamanlama takvimi, bir blok üreticisinin çıktısıdır. Ve rastgele olmadan belirli olarak icra edilmelidir. Ancak takvimin üretilme süreci belirlenimci zorunda değildir. Bu, blok üreticilerinin işlemleri planlamak için paralel algoritmalar kullanabilecekleri anlamına gelir.
+EOS.IO yazılımı tabanlı bir blok zincirinde, mesaj dağıtımın iş parçacıkları halinde organize edilmesi blok üreticisinin işidir. Böylece paralel olarak değerlendirme yapılabilir. Her hesabın durumu sadece ona iletilen mesajlara bağlıdır. Zamanlama takvimi, bir blok üreticisinin çıktısıdır. Ve rastgele olmadan belirli olarak icra edilmelidir. Ancak takvimin üretilme süreci belirlenimci zorunda değildir. Bu, blok üreticilerinin işlemleri planlamak için paralel algoritmalar kullanabilecekleri anlamına gelir.
 
 Paralel yürütmenin bir kısmı, bir komut dosyası yeni bir mesaj ürettiğinde derhal teslim edilmez, bunun yerine bir sonraki döngüde teslim edilmesinin planlanması işidir. Hemen teslim edilememesinin nedeni, alıcının aktif olarak kendi durumunu başka bir iş parçacığına değiştirmesi olabilir.
 
