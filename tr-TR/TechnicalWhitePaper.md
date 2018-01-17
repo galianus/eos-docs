@@ -323,9 +323,9 @@ Her kullanıcı hesabına belirli bir miktarda depolama alanı gerekir; bu neden
 
 ## Blok Ödülleri
 
-EOS.IO yazılımını benimseyen bir blok zinciri, blok üreticisini, her bir blok üretildiğinde yeni tokenlarla ödüllendirecektir. Bu koşullarda, oluşturulan jetonların sayısı, tüm blok üreticileri tarafından yayınlanmış, talep edilen edilen ücretin ortanca değerine göre belirlenir. EOS.IO yazılımı, üretici ödüllerininin, toplam jeton arzının yıllık % 5'ini geçmeyecek şekilde sınırlandırılması için ayarlanabilir.
+EOS.IO yazılımını benimseyen bir blok zinciri, blok üreticisini, her bir blok üretildiğinde yeni tokenlarla ödüllendirecektir. Bu koşullarda, oluşturulan tokenların sayısı, tüm blok üreticileri tarafından yayınlanmış, talep edilen edilen ücretin ortanca değerine göre belirlenir. EOS.IO yazılımı, üretici ödüllerininin, toplam token arzının yıllık % 5'ini geçmeyecek şekilde sınırlandırılması için ayarlanabilir.
 
-## Toplum Yararına Uygulamalar
+## Topluluk Yararına Uygulamalar
 
 Kullanıcılar, EOS.IO yazılımına dayanan bir blok zincirine istinaden blok üreticilerini seçmenin yanı, sıra akıllı sözleşmeler olarak da bilinen 3 topluluk fayda uygulamasını seçebilirler. Yıllık olarak belirlenmiş arzın, belli bir yüzdesi kadar jeton, blok üreticilerine ödenen jetonlardan düşülür ve bunu bu 3 uygulama alır. Bu akıllı sözleşmeler, her uygulamanın jeton sahiplerinden aldığı oylarla orantılı olarak jeton alacaktır. Seçilen uygulamalar veya akıllı sözleşmeler, jeton sahipleri tarafından akıllı sözleşmelerle, yenileriyle değiştirilebilir.
 
