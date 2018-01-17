@@ -345,7 +345,7 @@ Tüm blok zincirlerindeki blok üreticileri, bloklara hangi işlemlerin dahil ed
 
 ## Hesap Kodunu Değiştirme
 
-Her şey ters gittiğin ve "durdurulamayan bir uygulama" öngörülemeyen bir şekilde hareket ettiğinde; EOS.IO yazılımını kullanan bir blok zinciri, tüm blok zincirde çatal oluşmadan, blok üreticilerinin hesap kodunu değiştirmesine izin verir. Bir hesabı dondurma işlemine benzer şekilde, bu kodun değiştirilmesi de blok üreticilerinin 17/21 oyu gerekir.
+Her şey ters gittiğindeve "durdurulamayan bir uygulama" öngörülemeyen bir şekilde hareket ettiğinde; EOS.IO yazılımını kullanan bir blok zinciri, tüm blok zincirinde çatal oluşmadan, blok üreticilerinin hesap kodunu değiştirmesine izin verir. Hesap dondurma işlemine benzer şekilde, bu kodun değiştirilmesi de blok üreticilerinin 17/21 oyunu gerektirir.
 
 ## Anayasa
 
