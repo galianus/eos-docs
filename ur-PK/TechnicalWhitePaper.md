@@ -198,15 +198,15 @@ EOS.IO سافٹویئر تکنیک سب اکاونٹس کو یہ اجازت دی
 
 ## پیغامات لازمی تاخیر کے ساتھ-
 
-وقت سلامتی کا ایک اہم جز ہے. اکثر ضرورتوں میں، یہ جاننا ممکن نہیں ہے کہ پوشیدہ چابی کو کو چوری کیا گیا ہے یا نہیں جب تک کہ اس کو استعمال نا کیا جائے. Time based security is even more critical when people have applications that require keys be kept on computers connected to the internet for daily use. The EOS.IO software enables application developers to indicate that certain messages must wait a minimum period of time after being included in a block before they can be applied. During this time they can be cancelled.
+وقت سلامتی کا ایک اہم جز ہے. اکثر ضرورتوں میں، یہ جاننا ممکن نہیں ہے کہ پوشیدہ چابی کو کو چوری کیا گیا ہے یا نہیں جب تک کہ اس کو استعمال نا کیا جائے. وقت پر مبنی سلامتی کی اہمیت اس وقت بڈھ جاتی ہے جب لوگوں کے پاس وہ اپلیکیشنز ہو جن کے پاس روزانہ استعمال کے لیے کمپیوٹر اور انٹرنیٹ سے منسلک رہنے کے لئے چابیوں کی ضرورت پڈتی ہیں. EOS.IO سافٹویئر اپلیکیشن ڈیولپرس کو اس قابل بناتا ہے کہ کچھ پیغامات کو بلاک پر ڈالنے سے پہلے لازماً ایک چھوٹے سے وقفے کے لیے رکنا پڈتا ہے. اس دوران انہیں منسوخ کیا جا سکتا ہے.
 
-Users can then receive notice via email or text message when one of these messages is broadcast. If they did not authorize it, then they can use the account recovery process to recover their account and retract the message.
+ان پیغامات کے نشر ہونے کے بعد صارفین کو ایمیل یا ٹیکسٹ کی شکل میں ایک نوٹس ملتا ہے. ان کی طرف سے اجازت نہ ملنے پر، وہ اکاونٹ کو ریکور کرنے کے لیے اور پیغامات کو نکالنے کے لیے ایک عمل کرتے ہیں.
 
-The required delay depends upon how sensitive an operation is. Paying for a coffee can have no delay and be irreversible in seconds, while buying a house may require a 72 hour clearing period. Transferring an entire account to new control may take up to 30 days. The exact delays chosen are up to application developers and users.
+ضروری تاخیر آپریشن کے احساس پر منحصر ہے. ایک قافی کپ کی ادائیگی کرنے میں دھیری نہیں لگتی اس کے لیے بس چند سیکنڈ کا وقت درکار رہتا ہے وہی ایک مکان خریدنے کی ادائیگی میں 72 گھنٹے تک کا وقت لگ سکتا ہے. پودا اکاونٹ ٹرانسفر کرنے کے لیے 30 دن لگ سکتے ہیں. مکمّل دھیری اپلیکیشن بنانے والے طے کرتے ہیں.
 
-## Recovery from Stolen Keys
+## چوری شدہ چابیوں سے وصولی-
 
-The EOS.IO software provides users a way to restore control of their account when their keys are stolen. An account owner can use any owner key that was active in the last 30 days along with approval from their designated account recovery partner to reset the owner key on their account. The account recovery partner cannot reset control of the account without the help of the owner.
+EOS.IO سافٹویئر صارفین کو چوری شدہ اکاونٹس کی چابیاں ریسٹور کرنے کا اختیار دیتا ہے. An account owner can use any owner key that was active in the last 30 days along with approval from their designated account recovery partner to reset the owner key on their account. The account recovery partner cannot reset control of the account without the help of the owner.
 
 There is nothing for the hacker to gain by attempting to go through the recovery process because they already "control" the account. Furthermore, if they did go through the process, the recovery partner would likely demand identification and multi-factor authentication (phone and email). This would likely compromise the hacker or gain the hacker nothing in the process.
 
