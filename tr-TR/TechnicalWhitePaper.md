@@ -301,15 +301,15 @@ Nesnel olarak ölçülmesi önemsiz olan bazı şeyler vardır. İletilen mesaj 
 
 ## Alıcı Ödemeleri
 
-Geleneksel olarak, bir işletme, ofis alanı, hesaplama gücü ve işletmeyi yürütmek için gereken diğer maliyetleri öder. Müşteri, belirli ürünleri alır ve bu ürün satışlarından elde edilen gelir, işletme işletme maliyetlerini karşılamak için kullanılır. Benzer şekilde, hiçbir web sitesi, barındırma maliyetlerini karşılamak üzere, ziyaretçilerini siteyi ziyaret ettikleri için mikro ödemeler yapmak zorunda bırakmaz. Bu nedenle, merkezi olmayan dağıtık uygulamalar, müşterilerini blok zincirinin kullanımı için ödemeye zorlamamalıdır.
+Geleneksel olarak, bir işletme, ofis alanı, hesaplama gücü ve işletmeyi yürütmek için gereken diğer maliyetleri öder. Müşteri, belirli ürünleri alır ve bu ürün satışlarından elde edilen gelir, işletme işletme maliyetlerini karşılamak için kullanılır. Benzer şekilde, hiçbir web sitesi, barındırma maliyetlerini karşılamak üzere, ziyaretçilerini siteyi ziyaret ettikleri için mikro ödemeler yapmak zorunda bırakmaz. Bu nedenle, merkezi olmayan uygulamalar, müşterilerini blok zincirinin kullanımı için blok zincirine doğrudan ödeme yapmaya zorlamamalıdır.
 
-EOS.IO yazılımını kullanan bir blok zinciri, kullanıcılarından doğrudan ödemesi istemiz. Bu nedenle bir işletmenin ürünlerine ilişkin kendi para kazanma stratejini belirlemesini sınırlamaz veya engellemez.
+EOS.IO yazılımını kullanan bir blok zinciri, kullanıcılarından kullanımları için doğrudan ödeme talep etmez. Bu nedenle, bir işletmenin ürünlerine ilişkin kendi parasallaştırma stratejisini belirlemesini ne kısıtlar ne de engeller.
 
 ## Yetkilendirme Kapasitesi
 
 Mevcut bir bant genişliğinin tamamını veya bir kısmını tüketmek zorunda olmayan, başkalarına kullanılmayan bant genişliği verebilen veya kiralayabilen EOS.IO yazılımını benimseyen bir blok zincirdeki, jeton sahipleri, bu blok zincirinde EOS.IO yazılımını çalıştıran blok üreticilerine, kapasite kiralaması yapabilir ve buna göre bant genişliği tahsis edebilir.
 
-## İşlem maliyetlerini Jeton Değeri'nden ayırma
+## İşlem maliyetlerini Token Değeri'nden ayırma
 
 EOS.IO yazılımının en büyük faydalarından biri, bir uygulamaya sunulan bant genişliği miktarının, herhangi bir jeton fiyatından tamamen bağımsız olmasıdır. Bir uygulama sahibinin, EOS.IO yazılımını benimseyen bir blok zincir üzerinde ilgili sayıda jeton bulundurması durumunda, uygulama sabit bir durum ve bant genişliği kullanımıyla süresiz olarak çalışabilir. Böyle bir durumda, geliştiriciler ve kullanıcılar, jeton pazarındaki herhangi bir fiyat dalgalanmasından etkilenmez ve bu nedenle bir jetonun fiyatına bağlı değildirler. Başka bir deyişle, EOS.IO yazılımını benimseyen bir blok zincirinde, blok üreticilerinin, jeton başına düşen hesaplama, bant genişliği ve depolama alanı, jeton fiyatından bağımsızdır.
 
