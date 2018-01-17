@@ -190,15 +190,15 @@ EOS.IO سافٹویئر تکنیک سب اکاونٹس کو یہ اجازت دی
 
 #### متوازی جایزہ کی اجازت-
 
-اجازات کے جایزہ کا عمل فقط پڈھنا ہے اور لین دین کی طرف سے بغیر اجازت کی تبدیلیاںایک بلاک کے آخر تک اثر انداز نہیں ہوتی. This means that all keys and permission evaluation for all transactions can be executed in parallel. Furthermore, this means that a rapid validation of permission is possible without starting the costly application logic that would have to be rolled back. Lastly, it means that transaction permissions can be evaluated as pending transactions are received and do not need to be re-evaluated as they are applied.
+اجازات کے جایزہ کا عمل فقط پڈھنا ہے اور لین دین کی طرف سے بغیر اجازت کی تبدیلیاںایک بلاک کے آخر تک اثر انداز نہیں ہوتی. اس کا یہ مطلب ہے کہ تمام چابیاں اور اجازاتی تشخیص لین دین کے متوازی چلتی ہے. علاوہ ازیں، ایک تیز رفتار جواب دہی کا عمل قیمتی اپلیکیشنز کے منطق شروع کی جا سکتی ہے. آخر میں، اس کا مطلب یہ ہے کہ لین دین کی اجازات کی تشخیص کے بعد دوبارہ تشخیص کی ضرورت نہیں.
 
-All things considered, permission verification represents a significant percentage of the computation required to validate transactions. Making this a read-only and trivially parallelizable process enables a dramatic increase in performance.
+تمام چیزوں کو مدنظر رکھتے ہوئے، اجازاتی تصدیق کے نمایندو کی ایک بڑی فیصد لین دین کی تصدیق کرتی ہے. اسکو فقط ایک مطعالاتی اور متوازی عمل بنانے سے اس کی کارکردگی میں ڈرامائی اضافہ ہونے کے قابل بناتا ہے.
 
-When replaying the blockchain to regenerate the deterministic state from the log of messages there is no need to evaluate the permissions again. The fact that a transaction is included in a known good block is sufficient to skip this step. This dramatically reduces the computational load associated with replaying an ever growing blockchain.
+بلاکچین کو جواب دیتے وقت کہ اس کی بنیادی شکل کو پیغامات کے لاگ سے تشخیص کرنے کے لیے دوبارہ اجازت لینے کی ضرورت نہیں. حقیقت یہ ہے کہ لین دین ایک پہچان والے بلاک سے ہوتا ہے جو اس قدم کو سکپ کرنے کے لیے کافی ہے. بلاکچین پر پڈھنے والے شمارندگ لوڈ کو ڈرامائی طور پر کم کرتا ہے.
 
-## Messages with Mandatory Delay
+## پیغامات لازمی تاخیر کے ساتھ-
 
-Time is a critical component of security. In most cases, it is not possible to know if a private key has been stolen until it has been used. Time based security is even more critical when people have applications that require keys be kept on computers connected to the internet for daily use. The EOS.IO software enables application developers to indicate that certain messages must wait a minimum period of time after being included in a block before they can be applied. During this time they can be cancelled.
+وقت سلامتی کا ایک اہم جز ہے. اکثر ضرورتوں میں، یہ جاننا ممکن نہیں ہے کہ پوشیدہ چابی کو کو چوری کیا گیا ہے یا نہیں جب تک کہ اس کو استعمال نا کیا جائے. Time based security is even more critical when people have applications that require keys be kept on computers connected to the internet for daily use. The EOS.IO software enables application developers to indicate that certain messages must wait a minimum period of time after being included in a block before they can be applied. During this time they can be cancelled.
 
 Users can then receive notice via email or text message when one of these messages is broadcast. If they did not authorize it, then they can use the account recovery process to recover their account and retract the message.
 
