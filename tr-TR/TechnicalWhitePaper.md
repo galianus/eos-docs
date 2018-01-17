@@ -291,7 +291,7 @@ Blok zinciri durum depolaması, uygulama mantığından erişilebilen bir bilgid
 
 Blok üreticileri, bant genişliği, hesaplama ve durum için mevcut kapasitelerini yayınlarlar. EOS.IO yazılımı her hesaba, mevcut kapasitenin belli bir yüzdesini- 3 günlük paydaşlık sözleşmesi uyarınca- sahip olunan tokenların miktarıyla orantılı olarak tüketme olanağı tanır. Örneğin, EOS.IO yazılımına dayanan bir blok zinciri başlatılırsa ve bir hesap bu blok zincirine göre dağıtılan toplam tokenların % 1'ini elinde tutarsa; bu hesap durum saklama kapasitesinin %1'inden yararlanma potansiyeline sahiptir.
 
-EOS.IO yazılımını benimseyen bir blok zincirinde, bant genişliği ve hesaplama kapasitesi bir kısmi rezerv olarak ayrılır, çünkü bunlar geçicidir (kullanılmayan kapasite gelecekte kullanılmak üzere kaydedilemez). EOS.IO yazılımı tarafından kullanılan algoritma, Steem tarafından kullanılan, hız limitli bant genişliği algoritmasına benzer.
+Blok zincirinde EOS.IO yazılımını benimsemek, bant genişliği ve hesaplama kapasitesinin bir kısmi rezerv olarak ayrılması anlamına gelir. Çünkü bunlar geçicidir (kullanılmayan kapasite gelecekte kullanılmak üzere kaydedilemez). EOS.IO yazılımı tarafından kullanılan algoritma, Steem tarafından kullanılan, hız limitli bant genişliği algoritmasına benzer.
 
 ## Objektif ve Öznel Ölçümler
 
