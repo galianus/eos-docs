@@ -271,7 +271,7 @@ Genel olarak, 1 blok üreticisi bile bir işlemi geçerli ve kaynak kullanım s�
 
 Bazı durumlarda, bir üretici, kabul edilebilir aralıkların dışındaki büyüklükte bir sipariş içeren işlemleri içeren bir blok üretebilir. Bu durumda, bir sonraki blok üreticisi bloğu reddetmeyi seçebilir ve bağlantı üçüncü blok üreticisi tarafından kesebilir. Bu, büyük bir bloğun ağ yayılımda gecikmelerine neden olduğunda olacaktan farklı değildir. Topluluk bir istismar örüntüsü fark eder ve nihayetinde sahtekâr üreticiden oyları kaldırır.
 
-Hesaplama maliyetin öznel olarak değerlendirilmesi, blok zincirini, tam ve belirli süre ölçme zorunluluğundan kurtarır. Bu tasarımla, fikir birliğine varmadan da optimizasyon için, fırsatlarını önemli ölçüde artıran, talimatların kesin sayımına gerek yoktur.
+Hesaplama maliyetinin öznel olarak değerlendirilmesi blok zincirini, herhangi bir şeyin çalışması için ne kadar zamana gereksinim duyulduğunun hassas ve belirlenimli bir şekilde ölçülmesi zorunluluğundan kurtarır. Bu tasarımla, fikir birliğine varmadan da optimizasyon için, fırsatlarını önemli ölçüde artıran, talimatların kesin sayımına gerek yoktur.
 
 # Jeton Modeli ve Kaynak Kullanımı
 
