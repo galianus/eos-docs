@@ -216,13 +216,13 @@ EOS.IO سافٹویئر صارفین کو چوری شدہ اکاونٹس کی چ
 
 بلاکچین اتفاق رائے کا انحصار ڈٹرمنسٹک جنم کے رویے پر رہتا ہے. اس کا مطلب تمام متوازی عمل موٹیکسز اور دوسرے لانگ پرمیٹوز سے مفت ہونے چاہئیں. تالو کے بغیر یہاں لازماً ایک ایسا راستہ ہونا چاہیے جو اس بات کی ضمانت دیں کہ اکاونٹس صرف ان کے پوشیدہ ڈیٹابیس سے پڈھے اور لکھے جا سکے. اس کا مطلب یہ بھی ہے کہ اکاونٹ کے ہر ایک عمل میں ایک مسلسل اور متوازی عمل ہر ایک اکاؤنٹ حد پر رہے.
 
-In an EOS.IO software-based blockchain, it is the job of the block producer to organize message delivery into independent threads so that they can be evaluated in parallel. The state of each account depends only upon the messages delivered to it. The schedule is the output of a block producer and will be deterministically executed, but the process for generating the schedule need not be deterministic. This means that block producers can utilize parallel algorithms to schedule transactions.
+EOS.IO سافٹویئر پر مبنی ایک بلاکچین میں، انتخابات کو آزادانہ طور پر ایک جگہ سے دوسری جگہ منتقل کرنے کا کام اور ان کے متوازی جانچ کا کام بلاک پرڈوسدزکا ہے. ہر ایک اکاؤنٹ کی صورت اس پر بیجھے ہوے انتخابات پر منحصر ہے. ترتیب بلاک پرڈوسد کا مطبوعہ ہے اور اس کو عمل میں لانے کو آمادہ کرتا ہے. مگر اس عمل کو بڈھاوا دینے کے لیے عمل کا یقینی ہونا ضروری ہے. اس کا مطلب یہ ہے کہ بلاک پرڈوسد شڈول کے مطابق لین دین کے متوازی الگورزم کا استعمال کرسکتا ہے.
 
-Part of parallel execution means that when a script generates a new message it does not get delivered immediately, instead it is scheduled to be delivered in the next cycle. The reason it cannot be delivered immediately is because the receiver may be actively modifying its own state in another thread.
+متوازی عمل کا ایک حصے کا مطلب ہے کہ یہ انتخابات کو فوری طور پر منتقل نہیں کرتا، اسکے بدلے میں یہ دوسری دفعہ میں منتقل کردے گا. اس کا جلدی سے منتقل نا ہونے کی وجہ یہ ہوسکتی ہے کہ وصول کرنے والاحالیہ وقت میں اپنی صورت کو ترمیم کرنے میں لگا ہو.
 
-## Minimizing Communication Latency
+## مواصلاتی چھپاو کو کم کرنا-
 
-Latency is the time it takes for one account to send a message to another account and then receive a response. The goal is to enable two accounts to exchange messages back and forth within a single block without having to wait 3 seconds between each message. To enable this, the EOS.IO software divides each block into cycles. Each cycle is divided into threads and each thread contains a list of transactions. Each transaction contains a set of messages to be delivered. This structure can be visualized as a tree where alternating layers are processed sequentially and in parallel.
+مواصلاتی وقت وہ وقت ہے جو ایک اکاؤنٹ کو دوسرے اکاونٹ تک پیغام پہنچانے میں اور اس کا جواب ملنے میں درکار رہتا ہے. اس کا مقصد ہر پیغام کے درمیان 3 سیکنڈ انتظار کئے بغیر آگے پیچھے ایک اکیلا بلاک کے اندر اندر پیغامات کا تبادلہ کرنے دو اکاؤنٹ اہل بنانے کے لیے ہے ۔. اس مقصد کے لیے EOS.IO سافٹویئر ہر ایک بلاک کو مختلف مرحلوں میں تقسیم کرتا ہے. ہر ایک سائیکل کو دھاگوں میں تقسیم کیا جاتا ہے اور ہر ایک دھاگے کے ساتھ لین دین کی ایک ترتیب ہوتی ہے. ہر ایک ٹرانزکش کے ساتھ پیغامات بجھنے کا ایک لسٹ ساتھ میں رہتا ہے. یہ ڈھانچہ ایک درخت کی صورت میں دیکھا جا سکتا ہے جہاں متبادل تہیں ایک مخصوص متوازی عمل میں.
 
         Block
     
