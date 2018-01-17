@@ -249,13 +249,13 @@ Bazı hesaplar, bir iletiyi onun iç durumunu değiştirmeksizin geçme/kalma te
 
 Bazen mesajların atomik olarak birden fazla hesaba iletildiğinden ve kabul edildiğinden emin olmak istenir. Bu durumda, her iki ileti de bir işleme yerleştirilir ve her iki hesaba da aynı iş parçacığı atanır ve iletiler sırayla uygulanır. Bu durum performans için ideal değildir ve kullanıcılar için "fatura" söz konusu olduğunda, bir işlem tarafından atıfta bulunulan farklı hesap sayısına göre faturalandırılacaktır.
 
-Performans ve maliyet nedenleriyle, iki veya daha fazla hesaptan yoğun kullanılan atomik işlemleri en aza indirmek en iyisidir.
+Performans ve maliyet nedenleriyle, iki veya daha fazla yoğun kullanımlı hesabı kapsayan atomik işlemleri en aza indirmek en iyisidir.
 
 ## Blok Zinciri Durumunun Kısmi Değerlendirilmesi
 
 Blok zincir teknolojisini ölçekleme, bileşenlerin modüler olmasını gerektirir. Herkes her şeyi çalıştırmak zorunda kalmamalıdır, özellikle de yalnızca küçük bir uygulama kümesini kullanması gerekiyorsa.
 
-Bir takas uygulama geliştiricisi, takas durumunu kullanıcılarına göstermek amacıyla tam düğümleri çalıştırır. Bu takas uygulaması, sosyal medya uygulamaları ile ilişkili duruma ihtiyaç duymaz. EOS.IO yazılımı, herhangi bir düğüme, herhangi bir uygulama alt kümesini çalıştırmak için seçim yapmasına izin verir. Bir uygulamanın durumu tamamen ona iletilen mesajlardan türetildiğinden, diğer uygulamalara iletilen mesajlar güvenle yok sayılır.
+Bir takas uygulaması geliştiricisi, takas durumunu kullanıcılarına göstermek amacıyla tam düğümleri çalıştırır. Bu takas uygulaması, sosyal medya uygulamaları ile ilişkili duruma ihtiyaç duymaz. EOS.IO yazılımı, herhangi bir düğüme, herhangi bir uygulama alt kümesini çalıştırmak için seçim yapmasına izin verir. Bir uygulamanın durumu tamamen ona iletilen mesajlardan türetildiğinden, diğer uygulamalara iletilen mesajlar güvenle yok sayılır.
 
 Bu, diğer hesaplarla iletişimde bazı önemli etkilere sahiptir. En önemlisi, diğer hesabın durumunun aynı makineden erişilebilir olduğu varsayılamaz. Aynı zamanda, bir hesabın başka bir hesabı eşzamanlı olarak çağırmasına izin veren "kilitler" i etkinleştirmek cazip olsa da, bu tasarım düzeni, diğer hesap bellekte değilse çöker.
 
