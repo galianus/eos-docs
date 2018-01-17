@@ -301,7 +301,7 @@ Nesnel olarak ölçülmesi önemsiz olan bazı şeyler vardır. İletilen mesaj 
 
 ## Alıcı Ödemeleri
 
-Geleneksel olarak, bir işletme, ofis alanı, hesaplama gücü ve işletmeyi yürütmek için gereken diğer maliyetleri öder. Müşteri, belirli ürünleri alır ve bu ürün satışlarından elde edilen gelir, işletme işletme maliyetlerini karşılamak için kullanılır. Benzer şekilde, hiçbir web sitesi, barındırma maliyetlerini karşılamak üzere, ziyaretçilerini siteyi ziyaret ettikleri için mikro ödemeler yapmak zorunda bırakmaz. Bu nedenle, gayrımerkezi uygulamalar, müşterilerini blok zincirinin kullanımı için blok zincirine doğrudan ödeme yapmaya zorlamamalıdır.
+Geleneksel olarak, bir işletme, ofis alanı, hesaplama gücü ve işletmeyi yürütmek için gereken diğer maliyetleri öder. Müşteri, belirli ürünleri alır ve bu ürün satışlarından elde edilen gelir, işletme işletme maliyetlerini karşılamak için kullanılır. Benzer şekilde, hiçbir web sitesi, barındırma maliyetlerini karşılamak üzere, ziyaretçilerini siteyi ziyaret ettikleri için mikro ödemeler yapmak zorunda bırakmaz. Bu nedenle, merkezi olmayan dağıtık uygulamalar, müşterilerini blok zincirinin kullanımı için ödemeye zorlamamalıdır.
 
 EOS.IO yazılımını kullanan bir blok zinciri, kullanıcılarından doğrudan ödemesi istemiz. Bu nedenle bir işletmenin ürünlerine ilişkin kendi para kazanma stratejini belirlemesini sınırlamaz veya engellemez.
 
