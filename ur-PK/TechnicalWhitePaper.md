@@ -174,23 +174,23 @@ EOS.IO سافٹویئر ہر ایک اکاؤنٹ کو یہ اجازت دیتا �
 
 ### نقشہ کاری کی اجازت-
 
-EOS.IO سافٹویئر ہر ایک اکاؤنٹ کو اجازت دیتا ہے کہ وہ گروہ نامی انتخابات کے درمیان ایک نقشہ واضح کرنے کے لیے اجازاتی حد. مثال کے طور پر، ایک اکاؤنٹ ہولڈر سوشل میڈیا اکاونٹ کی نقشہ کاری دوسرے دوست کے اجازاتی گروپ کے ساتھ ضم کرسکتا ہے. اس نقشہ کاری سے کوئی بھی دوست ایک اکاؤنٹ ھولڈر کا اکاونٹ سوشل میڈیا پر شائع کر سکتا ہے. Even though they would post as the account holder, they would still use their own keys to sign the message. This means it is always possible to identify which friends used the account and in what way.
+EOS.IO سافٹویئر ہر ایک اکاؤنٹ کو اجازت دیتا ہے کہ وہ گروہ نامی انتخابات کے درمیان ایک نقشہ واضح کرنے کے لیے اجازاتی حد. مثال کے طور پر، ایک اکاؤنٹ ہولڈر سوشل میڈیا اکاونٹ کی نقشہ کاری دوسرے دوست کے اجازاتی گروپ کے ساتھ ضم کرسکتا ہے. اس نقشہ کاری سے کوئی بھی دوست ایک اکاؤنٹ ھولڈر کا اکاونٹ سوشل میڈیا پر شائع کر سکتا ہے. اگرچہ وہ اکاونٹ ہولڈر کے طور پر پوسٹ کو شایع کریں گے،پیغامات کو ڈالنے کے لئے انہیں اپنی چابیاں استعمال میں لانی ہوگی. اس کا مطلب ہے یہ جاننا ہر وقت ممکن ہے کہ آپکے کس دوست نے اکاونٹ کا کب اور کس طرح استعمال کیا ہے.
 
-### Evaluating Permissions
+### جایزہ لینے کی اجازت-
 
-When delivering a message of type "**Action**", from **@alice** to **@bob** the EOS.IO software will first check to see if **@alice** has defined a permission mapping for **@bob.groupa.subgroup.Action**. If nothing is found then a mapping for **@bob.groupa.subgroup** then **@bob.groupa**, and lastly **@bob** will be checked. If no further match is found, then the assumed mapping will be to the named permission group **@alice.active**.
+اس قسم کا پیغام بھیجتے وقت " **Action**", from **@alice** to **@bob** the EOS.IO software will first check to see if **@alice** has defined a permission mapping for **@bob.groupa.subgroup.Action**. اگر کچھ بھی نہیں جاتا ہے تو **@bob.groupa.subgroup** then **@bob.groupa**, and lastly **@bob** کے لیے نقشہ کاری کی جانچ پڑتال ہوگی. اگر مزید کوئی مشابہت نا ملے تو، نقشہ کاری کو نامی اجازتی گروہ **@alice.active**.تصور کیا جایے گا.
 
-Once a mapping is identified then signing authority is validated using the threshold multi-signature process and the authority associated with the named permission. If that fails, then it traverses up to the parent permission and ultimately to the owner permission, **@alice.owner**.
+نقشہ کاری کی نشاندہی کے بعد ایک بار پھر اجازت نامے پر دستخط کرنے کے چوکھٹ کثیر دستخط عمل اور اجازت نامے کے ساتھ وابستہ اختیار استعمال کرتے ہوئے درست قرار دیا ہے. اس کے ناکام ہونے کی صورت میں یہ پہلے بنیادی اجازت اور پھر **@alice.owner**. مالک کی اجازت.
 
 <img align="center" src="http://eos.io/wpimg/diagram2grayscale2.jpg" width="845.85px" height="500px" />
 
-#### Default Permission Groups
+#### طے شدہ اجازاتی گروہ-
 
-The EOS.IO technology also allows all accounts to have an "owner" group which can do everything, and an "active" group which can do everything except change the owner group. All other permission groups are derived from "active".
+EOS.IO سافٹویئر تکنیک سب اکاونٹس کو یہ اجازت دیتا ہے کہ وہ اپنا ایک "مالک" گروہ رکھ سکتے ہے اور ایک فعال گروہ جو مالک کے گروہ کی تبدیلی کے علاوہ کچھ بھی کر سکتا ہے. دیگر تمام اجازاتی گروہ فعال سے نکلے ہوئے ہیں.
 
-#### Parallel Evaluation of Permissions
+#### متوازی جایزہ کی اجازت-
 
-The permission evaluation process is "read-only" and changes to permissions made by transactions do not take effect until the end of a block. This means that all keys and permission evaluation for all transactions can be executed in parallel. Furthermore, this means that a rapid validation of permission is possible without starting the costly application logic that would have to be rolled back. Lastly, it means that transaction permissions can be evaluated as pending transactions are received and do not need to be re-evaluated as they are applied.
+اجازات کے جایزہ کا عمل فقط پڈھنا ہے اور لین دین کی طرف سے بغیر اجازت کی تبدیلیاںایک بلاک کے آخر تک اثر انداز نہیں ہوتی. This means that all keys and permission evaluation for all transactions can be executed in parallel. Furthermore, this means that a rapid validation of permission is possible without starting the costly application logic that would have to be rolled back. Lastly, it means that transaction permissions can be evaluated as pending transactions are received and do not need to be re-evaluated as they are applied.
 
 All things considered, permission verification represents a significant percentage of the computation required to validate transactions. Making this a read-only and trivially parallelizable process enables a dramatic increase in performance.
 
