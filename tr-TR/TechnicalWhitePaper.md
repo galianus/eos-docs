@@ -271,11 +271,11 @@ Genel olarak, 1 blok üreticisi bile bir işlemi geçerli ve kaynak kullanım s�
 
 Bazı durumlarda, bir üretici, kabul edilebilir aralıkların dışındaki büyüklükte bir sipariş içeren işlemleri içeren bir blok üretebilir. Bu durumda, bir sonraki blok üreticisi bloğu reddetmeyi seçebilir ve bağlantı üçüncü blok üreticisi tarafından kesebilir. Bu, büyük bir bloğun ağ yayılımda gecikmelerine neden olduğunda olacaktan farklı değildir. Topluluk bir istismar örüntüsü fark eder ve nihayetinde sahtekâr üreticiden oyları kaldırır.
 
-Hesaplama maliyetinin öznel olarak değerlendirilmesi blok zincirini, herhangi bir şeyin çalışması için ne kadar zamana gereksinim duyulduğunun hassas ve belirlenimli bir şekilde ölçülmesi zorunluluğundan kurtarır. Bu tasarımla, fikir birliğine varmadan da optimizasyon için, fırsatlarını önemli ölçüde artıran, talimatların kesin sayımına gerek yoktur.
+Hesaplama maliyetinin öznel olarak değerlendirilmesi blok zincirini, herhangi bir şeyin çalışması için ne kadar zamana gereksinim duyulduğunun hassas ve belirlenimli bir şekilde ölçülmesi zorunluluğundan kurtarır. Bu tasarımla, yönergelerin katı bir şekilde göz önünde tutulmasına gerek yoktur. Bu da, mütabakat bozumu olmaksızın optimiyasyon yapma fırsatlarını önemli ölçüde artırır.
 
-# Jeton Modeli ve Kaynak Kullanımı
+# Token Modeli ve Kaynak Kullanımı
 
-**LÜTFEN DİKKAT: BU BEYAZ SAYFALARDA BELİRTİLEN KRİPTOGRAFİK TOKENLAR, EOS.IO YAZILIMINI KULLANAN BIR BLOK ZİNCİRİNDE ÇIKARILMIŞ KRİPTOGRAFİK TOKENLARA ATIF YAPMAKTADIR. EOS TOKEN DAĞITIMI İLE BAĞLANTILI OLARAK ETHEREUM BLOCK ZİNCİRİ ÜZERİNDE DAĞITILAN ERC-20 UYUMLU TOKENSLERLA İLGİLİ DEĞİLDİR.**
+**LÜTFEN DİKKAT: BU BEYAZ SAYFALARDA BELİRTİLEN KRİPTOGRAFİK TOKENLAR, EOS.IO YAZILIMINI KULLANAN BLOK ZİNCİRİNDE ÇIKARILMIŞ KRİPTOGRAFİK TOKENLARA ATIF YAPMAKTADIR. EOS TOKEN DAĞITIMI İLE BAĞLANTILI OLARAK ETHEREUM BLOCK ZİNCİRİ ÜZERİNDE DAĞITILAN ERC-20 UYUMLU TOKENSLERLA İLGİLİ DEĞİLDİR.**
 
 Tüm blok zincirlerinde kaynak kısıtlıdır ve kötüye kullanımı önlemek için bir sistem gerekir. EOS.IO yazılımını kullanan bir blok zincirinde, uygulamalar tarafından tüketilen üç geniş kaynak sınıfı vardır:
 
