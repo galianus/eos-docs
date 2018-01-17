@@ -222,7 +222,7 @@ Paralel yürütmenin bir kısmı, bir komut dosyası yeni bir mesaj ürettiğind
 
 ## İletişim Gecikmesini Azaltma
 
-Gecikme, bir hesabın başka bir hesaba mesaj göndermek ve ardından bir yanıt almak için geçen süreyi süreyi belirtir. Hedef, iki hesap arasında mesaj değişimi sırasında 3 saniye beklemek zorunda kalmadan, tek bir blok içinde ileri geri mesajları alış verişinde bulunmaktır. Bunu etkinleştirmek için, EOS.IO yazılımı her bloğu çevrimlere böler. Her döngü iş parçacıklarına bölünür ve her iş parçacığı bir işlem listesi içerir. Her işlem, teslim edilecek bir mesaj seti içerir. Bu yapı, alternatif katmanların ardışık ve paralel olarak işlendiği bir ağaç olarak görselleştirilebilir.
+Gecikme, bir hesabın başka bir hesaba mesaj göndermesi ve ardından bir yanıt alması için geçen süreyi süreyi belirtir. Hedef, iki hesap arasında mesaj değişimi sırasında 3 saniye beklemek zorunda kalmadan, tek bir blok içinde ileri geri mesaj alışverişinde bulunmaktır. Bunu etkinleştirmek için, EOS.IO yazılımı her bloğu çevrimlere böler. Her döngü iş parçacıklarına bölünür ve her iş parçacığı bir işlem listesi içerir. Her işlem, teslim edilecek bir mesaj seti içerir. Bu yapı, alternatif katmanların ardışık ve paralel olarak işlendiği bir ağaç olarak görselleştirilebilir.
 
         Blok
     
