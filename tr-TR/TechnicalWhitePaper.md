@@ -210,7 +210,7 @@ EOS.IO yazılımı, kullanıcılara anahtarları çalındığında, hesapları �
 
 Hacker'ın hesap kurtarma sürecine girmeye çalışarak elde edebileceği hiçbir şey yoktur zira hesap zaten onun tarafından "kontrol" edilmektedir. Dahası, halihazırda sürece girmişlerse, kurtarma ortağı büyük olasılıkla kimlik tespiti ve çok faktörlü kimlik doğrulama (telefon ve e-posta) isteyecektir. Bu muhtemelen hacker'ı ifşa edebilir ya da hacker bu süreçten hiçbir şey elde edemez.
 
-Bu işlem aynı zamanda basit bir çoklu imza anlaşmasından çok farklıdır. Çok imzalı bir işlemle, yürütülen her işlem için taraf olan başka bir şirket vardır. Ancak kurtarma işlemi ile aracı kurtarma sürecine yalnızca bir taraftır ve günlük işlemler üzerinde hiçbir etkisi yoktur. Bu, ilgili herkes için maliyetleri ve yasal yükümlülükleri önemli ölçüde azaltır.
+Bu işlem aynı zamanda basit bir çoklu imza anlaşmasından çok farklıdır. Çoklu-imzalı bir işlemle, yürütülen her işlem için taraf olan başka bir şirket vardır. Ancak, kurtarma işlemi ile aracı, kurtarma sürecine yalnızca bir taraftır ve günlük işlemler üzerinde hiçbir etkisi yoktur. Bu, ilgili herkes için maliyetleri ve yasal yükümlülükleri önemli ölçüde azaltır.
 
 # Uygulamaların Belirli Paralel İcrası
 
