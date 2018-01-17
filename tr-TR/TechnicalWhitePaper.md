@@ -291,13 +291,13 @@ Blok zinciri durum depolaması, uygulama mantığından erişilebilen bir bilgid
 
 Blok üreticileri, bant genişliği, hesaplama ve durum için mevcut kapasitelerini yayınlarlar. EOS.IO yazılımı her hesaba, mevcut kapasitenin belli bir yüzdesini- 3 günlük paydaşlık sözleşmesi uyarınca- sahip olunan tokenların miktarıyla orantılı olarak tüketme olanağı tanır. Örneğin, EOS.IO yazılımına dayanan bir blok zinciri başlatılırsa ve bir hesap bu blok zincirine göre dağıtılan toplam tokenların % 1'ini elinde tutarsa; bu hesap durum saklama kapasitesinin %1'inden yararlanma potansiyeline sahiptir.
 
-Blok zincirinde EOS.IO yazılımını benimsemek, bant genişliği ve hesaplama kapasitesinin bir kısmi rezerv olarak ayrılması anlamına gelir. Çünkü bunlar geçicidir (kullanılmayan kapasite gelecekte kullanılmak üzere kaydedilemez). EOS.IO yazılımı tarafından kullanılan algoritma, Steem tarafından kullanılan, hız limitli bant genişliği algoritmasına benzer.
+Blok zincirinde EOS.IO yazılımını benimsemek, bant genişliği ve hesaplama kapasitesinin bir kısmi rezerv olarak ayrılması anlamına gelir. Çünkü bunlar geçicidir (kullanılmayan kapasite gelecekte kullanılmak üzere kaydedilemez). EOS.IO yazılımı tarafından kullanılan algoritma, Steem tarafından bant genişli kullanımını oran-sınırlı hale getirmek için kullanılan algoritmaya benzer.
 
-## Objektif ve Öznel Ölçümler
+## Nesnel ve Öznel Ölçümler
 
-Daha önce belirtildiği gibi, hesaplama kullanım araçlarının performans ve optimizasyon üzerinde önemli bir etkisi vardır; Bu nedenle, tüm kaynak kullanımı kısıtlamaları nihai olarak özneldir ve uygulamanın kendi algoritmalarına ve tahminlerine göre blok üreticileri tarafından yapılır.
+Daha önce belirtildiği gibi, hesaplama kullanımını araçsallaştırmanın performans ve optimizasyon üzerinde önemli bir etkisi vardır. Bu nedenle, tüm kaynak kullanımı kısıtlamaları nihai olarak özneldir ve (bu kısıtlamaların) icrası kendi algoritmalarına ve tahminlerine göre blok üreticileri tarafından yapılır.
 
-Nesnel olarak ölçmesi önemsiz olan bazı şeyler vardır. İletilen mesaj sayısı ve iç veritabanında saklanan verilerin boyutunu objektif olarak ölçmek ucuzdur. EOS.IO yazılımı, blok üreticilerinin aynı algoritmayı bu objektif ölçümlere uygulamasına olanak tanır; ancak öznel ölçümler üzerinde daha subjektif algoritmalar uygulamayı tercih edebilir.
+Nesnel olarak ölçülmesi önemsiz olan bazı şeyler vardır. İletilen mesaj sayısı ve iç veritabanında saklanan verilerin boyutunu objektif olarak ölçmek ucuzdur. EOS.IO yazılımı, blok üreticilerinin aynı algoritmayı bu objektif ölçümlere uygulamasına olanak tanır; ancak öznel ölçümler üzerinde daha subjektif algoritmalar uygulamayı tercih edebilir.
 
 ## Alıcı Ödemeleri
 
