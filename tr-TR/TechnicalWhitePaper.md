@@ -237,9 +237,9 @@ Gecikme, bir hesabın başka bir hesaba mesaj göndermesi ve ardından bir yanı
                   Alıcı ve Bildirilmiş Hesaplar (paralel)
     
 
-Bir döngüde üretilen işlemler, sonraki herhangi bir döngü veya blokta teslim edilebilir. Blok üreticileri maksimum süre dolana kadar bir bloğa döngü eklemeye devam eder değilse dağıtacak yeni üretilmiş işlem yoktur.
+Bir döngüde üretilen işlemler, sonraki herhangi bir döngüde veya blokta teslim edilebilir. Blok üreticileri maksimum süre dolana kadar bir bloğa döngü eklemeye devam eder, değilse dağıtacak yeni üretilmiş işlem yoktur.
 
-Bir bloğun, aynı hesabı değiştiren iki işlem parçacığını içermediğini doğrulamak için statik analiz kullanmak mümkündür. Bu değişmezin sürdüğü sürece bir blok, tüm konuları paralel olarak çalıştırarak işlenebilir.
+Bir bloğun verili bir çevrimde aynı hesabı değiştiren iki işlem parçacığı içermediğini doğrulamak için statik analiz kullanmak mümkündür. Bu değişmezin sürdüğü sürece bir blok, tüm konuları paralel olarak çalıştırarak işlenebilir.
 
 ## Sadece Okunabilir Mesaj İşleyicileri
 
