@@ -243,7 +243,7 @@ Bir bloğun verili bir çevrimde aynı hesabı değiştiren iki işlem parçacı
 
 ## Salt-Okunur Mesaj İşleyicileri
 
-Bazı hesaplar, bir iletiyi iç durumunu değiştirmeden geçiş/başarısız olarak işleyebilir. Bu durumda, bu işleyiciler belirli bir hesap için yalnızca salt okunur ileti işleyicileri belirli bir döngüdeki bir veya daha çok iş parçacığına dahil edildiği sürece paralel olarak yürütülebilir.
+Bazı hesaplar, bir iletiyi onun iç durumunu değiştirmeksizin geçme/kalma temelinde işleyebilir. Bu durumda, bu işleyiciler belirli bir hesap için yalnızca salt okunur ileti işleyicileri belirli bir döngüdeki bir veya daha çok iş parçacığına dahil edildiği sürece paralel olarak yürütülebilir.
 
 ## Çoklu Hesaplarla Atomik İşlemler
 
