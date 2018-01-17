@@ -331,17 +331,17 @@ Kullanıcılar -EOS.IO yazılımına dayanan blok zinciri uyarınca- blok üreti
 
 # Yönetişim
 
-Yönetişim, insanların tümden yazılımsal algoritmalarla yakalanamayan öznel konularda oydaşmaya varma sürecidir. EOS.IO yazılımı tabanlı bir blok zinciri, blok üreticilerinin var olan etkisini verimli bir şekilde yönlendiren bir yönetişim süreci uygular. Tanımlanmış bir yönetişim süreci bulunduğunda, önceki blok zincirleri, tahmin edilemeyen sonuçlarla sonuçlanacak geçici, gayrı resmi ve genellikle tartışmalı yönetişim süreçleri doğuyordu.
+Yönetişim, insanların tümden yazılımsal algoritmalarla yakalanamayan öznel konularda oydaşmaya varma sürecidir. EOS.IO yazılımı tabanlı bir blok zinciri, blok üreticilerinin var olan etkisini verimli bir şekilde yönlendiren bir yönetişim süreci uygular. Tanımlanmış bir yönetişim sürecinin bulunmadığı durumlarda - önceki blok zincirlerinin ad hoc olarak dayandığı- tahmin edilemeyen neticelerle sonuçlanacak geçici, gayrı resmi ve genellikle tartışmalı yönetişim süreçleri doğuyordu.
 
-EOS.IO yazılımına dayanan bir blok zinciri, gücün, bu gücü blok üreticilere devreden jeton sahiplerinden kaynaklandığını kabul eder. Blok üreticilerine, hesapları dondurma, kusurlu uygulamaları güncelleme ve temel protokole çatal önermek için sınırlı yetkili ve denetimli yetkili verilir.
+EOS.IO yazılımına dayanan bir blok zinciri, gücün, bu gücü blok üreticilere devreden token sahiplerinden kaynaklandığını kabul eder. Blok üreticilerine, hesapları dondurma, kusurlu uygulamaları güncelleme ve temel protokole çatal önermek için sınırlandırılmış ve denetlenen yetkiler verilir.
 
-Blok üreticilerin seçimi EOS.IO yazılımına gömülüdür. Blok zincirinde herhangi bir değişiklik yapılmadan önce bu blok üreticilerinin bunu onaylaması gerekir. Blok üreticileri, jeton sahipleri tarafından arzulanan değişiklikleri yapmayı reddederse oy kullanamazlar. Eğer blok üreticileri jeton sahiplerinin izni olmaksızın değişiklikler yaparsa, üretilmeyen tam düğüm doğrulayıcıları (borsalar vb.) Tüm değişikliği reddedecektir.
+Blok üreticilerin seçimi EOS.IO yazılımına gömülüdür. Blok zincirinde herhangi bir değişiklik yapılmadan önce bu blok üreticilerinin bunu onaylaması gerekir. Blok üreticileri, token sahipleri tarafından arzulanan değişiklikleri yapmayı reddettikleri takdirde oy kullanamazlar. Eğer blok üreticileri token sahiplerinin izni olmaksızın değişiklikler yaparsa, üretimde olmayan tam düğüm doğrulayıcıları (borsalar vb.) tüm değişikliği reddedecektir.
 
 ## Hesapların Dondurulması
 
-Bazen akıllı sözleşmeler anormal veya öngörülemeyen bir şekilde davranır ve amacında başarısız olur; Bazen bir uygulama veya hesap kabul edilemez miktarda kaynak tüketimine olanak tanıyan bir istismarı keşfedebilir. Bu tür sorunlar kaçınılmaz olarak ortaya çıktığında, blok üreticileri bu tür durumlarda düzeltme yetkisine sahiptir.
+Bazen akıllı sözleşmeler anormal veya öngörülemeyen bir şekilde davranır ve amacında başarısız olur; bazen de bir uygulama veya hesap kabul edilemez miktarda kaynak tüketimine olanak tanıyan bir istismarı keşfedebilir. Bu tür sorunlar kaçınılmaz olarak ortaya çıktığında, blok üreticileri bu tür durumlarda düzeltme yetkisine sahiptir.
 
-Tüm blok zincirlerdeki blok üreticileri, bloklara hangi işlemlerin dahil edildiğini seçme gücüne sahiptir. Bu da onlara hesapları dondurma yeteneği kazandırır. EOS.IO yazılımını kullanan bir blok zinciri, bir hesabı dondurmak için, aktif üreticilerin 17/21 oyunu alarak bu yetkiye sahip olur. Üreticiler bu yetkiyi kötüye kullanırsa oy kullanamazlar ve hesap donmaz.
+Tüm blok zincirlerindeki blok üreticileri, bloklara hangi işlemlerin dahil edildiğini seçme gücüne sahiptir. Bu da onlara hesapları dondurma yeteneği kazandırır. EOS.IO yazılımını kullanan bir blok zinciri, bir hesabı dondurmak için, aktif üreticilerin 17/21 oyunu alarak bu yetkiye sahip olur. Üreticiler bu yetkiyi kötüye kullanırsa oy kullanamazlar ve hesap donmaz.
 
 ## Hesap Kodunu Değiştirme
 
