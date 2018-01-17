@@ -341,7 +341,7 @@ Blok üreticilerin seçimi EOS.IO yazılımına gömülüdür. Blok zincirinde h
 
 Bazen akıllı sözleşmeler anormal veya öngörülemeyen bir şekilde davranır ve amacında başarısız olur; bazen de bir uygulama veya hesap kabul edilemez miktarda kaynak tüketimine olanak tanıyan bir istismarı keşfedebilir. Bu tür sorunlar kaçınılmaz olarak ortaya çıktığında, blok üreticileri bu tür durumlarda düzeltme yetkisine sahiptir.
 
-Tüm blok zincirlerindeki blok üreticileri, bloklara hangi işlemlerin dahil edildiğini seçme gücüne sahiptir. Bu da onlara hesapları dondurma yeteneği kazandırır. EOS.IO yazılımını kullanan bir blok zinciri, bir hesabı dondurmak için, aktif üreticilerin 17/21 oyunu alarak bu yetkiye sahip olur. Üreticiler bu yetkiyi kötüye kullanırsa oy kullanamazlar ve hesap donmaz.
+Tüm blok zincirlerindeki blok üreticileri, bloklara hangi işlemlerin dahil edildiğini seçme gücüne sahiptir. Bu da onlara hesapları dondurma yeteneği kazandırır. EOS.IO yazılımını kullanan bir blok zinciri, bir hesabı dondurmak için, aktif üreticilerin 17/21 oyunu alarak bu yetkiye sahip olur. Üreticiler bu yetkiyi kötüye kullanırsa aleyhlerinde oy kullanılır ve hesap donmaz.
 
 ## Hesap Kodunu Değiştirme
 
