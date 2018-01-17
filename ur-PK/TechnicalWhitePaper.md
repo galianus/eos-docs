@@ -208,13 +208,13 @@ EOS.IO سافٹویئر تکنیک سب اکاونٹس کو یہ اجازت دی
 
 EOS.IO سافٹویئر صارفین کو چوری شدہ اکاونٹس کی چابیاں ریسٹور کرنے کا اختیار دیتا ہے. ایک اکاؤنٹ مالک کسی بھی ایسی چابی کو استعمال میں لا سکتا ہے جو پچھلے 30 دنوں سے فعل رہی ہو دوسرے اکاونٹ شراکت دار سے اکاؤنٹ کی چابیاں ریکور کرنے کے لیے. اکاونٹ ریکوری شراکت دار مالک کی مدد کے بغیر اکاونٹ کو کنٹرول نہیں کر سکتا ہے.
 
-ایک ھیکر اگر ریکوری عمل کی کوشش کریں تو اس سے اسکو کوئی فائدہ نہ ہوگا کیونکہ اس پر پہلے سے ہی ان کا کنٹرول رہتا ہے. Furthermore, if they did go through the process, the recovery partner would likely demand identification and multi-factor authentication (phone and email). This would likely compromise the hacker or gain the hacker nothing in the process.
+ایک ھیکر اگر ریکوری عمل کی کوشش کریں تو اس سے اسکو کوئی فائدہ نہ ہوگا کیونکہ اس پر پہلے سے ہی ان کا کنٹرول رہتا ہے. علاوہ ازیں، اگر وہ ایک اچھا لاہ عمل اپناے گیں، ریکوری شراکت دار کثیر مرحلہ اجازت اور پہچان کی مانگ کرے گا (ایمیل اور فون). اس سے شاید ایک ھیکر سمجھوتہ کرے گا یا اس عمل کے دوران شاید نہ ایک ہیکر کو کچھ حاصل نہ ہو گا.
 
-This process is also very different from a simple multi-signature arrangement. With a multi-signature transaction, there is another company that is party to every transaction that is executed, but with the recovery process the agent is only a party to the recovery process and has no power over the day-to-day transactions. This dramatically reduces costs and legal liabilities for everyone involved.
+یہ عمل بہترین آسان متعدد دستخطی ترتیبی عمل سے کافی مختلف ہے. متعدد دستخطی لین دین کے عمل میں اس کے علاوہ اور ایک کمپنی شراکت رکھتی ہے مگر روزانہ وصولی کے عمل میں دوسرے شراکت داروں کا کوئی عمل دخل نہیں رہتا. یہ جڈے ہوئے تمام افراد کے حقیقی بقایاجات میں ڈرامائی کمی لاتا ہے.
 
-# Deterministic Parallel Execution of Applications
+# اپلیکیشنز کے بیچ متوازی نفاذ-
 
-Blockchain consensus depends upon deterministic (reproducible) behavior. This means all parallel execution must be free from the use of mutexes or other locking primitives. Without locks there must be some way to guarantee that all accounts can only read and write their own private database. It also means that each account processes messages sequentially and that parallelism will be at the account level.
+بلاکچین اتفاق رائے کا انحصار ڈٹرمنسٹک جنم کے رویے پر رہتا ہے. اس کا مطلب تمام متوازی عمل موٹیکسز اور دوسرے لانگ پرمیٹوز سے مفت ہونے چاہئیں. تالو کے بغیر یہاں لازماً ایک ایسا راستہ ہونا چاہیے جو اس بات کی ضمانت دیں کہ اکاونٹس صرف ان کے پوشیدہ ڈیٹابیس سے پڈھے اور لکھے جا سکے. اس کا مطلب یہ بھی ہے کہ اکاونٹ کے ہر ایک عمل میں ایک مسلسل اور متوازی عمل ہر ایک اکاؤنٹ حد پر رہے.
 
 In an EOS.IO software-based blockchain, it is the job of the block producer to organize message delivery into independent threads so that they can be evaluated in parallel. The state of each account depends only upon the messages delivered to it. The schedule is the output of a block producer and will be deterministically executed, but the process for generating the schedule need not be deterministic. This means that block producers can utilize parallel algorithms to schedule transactions.
 
