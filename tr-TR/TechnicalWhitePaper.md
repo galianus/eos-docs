@@ -259,11 +259,11 @@ Bir takas uygulaması geliştiricisi, takas durumunu kullanıcılarına gösterm
 
 Bu, diğer hesaplarla iletişimde bazı önemli etkilere sahiptir. En önemlisi, diğer hesabın durumunun aynı makineden erişilebilir olduğu varsayılamaz. Aynı zamanda, bir hesabın başka bir hesabı eşzamanlı olarak çağırmasına izin veren "kilitler" i etkinleştirmek cazip olsa da, bu tasarım düzeni, diğer hesap bellekte değilse çöker.
 
-Hesaplar arasındaki tüm durum iletişimi, blok zincirindeki mesajlarla iletilmelidir.
+Hesaplar arasındaki tüm durum iletişimi, blok zincirindeki mesajlar aracılığıyla iletilmelidir.
 
 ## Öznel En İyi Çaba Planlaması
 
-EOS.IO yazılımı, blok üreticilerinin herhangi bir hesaba herhangi bir mesajı göndermesinden yükümlü olamaz. Her blok üreticisi, bir işlemin işlemesi için gereken zamana ve hesaplamanın karmaşıklığıyla ilgili kendi öznel ölçümlerini yapar. Bu, bir işlemin bir kullanıcı tarafından mı yoksa bir komut dosyası tarafından otomatik olarak mı üretilmiş olduğuna göre uygulanır.
+EOS.IO yazılımı, blok üreticilerini herhangi bir hesaba herhangi bir mesajı göndermekle yükümlü kılamaz. Her blok üreticisi, bir işlemin işlemesi için gereken zamana ve hesaplamanın karmaşıklığıyla ilgili kendi öznel ölçümlerini yapar. Bu, bir işlemin bir kullanıcı tarafından mı yoksa bir komut dosyası tarafından otomatik olarak mı üretilmiş olduğuna göre uygulanır.
 
 EOS.IO yazılımını benimseyen bir blok zincirinde, bir ağ seviyesinde tüm işlemlere, .01ms ya da 10ms sürdüğüne bakılmaksızın, sabit bir bant genişliği hesabına göre maliyet çıkarılır. Bununla birlikte, yazılımı kullanan her bir blok üreticisi kendi algoritmasını ve ölçümlerini kullanarak, kaynak kullanımını hesaplayabilir. Bir blok üreticisi, bir işlemin veya hesabın hesaplama kapasitesinin orantısız bir miktarını tükettiğine karar verdiklerinde, kendi bloklarını üretirken işlemi basitçe reddeder; Ancak, diğer blok üreticilerin geçerli olduğunu düşündükleri takdirde işlemi yine de işlemeye devam eder.
 
