@@ -353,19 +353,19 @@ EOS.IO yazılımı, blok zincirlerin, bir "anayasa" olarak anılacak olan ve imz
 
 Anayasa, kaynak kodların amacını, insanlar tarafından okunabilir şekilde tanımlar. Bu amaç beyanı, hata ve özellik arasındaki farkı belirlemek için kullanılır. Bir hata oluştuğunda, hangi düzeltmelerin doğru veya yanlış olduğu konusunda topluluk için bir klavuz olur.
 
-## Protokolün Yükseltilmesi ve Anayasa
+## Protokolün Güncellenmesi ve Anayasa
 
 EOS.IO yazılımı, canonical/kurallı kaynak kodu ve anayasa tarafından tanımlanmış olan aşağıdaki süreçle protokol güncellemesi yapabilir:
 
-1. Blok üreticileri anayasada bir değişiklik önerisi için 17/21 onayı almalıdır.
-2. Blok üreticileri ard arda 30 gün boyunca 17/21 kabul oranını sürdürmelidir.
+1. Blok üreticileri anayasada bir değişiklik önermeli ve 17/21 oranında kabul almalıdır.
+2. Blok üreticileri takip eden 30 gün boyunca 17/21 kabul oranını muhafaza etmelidir.
 3. Tüm kullanıcılar, işlemleri, yeni anayasanın hash'ini/karmasını kullanarak imzalamalıdır.
-4. Blok üreticileri, anayasa değişikliğini yansıtacak şekilde kaynak kodunda değişiklikler yapıyor ve bir git komutu hash'ini/karmasını kullanarak blok zincirine önerir.
-5. Blok üreticileri, ard arda 30 gün boyunca, yapılan yenilikler için 17/21 kabul oranını sürdürmelidir.
-6. Yeni kaynak kodun onaylanmasından bir hafta sonra, değişiklikler yürürlüğe girer. Tam düğümlere/nodelara yükseltme için bir hafta verilir.
-7. Bütün düğümler/node'lar yükseltilmiş olmazsa, yeni kodlar otomatik olarak kapatılır.
+4. Blok üreticileri, anayasa değişikliğini yansıtacak şekilde kaynak kodunda değişiklikler yapar ve bir git komutu hash'ini/karmasını kullanarak blok zincirine önerir.
+5. Blok üreticileri, takip eden 30 gün boyunca, yapılan yenilikler için 17/21 kabul oranını muhafaza etmelidir.
+6. Koddaki değişiklikler 7 gün içerisinde yürürlüğe girer. Tam düğümlere, kaynak kodun onayından sonra, güncelleme için bir hafta verilir.
+7. Yeni koda yükseltilmemiş olan tüm düğümler otomatik olarak kapatılır.
 
-Varsayılan olarak EOS.IO yazılımının yapılandırması, yeni özellik eklemek için blok zinciri güncelleme işlemi 2-3 ay sürer. Anayasada değişikliği gerektirmeyen, kritik hataları düzeltmek için yapılan güncellemeler 1-2 ay sürebilir.
+Varsayılan olarak EOS.IO yazılımının yapılandırması, yeni özellikler eklemek için blok zinciri güncelleme işlemi 2 ila 3 ay sürer. Anayasada değişikliği gerektirmeyen kritik hataları düzeltmek için yapılan güncellemeler ise 1 ila 2 ay alabilir.
 
 ### Acil Durum Değişiklikleri
 
