@@ -206,7 +206,7 @@ Gerekli gecikme, işlemin ne kadar hassas olduğuna bağlıdır. Kahve ödemesi 
 
 ## Çalıntı Anahtarlardan Kurtarma
 
-EOS.IO yazılımı, kullanıcılara anahtarları çalındığında, hesaplarını kontrol etme imkanı sağlar. Bir hesap sahibi, hesabındaki owner anahtarını sıfırlamak için, belirlenen hesap kurtarma ortağının onayıyla birlikte, onun hesabında son 30 günde etkin olan herhangi bir owner anahtarını kullanabilir. Hesap kurtarma iş ortağı, hesap sahibin yardımı olmaksızın hesabın denetimini sıfırlayamaz.
+EOS.IO yazılımı, kullanıcılara anahtarları çalındığında, hesapları üzerinde yeniden kontrole kavuşma imkanı sağlar. Bir hesap sahibi, hesabındaki owner anahtarını sıfırlamak için, belirlenen hesap kurtarma ortağının onayıyla birlikte, onun hesabında son 30 günde etkin olan herhangi bir owner anahtarını kullanabilir. Hesap kurtarma iş ortağı, hesap sahibin yardımı olmaksızın hesabın denetimini sıfırlayamaz.
 
 Hacker'ın kurtarma sürecine girmeye çalışarak kazanacağı hiçbir şey yoktur çünkü zaten hesap "kontrol" edilmektedir. Dahası, süreci tamamladılarsa, kurtarma ortağı büyük olasılıkla kimlik tespiti ve çok faktörlü kimlik doğrulama (telefon ve e-posta) isteyecektir. Bu muhtemelen bilgisayar korsanına zarar verebilir ya da korsan hiçbir şey elde edemez.
 
