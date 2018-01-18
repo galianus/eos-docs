@@ -398,11 +398,11 @@ EOS.IO سافٹویئر توثیق شدہ پیغامات کو منتقل کرن�
 
 یہ EOS.IO سافٹویئر پر مبنی بلاکچین کی نیت ہے کہ کہی مجازی مشینوں اور ضرورت کے وقت جوڈی گیی مشینوں کا سپورٹ کیا جا سکتا ہے. ان وجوہات کی بنا پر، یہ کاغذ کسی خاص زبان یا مجازی مشین کی تفصیلات پر بات چیت نہیں کرے گی. جیسا پہلے ہی کہا گیا، EOS.IO سافٹویئر پر مبنی بلاکچین کے لیے موجودہ وقت میں دو دو مجازی مشینوں کی جانچ پڑتال کی جاتی ہے.
 
-### Web Assembly (WASM)
+### ویب اسمبلی WASIM))
 
-Web Assembly is an emerging web standard for building high performance web applications. With a few small modifications Web Assembly can be made deterministic and sandboxed. The benefit of Web Assembly is the widespread support from industry and that it enables contracts to be developed in familiar languages such as C or C++.
+ویب اسمبلی ایک ابھرتی ہوئی ویب ہے جو ویب اپلیکیشنز کی اعلٰی کارکردگی کے لیے ویب معیار بناتا ہے. چند چھوٹی تبدیلیوں کے ساتھ ویب اسمبلی کو واضح کرنے سندبوااد بنایا جا سکتا ہے ۔. ویب اسمبلی کا فائدہ یہ ہے کہ اس وسیع تجارتی سپورٹ حاصل ہے جو ٹھیکیداروں کو مشہور زبانوں کو بڈھاوا دینے کے قابل بناتا ہے. جیسے کہ C اور++ C.
 
-Ethereum developers have already begun modifying Web Assembly to provide suitable sandboxing and determinism in with their [Ethereum flavored Web Assembly (WASM)](https://github.com/ewasm/design). This approach can be easily adapted and integrated with EOS.IO software.
+اتریوم ڈویلپرز پہلے ہی ویب مناسب سندبواانگ اور جبریت ان [ویب اسمبلی (وعسم) اتریوم فلاووقرید](https://github.com/ewasm/design) کے ساتھ فراہم کرنے کے لئے اسمبلی ترمیم شروع کر دیا ہے ۔. This approach can be easily adapted and integrated with EOS.IO software.
 
 ### Ethereum Virtual Machine (EVM)
 
