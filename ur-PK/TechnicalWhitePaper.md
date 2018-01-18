@@ -404,9 +404,9 @@ EOS.IO سافٹویئر توثیق شدہ پیغامات کو منتقل کرن�
 
 اتریوم ڈویلپرز پہلے ہی ویب مناسب سندبواانگ اور جبریت ان [ویب اسمبلی (وعسم) اتریوم فلاووقرید](https://github.com/ewasm/design) کے ساتھ فراہم کرنے کے لئے اسمبلی ترمیم شروع کر دیا ہے ۔. یہ اندازِ فکر آسانی سے کے مطابق ڈھال لیا اور جاسکتا EOS کے ساتھ مربوط ہے ۔ IO سافٹ ویئر.
 
-### Ethereum Virtual Machine (EVM)
+### مجازی اتھیریم مشین EVM))
 
-This virtual machine has been used for most existing smart contracts and could be adapted to work within an EOS.IO blockchain. It is conceivable that EVM contracts could be run within their own sandbox inside an EOS.IO software-based blockchain and that with some adaptation EVM contracts could communicate with other EOS.IO software blockchain applications.
+یہ مجازی مشین اکثر لوگ پہلے سے چلنے والے سمارٹ معاہدوں کے لیے استعمال کیے جاتے ہیں اور انہیں EOS.IO بلاکچین میں اپنایا جا سکتا ہے. It is conceivable that EVM contracts could be run within their own sandbox inside an EOS.IO software-based blockchain and that with some adaptation EVM contracts could communicate with other EOS.IO software blockchain applications.
 
 # Inter Blockchain Communication
 
