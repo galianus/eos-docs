@@ -436,8 +436,8 @@ EOS.IO سافٹویئر کسی کے لیے بھی کم وزنی ثبوت بنا 
 
 ## اختتامی سبوت
 
-باہر کےبلاکچین مارکلی ثبوت استعمال کرنے پر، یہ جاننے میں کہ آیاں تمام لین دین صحیح ہے یا غلط ہوے ہے یا نہیں جاننے میں ایک واضح فرق ہے. اگرچہ یہ ثابت کرنا کہ آیاں تمام نو لین دین پہچان والا ہے یا نہیں، یہ ثابت کرنا ممکن ہے کہ لین دین کی تاریخ میں کوئی خلا نہ ہو. The EOS.IO software facilitates this by assigning a sequence number to every message delivered to every account. A user can use these sequence numbers to prove that all messages intended for a particular account have been processed and that they were processed in order.
+باہر کےبلاکچین مارکلی ثبوت استعمال کرنے پر، یہ جاننے میں کہ آیاں تمام لین دین صحیح ہے یا غلط ہوے ہے یا نہیں جاننے میں ایک واضح فرق ہے. اگرچہ یہ ثابت کرنا کہ آیاں تمام نو لین دین پہچان والا ہے یا نہیں، یہ ثابت کرنا ممکن ہے کہ لین دین کی تاریخ میں کوئی خلا نہ ہو. EOS.IO سافٹویئر اس سہولت کو عملانے کے لیے تمام پیغامات کو دوسرے اکاونٹس پر منتقل کرنے کے لیے ایک ترتیب فراہم کرتا ہے. کسی صارف کے لئے ایک مخصوص اکاؤنٹ کا مقصد تمام پیغامات پر عمل ہے کہ اور وہ ترتیب میں عملدرآمد کیا گیا ثابت کرنے کے لئے یہ تسلسل نمبر استعمال کرسکتے ہیں ۔.
 
-# Conclusion
+# مقصد
 
-The EOS.IO software is designed from experience with proven concepts and best practices, and represents fundamental advancements in blockchain technology. The software is part of a holistic blueprint for a globally scalable blockchain society in which decentralised applications can be easily deployed and governed.
+EOS.IO سافٹویئر کو ثابت شدہ تصورات، تجربہ اور بہترین طرز عمل پر ڈیزائن کیا گیا ہے اور یہ یہ بلاکچین ٹیکنالوجی میں بنیادی طرقی کی نمایندگی کرتا ہے. سافٹ ویئر ایک مجموعی خاکہ جس میں جالبین ایپلیکیشنز آسانی سے تعینات تابع اور ہو سکتا ہے ایک عالمی سطح پر پیمانی بلاکچاان معاشرہ کا حصہ ہے ۔.
