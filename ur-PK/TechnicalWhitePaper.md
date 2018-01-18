@@ -370,27 +370,27 @@ EOS.IO سافٹویئر کی طے شدہ ترتیب، بلاکچین کو اپڈ
 
 اگر سافٹویئر میں تبدیلی لانے کی ضرورت ہو خطرناک بگ کو سنبھالنے میں یا سلامتی کے استحصال کو ٹھیک کرنے کی صورت میں جو فعل صارفین کو نقصان پہنچاتا ہو اس صورت میں بلاک پرڈوسد اپنے عمل میں تیزی لاسکتا ہے. عمومی طور پر یہ آیین کے خلاف ہو سکتا ہے کہ کوئی اپڈیٹس میں تیزی لایے اور خطرناک بگ کو قابو کرنے کے لیے نیی خصوصیات متعارف کریں.
 
-# Scripts & Virtual Machines
+# مجازی اور نوشہ جات مشینیں
 
-The EOS.IO software will be first and foremost a platform for coordinating the delivery of authenticated messages to accounts. The details of scripting language and virtual machine are implementation specific details that are mostly independent from the design of the EOS.IO technology. Any language or virtual machine that is deterministic and properly sandboxed with sufficient performance can be integrated with the EOS.IO software API.
+EOS.IO سافٹویئر توثیق شدہ پیغامات کو منتقل کرنے کے لیے سب سے پہلا اور اہم پلیٹ فارم ہوگا. سکرپٹنگ زبان کی تفصیلات اور مجازی مشینوں کی عمل آوری اکثر EOS.IO تکنیک کے ڈیزائن سے آزاد ہوتی ہے. کوئی بھی زبان یا مجازی مشین جو ظہرانہ اور اچھی کارکردگی کے ساتھ سیندبکس ہو اسے EOS.IO سافٹویئر API کے ساتھ منسلک کیا جا سکتا ہے.
 
-## Schema Defined Messages
+## شجرہ پیغامات کی وضاحت-
 
-All messages sent between accounts are defined by a schema which is part of the blockchain consensus state. This schema allows seamless conversion between binary and JSON representation of the messages.
+اکاؤنٹس کے درمیان بجھی جانے والے تمام پیغامات کی وضاحت بہ اتفاق رائے کے ساتھ ایک ایک شجرہ کی طرف سے متعین ہوتے ہیں. یہ شجرہ ثنائی اور JSON کی نمایندگی کے پیغامات کے درمیان سیملیس تبادلوں کی اجازت فراہم کرتا ہے.
 
-## Schema Defined Database
+## وضاحتی شجرہ ڈیٹابیس
 
-Database state is also defined using a similar schema. This ensures that all data stored by all applications is in a format that can be interpreted as human readable JSON but stored and manipulated with the efficiency of binary.
+ڈیٹا بیس کی حالت بھی اسی طرح شجرہ استعمال کرتے ہوئے متعین ہوتے ہیں ۔. اس سے یہ ثابت ہوتا ہے کہ تمام زخیرہ کیا ہوا ڈاٹا تمام اپلیکیشنز کے زریعے اس صورت میں رکھا جاتا ہے جو انسان کے قابل پڈھے جانے والے جساون اختیار کر سکتے ہیں لیکن ثنائی کی کارکردگی کے ساتھ مینوپلیٹ کیے جا سکتے ہیں.
 
-## Separating Authentication from Application
+## توسیق کاری کو اپلیکیشن سے الگ کرنا
 
-To maximize parallelization opportunities and minimize the computational debt associated with regenerating application state from the transaction log, EOS.IO software separates validation logic into three sections:
+متوازی مواقع بڈھانا اور اپلیکیشنز سے جڈے شمارندگ قرض کو لین دین کے لاگ سے کم کرنا ، EOS.IO سافٹویئر جوازدہی منطق کو تین حصوں میں الگ کرتی ہے:
 
-1. Validating that a message is internally consistent;
-2. Validating that all preconditions are valid; and
-3. Modifying the application state.
+1. جواز دہی ایک پیغام داخلی طور پر ہم آہنگ ہے ۔;
+2. جواز دہی پیشگی شرائط کے تمام جائز ہیں ۔ اور
+3. ایپلی کیشن کی حالت میں تبدیلی ۔.
 
-Validating the internal consistency of a message is read-only and requires no access to blockchain state. This means that it can be performed with maximum parallelism. Validating preconditions, such as required balance, is read-only and therefore can also benefit from parallelism. Only modification of application state requires write access and must be processed sequentially for each application.
+ایک پیغام کے اندرونی تواتر کی جوازدہی صرف پڈھی جاتی ہے اور بلاکچین سٹیٹ تک پہنچنے کے لیے کسی چیز کی ضرورت نہیں. اس کا مطلب ہے اسے زیادہ سے زیادہ مساوات کے ساتھ انجام دیا جا سکتا کہ ۔. پیشگی شرائط کی جواز دہی، مطلوبہ توازن فقط مطالعہ ہے اور اس لئے بھی مساوات سے فائدہ اٹھا سکتے ہیں ۔. Only modification of application state requires write access and must be processed sequentially for each application.
 
 Authentication is the read-only process of verifying that a message can be applied. Application is actually doing the work. In real time both calculations are required to be performed, however once a transaction is included in the blockchain it is no longer necessary to perform the authentication operations.
 
