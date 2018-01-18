@@ -428,15 +428,15 @@ EOS.IO سافٹویئر کسی کے لیے بھی کم وزنی ثبوت بنا 
 
 دوسسرے چینوں پر ثبوتوں کی توثیق کاری کے وقت اس صورت میں وسیع قسم کا وقت /جگہ /بینڈوڈتھ کی توثیق کی جاتی ہے. تمام بلاک سرتحریر (420 MB/سال) کا کھوج لگانا ثبوت سائز چھوٹے رکھیں گے ۔. صرف تازہ ہیڈرس کی کھوج کرنا ثبوت کی مقدار اور کم از کم لمبی وقت والی سٹوریج کے درمیان تجارت کو بڈھاوا دے سکتی ہے. متبادل طور پر، ایک بلاکچین ایک سست تشخیص نقطہ نظر استعمال کرے گا جہاں یہ ہے کہ گزشتہ انٹرمیڈیٹ ہیش ثبوتوں کو یاد کرتا ہے. نیے ثبوتوں کو صرف منتشر درخت میں لنکس شامل کرنا ہے. استعمال شدہ اصل عمل لا ضرور اس بات پر منحصر ہے مارکلی ثبوت کےزریعے باہری بلاکس کو ریفر کیے گئے لین دین پر منحصر ہے.
 
-After a certain density of interconnectedness it becomes more efficient to simply have one chain contain the entire block history of another chain and eliminate the need for proofs all together. For performance reasons, it is ideal to minimize the frequency of inter-chain proofs.
+باہم دگر مربوط ہونے کا ایک مخصوص کثافت کے بعد یہ ہے صرف ایک زنجیر پورے بلاک کی تاریخ کا ایک اور سلسلہ کا حامل اور ثبوت اکٹھا کی حاجت کے لیے زیادہ مؤثر ہو جاتا ہے ۔. کارکردگی کے وجوہات کی بنیاد پر، یہ موزوں ہے کہ چین کے اندر ثبوتوں کے دلائل کم کرنے کے لیے بہترین ہے.
 
-## Latency of Interchain Communication
+## اندرونی چین اور ابلاغ کا چھپاو
 
-When communicating with another outside blockchain, block producers must wait until there is 100% certainty that a transaction has been irreversibly confirmed by the other blockchain before accepting it as a valid input. Using an EOS.IO software-based blockchain and DPOS with 3 second blocks and 21 producers, this takes approximately 45 seconds. If a chain's block producers do not wait for irreversibility it would be like an exchange accepting a deposit that was later reversed and could impact the validity of the blockchain's consensus.
+دوسری باہری بلاکچین سے تبادلہ کے دوران، ایک بلاک پرڈوسد کو تب تک انتظار کرنا ہوگا جب تک کہ اس بات کی 100فیصد تشخیص نہ ہو کہ لین دین کی نا قابل طلافی کنفرمیشن ہوئی ہے، اسے ایک وید ان پٹ تصور کرنے سے پہلے. EOS.IO سافٹویئر پر مبنی بلاکچین کو استعمال کرنا اور تین سیکنڈ والے DPOS اور 21 پرڈوسدز، یہ اندازے کے طور پر 45 سیکنڈ کا وقت لیتا ہے. اگر ایک بلاک پرڈوسد نا قابل طلافی کا انتظار نا کریں اس صورت میں یہ ایک ایکسچینج کی طرح ہوگا جسے بعد میں ناقابل طلافی بنایا گیا ہو اور اس کا اثر بلاکچین کی توثیق پر ہوگا.
 
-## Proof of Completeness
+## اختتامی سبوت
 
-When using merkle proofs from outside blockchains, there is a significant difference between knowing that all transactions processed are valid and knowing that no transactions have been skipped or omitted. While it is impossible to prove that all of the most recent transactions are known, it is possible to prove that there have been no gaps in the transaction history. The EOS.IO software facilitates this by assigning a sequence number to every message delivered to every account. A user can use these sequence numbers to prove that all messages intended for a particular account have been processed and that they were processed in order.
+باہر کےبلاکچین مارکلی ثبوت استعمال کرنے پر، یہ جاننے میں کہ آیاں تمام لین دین صحیح ہے یا غلط ہوے ہے یا نہیں جاننے میں ایک واضح فرق ہے. اگرچہ یہ ثابت کرنا کہ آیاں تمام نو لین دین پہچان والا ہے یا نہیں، یہ ثابت کرنا ممکن ہے کہ لین دین کی تاریخ میں کوئی خلا نہ ہو. The EOS.IO software facilitates this by assigning a sequence number to every message delivered to every account. A user can use these sequence numbers to prove that all messages intended for a particular account have been processed and that they were processed in order.
 
 # Conclusion
 
