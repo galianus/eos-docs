@@ -406,19 +406,19 @@ EOS.IO سافٹویئر توثیق شدہ پیغامات کو منتقل کرن�
 
 ### مجازی اتھیریم مشین EVM))
 
-یہ مجازی مشین اکثر لوگ پہلے سے چلنے والے سمارٹ معاہدوں کے لیے استعمال کیے جاتے ہیں اور انہیں EOS.IO بلاکچین میں اپنایا جا سکتا ہے. It is conceivable that EVM contracts could be run within their own sandbox inside an EOS.IO software-based blockchain and that with some adaptation EVM contracts could communicate with other EOS.IO software blockchain applications.
+یہ مجازی مشین اکثر لوگ پہلے سے چلنے والے سمارٹ معاہدوں کے لیے استعمال کیے جاتے ہیں اور انہیں EOS.IO بلاکچین میں اپنایا جا سکتا ہے. یہ م معاہدوں اپنا سینڈبکس ایک EOS کے اندر اندر چل سکا کہ گمان ہے ۔ IO سافٹ ویئر کی بنیاد پر بلاکچاان اور معاہدوں کہ کچھ ردوبدل کے ساتھ م دیگر EOS کے ساتھ بات چیت کر سکتے ہیں ۔ IO سافٹ ویئر بلاکچاان ایپلی کیشنز ۔.
 
-# Inter Blockchain Communication
+# بلاکچین کا اندرونی تبادلہ
 
-EOS.IO software is designed to facilitate inter-blockchain communication. This is achieved by making it easy to generate proof of message existence and proof of message sequence. These proofs combined with an application architecture designed around message passing enables the details of inter-blockchain communication and proof validation to be hidden from application developers.
+EOS.IO سافٹ ویئر انٹر بلوککچاان مواصلات کی سہولت کے لئے ڈیزائن کیا گیا ہے ۔. پیغامات کی ترتیب اور ان کی موجودگی کا ثبوت آسانی سے نکالنے کی بنا پر اسے حاصل کیا جا سکتا ہے. اپلیکیشن کی تعمیر کے ساتھ جڈے یہ ثبوت اور پیغامات سے جڈے ڈیزائن بلاکچین کو اس قابل بناتا ہے کہ وہ تبادلے کی توثیق کاری کا ثبوت اپلیکیشن ڈیولپرس سے چھپائے رکھے.
 
 <img align="right" src="http://eos.io/wpimg/Diagram1.jpg" width="362.84px" height="500px" />
 
-## Merkle Proofs for Light Client Validation (LCV)
+## لائیٹ کلائینٹ جواز کے لیے مارکلی کے سبوت LVC))
 
-Integrating with other blockchains is much easier if clients do not need to process all transactions. After all, an exchange only cares about transfers in and out of the exchange and nothing more. It would also be ideal if the exchange chain could utilize lightweight merkle proofs of deposit rather than having to trust its own block producers entirely. At the very least a chain's block producers would like to maintain the smallest possible overhead when synchronizing with another blockchain.
+کلاینٹس کے لین دین کو نا عملانے کی صورت میں دوسرے بلاکچین کے ساتھ منتقلی بہت ہی آسان ہے. آخر کار، ایک ایکسچینج صرف اندر باہر کی منتقلی کی پرواہ کے علاوہ کسی کی پرواہ نہیں کرتا. یہ بھی مثالی ہوگا اگر ایک ایکسچینج چین کم وزنی مارکلی ڈپازٹ ثبوتوں کا استعمال کریں بجائے اپنے بلاک پرڈوسدز پر مکمل اعتماد جتانے سے. کم از کم ایک چین کا بلاک پرڈوسد چھوٹے سے چھوٹا ممکنہ اورہیڈ برقرار رکھنا چاہیے گا دوسری بلاکچین سے ہم وقت سازی کے دوران.
 
-The goal of LCV is to enable the generation of relatively light-weight proof of existence that can be validated by anyone tracking a relatively light-weight data set. In this case the objective is to prove that a particular transaction was included in a particular block and that the block is included in the verified history of a particular blockchain.
+LCV کا مقصد کم وزنی ثبوت جنریشن کی موجودگی کا ثبوت اور دوسرے نسبتاً کم وزنی ڈاٹا سیٹ سے ان کی توثیق کاری. اس صورت میں مقصد یہ ہے کہ یہ سابت کرنا کہ لین دین کو کسی خاص بلاک میں شامل کیا گیا اور وہ بلاک بلاکچین کے ایک مخصوص بلاک میں تشخیص کیا جاتا ہے.
 
 Bitcoin supports validation of transactions assuming all nodes have access to the full history of block headers which amounts to 4MB of block headers per year. At 10 transactions per second, a valid proof requires about 512 bytes. This works well for a blockchain with a 10 minute block interval, but is no longer "light" for blockchains with a 3 second block interval.
 
