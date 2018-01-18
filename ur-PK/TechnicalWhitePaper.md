@@ -308,9 +308,9 @@ EOS.IO سافٹویئر بلاک پرڈوسدز کو قانوناً اس بات 
 
 کسی شروع بلاکچین پر کوئی ٹوکن ہولڈر اگر EOS.IO سافٹویئر کو اپناتا ہے اگر اس کو اپنی بینڈوڈتھ استعمال کرنے کی فوری ضرورت نہ ہو تو وہ اپنی بینڈوڈتھ کو دوسروں کو کرایہ پر دے سکتے ہیں اس صورت میں EOS.IO سافٹویئر کو چلانے والا بلاک پرڈوسد اس بینڈوتھ صلاحیت کی منتقلی کو مختص پہچان لے گا.
 
-## Separating Transaction costs from Token Value
+## لین دین کو ٹوکن کی قیمت سے الگ کرنا-
 
-One of the major benefits of the EOS.IO software is that the amount of bandwidth available to an application is entirely independent of any token price. If an application owner holds a relevant number of tokens on a blockchain adopting EOS.IO software, then the application can run indefinitely within a fixed state and bandwidth usage. In such case, developers and users are unaffected from any price volatility in the token market and therefore not reliant on a price feed. In other words, a blockchain that adopts the EOS.IO software enables block producers to naturally increase bandwidth, computation, and storage available per token independent of the token's value.
+EOS.IO سافٹویئر کا ایک اہم فائدہ یہ ہے کہ اپلیکیشن کو دستیاب بینڈوڈتھ ٹوکن کی قیمت سے بالکل آزاد ہیں. اگر بلاکچین پر ایک اپلیکیشن مالک کے پاس EOS.IO سافٹویئر اپنانے کے لیے مناسب ٹوکن دستیاب ہو تو اپلیکیشن ایک مخصوص بینڈوڈتھ استعمال کے لیے چل سکتی ہے. In such case, developers and users are unaffected from any price volatility in the token market and therefore not reliant on a price feed. In other words, a blockchain that adopts the EOS.IO software enables block producers to naturally increase bandwidth, computation, and storage available per token independent of the token's value.
 
 A blockchain using EOS.IO software also awards block producers tokens every time they produce a block. The value of the tokens will impact the amount of bandwidth, storage, and computation a producer can afford to purchase; this model naturally leverages rising token values to increase network performance.
 
