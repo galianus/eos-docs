@@ -336,11 +336,11 @@ EOS.IO سافٹویئر پر مبنی بلاکچین یہ پہچان لیتی ہ
 
 EOS.IO سافٹویئر میں شامل بلاک پرڈوسدز کا انتخاب. بلاکچین میں کوئی تبدیلی کرنے سے پہلے ان بلاک پرڈوسدز کی منظوری ضروری ہے. اگر بلاک پرڈوسد ٹوکن ہولڈرو کی چاہت کے مطابق تبدیلی کرنا مسترد کرتا ہے اس صورت میں انہیں باہر کیا جا سکتا ہے. اگر ایک بلاک پرڈوسد ٹوکن ہولڈرو کی اجازت کے بغیر کوئی تبدیلی کرتا ہے اس صورت میں ایک باقی تمام گروہ اس تبدیلی کو مسترد کریں گے.
 
-## Freezing Accounts
+## اکاؤنٹ منجمد کرنا
 
-Sometimes a smart contact behaves in an aberrant or unpredictable manner and fails to perform as intended; other times an application or account may discover an exploit that enables it to consume an unreasonable amount of resources. When such issues inevitably occur, the block producers have the power to rectify such situations.
+کبھی ایک سمارٹ کنٹیکٹ غیر تسلیم شدہ یا ناموزوں طریقے کا برتاؤ کرتا ہے اور متوقع کارکردگی نہیں دکھاتا؛ بعض اوقات ایک اپلیکیشن یا اکاونٹ ایک ایسی چیز دریافت کر سکتی ہے جو اسے بہت زیادہ وسائل استعمال کرنے کا اہل بناتا ہے. جب ایسے ناگزیر مثایل ابھرتے ہیں، بلاک پرڈوسدز کو ان میں سدھار لانے کی طاقت ہے.
 
-The block producers on all blockchains have the power to select which transactions are included in blocks which gives them the ability to freeze accounts. A blockchain using EOS.IO software formalizes this authority by subjecting the process of freezing an account to a 17/21 vote of active producers. If the producers abuse the power they can be voted out and an account will be unfrozen.
+بلاک پرڈوسدز کو تمام بلاکچین پر یہ طاقت ہے کہ بلاکس میں کیا کیا لین دین ہوا ہے جو انہی اکاونٹ منجمد کرنے کی طاقت دیتا ہے. EOS.IO سافٹویئر استعمال کرنے والی بلاکچین فعل پرڈوسدز کے ووٹوں کی تعداد کے بنا پر 17/21 ووٹ ملنے پر اکاونٹس کو منجمد کرتا ہے. If the producers abuse the power they can be voted out and an account will be unfrozen.
 
 ## Changing Account Code
 
