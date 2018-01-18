@@ -354,21 +354,21 @@ EOS.IO سافٹویئر بلاکچین کو ہمتا بہ ہمتا خدمات ا
 
 ## آیین اور دستور کو بڈھاوا دینا-
 
-The EOS.IO software defines a process by which the protocol as defined by the canonical source code and its constitution, can be updated using the following process:
+EOS.IO سافٹویئر اس عمل کی وضاحت کرتا ہے جو پروٹوکول کے مستند ماخز کوڈ اور اس کے آیین کی طرف سے واضع طور پر درج ذیل عمل استعمال کرتے ہوئے تازہ کاری کے عمل کی وضاحت کرتا ہے:
 
-1. Block producers propose a change to the constitution and obtains 17/21 approval.
-2. Block producers maintain 17/21 approval for 30 consecutive days.
-3. All users are required to sign transactions using the hash of the new constitution.
-4. Block producers adopt changes to the source code to reflect the change in the constitution and propose it to the blockchain using the hash of a git commit.
-5. Block producers maintain 17/21 approval for 30 consecutive days.
-6. Changes to the code take effect 7 days later, giving all full nodes 1 week to upgrade after ratification of the source code.
-7. All nodes that do not upgrade to the new code shut down automatically.
+1. بلاک پروڈیوسرز آئین تبدیلی کی تجویز اور 17/21 منظوری کا تعین کرے گی ۔.
+2. بلاک پرڈوسدز مسلسل 30 دن کے لیے 17/21 کی منظوری کو قایم رکھتے ہیں.
+3. تمام صارفین کو لین دین کے لیے نیے آیین کا ہیش استعمال کرنا ہو گا.
+4. بلاک پرڈوسد ان تبدیلیوں کو اپناتا ہے جو آیین میں کوڈ کی تبدیلیاں اور اسے گٹ ارتکاب استعمال کرنے کی تجویز دیتا ہے.
+5. بلاک پرڈوسدز مسلسل 30 دن کے لیے 17/21 کی منظوری کو قایم رکھتے ہیں.
+6. کوڈ میں تبدیلیوں کا اثر سات دن کے بعد ہوتا ہے، تمام مکمل گرہ ایک ہفتے کے بعد پوری طرح سورس کوڈ کی منظوری کے بعد اپگریڈ ہوتا ہے.
+7. وہ سب گرہ جو نیے کوڈ سے اپگریڈ نہیں ہوتے خودبخود بند ہونگے.
 
-By default configuration of the EOS.IO software, the process of updating the blockchain to add new features takes 2 to 3 months, while updates to fix non-critical bugs that do not require changes to the constitution can take 1 to 2 months.
+EOS.IO سافٹویئر کی طے شدہ ترتیب، بلاکچین کو اپڈیٹ کرنے کے عمل میں نیی خصوصیات شامل کرنے میں دو سے تین ماہ لگ سکتے ہیں، اپڈیٹس کو غیر اہم بگ جو آیین کی تبدیلی کے لئے ضروری نہیں اس میں ایک یا دو ماہ لگتے ہیں.
 
-### Emergency Changes
+### ھنگامی تبدیلیاں-
 
-The block producers may accelerate the process if a software change is required to fix a harmful bug or security exploit that is actively harming users. Generally speaking it could be against the constitution for accelerated updates to introduce new features or fix harmless bugs.
+اگر سافٹویئر میں تبدیلی لانے کی ضرورت ہو خطرناک بگ کو سنبھالنے میں یا سلامتی کے استحصال کو ٹھیک کرنے کی صورت میں جو فعل صارفین کو نقصان پہنچاتا ہو اس صورت میں بلاک پرڈوسد اپنے عمل میں تیزی لاسکتا ہے. عمومی طور پر یہ آیین کے خلاف ہو سکتا ہے کہ کوئی اپڈیٹس میں تیزی لایے اور خطرناک بگ کو قابو کرنے کے لیے نیی خصوصیات متعارف کریں.
 
 # Scripts & Virtual Machines
 
