@@ -316,13 +316,13 @@ EOS.IO سافٹویئر استعمال کرنے والی بلاکچین بلاک
 
 ## State Storage Costs
 
-While bandwidth and computation can be delegated, storage of application state will require an application developer to hold tokens until that state is deleted. If state is never deleted then the tokens are effectively removed from circulation.
+بینڈوڈتھ اور شمارندگ کی منتقلی کے دوران، سٹوریج اپلیکیشن سٹیٹ کو ٹوکن رکھنے کے لیے ایک اپلیکیشن بنانے والے کی ضرورت ہوگی جب تک کہ وہ سٹیٹ ڈلیٹ نہ ہو. صورت کےکبھی حدف نہ ہونے کی پاداش میں ٹوکن کو موثر طور پر گردش سے نکالا جاتا ہے.
 
-Every user account requires a certain amount of storage; therefore, every account must maintain a minimum balance. As storage capacity of the network increases this minimum required balance will fall.
+ہر صارف کے اکاونٹ کے لیے ایک مخصوص سٹوریج کی ضرورت پڈتی ہیں، لہٰذا، ہر اکاونٹ کو کم از کم توازن برقرار رکھنا ضروری ہے. جوں ہی نیٹورک کی سٹوریج صلاحیت بڈھ جائے گی ضرورت شدہ کم از کم توازن گر جائے گا.
 
-## Block Rewards
+## بلاک کے انعامات-
 
-A blockchain that adopts the EOS.IO software will award new tokens to a block producer every time a block is produced. In these circumstances, the number of tokens created is determined by the median of the desired pay published by all block producers. The EOS.IO software may be configured to enforce a cap on producer awards such that the total annual increase in token supply does not exceed 5%.
+ای بلاکچین جو EOS.IO سافٹویئر کو اپناتا ہے بلاک پرڈوسد نیے ٹوکن کو ہر بلاک بنانے کے لیے انعام دے گا. ان حالات میں، ٹوکن بنانے کی تعداد کو بلاک پرڈوسدز کے زریعے مطلوبہ تنخواہ میں متعین کیا جاتا ہے. EOS ۔ IO سافٹ ویئر کی کل سالانہ اضافہ ٹوکن کی فراہمی میں 5 فی صد سے تجاوز نہیں کہ ایک ٹوپی پروڈیوسر ایوارڈ پر نافذ کرنے کے لئے تشکیل ہو سکتا ہے ۔.
 
 ## Community Benefit Applications
 
