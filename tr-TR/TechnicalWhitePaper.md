@@ -373,7 +373,7 @@ Blok üreticileri, kullanıcılara fiilen zarar veren bir hata veya güvenlik a�
 
 # Kodlar ve Sanal Makinalar
 
-EOS.IO yazılımı hesaplara teslim edilmesini koordine etmek için ilk ve önde gelen bir platform olacak. Komut dili ve sanal makine uygulamaları, çoğunlukla EOS.IO teknolojisinin tasarımından bağımsızdır. Belirli keslinkte olan ve yeterli performansla, düzgün bir şekilde sandbox haline getirilmiş herhangi bir dil veya sanal makine, EOS.IO yazılım API'si ile bütünleştirilebilir.
+EOS.IO yazılımı, onaylanmış mesajların hesaplara teslim edilmesini koordine etmek hususunda ilk ve başat platform olacaktır. Komut dili ve sanal makine uygulamaları, çoğunlukla EOS.IO teknolojisinin tasarımından bağımsızdır. Belirli keslinkte olan ve yeterli performansla, düzgün bir şekilde sandbox haline getirilmiş herhangi bir dil veya sanal makine, EOS.IO yazılım API'si ile bütünleştirilebilir.
 
 ## Tanımlı Mesajlar Şeması
 
