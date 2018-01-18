@@ -270,15 +270,15 @@ EOS.IO سافٹویئر بلاک پرڈوسدز کو قانوناً اس بات 
 
 بعض صورتوں میں ایک پرڈوسد ایک بلاک بنا سکتا ہے جس میں ایسا لین دین موجود ہو جو قبول حد اطلاق سے باہر ہو. اس صورت میں دوسرا بلاک پرڈوسد بلاک کو مسترد کرنا چاہے گا اور اس صورت کو توڈنے میں تیسرے بلاک پرڈوسد کا عمل رہے گا. یہ اس سے مختلف نہیں کہ اس وقت کیا ہوگا جب ایک بڈے بلاک نیٹورک کی جالیات میں تاخیر ہوگی. کمیونیٹی زیادتیوں کا جائزہ لے گی اور بالآخر بدمعاش پرڈوسدز کے ووٹوں کو نکال دے گے.
 
-یہ کتابی شمارندگ جانچ پڑتال بلاکچین کو اس لاگت سے مفت کرتی ہے کہ کون سی چیز کو چلانے اور اس کی پیمائش کرنے میں کتنا وقت لگتا ہے. With this design there is no need to precisely count instructions which dramatically increases opportunities for optimization without breaking consensus.
+یہ کتابی شمارندگ جانچ پڑتال بلاکچین کو اس لاگت سے مفت کرتی ہے کہ کون سی چیز کو چلانے اور اس کی پیمائش کرنے میں کتنا وقت لگتا ہے. اس ڈیزائن سے ان ہدایات ت کو جمع کرنے کی کوئی ضرورت نہیں ہے جو ڈرامائی طور پر بہ اتفاق رائے ریاضیات کو بڈھاوا دینے کے مواقع فراہم کرتا ہے.
 
-# Token Model and Resource Usage
+# وسائل کا استعمال اور ٹوکن کا ماڈل-
 
-**PLEASE NOTE: CRYPTOGRAPHIC TOKENS REFERRED TO IN THIS WHITE PAPER REFER TO CRYPTOGRAPHIC TOKENS ON A LAUNCHED BLOCKCHAIN THAT ADOPTS THE EOS.IO SOFTWARE. THEY DO NOT REFER TO THE ERC-20 COMPATIBLE TOKENS BEING DISTRIBUTED ON THE ETHEREUM BLOCKCHAIN IN CONNECTION WITH THE EOS TOKEN DISTRIBUTION.**
+**مہربانی کر کے یاد رہے:اس سفید کاغذ میں جو کرپٹوگرافک ٹوکن ھے وہ کرپٹوگرافک ٹوکنز دراصل EOS. IO سوفٹویر سے منسلک ہے -. ان کا تعلق ERC-20 ٹوکنز کے ساتھ نہیں ھے اتھیریم بلاکچین EOS ٹوکن تقسیم کے حوالے تقسیم ھو نے کی وجہ سے ھوتا ھے.**
 
-All blockchains are resource constrained and require a system to prevent abuse. With a blockchain that uses EOS.IO software, there are three broad classes of resources that are consumed by applications:
+تمام بلاکچین وسائل کے ساتھ محدود ہے اور زیادتی سے بچنے کے لیے ایک نظام درکار ہے. اس بلاکچین کے ساتھ جو EOS.IO سافٹویئر استعمال کرتا ہے، یہاں وسائل کے تین بڑے اقسام ہیں جو اپلیکیشنز کی طرف سے بہسم ہوتے ہیں:
 
-1. Bandwidth and Log Storage (Disk);
+1. بینڈوڈتھ اور لاگ اسٹوریج (ڈسک) ۔;
 2. Computation and Computational Backlog (CPU); and
 3. State Storage (RAM).
 
