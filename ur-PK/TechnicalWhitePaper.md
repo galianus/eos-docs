@@ -224,24 +224,23 @@ EOS.IO سافٹویئر پر مبنی ایک بلاکچین میں، انتخا�
 
 مواصلاتی وقت وہ وقت ہے جو ایک اکاؤنٹ کو دوسرے اکاونٹ تک پیغام پہنچانے میں اور اس کا جواب ملنے میں درکار رہتا ہے. اس کا مقصد ہر پیغام کے درمیان 3 سیکنڈ انتظار کئے بغیر آگے پیچھے ایک اکیلا بلاک کے اندر اندر پیغامات کا تبادلہ کرنے دو اکاؤنٹ اہل بنانے کے لیے ہے ۔. اس مقصد کے لیے EOS.IO سافٹویئر ہر ایک بلاک کو مختلف مرحلوں میں تقسیم کرتا ہے. ہر ایک سائیکل کو دھاگوں میں تقسیم کیا جاتا ہے اور ہر ایک دھاگے کے ساتھ لین دین کی ایک ترتیب ہوتی ہے. ہر ایک ٹرانزکش کے ساتھ پیغامات بجھنے کا ایک لسٹ ساتھ میں رہتا ہے. یہ ڈھانچہ ایک درخت کی صورت میں دیکھا جا سکتا ہے جہاں متبادل تہیں ایک مخصوص متوازی عمل میں.
 
-        Block
+        بلاک
+    سائیکل (تسلسلی)
     
-          Cycles (sequential)
+    دھاگے (متوازی)
     
-            Threads (parallel)
+    لین دین (تسلسلی)
     
-              Transactions (sequential)
+    پیغامات (تسلسلی)
     
-                Messages (sequential)
-    
-                  Receiver and Notified Accounts (parallel)
+    وصول کنندہ اور اطلاعی اکاونٹس (متوازی)
     
 
-Transactions generated in one cycle can be delivered in any subsequent cycle or block. Block producers will keep adding cycles to a block until the maximum wall clock time has passed or there are no new generated transactions to deliver.
+ایک چکر کے دوران تیار ہوچکے لین دین کو اس کے اگلے کسی بھی چکر یا بلاک میں منتقل کیا جا سکتا ہے. ایک بلاک پرڈوسد تب تک بلاک میں سائیکل جھوڈتا رہے گا جب تک نہ بلاک کی آخری حد پہنچ جائیں یا وہاں منتقلی کے لئے کوئی بھی لین دین باقی نہ ہو.
 
-It is possible to use static analysis of a block to verify that within a given cycle no two threads contain transactions that modify the same account. So long as that invariant is maintained a block can be processed by running all threads in parallel.
+ایک بلاک کی جامد جانچ کے لیے یہ ممکن ہے کہ کوئی بھی دو دھاگے ایک ہی اکاونٹ کے لین دین کو ترمیم کر سکے. جب تک کہ وہ ناقابل تغیر بلاک قائم کیا جائے ایک بلاک کے تمام دھاگوں کو متوازی عمل کے زریعے چلایا جا سکتا ہے.
 
-## Read-Only Message Handlers
+## صرف ھینڈلرس کے انتخابات پڈھنا-
 
 Some accounts may be able to process a message on a pass/fail basis without modifying their internal state. If this is the case then these handlers can be executed in parallel so long as only read-only message handlers for a particular account are included in one or more threads within a particular cycle.
 
