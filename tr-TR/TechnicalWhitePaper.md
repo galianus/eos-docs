@@ -429,11 +429,11 @@ Bu kanıtları etkinleştirmek için uygun hash/karma bağlantısıyla blok üre
 
 Diğer zincirlerde kanıtları doğrulama zamanı geldiğinde, yapılabilecek çok geniş bir zaman/alan/bant genişliği optimizasyonu vardır. Tüm blok başlıklarının izlenmesi (420 MB/yıl) kanıt boyutlarını küçük tutacaktır. Yalnızca yeni başlıkları izlemek, minimum uzun vade depolama ve kanıt boyutu arasında takas sağlayabilir. Alternatif olarak, bir blok zinciri, geçmiş kanıtların orta hashlerini/karmalarını hatırladığı yerlerde, yavaş bir değerlendirme yaklaşımını kullanabilir. Yeni kanıtlar, sadece bilinen seyrek ağaca bağlantılar içermelidir. Kullanılan kesin yaklaşım, zorunlu olarak merkle kanıtıyla refere edilen işlemleri içeren yabancı blokların yüzdesine bağlı olacaktır.
 
-Belli bir yoğunluğun ardından, bir zincirin başka bir zincirin tüm blok geçmişini içermesi ve birlikte kanıtlara ihtiyaç duyulmaması daha etkin hale gelir. Performans için, zincir arası kanıtların sıklığını en aza indirgemek idealdir.
+Belli oranda bir iç içe geçişin ardından, bir zincirin başka bir zincire ait tüm blok geçmişini içermesi ve zincirler arası kanıtlara ihtiyacın tümden ortadan kaldırılması daha verimli hale gelir. Performans için, zincirler arası kanıtların sıklığını en aza indirgemek idealdir.
 
 ## Zincirler Arası İletişimde Gecikme
 
-Blok üreticileri, başka bir blok zinciriyle iletişim kurarken; bir işlemi, geçerli bir girdi olarak kabul etmeden önce diğer blok zincir tarafından geri döndürülemez olarak onaylandığına % 100 emin oluncaya kadar beklemeliler. EOS.IO yazılımı tabanlı blok zinciri ve DPOS kullanıldığında, 3 saniyelik bloklar ve 21 üreticiyle, bu yaklaşık 45 saniye sürer. Bir zincirin blok üreticileri geri dönüşsüzlüğü beklemezse, daha sonra tersine çevrilen ve blok zincirinin uzlaşmasının geçerliliğini etkileyebilecek bir yatırmayı kabul eden bir takas olurdu.
+Blok üreticileri, başka bir blok zinciriyle iletişim kurarken; bir işlemi geçerli bir girdi olarak kabul etmeden önce, mevzubahis işlemin diğer blok zinciri tarafından tersinemez şekilde onaylandığından % 100 emin oluncaya kadar beklemelidirler. EOS.IO yazılımı tabanlı blok zinciri ve DPOS kullanıldığında, 3 saniyelik bloklar ve 21 üreticiyle, bu yaklaşık 45 saniye sürer. Bir zincirin blok üreticileri geri dönüşsüzlüğü beklemezse, daha sonra tersine çevrilen ve blok zincirinin uzlaşmasının geçerliliğini etkileyebilecek bir yatırmayı kabul eden bir takas olurdu.
 
 ## Tamamlama Kanıtı
 
