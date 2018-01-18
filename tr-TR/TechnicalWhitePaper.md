@@ -421,9 +421,9 @@ EOS.IO yazılımı, bloklar arası iletişimi kolaylaştıracak şekilde tasarla
 
 LCV'nin amacı; nispeten hafif olan bir veri setini izleyen herkes tarafından onaylanabilen, nispeten hafif ağırlıklı bir varlığın üretilmesini sağlamaktır. Bu durumda amaç, belirli bir işlemin belirli bir bloğa dahil edildiğini ve o bloğun da belirli bir blok zincirinin doğrulanmış geçmişine dahil olduğunu kanıtlamaktır.
 
-Bitcoin, tüm düğümlerin blok başlıklarının tam geçmişine erişebileceğini varsayarak işlemlerin doğrulamasını destekler ve bu da 4MB'lık blok başlıklarına karşılık gelir. Saniyede 10 işlemle, geçerli bir kanıt için yaklaşık 512 bayt gerekir. Bu, 10 dakikalık bir blok aralığı bulunan bir blok zinciri için iyi bir sonuçtur, ancak 3 saniyelik blok aralığı bulunan blok zincirleri için "hafif" değildir.
+Bitcoin, tüm düğümlerin blok başlıklarının tam geçmişine erişebileceği varsayamına dayanarak, işlemlerin doğrulamasını destekler. Bu da 4MB'lık blok başlıklarına karşılık gelir. Saniyede 10 işlemle, geçerli bir kanıt için yaklaşık 512 bayt gerekir. Bu, 10 dakikalık bir blok aralığı bulunan bir blok zinciri için iyi bir sonuçtur, ancak 3 saniyelik blok aralığı bulunan blok zincirleri için "hafif" değildir.
 
-EOS.IO yazılımı, işlemin dahil edildiği noktadan sonra, geri döndürülemez bir blok başlığına sahip olan herkes için, hafif kanıtlar sağlar. Aşağıda gösterilen hash/karma-bağlantılı yapıyı kullanarak, 1024 bayttan küçük bir kanıt ile herhangi bir işlemin varlığını kanıtlamak mümkündür. Son bir günde, doğrulanan düğümlerin tüm blok ile uyumlu olduğunu varsayılırsa (2MB ver), bu işlemlerin kanıtlanması yalnızca 200 bayt uzunluğunda ispatları gerektirir.
+EOS.IO yazılımı, işlemin dahil edildiği noktadan sonra, tersinemez yapıda bir blok başlığına sahip olan herkes için, hafif kanıtlar sağlar. Aşağıda gösterilen hash/karma-bağlantılı yapıyı kullanarak, 1024 bayttan küçük bir kanıt ile herhangi bir işlemin varlığını kanıtlamak mümkündür. Son bir günde, doğrulanan düğümlerin tüm blok ile uyumlu olduğunu varsayılırsa (2MB'lik veri), bu işlemlerin kanıtlanması yalnızca 200 bayt uzunluğunda ispatları gerektirir.
 
 Bu kanıtları etkinleştirmek için uygun hash/karma bağlantısıyla blok üretmek, çok az miktarda yük artışına sebep olur. Bu, blokları bu şekilde üretmemek için bir sebep yok demektir.
 
