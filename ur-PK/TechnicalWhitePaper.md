@@ -290,17 +290,17 @@ EOS.IO سافٹویئر بلاک پرڈوسدز کو قانوناً اس بات 
 
 بلاک پرڈوسد بینڈوڈتھ ،شمارندگ اور سٹیٹ کی دستیاب صلاحیت کو شایع کرتے ہیں. EOS.IO سافٹویئر دستیاب صلاحیت کی ایک فیصد کو استعمال کرنے کے لیے ہر اکاونٹ کو سٹاکنگ ٹوکن کی مقدار تین روزہ معاہدے میں استعمال کرنے کی اجازت دیتا ہے. مثال کے طور پر، EOS.IO سافٹویئر پر مبنی ایک بلاکچین کا اگر آغاز کیا جائے اور اگر اس میں ایک فیصدی ٹوکن تقسیم کرنے کی صلاحیت ہو، اس صورت میں اکاونٹ کو اتنی طاقت ہے کہ وہ اپنی زخیرہ صورتی صلاحیت کا ایک فیصد استعمال کر سکتا ہے.
 
-Adopting the EOS.IO software on a launched blockchain means bandwidth and computational capacity are allocated on a fractional reserve basis because they are transient (unused capacity cannot be saved for future use). The algorithm used by EOS.IO software is similar to the algorithm used by Steem to rate-limit bandwidth usage.
+ایک پہلے سے چلنے والی بلاکچین پر EOS.IO سافٹویئر کو اپنانے کا مطلب بینڈوڈتھ اور شما رندگ صلاحیت کو ایک کسری زخییراتی بنیاد پرمختص کی جاتی ہے کیونکہ وہ عارضی ہے (غیر استعمال شدہ صلاحیت مستقبل میں استعمال کے لیے محفوظ نہیں رکھ سکتے ہیں). سٹیم کی شرحِ حد اور بینڈوڈتھ کے لیے سٹیم کی طرف سے استعمال ہونے والا الگورزم EOS.IO سافٹویئر سے مشابہت رکھتا ہے.
 
-## Objective and Subjective Measurements
+## معروضی اور کتابی پیمائش-
 
-As discussed earlier, instrumenting computational usage has a significant impact on performance and optimization; therefore, all resource usage constraints are ultimately subjective and enforcement is done by block producers according to their individual algorithms and estimates.
+جیسے کہ پہلے تبادلہ کیا گیا ہے، انسٹرومنٹنگ شمارندگ کا ایک واضح اثر ریاضیات کی کارکردگی پر ہے؛ لہذا، تمام وصالِ انتظام رکاوٹیں بالآخر بلاک پرڈوسدز انفرادی الگورزم اور اندازے کے مطابق کیا جاتا ہے.
 
-That said, there are certain things that are trivial to measure objectively. The number of messages delivered and the size of the data stored in the internal database are cheap to measure objectively. The EOS.IO software enables block producers to apply the same algorithm over these objective measures but may choose to apply stricter subjective algorithms over subjective measurements.
+جیسا کہا گیا ہے کہ، یہاں کچھ ایسی چیزیں ہیں جن کو معروضی طور پر ناپنا معمولی ہے. پیغامات کی منتقلی کی تعداد اور اندرونی ڈیٹا بیس میں محفوظ کوائف معروضی طور پر جائزہ کو ناپنے کے لئے سستے ہیں ۔. EOS.IO سافٹویئر دوسرے بلاک پرڈوسدز کو اس قابل بناتا ہے کہ وہ یہی الگورزم ان با مقصد اقدامات پر لگائے.مگر سبجکٹیو پیمائش پر سخت الگورزم بھی نافز عمل لا سکتا ہے.
 
-## Receiver Pays
+## صارف کا ادا کرنا-
 
-Traditionally, it is the business that pays for office space, computational power, and other costs required to run the business. The customer buys specific products from the business and the revenue from those product sales is used to cover the business costs of operation. Similarly, no website obligates its visitors to make micropayments for visiting its website to cover hosting costs. Therefore, decentralized applications should not force its customers to pay the blockchain directly for the use of the blockchain.
+تجارتی طور پر، دفتری جگہ کے لیے، شمارندگ طاقت، اور کاروبار کو چلانے کے لیے دوسرے اخراجات کاروبار سے ہی ادا کیے جاتے ہیں. The customer buys specific products from the business and the revenue from those product sales is used to cover the business costs of operation. Similarly, no website obligates its visitors to make micropayments for visiting its website to cover hosting costs. Therefore, decentralized applications should not force its customers to pay the blockchain directly for the use of the blockchain.
 
 A launched blockchain that uses the EOS.IO software does not require its users to pay the blockchain directly for its use and therefore does not constrain or prevent a business from determining its own monetization strategy for its products.
 
