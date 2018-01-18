@@ -280,13 +280,13 @@ EOS.IO سافٹویئر بلاک پرڈوسدز کو قانوناً اس بات 
 
 1. بینڈوڈتھ اور لاگ اسٹوریج (ڈسک) ۔;
 2. کمپیوٹیش اور کمپیوٹیشنل بیک لاگ CPU))
-3. State Storage (RAM).
+3. اصل صورت میں رکھنے کی لاگت-.
 
-Bandwidth and computation have two components, instantaneous usage and long-term usage. A blockchain maintains a log of all messages and this log is ultimately stored and downloaded by all full nodes. With the log of messages it is possible to reconstruct the state of all applications.
+بینڈوڈتھ اور محاسبہ کے تین جز ہے، فی الفور استعمال اور طویل المیعاد استعمال ہے. ایک بلاکچین انتخابات کے تمام لاگ کو منظم رکھتا ہے اور بالآخر تمام گروہ سے ڈاؤن لوڈ کر کے زخیرہ کیا جاتا ہے. اپلیکیشن کے لاگ کے ساتھ یہ اپلیکیشن کی تعمیر نو ممکن ہے.
 
-The computational debt is calculations that must be performed to regenerate state from the message log. If the computational debt grows too large then it becomes necessary to take snapshots of the blockchain's state and discard the blockchain's history. If computational debt grows too quickly then it may take 6 months to replay 1 year worth of transactions. It is critical, therefore, that the computational debt be carefully managed.
+شمارندگ قرض کا حساب انتخابات کے لاگ کو باز تخلیق صورت کو عملانے کے لیے ضروری ہیں. اگر شمارندگ قرض میں کافی بڈھاوا ہو تو اس صورت میں یہ ضروری بن جاتا ہے کہ بلاکچین کے ماضی کو مسترد کرنے کے لیے بلاکچین کے سنیپ شاٹ لیے جائیں. اگر شمارندگ قرض میں کافی تیز بڈھاوا ہو اس صورت میں ایک سال پرانی ٹرانزکشن کا جواب طلب کرنے میں چھے ماہ کا وقت لگ سکتا ہے. شمارندگ قرض کا انتظام کرنے کے لیے لھزا یہ کافی نازک ہے.
 
-Blockchain state storage is information that is accessible from application logic. It includes information such as order books and account balances. If the state is never read by the application then it should not be stored. For example, blog post content and comments are not read by application logic so they should not be stored in the blockchain's state. Meanwhile the existence of a post/comment, the number of votes, and other properties do get stored as part of the blockchain's state.
+بلاکچاان میں ذخیرہ کی گیی معلومات درخواست کی منطق سے قابل رسائی ہے. اس میں کتابی ترتیب اور اکاونٹ بیلنس کی معلومات موجود ہے. اگر صورتحال اپلیکیشن سے نا پڈھی جائے تو ایسی معلومات کو زخیرہ نہیں کرنا چاہیے. مثال کے طور پر، بلاکچین میں بلاگ پوسٹ مواد اور تبصرے اپلیکیشن سے نہیں پڈھے جاتے اس لئے انہیں زخیرہ نہیں کرنا چاہیے. دریں اثناء ووٹوں کی تعداد، تبصرے اور دیگر خصوصیات بلاکچین کے ایک حصہ کے طور پر بلاکچین کی صورت میں زخیرہ رہتے ہیں.
 
 Block producers publish their available capacity for bandwidth, computation, and state. The EOS.IO software allows each account to consume a percentage of the available capacity proportional to the amount of tokens held in a 3-day staking contract. For example, if a blockchain based on the EOS.IO software is launched and if an account holds 1% of the total tokens distributable pursuant to that blockchain, then that account has the potential to utilize 1% of the state storage capacity.
 
