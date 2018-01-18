@@ -326,13 +326,13 @@ EOS.IO سافٹویئر استعمال کرنے والی بلاکچین بلاک
 
 ## لوگوں کے لیے اپلکیش کے فوائد-
 
-بلاک پرڈوسدز منتخب کرنے کے علاوہ، EOS.IO سافٹویئر پر مبنی بلاکچین صارفین تین کمیونٹی فائدہ اپلیکیشنز جنھیں سمارٹ کنٹریکٹ سے بھی جانا جاتا ہے منتخب کر سکتے ہیں. These 3 applications will receive tokens of up to a configured percent of the token supply per annum minus the tokens that have been paid to block producers. These smart contracts will receive tokens proportional to the votes each application has received from token holders. The elected applications or smart contracts can be replaced by newly elected applications or smart contracts by token holders.
+بلاک پرڈوسدز منتخب کرنے کے علاوہ، EOS.IO سافٹویئر پر مبنی بلاکچین صارفین تین کمیونٹی فائدہ اپلیکیشنز جنھیں سمارٹ کنٹریکٹ سے بھی جانا جاتا ہے منتخب کر سکتے ہیں. یہ تین اپلیکیشنز ان ٹوکنوں کی وصولی کریں گے جن کی ایک تشکیل شدہ فیصد سال میں فراہم کی جاتی ہے منفی وہ ٹوکن جو بلاک پرڈوسدز کو ادا کیے گئے ہوں. یہ سمارٹ معاہدے اتنے ووٹوں کے برابر ٹوکنوں کی وصولی کریں گے جتنے ہر اپلیکیشن اپنے ٹوکن ہولڈرو سے وصول کرتی ہے. منتخبہ اپلیکیشنز یا سمارٹ معاہدے نیے منتخبہ اپلیکیشنز یا ٹوکن حاملین کے سمارٹ معاہدوں سے بدلے جا سکتے ہیں.
 
-# Governance
+# حکمرانی
 
-Governance is the process by which people reach consensus on subjective matters that cannot be captured entirely by software algorithms. An EOS.IO software-based blockchain implements a governance process that efficiently directs the existing influence of block producers. Absent a defined governance process, prior blockchains relied ad hoc, informal, and often controversial governance processes that result in unpredictable outcomes.
+حکمرانی وہ عمل ہے جس کے زریعے لوگ ان معاملات کے نتائج تک پہنچ جاتے ہیں جو پوری طرح سے سافٹویئر الگورزم کی گرفت میں نہیں آ سکتے. EOS.IO سافٹویئر پر مبنی بلاکچین حکمرانی کا ایک ایسا لاہ عمل اپناتا ہے جو موجودہ بلاک پرڈوسد کے اثر کو بہتر طریقے سے چلاتا ہے. ایک وضاحتی حکمرانی عمل کی غیر موجودگی میں، بلاکچین کا انحصار ad hoc،غیر رسمی ،اور اکثر متنازعہ اسلوب حکمرانی عمل کے نتیجے میں غیر متوقع نتائج نکلتے ہیں.
 
-A blockchain based on the EOS.IO software recognizes that power originates with the token holders who delegate that power to the block producers. The block producers are given limited and checked authority to freeze accounts, update defective applications, and propose hard forking changes to the underlying protocol.
+EOS.IO سافٹویئر پر مبنی بلاکچین یہ پہچان لیتی ہے کہ طاقت ٹوکن مالکان کے پاس ہوتی ہے جو وہ بلاک پرڈوسدز کو منتقل کرتے ہیں. بلاک پرڈوسدز کو اکاؤنٹ منجمد کرنے کے لیے، ناقص اپلیکیشنز کی تازہ کاری اور موجودہ اساسوں میں مشکل فورکنگ کی تبدیلیاں کرنے کی محدود اجازت دی جاتی ہے.
 
 Embedded into the EOS.IO software is the election of block producers. Before any change can be made to the blockchain these block producers must approve it. If the block producers refuse to make changes desired by the token holders then they can be voted out. If the block producers make changes without permission of the token holders then all other non-producing full-node validators (exchanges, etc) will reject the change.
 
