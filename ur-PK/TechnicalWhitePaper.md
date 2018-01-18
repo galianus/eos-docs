@@ -279,7 +279,7 @@ EOS.IO سافٹویئر بلاک پرڈوسدز کو قانوناً اس بات 
 تمام بلاکچین وسائل کے ساتھ محدود ہے اور زیادتی سے بچنے کے لیے ایک نظام درکار ہے. اس بلاکچین کے ساتھ جو EOS.IO سافٹویئر استعمال کرتا ہے، یہاں وسائل کے تین بڑے اقسام ہیں جو اپلیکیشنز کی طرف سے بہسم ہوتے ہیں:
 
 1. بینڈوڈتھ اور لاگ اسٹوریج (ڈسک) ۔;
-2. Computation and Computational Backlog (CPU); and
+2. کمپیوٹیش اور کمپیوٹیشنل بیک لاگ CPU))
 3. State Storage (RAM).
 
 Bandwidth and computation have two components, instantaneous usage and long-term usage. A blockchain maintains a log of all messages and this log is ultimately stored and downloaded by all full nodes. With the log of messages it is possible to reconstruct the state of all applications.
