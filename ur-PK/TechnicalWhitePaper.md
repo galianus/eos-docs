@@ -324,9 +324,9 @@ EOS.IO سافٹویئر استعمال کرنے والی بلاکچین بلاک
 
 ای بلاکچین جو EOS.IO سافٹویئر کو اپناتا ہے بلاک پرڈوسد نیے ٹوکن کو ہر بلاک بنانے کے لیے انعام دے گا. ان حالات میں، ٹوکن بنانے کی تعداد کو بلاک پرڈوسدز کے زریعے مطلوبہ تنخواہ میں متعین کیا جاتا ہے. EOS ۔ IO سافٹ ویئر کی کل سالانہ اضافہ ٹوکن کی فراہمی میں 5 فی صد سے تجاوز نہیں کہ ایک ٹوپی پروڈیوسر ایوارڈ پر نافذ کرنے کے لئے تشکیل ہو سکتا ہے ۔.
 
-## Community Benefit Applications
+## لوگوں کے لیے اپلکیش کے فوائد-
 
-In addition to electing block producers, pursuant to a blockchain based on the EOS.IO software, users can elect 3 community benefit applications also known as smart contracts. These 3 applications will receive tokens of up to a configured percent of the token supply per annum minus the tokens that have been paid to block producers. These smart contracts will receive tokens proportional to the votes each application has received from token holders. The elected applications or smart contracts can be replaced by newly elected applications or smart contracts by token holders.
+بلاک پرڈوسدز منتخب کرنے کے علاوہ، EOS.IO سافٹویئر پر مبنی بلاکچین صارفین تین کمیونٹی فائدہ اپلیکیشنز جنھیں سمارٹ کنٹریکٹ سے بھی جانا جاتا ہے منتخب کر سکتے ہیں. These 3 applications will receive tokens of up to a configured percent of the token supply per annum minus the tokens that have been paid to block producers. These smart contracts will receive tokens proportional to the votes each application has received from token holders. The elected applications or smart contracts can be replaced by newly elected applications or smart contracts by token holders.
 
 # Governance
 
