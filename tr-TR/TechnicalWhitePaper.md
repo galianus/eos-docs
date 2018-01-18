@@ -401,9 +401,9 @@ EOS.IO yazılımı tabanlı blok zincirinin yönelimi, birden fazla sanal makine
 
 ### Web Assembly (WASM)
 
-Web Assembly, yüksek performanslı web uygulamaları oluşturmak için ortaya çıkan bir web standardıdır. Birkaç küçük değişiklikle Web Assembly deterministik ve sandbox hale getirilebilir. Web Assembly'nin yararı, sözleşmelerin C veya C ++ gibi tanıdık dillerde geliştirilmesini sağlar ve endüstride yaygın bir desteği mevcuttur.
+Web Assembly, yüksek performanslı web uygulamaları oluşturmak için ortaya çıkan bir web standardıdır. Birkaç küçük değişiklikle Web Assembly belirlenimli ve sandbox hale getirilebilir. Web Assembly'nin yararı, sözleşmelerin C veya C ++ gibi tanıdık dillerde geliştirilmesini sağlamasıdır ve endüstride yaygın bir desteği mevcuttur.
 
-Ethereum geliştiricileri, kendilerine uygun sandbox ve determinizm sağlamak için [Ethereum tadında Web Assembly (WASM)](https://github.com/ewasm/design) için Web Assembly'i değiştirmeye zaten başladı. Bu yaklaşım, EOS.IO yazılımı içinde kolayca uyarlanabilir ve entegre edilebilir.
+Ethereum geliştiricileri, [Ethereum tadında Web Assembly (WASM)](https://github.com/ewasm/design)'de kendilerine uygun sandbox ve belirlenim sağlamak için için Web Assembly'i değiştirmeye zaten başladı. Bu yaklaşım, EOS.IO yazılımı içinde kolayca uyarlanabilir ve entegre edilebilir.
 
 ### Ethereum Sanal Makinesi (EVM)
 
