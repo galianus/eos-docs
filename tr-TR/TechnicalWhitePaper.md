@@ -433,11 +433,11 @@ Belli oranda bir iç içe geçişin ardından, bir zincirin başka bir zincire a
 
 ## Zincirler Arası İletişimde Gecikme
 
-Blok üreticileri, başka bir blok zinciriyle iletişim kurarken; bir işlemi geçerli bir girdi olarak kabul etmeden önce, mevzubahis işlemin diğer blok zinciri tarafından tersinemez şekilde onaylandığından % 100 emin oluncaya kadar beklemelidirler. EOS.IO yazılımı tabanlı blok zinciri ve DPOS kullanıldığında, 3 saniyelik bloklar ve 21 üreticiyle, bu yaklaşık 45 saniye sürer. Bir zincirin blok üreticileri geri dönüşsüzlüğü beklemezse, daha sonra tersine çevrilen ve blok zincirinin uzlaşmasının geçerliliğini etkileyebilecek bir yatırmayı kabul eden bir takas olurdu.
+Blok üreticileri, başka bir blok zinciriyle iletişim kurarken; bir işlemi geçerli bir girdi olarak kabul etmeden önce, mevzubahis işlemin diğer blok zinciri tarafından tersinemez şekilde onaylandığından % 100 emin oluncaya kadar beklemelidirler. EOS.IO yazılımı tabanlı blok zinciri ve DPOS kullanıldığında, 3 saniyelik bloklar ve 21 üreticiyle, bu yaklaşık 45 saniye sürer. Bir zincirin blok üreticileri tersinemezlik için beklemezse, bu daha sonra tersine çevrilen ve (bu yolla) blok zinciri mutabakatının geçerliliğini etkileyebilecek bir depoziti kabul eden bir takasa benzerdi.
 
 ## Tamamlama Kanıtı
 
-Dıştaki blok zincirlerden merkle provaları kullanırken, işlenen tüm işlemlerin geçerli olduğunu bilmekle, hiçbir işlemin atlanıp atlanmadığını bilmek arasında önemli bir fark vardır. En son işlemlerin hepsinin bilinmekte olduğunu kanıtlamak imkansız olmakla birlikte, işlem geçmişi üzerinde boşluk olmadığını ispatlamak mümkündür. EOS.IO yazılımı, her hesaba iletilen her mesaja, bir sıra numarası atayarak bunu kolaylaştırır. Bir kullanıcı, bu sıra numaralarını, belirli bir hesaba yönelik tüm mesajların işlendiğini ve sırayla işleme tabi tutulduğunu kanıtlamak için kullanabilir.
+Dıştaki blok zincirlerinden merkle provaları kullanırken, işlenen tüm işlemlerin geçerli olduğunu bilmekle, hiçbir işlemin atlanıp atlanmadığını bilmek arasında önemli bir fark vardır. En son işlemlerin hepsinin bilinmekte olduğunu kanıtlamak imkansız olmakla birlikte, işlem geçmişi üzerinde boşluk olmadığını ispatlamak mümkündür. EOS.IO yazılımı, her hesaba iletilen her mesaja, bir sıra numarası atayarak bunu kolaylaştırır. Bir kullanıcı, bu sıra numaralarını, belirli bir hesaba yönelik tüm mesajların işlendiğini ve sırayla işleme tabi tutulduğunu kanıtlamak için kullanabilir.
 
 # Sonuç
 
