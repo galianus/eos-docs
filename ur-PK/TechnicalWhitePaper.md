@@ -288,7 +288,7 @@ EOS.IO سافٹویئر بلاک پرڈوسدز کو قانوناً اس بات 
 
 بلاکچاان میں ذخیرہ کی گیی معلومات درخواست کی منطق سے قابل رسائی ہے. اس میں کتابی ترتیب اور اکاونٹ بیلنس کی معلومات موجود ہے. اگر صورتحال اپلیکیشن سے نا پڈھی جائے تو ایسی معلومات کو زخیرہ نہیں کرنا چاہیے. مثال کے طور پر، بلاکچین میں بلاگ پوسٹ مواد اور تبصرے اپلیکیشن سے نہیں پڈھے جاتے اس لئے انہیں زخیرہ نہیں کرنا چاہیے. دریں اثناء ووٹوں کی تعداد، تبصرے اور دیگر خصوصیات بلاکچین کے ایک حصہ کے طور پر بلاکچین کی صورت میں زخیرہ رہتے ہیں.
 
-Block producers publish their available capacity for bandwidth, computation, and state. The EOS.IO software allows each account to consume a percentage of the available capacity proportional to the amount of tokens held in a 3-day staking contract. For example, if a blockchain based on the EOS.IO software is launched and if an account holds 1% of the total tokens distributable pursuant to that blockchain, then that account has the potential to utilize 1% of the state storage capacity.
+بلاک پرڈوسد بینڈوڈتھ ،شمارندگ اور سٹیٹ کی دستیاب صلاحیت کو شایع کرتے ہیں. EOS.IO سافٹویئر دستیاب صلاحیت کی ایک فیصد کو استعمال کرنے کے لیے ہر اکاونٹ کو سٹاکنگ ٹوکن کی مقدار تین روزہ معاہدے میں استعمال کرنے کی اجازت دیتا ہے. مثال کے طور پر، EOS.IO سافٹویئر پر مبنی ایک بلاکچین کا اگر آغاز کیا جائے اور اگر اس میں ایک فیصدی ٹوکن تقسیم کرنے کی صلاحیت ہو، اس صورت میں اکاونٹ کو اتنی طاقت ہے کہ وہ اپنی زخیرہ صورتی صلاحیت کا ایک فیصد استعمال کر سکتا ہے.
 
 Adopting the EOS.IO software on a launched blockchain means bandwidth and computational capacity are allocated on a fractional reserve basis because they are transient (unused capacity cannot be saved for future use). The algorithm used by EOS.IO software is similar to the algorithm used by Steem to rate-limit bandwidth usage.
 
