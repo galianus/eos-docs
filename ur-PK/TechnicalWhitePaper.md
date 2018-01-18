@@ -300,13 +300,13 @@ EOS.IO سافٹویئر بلاک پرڈوسدز کو قانوناً اس بات 
 
 ## صارف کا ادا کرنا-
 
-تجارتی طور پر، دفتری جگہ کے لیے، شمارندگ طاقت، اور کاروبار کو چلانے کے لیے دوسرے اخراجات کاروبار سے ہی ادا کیے جاتے ہیں. The customer buys specific products from the business and the revenue from those product sales is used to cover the business costs of operation. Similarly, no website obligates its visitors to make micropayments for visiting its website to cover hosting costs. Therefore, decentralized applications should not force its customers to pay the blockchain directly for the use of the blockchain.
+تجارتی طور پر، دفتری جگہ کے لیے، شمارندگ طاقت، اور کاروبار کو چلانے کے لیے دوسرے اخراجات کاروبار سے ہی ادا کیے جاتے ہیں. صارف تجارت سے مخصوص چیزیں خریدتا ہی اور اس آمدنی سے کمایا ہوا منافع کاروبار کو چلانے کے لیے دوسرے اخراجات کے لیے استعمال ہوتا ہے. اسی طرح، کوئی ویب سائٹ اس ویب سائٹ کو دیکھنے کے لیے اپنے صارفین سے مہمان نوازی کے اخراجات کی ادائیگی لازم نہیں رکھتا. لہٰذا، ڈیسنٹرالایزڈ اپلیکیشنز کو بلاکچین کے استعمال کے لیے صارفین سے زبردستی ادائیگی نہیں کرنی چاہیے.
 
-A launched blockchain that uses the EOS.IO software does not require its users to pay the blockchain directly for its use and therefore does not constrain or prevent a business from determining its own monetization strategy for its products.
+ایک شروع بلاکچین جو EOS.IO سافٹویئر استعمال کرتی ہو اپنے صارفین سے براہ راست ادائیگی نہیں چاہتی لہذا یہ اپنے مصنوعات کے تعین اپنے لاہ عمل کو عملانے میں کاروبار میں بندشیں نہیں رکھتا.
 
-## Delegating Capacity
+## صلاحیت کووکیل بنانا
 
-A holder of tokens on a blockchain launched adopting the EOS.IO software who may not have an immediate need to consume all or part of the available bandwidth, can give or rent such unconsumed bandwidth to others; the block producers running EOS.IO software on such blockchain will recognize this delegation of capacity and allocate bandwidth accordingly.
+کسی شروع بلاکچین پر کوئی ٹوکن ہولڈر اگر EOS.IO سافٹویئر کو اپناتا ہے اگر اس کو اپنی بینڈوڈتھ استعمال کرنے کی فوری ضرورت نہ ہو تو وہ اپنی بینڈوڈتھ کو دوسروں کو کرایہ پر دے سکتے ہیں اس صورت میں EOS.IO سافٹویئر کو چلانے والا بلاک پرڈوسد اس بینڈوتھ صلاحیت کی منتقلی کو مختص پہچان لے گا.
 
 ## Separating Transaction costs from Token Value
 
