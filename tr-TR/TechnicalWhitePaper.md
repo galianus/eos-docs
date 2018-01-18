@@ -393,7 +393,7 @@ Paralelleştirme olanaklarını en üst düzeye çıkarmak ve işlem günlüğü
 
 Bir iletinin iç tutarlılığını doğrulamak salt okunurdur ve blok zinciri durumuna erişim gerektirmez. Bu, maksimum paralellikle gerçekleştirilebileceği anlamına gelir. Gerekli bakiye gibi ön koşulların doğrulanması salt okunurdur ve paralellikten de yararlanabilir. Yalnızca uygulama durumunun değiştirilmesi yazma erişimi gerektirir ve her uygulama için sırayla işlenmesi gerekir.
 
-Kimlik doğrulama, bir mesajın uygulanabilirliğini doğrulamak için salt okunur bir işlemdir. Uygulama aslında işi yapmaktadır. Gerçek zamanlı olarak, her iki hesaplamanın da yapılması gerekir, ancak işlem bir kez blok zincirine dahil edildiğinde, kimlik doğrulama işlemleri artık gerekli değildir.
+Kimlik doğrulama, bir mesajın uygulanabilirliğini doğrulamak için salt okunur bir işlemdir. Aslında işi yapan uygulamadır. Gerçek zamanlı olarak, her iki hesaplamanın da yapılması gerekir, ancak işlem bir kez blok zincirine dahil edildiğinde, kimlik doğrulama işlemleri artık gerekli değildir.
 
 ## Yapıdan Bağımsız Sanal Makine
 
