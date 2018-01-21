@@ -14,11 +14,11 @@ Nod mandiri mengoperasikan rantaian blok uji dan menghasilkan blok sambil mended
 
 ### Kontrak-kontrak Asli (Nathan)
 
-The EOS.IO software has a number of native contracts. These are contracts that manage the core operations of the blockchain and exist outside the Web Assembly interface. These contracts include:
+Perisian EOS.IO mempunyai beberapa kontrak-kontrak yang asli. Ini adalah kontrak-kontrak yang menguruskan operasi -operasi teras rantain blok dan wujud di luar antara muka laman perhimpunan. Kontrak ini termasuk:
 
-1. @eos - manages EOS token transfers
-2. @stake - manages locked EOS, voting, and Producer Election
-3. @system - manages permissions, messages, and contact code updates
+1. @eos - menguruskan pemindahan token EOS
+2. @stake - mengurus kuncian EOS, pengundian, dan Pemilihan Penerbit
+3. @system - menguruskan kebenaran, mesej dan mengemas kini kod kenalan
 
 ### Virtual Machine API (Dan)
 
