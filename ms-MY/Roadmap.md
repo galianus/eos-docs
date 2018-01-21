@@ -4,11 +4,11 @@ Dokumen ini menggariskan pelan pembangunan dari tahap yang tinggi dan akan dikem
 
 ***Segala yang terkandung dalam dokumen ini masih dalam dalam bentuk draf dan tertakluk kepada perubahan pada bila-bila masa dan disediakan untuk tujuan informasi sahaja. block.one tidak menjamin ketepatan maklumat yang terkandung di dalam pelan tindakan ini dan informasi yang disediakan "seperti" dengan tiada perwakilan atau jaminan, nyata atau tersirat.***
 
-# Phase 1 - Minimal Viable Testing Environment - Summer 2017
+# Fasa 1 - Kelayakan Ujian Alam Sekitar yang Minimal - Musim Panas 2017
 
-The goal of this phase is to establish the APIs that developers will require to start building and testing applications on EOS.IO. In order for developers to start testing their applications they will require the following to be implemented:
+Matlamat fasa ini adalah untuk mewujudkan API yang pemaju akan perlukan untuk memulakan pembinaan dan pengujian aplikasi di atas EOS.IO. Untuk membolehkan pemaju mula menguji aplikasi mereka, mereka akan memerlukan perkara-perkara berikut untuk dilaksanakan:
 
-### Standalone Node (Dan & Nathan)
+### Nod mandiri (Dan & Nathan)
 
 A standalone node operates a test blockchain and produces blocks while exposing an API. This node does not need to concern itself with any P2P networking code.
 
