@@ -2,7 +2,7 @@
 
 Dokumen ini menggariskan pelan pembangunan dari tahap yang tinggi dan akan dikemas kinikan dengan sebarang kemajuan dibuat ke arah versi 1.0. Di sini perlu diingatkan bahawa pelan ini hanya boleh digunakan untuk perisian rantaian blok dan bukan kepada alat dan utiliti lain seperti dompet dan peneroka blok yang akan mempunyai pasukan mereka sendiri dan pelan tindakan yang khusus apabila Fasa 1 selesai.
 
-***Segala yang terkandung dalam dokumen ini masih dalam dalam bentuk draf dan tertakluk kepada perubahan pada bila-bila masa dan disediakan untuk tujuan informasi sahaja. block.one does not guarantee the accuracy of the information contained in this roadmap and the information is provided “as is” with no representations or warranties, express or implied.***
+***Segala yang terkandung dalam dokumen ini masih dalam dalam bentuk draf dan tertakluk kepada perubahan pada bila-bila masa dan disediakan untuk tujuan informasi sahaja. block.one tidak menjamin ketepatan maklumat yang terkandung di dalam pelan tindakan ini dan informasi yang disediakan "seperti" dengan tiada perwakilan atau jaminan, nyata atau tersirat.***
 
 # Phase 1 - Minimal Viable Testing Environment - Summer 2017
 
