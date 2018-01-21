@@ -10,9 +10,9 @@ Matlamat fasa ini adalah untuk mewujudkan API yang pemaju akan perlukan untuk me
 
 ### Nod mandiri (Dan & Nathan)
 
-A standalone node operates a test blockchain and produces blocks while exposing an API. This node does not need to concern itself with any P2P networking code.
+Nod mandiri mengoperasikan rantaian blok uji dan menghasilkan blok sambil mendedahkan API. Nod ini tidak perlu untuk melibatkan dirinya dengan mana-mana kod rangkaian P2P.
 
-### Native Contracts (Nathan)
+### Kontrak-kontrak Asli (Nathan)
 
 The EOS.IO software has a number of native contracts. These are contracts that manage the core operations of the blockchain and exist outside the Web Assembly interface. These contracts include:
 
