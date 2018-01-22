@@ -38,15 +38,15 @@ Dokumen ini mengajar pemaju untuk cara memulakan pembinaan di rantaian blok EOS.
 
 # Fasa 2 - Kelayakan Ujian Rangkaian yang minimal - Musim Luruh 2017
 
-Everything in Phase 1 assumes a trusted environment that only runs the developer's own code. Before a test network can be deployed several additional features need to be implemented and tested.
+Segala-galanya dalam Fasa 1 membawa anggapan bahawa menggunakan kod pemaju sendiri di dalam persekitaran yang dipercayai. Sebelum rangkaian ujian boleh digunakan beberapa ciri-ciri tambahan perlu dilaksanakan dan diuji.
 
-### P2P Network Code (Phil)
+### Kod Rangkaian P2P (Phil)
 
-This is a plugin that is responsible for synchronizing the blockchain state between two standalone nodes.
+Ini adalah plugin yang bertanggungjawab untuk mensinkronisasikan keadaan rantaian blok antara dua nod mandiri.
 
-### WASM Sanitation & CPU Sandboxing (Brian)
+### Kebersihan WASM & Pakej CPU (Brian)
 
-The WASM code needs to be sanitized to check for non-deterministic behavior such as floating point operations and infinite loops.
+Kod WASM perlu dibersihkan untuk menyemak tingkah laku tanpa deterministik seperti operasi titik terapung dan gelung infiniti.
 
 ### Resource Usage Tracking & Rate Limiting (Arhag)
 
