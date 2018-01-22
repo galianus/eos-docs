@@ -20,9 +20,9 @@ Perisian EOS.IO mempunyai beberapa kontrak-kontrak yang asli. Ini adalah kontrak
 2. @stake - mengurus kuncian EOS, pengundian, dan Pemilihan Penerbit
 3. @system - menguruskan kebenaran, mesej dan mengemas kini kod kenalan
 
-### Virtual Machine API (Dan)
+### API Mesin Maya (Dan)
 
-Contracts are compiled to WebAssembly (WASM) and WASM must interface with the blockchain via a defined API. This API is what developers depend upon to build applications and be relatively stable before developers can really start to build on EOS.
+Kontrak disusun untuk Perhimpunan Laman Web (WASM) dan WASM mesti bersambung dengan rantain blok melalui API yang ditetapkan. This API is what developers depend upon to build applications and be relatively stable before developers can really start to build on EOS.
 
 ### RPC Interface (Arhag, Nathan)
 
