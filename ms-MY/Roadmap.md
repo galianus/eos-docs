@@ -52,7 +52,7 @@ Kod WASM perlu dibersihkan untuk menyemak tingkah laku tanpa deterministik seper
 
 Untuk mengelakkan penyalahgunaan pemantauan sumber dan pengesanan kadar penghad penggunaan pengguna mengikut EOS yang diharungi.
 
-### Genesis Import Testing (DappHub)
+### Ujian Import Genesis (DappHub)
 
 Tools need to be developed to export data from the EOS Token Distribution state and create a genesis configuration file. This will enable anyone participating in the Token Distribution to acquire some initial test EOS (TEOS).
 
