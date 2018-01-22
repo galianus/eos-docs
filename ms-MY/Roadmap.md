@@ -48,9 +48,9 @@ Ini adalah plugin yang bertanggungjawab untuk mensinkronisasikan keadaan rantaia
 
 Kod WASM perlu dibersihkan untuk menyemak tingkah laku tanpa deterministik seperti operasi titik terapung dan gelung infiniti.
 
-### Resource Usage Tracking & Rate Limiting (Arhag)
+### Mengesan Penggunaan Sumber & Kadar Penghad (Arhag)
 
-To prevent abuse the resource monitoring and usage tracking rate limits users according to staked EOS.
+Untuk mengelakkan penyalahgunaan pemantauan sumber dan pengesanan kadar penghad penggunaan pengguna mengikut EOS yang diharungi.
 
 ### Genesis Import Testing (DappHub)
 
