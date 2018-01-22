@@ -1,6 +1,6 @@
 ## Roadmap del Software di EOS.IO
 
-Questo documento delinea un piano di sviluppo di alto livello e sarà aggiornato in considerazione dei progressi compiuti verso la versione 1.0. Va notato che questa roadmap è da applicarsi esclusivamente al software della blockchain e non ad altri strumenti e risorse utili come portafogli e esploratori di blocchi (c.d. block explorers) che avranno i propri team e le proprie roadmap dedicate una volta raggiunto il completamento della Fase 1.
+Questo documento delinea un piano di sviluppo di alto livello e sarà aggiornato in considerazione dei progressi compiuti al raggiungimento della versione 1.0. Va notato che questa roadmap è da applicarsi esclusivamente al software della blockchain e non ad altri strumenti e risorse utili come wallet e esploratori di blocchi (c.d. block explorers) che avranno i propri team e le proprie roadmap dedicate una volta raggiunto il completamento della Fase 1.
 
 ***L'intero contenuto del documento è attualmente sotto forma di bozza e a solo scopo informativo e potrà essere soggetto a variazioni. block.one non garantisce l'accuratezza delle informazioni contenute nella roadmap, inoltre le informazioni vengono fornite "così come sono" senza dichiarazioni o garanzie, esplicite o implicite.***
 
@@ -50,7 +50,7 @@ Il codice WASM dev'essere ripulito per poter verificare comportamenti non determ
 
 ### Monitoraggio Dell'Uso delle Risorse & Rate Limiting (Arhag)
 
-Per prevenire abusi della rete, il monitoraggio delle risorse e il tasso di controllo dell'utilizzo, limita gli utenti in base agli EOS accatastati (c.d. staked)
+Per prevenire abusi della rete, il monitoraggio delle risorse e il tasso di controllo dell'utilizzo, limita gli utenti in base agli EOS in riserva (c.d. staked)
 
 ### Test D'Importazione di Genesi (DappHub)
 
