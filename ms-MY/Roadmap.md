@@ -32,11 +32,11 @@ RPC JSON yang mudah melalui antara muka HTTP akan disediakan yang membolehkan pe
 
 Alat baris perintah mewujudkan pengintegrasian antara muka RPC dengan persekitaran pembinaan pemaju.
 
-### Basic Developer Documentation (Josh)
+### Dokumentasi Pemaju Asas (Josh)
 
-Documents that teach developers how to get started with building on EOS.IO blockchains. This includes documentations of the WASM API, RPC Interface, and Command Line Tools.
+Dokumen ini mengajar pemaju untuk cara memulakan pembinaan di rantaian blok EOS.IO. Ini termasuk dokumentasi API WASM, Antara muka RPC, dan Alat Baris Arahan.
 
-# Phase 2 - Minimal Viable Test Network - Fall 2017
+# Fasa 2 - Kelayakan Ujian Rangkaian yang minimal - Musim Luruh 2017
 
 Everything in Phase 1 assumes a trusted environment that only runs the developer's own code. Before a test network can be deployed several additional features need to be implemented and tested.
 
