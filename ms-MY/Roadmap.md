@@ -22,15 +22,15 @@ Perisian EOS.IO mempunyai beberapa kontrak-kontrak yang asli. Ini adalah kontrak
 
 ### API Mesin Maya (Dan)
 
-Kontrak disusun untuk Perhimpunan Laman Web (WASM) dan WASM mesti bersambung dengan rantain blok melalui API yang ditetapkan. This API is what developers depend upon to build applications and be relatively stable before developers can really start to build on EOS.
+Kontrak disusun untuk Perhimpunan Laman Web (WASM) dan WASM mesti bersambung dengan rantain blok melalui API yang ditetapkan. API ini adalah apa yang pemaju bergantung untuk membina aplikasi dan harus relatifnya stabil sebelum pemaju benar-benar boleh mula membina EOS.
 
-### RPC Interface (Arhag, Nathan)
+### Antara muka RPC (Arhag, Nathan)
 
-A simple JSON RPC over HTTP interface will be provided that enables developers to broadcast transactions and query application state. This is critical for both publishing and interacting with test applications.
+RPC JSON yang mudah melalui antara muka HTTP akan disediakan yang membolehkan pemaju menyiarkan transaksi dan mebuat pertanyaan untuk status aplikasi. Ini adalah penting untuk kedua-dua penerbitan dan interaksi dengan aplikasi ujian.
 
-### Command line Tools (Arhag)
+### Alat baris arahan (Arhag)
 
-Command line tools facilitate integrating the RPC interface with developer build environments.
+Alat baris perintah mewujudkan pengintegrasian antara muka RPC dengan persekitaran pembinaan pemaju.
 
 ### Basic Developer Documentation (Josh)
 
