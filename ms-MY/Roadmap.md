@@ -62,23 +62,23 @@ Ciri-ciri ini melibatkan mengesahkan hashing Merkle untuk transaksi adalah betul
 
 # Fasa 3 - Ujian & Audit Keselamatan - Musim Sejuk 2017, Musim Bunga 2018
 
-During this phase the platform will undergo heavy testing with a focus on finding security issues and bug. At the end of Phase 3 version 1.0 will be tagged.
+Selama fasa ini platform ini akan menjalani ujian yang berat dengan tumpuan mencari isu-isu keselamatan dan peranti pepijat. Pada akhir Fasa 3 versi 1.0 akan ditandakan.
 
-### Develop Example Applications
+### Membangunkan Aplikasi-Aplikasi Contoh
 
-Example applications are critical to proving the platform provides the features required by real developers.
+Contoh aplikasi adalah genting untuk membuktikan platform menyediakan ciri-ciri yang diperlukan oleh pemaju sebenar.
 
-### Bounties for Successfully Attacking Network
+### Imbuhan untuk Kejayaan Menyerang Rangkaian
 
-Attacking the network with spam, virtual machine exploits, and bug crashes, and non-deterministic behavior will be a heavily involved process but necessary to ensure that version 1.0 is stable.
+Menyerang rangkaian dengan spam, eksploitasi mesin maya, dan kemalangan bug, dan tingkah laku yang tidak berdeterministik akan menjadi proses yang tersangat berat untuk dilibatkan tetapi ianya perlu untuk memastikan versi 1.0 adalah stabil.
 
-### Language Support
+### Sokongan bahasa
 
-Adding support for additional languages to be compiled to WASM: C++, Rust, etc.
+Menambah sokongan untuk bahasa tambahan untuk disusun ke WASM: C++, Rust, dll.
 
-### Documentation & Tutorials
+### Dokumentasi & Tutorial
 
-# Phase 4 - Parallel Optimization Summer / Fall 2018
+# Fasa 4 - Pengoptimuman Selari Musim Panas / Luruh 2018
 
 After getting a stable 1.0 product released, we will move toward optimizing the code for parallel execution.
 
