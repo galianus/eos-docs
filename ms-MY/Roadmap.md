@@ -54,13 +54,13 @@ Untuk mengelakkan penyalahgunaan pemantauan sumber dan pengesanan kadar penghad 
 
 ### Ujian Import Genesis (DappHub)
 
-Tools need to be developed to export data from the EOS Token Distribution state and create a genesis configuration file. This will enable anyone participating in the Token Distribution to acquire some initial test EOS (TEOS).
+Alat perlu dibangunkan untuk mengeksport data dari keadaan Pengagihan EOS Token dan untuk mewujudkan fail konfigurasi genesis. Ini akan membolehkan sesiapa yang mengambil bahagian dalam distribusi Token untuk memperolehi beberapa ujian awal EOS (TEOS).
 
-### Interblockchain Communication (Nathan)
+### Komunikasi didalam rantaian blok (Nathan)
 
-This feature involves verifying the Merkle hashing of transactions is proper.
+Ciri-ciri ini melibatkan mengesahkan hashing Merkle untuk transaksi adalah betul.
 
-# Phase 3 - Testing & Security Audits - Winter 2017, Spring 2018
+# Fasa 3 - Ujian & Audit Keselamatan - Musim Sejuk 2017, Musim Bunga 2018
 
 During this phase the platform will undergo heavy testing with a focus on finding security issues and bug. At the end of Phase 3 version 1.0 will be tagged.
 
