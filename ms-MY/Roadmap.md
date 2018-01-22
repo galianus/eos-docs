@@ -80,6 +80,6 @@ Menambah sokongan untuk bahasa tambahan untuk disusun ke WASM: C++, Rust, dll.
 
 # Fasa 4 - Pengoptimuman Selari Musim Panas / Luruh 2018
 
-After getting a stable 1.0 product released, we will move toward optimizing the code for parallel execution.
+Selepas mendapat produk 1.0 yang stabil dilaksanakan, kami akan bekerja ke arah mengoptimumkan kod untuk pelaksanaan yang selari.
 
-# Phase 5 - Cluster Implementation The Future
+# Fasa 5 - Pelaksanaan Kluster Masa Depan
