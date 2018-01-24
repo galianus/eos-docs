@@ -85,7 +85,7 @@ Ebay, Uber, AirBnB, dan Facebook, diantara perniagaan yang ternganggu, yang nyat
 
 ## Penggunaan secara percuma
 
-Pengguna tidak perlu dibebani dengan bayaran untuk menggunakan platform atau manfaat daripada perkhidmatannya, yakni pemaju aplikasi memerlukan keanjalan untuk menawarkan pengguna perkhidmatan percuma. A blockchain platform that is free to use for users will likely gain more widespread adoption. Developers and businesses can then create effective monetization strategies.
+Pengguna tidak perlu dibebani dengan bayaran untuk menggunakan platform atau manfaat daripada perkhidmatannya, yakni pemaju aplikasi memerlukan keanjalan untuk menawarkan pengguna perkhidmatan percuma. Penerimagunaan menyeluruh akan lebih senang di capai, jikalau platform rantaian blok adalah percuma untuk digunakan ramai. Developers and businesses can then create effective monetization strategies.
 
 ## Easy Upgrades and Bug Recovery
 
