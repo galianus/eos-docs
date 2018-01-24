@@ -71,11 +71,11 @@ Dengan tidak meminta apa-apa kebenaran meskipun, sesiapa sahaja boleh menggunaka
 
 Teknologi Rantaian Blok diperkenalkan pada tahun 2008 dengan pelancaran mata wang bitcoin, dan sejak itu usahawan dan pemaju telah cuba untuk membawa teknologi itu untuk kegunaan umum dengan menyokong pelbagai aplikasi yang lebih luas di satu platform rantaian blok yang tunggal.
 
-While a number of blockchain platforms have struggled to support functional decentralized applications, application specific blockchains such as the BitShares decentralized exchange (2014) and Steem social media platform (2016) have become heavily used blockchains with tens of thousands of daily active users. They have achieved this by increasing performance to thousands of transactions per second, reducing latency to 1.5 seconds, eliminating fees, and providing a user experience similar to those currently provided by existing centralized services.
+Meskipun beberapa platform rantaian blok telah bergelut untuk menyokong aplikasi desentralisasi yang boleh di pakai, rantaian blok aplikasi khusus seperti pertukaran desentralisasi BitShares (2014) dan platform media sosial Steem (2016) telah menjadi rantaian blok yang berat dan digunakan oleh puluhan ribu pengguna aktif setiap hari. Prestasi telah ditingkatkan kepada beribu-ribu transaksi sesaat, oleh mereka dengan berjayanya, dengan pada itu kelewatan hingga 1.5 saat telah dikurangkan, mengambil keluar yuran, dan memberikan pengalaman pengguna yang serupa dengan yang diberikan oleh perkhidmatan berpusat tersedia.
 
-Existing blockchain platforms are burdened by large fees and limited computational capacity that prevent widespread blockchain adoption.
+Yuran yang tinggi dan kapasiti pengiraan yang terhad membebani platform rantain blok yang sedia ada, yang seterusnya menghalang peluasan rantaian blok ke arena muka dunia.
 
-# Requirements for Blockchain Applications
+# Keperluan untuk aplikasi rantaian blok
 
 In order to gain widespread use, applications on the blockchain require a platform that is flexible enough to meet the following requirements:
 
