@@ -77,13 +77,13 @@ Yuran yang tinggi dan kapasiti pengiraan yang terhad membebani platform rantain 
 
 # Keperluan untuk aplikasi rantaian blok
 
-In order to gain widespread use, applications on the blockchain require a platform that is flexible enough to meet the following requirements:
+Aplikasi di rantaian blok memerlukan platform yang cukup fleksibel untuk mendapatkan penggunaan yang meluas dengan memenuhi keperluan berikut:
 
-## Support Millions of Users
+## Menyokong Jutaan Pengguna
 
-Disrupting businesses such as Ebay, Uber, AirBnB, and Facebook, require blockchain technology capable of handling tens of millions of active daily users. In certain cases, applications may not work unless a critical mass of users is reached and therefore a platform that can handle mass number of users is paramount.
+Ebay, Uber, AirBnB, dan Facebook, diantara perniagaan yang ternganggu, yang nyata memerlukan teknologi rantaian blok yang mampu mengendalikan puluhan juta pengguna harian yang aktif. Aplikasi-aplikasi mungkin tidak akan berfungsi kecuali penggunaan yang ramai dicapai dan oleh itu platform yang boleh mengendalikan bilangan penggunaan yang ramai adalah yang paling utama, dalam kes-kes tertentu.
 
-## Free Usage
+## Penggunaan secara percuma
 
 Application developers need the flexibility to offer users free services; users should not have to pay in order to use the platform or benefit from its services. A blockchain platform that is free to use for users will likely gain more widespread adoption. Developers and businesses can then create effective monetization strategies.
 
