@@ -10,19 +10,19 @@ Hakcipta Terpelihara © 2017 block.one
 
 Dengan tidak meminta apa-apa kebenaran meskipun, sesiapa sahaja boleh menggunakan, mengeluarkan atau mengedarkan apa-apa bahan dalam kertas putih ini untuk kegunaan bukan komersil dan pendidikan, (iaitu, selain daripada bayaran ataupun untuk tujuan komersil) dengan syarat sumber-sumber asal dan notis hak cipta yang berkenaan mesti disebut sebagai rujukan.
 
-**PENAFIAN:** Kertas Putih Teknikal EOS.IO ini hanyalah untuk tujuan informasi sahaja. block.one tidak menjamin apa-apa ketepatan atau kesimpulan yang dibuat dalam kertas putih ini, dan kertas putih ini diberikan "sebagaimana adanya". block.one tidak akan membuat dan dengan jelas menafikan semua representasi dan waranti, yang nyata, tersirat, berkanun atau sebaliknya, termasuk, tetapi tidak terhad kepada: (i) jaminan kebolehdagangan, kesesuaian untuk tujuan tertentu, kesesuaian, kegunaan, hakmilik atau bukan pelanggaran; (ii) bahawa kandungan kertas putih ini bebas daripada kelalaian; dan (iii) bahawa kandungan tersebut tidak akan melanggar hak pihak ketiga. block.one dan sekutu-sekutunya tidak akan mempunyai liabiliti untuk kerosakan atas apa-apa jenis musibah yang akan timbul daripada penggunaan, rujukan kepada, atau pergantungan pada kertas putih ini atau mana-mana kandungan yang terkandung di dalamnya, walaupun jika di nasihatkan akan adanya kemungkinan kerosakan sedemikian. In no event will block.one or its affiliates be liable to any person or entity for any damages, losses, liabilities, costs or expenses of any kind, whether direct or indirect, consequential, compensatory, incidental, actual, exemplary, punitive or special for the use of, reference to, or reliance on this white paper or any of the content contained herein, including, without limitation, any loss of business, revenues, profits, data, use, goodwill or other intangible losses.
+**PENAFIAN:** Kertas Putih Teknikal EOS.IO ini hanyalah untuk tujuan informasi sahaja. block.one tidak menjamin apa-apa ketepatan atau kesimpulan yang dibuat dalam kertas putih ini, dan kertas putih ini diberikan "sebagaimana adanya". block.one tidak akan membuat dan dengan jelas menafikan semua representasi dan waranti, yang nyata, tersirat, berkanun atau sebaliknya, termasuk, tetapi tidak terhad kepada: (i) jaminan kebolehdagangan, kesesuaian untuk tujuan tertentu, kesesuaian, kegunaan, hakmilik atau bukan pelanggaran; (ii) bahawa kandungan kertas putih ini bebas daripada kelalaian; dan (iii) bahawa kandungan tersebut tidak akan melanggar hak pihak ketiga. block.one dan sekutu-sekutunya tidak akan mempunyai liabiliti untuk kerosakan atas apa-apa jenis musibah yang akan timbul daripada penggunaan, rujukan kepada, atau pergantungan pada kertas putih ini atau mana-mana kandungan yang terkandung di dalamnya, walaupun jika di nasihatkan akan adanya kemungkinan kerosakan sedemikian. block.one dan ahli gabungannya tidak akan bertanggungjawab untuk sesiapa atau entiti, di apa jua kejadian, yang megakibatkan kerosakan, kerugian, liabiliti, kos atau perbelanjaan dalam apa jua bentuk, sama ada secara langsung ataupun tidak langsung akan, kebangkitan, pampasan, sampingan, nyata, teladan, punitif atau pengunaan yang khusus, merujuk kepada, atau bergantungkan kepada kertas putih ini atau mana-mana kandungan yang termaksub di sini, ini termasuk, tanpa had, apa-apa kehilangan perniagaan, pendapatan, keuntungan, data, kegunaan, kebaikan atau kerugian tidak ketara yang lain.
 
 - [Latar belakang](#background)
-- [Requirements for Blockchain Applications](#requirements-for-blockchain-applications) 
-  - [Support Millions of Users](#support-millions-of-users)
-  - [Free Usage](#free-usage)
-  - [Easy Upgrades and Bug Recovery](#easy-upgrades-and-bug-recovery)
-  - [Low Latency](#low-latency)
-  - [Sequential Performance](#sequential-performance)
-  - [Parallel Performance](#parallel-performance)
-- [Consensus Algorithm (DPOS)](#consensus-algorithm-dpos) 
-  - [Transaction Confirmation](#transaction-confirmation)
-  - [Transaction as Proof of Stake (TaPoS)](#transaction-as-proof-of-stake-tapos)
+- [Keperluan untuk aplikasi rantaian blok](#requirements-for-blockchain-applications) 
+  - [Menyokong Jutaan Pengguna](#support-millions-of-users)
+  - [Penggunaan secara percuma](#free-usage)
+  - [Penaik tarafan yang Mudah dan Pemulihan Pepijat](#easy-upgrades-and-bug-recovery)
+  - [Kelewatan yang rendah](#low-latency)
+  - [Prestasi Berurutan](#sequential-performance)
+  - [Prestasi Selari](#parallel-performance)
+- [Algoritma Persetujuan (DPOS)](#consensus-algorithm-dpos) 
+  - [Pembuktian Transaksi](#transaction-confirmation)
+  - [Transaksi seakan Bukti Pegangan (TaPoS)](#transaction-as-proof-of-stake-tapos)
 - [Accounts](#accounts) 
   - [Messages & Handlers](#messages--handlers)
   - [Role Based Permission Management](#role-based-permission-management) 
