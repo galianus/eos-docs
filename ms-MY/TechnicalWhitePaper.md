@@ -91,23 +91,23 @@ Pengguna tidak perlu dibebani dengan bayaran untuk menggunakan platform atau man
 
 Keanjalan diperlukan untuk meningkatkan aplikasi perniagaan berasaskan aplikasi rantaian blok dengan ciri-ciri baru.
 
-All non-trivial software is subject to bugs, even with the most rigorous of formal verification. The platform must be robust enough to fix bugs when they inevitably occur.
+Walaupun dengan pengesahan formal yang paling ketat, kesemua perisian yang tidak remeh adalah tertakluk kepada pepijat. Kemantapan diperlukan oleh platform untuk mengatasi pepijat apabila mereka tidak dapat dielakkan.
 
 ## Kelewatan yang Rendah
 
 Penuntutan maklum balas yang boleh dipercayai dan kelewatan tidak lebih daripada beberapa saat diperlukan untuk memastikan pengalaman pengguna yang cemerlang. Aplikasi yang di bina diatas rantaian blok akan kurang berdaya saing dengan alternatif tanpa blok yang sedia ada apabila pengguna mendapat pengalaman yang tidak menyenangkan mengunakan rantain blok yang mengambil masa terlalu panjang untuk berfungsi.
 
-## Sequential Performance
+## Prestasi Berurutan
 
-There are some applications that just cannot be implemented with parallel algorithms due to sequentially dependent steps. Applications such as exchanges need enough sequential performance to handle high volumes and therefore a platform with fast sequential performance is required.
+Di sebabkan langkah-langkah yang bergantung secara berurutan, terdapat beberapa aplikasi yang tidak boleh berfungsi dengan algoritma selari. Sebagai contoh, platform dengan prestasi berurutan yang mencukupi dan cepat amat diperlukan untuk menjalankan aplikasi seperti pertukaran yang mengendalikan jumlah yang tinggi.
 
-## Parallel Performance
+## Prestasi selari
 
-Large scale applications need to divide the workload across multiple CPUs and computers.
+Pembahagiaan beban kerja ke pelbagai CPU dan komputer di perlukan untuk aplikasi yang berskala besar.
 
-# Consensus Algorithm (DPOS)
+# Algoritma Persetujuan (DPOS)
 
-EOS.IO software utilizes the only decentralized consensus algorithm capable of meeting the performance requirements of applications on the blockchain, [Delegated Proof of Stake (DPOS)](https://steemit.com/dpos/@dantheman/dpos-consensus-algorithm-this-missing-white-paper). Under this algorithm, those who hold tokens on a blockchain adopting the EOS.IO software may select block producers through a continuous approval voting system and anyone may choose to participate in block production and will be given an opportunity to produce blocks proportional to the total votes they have received relative to all other producers. For private blockchains the management could use the tokens to add and remove IT staff.
+Satu-satunya algoritma persetujuan yang dapat menampung keperluan prestasi aplikasi di blockchain, [Delegated Proof of Stake (DPOS)](https://steemit.com/dpos/@dantheman/dpos-consensus-algorithm-this-missing-white-paper), digunakan di Perisian EOS.IO. Under this algorithm, those who hold tokens on a blockchain adopting the EOS.IO software may select block producers through a continuous approval voting system and anyone may choose to participate in block production and will be given an opportunity to produce blocks proportional to the total votes they have received relative to all other producers. For private blockchains the management could use the tokens to add and remove IT staff.
 
 The EOS.IO software enables blocks to be produced exactly every 3 seconds and exactly one producer is authorized to produce a block at any given point in time. If the block is not produced at the scheduled time then the block for that time slot is skipped. When one or more blocks are skipped, there is a 6 or more second gap in the blockchain.
 
