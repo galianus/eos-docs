@@ -89,13 +89,13 @@ Pengguna tidak perlu dibebani dengan bayaran untuk menggunakan platform atau man
 
 ## Penaik tarafan yang Mudah dan Pemulihan Pepijat
 
-Businesses building blockchain based applications need the flexibility to enhance their applications with new features.
+Keanjalan diperlukan untuk meningkatkan aplikasi perniagaan berasaskan aplikasi rantaian blok dengan ciri-ciri baru.
 
 All non-trivial software is subject to bugs, even with the most rigorous of formal verification. The platform must be robust enough to fix bugs when they inevitably occur.
 
-## Low Latency
+## Kelewatan yang Rendah
 
-A good user experience demands reliable feedback with delay of no more than a few seconds. Longer delays frustrate users and make applications built on a blockchain less competitive with existing non-blockchain alternatives.
+Penuntutan maklum balas yang boleh dipercayai dan kelewatan tidak lebih daripada beberapa saat diperlukan untuk memastikan pengalaman pengguna yang cemerlang. Aplikasi yang di bina diatas rantaian blok akan kurang berdaya saing dengan alternatif tanpa blok yang sedia ada apabila pengguna mendapat pengalaman yang tidak menyenangkan mengunakan rantain blok yang mengambil masa terlalu panjang untuk berfungsi.
 
 ## Sequential Performance
 
