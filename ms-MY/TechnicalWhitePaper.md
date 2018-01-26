@@ -138,9 +138,9 @@ Dengan peredaran masa, semua pengguna akhirnya akan secara terus mengesahkan ran
 
 # Akaun-akaun
 
-Perisian EOS.IO membenarkan rujukan nama unik manusia yang boleh dibaca 2 hingga 32 aksara panjang, untuk semua akaunnya. Pencipta akaun boleh memilih nama akaun. Untuk menampung kos penyimpanan data akaun, semua akaun mesti dibiayai dengan baki akaun minimum pada masa ianya dicipta. Account names also support namespaces such that the owner of account @domain is the only one who can create the account @user.domain.
+Perisian EOS.IO membenarkan rujukan nama unik manusia yang boleh dibaca 2 hingga 32 aksara panjang, untuk semua akaunnya. Pencipta akaun boleh memilih nama akaun. Untuk menampung kos penyimpanan data akaun, semua akaun mesti dibiayai dengan baki akaun minimum pada masa ianya dicipta. Hanya supaya pemilik akaun @domain adalah satu-satunya yang boleh membuat akaun @user.domain, nama akaun akan menyokong namespaces.
 
-In a decentralized context, application developers will pay the nominal cost of account creation to sign up a new user. Traditional businesses already spend significant sums of money per customer they acquire in the form of advertising, free services, etc. The cost of funding a new blockchain account should be insignificant in comparison. Fortunately, there is no need to create accounts for users already signed up by another application.
+Dalam konteks yang desentralisasi, untuk mendaftar pengguna baru, pembayaran kos nominal penciptaan akaun akan di tanggung oleh pemaju aplikasi. Setiap pelanggan yang perniagaan tradisional perolehi telah dilakukan dengan membelanjakan sejumlah wang yang besar dalam bentuk pengiklanan, perkhidmatan percuma, dan sebagainya. Tidak signifikan harus ianya menjadi untuk membuka akaun rantaian blok yang baru. Fortunately, there is no need to create accounts for users already signed up by another application.
 
 ## Messages & Handlers
 
