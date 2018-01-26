@@ -140,11 +140,11 @@ Dengan peredaran masa, semua pengguna akhirnya akan secara terus mengesahkan ran
 
 Perisian EOS.IO membenarkan rujukan nama unik manusia yang boleh dibaca 2 hingga 32 aksara panjang, untuk semua akaunnya. Pencipta akaun boleh memilih nama akaun. Untuk menampung kos penyimpanan data akaun, semua akaun mesti dibiayai dengan baki akaun minimum pada masa ianya dicipta. Hanya supaya pemilik akaun @domain adalah satu-satunya yang boleh membuat akaun @user.domain, nama akaun akan menyokong namespaces.
 
-Dalam konteks yang desentralisasi, untuk mendaftar pengguna baru, pembayaran kos nominal penciptaan akaun akan di tanggung oleh pemaju aplikasi. Setiap pelanggan yang perniagaan tradisional perolehi telah dilakukan dengan membelanjakan sejumlah wang yang besar dalam bentuk pengiklanan, perkhidmatan percuma, dan sebagainya. Tidak signifikan harus ianya menjadi untuk membuka akaun rantaian blok yang baru. Fortunately, there is no need to create accounts for users already signed up by another application.
+Dalam konteks yang desentralisasi, untuk mendaftar pengguna baru, pembayaran kos nominal penciptaan akaun akan di tanggung oleh pemaju aplikasi. Setiap pelanggan yang perniagaan tradisional perolehi telah dilakukan dengan membelanjakan sejumlah wang yang besar dalam bentuk pengiklanan, perkhidmatan percuma, dan sebagainya. Tidak signifikan harus ianya menjadi untuk membuka akaun rantaian blok yang baru. Mujurlah, untuk pengguna yang telah mendaftar oleh aplikasi lain, tidak perlu membuat akaun semula.
 
-## Messages & Handlers
+## Mesej & Pengendali-pengendali
 
-Each account can send structured messages to other accounts and may define scripts to handle messages when they are received. The EOS.IO software gives each account its own private database which can only be accessed by its own message handlers. Message handling scripts can also send messages to other accounts. The combination of messages and automated message handlers is how EOS.IO defines smart contracts.
+Mesej berstruktur boleh dihantar ke akaun lain oleh setiap akaun yang berdaftar, dan untuk penerimaan mesej, setiap akaun boleh menentukan skrip untuk mengendalikan mesej. The EOS.IO software gives each account its own private database which can only be accessed by its own message handlers. Message handling scripts can also send messages to other accounts. The combination of messages and automated message handlers is how EOS.IO defines smart contracts.
 
 ## Role Based Permission Management
 
