@@ -125,14 +125,14 @@ Pepijat perisian, kesesakan Internet, atau penghalang blok jahat boleh membuat d
 
 Ia mungkin boleh untuk pengguna di beri amaran oleh nod bahawa terdapat kebarangkalian yang tinggi yang pengguna berada di pecahan rantaian blok minoriti, dalam masa 9 saat dari awal untuk kejadiaan pecahan rantaian blok. Terdapat kebarangkalian 95% nod adalah pada pecahan rantaian blok minoriti, selepas ketinggalan 2 blok secara berturut-turut. 99% kepastian nod adalah pada pecahan rantaian blok minoriti, selepas ketinggalan 3 blok secara berturut-turut. Model ramalan yang teguh adalah mungkin boleh dijana untuk memberi amaran kepada operator dengan segera bahawa ada sesuatu yang salah dengan menggunakan maklumat mengenai nod yang tidak terjawab, kadar penyertaan baru-baru ini, dan faktor-faktor lain.
 
-The response to such a warning depends entirely upon the nature of the business transactions, but the simplest response is to wait for 15/21 confirmations until the warning stops.
+Jenis urus niaga perniagaan menentukan maklum balas terhadap amaran tersebut, tetapi sehingga amaran berhenti, maklum balas yang paling mudah adalah menunggu pengesahan 15/21.
 
-## Transaction as Proof of Stake (TaPoS)
+## Transaksi seakan Bukti Pegangan (TaPoS)
 
-The EOS.IO software requires every transaction to include the hash of a recent block header. This hash serves two purposes:
+Perisian EOS.IO perlu disertakan dengan setiap transaksi hash blok header yang baru. Hash ini berfungsi dua tujuan:
 
-1. prevents a replay of a transaction on forks that do not include the referenced block; and
-2. signals the network that a particular user and their stake are on a specific fork.
+1. menghalang tugasan semula transaksi pada pecahan rantaian blok yang tidak termasuk blok rujukan; dan
+2. memberi isyarat kepada rangkaian bahawa pengguna tertentu dan pegangannya berada pada pecahan rantaian blok tertentu.
 
 Over time all users end up directly confirming the blockchain which makes it difficult to forge counterfeit chains as the counterfeit would not be able to migrate transactions from the legitimate chain.
 
