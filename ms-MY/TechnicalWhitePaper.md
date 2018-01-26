@@ -134,11 +134,11 @@ Perisian EOS.IO perlu disertakan dengan setiap transaksi hash blok header yang b
 1. menghalang tugasan semula transaksi pada pecahan rantaian blok yang tidak termasuk blok rujukan; dan
 2. memberi isyarat kepada rangkaian bahawa pengguna tertentu dan pegangannya berada pada pecahan rantaian blok tertentu.
 
-Over time all users end up directly confirming the blockchain which makes it difficult to forge counterfeit chains as the counterfeit would not be able to migrate transactions from the legitimate chain.
+Dengan peredaran masa, semua pengguna akhirnya akan secara terus mengesahkan rantaian blok yang menjadikannya sukar untuk menjalin rantai palsu kerana urus niaga dari rantai yang sah tidak dapat di pindahkan ke rantai palsu.
 
-# Accounts
+# Akaun-akaun
 
-The EOS.IO software permits all accounts to be referenced by a unique human readable name of 2 to 32 characters in length. The name is chosen by the creator of the account. All accounts must be funded with the minimal account balance at the time they are created to cover the cost of storing account data. Account names also support namespaces such that the owner of account @domain is the only one who can create the account @user.domain.
+Perisian EOS.IO membenarkan rujukan nama unik manusia yang boleh dibaca 2 hingga 32 aksara panjang, untuk semua akaunnya. Pencipta akaun boleh memilih nama akaun. Untuk menampung kos penyimpanan data akaun, semua akaun mesti dibiayai dengan baki akaun minimum pada masa ianya dicipta. Account names also support namespaces such that the owner of account @domain is the only one who can create the account @user.domain.
 
 In a decentralized context, application developers will pay the nominal cost of account creation to sign up a new user. Traditional businesses already spend significant sums of money per customer they acquire in the form of advertising, free services, etc. The cost of funding a new blockchain account should be insignificant in comparison. Fortunately, there is no need to create accounts for users already signed up by another application.
 
