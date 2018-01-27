@@ -148,7 +148,7 @@ Mesej berstruktur boleh dihantar ke akaun lain oleh setiap akaun yang berdaftar,
 
 ## Pengurusan Kebenaran Berasaskan Peranan
 
-Penentuaan sama ada atau tidak mesej diberi kuasa dengan betul, melibatkan Pengurusan kebenaran. The simplest form of permission management is checking that a transaction has the required signatures, but this implies that required signatures are already known. Generally authority is bound to individuals or groups of individuals and is often compartmentalized. The EOS.IO software provides a declarative permission management system that gives accounts fine grained and high level control over who can do what and when.
+Penentuaan sama ada atau tidak mesej diberi kuasa dengan betul, melibatkan Pengurusan kebenaran. Memeriksa bahawa transaksi mempunyai tandatangan yang diperlukan adalah bentuk pengurusan kebenaran yang paling mudah, tetapi ini menandakan bahawa tanda tangan yang diperlukan sudah diketahui. Generally authority is bound to individuals or groups of individuals and is often compartmentalized. The EOS.IO software provides a declarative permission management system that gives accounts fine grained and high level control over who can do what and when.
 
 It is critical that authentication and permission management be standardized and separate from the business logic of the application. This enables tools to be developed to manage permissions in a general purpose manner and also provide significant opportunities for performance optimization.
 
