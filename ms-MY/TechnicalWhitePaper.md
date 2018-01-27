@@ -152,7 +152,7 @@ Penentuaan sama ada atau tidak mesej diberi kuasa dengan betul, melibatkan Pengu
 
 Ianya adalah kritikal untuk menyeragamkan pengesahan dan pengurusan kebenaran, dan seterusnya mengasingkannya dari logik perniagaan untuk aplikasi tersebut. Ini akan membolehkan alat dimajukan untuk menguruskan kebenaran secara umum dan juga memberikan peluang yang besar untuk pengoptimuman prestasi.
 
-Every account may be controlled by any weighted combination of other accounts and private keys. This creates a hierarchical authority structure that reflects how permissions are organized in reality, and makes multi-user control over funds easier than ever. Multi-user control is the single biggest contributor to security, and, when used properly, it can greatly eliminate the risk of theft due to hacking.
+Setiap akaun boleh dikawal oleh apa-apa kombinasi berwajaran daripada akaun yang lain dan kunci peribadi. This creates a hierarchical authority structure that reflects how permissions are organized in reality, and makes multi-user control over funds easier than ever. Multi-user control is the single biggest contributor to security, and, when used properly, it can greatly eliminate the risk of theft due to hacking.
 
 EOS.IO software allows accounts to define what combination of keys and/or accounts can send a particular message type to another account. For example, it is possible to have one key for a user's social media account and another for access to the exchange. It is even possible to give other accounts permission to act on behalf of a user's account without assigning them keys.
 
