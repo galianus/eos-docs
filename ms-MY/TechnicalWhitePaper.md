@@ -154,7 +154,7 @@ Ianya adalah kritikal untuk menyeragamkan pengesahan dan pengurusan kebenaran, d
 
 Setiap akaun boleh dikawal oleh apa-apa kombinasi berwajaran daripada akaun yang lain dan kunci peribadi. Struktur kuasa hierarki diwujudkan di sini yang mencerminkan bagaimana keizinan dianjurkan dalam realiti, dan betapa mudahnya untuk membuat kawalan pelbagai pengguna untuk mengurus kewangan. Terhadap faktor keselamatan, kawalan berbilang pengguna adalah penyumbang yang terbesar, dan apabila ianya digunakan dengan sempurna, ia dapat menghilangkan risiko kecurian akibat penggodaman.
 
-EOS.IO software allows accounts to define what combination of keys and/or accounts can send a particular message type to another account. For example, it is possible to have one key for a user's social media account and another for access to the exchange. It is even possible to give other accounts permission to act on behalf of a user's account without assigning them keys.
+Perisian EOS.IO membolehkan akaun untuk menentukan apa gabungan kombinasi kunci dan/atau akaun yang boleh menghantar jenis mesej tertentu ke akaun lain. Sebagai contoh, adalah mungkin untuk seseorang memegang satu kunci untuk akaun media sosial pengguna dan kunci yang lain untuk mengakses pertukaran. Adalah lebih mungkin untuk memberikan kebenaran kepada akaun lain untuk bertindak bagi pihak akaun pengguna tanpa memberikan kunci kepada mereka.
 
 ### Named Permission Levels
 
