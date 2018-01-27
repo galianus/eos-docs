@@ -160,7 +160,7 @@ Perisian EOS.IO membolehkan akaun untuk menentukan apa gabungan kombinasi kunci 
 
 <img align="right" src="http://eos.io/wpimg/diagram3.png" width="228.395px" height="300px" />
 
-Menggunakan perisian EOS.IO, tahap kebenaran di beri nama boleh ditentukan oleh akaun masing-masing yang boleh diperolehi daripada tahap kebenaran diberi nama peringkat atasan. Each named permission level defines an authority; an authority is a threshold multi-signature check consisting of keys and/or named permission levels of other accounts. For example, an account's "Friend" permission level can be set for the account to be controlled equally by any of the account's friends.
+Menggunakan perisian EOS.IO, tahap kebenaran di beri nama boleh ditentukan oleh akaun masing-masing yang boleh diperolehi daripada tahap kebenaran diberi nama peringkat atasan. Setiap tahap kebenaran dinamakan mentakrifkan autoriti; autoriti adalah ambangan semakan pelbagai tanda tangan yang terdiri daripada kunci dan/atau tahap kebenaran diberi nama daripada akaun lain. Sebagai contoh, tahap kebenaran akaun "Rakan" boleh ditetapkan untuk mana-mana akaun rakan untuk mempunyai kuasa kawalan yang seimbang.
 
 Another example is the Steem blockchain which has three hard-coded named permission levels: owner, active, and posting. The posting permission can only perform social actions such as voting and posting, while the active permission can do everything except change the owner. The owner permission is meant for cold storage and is able to do everything. The EOS.IO software generalizes this concept by allowing each account holder to define their own hierarchy as well as the grouping of actions.
 
