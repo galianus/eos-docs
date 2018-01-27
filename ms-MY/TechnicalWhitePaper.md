@@ -162,7 +162,7 @@ Perisian EOS.IO membolehkan akaun untuk menentukan apa gabungan kombinasi kunci 
 
 Menggunakan perisian EOS.IO, tahap kebenaran di beri nama boleh ditentukan oleh akaun masing-masing yang boleh diperolehi daripada tahap kebenaran diberi nama peringkat atasan. Setiap tahap kebenaran dinamakan mentakrifkan autoriti; autoriti adalah ambangan semakan pelbagai tanda tangan yang terdiri daripada kunci dan/atau tahap kebenaran diberi nama daripada akaun lain. Sebagai contoh, tahap kebenaran akaun "Rakan" boleh ditetapkan untuk mana-mana akaun rakan untuk mempunyai kuasa kawalan yang seimbang.
 
-Satu lagi contoh ialah rantaian blok Steem yang mempunyai tiga tahap kebenaran diberi nama: pemilik, aktif, dan menghantar. The posting permission can only perform social actions such as voting and posting, while the active permission can do everything except change the owner. The owner permission is meant for cold storage and is able to do everything. The EOS.IO software generalizes this concept by allowing each account holder to define their own hierarchy as well as the grouping of actions.
+Satu lagi contoh ialah rantaian blok Steem yang mempunyai tiga tahap kebenaran diberi nama: pemilik, aktif, dan posting. Kebenaran posting hanya boleh melakukan tindakan sosial seperti pengundian dan penerbitan blog, sementara kebenaran aktif boleh melakukan segala-galanya kecuali menukar kunci pemiliknya. The owner permission is meant for cold storage and is able to do everything. Perisian EOS.IO mengeneralisasikan konsep ini dengan membenarkan setiap pemegang akaun menentukan hierarki mereka sendiri dan juga pengumpulan tindakan.
 
 ### Named Message Handler Groups
 
