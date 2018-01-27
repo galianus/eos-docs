@@ -150,7 +150,7 @@ Mesej berstruktur boleh dihantar ke akaun lain oleh setiap akaun yang berdaftar,
 
 Penentuaan sama ada atau tidak mesej diberi kuasa dengan betul, melibatkan Pengurusan kebenaran. Memeriksa bahawa transaksi mempunyai tandatangan yang diperlukan adalah bentuk pengurusan kebenaran yang paling mudah, tetapi ini menandakan bahawa tanda tangan yang diperlukan sudah diketahui. Autoriti terikat pada individu atau beberapa kumpulan individu dan sering kali dibahagi-bahagikan, secara umumnya. Sistem pengurusan kebenaran perisytiharan di sediakan oleh Perisian EOS.IO yang memberikan akaun akan kawalan yang tinggi serta berira halus, ke atas siapa yang boleh melakukan apa dan bila.
 
-It is critical that authentication and permission management be standardized and separate from the business logic of the application. This enables tools to be developed to manage permissions in a general purpose manner and also provide significant opportunities for performance optimization.
+Ianya adalah kritikal untuk menyeragamkan pengesahan dan pengurusan kebenaran, dan seterusnya mengasingkannya dari logik perniagaan untuk aplikasi tersebut. Ini akan membolehkan alat dimajukan untuk menguruskan kebenaran secara umum dan juga memberikan peluang yang besar untuk pengoptimuman prestasi.
 
 Every account may be controlled by any weighted combination of other accounts and private keys. This creates a hierarchical authority structure that reflects how permissions are organized in reality, and makes multi-user control over funds easier than ever. Multi-user control is the single biggest contributor to security, and, when used properly, it can greatly eliminate the risk of theft due to hacking.
 
