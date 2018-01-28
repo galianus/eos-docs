@@ -123,22 +123,22 @@ Pengeluar blok secara biasanya akan mempunyai penyertaan setinggi 100% di rantai
 
 Pepijat perisian, kesesakan Internet, atau pengeluar blok yang berniat jahat boleh membuat dua atau lebih pepecahan blok, tetapi ini termaktub dalam beberapa kes yang luar biasa sahaja. Nod boleh memilih untuk menunggu pengesahan oleh 15 dari 21 pengeluar blok, untuk mendapatkan kepastian mutlak bahawa transaksi tidak dapat di balikkan. Ini akan mengambil masa purata sebanyak 45 saat dalam keadaan normal, berdasarkan konfigurasi tipikal perisian EOS.IO. Secara lalai, semua nod akan menyifatkan blok yang di sahkan oleh 15 daripada 21 pengeluar blok sebagai tidak boleh di balikkan dan tidak akan beralih ke pecahan rantaian yang tidak termasuk blok sebegini tidak kira panjangnya.
 
-Ianya mungkin untuk pengguna di beri amaran oleh nod bahawa terdapat kebarangkalian yang tinggi yang pengguna berada di pecahan rantaian blok minoriti, dalam masa 9 saat dari awal semasa kejadiaan pecahan rantaian blok. Terdapat kebarangkalian 95% nod adalah pada pecahan rantaian blok minoriti, selepas ketinggalan 2 blok secara berturut-turut. 99% kepastian nod adalah pada pecahan rantaian blok minoriti, selepas ketinggalan 3 blok secara berturut-turut. Model ramalan yang teguh adalah mungkin boleh dijana untuk memberi amaran kepada operator dengan segera bahawa ada sesuatu yang salah dengan menggunakan maklumat mengenai nod yang tidak terjawab, kadar penyertaan baru-baru ini, dan faktor-faktor lain.
+Ianya mungkin untuk pengguna di beri amaran oleh nod bahawa terdapat kebarangkalian yang tinggi yang pengguna berada di pecahan rantaian blok minoriti, dalam masa 9 saat dari awal semasa kejadiaan pecahan rantaian blok. Terdapat kebarangkalian 95% nod adalah pada pecahan rantaian blok minoriti, selepas ketinggalan 2 blok secara berturut-turut. 99% kepastian nod adalah pada pecahan rantaian blok minoriti, selepas ketinggalan 3 blok secara berturut-turut. Model ramalan yang teguh adalah mungkin boleh dijana untuk memberi amaran kepada operator dengan segera bahawa ada sesuatu yang tidak kena, dengan menggunakan maklumat mengenai nod yang tidak terjawab, kadar penyertaan baru-baru ini, dan faktor-faktor lain.
 
 Jenis urus niaga perniagaan menentukan maklum balas terhadap amaran tersebut, tetapi sehingga amaran berhenti, maklum balas yang paling mudah adalah menunggu pengesahan 15/21.
 
 ## Transaksi seakan Bukti Pegangan (TaPoS)
 
-Perisian EOS.IO perlu disertakan dengan setiap transaksi hash blok header yang baru. Hash ini berfungsi dua tujuan:
+Perisian EOS.IO perlu disertakan dengan setiap transaksi hash blok header yang baru. Hash ini berfungsi untuk dua tujuan:
 
 1. menghalang tugasan semula transaksi pada pecahan rantaian blok yang tidak termasuk blok rujukan; dan
 2. memberi isyarat kepada rangkaian bahawa pengguna tertentu dan pegangannya berada pada pecahan rantaian blok tertentu.
 
-Dengan peredaran masa, semua pengguna akhirnya akan secara terus mengesahkan rantaian blok yang menjadikannya sukar untuk menjalin rantai palsu kerana urus niaga dari rantai yang sah tidak dapat di pindahkan ke rantai palsu.
+Dengan peredaran masa, semua pengguna akhirnya akan secara terus mengesahkan rantaian blok yang menjadikannya sukar untuk menjalin rantaian palsu kerana urus niaga dari rantaian yang sah tidak dapat di pindahkan ke rantaian palsu.
 
 # Akaun-akaun
 
-Perisian EOS.IO membenarkan rujukan nama unik manusia yang boleh dibaca 2 hingga 32 aksara panjang, untuk semua akaunnya. Pencipta akaun boleh memilih nama akaun. Untuk menampung kos penyimpanan data akaun, semua akaun mesti dibiayai dengan baki akaun minimum pada masa ianya dicipta. Hanya supaya pemilik akaun @domain adalah satu-satunya yang boleh membuat akaun @user.domain, nama akaun akan menyokong namespaces.
+Perisian EOS.IO membenarkan rujukan nama unik manusia yang boleh dibaca dari 2 hingga 32 aksara panjang, untuk semua akaunnya. Pencipta akaun boleh memilih nama akaun. Untuk menampung kos penyimpanan data akaun, semua akaun mesti dibiayai dengan baki akaun minimum pada masa ianya dicipta. Hanya supaya pemilik akaun @domain adalah satu-satunya yang boleh membuat akaun @user.domain, nama akaun akan menyokong namespaces.
 
 Dalam konteks yang desentralisasi, untuk mendaftar pengguna baru, pembayaran kos nominal penciptaan akaun akan di tanggung oleh pemaju aplikasi. Setiap pelanggan yang perniagaan tradisional perolehi telah dilakukan dengan membelanjakan sejumlah wang yang besar dalam bentuk pengiklanan, perkhidmatan percuma, dan sebagainya. Tidak signifikan harus ianya menjadi untuk membuka akaun rantaian blok yang baru. Mujurlah, untuk pengguna yang telah mendaftar oleh aplikasi lain, tidak perlu membuat akaun semula.
 
