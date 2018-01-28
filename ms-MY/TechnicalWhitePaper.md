@@ -164,9 +164,9 @@ Menggunakan perisian EOS.IO, tahap kebenaran di beri nama boleh ditentukan oleh 
 
 Satu lagi contoh ialah rantaian blok Steem yang mempunyai tiga tahap kebenaran diberi nama: pemilik, aktif, dan posting. Kebenaran posting hanya boleh melakukan tindakan sosial seperti pengundian dan penerbitan blog, sementara kebenaran aktif boleh melakukan segala-galanya kecuali menukar kunci pemiliknya. Kebenaran pemiliknya adalah untuk menyimpan beku dan mampu melakukan segala-galanya. Perisian EOS.IO mengeneralisasikan konsep ini dengan membenarkan setiap pemegang akaun menentukan hierarki mereka sendiri dan juga pengumpulan tindakan.
 
-### Named Message Handler Groups
+### Kumpulan Pengendali Mesej diberi nama
 
-The EOS.IO software allows each account to organize its own message handlers into named and nested groups. These named message handler groups can be referenced by other accounts when they configure their permission levels.
+Perisian EOS.IO membolehkan setiap akaun untuk menyusun pengendali mesejnya sendiri ke dalam kumpulan yang bernama dan berstruktur sarang. Kumpulan Pengendali Mesej diberi nama ini boleh dirujuk oleh akaun lain apabila mereka mengkonfigurasikan tahap kebenaran mereka.
 
 The highest level message handler group is the account name and the lowest level is the individual message type being received by the account. These groups can be referenced like so: **@accountname.groupa.subgroupb.MessageType**.
 
