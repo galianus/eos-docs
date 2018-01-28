@@ -4,7 +4,7 @@
 
 **Abstrak:** Perisian EOS.IO memperkenalkan senibina rantain blok baru yang direka untuk membolehkan aplikasi penskalaan yang menyeluruh secara menegak dan mendatar. Ini dicapai dengan mewujudkan sistem operasi sejajar dengan aplikasi yang dibina. Perisian ini menyediakan akaun, pengesahan, pangkalan data, komunikasi tidak segerak dan penjadualan aplikasi di seluruh beratus-ratus teras CPU atau kluster. Teknologi yang dihasilkan adalah seni bina rantaian blok yang boleh berskala kepada berjuta transaksi sesaat, tiada yuran transaksi kepada pengguna, dan membolehkan penggunaan aplikasi desentralisasi yang cepat dan mudah.
 
-**SILA AMBIL PERHATIKAN: TOKEN KRYPTOGRAPHIC YANG DIMAKSUDKAN DI KERTAS PUTIH INI ADALAH TOKENS KRYPTOGRAPHIC PADA RANTAIAN BLOK YANG BOLEH MENERIMA PAKAI PERISIAN EOS.IO. IANYA BUKAN DIMAKSUDKAN DENGAN TOKEN ERC-20 YANG BOLEH DIGUNA PAKAI DENGAN RANTAIAN BLOK ETHEREUM, OLEH KERANA TOKEN ERC-20 DIGUNAKAN SEMATA-MATA UNTUK DISTRIBUSI TOKEN EOS SAHAJA DAN BUKANNYA UNTUK DIKENDALIKAN SEBAGAI TOKEN PERANTARAAN DI DALAM RANTAIAN BLOK EOS.IO.**
+**SILA AMBIL PERHATIKAN: TOKEN KRIPTOGRAFI YANG DIMAKSUDKAN DI KERTAS PUTIH INI ADALAH TOKENS KRIPTOGRAFI PADA RANTAIAN BLOK YANG BOLEH MENERIMA PAKAI PERISIAN EOS.IO. IANYA BUKAN DIMAKSUDKAN DENGAN TOKEN ERC-20 YANG BOLEH DIGUNA PAKAI DENGAN RANTAIAN BLOK ETHEREUM, OLEH KERANA TOKEN ERC-20 DIGUNAKAN SEMATA-MATA UNTUK DISTRIBUSI TOKEN EOS SAHAJA DAN BUKANNYA UNTUK DIKENDALIKAN SEBAGAI TOKEN PERANTARAAN DI DALAM RANTAIAN BLOK EOS.IO.**
 
 Hakcipta Terpelihara © 2017 block.one
 
@@ -117,7 +117,7 @@ Pengeluar akan dipindahkan dari pertimbangan, jika mereka terlepas untuk menghas
 
 Blok di rantaian blok DPOS tidak akan mengalami apa-apa pemecahan kerana pengeluar blok bekerja sama untuk menghasilkan blok dan tidak bersaing, di bawah keadaan biasa. Persetujuan akan dicapai secara automatik dengan beralih ke rantai terpanjang, sekiranya terdapat pemecahan berlaku. Oleh kerana kadar di mana blok ditambahkan ke pemecahan rantaian blok yang secara langsung dikaitkan dengan peratusan pengeluar blok yang berkongsi persetujuan yang sama, maka metrik ini akan berfungsi. Pemecahan rantaian blok dengan lebih banyak pengeluar di atasnya akan bertambah panjang dengan lebih cepat daripada sesuatu dengan pengeluarnya kurang, dengan erti kata lain. Selain itu, semasa pemecahan blok, tiada pengeluar blok yang dibenarkan untuk mengeluarkan blok di dua rantaian blok yang dipecahkan, secara serentak. Pengeluar blok sedemikian mungkin akan diundi keluar, jika pengeluar blok ditangkap melakukan bendalah ini. Untuk menyingkirkan penyalahgunaan secara automatic, bukti kriptografi tentang pengeluaran pendua itu juga boleh digunakan.
 
-## Pembuktian Transaksi
+## Pengesahan Transaksi
 
 Pengeluar blok secara biasanya akan mempunyai penyertaan setinggi 100% di rantaian blok DPOS. Selepas purata 1.5 saat dari masa penyiaran, sesuatu transaksi tersebut boleh dianggapkan telah disahkan dengan kepastian 99.9%.
 
