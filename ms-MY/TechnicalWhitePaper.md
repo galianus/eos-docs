@@ -168,7 +168,7 @@ Satu lagi contoh ialah rantaian blok Steem yang mempunyai tiga tahap kebenaran d
 
 Perisian EOS.IO membolehkan setiap akaun untuk menyusun pengendali mesejnya sendiri ke dalam kumpulan yang bernama dan berstruktur sarang. Kumpulan Pengendali Mesej diberi nama ini boleh dirujuk oleh akaun lain apabila mereka mengkonfigurasikan tahap kebenaran mereka.
 
-The highest level message handler group is the account name and the lowest level is the individual message type being received by the account. These groups can be referenced like so: **@accountname.groupa.subgroupb.MessageType**.
+Nama akaun adalah tahap tertinggi pada kumpulan pengendali mesej dan tahap terendah pula adalah jenis mesej individu yang diterima oleh akaun. Kumpulan ini boleh dirujuk seperti: **@accountname.groupa.subgroupb.MessageType**.
 
 Under this model it is possible for an exchange contract to group order creation and canceling separately from deposit and withdraw. This grouping by the exchange contract is a convenience for users of the exchange.
 
