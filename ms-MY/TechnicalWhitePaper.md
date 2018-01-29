@@ -170,7 +170,7 @@ Perisian EOS.IO membolehkan setiap akaun untuk menyusun pengendali mesejnya send
 
 Nama akaun adalah tahap tertinggi pada kumpulan pengendali mesej dan tahap terendah pula adalah jenis mesej individu yang diterima oleh akaun. Kumpulan ini boleh dirujuk seperti: **@accountname.groupa.subgroupb.MessageType**.
 
-Under this model it is possible for an exchange contract to group order creation and canceling separately from deposit and withdraw. This grouping by the exchange contract is a convenience for users of the exchange.
+Kontrak pertukaran kepada penghasilan pesanan kumpulan dan membatalkan secara berasingan akan deposit dan pengeluaran, adalah mungkin di bawah model ini. This grouping by the exchange contract is a convenience for users of the exchange.
 
 ### Permission Mapping
 
