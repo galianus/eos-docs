@@ -176,7 +176,7 @@ Kontrak pertukaran kepada penghasilan pesanan kumpulan dan membatalkan secara be
 
 Setiap akaun di bolehkan untuk menentukan pemetaan di antara Kumpulan Pengendali Mesej yang dinamakan daripada sebarang akaun dan Tahap Kebenaran Nama mereka sendiri, di Perisian EOS.IO. Sebagai contoh, pemegang akaun boleh memetakan aplikasi media sosial pemegang akaun tersebut kepada kumpulan kebenaran "Rakan" pemegang akaun itu. Dengan pemetaan ini, mana-mana rakan boleh membuat posting sebagai pemegang akaun pada media sosial pemegang akaun tersebut. Mereka tetap akan menggunakan kunci mereka sendiri untuk menandatangani mesej tersebut, walaupun mereka membuat posting sebagai pemegang akaun. Ini bermakna ia sentiasa mungkin untuk mengenal pasti mana satu rakan yang menggunakan akaun dan dengan cara apa akaun tersebut di gunakan.
 
-### Evaluating Permissions
+### Menilai Kebenaran
 
 When delivering a message of type "**Action**", from **@alice** to **@bob** the EOS.IO software will first check to see if **@alice** has defined a permission mapping for **@bob.groupa.subgroup.Action**. If nothing is found then a mapping for **@bob.groupa.subgroup** then **@bob.groupa**, and lastly **@bob** will be checked. If no further match is found, then the assumed mapping will be to the named permission group **@alice.active**.
 
