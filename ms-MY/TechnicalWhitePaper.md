@@ -180,15 +180,15 @@ Setiap akaun di bolehkan untuk menentukan pemetaan di antara Kumpulan Pengendali
 
 Perisian EOS.IO akan mula memeriksa jika **@alice** telah menetapkan pemetaan kebenaran untuk **@bob.groupa.subgroup.Action**, apabila menyampaikan mesej jenis "**Tindakan**", dari**@alice** ke **@bob**. Jika tiada apa-apa dijumpai maka pemetaan untuk **@bob.groupa.subgroup** di ikuti dengan **@bob.groupa**, dan akhirnya **@bob** akan diperiksa. Sekiranya tiada lagi padanan dijumpai, pemetaan yang akan diandaikan adalah kepada kumpulan kebenaran diberi nama **@alice.active**.
 
-Sebaik sahaja pemetaan dikenalpasti maka autoriti menandatangani akan di sahkan dengan menggunakan ambangan proses pelbagai tanda tangan dan autoriti yang berkaitan dengan kebenaran diberi nama tersebut. If that fails, then it traverses up to the parent permission and ultimately to the owner permission, **@alice.owner**.
+Sebaik sahaja pemetaan dikenalpasti maka autoriti menandatangani akan di sahkan dengan menggunakan ambangan proses pelbagai tanda tangan dan autoriti yang berkaitan dengan kebenaran diberi nama tersebut. Jika ianya tidak berjaya, maka ianya akan melintasi kebenaran induk sehingga akhirnya pergi kepada kebenaran pemilik, **@alice.owner**.
 
 <img align="center" src="http://eos.io/wpimg/diagram2grayscale2.jpg" width="845.85px" height="500px" />
 
-#### Default Permission Groups
+#### Kumpulan Kebenaran Lalai
 
-The EOS.IO technology also allows all accounts to have an "owner" group which can do everything, and an "active" group which can do everything except change the owner group. All other permission groups are derived from "active".
+Semua akaun mempunyai kumpulan "pemilik" yang boleh melakukan segalanya, dan kumpulan "aktif" yang boleh melakukan segala-galanya kecuali mengubah kumpulan pemilik, telah di bolehkan dengan mengunakan teknologi EOS.IO. Semua kumpulan lain yang di beri kebenaran berasal dari "aktif".
 
-#### Parallel Evaluation of Permissions
+#### Evaluasi Kebenaran Selari
 
 The permission evaluation process is "read-only" and changes to permissions made by transactions do not take effect until the end of a block. This means that all keys and permission evaluation for all transactions can be executed in parallel. Furthermore, this means that a rapid validation of permission is possible without starting the costly application logic that would have to be rolled back. Lastly, it means that transaction permissions can be evaluated as pending transactions are received and do not need to be re-evaluated as they are applied.
 
