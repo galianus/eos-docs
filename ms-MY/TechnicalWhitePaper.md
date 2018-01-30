@@ -190,7 +190,7 @@ Semua akaun mempunyai kumpulan "pemilik" yang boleh melakukan segalanya, dan kum
 
 #### Evaluasi Kebenaran Selari
 
-The permission evaluation process is "read-only" and changes to permissions made by transactions do not take effect until the end of a block. This means that all keys and permission evaluation for all transactions can be executed in parallel. Furthermore, this means that a rapid validation of permission is possible without starting the costly application logic that would have to be rolled back. Lastly, it means that transaction permissions can be evaluated as pending transactions are received and do not need to be re-evaluated as they are applied.
+Proses penilaian kebenaran adalah "baca sahaja" dan perubahan kepada kebenaran yang dibuat oleh urus niaga tidak berkuatkuasa sehingga penghujung blok. Semua kunci dan penilaian kebenaran untuk semua urus niaga boleh dilaksanakan secara selari, di maksudkan di sini. Furthermore, this means that a rapid validation of permission is possible without starting the costly application logic that would have to be rolled back. Lastly, it means that transaction permissions can be evaluated as pending transactions are received and do not need to be re-evaluated as they are applied.
 
 All things considered, permission verification represents a significant percentage of the computation required to validate transactions. Making this a read-only and trivially parallelizable process enables a dramatic increase in performance.
 
