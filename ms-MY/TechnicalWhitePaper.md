@@ -174,7 +174,7 @@ Kontrak pertukaran kepada penghasilan pesanan kumpulan dan membatalkan secara be
 
 ### Pemetaan Kebenaran
 
-Setiap akaun di bolehkan untuk menentukan pemetaan di antara Kumpulan Pengendali Mesej yang dinamakan daripada sebarang akaun dan Tahap Kebenaran Nama mereka sendiri, di Perisian EOS.IO. For example, an account holder could map the account holder's social media application to the account holder's "Friend" permission group. With this mapping, any friend could post as the account holder on the account holder's social media. Even though they would post as the account holder, they would still use their own keys to sign the message. This means it is always possible to identify which friends used the account and in what way.
+Setiap akaun di bolehkan untuk menentukan pemetaan di antara Kumpulan Pengendali Mesej yang dinamakan daripada sebarang akaun dan Tahap Kebenaran Nama mereka sendiri, di Perisian EOS.IO. Sebagai contoh, pemegang akaun boleh memetakan aplikasi media sosial pemegang akaun tersebut kepada kumpulan kebenaran "Rakan" pemegang akaun itu. Dengan pemetaan ini, mana-mana rakan boleh membuat posting sebagai pemegang akaun pada media sosial pemegang akaun tersebut. Even though they would post as the account holder, they would still use their own keys to sign the message. This means it is always possible to identify which friends used the account and in what way.
 
 ### Evaluating Permissions
 
