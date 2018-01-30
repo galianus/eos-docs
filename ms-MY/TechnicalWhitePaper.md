@@ -172,7 +172,7 @@ Nama akaun adalah tahap tertinggi pada kumpulan pengendali mesej dan tahap teren
 
 Kontrak pertukaran kepada penghasilan pesanan kumpulan dan membatalkan secara berasingan akan deposit dan pengeluaran, adalah mungkin di bawah model ini. Perkumpulan melalui kontrak pertukaran ini adalah salah satu kemudahan bagi pengguna pertukaran tersebut.
 
-### Permission Mapping
+### Pemetaan Kebenaran
 
 EOS.IO software allows each account to define a mapping between a Named Message Handler Group of any account and their own Named Permission Level. For example, an account holder could map the account holder's social media application to the account holder's "Friend" permission group. With this mapping, any friend could post as the account holder on the account holder's social media. Even though they would post as the account holder, they would still use their own keys to sign the message. This means it is always possible to identify which friends used the account and in what way.
 
