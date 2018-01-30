@@ -178,7 +178,7 @@ Setiap akaun di bolehkan untuk menentukan pemetaan di antara Kumpulan Pengendali
 
 ### Menilai Kebenaran
 
-Perisian EOS.IO akan mula memeriksa jika **@alice** telah menetapkan pemetaan kebenaran untuk **@bob.groupa.subgroup.Action**, apabila menyampaikan mesej jenis "**Tindakan**", dari**@alice** ke **@bob**. If nothing is found then a mapping for **@bob.groupa.subgroup** then **@bob.groupa**, and lastly **@bob** will be checked. If no further match is found, then the assumed mapping will be to the named permission group **@alice.active**.
+Perisian EOS.IO akan mula memeriksa jika **@alice** telah menetapkan pemetaan kebenaran untuk **@bob.groupa.subgroup.Action**, apabila menyampaikan mesej jenis "**Tindakan**", dari**@alice** ke **@bob**. Jika tiada apa-apa dijumpai maka pemetaan untuk **@bob.groupa.subgroup** di ikuti dengan **@bob.groupa**, dan akhirnya **@bob** akan diperiksa. Sekiranya tiada lagi padanan dijumpai, pemetaan yang akan diandaikan adalah kepada kumpulan yang di beri kebenaran bernama **@alice.active**.
 
 Once a mapping is identified then signing authority is validated using the threshold multi-signature process and the authority associated with the named permission. If that fails, then it traverses up to the parent permission and ultimately to the owner permission, **@alice.owner**.
 
