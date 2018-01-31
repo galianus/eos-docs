@@ -192,7 +192,7 @@ Semua akaun mempunyai kumpulan "pemilik" yang boleh melakukan segalanya, dan kum
 
 Proses penilaian kebenaran adalah "baca sahaja" dan perubahan kepada kebenaran yang dibuat oleh urus niaga tidak berkuatkuasa sehingga penghujung blok. Semua kunci dan penilaian kebenaran untuk semua urus niaga boleh dilaksanakan secara selari, di maksudkan di sini. Selain itu, ini juga bermakna berkemungkinan pengesahan kebenaran yang cepat boleh dilakukan tanpa memulakan logika aplikasi yang mahal yang perlu dilancarkan semula. Akhir sekali, ini bermakna kebenaran urus niaga boleh dinilai sebagai urus niaga yang belum selesai transaksinya tetapi telah diterima dan tidak perlu dinilai semula kerana ianya sedang digunakan.
 
-Dengan mempertimbangkan kesemua perkara, pengesahan kebenaran mewakili peratusan yang penting daripada pengiraan yang diperlukan untuk mengesahkan transaksi. Making this a read-only and trivially parallelizable process enables a dramatic increase in performance.
+Dengan mempertimbangkan kesemua perkara, pengesahan kebenaran mewakili peratusan yang penting daripada pengiraan yang diperlukan untuk mengesahkan transaksi. Menjadikan ianya proses baca sahaja dan boleh selari secara umumnya membolehkan peningkatan yang dramatik dalam prestasi.
 
 When replaying the blockchain to regenerate the deterministic state from the log of messages there is no need to evaluate the permissions again. The fact that a transaction is included in a known good block is sufficient to skip this step. This dramatically reduces the computational load associated with replaying an ever growing blockchain.
 
