@@ -202,11 +202,11 @@ Masa adalah komponen kritikal dalam keselamatan. Dalam kebanyakan kes, tidak mun
 
 Pengguna kemudiannya boleh menerima notis melalui e-mel atau mesej teks apabila salah satu daripada mesej ini telah disiarkan. Jikalau mereka tidak memberikan kebenaran tersebut, maka mereka boleh menggunakan proses pemulihan akaun untuk memulihkan akaun mereka dan menarik kembali mesej tersebut.
 
-Kelewatan yang diperlukan bergantung kepada akan bagaimana sensitif operasi tersebut. Membayar untuk kopi tidak perlu dilewatkan dan tidak dapat dibalikkan dalam beberapa saat, sementara membeli rumah mungkin memerlukan tempoh pelepasan setinggi 72 jam. Transferring an entire account to new control may take up to 30 days. The exact delays chosen are up to application developers and users.
+Kelewatan yang diperlukan bergantung kepada akan bagaimana sensitif operasi tersebut. Membayar untuk kopi tidak perlu dilewatkan dan tidak dapat dibalikkan dalam beberapa saat, sementara membeli rumah mungkin memerlukan tempoh pelepasan setinggi 72 jam. Proses pemindahkan keseluruhan akaun ke kawalan baru mungkin mengambil masa sehingga 30 hari. Ketepatan akan kelewatan yang dipilih adalah terpulang semata-mata kepada pemaju dan pengguna aplikasi.
 
-## Recovery from Stolen Keys
+## Pemulihan daripada Kekunci yang Dicuri
 
-The EOS.IO software provides users a way to restore control of their account when their keys are stolen. An account owner can use any owner key that was active in the last 30 days along with approval from their designated account recovery partner to reset the owner key on their account. The account recovery partner cannot reset control of the account without the help of the owner.
+Cara pemulihan kawalan akaun di sediakan di perisian EOS.IO untuk pengguna, apabila kunci mereka dicuri. An account owner can use any owner key that was active in the last 30 days along with approval from their designated account recovery partner to reset the owner key on their account. The account recovery partner cannot reset control of the account without the help of the owner.
 
 There is nothing for the hacker to gain by attempting to go through the recovery process because they already "control" the account. Furthermore, if they did go through the process, the recovery partner would likely demand identification and multi-factor authentication (phone and email). This would likely compromise the hacker or gain the hacker nothing in the process.
 
