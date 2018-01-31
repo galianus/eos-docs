@@ -210,7 +210,7 @@ Cara pemulihan kawalan akaun di sediakan di perisian EOS.IO untuk pengguna, apab
 
 Penggodam tidak akan memperolehi apa-apa keuntungan dengan percubaan untuk melalui proses pemulihan kerana mereka sudah pun "mengawal" akaun. Lebih-lebih lagi, rakan kongsi pemulihan akaun berkemungkinan akan meminta pengenalan dan pengesahan pelbagai faktor (telefon dan e-mel), jika mereka melalui proses ini. Ini mungkin akan menjejaskan penggodam itu atau penggodam itu tidak akan mendapat apa-apa yang menguntungkan dalam proses itu.
 
-This process is also very different from a simple multi-signature arrangement. With a multi-signature transaction, there is another company that is party to every transaction that is executed, but with the recovery process the agent is only a party to the recovery process and has no power over the day-to-day transactions. This dramatically reduces costs and legal liabilities for everyone involved.
+Proses ini juga sangat berbeza dengan pengaturan pelbagai tandatangan yang mudah. With a multi-signature transaction, there is another company that is party to every transaction that is executed, but with the recovery process the agent is only a party to the recovery process and has no power over the day-to-day transactions. This dramatically reduces costs and legal liabilities for everyone involved.
 
 # Deterministic Parallel Execution of Applications
 
