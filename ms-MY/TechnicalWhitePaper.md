@@ -208,7 +208,7 @@ Kelewatan yang diperlukan bergantung kepada akan bagaimana sensitif operasi ters
 
 Cara pemulihan kawalan akaun di sediakan di perisian EOS.IO untuk pengguna, apabila kunci mereka dicuri. Sebarang kunci pemilik yang aktif dalam 30 hari yang terakhir bersama dengan kelulusan daripada rakan kongsi pemulihan akaun mereka yang ditetapkan, boleh digunakan oleh pemilik akaun untuk menetapkan semula kunci pemilik pada akaun mereka. Tanpa bantuan pemiliknya, rakan pemulihan akaun tidak boleh menetapkan semula kawalan akaun.
 
-There is nothing for the hacker to gain by attempting to go through the recovery process because they already "control" the account. Furthermore, if they did go through the process, the recovery partner would likely demand identification and multi-factor authentication (phone and email). This would likely compromise the hacker or gain the hacker nothing in the process.
+Penggodam tidak akan memperolehi apa-apa keuntungan dengan percubaan untuk melalui proses pemulihan kerana mereka sudah pun "mengawal" akaun. Lebih-lebih lagi, rakan kongsi pemulihan akaun berkemungkinan akan meminta pengenalan dan pengesahan pelbagai faktor (telefon dan e-mel), jika mereka melalui proses ini. This would likely compromise the hacker or gain the hacker nothing in the process.
 
 This process is also very different from a simple multi-signature arrangement. With a multi-signature transaction, there is another company that is party to every transaction that is executed, but with the recovery process the agent is only a party to the recovery process and has no power over the day-to-day transactions. This dramatically reduces costs and legal liabilities for everyone involved.
 
