@@ -200,9 +200,9 @@ Untuk menjana semula keadaan deterministik dari log mesej apabila memainkan semu
 
 Masa adalah komponen kritikal dalam keselamatan. Dalam kebanyakan kes, tidak mungkin akan kita ketahui jikalau kunci persendirian telah dicuri, sehingganya ia telah digunakan. Apabila orang mempunyai aplikasi yang memerlukan kekunci disimpan pada komputer yang disambungkan ke internet untuk penggunaan harian, maka keselamatan berasaskan masa akan menjadi lebih kritikal. Perisian EOS.IO membolehkan pemaju aplikasi untuk menunjukkan mesej tertentu yang mesti menunggu tempoh masa yang minimum selepas dimasukkan ke dalam blok sebelum mereka boleh digunakan. Pada masa ini mereka masih boleh dibatalkan.
 
-Pengguna kemudiannya boleh menerima notis melalui e-mel atau mesej teks apabila salah satu daripada mesej ini telah disiarkan. If they did not authorize it, then they can use the account recovery process to recover their account and retract the message.
+Pengguna kemudiannya boleh menerima notis melalui e-mel atau mesej teks apabila salah satu daripada mesej ini telah disiarkan. Jikalau mereka tidak memberikan kebenaran tersebut, maka mereka boleh menggunakan proses pemulihan akaun untuk memulihkan akaun mereka dan menarik kembali mesej tersebut.
 
-The required delay depends upon how sensitive an operation is. Paying for a coffee can have no delay and be irreversible in seconds, while buying a house may require a 72 hour clearing period. Transferring an entire account to new control may take up to 30 days. The exact delays chosen are up to application developers and users.
+Kelewatan yang diperlukan bergantung kepada akan bagaimana sensitif operasi tersebut. Membayar untuk kopi tidak perlu dilewatkan dan tidak dapat dibalikkan dalam beberapa saat, sementara membeli rumah mungkin memerlukan tempoh pelepasan setinggi 72 jam. Transferring an entire account to new control may take up to 30 days. The exact delays chosen are up to application developers and users.
 
 ## Recovery from Stolen Keys
 
