@@ -216,9 +216,9 @@ Proses ini juga sangat berbeza dengan pengaturan pelbagai tandatangan yang mudah
 
 Persetujuan rantaian blok bergantung kepada tingkah laku deterministik (boleh dihasilkan semula). Ini bermakna semua pelaksanaan selari mesti bebas daripada penggunaan objek pengecualian bersama atau pengunci primitif yang lain. Tanpa kunci, mesti ada cara lain untuk menjamin bahawa semua akaun hanya boleh membaca dan menulis pangkalan data peribadi mereka sendiri. Ini juga bermakna bahawa setiap akaun memproses mesej secara berurutan dan keselarian itu akan berada di tahap akaun.
 
-Ianya adalah tugas pengeluar blok untuk menyusun penghantaran mesej ke dalam jaluran yang bebas supaya mereka boleh dinilaikan secara selari. Keadaan setiap akaun hanya akan bergantung kepada mesej yang dihantar kepadanya. The schedule is the output of a block producer and will be deterministically executed, but the process for generating the schedule need not be deterministic. This means that block producers can utilize parallel algorithms to schedule transactions.
+Ianya adalah tugas pengeluar blok untuk menyusun penghantaran mesej ke dalam jaluran yang bebas supaya mereka boleh dinilaikan secara selari. Keadaan setiap akaun hanya akan bergantung kepada mesej yang dihantar kepadanya. Jadual adalah output kepada pengeluar blok dan akan dilaksanakan secara deterministik, tetapi proses untuk menjana jadual tidak di perlukan secara deterministik. Ini bermakna algoritma selari boleh di gunakan oleh pengeluar blok untuk menjadualkan transaksi.
 
-Part of parallel execution means that when a script generates a new message it does not get delivered immediately, instead it is scheduled to be delivered in the next cycle. The reason it cannot be delivered immediately is because the receiver may be actively modifying its own state in another thread.
+Sebahagian daripada pelaksanaan selari bermakna apabila skrip menghasilkan mesej baru dan ianya tidak disampaikan dengan segera, tetapi ianya dijadualkan dihantar dalam kitaran berikutnya. The reason it cannot be delivered immediately is because the receiver may be actively modifying its own state in another thread.
 
 ## Minimizing Communication Latency
 
