@@ -194,11 +194,11 @@ Proses penilaian kebenaran adalah "baca sahaja" dan perubahan kepada kebenaran y
 
 Dengan mempertimbangkan kesemua perkara, pengesahan kebenaran mewakili peratusan yang penting daripada pengiraan yang diperlukan untuk mengesahkan transaksi. Menjadikan ianya proses baca sahaja dan boleh selari secara umumnya membolehkan peningkatan yang dramatik dalam prestasi.
 
-Untuk menjana semula keadaan deterministik dari log mesej apabila memainkan semula rantaian blok, tidak memerlukan penilaian semula kebenaran. Ternyata ianya mencukupi untuk melangkau langkah ini, jikalau transaksi tersebut dimasukkan ke dalam blok yang diketahui baik. This dramatically reduces the computational load associated with replaying an ever growing blockchain.
+Untuk menjana semula keadaan deterministik dari log mesej apabila memainkan semula rantaian blok, tidak memerlukan penilaian semula kebenaran. Ternyata ianya mencukupi untuk melangkau langkah ini, jikalau transaksi tersebut dimasukkan ke dalam blok yang diketahui baik. Ini secara dramatiknya akan mengurangkan beban pengiraan yang berkaitan dengan memainkan semula rantaian blok yang semakin meningkat.
 
-## Messages with Mandatory Delay
+## Mesej dengan Kelewatan yang Wajib
 
-Time is a critical component of security. In most cases, it is not possible to know if a private key has been stolen until it has been used. Time based security is even more critical when people have applications that require keys be kept on computers connected to the internet for daily use. The EOS.IO software enables application developers to indicate that certain messages must wait a minimum period of time after being included in a block before they can be applied. During this time they can be cancelled.
+Masa adalah komponen kritikal dalam keselamatan. Dalam kebanyakan kes, tidak mungkin akan kita ketahui jikalau kunci persendirian telah dicuri, sehingganya ia telah digunakan. Apabila orang mempunyai aplikasi yang memerlukan kekunci disimpan pada komputer yang disambungkan ke internet untuk penggunaan harian, maka keselamatan berasaskan masa akan menjadi lebih kritikal. The EOS.IO software enables application developers to indicate that certain messages must wait a minimum period of time after being included in a block before they can be applied. During this time they can be cancelled.
 
 Users can then receive notice via email or text message when one of these messages is broadcast. If they did not authorize it, then they can use the account recovery process to recover their account and retract the message.
 
