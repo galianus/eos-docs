@@ -210,11 +210,11 @@ Cara pemulihan kawalan akaun di sediakan di perisian EOS.IO untuk pengguna, apab
 
 Penggodam tidak akan memperolehi apa-apa keuntungan dengan percubaan untuk melalui proses pemulihan kerana mereka sudah pun "mengawal" akaun. Lebih-lebih lagi, rakan kongsi pemulihan akaun berkemungkinan akan meminta pengenalan dan pengesahan pelbagai faktor (telefon dan e-mel), jika mereka melalui proses ini. Ini mungkin akan menjejaskan penggodam itu atau penggodam itu tidak akan mendapat apa-apa yang menguntungkan dalam proses itu.
 
-Proses ini juga sangat berbeza dengan pengaturan pelbagai tandatangan yang mudah. With a multi-signature transaction, there is another company that is party to every transaction that is executed, but with the recovery process the agent is only a party to the recovery process and has no power over the day-to-day transactions. This dramatically reduces costs and legal liabilities for everyone involved.
+Proses ini juga sangat berbeza dengan pengaturan pelbagai tandatangan yang mudah. Dengan urusniaga pelbagai tandatangan, kepada setiap transaksi yang dilaksanakan terdapat satu lagi syarikat yang menjadi parti, tetapi dengan proses pemulihan, agen itu hanya boleh menjadi parti sahaja dalam proses pemulihan dan tidak mempunyai kuasa atas transaksi harian. Ini secara dramatiknya mengurangkan kos dan liabiliti perundangan untuk semua orang yang terlibat.
 
-# Deterministic Parallel Execution of Applications
+# Pelaksanaan Aplikasi Deterministik yang Selari
 
-Blockchain consensus depends upon deterministic (reproducible) behavior. This means all parallel execution must be free from the use of mutexes or other locking primitives. Without locks there must be some way to guarantee that all accounts can only read and write their own private database. It also means that each account processes messages sequentially and that parallelism will be at the account level.
+Persetujuan rantaian blok bergantung kepada tingkah laku deterministik (boleh dihasilkan semula). This means all parallel execution must be free from the use of mutexes or other locking primitives. Without locks there must be some way to guarantee that all accounts can only read and write their own private database. It also means that each account processes messages sequentially and that parallelism will be at the account level.
 
 In an EOS.IO software-based blockchain, it is the job of the block producer to organize message delivery into independent threads so that they can be evaluated in parallel. The state of each account depends only upon the messages delivered to it. The schedule is the output of a block producer and will be deterministically executed, but the process for generating the schedule need not be deterministic. This means that block producers can utilize parallel algorithms to schedule transactions.
 
