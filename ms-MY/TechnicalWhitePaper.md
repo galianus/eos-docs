@@ -4,7 +4,7 @@
 
 **Abstrak:** Perisian EOS.IO memperkenalkan senibina rantain blok baru yang direka untuk membolehkan aplikasi penskalaan yang menyeluruh secara menegak dan mendatar. Ini dicapai dengan mewujudkan sistem operasi sejajar dengan aplikasi yang dibina. Perisian ini menyediakan akaun, pengesahan, pangkalan data, komunikasi tidak segerak dan penjadualan aplikasi di seluruh beratus-ratus teras CPU atau kluster. Teknologi yang dihasilkan adalah seni bina rantaian blok yang boleh berskala kepada berjuta transaksi sesaat, tiada yuran transaksi kepada pengguna, dan membolehkan penggunaan aplikasi desentralisasi yang cepat dan mudah.
 
-**SILA AMBIL PERHATIKAN: TOKEN KRIPTOGRAFI YANG DIMAKSUDKAN DI KERTAS PUTIH INI ADALAH TOKENS KRIPTOGRAFI PADA RANTAIAN BLOK YANG BOLEH MENERIMA PAKAI PERISIAN EOS.IO. IANYA BUKAN DIMAKSUDKAN DENGAN TOKEN ERC-20 YANG BOLEH DIGUNA PAKAI DENGAN RANTAIAN BLOK ETHEREUM, OLEH KERANA TOKEN ERC-20 DIGUNAKAN SEMATA-MATA UNTUK DISTRIBUSI TOKEN EOS SAHAJA DAN BUKANNYA UNTUK DIKENDALIKAN SEBAGAI TOKEN PERANTARAAN DI DALAM RANTAIAN BLOK EOS.IO.**
+**SILA AMBIL PERHATIAN: TOKEN KRIPTOGRAFI YANG DIMAKSUDKAN DI KERTAS PUTIH INI ADALAH TOKENS KRIPTOGRAFI PADA RANTAIAN BLOK YANG BOLEH MENERIMA PAKAI PERISIAN EOS.IO. IANYA BUKAN DIMAKSUDKAN DENGAN TOKEN ERC-20 YANG BOLEH DIGUNA PAKAI DENGAN RANTAIAN BLOK ETHEREUM, OLEH KERANA TOKEN ERC-20 DIGUNAKAN SEMATA-MATA UNTUK DISTRIBUSI TOKEN EOS SAHAJA DAN BUKANNYA UNTUK DIKENDALIKAN SEBAGAI TOKEN PERANTARAAN DI DALAM RANTAIAN BLOK EOS.IO.**
 
 Hakcipta Terpelihara © 2017 block.one
 
