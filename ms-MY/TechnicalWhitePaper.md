@@ -206,7 +206,7 @@ Kelewatan yang diperlukan bergantung kepada akan bagaimana sensitif operasi ters
 
 ## Pemulihan daripada Kekunci yang Dicuri
 
-Cara pemulihan kawalan akaun di sediakan di perisian EOS.IO untuk pengguna, apabila kunci mereka dicuri. An account owner can use any owner key that was active in the last 30 days along with approval from their designated account recovery partner to reset the owner key on their account. The account recovery partner cannot reset control of the account without the help of the owner.
+Cara pemulihan kawalan akaun di sediakan di perisian EOS.IO untuk pengguna, apabila kunci mereka dicuri. Sebarang kunci pemilik yang aktif dalam 30 hari yang terakhir bersama dengan kelulusan daripada rakan kongsi pemulihan akaun mereka yang ditetapkan, boleh digunakan oleh pemilik akaun untuk menetapkan semula kunci pemilik pada akaun mereka. Tanpa bantuan pemiliknya, rakan pemulihan akaun tidak boleh menetapkan semula kawalan akaun.
 
 There is nothing for the hacker to gain by attempting to go through the recovery process because they already "control" the account. Furthermore, if they did go through the process, the recovery partner would likely demand identification and multi-factor authentication (phone and email). This would likely compromise the hacker or gain the hacker nothing in the process.
 
