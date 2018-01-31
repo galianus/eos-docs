@@ -218,7 +218,7 @@ Persetujuan rantaian blok bergantung kepada tingkah laku deterministik (boleh di
 
 Ianya adalah tugas pengeluar blok untuk menyusun penghantaran mesej ke dalam jaluran yang bebas supaya mereka boleh dinilaikan secara selari. Keadaan setiap akaun hanya akan bergantung kepada mesej yang dihantar kepadanya. Jadual adalah output kepada pengeluar blok dan akan dilaksanakan secara deterministik, tetapi proses untuk menjana jadual tidak di perlukan secara deterministik. Ini bermakna algoritma selari boleh di gunakan oleh pengeluar blok untuk menjadualkan transaksi.
 
-Sebahagian daripada pelaksanaan selari bermakna apabila skrip menghasilkan mesej baru dan ianya tidak disampaikan dengan segera, tetapi ianya dijadualkan dihantar dalam kitaran berikutnya. The reason it cannot be delivered immediately is because the receiver may be actively modifying its own state in another thread.
+Sebahagian daripada pelaksanaan selari bermakna apabila skrip menghasilkan mesej baru dan ianya tidak disampaikan dengan segera, tetapi ianya dijadualkan dihantar dalam kitaran berikutnya. Mesej tidak dapat disampaikan dengan serta-merta oleh kerana penerima mungkin secara aktif sedang mengubah keadaannya sendiri dalam jaluran yang lain.
 
 ## Minimizing Communication Latency
 
