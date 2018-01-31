@@ -194,7 +194,7 @@ Proses penilaian kebenaran adalah "baca sahaja" dan perubahan kepada kebenaran y
 
 Dengan mempertimbangkan kesemua perkara, pengesahan kebenaran mewakili peratusan yang penting daripada pengiraan yang diperlukan untuk mengesahkan transaksi. Menjadikan ianya proses baca sahaja dan boleh selari secara umumnya membolehkan peningkatan yang dramatik dalam prestasi.
 
-When replaying the blockchain to regenerate the deterministic state from the log of messages there is no need to evaluate the permissions again. The fact that a transaction is included in a known good block is sufficient to skip this step. This dramatically reduces the computational load associated with replaying an ever growing blockchain.
+Untuk menjana semula keadaan deterministik dari log mesej apabila memainkan semula rantaian blok, tidak memerlukan penilaian semula kebenaran. Ternyata ianya mencukupi untuk melangkau langkah ini, jikalau transaksi tersebut dimasukkan ke dalam blok yang diketahui baik. This dramatically reduces the computational load associated with replaying an ever growing blockchain.
 
 ## Messages with Mandatory Delay
 
