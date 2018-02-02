@@ -280,10 +280,10 @@ Penilaian subjektif mengenai kos pengiraan membebaskan rantaian blok daripada un
 Semua rantaian blok mempunyai kekangan sumber dan memerlukan sistem untuk mencegah penyalahgunaan. Dengan blockchain yang menggunakan perisian EOS.IO, terdapat tiga kelas utama akan sumber yang digunakan oleh aplikasi:
 
 1. Lebar jalur dan Penyimpanan Log (Cakera);
-2. Computation and Computational Backlog (CPU); and
-3. State Storage (RAM).
+2. Pengiraan dan Tunggakan Komputasi (CPU); dan
+3. Simpanan Keadaan (RAM).
 
-Bandwidth and computation have two components, instantaneous usage and long-term usage. A blockchain maintains a log of all messages and this log is ultimately stored and downloaded by all full nodes. With the log of messages it is possible to reconstruct the state of all applications.
+Jalur lebar dan komputasi mempunyai dua komponen, penggunaan serta-merta dan penggunaan jangka panjang. Rantaian blok mengekalkan log semua mesej dan log ini akhirnya disimpan dan dimuat turun oleh semua nod penuh. Dengan log mesej, ianya adalah mungkin untuk membina semula keadaan semua aplikasi.
 
 The computational debt is calculations that must be performed to regenerate state from the message log. If the computational debt grows too large then it becomes necessary to take snapshots of the blockchain's state and discard the blockchain's history. If computational debt grows too quickly then it may take 6 months to replay 1 year worth of transactions. It is critical, therefore, that the computational debt be carefully managed.
 
