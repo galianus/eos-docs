@@ -280,12 +280,12 @@ Penilaian subjektif mengenai kos pengiraan membebaskan rantaian blok daripada un
 Semua rantaian blok mempunyai kekangan sumber dan memerlukan sistem untuk mencegah penyalahgunaan. Dengan blockchain yang menggunakan perisian EOS.IO, terdapat tiga kelas utama akan sumber yang digunakan oleh aplikasi:
 
 1. Lebar jalur dan Penyimpanan Log (Cakera);
-2. Pengiraan dan Tunggakan Komputasi (CPU); dan
+2. Pengiraan dan Tunggakan Pengkomputeran (CPU); dan
 3. Simpanan Keadaan (RAM).
 
-Jalur lebar dan komputasi mempunyai dua komponen, penggunaan serta-merta dan penggunaan jangka panjang. Rantaian blok mengekalkan log semua mesej dan log ini akhirnya disimpan dan dimuat turun oleh semua nod penuh. Dengan log mesej, ianya adalah mungkin untuk membina semula keadaan semua aplikasi.
+Jalur lebar dan pengiraan mempunyai dua komponen, penggunaan serta-merta dan penggunaan jangka panjang. Rantaian blok mengekalkan log semua mesej dan log ini akhirnya disimpan dan dimuat turun oleh semua nod penuh. Dengan log mesej, ianya adalah mungkin untuk membina semula keadaan semua aplikasi.
 
-The computational debt is calculations that must be performed to regenerate state from the message log. If the computational debt grows too large then it becomes necessary to take snapshots of the blockchain's state and discard the blockchain's history. If computational debt grows too quickly then it may take 6 months to replay 1 year worth of transactions. It is critical, therefore, that the computational debt be carefully managed.
+Hutang pengkomputeran adalah pengiraan yang mesti dilakukan untuk menjana semula keadaan dari log mesej. If the computational debt grows too large then it becomes necessary to take snapshots of the blockchain's state and discard the blockchain's history. If computational debt grows too quickly then it may take 6 months to replay 1 year worth of transactions. It is critical, therefore, that the computational debt be carefully managed.
 
 Blockchain state storage is information that is accessible from application logic. It includes information such as order books and account balances. If the state is never read by the application then it should not be stored. For example, blog post content and comments are not read by application logic so they should not be stored in the blockchain's state. Meanwhile the existence of a post/comment, the number of votes, and other properties do get stored as part of the blockchain's state.
 
