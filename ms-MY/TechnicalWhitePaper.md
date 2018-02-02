@@ -271,15 +271,15 @@ Secara umumnya selagi 1 pengeluar blok menganggap urusniaga tersebut sebagai sah
 
 Dalam sesetengah kes, pengeluar mungkin boleh mencipta satu blok yang merangkumi urusniaga yang merupakan perintah magnitud di luar julat yang boleh diterima. Dalam kes ini, pengeluar blok berikutnya boleh memilih untuk menolak blok tersebut dan ikatan tersebut akan dipecahkan oleh pengeluar yang ketiga. Ini tidak berbeza daripada apa yang akan terjadi sekiranya blok besar menyebabkan kelewatan penyebaran rangkaian. Komuniti akan melihat corak penyalahgunaan dan akhirnya mengeluarkan undi dari pengeluar penyangak.
 
-This subjective evaluation of computational cost frees the blockchain from having to precisely and deterministically measure how long something takes to run. With this design there is no need to precisely count instructions which dramatically increases opportunities for optimization without breaking consensus.
+Penilaian subjektif mengenai kos pengiraan membebaskan rantaian blok daripada unsur pengukuran secara tepat dan berdeterministik, akan berapa lama sesuatu diperlukan untuk dijalankan. Dengan reka bentuk ini tidak perlu akan ketepatan untuk mengira arahan, yang secara dramatiknya akan meningkatkan peluang untuk pengoptimuman tanpa melanggar persetujuan.
 
-# Token Model and Resource Usage
+# Model Token dan Penggunaan Sumber
 
-**PLEASE NOTE: CRYPTOGRAPHIC TOKENS REFERRED TO IN THIS WHITE PAPER REFER TO CRYPTOGRAPHIC TOKENS ON A LAUNCHED BLOCKCHAIN THAT ADOPTS THE EOS.IO SOFTWARE. THEY DO NOT REFER TO THE ERC-20 COMPATIBLE TOKENS BEING DISTRIBUTED ON THE ETHEREUM BLOCKCHAIN IN CONNECTION WITH THE EOS TOKEN DISTRIBUTION.**
+**SILA AMBIL PERHATIAN: TOKEN KRIPTOGRAFI YANG DIMAKSUDKAN DI KERTAS PUTIH INI ADALAH TOKENS KRIPTOGRAFI PADA RANTAIAN BLOK YANG BOLEH MENERIMA PAKAI PERISIAN EOS.IO. IANYA BUKAN DIMAKSUDKAN DENGAN TOKEN ERC-20 YANG BOLEH DIGUNA PAKAI DENGAN RANTAIAN BLOK ETHEREUM, OLEH KERANA TOKEN ERC-20 DIGUNAKAN SEMATA-MATA UNTUK DISTRIBUSI TOKEN EOS SAHAJA DAN BUKANNYA UNTUK DIKENDALIKAN SEBAGAI TOKEN PERANTARAAN DI DALAM RANTAIAN BLOK EOS. IO.**
 
-All blockchains are resource constrained and require a system to prevent abuse. With a blockchain that uses EOS.IO software, there are three broad classes of resources that are consumed by applications:
+Semua rantaian blok mempunyai kekangan sumber dan memerlukan sistem untuk mencegah penyalahgunaan. Dengan blockchain yang menggunakan perisian EOS.IO, terdapat tiga kelas utama akan sumber yang digunakan oleh aplikasi:
 
-1. Bandwidth and Log Storage (Disk);
+1. Lebar jalur dan Penyimpanan Log (Cakera);
 2. Computation and Computational Backlog (CPU); and
 3. State Storage (RAM).
 
