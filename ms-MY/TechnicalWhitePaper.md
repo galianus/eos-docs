@@ -222,7 +222,7 @@ Sebahagian daripada pelaksanaan selari bermakna apabila skrip menghasilkan mesej
 
 ## Meminimumkan Kelewatan Komunikasi
 
-Kelewatan adalah masa yang diperlukan untuk satu akaun untuk menghantar mesej ke akaun lain dan kemudian menerima respons. Matlamatnya adalah untuk membolehkan dua akaun untuk menukar mesej berulang alik dalam satu blok tanpa menunggu 3 saat di antara setiap mesej. Perisian EOS.IO membahagikan setiap blok ke dalam kitaran, untuk membolehkan ini. Setiap kitaran dibahagikan kepada jaluran dan setiap jaluran pula mengandungi senarai transaksi. Each transaction contains a set of messages to be delivered. This structure can be visualized as a tree where alternating layers are processed sequentially and in parallel.
+Kelewatan adalah masa yang diperlukan untuk satu akaun untuk menghantar mesej ke akaun lain dan kemudian menerima respons. Matlamatnya adalah untuk membolehkan dua akaun untuk menukar mesej berulang alik dalam satu blok tanpa menunggu 3 saat di antara setiap mesej. Perisian EOS.IO membahagikan setiap blok ke dalam kitaran, untuk membolehkan ini. Setiap kitaran dibahagikan kepada jaluran dan setiap jaluran pula mengandungi senarai transaksi. Setiap transaksi pula mengandungi satu set mesej yang akan dihantar. Struktur ini dapat divisualisasikan sebagai pokok di mana lapisan silih berganti diproses secara berurutan dan selari.
 
         Block
     
