@@ -269,7 +269,7 @@ Pada rantaian blok yang dilancarkan yang mengguna pakai perisian EOS.IO, di peri
 
 Secara umumnya selagi 1 pengeluar blok menganggap urusniaga tersebut sebagai sah dan di bawah had penggunaan sumber, maka semua pengeluar blok lain juga akan menerimanya, tetapi mungkin ianya akan mengambil masa sehingga 1 minit untuk urusniaga itu untuk mencari pengeluar tersebut.
 
-In some cases a producer may create a block that includes transactions that are an order of magnitude outside of acceptable ranges. In this case the next block producer may opt to reject the block and the tie will be broken by the third producer. This is no different than what would happen if a large block caused network propagation delays. The community would notice a pattern of abuse and eventually remove votes from the rogue producer.
+Dalam sesetengah kes, pengeluar mungkin boleh mencipta satu blok yang merangkumi urusniaga yang merupakan perintah magnitud di luar julat yang boleh diterima. Dalam kes ini, pengeluar blok berikutnya boleh memilih untuk menolak blok tersebut dan ikatan tersebut akan dipecahkan oleh pengeluar yang ketiga. Ini tidak berbeza daripada apa yang akan terjadi sekiranya blok besar menyebabkan kelewatan penyebaran rangkaian. Komuniti akan melihat corak penyalahgunaan dan akhirnya mengeluarkan undi dari pengeluar penyangak.
 
 This subjective evaluation of computational cost frees the blockchain from having to precisely and deterministically measure how long something takes to run. With this design there is no need to precisely count instructions which dramatically increases opportunities for optimization without breaking consensus.
 
