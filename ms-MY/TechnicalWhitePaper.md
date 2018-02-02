@@ -247,11 +247,11 @@ Tanpa mengubah keadaan dalaman sesetengah akaun, ianya mungkin dapat memproses m
 
 ## Transaksi secara Pantas dengan Akaun yang Berbilang
 
-Kadang kala ianya baik untuk memastikan mesej yang disampaikan kepada dan diterima oleh pelbagai akaun berlaku secara pantas. In this case both messages are placed in one transaction and both accounts will be assigned the same thread and the messages applied sequentially. This situation is not ideal for performance and when it comes to "billing" users for usage, they will get billed by the number of unique accounts referenced by a transaction.
+Kadang kala ianya baik untuk memastikan mesej yang disampaikan kepada dan diterima oleh pelbagai akaun berlaku secara pantas. Dalam kes ini kedua-dua mesej diletakkan dalam satu transaksi dan kedua-dua akaun akan diberikan kepada jaluran yang sama dan mesej tersebut akan dijalankan secara berurutan. Keadaan ini tidak sesuai untuk prestasi dan apabila ianya datang kepada "pengebilan" pengguna untuk pengunaan, mereka akan dibilkan dengan bilangan akaun unik yang dirujuk oleh transaksi.
 
-For performance and cost reasons it is best to minimize atomic operations involving two or more heavily utilized accounts.
+Adalah lebih baik untuk meminimumkan operasi atom yang melibatkan dua atau lebih banyak akaun yang digunakan, oleh kerana faktor prestasi dan kos.
 
-## Partial Evaluation of Blockchain State
+## Penilaian Separa keadaan Rantaian Blok
 
 Penskalaan teknologi rantaian blok memerlukan komponen yang bermodul. Semua orang tidak perlu menjalankan segala-galanya, terutama jika mereka hanya perlu menggunakan sebahagian subset yang kecil daripada aplikasi keseluruhan.
 
