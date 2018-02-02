@@ -255,9 +255,9 @@ For performance and cost reasons it is best to minimize atomic operations involv
 
 Penskalaan teknologi rantaian blok memerlukan komponen yang bermodul. Semua orang tidak perlu menjalankan segala-galanya, terutama jika mereka hanya perlu menggunakan sebahagian subset yang kecil daripada aplikasi keseluruhan.
 
-Pemaju aplikasi pertukaran menggunakan nod penuh untuk tujuan memaparkan keadaan pertukaran kepada penggunanya. Aplikasi pertukaran ini tidak memerlukan keadaan yang berkaitan dengan aplikasi media sosial. Mana-mana nod penuh boleh memilih mana-mana subset aplikasi untuk dijalankan di Perisian EOS.IO. Messages delivered to other applications are safely ignored because an application's state is derived entirely from the messages that are delivered to it.
+Pemaju aplikasi pertukaran menggunakan nod penuh untuk tujuan memaparkan keadaan pertukaran kepada penggunanya. Aplikasi pertukaran ini tidak memerlukan keadaan yang berkaitan dengan aplikasi media sosial. Mana-mana nod penuh boleh memilih mana-mana subset aplikasi untuk dijalankan di Perisian EOS.IO. Mesej yang dihantar ke aplikasi lain akan selamatnya diabaikan kerana keadaan sesuatu aplikasi diperoleh sepenuhnya daripada mesej yang dihantar kepadanya.
 
-This has some significant implications on communication with other accounts. Most significantly it cannot be assumed that the state of the other account is accessible on the same machine. It also means that while it is tempting to enable "locks" that allow one account to synchronously call another account, this design pattern breaks down if the other account is not resident in memory.
+Ini mempunyai beberapa implikasi yang ketara terhadap komunikasi dengan akaun lain. Yang paling utamanya ialah, ianya tidak boleh diandaikan bahawa keadaan akaun lain boleh diakses pada mesin yang sama. It also means that while it is tempting to enable "locks" that allow one account to synchronously call another account, this design pattern breaks down if the other account is not resident in memory.
 
 All state communication among accounts must be passed via messages included in the blockchain.
 
