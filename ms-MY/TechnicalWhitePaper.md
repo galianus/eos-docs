@@ -220,9 +220,9 @@ Ianya adalah tugas pengeluar blok untuk menyusun penghantaran mesej ke dalam jal
 
 Sebahagian daripada pelaksanaan selari bermakna apabila skrip menghasilkan mesej baru dan ianya tidak disampaikan dengan segera, tetapi ianya dijadualkan dihantar dalam kitaran berikutnya. Mesej tidak dapat disampaikan dengan serta-merta oleh kerana penerima mungkin secara aktif sedang mengubah keadaannya sendiri dalam jaluran yang lain.
 
-## Minimizing Communication Latency
+## Meminimumkan Kelewatan Komunikasi
 
-Latency is the time it takes for one account to send a message to another account and then receive a response. The goal is to enable two accounts to exchange messages back and forth within a single block without having to wait 3 seconds between each message. To enable this, the EOS.IO software divides each block into cycles. Each cycle is divided into threads and each thread contains a list of transactions. Each transaction contains a set of messages to be delivered. This structure can be visualized as a tree where alternating layers are processed sequentially and in parallel.
+Kelewatan adalah masa yang diperlukan untuk satu akaun untuk menghantar mesej ke akaun lain dan kemudian menerima respons. Matlamatnya adalah untuk membolehkan dua akaun untuk menukar mesej berulang alik dalam satu blok tanpa menunggu 3 saat di antara setiap mesej. Perisian EOS.IO membahagikan setiap blok ke dalam kitaran, untuk membolehkan ini. Setiap kitaran dibahagikan kepada jaluran dan setiap jaluran pula mengandungi senarai transaksi. Each transaction contains a set of messages to be delivered. This structure can be visualized as a tree where alternating layers are processed sequentially and in parallel.
 
         Block
     
@@ -257,9 +257,9 @@ Penskalaan teknologi rantaian blok memerlukan komponen yang bermodul. Semua oran
 
 Pemaju aplikasi pertukaran menggunakan nod penuh untuk tujuan memaparkan keadaan pertukaran kepada penggunanya. Aplikasi pertukaran ini tidak memerlukan keadaan yang berkaitan dengan aplikasi media sosial. Mana-mana nod penuh boleh memilih mana-mana subset aplikasi untuk dijalankan di Perisian EOS.IO. Mesej yang dihantar ke aplikasi lain akan selamatnya diabaikan kerana keadaan sesuatu aplikasi diperoleh sepenuhnya daripada mesej yang dihantar kepadanya.
 
-Ini mempunyai beberapa implikasi yang ketara terhadap komunikasi dengan akaun lain. Yang paling utamanya ialah, ianya tidak boleh diandaikan bahawa keadaan akaun lain boleh diakses pada mesin yang sama. It also means that while it is tempting to enable "locks" that allow one account to synchronously call another account, this design pattern breaks down if the other account is not resident in memory.
+Ini mempunyai beberapa implikasi yang ketara terhadap komunikasi dengan akaun lain. Yang paling utamanya ialah, ianya tidak boleh diandaikan bahawa keadaan akaun lain boleh diakses pada mesin yang sama. Ianya juga bermaksud bahawa pada masa ia menggoda untuk membolehkan "kunci" yang membolehkan satu akaun menyegerakkan akaun lain secara serentak, corak reka bentuk ini akan lumpuh jikalau akaun lain tidak bermastautin dalam memori.
 
-All state communication among accounts must be passed via messages included in the blockchain.
+Semua komunikasi keadaan di antara akaun mesti dihantar melalui mesej yang disertakan dalam rantaian blok.
 
 ## Subjective Best Effort Scheduling
 
