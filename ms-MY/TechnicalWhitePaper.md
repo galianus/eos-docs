@@ -253,9 +253,9 @@ For performance and cost reasons it is best to minimize atomic operations involv
 
 ## Partial Evaluation of Blockchain State
 
-Scaling blockchain technology necessitates that components are modular. Everyone should not have to run everything, especially if they only need to use a small subset of the applications.
+Penskalaan teknologi rantaian blok memerlukan komponen yang bermodul. Semua orang tidak perlu menjalankan segala-galanya, terutama jika mereka hanya perlu menggunakan sebahagian subset yang kecil daripada aplikasi keseluruhan.
 
-An exchange application developer runs full nodes for the purpose of displaying the exchange state to its users. This exchange application has no need for the state associated with social media applications. EOS.IO software allows any full node to pick any subset of applications to run. Messages delivered to other applications are safely ignored because an application's state is derived entirely from the messages that are delivered to it.
+Pemaju aplikasi pertukaran menggunakan nod penuh untuk tujuan memaparkan keadaan pertukaran kepada penggunanya. Aplikasi pertukaran ini tidak memerlukan keadaan yang berkaitan dengan aplikasi media sosial. Mana-mana nod penuh boleh memilih mana-mana subset aplikasi untuk dijalankan di Perisian EOS.IO. Messages delivered to other applications are safely ignored because an application's state is derived entirely from the messages that are delivered to it.
 
 This has some significant implications on communication with other accounts. Most significantly it cannot be assumed that the state of the other account is accessible on the same machine. It also means that while it is tempting to enable "locks" that allow one account to synchronously call another account, this design pattern breaks down if the other account is not resident in memory.
 
