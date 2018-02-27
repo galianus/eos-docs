@@ -441,4 +441,4 @@ Cuando se utiliza pruebas de merkle de blockchains externa, hay una diferencia s
 
 # Conclusión
 
-El software EOS.IO es diseñado desde la experiencia con conceptos probados y las mejores prácticas, y representa avances fundamentales en la tecnología blockchain. El software es parte de un plan integral para una sociedad basada en la blockchain globalmente escalable en la que las aplicaciones descentralizadas puedan fácilmente ser desplegadas y gobernadas.
+El software EOS.IO es diseñado desde la experiencia con conceptos probados y las mejores prácticas, y representa avances fundamentales en la tecnología blockchain. El software es parte de un plan integral para una sociedad basada en blockchain globalmente escalable en la que las aplicaciones descentralizadas puedan fácilmente ser desplegadas y gobernadas.
