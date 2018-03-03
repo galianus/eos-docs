@@ -22,13 +22,13 @@ Programska oprema EOS.IO ima številne nativne pogodbe. To so pogodbe, ki upravl
 
 ### Virtualni stroj API (Dan)
 
-Pogodbe se zbirajo v WebAssembly (WASM) in WASM se mora povezati z "blockchain" preko definiranega API-ja. This API is what developers depend upon to build applications and be relatively stable before developers can really start to build on EOS.
+Pogodbe se zbirajo v WebAssembly (WASM) in WASM se mora povezati z "blockchain" preko definiranega API-ja. Ta API je stvar, na katero se razvijalci zanašajo, da gradijo aplikacije in je razmeroma stabilen, preden lahko razvijalci resnično začnejo graditi na EOS.
 
-### RPC Interface (Arhag, Nathan)
+### RPC vmesnik (Arhag, Nathan)
 
-A simple JSON RPC over HTTP interface will be provided that enables developers to broadcast transactions and query application state. This is critical for both publishing and interacting with test applications.
+Zagotovljen bo preprost JSON RPC prek vmesnika HTTP, ki razvijalcem omogoča oddajanje transakcij in poizvedbo o stanju aplikacije. To je ključnega pomena za objavljanje in interakcijo s testnimi aplikacijami.
 
-### Command line Tools (Arhag)
+### Orodja ukazne vrstice (Athag)
 
 Command line tools facilitate integrating the RPC interface with developer build environments.
 
