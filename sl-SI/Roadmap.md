@@ -30,9 +30,9 @@ Zagotovljen bo preprost JSON RPC prek vmesnika HTTP, ki razvijalcem omogoča odd
 
 ### Orodja ukazne vrstice (Athag)
 
-Command line tools facilitate integrating the RPC interface with developer build environments.
+Orodja ukazne vrstice olajšajo integracijo vmesnika RPC z okoljem za razvijalce.
 
-### Basic Developer Documentation (Josh)
+### Osnovna dokumentacija za razvijalce (Josh)
 
 Documents that teach developers how to get started with building on EOS.IO blockchains. This includes documentations of the WASM API, RPC Interface, and Command Line Tools.
 
