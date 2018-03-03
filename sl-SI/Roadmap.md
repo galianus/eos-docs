@@ -36,15 +36,15 @@ Orodja ukazne vrstice olajšajo integracijo vmesnika RPC z okoljem za razvijalce
 
 Dokumenti, ki poučujejo razvijalce, kako začeti graditi na blokih EOS.IO. To vključuje dokumentacijo API-ja WASM, vmesnika RPC in orodij ukazne vrstice.
 
-# Phase 2 - Minimal Viable Test Network - Fall 2017
+# Faza 2 - Minimalno testno omrežje - Jesen 2017
 
-Everything in Phase 1 assumes a trusted environment that only runs the developer's own code. Before a test network can be deployed several additional features need to be implemented and tested.
+Vse v 1. fazi predpostavlja zaupanja vredno okolje, ki izvaja samo lastno kodo razvijalca. Preden lahko uporabimo preizkusno omrežje, je treba izvesti in preizkusiti več dodatnih funkcij.
 
-### P2P Network Code (Phil)
+### P2P omrežna koda (Phil)
 
-This is a plugin that is responsible for synchronizing the blockchain state between two standalone nodes.
+To je vtičnik, ki je odgovoren za sinhronizacijo "blockchain" stanja med dvema samostojnima vozliščema.
 
-### WASM Sanitation & CPU Sandboxing (Brian)
+### Sanacija WASM & CPU "sandboxing" (Brian)
 
 The WASM code needs to be sanitized to check for non-deterministic behavior such as floating point operations and infinite loops.
 
