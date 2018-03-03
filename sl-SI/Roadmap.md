@@ -8,19 +8,19 @@ Ta dokument opisuje razvojni načrt iz visoke ravni in bo posodobljen z napredko
 
 Cilj te faze je ustvariti API-je, katere bodo razvijalci potrebovali za izgradnjo in preizkušnjo aplikacij na EOS.IO. Da bodo razvijalci lahko začeli s preizkušanjem svojih aplikacij, morajo implementirati naslednje:
 
-### Standalone Node (Dan & Nathan)
+### Samostojno vozlišče (Dan & Nathan)
 
-A standalone node operates a test blockchain and produces blocks while exposing an API. This node does not need to concern itself with any P2P networking code.
+Samostojno vozlišče upravlja testni "blockchain" in proizvaja bloke, medtem ko izpostavlja API. To vozlišče se ne sme nanašati na omrežno kodo P2P.
 
-### Native Contracts (Nathan)
+### Nativne pogodbe (Nathan)
 
-The EOS.IO software has a number of native contracts. These are contracts that manage the core operations of the blockchain and exist outside the Web Assembly interface. These contracts include:
+Programska oprema EOS.IO ima številne nativne pogodbe. To so pogodbe, ki upravljajo osnovne operacije "blockchaina" in obstajajo zunaj spletnega vmesnika. Te pogodbe vključujejo:
 
-1. @eos - manages EOS token transfers
-2. @stake - manages locked EOS, voting, and Producer Election
-3. @system - manages permissions, messages, and contact code updates
+1. @eos - upravlja prenose žetonov EOS
+2. @stake - upravlja zaklenjen EOS, glasovanje in volitve proizvajalcev
+3. @system - upravlja dovoljenja, sporočila in posodobitve kode stikov
 
-### Virtual Machine API (Dan)
+### Virtualni stroj API (Dan)
 
 Contracts are compiled to WebAssembly (WASM) and WASM must interface with the blockchain via a defined API. This API is what developers depend upon to build applications and be relatively stable before developers can really start to build on EOS.
 
