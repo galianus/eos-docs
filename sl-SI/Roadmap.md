@@ -22,7 +22,7 @@ Programska oprema EOS.IO ima številne nativne pogodbe. To so pogodbe, ki upravl
 
 ### Virtualni stroj API (Dan)
 
-Contracts are compiled to WebAssembly (WASM) and WASM must interface with the blockchain via a defined API. This API is what developers depend upon to build applications and be relatively stable before developers can really start to build on EOS.
+Pogodbe se zbirajo v WebAssembly (WASM) in WASM se mora povezati z "blockchain" preko definiranega API-ja. This API is what developers depend upon to build applications and be relatively stable before developers can really start to build on EOS.
 
 ### RPC Interface (Arhag, Nathan)
 
