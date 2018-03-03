@@ -6,7 +6,7 @@ Ta dokument opisuje razvojni načrt iz visoke ravni in bo posodobljen z napredko
 
 # Faza 1 - Minimalno preizkusno okolje - Poletje 2017
 
-The goal of this phase is to establish the APIs that developers will require to start building and testing applications on EOS.IO. In order for developers to start testing their applications they will require the following to be implemented:
+Cilj te faze je ustvariti API-je, katere bodo razvijalci potrebovali za izgradnjo in preizkušnjo aplikacij na EOS.IO. Da bodo razvijalci lahko začeli s preizkušanjem svojih aplikacij, morajo implementirati naslednje:
 
 ### Standalone Node (Dan & Nathan)
 
