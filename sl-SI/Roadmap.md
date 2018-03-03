@@ -34,7 +34,7 @@ Orodja ukazne vrstice olajšajo integracijo vmesnika RPC z okoljem za razvijalce
 
 ### Osnovna dokumentacija za razvijalce (Josh)
 
-Documents that teach developers how to get started with building on EOS.IO blockchains. This includes documentations of the WASM API, RPC Interface, and Command Line Tools.
+Dokumenti, ki poučujejo razvijalce, kako začeti graditi na blokih EOS.IO. To vključuje dokumentacijo API-ja WASM, vmesnika RPC in orodij ukazne vrstice.
 
 # Phase 2 - Minimal Viable Test Network - Fall 2017
 
