@@ -46,9 +46,9 @@ To je vtičnik, ki je odgovoren za sinhronizacijo "blockchain" stanja med dvema 
 
 ### Sanacija WASM & CPU "sandboxing" (Brian)
 
-The WASM code needs to be sanitized to check for non-deterministic behavior such as floating point operations and infinite loops.
+Kodo WASM je treba sanitirati, da preveri nedeterministično vedenje, kot so operacije s plavajočo vejico in neskončne zanke.
 
-### Resource Usage Tracking & Rate Limiting (Arhag)
+### Sledenje porabe virov & omejitev hitrosti (Arhag)
 
 To prevent abuse the resource monitoring and usage tracking rate limits users according to staked EOS.
 
