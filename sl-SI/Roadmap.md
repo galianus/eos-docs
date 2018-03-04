@@ -62,7 +62,7 @@ Ta funkcija vključuje preverjanje, ali so "Merkle hashing" transakcije pravilne
 
 # Faza 3 - Testiranje & Varnostna revizija - Zima 2017, Pomlad 2018
 
-During this phase the platform will undergo heavy testing with a focus on finding security issues and bug. At the end of Phase 3 version 1.0 will be tagged.
+V tej fazi bo opravljeno težko testiranje s preizkušnjami in poudarkom pri iskanju varnostnih težav in hroščev. Ob koncu faze 3 bo označena različica 1.0.
 
 ### Develop Example Applications
 
