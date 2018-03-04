@@ -80,6 +80,6 @@ Dodajanje podpore za dodatne jezike, kateri bodo zbrani v WASM: C++, Rust itd.
 
 # Faza 4 - Vzporedna optimizacija Poletje / Jesen 2018
 
-After getting a stable 1.0 product released, we will move toward optimizing the code for parallel execution.
+Po izdaji stabilne verzije 1.0, sledi optimizacija kode za vzporedno izvedbo.
 
-# Phase 5 - Cluster Implementation The Future
+# Faza 5 - Skupek implementacij za prihodnost
