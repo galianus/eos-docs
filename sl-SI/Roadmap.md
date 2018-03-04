@@ -70,15 +70,15 @@ Aplikacije "za primere" so ključnega pomena za dokazovanje, da platforma ponuja
 
 ### Nagrade za uspešen napad na omrežje
 
-Attacking the network with spam, virtual machine exploits, and bug crashes, and non-deterministic behavior will be a heavily involved process but necessary to ensure that version 1.0 is stable.
+Napadanje omrežja z neželeno pošto, izkoriščanjem navideznih naprav in sesutja zaradi hroščev ter nedeterminističnega vedenja, bo močan vendar nujno potreben proces, kateri bo zagotovil, da bo različica 1.0 stabilna.
 
-### Language Support
+### Jezikovna podpora
 
-Adding support for additional languages to be compiled to WASM: C++, Rust, etc.
+Dodajanje podpore za dodatne jezike, kateri bodo zbrani v WASM: C++, Rust itd.
 
-### Documentation & Tutorials
+### Dokumentacija & Vodniki
 
-# Phase 4 - Parallel Optimization Summer / Fall 2018
+# Faza 4 - Vzporedna optimizacija Poletje / Jesen 2018
 
 After getting a stable 1.0 product released, we will move toward optimizing the code for parallel execution.
 
