@@ -64,11 +64,11 @@ Ta funkcija vključuje preverjanje, ali so "Merkle hashing" transakcije pravilne
 
 V tej fazi bo opravljeno težko testiranje s preizkušnjami in poudarkom pri iskanju varnostnih težav in hroščev. Ob koncu faze 3 bo označena različica 1.0.
 
-### Develop Example Applications
+### Razvoj aplikacij "za primere"
 
-Example applications are critical to proving the platform provides the features required by real developers.
+Aplikacije "za primere" so ključnega pomena za dokazovanje, da platforma ponuja funkcije, ki jih zahtevajo resnični razvijalci.
 
-### Bounties for Successfully Attacking Network
+### Nagrade za uspešen napad na omrežje
 
 Attacking the network with spam, virtual machine exploits, and bug crashes, and non-deterministic behavior will be a heavily involved process but necessary to ensure that version 1.0 is stable.
 
