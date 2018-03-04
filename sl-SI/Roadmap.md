@@ -50,17 +50,17 @@ Kodo WASM je treba sanitirati, da preveri nedeterministično vedenje, kot so ope
 
 ### Sledenje porabe virov & omejitev hitrosti (Arhag)
 
-To prevent abuse the resource monitoring and usage tracking rate limits users according to staked EOS.
+Da bi preprečili zlorabo, spremljanje virov in sledenje uporabe omeji uporabnike, glede na EOS.
 
-### Genesis Import Testing (DappHub)
+### Genesis uvozno testiranje (DappHub)
 
-Tools need to be developed to export data from the EOS Token Distribution state and create a genesis configuration file. This will enable anyone participating in the Token Distribution to acquire some initial test EOS (TEOS).
+Za izvoz podatkov iz distribucije EOS žetonov je potrebno razviti orodja, ter ustvariti konfiguracijsko datoteko "genesis". To bo omogočilo vsakomur, ki sodeluje v distribuciji žetonov, da pridobi začetni preizkus EOS (TEOS).
 
-### Interblockchain Communication (Nathan)
+### Interblockchain komunikacija (Nathan)
 
-This feature involves verifying the Merkle hashing of transactions is proper.
+Ta funkcija vključuje preverjanje, ali so "Merkle hashing" transakcije pravilne.
 
-# Phase 3 - Testing & Security Audits - Winter 2017, Spring 2018
+# Faza 3 - Testiranje & Varnostna revizija - Zima 2017, Pomlad 2018
 
 During this phase the platform will undergo heavy testing with a focus on finding security issues and bug. At the end of Phase 3 version 1.0 will be tagged.
 
