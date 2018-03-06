@@ -2,7 +2,7 @@
 
 **26. Junij, 2017**
 
-**Abstrakt** Programska oprema EOS.IO predstavlja novo arhitekturo blockchaina, ki omogoča vertikalno in horizontalno skaliranje decentraliziranih aplikacij. To se doseže z ustvarjanjem konstrukta, podobnega operacijskemu sistemu, na katerem se lahko gradijo aplikacije. The software provides accounts, authentication, databases, asynchronous communication and the scheduling of applications across hundreds of CPU cores or clusters. The resulting technology is a blockchain architecture that scales to millions of transactions per second, eliminates user fees, and allows for quick and easy deployment of decentralized applications.
+**Abstrakt** Programska oprema EOS.IO predstavlja novo arhitekturo blockchaina, ki omogoča vertikalno in horizontalno skaliranje decentraliziranih aplikacij. To se doseže z ustvarjanjem konstrukta, podobnega operacijskemu sistemu, na katerem se lahko gradijo aplikacije. Programska oprema poskrbi za račune, avtentikacijo, podatkovne baze, asinhrono komunikacijo in razporejanje aplikacij na več sto CPU jedrih ali skupkih. Rezultat tehnologije je blockchain arhitektura, ki obsega milijone transakcij na sekundo, odpravlja uporabniške provizije in omogoča hitro in enostavno razporeditev decentraliziranih aplikacij.
 
 **PLEASE NOTE: CRYPTOGRAPHIC TOKENS REFERRED TO IN THIS WHITE PAPER REFER TO CRYPTOGRAPHIC TOKENS ON A LAUNCHED BLOCKCHAIN THAT ADOPTS THE EOS.IO SOFTWARE. THEY DO NOT REFER TO THE ERC-20 COMPATIBLE TOKENS BEING DISTRIBUTED ON THE ETHEREUM BLOCKCHAIN IN CONNECTION WITH THE EOS TOKEN DISTRIBUTION.**
 
