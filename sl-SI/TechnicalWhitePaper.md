@@ -10,13 +10,13 @@ Copyright © 2017 block.one
 
 Vsebino white paperja lahko vsakdo uporablja, reproducira ali distribuira za nekomercialne in izobraževalne namene (to je, razen za plačilo ali za komercialne namene), pod pogojem, da se navede izvorni vir in veljavno obvestilo o avtorskih pravicah.
 
-**IZJAVA ODGOVORNOSTI:** Tehnični White paper EOS.IO je namenjen samo za informativne namene. block.one ne zagotavlja točnosti ali sklepov, doseženih v White paperju, prav tako je White paper podan "kot je". blok.one ne izraža in izrecno zavrača vse navedbe in garancije, izrecne, implicitne, zakonske ali druge, vključno z, vendar ne omejeno na: (i) jamstva glede prodajnosti, primernosti za določen namen, primernosti, uporabe, naziva ali nedotakljivost; (ii) da je vsebina White paper-ja brez napak; in (iii) da takšna vsebina ne bo kršila pravic tretjih oseb. block.one and its affiliates shall have no liability for damages of any kind arising out of the use, reference to, or reliance on this white paper or any of the content contained herein, even if advised of the possibility of such damages. In no event will block.one or its affiliates be liable to any person or entity for any damages, losses, liabilities, costs or expenses of any kind, whether direct or indirect, consequential, compensatory, incidental, actual, exemplary, punitive or special for the use of, reference to, or reliance on this white paper or any of the content contained herein, including, without limitation, any loss of business, revenues, profits, data, use, goodwill or other intangible losses.
+**IZJAVA ODGOVORNOSTI:** Tehnični White paper EOS.IO je namenjen samo za informativne namene. block.one ne zagotavlja točnosti ali sklepov, doseženih v White paperju, prav tako je White paper podan "kot je". blok.one ne izraža in izrecno zavrača vse navedbe in garancije, izrecne, implicitne, zakonske ali druge, vključno z, vendar ne omejeno na: (i) jamstva glede prodajnosti, primernosti za določen namen, primernosti, uporabe, naziva ali nedotakljivost; (ii) da je vsebina White paper-ja brez napak; in (iii) da takšna vsebina ne bo kršila pravic tretjih oseb. block.one in njene podružnice niso odgovorne za škodo katere koli vrste, katera izhaja iz uporabe, sklicevanja na White paper ali katerokoli vsebino, ki jo vsebuje, tudi če se opozori na možnost škode. V nobenem primeru ne bo blok.one ali njegove podružnice odgovorne katerikoli osebi ali subjektu za kakršno koli škodo, izgube, obveznosti, stroške ali izdatke katerekoli vrste, bodisi neposredne bodisi posredne, posledične, kompenzacijske, naključne, dejanske, zgledne, kaznovalne ali posebne za uporabo, sklicevanje na White paper ali katero koli vsebino, ki se sklicuje na White paper ali katerokoli vsebino, ki vključuje, brez omejitve, vsako izgubo poslov, prihodkov, dobička, podatkov, uporabe, dobrega imena ali drugih neopredmetenih izgub.
 
-- [Background](#background)
-- [Requirements for Blockchain Applications](#requirements-for-blockchain-applications) 
-  - [Support Millions of Users](#support-millions-of-users)
-  - [Free Usage](#free-usage)
-  - [Easy Upgrades and Bug Recovery](#easy-upgrades-and-bug-recovery)
+- [Ozadje](#background)
+- [Zahteve za blockchain aplikacije](#requirements-for-blockchain-applications) 
+  - [Podpora milijonom uporabnikom](#support-millions-of-users)
+  - [Brezplačna uporaba](#free-usage)
+  - [Nezahtevne nadgradnje in povrnitev zaradi hroščev](#easy-upgrades-and-bug-recovery)
   - [Low Latency](#low-latency)
   - [Sequential Performance](#sequential-performance)
   - [Parallel Performance](#parallel-performance)
