@@ -4,7 +4,7 @@
 
 **Abstrakt** Programska oprema EOS.IO predstavlja novo arhitekturo blockchaina, ki omogoča vertikalno in horizontalno skaliranje decentraliziranih aplikacij. To se doseže z ustvarjanjem konstrukta, podobnega operacijskemu sistemu, na katerem se lahko gradijo aplikacije. Programska oprema poskrbi za račune, avtentikacijo, podatkovne baze, asinhrono komunikacijo in razporejanje aplikacij na več sto CPU jedrih ali skupkih. Rezultat tehnologije je blockchain arhitektura, ki obsega milijone transakcij na sekundo, odpravlja uporabniške provizije in omogoča hitro in enostavno razporeditev decentraliziranih aplikacij.
 
-**PLEASE NOTE: CRYPTOGRAPHIC TOKENS REFERRED TO IN THIS WHITE PAPER REFER TO CRYPTOGRAPHIC TOKENS ON A LAUNCHED BLOCKCHAIN THAT ADOPTS THE EOS.IO SOFTWARE. THEY DO NOT REFER TO THE ERC-20 COMPATIBLE TOKENS BEING DISTRIBUTED ON THE ETHEREUM BLOCKCHAIN IN CONNECTION WITH THE EOS TOKEN DISTRIBUTION.**
+**OPOZORILO: OMENJENI KRIPTOGRAFIČNI ŽETONI IZ WHITE PAPAER-ja SE NANAŠAJO NA ŽETONE V LANSIRANEM BLOCKCHAINU, KATERI SPREJMEJO EOS.IO PROGRAMSKO OPREMO. NE NANAŠEJO SE NA ERC-20 KOMPATIBILNE ŽETONE, KI SO DISTRIBUIRANI NA ETHEREUM BLOCKCHAINU V POVEZAVI Z EON DISTRIBUIRANIMI ŽETONI.**
 
 Copyright © 2017 block.one
 
