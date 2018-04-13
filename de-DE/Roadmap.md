@@ -8,7 +8,7 @@ Dieses Dokument beschreibt den groben Entwicklungsplan und wird aktualisiert, we
 
 Das Ziel dieser Phase ist es, die APIs zu etablieren, die Entwickler benötigen, um die Entwicklung von Anwendungen auf EOS.IO und das und Testen dieser Applikationen beginnen zu können Um ihre Anwendungen testen zu können, benötigen Entwickler die folgenden Funktionalitäten zur Verfügung stehen:
 
-### Standalone Node (Dan & Nathan)
+### Stand-Alone-Instanz (Dan & Nathan)
 
 A standalone node operates a test blockchain and produces blocks while exposing an API. This node does not need to concern itself with any P2P networking code.
 
