@@ -1,12 +1,12 @@
 ## EOS. E/a-Software-Planung
 
-This document outlines the development plan from a high level and will be updated as progress is made toward version 1.0. It should be noted that this roadmap applies only to the blockchain software and not to the other tools and utilities such as wallets and block explorers which will have their own teams and dedicated roadmaps once Phase 1 is complete.
+Dieses Dokument beschreibt den groben Entwicklungsplan und wird aktualisiert, wenn Version 1.0 näher rückt. Es sei darauf hingewiesen, dass dieser Fahrplan nur für die Blockchain-Software und nicht auf andere Werkzeuge und Komponenten wie Brieftaschen und Block-Explorer gilt, die ihre eigenen Teams und Entwicklungspläne haben werden, sobald Phase 1 abgeschlossen ist.
 
-***Everything contained in this document is in draft form and subject to change at any time and provided for information purposes only. block.one does not guarantee the accuracy of the information contained in this roadmap and the information is provided “as is” with no representations or warranties, express or implied.***
+***Alle Informationen und Aussagen in diesem Dokument sind im Entwurfsstadium und können sich jederzeit ändern und dienen nur zu Informationszwecken. Block.One garantiert nicht für die Richtigkeit der in dieser Roadmap enthaltenen Informationen. Die hier zur Verfügung gestellten Informationen sind als "wie besehen" ohne Zusicherungen oder Garantien, weder ausdrücklich noch stillschweigend, zu betrachten.***
 
-# Phase 1 - Minimal Viable Testing Environment - Summer 2017
+# Phase 1 - minimale lauffähige Testumgebung - Sommer 2017
 
-The goal of this phase is to establish the APIs that developers will require to start building and testing applications on EOS.IO. In order for developers to start testing their applications they will require the following to be implemented:
+Das Ziel dieser Phase ist es, die APIs zu etablieren, die Entwickler benötigen, um die Entwicklung von Anwendungen auf EOS.IO und das und Testen dieser Applikationen beginnen zu können Um ihre Anwendungen testen zu können, benötigen Entwickler die folgenden Funktionalitäten zur Verfügung stehen:
 
 ### Standalone Node (Dan & Nathan)
 
