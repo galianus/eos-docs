@@ -2,13 +2,13 @@
 
 当ドキュメントは、大まかな開発計画をまとめたものであり、バージョン1.0.に向けた進捗があった際に更新されます。当ロードマップは、ブロックチェーンソフトウェアのみに適応されるものであり、その他のウォレットやブロック・エクスプローラ等のツールに適応されるものではありません。ウォレット等のその他のツールに関しては、Phase1完了時に個々に専用のチームとロードマップが構築されます。
 
-***Everything contained in this document is in draft form and subject to change at any time and provided for information purposes only. block.one does not guarantee the accuracy of the information contained in this roadmap and the information is provided “as is” with no representations or warranties, express or implied.***
+***当ドキュメントに記載されている全ての内容は情報提供のみを目的としたもので、草稿段階であり、突然変更される可能性があります。 block.one は、当ロードマップに記載されている情報について正確性を保証しません。また、これらの情報はあくまで現段階におけるものであり、暗示、黙示に関わらずいかなる責任や保証も負いません。***
 
-# Phase 1 - Minimal Viable Testing Environment - Summer 2017
+# Phase1 最低限の実行可能なテスト環境 - 2017年 夏 -
 
-The goal of this phase is to establish the APIs that developers will require to start building and testing applications on EOS.IO. In order for developers to start testing their applications they will require the following to be implemented:
+このフェーズの目的は、EOS.IO上で開発者がアプリケーションの構築・テストを開始するために必要なAPIを構築することです。 開発者がアプリケーションの開発を始めるためには、以下の機能が実装されている必要があります：
 
-### Standalone Node (Dan & Nathan)
+### スタンドアロン・ノード(Dan & Nathan)
 
 A standalone node operates a test blockchain and produces blocks while exposing an API. This node does not need to concern itself with any P2P networking code.
 
