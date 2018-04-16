@@ -18,14 +18,14 @@ Copyright © 2017 block.one
   - [無料で使用可能](#free-usage)
   - [簡単なアップグレードとバグの修復](#easy-upgrades-and-bug-recovery)
   - [低遅延](#low-latency)
-  - [順次処理](#sequential-performance)
-  - [Parallel Performance](#parallel-performance)
-- [Consensus Algorithm (DPOS)](#consensus-algorithm-dpos) 
-  - [Transaction Confirmation](#transaction-confirmation)
+  - [順次性能](#sequential-performance)
+  - [並列性能](#parallel-performance)
+- [コンセンサス・アルゴリズム(DPOS)](#consensus-algorithm-dpos) 
+  - [トランザクションの承認](#transaction-confirmation)
   - [Transaction as Proof of Stake (TaPoS)](#transaction-as-proof-of-stake-tapos)
-- [Accounts](#accounts) 
-  - [Messages & Handlers](#messages--handlers)
-  - [Role Based Permission Management](#role-based-permission-management) 
+- [アカウント](#accounts) 
+  - [メッセージ & ハンドラー](#messages--handlers)
+  - [役割ベースの許可管理](#role-based-permission-management) 
     - [Named Permission Levels](#named-permission-levels)
     - [Named Message Handler Groups](#named-message-handler-groups)
     - [Permission Mapping](#permission-mapping)
@@ -67,7 +67,7 @@ Copyright © 2017 block.one
   - [Proof of Completeness](#proof-of-completeness)
 - [Conclusion](#conclusion)
 
-# Background
+# 背景
 
 Blockchain technology was introduced in 2008 with the launch of the bitcoin currency, and since then entrepreneurs and developers have been attempting to generalize the technology in order to support a wider range of applications on a single blockchain platform.
 
