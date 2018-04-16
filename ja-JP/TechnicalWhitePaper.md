@@ -95,11 +95,11 @@ EbayやUber、AirBnB、Facebookといった破壊的なビジネスは、毎日�
 
 ## 低遅延
 
-優れたユーザーエクスペリエンスは、数秒以内に確実なフィードバックが帰ってくることを必要とします。 Longer delays frustrate users and make applications built on a blockchain less competitive with existing non-blockchain alternatives.
+優れたユーザーエクスペリエンスは、数秒以内に確実なフィードバックが帰ってくることを必要とします。 長い遅延はユーザーを苛立たせ、既存のブロックチェーンを使用していないアプリケーションに対するブロックチェーン上のアプリケーションの競争力を低下させます。
 
-## Sequential Performance
+## 順次性能
 
-There are some applications that just cannot be implemented with parallel algorithms due to sequentially dependent steps. Applications such as exchanges need enough sequential performance to handle high volumes and therefore a platform with fast sequential performance is required.
+いくつかのアプリケーションは、順次的な依存した手順のために並列アルゴリズムを実装することができません。 Applications such as exchanges need enough sequential performance to handle high volumes and therefore a platform with fast sequential performance is required.
 
 ## Parallel Performance
 
