@@ -71,7 +71,7 @@ Copyright © 2017 block.one
 
 ブロックチェーン技術は2008年のビットコインの誕生と共に社会に導入されました。それ以来、起業家や開発者は、一つのブロックチェーンプラットフォーム上で、幅広いアプリケーションをサポートするため、ブロックチェーン技術の一般化を試みてきました。
 
-While a number of blockchain platforms have struggled to support functional decentralized applications, application specific blockchains such as the BitShares decentralized exchange (2014) and Steem social media platform (2016) have become heavily used blockchains with tens of thousands of daily active users. They have achieved this by increasing performance to thousands of transactions per second, reducing latency to 1.5 seconds, eliminating fees, and providing a user experience similar to those currently provided by existing centralized services.
+多くのブロックチェーンプラットフォームが、実用的な分散型アプリケーションのサポートに四苦八苦する一方で、分散型取引所のBisShares(2014)や、ソーシャルメディアプラットフォームのSteem(2016)といったアプリケーションに特化型のブロックチェーンは、毎日何万ものアクティブユーザーに利用されるブロックチェーンになっています。 それらのサービスは、一秒間に数千のトランザクションを処理できるようにし、遅延を1.5秒に抑え、手数料を撤廃し、既存の中央集権サービスで提供されているレベルのユーザエクスペリエンスを提供することでこのような結果を実現しています。
 
 Existing blockchain platforms are burdened by large fees and limited computational capacity that prevent widespread blockchain adoption.
 
