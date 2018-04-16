@@ -18,7 +18,7 @@ EOS.IOソフトウェアは、多くのネイティブ・コントラクトを�
 
 1. @eos - EOSトークンの転送を管理
 2. @stake - ロックされたEOSの管理、ブロック生成者の選挙、投票の管理
-3. @system - 承認、メッセージ、コンタクトコードの更新の管理
+3. @system - 承認、メッセージ、コンタクトコード更新の管理
 
 ### バーチャル・マシンAPI(Dan)
 
@@ -30,13 +30,13 @@ HTTPインターフェイス上で動作するシンプルなJSON-RPCが提供�
 
 ### コマンドラインツール(Arhag)
 
-Command line tools facilitate integrating the RPC interface with developer build environments.
+コマンドラインツールは、RPCインターフェイスと開発者のビルド環境の統合を容易にします。
 
-### Basic Developer Documentation (Josh)
+### ベーシック・デベロッパー・ドキュメンテーション（Josh)
 
-Documents that teach developers how to get started with building on EOS.IO blockchains. This includes documentations of the WASM API, RPC Interface, and Command Line Tools.
+EOS.IO上でのブロックチェーン構築を開始する方法をまとめた開発者向けのドキュメントです。このドキュメントは、WASM API、RPC Interface、コマンドラインツールに関するドキュメントを含みます。
 
-# Phase 2 - Minimal Viable Test Network - Fall 2017
+# Phase2 最低限の実行可能なテストネットワーク - 2017年 秋 -
 
 Everything in Phase 1 assumes a trusted environment that only runs the developer's own code. Before a test network can be deployed several additional features need to be implemented and tested.
 
