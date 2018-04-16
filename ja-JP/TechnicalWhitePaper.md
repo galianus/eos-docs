@@ -15,7 +15,7 @@ Copyright © 2017 block.one
 - [背景](#background)
 - [ブロックチェーンアプリケーション要件](#requirements-for-blockchain-applications) 
   - [数百万のユーザーをサポートできること](#support-millions-of-users)
-  - [無料で使用可能](#free-usage)
+  - [無料で使用可能であること](#free-usage)
   - [簡単なアップグレードとバグの修復](#easy-upgrades-and-bug-recovery)
   - [低遅延](#low-latency)
   - [順次性能](#sequential-performance)
@@ -81,15 +81,15 @@ Copyright © 2017 block.one
 
 ## 数百万のユーザーをサポートできること
 
-EbayやUber、AirBnB、Facebookといった破壊的なビジネスは、毎日数千万のアクティブユーザーを扱えるブロックチェーン技術を必要とします。 In certain cases, applications may not work unless a critical mass of users is reached and therefore a platform that can handle mass number of users is paramount.
+EbayやUber、AirBnB、Facebookといった破壊的なビジネスは、毎日数千万のアクティブユーザーを扱えるブロックチェーン技術を必要とします。 特定のケースにおいて、最低限必要なユーザーがリーチしなければアプリケーションは機能しない可能性があります。したがって、プラットフォームにおいては多数のユーザーを扱えることが最重要です。
 
-## Free Usage
+## 無料で使用可能であること
 
-Application developers need the flexibility to offer users free services; users should not have to pay in order to use the platform or benefit from its services. A blockchain platform that is free to use for users will likely gain more widespread adoption. Developers and businesses can then create effective monetization strategies.
+アプリケーション開発者はユーザーに無料でサービスを提供するために柔軟性を必要としています。ユーザーはプラットフォームを利用するためにお金を払うべきではありません。 ユーザーが無料で使えるブロックチェーンプラットフォームはより広範に利用される可能性が高いと考えられます。 それにより、開発者や企業は効率的なマネタイゼーション戦略を立てることができます。
 
-## Easy Upgrades and Bug Recovery
+## 簡単なアップグレードとバグの修復
 
-Businesses building blockchain based applications need the flexibility to enhance their applications with new features.
+企業が構築するブロックチェーンベースのアプリケーションは、新機能の追加によってアプリケーションを強化するために、柔軟性を必要とします。
 
 All non-trivial software is subject to bugs, even with the most rigorous of formal verification. The platform must be robust enough to fix bugs when they inevitably occur.
 
