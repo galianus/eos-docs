@@ -70,15 +70,15 @@ EOSトークン配布状況のデータをエクスポートし、ジェネシ�
 
 ### ネットワーク攻撃への成功報酬
 
-Attacking the network with spam, virtual machine exploits, and bug crashes, and non-deterministic behavior will be a heavily involved process but necessary to ensure that version 1.0 is stable.
+スパム、仮想マシン・エクスプロイト、バグ・クラッシュ、非決定的な動作などによるネットワーク攻撃は、非常に複雑なプロセスですが、バージョン1.0の安定性を保証するために必要です。
 
-### Language Support
+### 言語サポート
 
-Adding support for additional languages to be compiled to WASM: C++, Rust, etc.
+WASMにコンパイルされる言語のサポートを追加: C++, Rustなど
 
-### Documentation & Tutorials
+### ドキュメンテーション & チュートリアル
 
-# Phase 4 - Parallel Optimization Summer / Fall 2018
+# Phase4 並列最適化 - 2018 夏/秋 -
 
 After getting a stable 1.0 product released, we will move toward optimizing the code for parallel execution.
 
