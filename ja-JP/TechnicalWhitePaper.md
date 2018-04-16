@@ -18,8 +18,8 @@ Copyright © 2017 block.one
   - [無料で使用可能であること](#free-usage)
   - [簡単なアップグレードとバグの修復](#easy-upgrades-and-bug-recovery)
   - [低遅延](#low-latency)
-  - [順次性能](#sequential-performance)
-  - [並列性能](#parallel-performance)
+  - [順次処理性能](#sequential-performance)
+  - [並列処理性能](#parallel-performance)
 - [コンセンサス・アルゴリズム(DPOS)](#consensus-algorithm-dpos) 
   - [トランザクションの承認](#transaction-confirmation)
   - [Transaction as Proof of Stake (TaPoS)](#transaction-as-proof-of-stake-tapos)
@@ -97,17 +97,17 @@ EbayやUber、AirBnB、Facebookといった破壊的なビジネスは、毎日�
 
 優れたユーザーエクスペリエンスは、数秒以内に確実なフィードバックが帰ってくることを必要とします。 長い遅延はユーザーを苛立たせ、既存のブロックチェーンを使用していないアプリケーションに対するブロックチェーン上のアプリケーションの競争力を低下させます。
 
-## 順次性能
+## 順次処理性能
 
-いくつかのアプリケーションは、順次的な依存した手順のために並列アルゴリズムを実装することができません。 Applications such as exchanges need enough sequential performance to handle high volumes and therefore a platform with fast sequential performance is required.
+いくつかのアプリケーションは、順次的な依存した手順のために並列アルゴリズムを実装することができません。 取引所のようなアプリケーションは大きなボリュームを取り扱うために十分な順次処理性能が必要です。そのため、素早い順次処理性能を備えたプラッフォームが必要とされます。
 
-## Parallel Performance
+## 並列処理性能
 
-Large scale applications need to divide the workload across multiple CPUs and computers.
+大規模なアプリケーションは複数のCPUとコンピュータ間で作業負荷を分担する必要があります。
 
-# Consensus Algorithm (DPOS)
+# コンセンサス・アルゴリズム(DPOS)
 
-EOS.IO software utilizes the only decentralized consensus algorithm capable of meeting the performance requirements of applications on the blockchain, [Delegated Proof of Stake (DPOS)](https://steemit.com/dpos/@dantheman/dpos-consensus-algorithm-this-missing-white-paper). Under this algorithm, those who hold tokens on a blockchain adopting the EOS.IO software may select block producers through a continuous approval voting system and anyone may choose to participate in block production and will be given an opportunity to produce blocks proportional to the total votes they have received relative to all other producers. For private blockchains the management could use the tokens to add and remove IT staff.
+EOS.IOはブロックチェーン上のアプリケーションのパフォーマンス要件を満たす唯一の分散型コンセンサスアルゴリズムである[Delegated Proof of Stake(DPOS)](https://steemit.com/dpos/@dantheman/dpos-consensus-algorithm-this-missing-white-paper)を採用しています。 Under this algorithm, those who hold tokens on a blockchain adopting the EOS.IO software may select block producers through a continuous approval voting system and anyone may choose to participate in block production and will be given an opportunity to produce blocks proportional to the total votes they have received relative to all other producers. For private blockchains the management could use the tokens to add and remove IT staff.
 
 The EOS.IO software enables blocks to be produced exactly every 3 seconds and exactly one producer is authorized to produce a block at any given point in time. If the block is not produced at the scheduled time then the block for that time slot is skipped. When one or more blocks are skipped, there is a 6 or more second gap in the blockchain.
 
