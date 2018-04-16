@@ -2,7 +2,7 @@
 
 **2017年6月26日**
 
-**アブストラクト**EOS.IOソフトウェアは、分散型アプリケーションの全方向へのスケーリングを可能にする、新しいブロックチェーン機構を導入します。 This is achieved by creating an operating system-like construct upon which applications can be built. The software provides accounts, authentication, databases, asynchronous communication and the scheduling of applications across hundreds of CPU cores or clusters. The resulting technology is a blockchain architecture that scales to millions of transactions per second, eliminates user fees, and allows for quick and easy deployment of decentralized applications.
+**アブストラクト**EOS.IOソフトウェアは、分散型アプリケーションの全方向へのスケーリングを可能にする、新しいブロックチェーン機構を導入します。 これは、アプリケーションをビルド可能なオペレーティグシステムに似た構成を作ることにより実現されます。 このソフトウェアは、アカウント、認証、データベース、非同期通信、数百にわたるCPUコアまたはクラスターを横断したアプリケーションのスケジューリングを提供します。 The resulting technology is a blockchain architecture that scales to millions of transactions per second, eliminates user fees, and allows for quick and easy deployment of decentralized applications.
 
 **PLEASE NOTE: CRYPTOGRAPHIC TOKENS REFERRED TO IN THIS WHITE PAPER REFER TO CRYPTOGRAPHIC TOKENS ON A LAUNCHED BLOCKCHAIN THAT ADOPTS THE EOS.IO SOFTWARE. THEY DO NOT REFER TO THE ERC-20 COMPATIBLE TOKENS BEING DISTRIBUTED ON THE ETHEREUM BLOCKCHAIN IN CONNECTION WITH THE EOS TOKEN DISTRIBUTION.**
 
