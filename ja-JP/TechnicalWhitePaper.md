@@ -14,7 +14,7 @@ Copyright © 2017 block.one
 
 - [背景](#background)
 - [ブロックチェーンアプリケーション要件](#requirements-for-blockchain-applications) 
-  - [数百万のユーザーをサポート](#support-millions-of-users)
+  - [数百万のユーザーをサポートできること](#support-millions-of-users)
   - [無料で使用可能](#free-usage)
   - [簡単なアップグレードとバグの修復](#easy-upgrades-and-bug-recovery)
   - [低遅延](#low-latency)
@@ -73,15 +73,15 @@ Copyright © 2017 block.one
 
 多くのブロックチェーンプラットフォームが、実用的な分散型アプリケーションのサポートに四苦八苦する一方で、分散型取引所のBisShares(2014)や、ソーシャルメディアプラットフォームのSteem(2016)といったアプリケーションに特化型のブロックチェーンは、毎日何万ものアクティブユーザーに利用されるブロックチェーンになっています。 それらのサービスは、一秒間に数千のトランザクションを処理できるようにし、遅延を1.5秒に抑え、手数料を撤廃し、既存の中央集権サービスで提供されているレベルのユーザエクスペリエンスを提供することでこのような結果を実現しています。
 
-Existing blockchain platforms are burdened by large fees and limited computational capacity that prevent widespread blockchain adoption.
+既存のブロックチェーンプラットフォームは、高額な手数料や限られた計算能力といった障壁によって広範なブロックチェーンの採用を阻まれています。
 
-# Requirements for Blockchain Applications
+# ブロックチェーンアプリケーション要件
 
-In order to gain widespread use, applications on the blockchain require a platform that is flexible enough to meet the following requirements:
+幅広く利用してもらうために、ブロックチェーン上のアプリケーションは以下の要件を満たすレベルで柔軟である必要があります:
 
-## Support Millions of Users
+## 数百万のユーザーをサポートできること
 
-Disrupting businesses such as Ebay, Uber, AirBnB, and Facebook, require blockchain technology capable of handling tens of millions of active daily users. In certain cases, applications may not work unless a critical mass of users is reached and therefore a platform that can handle mass number of users is paramount.
+EbayやUber、AirBnB、Facebookといった破壊的なビジネスは、毎日数千万のアクティブユーザーを扱えるブロックチェーン技術を必要とします。 In certain cases, applications may not work unless a critical mass of users is reached and therefore a platform that can handle mass number of users is paramount.
 
 ## Free Usage
 
