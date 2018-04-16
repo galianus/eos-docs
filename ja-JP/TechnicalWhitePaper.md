@@ -115,7 +115,7 @@ EOS.IOソフトウェアを使用した場合、ブロックは21のラウンド
 
 ブロック生成者が24時間以内にブロックを生成していなかった場合、そのブロック生成者は、ブロックの生成を再び開始する意志をブロックチェーンに通知するまで、考慮から外されます。 これにより、信頼できないブロック生成者によるブロック生成の失敗を最小限に抑えることができ、スムーズなネットワークの動作を保証できます。
 
-通常の条件下では、ブロック生成者は競争より協力を選ぶため、DPOSブロックチェーンはフォークしません。 フォークが生じた場合には、コンセンサスは自動的に最も長いチェーンに切り替わります。 This metric works because the rate at which blocks are added to a blockchain chain fork is directly correlated to the percentage of block producers that share the same consensus. In other words, a blockchain fork with more producers on it will grow in length faster than one with fewer producers. Furthermore, no block producer should be producing blocks on two forks at the same time. If a block producer is caught doing this then such block producer will likely be voted out. Cryptographic evidence of such double-production may also be used to automatically remove abusers.
+通常の条件下では、ブロック生成者は競争より協力を選ぶため、DPOSブロックチェーンはフォークしません。 フォークが生じた場合には、コンセンサスは自動的に最も長いチェーンに切り替わります。 このメトリックが働く理由は、どちらのフォークにブロックが追加されたかの割合と、同様のコンセンサスを共有するブロック生成者の割合は直接相関するためです。 言い換えると、より多くのブロック生成者を持つフォークは、より少ないブロック生成者を持つフォークより早く長くなります。 Furthermore, no block producer should be producing blocks on two forks at the same time. If a block producer is caught doing this then such block producer will likely be voted out. Cryptographic evidence of such double-production may also be used to automatically remove abusers.
 
 ## Transaction Confirmation
 
