@@ -121,9 +121,9 @@ EOS.IOソフトウェアを使用した場合、ブロックは21のラウンド
 
 典型的なDPOSブロックチェーンにおいては、100%のブロック生成者が参加します。トランザクションは、送信から平均1.5秒後に99.9%の角度で承認されたと考えられます。
 
-ソフトウェアのバグや、インターネットの混雑、あるいは悪意のあるブロック生成者が2つ以上のフォークを作るなどの、特異なケースが生じる場合があります。 トランザクションは確実に不可逆であるため、ノードは21のブロック生成者のうち15の承認が得られるまで待つことを選択します。 EOS.IOの標準構成に基づくと、このプロセスは通常の状況下において平均で45秒かかります。 By default all nodes will consider a block confirmed by 15 of 21 producers irreversible and will not switch to a fork that excludes such a block regardless of length.
+ソフトウェアのバグや、インターネットの混雑、あるいは悪意のあるブロック生成者が2つ以上のフォークを作るなどの、特異なケースが生じる場合があります。 トランザクションは確実に不可逆であるため、ノードは21のブロック生成者のうち15の承認が得られるまで待つことを選択します。 EOS.IOの標準構成に基づくと、このプロセスは通常の状況下において平均で45秒かかります。 デフォルトで全てのノードは、21のブロック生成者のうち15の承認を得たブロックは不可逆であると考え、長さに関わらずそのようなブロックを排除するフォークに切り替えることはしないでしょう。
 
-It is possible for a node to warn users that there is a high probability that they are on a minority fork within 9 seconds of the start of a fork. After 2 consecutive missed blocks there is a 95% probability a node is on a minority fork. With 3 consecutive missed blocks there is a 99% certainty of being on a minority fork. It is possible to generate a robust predictive model that will utilize information about which nodes missed, recent participation rates, and other factors to quickly warn operators that something is wrong.
+ノードはユーザーに、少数派のフォークにいる可能性が高いということを、そのフォークのスタートから9秒以内に警告することができます。 2回連続でブロック生成が失敗している場合、95%の可能性でノードは少数派のフォークにいます。 3回連続でブロック生成が失敗している場合、99%の可能性で少数派のフォークにいます。 It is possible to generate a robust predictive model that will utilize information about which nodes missed, recent participation rates, and other factors to quickly warn operators that something is wrong.
 
 The response to such a warning depends entirely upon the nature of the business transactions, but the simplest response is to wait for 15/21 confirmations until the warning stops.
 
