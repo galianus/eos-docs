@@ -60,15 +60,15 @@ EOSトークン配布状況のデータをエクスポートし、ジェネシ�
 
 この機能は、トランザクションのマークルハッシュが適切であることの検証を含みます。
 
-# Phase 3 - Testing & Security Audits - Winter 2017, Spring 2018
+# Phase3 テスティング & セキュリティ監査 - 2017 冬, 2018春 -
 
-During this phase the platform will undergo heavy testing with a focus on finding security issues and bug. At the end of Phase 3 version 1.0 will be tagged.
+このフェーズでは、プラットフォームのセキュリティ問題とバグを発見するために大掛かりなテストを実施します。Phase3の終了時にバージョン1.0のタグが付与されます。
 
-### Develop Example Applications
+### 例示用アプリの開発
 
-Example applications are critical to proving the platform provides the features required by real developers.
+例示用アプリは、プラットフォームが実際の開発者の要求する機能を満たしていることを証明するために必須です。
 
-### Bounties for Successfully Attacking Network
+### ネットワーク攻撃への成功報酬
 
 Attacking the network with spam, virtual machine exploits, and bug crashes, and non-deterministic behavior will be a heavily involved process but necessary to ensure that version 1.0 is stable.
 
