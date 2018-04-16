@@ -14,13 +14,13 @@
 
 ### ネイティブ・コントラクト(Nathan)
 
-The EOS.IO software has a number of native contracts. These are contracts that manage the core operations of the blockchain and exist outside the Web Assembly interface. These contracts include:
+EOS.IOソフトウェアは、多くのネイティブ・コントラクトを持っています。これらのコントラクトは、WebAssemblyインターフェイス外にあり、ブロックチェーン運営の中核を管理します。ネイティブ・コントラクトには以下のものがあります：
 
-1. @eos - manages EOS token transfers
-2. @stake - manages locked EOS, voting, and Producer Election
-3. @system - manages permissions, messages, and contact code updates
+1. @eos - EOSトークンの転送を管理
+2. @stake - ロックされたEOSの管理、ブロック生成者の選挙、投票の管理
+3. @system - 承認、メッセージ、コンタクトコードの更新の管理
 
-### Virtual Machine API (Dan)
+### バーチャル・マシンAPI(Dan)
 
 Contracts are compiled to WebAssembly (WASM) and WASM must interface with the blockchain via a defined API. This API is what developers depend upon to build applications and be relatively stable before developers can really start to build on EOS.
 
