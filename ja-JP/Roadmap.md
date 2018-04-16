@@ -22,13 +22,13 @@ EOS.IOソフトウェアは、多くのネイティブ・コントラクトを�
 
 ### バーチャル・マシンAPI(Dan)
 
-コントラクトはWebAssembly(WASM)にコンパイルされます。WASMは規定のAPIを経由してブロックチェーンと連携していなければなりません。 このAPIは開発者がアプリを構築する際に依存するもので、EOS上での構築が実際に開始可能となる前に、比較的安定したものになります。
+コントラクトはWebAssembly(WASM)にコンパイルされます。WASMは規定のAPIを経由してブロックチェーンと連携していなければなりません。 このAPIは開発者がアプリをビルドする際に依存するもので、開発者がEOS上でのビルドを実際に開始できるようになる前に、比較的安定したものになります。
 
-### RPC Interface (Arhag, Nathan)
+### RPCインターフェイス(Arhag, Nathan)
 
-A simple JSON RPC over HTTP interface will be provided that enables developers to broadcast transactions and query application state. This is critical for both publishing and interacting with test applications.
+HTTPインターフェイス上で動作するシンプルなJSON-RPCが提供され、開発者はトランザクションを公開したり、アプリの状態を問い合わせたりすることが可能になります。 これはテストアプリを公開したり、テストアプリとやりとりする際に重要な意味を持ちます。
 
-### Command line Tools (Arhag)
+### コマンドラインツール(Arhag)
 
 Command line tools facilitate integrating the RPC interface with developer build environments.
 
