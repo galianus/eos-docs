@@ -123,13 +123,13 @@ EOS.IOソフトウェアを使用した場合、ブロックは21のラウンド
 
 ソフトウェアのバグや、インターネットの混雑、あるいは悪意のあるブロック生成者が2つ以上のフォークを作るなどの、特異なケースが生じる場合があります。 トランザクションは確実に不可逆であるため、ノードは21のブロック生成者のうち15の承認が得られるまで待つことを選択します。 EOS.IOの標準構成に基づくと、このプロセスは通常の状況下において平均で45秒かかります。 デフォルトで全てのノードは、21のブロック生成者のうち15の承認を得たブロックは不可逆であると考え、長さに関わらずそのようなブロックを排除するフォークに切り替えることはしないでしょう。
 
-ノードはユーザーに、少数派のフォークにいる可能性が高いということを、そのフォークのスタートから9秒以内に警告することができます。 2回連続でブロック生成が失敗している場合、95%の可能性でノードは少数派のフォークにいます。 3回連続でブロック生成が失敗している場合、99%の可能性で少数派のフォークにいます。 It is possible to generate a robust predictive model that will utilize information about which nodes missed, recent participation rates, and other factors to quickly warn operators that something is wrong.
+ノードはユーザーに、少数派のフォークにいる可能性が高いということを、そのフォークのスタートから9秒以内に警告することができます。 2回連続でブロック生成が失敗している場合、95%の可能性でノードは少数派のフォークにいます。 3回連続でブロック生成が失敗している場合、99%の可能性で少数派のフォークにいます。 直近の参加率や、どのノードがブロック生成に失敗しているか、またその他の要因を利用して、オペレータに何かがおかしいことを早急に伝えるための堅牢な予測モデルを構築することが可能です。
 
-The response to such a warning depends entirely upon the nature of the business transactions, but the simplest response is to wait for 15/21 confirmations until the warning stops.
+こうした警告への応答はそのトランザクションの性質に完全に依存しますが、最も単純な応答は、警告が止むまで21分の15の承認を待つことです。
 
 ## Transaction as Proof of Stake (TaPoS)
 
-The EOS.IO software requires every transaction to include the hash of a recent block header. This hash serves two purposes:
+EOS.IOソフトウェアは全てのトランアクションについて、直近のブロックヘッダーのハッシュを含むことを要求します。このハッシュには2つの目的があります:
 
 1. prevents a replay of a transaction on forks that do not include the referenced block; and
 2. signals the network that a particular user and their stake are on a specific fork.
