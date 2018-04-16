@@ -38,13 +38,13 @@ EOS.IO上でのブロックチェーン構築を開始する方法をまとめ�
 
 # Phase2 最低限の実行可能なテストネットワーク - 2017年 秋 -
 
-Everything in Phase 1 assumes a trusted environment that only runs the developer's own code. Before a test network can be deployed several additional features need to be implemented and tested.
+Phase1における全てのものは、開発者自身のコードのみを実行する信頼された環境を前提としていました。テストネットワークがデプロイできるようになる前に、追加的ないくつかの機能が実装・テストされる必要があります。
 
-### P2P Network Code (Phil)
+### P2Pネットワークコード(Phil)
 
-This is a plugin that is responsible for synchronizing the blockchain state between two standalone nodes.
+P2Pネットワークコードは、、二つのスタンドアロン・ノード間でのブロックチェーンの同期のためのプラグインです。
 
-### WASM Sanitation & CPU Sandboxing (Brian)
+### WASMサニテーション & CPUサンドボクシング(Brian)
 
 The WASM code needs to be sanitized to check for non-deterministic behavior such as floating point operations and infinite loops.
 
