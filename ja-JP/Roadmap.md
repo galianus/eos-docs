@@ -54,11 +54,11 @@ WASMコードは、浮動小数点演算や無限ループ等の非決定的な�
 
 ### ジェネシス・インポート・テスティング(DappHub)
 
-Tools need to be developed to export data from the EOS Token Distribution state and create a genesis configuration file. This will enable anyone participating in the Token Distribution to acquire some initial test EOS (TEOS).
+EOSトークン配布状況のデータをエクスポートし、ジェネシス・コンフィギュレイション・ファイルを作るために、いくつかのツールが開発される必要があります。 これにより、誰でもトークン配布に参加し、最初のテストEOS（TEOS）を入手することができるようになります。
 
-### Interblockchain Communication (Nathan)
+### インターブロクチェーン・コミュニケーション(Nathan)
 
-This feature involves verifying the Merkle hashing of transactions is proper.
+この機能は、トランザクションのマークルハッシュが適切であることの検証を含みます。
 
 # Phase 3 - Testing & Security Audits - Winter 2017, Spring 2018
 
