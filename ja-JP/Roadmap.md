@@ -46,9 +46,9 @@ P2Pネットワークコードは、、二つのスタンドアロン・ノー�
 
 ### WASMサニテーション & CPUサンドボクシング(Brian)
 
-The WASM code needs to be sanitized to check for non-deterministic behavior such as floating point operations and infinite loops.
+WASMコードは、浮動小数点演算や無限ループ等の非決定的な動作を点検するためにサニタイズする必要があります。
 
-### Resource Usage Tracking & Rate Limiting (Arhag)
+### リソース・ユーゼイジ・トラッキング & レート・リミッティング(Arhag)
 
 To prevent abuse the resource monitoring and usage tracking rate limits users according to staked EOS.
 
