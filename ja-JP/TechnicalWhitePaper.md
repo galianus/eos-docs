@@ -91,11 +91,11 @@ EbayやUber、AirBnB、Facebookといった破壊的なビジネスは、毎日�
 
 企業が構築するブロックチェーンベースのアプリケーションは、新機能の追加によってアプリケーションを強化するために、柔軟性を必要とします。
 
-All non-trivial software is subject to bugs, even with the most rigorous of formal verification. The platform must be robust enough to fix bugs when they inevitably occur.
+もっとも厳格な形式的検証を用いても、全ての重要なソフトウェアはバグに直面します。プラットフォームは不可避のバグを修復するために十分頑丈でなければなりません。
 
-## Low Latency
+## 低遅延
 
-A good user experience demands reliable feedback with delay of no more than a few seconds. Longer delays frustrate users and make applications built on a blockchain less competitive with existing non-blockchain alternatives.
+優れたユーザーエクスペリエンスは、数秒以内に確実なフィードバックが帰ってくることを必要とします。 Longer delays frustrate users and make applications built on a blockchain less competitive with existing non-blockchain alternatives.
 
 ## Sequential Performance
 
