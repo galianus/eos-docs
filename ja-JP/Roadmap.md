@@ -10,9 +10,9 @@
 
 ### スタンドアロン・ノード(Dan & Nathan)
 
-A standalone node operates a test blockchain and produces blocks while exposing an API. This node does not need to concern itself with any P2P networking code.
+スタンドアロン・ノードは、APIを公開している間、テスト・ブロックチェーンを運用し、ブロックを生成します。このノードは、P2Pネットワークコードを扱う必要はありません。
 
-### Native Contracts (Nathan)
+### ネイティブ・コントラクト(Nathan)
 
 The EOS.IO software has a number of native contracts. These are contracts that manage the core operations of the blockchain and exist outside the Web Assembly interface. These contracts include:
 
