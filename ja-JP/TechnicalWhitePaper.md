@@ -2,13 +2,13 @@
 
 **2017年6月26日**
 
-**要旨:** EOS.IOソフトウェアは、分散型アプリケーションの全方向へのスケーリングを可能にする、新しいブロックチェーン機構を導入します。 これは、アプリケーションをビルド可能なオペレーティグシステムに似た構成を作ることにより実現されます。 このソフトウェアは、アカウント、認証、データベース、非同期通信、数百にわたるCPUコアまたはクラスターを横断したアプリケーションのスケジューリングを提供します。 これにより、結果としてもたらされる技術は、一秒あたり数百万のトランザクションのスケールや、ユーザ手数料の撤廃、素早い分散型アプリケーションのデプロイを可能にするブロックチェーン機構です。
+**要旨:** EOS.IOソフトウェアは、分散型アプリケーションの全方向へのスケーリングを可能にする、新しいブロックチェーン・アーキテクチャを導入します。 これは、アプリケーションをビルド可能なオペレーティグシステムに似た構成を作ることにより実現されます。 このソフトウェアは、アカウント、認証、データベース、非同期通信、数百にわたるCPUコアまたはクラスターを横断したアプリケーションのスケジューリングを提供します。 これにより、結果としてもたらされる技術は、一秒あたり数百万のトランザクションのスケールや、ユーザ手数料の撤廃、素早い分散型アプリケーションのデプロイを可能にするブロックチェーン・アーキテクチャです。
 
-**注意事項: 当ホワイトペーパーにおける暗号トークンとは、EOS.IOソフトウェアを採用してローンチされたブロックチェーン上の暗号トークンであり、 EOSトークン配布を通じてイーサリアムブロックチェーン上で配布されたERC20トークンではありません。**
+**注意事項: 当ホワイトペーパーにおける暗号トークンとは、EOS.IOソフトウェアを採用してローンチされたブロックチェーン上の暗号トークンであり、 EOS Token Distributionを通じてイーサリアムブロックチェーン上で配布されたERC20トークンではありません。**
 
 Copyright © 2017 block.one
 
-非営利、教育目的の利用においては、（商用、有料での利用を除いて）参照元と適切な著作権表示を記載した上で、許可なく当ホワイトペーパーの内容を複製、配布することを許可します。
+非営利、教育目的の利用においては、（商用、有料での利用を除いて）参照元と適切な著作権表示を記載した上で、当ホワイトペーパーの内容を許可なく複製、配布することを許可します。
 
 **免責事項:** 当ホワイトペーパーは情報提供のみを目的としています。 当ホワイトペーパーはあくまで現段階におけるものであり、block.oneは当ホワイトペーパーにおいて到達する結論や正確性を保証しません。 block.one does not make and expressly disclaims all representations and warranties, express, implied, statutory or otherwise, whatsoever, including, but not limited to: (i) warranties of merchantability, fitness for a particular purpose, suitability, usage, title or noninfringement; (ii) that the contents of this white paper are free from error; and (iii) that such contents will not infringe third-party rights. block.one and its affiliates shall have no liability for damages of any kind arising out of the use, reference to, or reliance on this white paper or any of the content contained herein, even if advised of the possibility of such damages. In no event will block.one or its affiliates be liable to any person or entity for any damages, losses, liabilities, costs or expenses of any kind, whether direct or indirect, consequential, compensatory, incidental, actual, exemplary, punitive or special for the use of, reference to, or reliance on this white paper or any of the content contained herein, including, without limitation, any loss of business, revenues, profits, data, use, goodwill or other intangible losses.
 
