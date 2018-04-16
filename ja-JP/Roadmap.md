@@ -22,7 +22,7 @@ EOS.IOソフトウェアは、多くのネイティブ・コントラクトを�
 
 ### バーチャル・マシンAPI(Dan)
 
-Contracts are compiled to WebAssembly (WASM) and WASM must interface with the blockchain via a defined API. This API is what developers depend upon to build applications and be relatively stable before developers can really start to build on EOS.
+コントラクトはWebAssembly(WASM)にコンパイルされます。WASMは規定のAPIを経由してブロックチェーンと連携していなければなりません。 このAPIは開発者がアプリを構築する際に依存するもので、EOS上での構築が実際に開始可能となる前に、比較的安定したものになります。
 
 ### RPC Interface (Arhag, Nathan)
 
