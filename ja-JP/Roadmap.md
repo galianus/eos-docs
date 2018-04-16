@@ -80,6 +80,6 @@ WASMにコンパイルされる言語のサポートを追加: C++, Rustなど
 
 # Phase4 並列最適化 - 2018 夏/秋 -
 
-After getting a stable 1.0 product released, we will move toward optimizing the code for parallel execution.
+安定したバージョン1.0のプロダクトリリース後に、並列実行のためのコード最適化にむけて動き出します。
 
-# Phase 5 - Cluster Implementation The Future
+# Phase5 クラスター実装
