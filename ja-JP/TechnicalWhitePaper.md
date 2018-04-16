@@ -129,14 +129,14 @@ EOS.IOソフトウェアを使用した場合、ブロックは21のラウンド
 
 ## Transaction as Proof of Stake (TaPoS)
 
-EOS.IOソフトウェアは全てのトランアクションについて、直近のブロックヘッダーのハッシュを含むことを要求します。このハッシュには2つの目的があります:
+EOS.IOソフトウェアは全てのトランザクションについて、直近のブロックヘッダーのハッシュを含むことを要求します。このハッシュには2つの目的があります:
 
-1. prevents a replay of a transaction on forks that do not include the referenced block; and
-2. signals the network that a particular user and their stake are on a specific fork.
+1. 参照先のブロックを含まないフォーク上のトランザクションの再生を防ぎ
+2. 特定のユーザーとそのステークが特定のフォーク上にあることをネットワークに通知する
 
-Over time all users end up directly confirming the blockchain which makes it difficult to forge counterfeit chains as the counterfeit would not be able to migrate transactions from the legitimate chain.
+時間が経つにつれて全てのユーザーは直接ブロックチェーンを承認するようになるため、偽造されたチェーンは正規のチェーンからトランザクションを移行できなくなり、チェーンを偽装することは難しくなります。
 
-# Accounts
+# アカウント
 
 The EOS.IO software permits all accounts to be referenced by a unique human readable name of 2 to 32 characters in length. The name is chosen by the creator of the account. All accounts must be funded with the minimal account balance at the time they are created to cover the cost of storing account data. Account names also support namespaces such that the owner of account @domain is the only one who can create the account @user.domain.
 
