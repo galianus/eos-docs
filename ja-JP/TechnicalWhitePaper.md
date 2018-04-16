@@ -119,9 +119,9 @@ EOS.IOソフトウェアを使用した場合、ブロックは21のラウンド
 
 ## トランザクションの承認
 
-Typical DPOS blockchains have 100% block producer participation. A transaction can be considered confirmed with 99.9% certainty after an average of 1.5 seconds from time of broadcast.
+典型的なDPOSブロックチェーンにおいては、100%のブロック生成者が参加します。トランザクションは、送信から平均1.5秒後に99.9%の角度で承認されたと考えられます。
 
-There are some extraordinary cases where a software bug, Internet congestion, or a malicious block producer will create two or more forks. For absolute certainty that a transaction is irreversible, a node may choose to wait for confirmation by 15 out of the 21 block producers. Based on a typical configuration of the EOS.IO software, this will take an average of 45 seconds under normal circumstances. By default all nodes will consider a block confirmed by 15 of 21 producers irreversible and will not switch to a fork that excludes such a block regardless of length.
+ソフトウェアのバグや、インターネットの混雑、あるいは悪意のあるブロック生成者が2つ以上のフォークを作るなどの、特異なケースが生じる場合があります。 トランザクションは確実に不可逆であるため、ノードは21のブロック生成者のうち15の承認が得られるまで待つことを選択します。 EOS.IOの標準構成に基づくと、このプロセスは通常の状況下において平均で45秒かかります。 By default all nodes will consider a block confirmed by 15 of 21 producers irreversible and will not switch to a fork that excludes such a block regardless of length.
 
 It is possible for a node to warn users that there is a high probability that they are on a minority fork within 9 seconds of the start of a fork. After 2 consecutive missed blocks there is a 95% probability a node is on a minority fork. With 3 consecutive missed blocks there is a 99% certainty of being on a minority fork. It is possible to generate a robust predictive model that will utilize information about which nodes missed, recent participation rates, and other factors to quickly warn operators that something is wrong.
 
