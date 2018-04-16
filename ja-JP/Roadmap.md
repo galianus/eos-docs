@@ -48,11 +48,11 @@ P2Pネットワークコードは、、二つのスタンドアロン・ノー�
 
 WASMコードは、浮動小数点演算や無限ループ等の非決定的な動作を点検するためにサニタイズする必要があります。
 
-### リソース・ユーゼイジ・トラッキング & レート・リミッティング(Arhag)
+### リソース・利用状況のトラッキング & レート・リミッティング(Arhag)
 
-To prevent abuse the resource monitoring and usage tracking rate limits users according to staked EOS.
+濫用を防ぐため、リソースの監視と使用状況トラッキングのレートは、ステークされているEOSに応じてユーザーを制限します。
 
-### Genesis Import Testing (DappHub)
+### ジェネシス・インポート・テスティング(DappHub)
 
 Tools need to be developed to export data from the EOS Token Distribution state and create a genesis configuration file. This will enable anyone participating in the Token Distribution to acquire some initial test EOS (TEOS).
 
