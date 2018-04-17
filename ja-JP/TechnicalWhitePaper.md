@@ -198,11 +198,11 @@ EOS.IOの技術により、全てのアカウントは全ての権限を持っ�
 
 ## 強制的な遅延付きのメッセージ
 
-時間はセキュリティにおける重要な要素です。 ほとんどの場合において、秘密鍵が盗まれたかどうかはその鍵が使用されるまで知ることができません。 インターネットに接続された普段付いのコンピュータに保存されているキーを必要とするアプリケーションを人々が持っている場合、時間ベースのセキュリティはより重要です。 The EOS.IO software enables application developers to indicate that certain messages must wait a minimum period of time after being included in a block before they can be applied. During this time they can be cancelled.
+時間はセキュリティにおける重要な要素です。 ほとんどの場合において、秘密鍵が盗まれたかどうかはその鍵が使用されるまで知ることができません。 インターネットに接続された普段付いのコンピュータに保存されているキーを必要とするアプリケーションを人々が持っている場合、時間ベースのセキュリティはより重要です。 EOS.IOソフトウェアを使うことで、アプリケーションの開発者は、特定のメッセージが適応可能になる前に、ブロックに格納されてから最低限の時間待つ必要があるということを示すことができます。 この待ち時間の間にメッセージはキャンセルすることができます。
 
-Users can then receive notice via email or text message when one of these messages is broadcast. If they did not authorize it, then they can use the account recovery process to recover their account and retract the message.
+いずれかのメッセージがブロードキャストされた際に、ユーザーはメールまたはテキストメッセージで通知を受けることができます。 もしユーザーがそのメッセージを承認していない場合、アカウント復旧プロセスを使うことで、アカウントを復旧し、メッセージを撤回することができます。
 
-The required delay depends upon how sensitive an operation is. Paying for a coffee can have no delay and be irreversible in seconds, while buying a house may require a 72 hour clearing period. Transferring an entire account to new control may take up to 30 days. The exact delays chosen are up to application developers and users.
+必要な遅延時間はオペレーションの取り扱いの難しさによって変わります。 コーヒーの支払いに遅延時間は必要なく、数秒以内に取り消し不可能になっても問題ありませんが、家の購入は72時間の決済期間が必要です。 Transferring an entire account to new control may take up to 30 days. The exact delays chosen are up to application developers and users.
 
 ## Recovery from Stolen Keys
 
