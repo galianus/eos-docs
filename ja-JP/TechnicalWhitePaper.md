@@ -249,17 +249,17 @@ EOS.IOソフトウェアベースのブロックチェーンでは、メッセ�
 
 ## 複数アカウントでのアトミック・トランザクション
 
-時に、メッセージが自動で複数のアカウントに配信され承認されることを保証することが望ましい場合があります。 この場合、両方のメッセージは1つのトランザクションに配置され、両方のアカウントは同じスレッドと連続的に適用されるメッセージに割り当てられます。 This situation is not ideal for performance and when it comes to "billing" users for usage, they will get billed by the number of unique accounts referenced by a transaction.
+時に、メッセージが自動で複数のアカウントに配信され承認されることを保証することが望ましい場合があります。 この場合、両方のメッセージは1つのトランザクションに配置され、両方のアカウントは同じスレッドと連続的に適用されるメッセージに割り当てられます。 この状況はパフォーマンス最適ではなく、ユーザーに使用料を請求する段階になると、ユーザーはトランザクションから参照したユニークなアカウントの数に基づいて請求を受けることになります。
 
-For performance and cost reasons it is best to minimize atomic operations involving two or more heavily utilized accounts.
+パフォーマンスとコストの理由から、頻繁に利用されている2つ以上のアカウントを含むアトミック・オペレーションは最小限に抑えられるのがよいでしょう。
 
-## Partial Evaluation of Blockchain State
+## ブロックチェーン状態の部分評価
 
-Scaling blockchain technology necessitates that components are modular. Everyone should not have to run everything, especially if they only need to use a small subset of the applications.
+ブロックチェーン技術のスケーリングのためにはコンポーネントがモジュール式であることが必要です。特にアプリケーションのわずかな一部のみを利用する必要がある場合において、アプリケーションの全てを実行する必要はありません。
 
-An exchange application developer runs full nodes for the purpose of displaying the exchange state to its users. This exchange application has no need for the state associated with social media applications. EOS.IO software allows any full node to pick any subset of applications to run. Messages delivered to other applications are safely ignored because an application's state is derived entirely from the messages that are delivered to it.
+取引所のアプリケーション開発者は、取引所の状態をユーザーに表示するためにフルノードを実行します。 この取引所アプリはソーシャルメディアアプリに関連する状態を必要としません。 EOS.IOソフトウェアのあらゆるフルノードは、実行するアプリケーションの任意のサブセットを選択できます。 あるアプリケーションの状態はそのアプリケーションに配信されたメッセージから完全に派生するものであるため、他のアプリケーションに配信されるメッセージは安全に無視されます。
 
-This has some significant implications on communication with other accounts. Most significantly it cannot be assumed that the state of the other account is accessible on the same machine. It also means that while it is tempting to enable "locks" that allow one account to synchronously call another account, this design pattern breaks down if the other account is not resident in memory.
+これは他のアカウントとのコミュニケーションにおいて重要な意味を持ちます。 最も重要なことは、同じマシン上で他のアカウントの状態にアクセス可能だと仮定することはできないということです。 It also means that while it is tempting to enable "locks" that allow one account to synchronously call another account, this design pattern breaks down if the other account is not resident in memory.
 
 All state communication among accounts must be passed via messages included in the blockchain.
 
