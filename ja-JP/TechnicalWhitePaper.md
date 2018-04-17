@@ -267,9 +267,9 @@ EOS.IOソフトウェアベースのブロックチェーンでは、メッセ�
 
 EOS.IOソフトウェアは、ブロックプロ生成者に任意のメッセージを任意のアカウントに送るよう義務付けることはできません。 それぞれのブロック生成者は、トランザクションを処理するために必要な計算量と時間について独自の個人的な測定を行います。 これは、トランザクションがユーザーによって作られたか、スクリプトによって自動的に作られたかを適用します。
 
-EOS.IOを採用しているローンチされたブロックチェーン上では、ネットワークレベルで全てのトランザクションは、実行に0.1msかかるか上限の10msかかるかに関わらず固定の計算帯域幅コストを請求されます。 However, each individual block producer using the software may calculate resource usage using their own algorithm and measurements. When a block producer concludes that a transaction or account has consumed a disproportionate amount of the computational capacity they simply reject the transaction when producing their own block; however, they will still process the transaction if other block producers consider it valid.
+EOS.IOを採用しているローンチされたブロックチェーン上では、ネットワークレベルで全てのトランザクションは、実行に0.1msかかるか上限の10msかかるかに関わらず固定の計算帯域幅コストを請求されます。 しかしながら、ソフトウェアを使用している個々のブロック生成者は独自のアルゴリズムと測定によってリソース使用状況を計算するでしょう。 ブロック生成者がトランザクションまたはアカウントが不釣り合いな計算能力を消費しているとみなした場合、彼らは彼ら自身のブロックを生成する際に、そのトランザクションを拒否します。しかしながら。他のブロック生成者がそのトランザクションを有効だとみなした場合、ブロック生成者はそのトランザクションを処理します。
 
-In general so long as even 1 block producer considers a transaction as valid and under the resource usage limits then all other block producers will also accept it, but it may take up to 1 minute for the transaction to find that producer.
+一般的に、一人でもブロック生成者があるトランザクションをリソース使用状況の制限において有効だとみなす限り、他の全てのブロック生成者もそのトランザクションを受け入れます。しかし、そのトランザクションが生成者を見つけ出すためには最大で1分間かかる可能性があります。
 
 In some cases a producer may create a block that includes transactions that are an order of magnitude outside of acceptable ranges. In this case the next block producer may opt to reject the block and the tie will be broken by the third producer. This is no different than what would happen if a large block caused network propagation delays. The community would notice a pattern of abuse and eventually remove votes from the rogue producer.
 
