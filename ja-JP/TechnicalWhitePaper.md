@@ -31,7 +31,7 @@ Copyright © 2017 block.one
     - [許可のマッピング](#permission-mapping)
     - [許可の評価](#evaluating-permissions) 
       - [デフォルトの許可グループ](#default-permission-groups)
-      - [Parallel Evaluation of Permissions](#parallel-evaluation-of-permissions)
+      - [許可の並列評価](#parallel-evaluation-of-permissions)
   - [Messages with Mandatory Delay](#messages-with-mandatory-delay)
   - [Recovery from Stolen Keys](#recovery-from-stolen-keys)
 - [Deterministic Parallel Execution of Applications](#deterministic-parallel-execution-of-applications) 
@@ -192,13 +192,13 @@ EOS.IOの技術により、全てのアカウントは全ての権限を持っ�
 
 許可の評価プロセスは読み取り専用で、トランザクションによって生じた許可の変更はブロックの終わりまで効力を持ちません。 これは全てのキーと全てのトランザクションの許可評価は並列で実行できるということを意味します。 加えて、ロールバックを必要とするコストのかかるアプリケーションのロジックを開始することなく、迅速な許可の承認が可能であることを意味します。 さらには、トランザクションの許可は、保留中のトランザクションを受け取った際に評価することができ、それらのトランザクションが適用された際に再評価する必要はありません。
 
-全てを考慮に入れると、トランザクションを検証するために必要な計算能力のうちかなりの割合を許可の検証が占めます。 Making this a read-only and trivially parallelizable process enables a dramatic increase in performance.
+全てを考慮に入れると、トランザクションを検証するために必要な計算能力のうちかなりの割合を許可の検証が占めます。 これを読み取り専用にすることと、自明的に並列化可能なプロセスによって劇的にパフォーマンスが向上します。
 
-When replaying the blockchain to regenerate the deterministic state from the log of messages there is no need to evaluate the permissions again. The fact that a transaction is included in a known good block is sufficient to skip this step. This dramatically reduces the computational load associated with replaying an ever growing blockchain.
+メッセージのログから決定的な状況を再構築するためにブロックチェーンを再生する際に、許可を改めて評価する必要はありません。 良いブロックとして認知されているブロックにトランザクションが格納されているという事実によって、このステップはスキップすることができます。 これにより、成長を続けるブロックチェーンの再生に関わる計算量を劇的に削減することができます。
 
-## Messages with Mandatory Delay
+## 強制的な遅延付きのメッセージ
 
-Time is a critical component of security. In most cases, it is not possible to know if a private key has been stolen until it has been used. Time based security is even more critical when people have applications that require keys be kept on computers connected to the internet for daily use. The EOS.IO software enables application developers to indicate that certain messages must wait a minimum period of time after being included in a block before they can be applied. During this time they can be cancelled.
+時間はセキュリティにおける重要な要素です。 ほとんどの場合において、秘密鍵が盗まれたかどうかはその鍵が使用されるまで知ることができません。 Time based security is even more critical when people have applications that require keys be kept on computers connected to the internet for daily use. The EOS.IO software enables application developers to indicate that certain messages must wait a minimum period of time after being included in a block before they can be applied. During this time they can be cancelled.
 
 Users can then receive notice via email or text message when one of these messages is broadcast. If they did not authorize it, then they can use the account recovery process to recover their account and retract the message.
 
