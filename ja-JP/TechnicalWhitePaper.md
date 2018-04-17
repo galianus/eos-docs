@@ -279,13 +279,13 @@ EOS.IOを採用しているローンチされたブロックチェーン上で�
 
 **注意事項: 当ホワイトペーパーにおける暗号トークンとは、EOS.IOソフトウェアを採用してローンチされたブロックチェーン上の暗号トークンであり、 EOS Token Distributionを通じてイーサリアムブロックチェーン上で配布されたERC20トークンではありません。**
 
-All blockchains are resource constrained and require a system to prevent abuse. With a blockchain that uses EOS.IO software, there are three broad classes of resources that are consumed by applications:
+全てのブロックチェーンはリソースに制約があり、濫用を防ぐシステムが必要です。 EOS.IOを使用したブロックチェーンでは、アプリケーションによって消費されるリソースは3つに大別されます。
 
-1. Bandwidth and Log Storage (Disk);
-2. Computation and Computational Backlog (CPU); and
-3. State Storage (RAM).
+1. 帯域幅とログストレージ(ディスク)
+2. 計算と計算バックログ(CPU)
+3. ステート・ストレージ(RAM)
 
-Bandwidth and computation have two components, instantaneous usage and long-term usage. A blockchain maintains a log of all messages and this log is ultimately stored and downloaded by all full nodes. With the log of messages it is possible to reconstruct the state of all applications.
+帯域幅と計算は、瞬間的使用と短期的使用の2つのコンポーネントがあります。 ブロックチェーンは全てのメッセージのログを保持し、このログは最終的に全てのフルノードによって格納され、ダウンロードされます。 メッセージのログにより、全てのアプリケーションの状態を再構築することができます。
 
 The computational debt is calculations that must be performed to regenerate state from the message log. If the computational debt grows too large then it becomes necessary to take snapshots of the blockchain's state and discard the blockchain's history. If computational debt grows too quickly then it may take 6 months to replay 1 year worth of transactions. It is critical, therefore, that the computational debt be carefully managed.
 
