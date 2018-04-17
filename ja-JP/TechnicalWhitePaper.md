@@ -289,9 +289,9 @@ EOS.IOを採用しているローンチされたブロックチェーン上で�
 
 計算債務とは、メッセージログから状態を再生成するために実行されなければいけない計算です。 計算債務が大きくなりすぎた場合、ブロックチェーンの状態のスナップショットを取得し、ブロックチェーンの履歴を破棄することが必要になります。 計算債務があまりに早く増大した場合、1年分のトランザクションを再生するために6ヶ月の時間を要する可能性があります。 したがって、計算債務は慎重に管理されることが重要です。
 
-ブロックチェーン・ステート・ストレージはアプリケーションのロジックからアクセス可能な情報です。 これにはオーダーブックやアカウントの残高などの情報が含まれています。 If the state is never read by the application then it should not be stored. For example, blog post content and comments are not read by application logic so they should not be stored in the blockchain's state. Meanwhile the existence of a post/comment, the number of votes, and other properties do get stored as part of the blockchain's state.
+ブロックチェーン・ステート・ストレージはアプリケーションのロジックからアクセス可能な情報です。 これにはオーダーブックやアカウントの残高などの情報が含まれています。 もし状態がアプリケーションによって読み込まれなかった場合、その状態は保存されるべきではありません。 例えば、ブログの投稿内容やコメントはアプリケーションのロジックによって読み込まれないため、ブロックチェーンの状態に保存されるべきではありません。 一方で、投稿やコメントの存在や、投票数、その他のプロパティはブロックチェーンの状態の一部として保存されます。
 
-Block producers publish their available capacity for bandwidth, computation, and state. The EOS.IO software allows each account to consume a percentage of the available capacity proportional to the amount of tokens held in a 3-day staking contract. For example, if a blockchain based on the EOS.IO software is launched and if an account holds 1% of the total tokens distributable pursuant to that blockchain, then that account has the potential to utilize 1% of the state storage capacity.
+ブロックの生成者は、利用可能な彼らの帯域幅と計算力、状態の容量を公開します。 EOS.IOのそれぞれのアカウントは、3日間のステーキング・コントラクトで保持されているトークンの量に比例した割合の利用可能容量を消費することができます。 例えば、EOS.IOソフトウェアベースのブロックチェーンがローンチされ、もしあるアカウントがそのブロックチェーンに準じて配布可能な全トークンのうち1％を保持していた場合、そのアカウントはステート・ストレージ容量のうち1%を利用できる見込みがあります。
 
 Adopting the EOS.IO software on a launched blockchain means bandwidth and computational capacity are allocated on a fractional reserve basis because they are transient (unused capacity cannot be saved for future use). The algorithm used by EOS.IO software is similar to the algorithm used by Steem to rate-limit bandwidth usage.
 
