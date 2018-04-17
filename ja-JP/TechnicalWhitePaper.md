@@ -224,26 +224,28 @@ EOS.IOソフトウェアベースのブロックチェーンでは、メッセ�
 
 待ち時間は、あるアカウントが別のアカウントにメッセージを送信し、応答を受信するまでにかかる時間です。 ゴールは2つのアカウントがそれぞれのメッセージにつき3秒以内に1つのブロック内でメッセージのやりとりを行えるようにすることです。 これを可能にするために、EOS.IOソフトウェアはそれぞれのブロックをサイクルに分割します。 それぞれのサイクルはスレッドに分割され、それぞれのスレッドはトランザクションのリストを含みます。 それぞれのトランザクションは配信される一連のメッセージを含んでいます。 この構造はツリー構造で表すことができ、そこでは相互に重なった層が連続的に、また並列して処理されます。
 
-        Block
+        ブロック
     
-          Cycles (sequential)
+          サイクル (連続)
     
-            Threads (parallel)
+            スレッド(並列)
     
-              Transactions (sequential)
+              トランザクション (連続)
     
-                Messages (sequential)
+                メッセージ (連続)
     
-                  Receiver and Notified Accounts (parallel)
+                  レシーバーとノーティファイド・アカウント (並列)
+    
+    
     
 
-Transactions generated in one cycle can be delivered in any subsequent cycle or block. Block producers will keep adding cycles to a block until the maximum wall clock time has passed or there are no new generated transactions to deliver.
+あるサイクルで生成されたトランザクションは、後に続くあらゆるサイクルまたはブロックに配信することができます。 ブロック生成者は、wall clock timeの限界がすぎるか、または配信するトランザクションがなくなるまでサイクルをブロックに追加し続けます。
 
-It is possible to use static analysis of a block to verify that within a given cycle no two threads contain transactions that modify the same account. So long as that invariant is maintained a block can be processed by running all threads in parallel.
+与えられたサイクルの中で、同じアカウントを修正したトランザクションを含むスレッドが2つないことを検証するために、ブロックの静的解析を利用することができます。 不変性が維持されている限り、全てのスレッドを並列して実行することによってブロックを処理することができます。
 
-## Read-Only Message Handlers
+## 読み取り専用のメッセージ・ハンドラー
 
-Some accounts may be able to process a message on a pass/fail basis without modifying their internal state. If this is the case then these handlers can be executed in parallel so long as only read-only message handlers for a particular account are included in one or more threads within a particular cycle.
+いくつかのアカウントは、そのアカウントの内部状態を変更することなく pass/fail 方式でメッセージを処理することができるかもしれません。 もしそうであれば、特定のアカウントの読み取り専用のメッセージ・ハンドラーが特定のサイクル内で一つ以上のスレッドに含まれている限り、これらのハンドラーは並列で実行することができます。
 
 ## Atomic Transactions with Multiple Accounts
 
