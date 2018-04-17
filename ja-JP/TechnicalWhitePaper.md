@@ -29,8 +29,8 @@ Copyright © 2017 block.one
     - [名前付きの許可レベル](#named-permission-levels)
     - [名前付きのメッセージ・ハンドラー・グループ](#named-message-handler-groups)
     - [許可のマッピング](#permission-mapping)
-    - [Evaluating Permissions](#evaluating-permissions) 
-      - [Default Permission Groups](#default-permission-groups)
+    - [許可の評価](#evaluating-permissions) 
+      - [デフォルトの許可グループ](#default-permission-groups)
       - [Parallel Evaluation of Permissions](#parallel-evaluation-of-permissions)
   - [Messages with Mandatory Delay](#messages-with-mandatory-delay)
   - [Recovery from Stolen Keys](#recovery-from-stolen-keys)
@@ -174,17 +174,17 @@ EOS.IOソフトウェアのアカウントは、それぞれのメッセージ�
 
 ### 許可のマッピング
 
-EOS.IOソフトウェアのそれぞれのアカウントは、あらゆるアカウントの名前付きメッセージ・ハンドラー・グループとそれら自身の名前付き許可レベルのマッピングを定義することができます。 例えば、あるアカウントの保有者は、そのアカウント保有者のソーシャルメディアアプリを、そのアカウントの"Friend"許可グループにマッピングすることができます。 これによって、あらゆる友達がそのアカウント保有者のソーシャルメディアに、そのアカウントの保有者として投稿することができます。 彼らがそのアカウントの保有者として投稿したとしても、彼らはメッセージの著名に彼ら自身のキーを使用します。 これにより、どの友達がどのようにそのアカウントを使用したのか常に識別することが可能です。
+EOS.IOソフトウェアのそれぞれのアカウントは、あらゆるアカウントの名前付きメッセージ・ハンドラー・グループとそれら自身の名前付き許可レベルのマッピングを定義することができます。 例えば、あるアカウントの保有者は、そのアカウント保有者のソーシャルメディアアプリを、そのアカウントの"Friend"許可グループにマッピングすることができます。 これによって、あらゆる友達がそのアカウント保有者のソーシャルメディアに、そのアカウントの保有者として投稿することができます。 彼らがそのアカウントの保有者として投稿したとしても、彼らはメッセージの署名に彼ら自身のキーを使用します。 これにより、どの友達がどのようにそのアカウントを使用したのか常に識別することが可能です。
 
 ### 許可を評価する
 
-When delivering a message of type "**Action**", from **@alice** to **@bob** the EOS.IO software will first check to see if **@alice** has defined a permission mapping for **@bob.groupa.subgroup.Action**. If nothing is found then a mapping for **@bob.groupa.subgroup** then **@bob.groupa**, and lastly **@bob** will be checked. If no further match is found, then the assumed mapping will be to the named permission group **@alice.active**.
+"**Action**" タイプのメッセージを **@alice** から **@bob** に送る際、EOS.IOソフトウェアはまず **@alice** が **@bob.groupa.subgroup.Action** に関して許可のマッピングを定義しているか確認します。 もし何も見つからなかった場合、**@bob.groupa.subgroup** のマッピングを確認し、次に **@bob.groupa** 、そして最後に **@bob** 確認します。 もし一致するものが見つからなかった場合、仮のマッピングが **@alice.active** の名前付き許可グループになります。
 
-Once a mapping is identified then signing authority is validated using the threshold multi-signature process and the authority associated with the named permission. If that fails, then it traverses up to the parent permission and ultimately to the owner permission, **@alice.owner**.
+マッピングが特定されると、署名権限はマルチシグネイチャーの閾値プロセスを利用して承認され、その権限は名前付き許可と紐づけられます。 もし失敗した場合、親の許可まで横断し、最終的にはオーナー許可 **@alice.owner** まで横断します。
 
 <img align="center" src="http://eos.io/wpimg/diagram2grayscale2.jpg" width="845.85px" height="500px" />
 
-#### Default Permission Groups
+#### デフォルトの許可グループ
 
 The EOS.IO technology also allows all accounts to have an "owner" group which can do everything, and an "active" group which can do everything except change the owner group. All other permission groups are derived from "active".
 
