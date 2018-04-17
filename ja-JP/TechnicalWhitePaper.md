@@ -170,9 +170,9 @@ EOS.IOソフトウェアのアカウントは、それぞれのメッセージ�
 
 最も高いレベルのメッセージ・ハンドラー・グループはアカウント名で、最も低レベルのものは、そのアカウントが受信した個々のメッセージタイプのものです。 これらのグループは以下のように参照できます: **@accountname.groupa.subgroupb.MessageType**.
 
-Under this model it is possible for an exchange contract to group order creation and canceling separately from deposit and withdraw. This grouping by the exchange contract is a convenience for users of the exchange.
+このモデルでは、取引所コントラクトが注文の作成とキャンセルを入金と出金から切り離してまとめることが可能です。 取引所コントラクトによるこのようなグルーピングは、取引所のユーザーにとって便利です。
 
-### Permission Mapping
+### 許可のマッピング
 
 EOS.IO software allows each account to define a mapping between a Named Message Handler Group of any account and their own Named Permission Level. For example, an account holder could map the account holder's social media application to the account holder's "Friend" permission group. With this mapping, any friend could post as the account holder on the account holder's social media. Even though they would post as the account holder, they would still use their own keys to sign the message. This means it is always possible to identify which friends used the account and in what way.
 
