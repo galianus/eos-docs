@@ -202,11 +202,11 @@ EOS.IOの技術により、全てのアカウントは全ての権限を持っ�
 
 いずれかのメッセージがブロードキャストされた際に、ユーザーはメールまたはテキストメッセージで通知を受けることができます。 もしユーザーがそのメッセージを承認していない場合、アカウント復旧プロセスを使うことで、アカウントを復旧し、メッセージを撤回することができます。
 
-必要な遅延時間はオペレーションの取り扱いの難しさによって変わります。 コーヒーの支払いに遅延時間は必要なく、数秒以内に取り消し不可能になっても問題ありませんが、家の購入は72時間の決済期間が必要です。 Transferring an entire account to new control may take up to 30 days. The exact delays chosen are up to application developers and users.
+必要な遅延時間はオペレーションの取り扱いの難しさによって変わります。 コーヒーの支払いに遅延時間は必要なく、数秒以内に取り消し不可能になっても問題ありませんが、家の購入は72時間の決済期間が必要です。 アカウント全体を新しいコントロールに転送するには30日間かかることがあります。 遅延時間の選択はアプリケーションの開発者とユーザー次第です。
 
-## Recovery from Stolen Keys
+## 鍵の盗難からの復旧
 
-The EOS.IO software provides users a way to restore control of their account when their keys are stolen. An account owner can use any owner key that was active in the last 30 days along with approval from their designated account recovery partner to reset the owner key on their account. The account recovery partner cannot reset control of the account without the help of the owner.
+EOS.IOソフトウェアでは、ユーザーが鍵を盗まれた際にアカウントの制御を復旧する方法があります。 An account owner can use any owner key that was active in the last 30 days along with approval from their designated account recovery partner to reset the owner key on their account. The account recovery partner cannot reset control of the account without the help of the owner.
 
 There is nothing for the hacker to gain by attempting to go through the recovery process because they already "control" the account. Furthermore, if they did go through the process, the recovery partner would likely demand identification and multi-factor authentication (phone and email). This would likely compromise the hacker or gain the hacker nothing in the process.
 
