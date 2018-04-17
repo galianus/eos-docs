@@ -27,8 +27,8 @@ Copyright © 2017 block.one
   - [メッセージ & ハンドラー](#messages--handlers)
   - [役割ベースの許可管理](#role-based-permission-management) 
     - [名前付きの許可レベル](#named-permission-levels)
-    - [Named Message Handler Groups](#named-message-handler-groups)
-    - [Permission Mapping](#permission-mapping)
+    - [名前付きのメッセージ・ハンドラー・グループ](#named-message-handler-groups)
+    - [許可のマッピング](#permission-mapping)
     - [Evaluating Permissions](#evaluating-permissions) 
       - [Default Permission Groups](#default-permission-groups)
       - [Parallel Evaluation of Permissions](#parallel-evaluation-of-permissions)
@@ -174,9 +174,9 @@ EOS.IOソフトウェアのアカウントは、それぞれのメッセージ�
 
 ### 許可のマッピング
 
-EOS.IO software allows each account to define a mapping between a Named Message Handler Group of any account and their own Named Permission Level. For example, an account holder could map the account holder's social media application to the account holder's "Friend" permission group. With this mapping, any friend could post as the account holder on the account holder's social media. Even though they would post as the account holder, they would still use their own keys to sign the message. This means it is always possible to identify which friends used the account and in what way.
+EOS.IOソフトウェアのそれぞれのアカウントは、あらゆるアカウントの名前付きメッセージ・ハンドラー・グループとそれら自身の名前付き許可レベルのマッピングを定義することができます。 例えば、あるアカウントの保有者は、そのアカウント保有者のソーシャルメディアアプリを、そのアカウントの"Friend"許可グループにマッピングすることができます。 これによって、あらゆる友達がそのアカウント保有者のソーシャルメディアに、そのアカウントの保有者として投稿することができます。 彼らがそのアカウントの保有者として投稿したとしても、彼らはメッセージの著名に彼ら自身のキーを使用します。 これにより、どの友達がどのようにそのアカウントを使用したのか常に識別することが可能です。
 
-### Evaluating Permissions
+### 許可を評価する
 
 When delivering a message of type "**Action**", from **@alice** to **@bob** the EOS.IO software will first check to see if **@alice** has defined a permission mapping for **@bob.groupa.subgroup.Action**. If nothing is found then a mapping for **@bob.groupa.subgroup** then **@bob.groupa**, and lastly **@bob** will be checked. If no further match is found, then the assumed mapping will be to the named permission group **@alice.active**.
 
