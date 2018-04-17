@@ -198,7 +198,7 @@ EOS.IOの技術により、全てのアカウントは全ての権限を持っ�
 
 ## 強制的な遅延付きのメッセージ
 
-時間はセキュリティにおける重要な要素です。 ほとんどの場合において、秘密鍵が盗まれたかどうかはその鍵が使用されるまで知ることができません。 Time based security is even more critical when people have applications that require keys be kept on computers connected to the internet for daily use. The EOS.IO software enables application developers to indicate that certain messages must wait a minimum period of time after being included in a block before they can be applied. During this time they can be cancelled.
+時間はセキュリティにおける重要な要素です。 ほとんどの場合において、秘密鍵が盗まれたかどうかはその鍵が使用されるまで知ることができません。 インターネットに接続された普段付いのコンピュータに保存されているキーを必要とするアプリケーションを人々が持っている場合、時間ベースのセキュリティはより重要です。 The EOS.IO software enables application developers to indicate that certain messages must wait a minimum period of time after being included in a block before they can be applied. During this time they can be cancelled.
 
 Users can then receive notice via email or text message when one of these messages is broadcast. If they did not authorize it, then they can use the account recovery process to recover their account and retract the message.
 
