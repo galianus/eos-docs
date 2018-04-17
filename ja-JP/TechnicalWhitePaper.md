@@ -32,10 +32,10 @@ Copyright © 2017 block.one
     - [許可の評価](#evaluating-permissions) 
       - [デフォルトの許可グループ](#default-permission-groups)
       - [許可の並列評価](#parallel-evaluation-of-permissions)
-  - [Messages with Mandatory Delay](#messages-with-mandatory-delay)
-  - [Recovery from Stolen Keys](#recovery-from-stolen-keys)
-- [Deterministic Parallel Execution of Applications](#deterministic-parallel-execution-of-applications) 
-  - [Minimizing Communication Latency](#minimizing-communication-latency)
+  - [強制的な遅延付きのメッセージ](#messages-with-mandatory-delay)
+  - [鍵の盗難からの復旧](#recovery-from-stolen-keys)
+- [アプリケーションの決定的な並列実行](#deterministic-parallel-execution-of-applications) 
+  - [コミュニケーション遅延の最小化](#minimizing-communication-latency)
   - [Read-Only Message Handlers](#read-only-message-handlers)
   - [Atomic Transactions with Multiple Accounts](#atomic-transactions-with-multiple-accounts)
   - [Partial Evaluation of Blockchain State](#partial-evaluation-of-blockchain-state)
@@ -216,13 +216,13 @@ EOS.IOソフトウェアでは、ユーザーが鍵を盗まれた際にアカ�
 
 ブロックチェーンのコンセンサスは決定的（再現可能）な動作に依存しています。 これは全ての並列実行はミューテックまたは他のロックプリミティブから自由でなかればならないということを意味します。 ロックせずに全てのアカウントがそれぞれのプライベートなデータベースのみに読み書きできることを保証する方法がなければいけません。 これは、それぞれのアカウントはメッセージを連続的に処理し、アカウントレベルでは並列処理がされることを意味します。
 
-EOS.IOソフトウェアベースのブロックチェーンでは、メッセージを並列して評価できるようにするため、メッセージを独立したスレッドに配信することがブロック生成者の仕事です。 それぞれのアカウントの状態は、そのアカウントに配信されたメッセージにのみ依存します。 The schedule is the output of a block producer and will be deterministically executed, but the process for generating the schedule need not be deterministic. This means that block producers can utilize parallel algorithms to schedule transactions.
+EOS.IOソフトウェアベースのブロックチェーンでは、メッセージを並列して評価できるようにするため、メッセージを独立したスレッドに配信することがブロック生成者の仕事です。 それぞれのアカウントの状態は、そのアカウントに配信されたメッセージにのみ依存します。 スケジュールはブロック生成者のアウトプットで、これは決定的に実行されます。しかし、スケジュールを生成するプロセスは決定的である必要はありません。 これは、ブロック生成者がトランザクションをスケジュールに入れるために並列アルゴリズムを利用できることを意味します。
 
-Part of parallel execution means that when a script generates a new message it does not get delivered immediately, instead it is scheduled to be delivered in the next cycle. The reason it cannot be delivered immediately is because the receiver may be actively modifying its own state in another thread.
+並列実行の一環は、スクリプトが新しいメッセージを生成した際に、直ちに配信されるのではなく、次のサイクルで配信されるようスケジュールされるということを意味します。 メッセージを直ちに配信することができない理由は、受信者が他スレッドの自身の状態を修正している可能性があるためです。
 
-## Minimizing Communication Latency
+## コミュニケーション遅延の最小化
 
-Latency is the time it takes for one account to send a message to another account and then receive a response. The goal is to enable two accounts to exchange messages back and forth within a single block without having to wait 3 seconds between each message. To enable this, the EOS.IO software divides each block into cycles. Each cycle is divided into threads and each thread contains a list of transactions. Each transaction contains a set of messages to be delivered. This structure can be visualized as a tree where alternating layers are processed sequentially and in parallel.
+待ち時間は、あるアカウントが別のアカウントにメッセージを送信し、応答を受信するまでにかかる時間です。 The goal is to enable two accounts to exchange messages back and forth within a single block without having to wait 3 seconds between each message. To enable this, the EOS.IO software divides each block into cycles. Each cycle is divided into threads and each thread contains a list of transactions. Each transaction contains a set of messages to be delivered. This structure can be visualized as a tree where alternating layers are processed sequentially and in parallel.
 
         Block
     
