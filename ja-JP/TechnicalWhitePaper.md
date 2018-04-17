@@ -293,7 +293,7 @@ EOS.IOを採用しているローンチされたブロックチェーン上で�
 
 ブロックの生成者は、利用可能な彼らの帯域幅と計算力、状態の容量を公開します。 EOS.IOのそれぞれのアカウントは、3日間のステーキング・コントラクトで保持されているトークンの量に比例した割合の利用可能容量を消費することができます。 例えば、EOS.IOソフトウェアベースのブロックチェーンがローンチされ、もしあるアカウントがそのブロックチェーンに準じて配布可能な全トークンのうち1％を保持していた場合、そのアカウントはステート・ストレージ容量のうち1%を利用できる見込みがあります。
 
-Adopting the EOS.IO software on a launched blockchain means bandwidth and computational capacity are allocated on a fractional reserve basis because they are transient (unused capacity cannot be saved for future use). The algorithm used by EOS.IO software is similar to the algorithm used by Steem to rate-limit bandwidth usage.
+EOS.IOソフトウェアをローンチされたブロックチェーンに適用することは、帯域幅と計算能力を部分準備基準で割り当てることを意味します。なぜなら、（未使用の容量は将来の使用のために残しておくことはできず）帯域幅と計算能力は一時的なものだからです。 EOS.IOソフトウェアで使用されているアルゴリズムは、Steemで利用されているアルゴリズムと帯域幅利用レート制限の点で似ています。
 
 ## Objective and Subjective Measurements
 
