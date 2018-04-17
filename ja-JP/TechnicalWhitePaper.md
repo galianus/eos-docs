@@ -17,7 +17,7 @@ Copyright © 2017 block.one
   - [数百万のユーザーをサポートできること](#support-millions-of-users)
   - [無料で使用可能であること](#free-usage)
   - [簡単なアップグレードとバグの修復](#easy-upgrades-and-bug-recovery)
-  - [低遅延](#low-latency)
+  - [短い待ち時間](#low-latency)
   - [順次処理性能](#sequential-performance)
   - [並列処理性能](#parallel-performance)
 - [コンセンサス・アルゴリズム(DPOS)](#consensus-algorithm-dpos) 
@@ -35,7 +35,7 @@ Copyright © 2017 block.one
   - [強制的な遅延付きのメッセージ](#messages-with-mandatory-delay)
   - [鍵の盗難からの復旧](#recovery-from-stolen-keys)
 - [アプリケーションの決定的な並列実行](#deterministic-parallel-execution-of-applications) 
-  - [コミュニケーション遅延の最小化](#minimizing-communication-latency)
+  - [コミュニケーション待ち時間の最小化](#minimizing-communication-latency)
   - [Read-Only Message Handlers](#read-only-message-handlers)
   - [Atomic Transactions with Multiple Accounts](#atomic-transactions-with-multiple-accounts)
   - [Partial Evaluation of Blockchain State](#partial-evaluation-of-blockchain-state)
@@ -71,7 +71,7 @@ Copyright © 2017 block.one
 
 ブロックチェーン技術は2008年のビットコインの誕生と共に社会に導入されました。それ以来、起業家や開発者は、一つのブロックチェーンプラットフォーム上で、幅広いアプリケーションをサポートするため、ブロックチェーン技術の一般化を試みてきました。
 
-多くのブロックチェーンプラットフォームが、実用的な分散型アプリケーションのサポートに四苦八苦する一方で、分散型取引所のBisShares(2014)や、ソーシャルメディアプラットフォームのSteem(2016)といったアプリケーションに特化型のブロックチェーンは、毎日何万ものアクティブユーザーに利用されるブロックチェーンになっています。 それらのサービスは、一秒間に数千のトランザクションを処理できるようにし、遅延を1.5秒に抑え、手数料を撤廃し、既存の中央集権サービスで提供されているレベルのユーザエクスペリエンスを提供することでこのような結果を実現しています。
+多くのブロックチェーンプラットフォームが、実用的な分散型アプリケーションのサポートに四苦八苦する一方で、分散型取引所のBisShares(2014)や、ソーシャルメディアプラットフォームのSteem(2016)といったアプリケーションに特化型のブロックチェーンは、毎日何万ものアクティブユーザーに利用されるブロックチェーンになっています。 それらのサービスは、一秒間に数千のトランザクションを処理できるようにし、待ち時間を1.5秒に抑え、手数料を撤廃し、既存の中央集権サービスで提供されているレベルのユーザエクスペリエンスを提供することでこのような結果を実現しています。
 
 既存のブロックチェーンプラットフォームは、高額な手数料や限られた計算能力といった障壁によって広範なブロックチェーンの採用を阻まれています。
 
@@ -93,7 +93,7 @@ EbayやUber、AirBnB、Facebookといった破壊的なビジネスは、毎日�
 
 もっとも厳格な形式的検証を用いても、全ての重要なソフトウェアはバグに直面します。プラットフォームは不可避のバグを修復するために十分頑丈でなければなりません。
 
-## 低遅延
+## 短い待ち時間
 
 優れたユーザーエクスペリエンスは、数秒以内に確実なフィードバックが帰ってくることを必要とします。 長い遅延はユーザーを苛立たせ、既存のブロックチェーンを使用していないアプリケーションに対するブロックチェーン上のアプリケーションの競争力を低下させます。
 
@@ -220,9 +220,9 @@ EOS.IOソフトウェアベースのブロックチェーンでは、メッセ�
 
 並列実行の一環は、スクリプトが新しいメッセージを生成した際に、直ちに配信されるのではなく、次のサイクルで配信されるようスケジュールされるということを意味します。 メッセージを直ちに配信することができない理由は、受信者が他スレッドの自身の状態を修正している可能性があるためです。
 
-## コミュニケーション遅延の最小化
+## コミュニケーション待ち時間の最小化
 
-待ち時間は、あるアカウントが別のアカウントにメッセージを送信し、応答を受信するまでにかかる時間です。 The goal is to enable two accounts to exchange messages back and forth within a single block without having to wait 3 seconds between each message. To enable this, the EOS.IO software divides each block into cycles. Each cycle is divided into threads and each thread contains a list of transactions. Each transaction contains a set of messages to be delivered. This structure can be visualized as a tree where alternating layers are processed sequentially and in parallel.
+待ち時間は、あるアカウントが別のアカウントにメッセージを送信し、応答を受信するまでにかかる時間です。 ゴールは2つのアカウントがそれぞれのメッセージにつき3秒以内に1つのブロック内でメッセージのやりとりを行えるようにすることです。 これを可能にするために、EOS.IOソフトウェアはそれぞれのブロックをサイクルに分割します。 それぞれのサイクルはスレッドに分割され、それぞれのスレッドはトランザクションのリストを含みます。 それぞれのトランザクションは配信される一連のメッセージを含んでいます。 この構造はツリー構造で表すことができ、そこでは相互に重なった層が連続的に、また並列して処理されます。
 
         Block
     
