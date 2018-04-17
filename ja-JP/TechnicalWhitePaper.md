@@ -247,9 +247,9 @@ EOS.IOソフトウェアベースのブロックチェーンでは、メッセ�
 
 いくつかのアカウントは、そのアカウントの内部状態を変更することなく pass/fail 方式でメッセージを処理することができるかもしれません。 もしそうであれば、特定のアカウントの読み取り専用のメッセージ・ハンドラーが特定のサイクル内で一つ以上のスレッドに含まれている限り、これらのハンドラーは並列で実行することができます。
 
-## Atomic Transactions with Multiple Accounts
+## 複数アカウントでのアトミック・トランザクション
 
-Sometimes it is desirable to ensure that messages are delivered to and accepted by multiple accounts atomically. In this case both messages are placed in one transaction and both accounts will be assigned the same thread and the messages applied sequentially. This situation is not ideal for performance and when it comes to "billing" users for usage, they will get billed by the number of unique accounts referenced by a transaction.
+時に、メッセージが自動で複数のアカウントに配信され承認されることを保証することが望ましい場合があります。 この場合、両方のメッセージは1つのトランザクションに配置され、両方のアカウントは同じスレッドと連続的に適用されるメッセージに割り当てられます。 This situation is not ideal for performance and when it comes to "billing" users for usage, they will get billed by the number of unique accounts referenced by a transaction.
 
 For performance and cost reasons it is best to minimize atomic operations involving two or more heavily utilized accounts.
 
