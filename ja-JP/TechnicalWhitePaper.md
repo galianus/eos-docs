@@ -26,7 +26,7 @@ Copyright © 2017 block.one
 - [アカウント](#accounts) 
   - [メッセージ & ハンドラー](#messages--handlers)
   - [役割ベースの許可管理](#role-based-permission-management) 
-    - [Named Permission Levels](#named-permission-levels)
+    - [名前付きの許可レベル](#named-permission-levels)
     - [Named Message Handler Groups](#named-message-handler-groups)
     - [Permission Mapping](#permission-mapping)
     - [Evaluating Permissions](#evaluating-permissions) 
@@ -162,7 +162,7 @@ EOS.IOソフトウェアのアカウントは、特定のメッセージを他�
 
 EOS.IOソフトウェアのアカウントは、名前付きの許可レベルを作成することが可能です。それぞれの許可レベルは、より高レベルな名前付き許可から派生させることができます。 それぞれの名前付きの許可レベルは、権限を定義することができます。権限は、他アカウントの名前付きの許可レベルとキーから成るマルチシグネチャーの閾値チェックです。 例えば、あるアカウントの"Friend"という許可レベルは、そのアカウントの友人のいずれかによって平等に制御されるアカウントに設定することができます。
 
-Another example is the Steem blockchain which has three hard-coded named permission levels: owner, active, and posting. The posting permission can only perform social actions such as voting and posting, while the active permission can do everything except change the owner. The owner permission is meant for cold storage and is able to do everything. The EOS.IO software generalizes this concept by allowing each account holder to define their own hierarchy as well as the grouping of actions.
+他の例では、例えばSteemのブロックチェーンは"owner", "active", "posting"という3つのハードコーディングされた名前付き許可レベルを持っています。 The posting permission can only perform social actions such as voting and posting, while the active permission can do everything except change the owner. The owner permission is meant for cold storage and is able to do everything. The EOS.IO software generalizes this concept by allowing each account holder to define their own hierarchy as well as the grouping of actions.
 
 ### Named Message Handler Groups
 
