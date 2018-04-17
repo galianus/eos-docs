@@ -271,7 +271,7 @@ EOS.IOを採用しているローンチされたブロックチェーン上で�
 
 一般的に、一人でもブロック生成者があるトランザクションをリソース使用状況の制限において有効だとみなす限り、他の全てのブロック生成者もそのトランザクションを受け入れます。しかし、そのトランザクションが生成者を見つけ出すためには最大で1分間かかる可能性があります。
 
-In some cases a producer may create a block that includes transactions that are an order of magnitude outside of acceptable ranges. In this case the next block producer may opt to reject the block and the tie will be broken by the third producer. This is no different than what would happen if a large block caused network propagation delays. The community would notice a pattern of abuse and eventually remove votes from the rogue producer.
+いくつかのケースにおいて、ブロック生成者は許容可能範囲を超えた桁のトランザクションを含むブロックを生成する可能性があります。 この場合、次のブロック生成者はこのブロックを拒否することを選択するでしょう。そして、このつながりは第三のブロック生成者によって破壊されます。 これは、大きなブロックがネットワーク伝播遅延を起こした場合に生じるものとなんら変わりはありません。 コミュニティは悪用のパターンに気づき、最終的に不正なブロック生成者から表を取り除くでしょう。
 
 This subjective evaluation of computational cost frees the blockchain from having to precisely and deterministically measure how long something takes to run. With this design there is no need to precisely count instructions which dramatically increases opportunities for optimization without breaking consensus.
 
