@@ -144,9 +144,9 @@ EOS.IOソフトウェアは、2文字から32文字の読み取り可能なユ�
 
 ## メッセージ & ハンドラー
 
-Each account can send structured messages to other accounts and may define scripts to handle messages when they are received. The EOS.IO software gives each account its own private database which can only be accessed by its own message handlers. Message handling scripts can also send messages to other accounts. The combination of messages and automated message handlers is how EOS.IO defines smart contracts.
+それぞれのアカウントは、他のアカウントに構造化されたメッセージを送ることができ、また、それらのメッセージが受け取られた際にそれを処理するスクリプトを定義することができます。 EOS.IOソフトウェアは、それぞれのメッセージのハンドラーのみがアクセスできるプライベートなデータベースをアカウントごとに付与します。 メッセージを処理するスクリプトは、メッセージを他のアカウントに送ることもできます。 このメッセージと自動化されたメッセージのハンドラーの組み合わせこそが、EOS.IOにおけるスマートコントラクトの定義です。
 
-## Role Based Permission Management
+## 役割ベースの許可管理
 
 Permission management involves determining whether or not a message is properly authorized. The simplest form of permission management is checking that a transaction has the required signatures, but this implies that required signatures are already known. Generally authority is bound to individuals or groups of individuals and is often compartmentalized. The EOS.IO software provides a declarative permission management system that gives accounts fine grained and high level control over who can do what and when.
 
