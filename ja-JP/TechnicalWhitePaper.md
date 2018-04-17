@@ -206,9 +206,9 @@ EOS.IOの技術により、全てのアカウントは全ての権限を持っ�
 
 ## 鍵の盗難からの復旧
 
-EOS.IOソフトウェアでは、ユーザーが鍵を盗まれた際にアカウントの制御を復旧する方法があります。 An account owner can use any owner key that was active in the last 30 days along with approval from their designated account recovery partner to reset the owner key on their account. The account recovery partner cannot reset control of the account without the help of the owner.
+EOS.IOソフトウェアでは、ユーザーが鍵を盗まれた際にアカウントの制御を復旧する方法があります。 アカウントの所有者は、指定されたアカウント復旧パートナーによる承認を受けることで、過去30日以内にアクティブだったあらゆる所有者キー使い、所有者キーのリセットをすることができます。 アカウント復旧パートナーは、アカウント所有者の協力なくアカウントの制御をリセットすることはできません。
 
-There is nothing for the hacker to gain by attempting to go through the recovery process because they already "control" the account. Furthermore, if they did go through the process, the recovery partner would likely demand identification and multi-factor authentication (phone and email). This would likely compromise the hacker or gain the hacker nothing in the process.
+このように既にアカウントは制御されているため、ハッカーが復旧プロセスを突破しようと試みることによって得られるものは何もありません。 加えて、もしハッカーがこのプロセスを突破したとしても、復旧パートナーが身分証明と（電話かメールでの）マルチファクター承認を求めるでしょう。 This would likely compromise the hacker or gain the hacker nothing in the process.
 
 This process is also very different from a simple multi-signature arrangement. With a multi-signature transaction, there is another company that is party to every transaction that is executed, but with the recovery process the agent is only a party to the recovery process and has no power over the day-to-day transactions. This dramatically reduces costs and legal liabilities for everyone involved.
 
