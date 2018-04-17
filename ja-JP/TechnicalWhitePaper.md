@@ -259,9 +259,9 @@ EOS.IOソフトウェアベースのブロックチェーンでは、メッセ�
 
 取引所のアプリケーション開発者は、取引所の状態をユーザーに表示するためにフルノードを実行します。 この取引所アプリはソーシャルメディアアプリに関連する状態を必要としません。 EOS.IOソフトウェアのあらゆるフルノードは、実行するアプリケーションの任意のサブセットを選択できます。 あるアプリケーションの状態はそのアプリケーションに配信されたメッセージから完全に派生するものであるため、他のアプリケーションに配信されるメッセージは安全に無視されます。
 
-これは他のアカウントとのコミュニケーションにおいて重要な意味を持ちます。 最も重要なことは、同じマシン上で他のアカウントの状態にアクセス可能だと仮定することはできないということです。 It also means that while it is tempting to enable "locks" that allow one account to synchronously call another account, this design pattern breaks down if the other account is not resident in memory.
+これは他のアカウントとのコミュニケーションにおいて重要な意味を持ちます。 最も重要なことは、同じマシン上で他のアカウントの状態にアクセス可能だと仮定することはできないということです。 これは、あるアカウントが他のアカウントを同期的に呼び出せるようにする"lock"を有効にしたくなった時に、もし他のアカウントがメモリに常駐していなかった場合、この設計パターンは正常に動かなくなります。
 
-All state communication among accounts must be passed via messages included in the blockchain.
+アカウント間の全てのステート・コミュニケーションは、ブロックチェーンに含まれるメッセージを通して渡される必要があります。
 
 ## Subjective Best Effort Scheduling
 
