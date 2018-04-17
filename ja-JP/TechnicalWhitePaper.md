@@ -186,11 +186,11 @@ EOS.IOソフトウェアのそれぞれのアカウントは、あらゆるア�
 
 #### デフォルトの許可グループ
 
-The EOS.IO technology also allows all accounts to have an "owner" group which can do everything, and an "active" group which can do everything except change the owner group. All other permission groups are derived from "active".
+EOS.IOの技術により、全てのアカウントは全ての権限を持った"owner"グループと、"owner"グループの変更以外の全ての権限を持った"active"グループを持つことができます。 その他全ての許可グループは"avtive"から派生します。
 
-#### Parallel Evaluation of Permissions
+#### 許可の並列評価
 
-The permission evaluation process is "read-only" and changes to permissions made by transactions do not take effect until the end of a block. This means that all keys and permission evaluation for all transactions can be executed in parallel. Furthermore, this means that a rapid validation of permission is possible without starting the costly application logic that would have to be rolled back. Lastly, it means that transaction permissions can be evaluated as pending transactions are received and do not need to be re-evaluated as they are applied.
+許可の評価プロセスは読み取り専用で、トランザクションによって生じた許可の変更はブロックの終わりまで発効されません。 This means that all keys and permission evaluation for all transactions can be executed in parallel. Furthermore, this means that a rapid validation of permission is possible without starting the costly application logic that would have to be rolled back. Lastly, it means that transaction permissions can be evaluated as pending transactions are received and do not need to be re-evaluated as they are applied.
 
 All things considered, permission verification represents a significant percentage of the computation required to validate transactions. Making this a read-only and trivially parallelizable process enables a dramatic increase in performance.
 
