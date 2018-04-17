@@ -152,11 +152,11 @@ EOS.IOソフトウェアは、2文字から32文字の読み取り可能なユ�
 
 認証と許可管理は標準化されて、アプリケーションのビジネスロジックからは分離されていることが必須です。 これにより、汎用的なやり方に則した許可管理ツールの開発が可能になり、パフォーマンス最適化の機会が大幅に向上します。
 
-全てのアカウントは、重み付けされたその他のアカウントと秘密鍵の組み合わせによって制御できます。 これは、現実における許可の構成方法を反映した階層的権限構造を生み出し、複数ユーザーの資金管理を容易にします。 Multi-user control is the single biggest contributor to security, and, when used properly, it can greatly eliminate the risk of theft due to hacking.
+全てのアカウントは、重み付けされたその他のアカウントと秘密鍵の組み合わせによって制御できます。 これは、現実における許可の構成方法を反映した階層的権限構造を生み出し、複数ユーザーの資金管理を容易にします。 複数ユーザー管理は、唯一にして最大のセキュリティであり、適切に使用することでハッキングによる盗難リスクを大幅に取り除くことができます。
 
-EOS.IO software allows accounts to define what combination of keys and/or accounts can send a particular message type to another account. For example, it is possible to have one key for a user's social media account and another for access to the exchange. It is even possible to give other accounts permission to act on behalf of a user's account without assigning them keys.
+EOS.IOソフトウェアのアカウントは、特定のメッセージを他アカウントに送ることが出来るキーとアカウントの組み合わせを定義することができます。 例えば、ソーシャルメディアアカウント用のキーと、取引所用の別のキーを設定することが可能です。 また、ユーザーの代わりに行動する権限を、キーの割り当てなしに、他ユーザーに与えることも可能です。
 
-### Named Permission Levels
+### 名前付きの許可レベル
 
 <img align="right" src="http://eos.io/wpimg/diagram3.png" width="228.395px" height="300px" />
 
