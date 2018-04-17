@@ -162,13 +162,13 @@ EOS.IOソフトウェアのアカウントは、特定のメッセージを他�
 
 EOS.IOソフトウェアのアカウントは、名前付きの許可レベルを作成することが可能です。それぞれの許可レベルは、より高レベルな名前付き許可から派生させることができます。 それぞれの名前付きの許可レベルは、権限を定義することができます。権限は、他アカウントの名前付きの許可レベルとキーから成るマルチシグネチャーの閾値チェックです。 例えば、あるアカウントの"Friend"という許可レベルは、そのアカウントの友人のいずれかによって平等に制御されるアカウントに設定することができます。
 
-他の例では、例えばSteemのブロックチェーンは"owner", "active", "posting"という3つのハードコーディングされた名前付き許可レベルを持っています。 "posting"は投票や投稿といったソーシャルアクションにのみ扱うことができ、一方で、"active"は"owner"の変更以外の全てを行うことができます。 The owner permission is meant for cold storage and is able to do everything. The EOS.IO software generalizes this concept by allowing each account holder to define their own hierarchy as well as the grouping of actions.
+他の例では、例えばSteemのブロックチェーンは"owner", "active", "posting"という3つのハードコーディングされた名前付き許可レベルを持っています。 "posting"は投票や投稿といったソーシャルアクションにのみ扱うことができ、一方で、"active"は"owner"の変更以外の全てを行うことができます。 "owner"はコールドストレージのためにあるもので、全てを行うことができます。 EOS.IOソフトウェアは、それぞれのアカウントに、独自のアクションのグループ化と階層構造の定義を許可することでこのコンセプトを一般化しています。
 
-### Named Message Handler Groups
+### 名前付きのメッセージ・ハンドラー・グループ
 
-The EOS.IO software allows each account to organize its own message handlers into named and nested groups. These named message handler groups can be referenced by other accounts when they configure their permission levels.
+EOS.IOソフトウェアのアカウントは、それぞれのメッセージ・ハンドラーを名前付きの入れ子になったグループにまとめることができます。 他アカウントは、それぞれの許可レベルを設定する際に、これらの名前付きのメッセージ・ハンドラー・グループを参照できます。
 
-The highest level message handler group is the account name and the lowest level is the individual message type being received by the account. These groups can be referenced like so: **@accountname.groupa.subgroupb.MessageType**.
+最も高いレベルのメッセージ・ハンドラー・グループはアカウント名で、最も低レベルのものは、そのアカウントが受信した個々のメッセージタイプのものです。 これらのグループは以下のように参照できます: **@accountname.groupa.subgroupb.MessageType**.
 
 Under this model it is possible for an exchange contract to group order creation and canceling separately from deposit and withdraw. This grouping by the exchange contract is a convenience for users of the exchange.
 
