@@ -214,7 +214,7 @@ EOS.IOソフトウェアでは、ユーザーが鍵を盗まれた際にアカ�
 
 # アプリケーションの決定的な並列実行
 
-ブロックチェーンのコンセンサスは決定的（再現可能）な動作に依存しています。 これは全ての並列実行はミューテックまたは他のロックプリミティブから自由でなかればならないということを意味します。 ロックせずに全てのアカウントがそれぞれのプライベートなデータベースのみに読み書きできることを保証する方法がなければいけません。 It also means that each account processes messages sequentially and that parallelism will be at the account level.
+ブロックチェーンのコンセンサスは決定的（再現可能）な動作に依存しています。 これは全ての並列実行はミューテックまたは他のロックプリミティブから自由でなかればならないということを意味します。 ロックせずに全てのアカウントがそれぞれのプライベートなデータベースのみに読み書きできることを保証する方法がなければいけません。 これは、それぞれのアカウントはメッセージを連続的に処理し、アカウントレベルでは並列処理がされることを意味します。
 
 In an EOS.IO software-based blockchain, it is the job of the block producer to organize message delivery into independent threads so that they can be evaluated in parallel. The state of each account depends only upon the messages delivered to it. The schedule is the output of a block producer and will be deterministically executed, but the process for generating the schedule need not be deterministic. This means that block producers can utilize parallel algorithms to schedule transactions.
 
