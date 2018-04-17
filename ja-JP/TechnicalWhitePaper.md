@@ -190,9 +190,9 @@ EOS.IOの技術により、全てのアカウントは全ての権限を持っ�
 
 #### 許可の並列評価
 
-許可の評価プロセスは読み取り専用で、トランザクションによって生じた許可の変更はブロックの終わりまで効力を持ちません。 これは全てのキーと全てのトランザクションの許可評価は並列で実行できるということを意味します。 さらに、ロールバックを必要とするコストのかかるアプリケーションのロジックを開始することなく、迅速な許可の承認が可能であることを意味します。 Lastly, it means that transaction permissions can be evaluated as pending transactions are received and do not need to be re-evaluated as they are applied.
+許可の評価プロセスは読み取り専用で、トランザクションによって生じた許可の変更はブロックの終わりまで効力を持ちません。 これは全てのキーと全てのトランザクションの許可評価は並列で実行できるということを意味します。 加えて、ロールバックを必要とするコストのかかるアプリケーションのロジックを開始することなく、迅速な許可の承認が可能であることを意味します。 さらには、トランザクションの許可は、保留中のトランザクションを受け取った際に評価することができ、それらのトランザクションが適用された際に再評価する必要はありません。
 
-All things considered, permission verification represents a significant percentage of the computation required to validate transactions. Making this a read-only and trivially parallelizable process enables a dramatic increase in performance.
+全てを考慮に入れると、トランザクションを検証するために必要な計算能力のうちかなりの割合を許可の検証が占めます。 Making this a read-only and trivially parallelizable process enables a dramatic increase in performance.
 
 When replaying the blockchain to regenerate the deterministic state from the log of messages there is no need to evaluate the permissions again. The fact that a transaction is included in a known good block is sufficient to skip this step. This dramatically reduces the computational load associated with replaying an ever growing blockchain.
 
