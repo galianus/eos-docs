@@ -36,11 +36,11 @@ Copyright © 2017 block.one
   - [鍵の盗難からの復旧](#recovery-from-stolen-keys)
 - [アプリケーションの決定的な並列実行](#deterministic-parallel-execution-of-applications) 
   - [コミュニケーション待ち時間の最小化](#minimizing-communication-latency)
-  - [Read-Only Message Handlers](#read-only-message-handlers)
-  - [Atomic Transactions with Multiple Accounts](#atomic-transactions-with-multiple-accounts)
-  - [Partial Evaluation of Blockchain State](#partial-evaluation-of-blockchain-state)
-  - [Subjective Best Effort Scheduling](#subjective-best-effort-scheduling)
-- [Token Model and Resource Usage](#token-model-and-resource-usage) 
+  - [読み取り専用のメッセージ・ハンドラー](#read-only-message-handlers)
+  - [複数アカウントでのアトミック・トランザクション](#atomic-transactions-with-multiple-accounts)
+  - [ブロックチェーン状態の部分評価](#partial-evaluation-of-blockchain-state)
+  - [主観的な最善努力型のスケジューリング](#subjective-best-effort-scheduling)
+- [トークンモデルとリソースの使用状況](#token-model-and-resource-usage) 
   - [Objective and Subjective Measurements](#objective-and-subjective-measurements)
   - [Receiver Pays](#receiver-pays)
   - [Delegating Capacity](#delegating-capacity)
@@ -263,7 +263,7 @@ EOS.IOソフトウェアベースのブロックチェーンでは、メッセ�
 
 アカウント間の全てのステート・コミュニケーションは、ブロックチェーンに含まれるメッセージを通して渡される必要があります。
 
-## Subjective Best Effort Scheduling
+## 主観的な最善努力型のスケジューリング
 
 EOS.IOソフトウェアは、ブロックプロ生成者に任意のメッセージを任意のアカウントに送るよう義務付けることはできません。 それぞれのブロック生成者は、トランザクションを処理するために必要な計算量と時間について独自の個人的な測定を行います。 これは、トランザクションがユーザーによって作られたか、スクリプトによって自動的に作られたかを適用します。
 
@@ -273,9 +273,9 @@ EOS.IOを採用しているローンチされたブロックチェーン上で�
 
 いくつかのケースにおいて、ブロック生成者は許容可能範囲を超えた桁のトランザクションを含むブロックを生成する可能性があります。 この場合、次のブロック生成者はこのブロックを拒否することを選択するでしょう。そして、このつながりは第三のブロック生成者によって破壊されます。 これは、大きなブロックがネットワーク伝播遅延を起こした場合に生じるものとなんら変わりはありません。 コミュニティは悪用のパターンに気づき、最終的に不正なブロック生成者から表を取り除くでしょう。
 
-This subjective evaluation of computational cost frees the blockchain from having to precisely and deterministically measure how long something takes to run. With this design there is no need to precisely count instructions which dramatically increases opportunities for optimization without breaking consensus.
+この主観的な計算コストの評価により、ブロックチェーンは正確かつ決定的に何かを実行するためにどの程度の時間がかかるかを測定する必要がなくなります。 この設計により、正確に命令をカウントする必要がなくなり、コンセンサスを破ることなく最適化の機会を劇的に向上させることができます。
 
-# Token Model and Resource Usage
+# トークンモデルとリソースの使用状況
 
 **PLEASE NOTE: CRYPTOGRAPHIC TOKENS REFERRED TO IN THIS WHITE PAPER REFER TO CRYPTOGRAPHIC TOKENS ON A LAUNCHED BLOCKCHAIN THAT ADOPTS THE EOS.IO SOFTWARE. THEY DO NOT REFER TO THE ERC-20 COMPATIBLE TOKENS BEING DISTRIBUTED ON THE ETHEREUM BLOCKCHAIN IN CONNECTION WITH THE EOS TOKEN DISTRIBUTION.**
 
