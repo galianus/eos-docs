@@ -347,11 +347,11 @@ EOS.IOソフトウェアに組み込まれるということは、ブロック�
 
 ## アカウントコードの変更
 
-When all else fails and an "unstoppable application" acts in an unpredictable manner, a blockchain using EOS.IO software allows the block producers to replace the account's code without hard forking the entire blockchain. Similar to the process of freezing an account, this replacement of the code requires a 17/21 vote of elected block producers.
+予期せぬ形で止めることのできないアプリケーション（"unstoppable application")が始動し、他に対処する手がなくなってしまった場合、EOS.IOソフトウェアを使用しているブロックチェーンのブロック生成者は、ブロックチェーン全体をハードフォークすることなくそのアカウントコードを取り替えることができます。 アカウントの凍結プロセスと同様に、このコードの取り換えは選任されたブロック生成者の17/21の票が必要です。
 
-## Constitution
+## 規約
 
-The EOS.IO software enables blockchains to establish a peer-to-peer terms of service agreement or a binding contract among those users who sign it, referred to as a "constitution". The content of this constitution defines obligations among the users which cannot be entirely enforced by code and facilitates dispute resolution by establishing jurisdiction and choice of law along with other mutually accepted rules. Every transaction broadcast on the network must incorporate the hash of the constitution as part of the signature and thereby explicitly binds the signer to the contract.
+EOS.IOソフトウェアをを使用したブロックチェーンは、規約（"constitution")と称されるP2Pの利用規約合意または拘束力のある契約を、それらに署名したユーザーとの間で結ぶことができます。 The content of this constitution defines obligations among the users which cannot be entirely enforced by code and facilitates dispute resolution by establishing jurisdiction and choice of law along with other mutually accepted rules. Every transaction broadcast on the network must incorporate the hash of the constitution as part of the signature and thereby explicitly binds the signer to the contract.
 
 The constitution also defines the human-readable intent of the source code protocol. This intent is used to identify the difference between a bug and a feature when errors occur and guides the community on what fixes are proper or improper.
 
