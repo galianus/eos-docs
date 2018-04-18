@@ -333,7 +333,7 @@ EOS.IOソフトウェアを採用したブロックチェーンでは、ブロ�
 
 # ガバナンス
 
-ガバナンスとは、ソフトウェアのアルゴリズムによって完全に補足することができない主観的な事項に基づいて人々が合意に至るプロセスです。 An EOS.IO software-based blockchain implements a governance process that efficiently directs the existing influence of block producers. Absent a defined governance process, prior blockchains relied ad hoc, informal, and often controversial governance processes that result in unpredictable outcomes.
+ガバナンスとは、ソフトウェアのアルゴリズムによって完全に補足することができない主観的な事項に基づいて人々が合意に至るプロセスです。 EOS.IOソフトウェアベースのブロックチェーンは、ブロック生成者の既存の影響を効率的に管理するガバナンス・プロセスを実装しています。 Absent a defined governance process, prior blockchains relied ad hoc, informal, and often controversial governance processes that result in unpredictable outcomes.
 
 A blockchain based on the EOS.IO software recognizes that power originates with the token holders who delegate that power to the block producers. The block producers are given limited and checked authority to freeze accounts, update defective applications, and propose hard forking changes to the underlying protocol.
 
