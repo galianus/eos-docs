@@ -325,11 +325,11 @@ EOS.IOソフトウェアを使用したブロックチェーンは、ブロッ�
 
 ## ブロック報酬
 
-EOS.IOソフトウェアを採用したブロックチェーンでは、ブロック生成者はブロックを生成するたびに、新たなトークンを受け取ります。 このような状況で、作成されるトークンの数は、全てのブロック生成者によって公開された希望報酬額の中央値によって決定されます。 The EOS.IO software may be configured to enforce a cap on producer awards such that the total annual increase in token supply does not exceed 5%.
+EOS.IOソフトウェアを採用したブロックチェーンでは、ブロック生成者はブロックを生成するたびに、新たなトークンを受け取ります。 このような状況で、作成されるトークンの数は、全てのブロック生成者によって公開された希望報酬額の中央値によって決定されます。 EOS.IOソフトウェアは、年次のトークン供給量の増加が5%を超えないようにするといったように、ブロック生成者の報酬の上限を制限するよう設定することもできます。
 
-## Community Benefit Applications
+## コミュニティ・ベネフィット・アプリケーション
 
-In addition to electing block producers, pursuant to a blockchain based on the EOS.IO software, users can elect 3 community benefit applications also known as smart contracts. These 3 applications will receive tokens of up to a configured percent of the token supply per annum minus the tokens that have been paid to block producers. These smart contracts will receive tokens proportional to the votes each application has received from token holders. The elected applications or smart contracts can be replaced by newly elected applications or smart contracts by token holders.
+ブロック生成者を選任することに加えて、EOS.IOソフトウェアベースのブロックチェーンに従って、ユーザーはスマートコントラクトとしても知られる3つのコミュニティ・ベネフィット・アプリケーションを選ぶことができます。 These 3 applications will receive tokens of up to a configured percent of the token supply per annum minus the tokens that have been paid to block producers. These smart contracts will receive tokens proportional to the votes each application has received from token holders. The elected applications or smart contracts can be replaced by newly elected applications or smart contracts by token holders.
 
 # Governance
 
