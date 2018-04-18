@@ -44,10 +44,10 @@ Copyright © 2017 block.one
   - [客観的測定と主観的測定](#objective-and-subjective-measurements)
   - [受領者の支払い](#receiver-pays)
   - [容量の委譲](#delegating-capacity)
-  - [Separating Transaction costs from Token Value](#separating-transaction-costs-from-token-value)
-  - [State Storage Costs](#state-storage-costs)
-  - [Block Rewards](#block-rewards)
-  - [Community Benefit Applications](#community-benefit-applications)
+  - [トークンの価値から独立したトランザクション費用](#separating-transaction-costs-from-token-value)
+  - [ステート・ストレージ・コスト](#state-storage-costs)
+  - [ブロック報酬](#block-rewards)
+  - [コミュニティ・ベネフィット・アプリケーション](#community-benefit-applications)
 - [Governance](#governance) 
   - [Freezing Accounts](#freezing-accounts)
   - [Changing Account Code](#changing-account-code)
@@ -317,7 +317,7 @@ EOS.IOソフトウェアの主な利点の一つとして、アプリケーシ�
 
 EOS.IOソフトウェアを使用したブロックチェーンは、ブロック生成者がブロックを生成するたびに褒賞を与えます。 トークンの価値は、ブロック生成者が購入可能な帯域幅や、計算、ストレージの量に影響を与えます。このモデルは、ネットワークのパフォーマンスを向上させるために、トークンの価値を上昇させることを自然に活用しています。
 
-## ステート・ストレージコスト
+## ステート・ストレージ・コスト
 
 帯域幅と計算が委譲できる一方で、アプリケーション状態のストレージは、アプリケーションの開発者に、その状態が削除されるまでトークンを保有しておくことを要求します。 もし状態が削除されない場合、トークンは効率的にサーキュレーションから取り除かれます。
 
@@ -329,11 +329,11 @@ EOS.IOソフトウェアを採用したブロックチェーンでは、ブロ�
 
 ## コミュニティ・ベネフィット・アプリケーション
 
-ブロック生成者を選任することに加えて、EOS.IOソフトウェアベースのブロックチェーンに従って、ユーザーはスマートコントラクトとしても知られる3つのコミュニティ・ベネフィット・アプリケーションを選ぶことができます。 These 3 applications will receive tokens of up to a configured percent of the token supply per annum minus the tokens that have been paid to block producers. These smart contracts will receive tokens proportional to the votes each application has received from token holders. The elected applications or smart contracts can be replaced by newly elected applications or smart contracts by token holders.
+ブロック生成者を選任することに加えて、EOS.IOソフトウェアベースのブロックチェーンに従って、ユーザーはスマートコントラクトとしても知られる3つのコミュニティ・ベネフィット・アプリケーションを選ぶことができます。 これらの3つのアプリケーションは、ブロック生成者に支払われたトークンを除いた年間供給量のうち定められた割合までのトークンを受け取ることができます。 これらのスマートコントラクトは、トークン保有者から受け取った票数に比例してトークンを受け取ります。 選任されたアプリケーションまたはスマートコントラクト、トークン保有者によって新たに選任されたアプリケーションまたはスマートコントラクト によって置き換えられる可能性があります。
 
-# Governance
+# ガバナンス
 
-Governance is the process by which people reach consensus on subjective matters that cannot be captured entirely by software algorithms. An EOS.IO software-based blockchain implements a governance process that efficiently directs the existing influence of block producers. Absent a defined governance process, prior blockchains relied ad hoc, informal, and often controversial governance processes that result in unpredictable outcomes.
+ガバナンスとは、ソフトウェアのアルゴリズムによって完全に補足することができない主観的な事項に基づいて人々が合意に至るプロセスです。 An EOS.IO software-based blockchain implements a governance process that efficiently directs the existing influence of block producers. Absent a defined governance process, prior blockchains relied ad hoc, informal, and often controversial governance processes that result in unpredictable outcomes.
 
 A blockchain based on the EOS.IO software recognizes that power originates with the token holders who delegate that power to the block producers. The block producers are given limited and checked authority to freeze accounts, update defective applications, and propose hard forking changes to the underlying protocol.
 
