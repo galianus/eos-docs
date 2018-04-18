@@ -431,9 +431,9 @@ EOS.IOソフトウェアは、トランザクションが含まれた時点以�
 
 他チェーンの証明を検証する段階になると、幅広い時間/スペース/帯域幅の最適化ができるようになります。 全てのブロックヘッダー（420MB/年）をトラッキングすることで証明のサイズを小さく維持できます。 直近のヘッダーのみをトラッキングすることで、最小限の長期ストレージと証明サイズを交換することができます。 また、ブロックチェーンは過去の証明の中間のハッシュを記録している遅延評価アプローチを使うことができます。 新しい証明は周知されているスパース・ツリーを含んでいることだけが必要です。 使用される正確なアプローチは、マークル証明によって参照されるトランザクションを含む外部ブロックによって異なります。
 
-After a certain density of interconnectedness it becomes more efficient to simply have one chain contain the entire block history of another chain and eliminate the need for proofs all together. For performance reasons, it is ideal to minimize the frequency of inter-chain proofs.
+ある一定の相互関連性の密度を超えたあとは、他チェーンの全てのブロックの履歴を含む1本のチェーンを持つことや、証明の必要性を一斉に排除することは、より効率的になります。 パフォーマンス上の理由から、チェーン間の証明の頻度は最小化することが理想的です。
 
-## Latency of Interchain Communication
+## チェーン間コミュニケーションの待ち時間
 
 When communicating with another outside blockchain, block producers must wait until there is 100% certainty that a transaction has been irreversibly confirmed by the other blockchain before accepting it as a valid input. Using an EOS.IO software-based blockchain and DPOS with 3 second blocks and 21 producers, this takes approximately 45 seconds. If a chain's block producers do not wait for irreversibility it would be like an exchange accepting a deposit that was later reversed and could impact the validity of the blockchain's consensus.
 
