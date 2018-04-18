@@ -337,11 +337,11 @@ EOS.IOソフトウェアを採用したブロックチェーンでは、ブロ�
 
 EOS.IOソフトウェアベースのブロクチェーンは、パワーをブロック生成者に委任しているトークン保有者から生じるパワーを認識します。 ブロック生成者には、アカウンの凍結と、欠陥のあるアプリケーションのアップデート、および内部プロトコルへのハードフォークの変更を提案するための制限付きの権限が与えられます。
 
-EOS.IOソフトウェアに組み込まれるということは、ブロック生成者の選任です。 ブロックチェーンにあらゆる変更が行われる前に、これらのブロック生成者はそれを承認する必要があります。 If the block producers refuse to make changes desired by the token holders then they can be voted out. If the block producers make changes without permission of the token holders then all other non-producing full-node validators (exchanges, etc) will reject the change.
+EOS.IOソフトウェアに組み込まれるということは、ブロック生成者の選任です。 ブロックチェーンのあらゆる変更が行われる前に、これらのブロック生成者はそれを承認する必要があります。 もしブロック生成者が、トークン保有者によって要求された変更を拒否した場合、トークン保有者は投票により退任させることができます。 もしブロック生成者がトークン保有者の許可なく変更を加えた場合、全ての非生産フルノード承認者（取引所など）はその変更を拒否することができます。
 
 ## Freezing Accounts
 
-Sometimes a smart contact behaves in an aberrant or unpredictable manner and fails to perform as intended; other times an application or account may discover an exploit that enables it to consume an unreasonable amount of resources. When such issues inevitably occur, the block producers have the power to rectify such situations.
+スマートコントラクトは時に予期せぬ挙動により意図していた実行に失敗することがあります。またある時には、アプリケーションまたはアカウントは、異常な寮のリソースを消費する脆弱性を発見することがあります。 When such issues inevitably occur, the block producers have the power to rectify such situations.
 
 The block producers on all blockchains have the power to select which transactions are included in blocks which gives them the ability to freeze accounts. A blockchain using EOS.IO software formalizes this authority by subjecting the process of freezing an account to a 17/21 vote of active producers. If the producers abuse the power they can be voted out and an account will be unfrozen.
 
