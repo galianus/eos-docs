@@ -313,9 +313,9 @@ EOS.IOを採用してローンチしたブロックチェーン上の、利用�
 
 ## トークンの価値から独立したトランザクション費用
 
-EOS.IOソフトウェアの主な利点の一つとして、アプリケーションに利用可能な帯域幅の送料があらゆるトークンの価値から完全に独立していることが挙げられます。 もしアプリケーションの保有者がEOS.IOソフトウェアを採用したブロックチェーン上の適切な寮のトークンを所有していた場合、そのアプリケーションは固定された状態と帯域幅利用の中で無期限に実行されることができます。 In such case, developers and users are unaffected from any price volatility in the token market and therefore not reliant on a price feed. In other words, a blockchain that adopts the EOS.IO software enables block producers to naturally increase bandwidth, computation, and storage available per token independent of the token's value.
+EOS.IOソフトウェアの主な利点の一つとして、アプリケーションに利用可能な帯域幅の送料があらゆるトークンの価値から完全に独立していることが挙げられます。 もしアプリケーションの保有者がEOS.IOソフトウェアを採用したブロックチェーン上の適切な寮のトークンを所有していた場合、そのアプリケーションは固定された状態と帯域幅利用の中で無期限に実行されることができます。 そのような場合、開発者とユーザーはトークンマーケットでのあらゆる価格変動の影響を受けることはなく、それゆえプライス・フィードに依存しません。 言い換えると、EOS.IOソフトウェアのブロック生成者は、トークンの価値に依存せず、トークンあたりの利用可能な帯域幅や、計算、ストレージを自然に増加させることができるということです。
 
-A blockchain using EOS.IO software also awards block producers tokens every time they produce a block. The value of the tokens will impact the amount of bandwidth, storage, and computation a producer can afford to purchase; this model naturally leverages rising token values to increase network performance.
+EOS.IOソフトウェアを使用したブロックチェーンは、ブロック生成者がブロックを生成するたびに褒賞を与えます。 The value of the tokens will impact the amount of bandwidth, storage, and computation a producer can afford to purchase; this model naturally leverages rising token values to increase network performance.
 
 ## State Storage Costs
 
