@@ -321,11 +321,11 @@ EOS.IOソフトウェアを使用したブロックチェーンは、ブロッ�
 
 帯域幅と計算が委譲できる一方で、アプリケーション状態のストレージは、アプリケーションの開発者に、その状態が削除されるまでトークンを保有しておくことを要求します。 もし状態が削除されない場合、トークンは効率的にサーキュレーションから取り除かれます。
 
-Every user account requires a certain amount of storage; therefore, every account must maintain a minimum balance. As storage capacity of the network increases this minimum required balance will fall.
+全てのユーザーは一定のストレージ量を必要とします。それゆえ、全てのアカウントは最低限の残高を保持しなければいけません。ネットワークのストレージ容量が増加するにつれて、この最低限の残高は減少します。
 
-## Block Rewards
+## ブロック報酬
 
-A blockchain that adopts the EOS.IO software will award new tokens to a block producer every time a block is produced. In these circumstances, the number of tokens created is determined by the median of the desired pay published by all block producers. The EOS.IO software may be configured to enforce a cap on producer awards such that the total annual increase in token supply does not exceed 5%.
+EOS.IOソフトウェアを採用したブロックチェーンでは、ブロック生成者はブロックを生成するたびに、新たなトークンを受け取ります。 このような状況で、作成されるトークンの数は、全てのブロック生成者によって公開された希望報酬額の中央値によって決定されます。 The EOS.IO software may be configured to enforce a cap on producer awards such that the total annual increase in token supply does not exceed 5%.
 
 ## Community Benefit Applications
 
