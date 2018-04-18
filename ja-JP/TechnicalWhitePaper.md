@@ -303,7 +303,7 @@ EOS.IOソフトウェアをローンチされたブロックチェーンに適�
 
 ## 受領者の支払い
 
-これまでは、オフィスの賃貸や、計算能力、その他のビジネスを運営するために必要なコストを支払うことがビジネスでした。 顧客はそのビジネスから特定の商品を購入し、その収入がビジネスの運営費をまかなっていました。 Similarly, no website obligates its visitors to make micropayments for visiting its website to cover hosting costs. Therefore, decentralized applications should not force its customers to pay the blockchain directly for the use of the blockchain.
+これまでは、オフィスの賃貸や、計算能力、その他のビジネスを運営するために必要なコストを支払うことがビジネスでした。 顧客はそのビジネスから特定の商品を購入し、その収入がビジネスの運営費をまかなっていました。 同様に、ウェブサイトの運営費をまかなうために、サイトの訪問者に対して少額の支払いを義務付けているウェブサイトはありません。 したがって、分散型アプリケーションは、利用者にブロックチェーンの利用料の直接的な支払いを強制するべきではありません。
 
 A launched blockchain that uses the EOS.IO software does not require its users to pay the blockchain directly for its use and therefore does not constrain or prevent a business from determining its own monetization strategy for its products.
 
