@@ -42,7 +42,7 @@ Copyright © 2017 block.one
   - [主観的な最善努力型のスケジューリング](#subjective-best-effort-scheduling)
 - [トークンモデルとリソースの使用状況](#token-model-and-resource-usage) 
   - [客観的測定と主観的測定](#objective-and-subjective-measurements)
-  - [Receiver Pays](#receiver-pays)
+  - [受領者の支払い](#receiver-pays)
   - [Delegating Capacity](#delegating-capacity)
   - [Separating Transaction costs from Token Value](#separating-transaction-costs-from-token-value)
   - [State Storage Costs](#state-storage-costs)
@@ -301,9 +301,9 @@ EOS.IOソフトウェアをローンチされたブロックチェーンに適�
 
 つまり、客観的に測定するには些細なものもあります。 配信されたメッセージの数と、内部データベースに格納されているデータのサイズは客観的に測定するにはチープです。 EOS.IOソフトウェアのブロック生成者は、こうした客観的測定に同様のアルゴリズムを適応できますが、主観的測定により厳格な主観的アルゴリズムを適用するでしょう。
 
-## Receiver Pays
+## 受領者の支払い
 
-Traditionally, it is the business that pays for office space, computational power, and other costs required to run the business. The customer buys specific products from the business and the revenue from those product sales is used to cover the business costs of operation. Similarly, no website obligates its visitors to make micropayments for visiting its website to cover hosting costs. Therefore, decentralized applications should not force its customers to pay the blockchain directly for the use of the blockchain.
+これまでは、オフィスの賃貸や、計算能力、その他のビジネスを運営するために必要なコストを支払うことがビジネスでした。 顧客はそのビジネスから特定の商品を購入し、その収入がビジネスの運営費をまかなっていました。 Similarly, no website obligates its visitors to make micropayments for visiting its website to cover hosting costs. Therefore, decentralized applications should not force its customers to pay the blockchain directly for the use of the blockchain.
 
 A launched blockchain that uses the EOS.IO software does not require its users to pay the blockchain directly for its use and therefore does not constrain or prevent a business from determining its own monetization strategy for its products.
 
