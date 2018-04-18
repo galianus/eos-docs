@@ -315,11 +315,11 @@ EOS.IOを採用してローンチしたブロックチェーン上の、利用�
 
 EOS.IOソフトウェアの主な利点の一つとして、アプリケーションに利用可能な帯域幅の送料があらゆるトークンの価値から完全に独立していることが挙げられます。 もしアプリケーションの保有者がEOS.IOソフトウェアを採用したブロックチェーン上の適切な寮のトークンを所有していた場合、そのアプリケーションは固定された状態と帯域幅利用の中で無期限に実行されることができます。 そのような場合、開発者とユーザーはトークンマーケットでのあらゆる価格変動の影響を受けることはなく、それゆえプライス・フィードに依存しません。 言い換えると、EOS.IOソフトウェアのブロック生成者は、トークンの価値に依存せず、トークンあたりの利用可能な帯域幅や、計算、ストレージを自然に増加させることができるということです。
 
-EOS.IOソフトウェアを使用したブロックチェーンは、ブロック生成者がブロックを生成するたびに褒賞を与えます。 The value of the tokens will impact the amount of bandwidth, storage, and computation a producer can afford to purchase; this model naturally leverages rising token values to increase network performance.
+EOS.IOソフトウェアを使用したブロックチェーンは、ブロック生成者がブロックを生成するたびに褒賞を与えます。 トークンの価値は、ブロック生成者が購入可能な帯域幅や、計算、ストレージの量に影響を与えます。このモデルは、ネットワークのパフォーマンスを向上させるために、トークンの価値を上昇させることを自然に活用しています。
 
-## State Storage Costs
+## ステート・ストレージコスト
 
-While bandwidth and computation can be delegated, storage of application state will require an application developer to hold tokens until that state is deleted. If state is never deleted then the tokens are effectively removed from circulation.
+帯域幅と計算が委譲できる一方で、アプリケーション状態のストレージは、アプリケーションの開発者に、その状態が削除されるまでトークンを保有しておくことを要求します。 もし状態が削除されない場合、トークンは効率的にサーキュレーションから取り除かれます。
 
 Every user account requires a certain amount of storage; therefore, every account must maintain a minimum balance. As storage capacity of the network increases this minimum required balance will fall.
 
