@@ -43,7 +43,7 @@ Copyright © 2017 block.one
 - [トークンモデルとリソースの使用状況](#token-model-and-resource-usage) 
   - [客観的測定と主観的測定](#objective-and-subjective-measurements)
   - [受領者の支払い](#receiver-pays)
-  - [Delegating Capacity](#delegating-capacity)
+  - [容量の委譲](#delegating-capacity)
   - [Separating Transaction costs from Token Value](#separating-transaction-costs-from-token-value)
   - [State Storage Costs](#state-storage-costs)
   - [Block Rewards](#block-rewards)
@@ -305,11 +305,11 @@ EOS.IOソフトウェアをローンチされたブロックチェーンに適�
 
 これまでは、オフィスの賃貸や、計算能力、その他のビジネスを運営するために必要なコストを支払うことがビジネスでした。 顧客はそのビジネスから特定の商品を購入し、その収入がビジネスの運営費をまかなっていました。 同様に、ウェブサイトの運営費をまかなうために、サイトの訪問者に対して少額の支払いを義務付けているウェブサイトはありません。 したがって、分散型アプリケーションは、利用者にブロックチェーンの利用料の直接的な支払いを強制するべきではありません。
 
-A launched blockchain that uses the EOS.IO software does not require its users to pay the blockchain directly for its use and therefore does not constrain or prevent a business from determining its own monetization strategy for its products.
+EOS.IOソフトウェアを使用してローンチされたブロックチェーンは、ユーザーにブロックチェーンの使用料を直接支払わせることはなく、また、それによよって事業が商品の独自の収益戦略を決定することを阻害したり、制約を課したりすることはありません。
 
-## Delegating Capacity
+## 容量の委譲
 
-A holder of tokens on a blockchain launched adopting the EOS.IO software who may not have an immediate need to consume all or part of the available bandwidth, can give or rent such unconsumed bandwidth to others; the block producers running EOS.IO software on such blockchain will recognize this delegation of capacity and allocate bandwidth accordingly.
+EOS.IOを採用してローンチしたブロックチェーン上の、利用可能な帯域幅の一部または全てを今すぐに利用する必要のないトークン保有者は、未使用の帯域幅を他者に与える、または貸し出すことができます。そのブロックチェーン上でEOS.IOソフトウェアを実行しているブロック生成者は、その容量の委譲を確認し、ただちに帯域幅の割り当てを行います。
 
 ## Separating Transaction costs from Token Value
 
