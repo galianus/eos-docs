@@ -439,8 +439,8 @@ EOS.IOソフトウェアは、トランザクションが含まれた時点以�
 
 ## 完全性の証明（Proof of Completeness）
 
-When using merkle proofs from outside blockchains, there is a significant difference between knowing that all transactions processed are valid and knowing that no transactions have been skipped or omitted. While it is impossible to prove that all of the most recent transactions are known, it is possible to prove that there have been no gaps in the transaction history. The EOS.IO software facilitates this by assigning a sequence number to every message delivered to every account. A user can use these sequence numbers to prove that all messages intended for a particular account have been processed and that they were processed in order.
+外部のブロックチェーンからマークル証明を使う場合、処理された全てのトランザクションが有効であると知ることと、スキップまたは除外されたトランザクションがないということを知ることは全く異なります。 全ての最新のトランザクションが既知であるということを証明するのが不可能な一方、これまでのトランザクション履歴にギャップがないということを証明することは可能です。 EOS.IOソフトウェアは、全てのアカウントに配信される全てのメッセージに連続した番号を割り当てることによって、これを容易にします。 ユーザーはこれらの連続した番号を使って、特定のアカウントを対象としたメッセージが、順番に処理されたことを証明することができます。
 
-# Conclusion
+# 結び
 
-The EOS.IO software is designed from experience with proven concepts and best practices, and represents fundamental advancements in blockchain technology. The software is part of a holistic blueprint for a globally scalable blockchain society in which decentralised applications can be easily deployed and governed.
+EOS.IOソフトウェアは、実績のあるコンセプトとベスト・プラクティスに基づいた経験によって設計され、ブロックチェーン技術の根本的な発展を表します。 The software is part of a holistic blueprint for a globally scalable blockchain society in which decentralised applications can be easily deployed and governed.
