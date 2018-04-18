@@ -62,10 +62,10 @@ Copyright © 2017 block.one
     - [Web Assembly (WASM)](#web-assembly-wasm)
     - [Ethereum Virtual Machine (EVM)](#ethereum-virtual-machine-evm)
 - [ブロックチェーン間のコミュニケーション](#inter-blockchain-communication) 
-  - [Merkle Proofs for Light Client Validation (LCV)](#merkle-proofs-for-light-client-validation-lcv)
-  - [Latency of Interchain Communication](#latency-of-interchain-communication)
-  - [Proof of Completeness](#proof-of-completeness)
-- [Conclusion](#conclusion)
+  - [軽量クライアント検証（LCV）のためのマークル証明](#merkle-proofs-for-light-client-validation-lcv)
+  - [チェーン間コミュニケーションの待ち時間](#latency-of-interchain-communication)
+  - [完全性の証明（Proof of Completeness）](#proof-of-completeness)
+- [結び](#conclusion)
 
 # 背景
 
@@ -417,7 +417,7 @@ EOS.IOソフトウェアはブロックチェーン間のコミュニケーシ�
 
 <img align="right" src="http://eos.io/wpimg/Diagram1.jpg" width="362.84px" height="500px" />
 
-## Merkle Proofs for Light Client Validation (LCV)
+## 軽量クライアント検証（LCV）のためのマークル証明
 
 クライアントが全てのトランザクションを処理する必要がない場合、他のブロックチェーンとの統合は非常に簡単です。 結局のところ、取引所はその取引所への入金と取引所からの送金のみを気にします。 取引所のチェーンは、チェーンのブロック生成者を完全に信頼するより、デポジットに関する軽量なマークル証明を利用できた方が理想的です。 少なくとも、チェーンのブロック生成者は、他のブロックチェーンと同期する際に、できるだけ少ない諸経費を維持したいと考えるでしょう。
 
@@ -443,4 +443,4 @@ EOS.IOソフトウェアは、トランザクションが含まれた時点以�
 
 # 結び
 
-EOS.IOソフトウェアは、実績のあるコンセプトとベスト・プラクティスに基づいた経験によって設計され、ブロックチェーン技術の根本的な発展を表します。 The software is part of a holistic blueprint for a globally scalable blockchain society in which decentralised applications can be easily deployed and governed.
+EOS.IOソフトウェアは、実績のあるコンセプトとベスト・プラクティスに基づいた経験によって設計され、ブロックチェーン技術の根本的な発展を表します。 このソフトウェアは、分散型アプリケーションを容易にデプロイ、制御できるグローバルでスケーラブルなブロックチェーン社会のための総合的な設計図の一部です。
