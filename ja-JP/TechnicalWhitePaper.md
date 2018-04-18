@@ -48,20 +48,20 @@ Copyright © 2017 block.one
   - [ステート・ストレージ・コスト](#state-storage-costs)
   - [ブロック報酬](#block-rewards)
   - [コミュニティ・ベネフィット・アプリケーション](#community-benefit-applications)
-- [Governance](#governance) 
-  - [Freezing Accounts](#freezing-accounts)
-  - [Changing Account Code](#changing-account-code)
-  - [Constitution](#constitution)
-  - [Upgrading the Protocol & Constitution](#upgrading-the-protocol--constitution) 
-    - [Emergency Changes](#emergency-changes)
-- [Scripts & Virtual Machines](#scripts--virtual-machines) 
-  - [Schema Defined Messages](#schema-defined-messages)
-  - [Schema Defined Database](#schema-defined-database)
-  - [Separating Authentication from Application](#separating-authentication-from-application)
-  - [Virtual Machine Independent Architecture](#virtual-machine-independent-architecture) 
+- [ガバナンス](#governance) 
+  - [アカウントの凍結](#freezing-accounts)
+  - [アカウントコードの変更](#changing-account-code)
+  - [規約](#constitution)
+  - [プロトコルと規約のアップグレード](#upgrading-the-protocol--constitution) 
+    - [緊急の変更](#emergency-changes)
+- [スクリプト & 仮想マシン](#scripts--virtual-machines) 
+  - [スキーマによって定義されたメッセージ](#schema-defined-messages)
+  - [スキーマによって定義されたデータベース](#schema-defined-database)
+  - [アプリケーションから独立した認証](#separating-authentication-from-application)
+  - [仮想マシンから独立した構造](#virtual-machine-independent-architecture) 
     - [Web Assembly (WASM)](#web-assembly-wasm)
     - [Ethereum Virtual Machine (EVM)](#ethereum-virtual-machine-evm)
-- [Inter Blockchain Communication](#inter-blockchain-communication) 
+- [ブロックチェーン間のコミュニケーション](#inter-blockchain-communication) 
   - [Merkle Proofs for Light Client Validation (LCV)](#merkle-proofs-for-light-client-validation-lcv)
   - [Latency of Interchain Communication](#latency-of-interchain-communication)
   - [Proof of Completeness](#proof-of-completeness)
@@ -409,11 +409,11 @@ Ethereumの開発者は、[Ethereum flavored Web Assembly (WASM)](https://github
 
 ### Ethereum Virtual Machine (EVM)
 
-この仮想マシンは既存のほとんどのスマートコントラクトで使用されてきていて、EOS.IOのブロックチェーンにおいて動作するよう適合させることができます。 It is conceivable that EVM contracts could be run within their own sandbox inside an EOS.IO software-based blockchain and that with some adaptation EVM contracts could communicate with other EOS.IO software blockchain applications.
+この仮想マシンは既存のほとんどのスマートコントラクトで使用されてきていて、EOS.IOのブロックチェーンにおいて動作するよう適合させることができます。 EVMのコントラクトはEOS.IOソフトウェアベースのブロックチェーン内の彼ら自身のサンドボックスで実行することができると想定でき、すこしの適合によってEVMのコントラクトはその他のEOS.IOソフトウェアのブロックチェーンアプリケーションと通信することができます。
 
-# Inter Blockchain Communication
+# ブロックチェーン間のコミュニケーション
 
-EOS.IO software is designed to facilitate inter-blockchain communication. This is achieved by making it easy to generate proof of message existence and proof of message sequence. These proofs combined with an application architecture designed around message passing enables the details of inter-blockchain communication and proof validation to be hidden from application developers.
+EOS.IOソフトウェアはブロックチェーン間のコミュニケーションを促進するよう設計されています。 これはメッセージ存在の証明とメッセージ・シーケンスの証明の生成を容易にしたことにより実現されます。 これらの証明が、メッセージ・パッシングを避けてデザインされたアプリケーション構造と組み合わさることで、ブロックチェーン間のコミュニケーションと証明の検証の詳細は、アプリケーション開発者から見えなくなります。
 
 <img align="right" src="http://eos.io/wpimg/Diagram1.jpg" width="362.84px" height="500px" />
 
