@@ -435,9 +435,9 @@ EOS.IOソフトウェアは、トランザクションが含まれた時点以�
 
 ## チェーン間コミュニケーションの待ち時間
 
-When communicating with another outside blockchain, block producers must wait until there is 100% certainty that a transaction has been irreversibly confirmed by the other blockchain before accepting it as a valid input. Using an EOS.IO software-based blockchain and DPOS with 3 second blocks and 21 producers, this takes approximately 45 seconds. If a chain's block producers do not wait for irreversibility it would be like an exchange accepting a deposit that was later reversed and could impact the validity of the blockchain's consensus.
+他の外部のブロックチェーンとコミュニケーションする際は、ブロック生成者は有効なインプットとしてトランザクションを受け入れる前に、トランザクションが100%確実に他のブロックチェーンによって不可逆的に確認されるまで待たなければなりません。 これは、3秒のブロック生成間隔と21のブロック生成者によるEOS.IOソフトウェアベースのブロックチェーンとDPOSを使った場合、約45秒間かかります。 チェーンのブロック生成者が不可逆性を待たないことは、取引所が後々破棄される入金を受け入れるようなもので、ブロックチェーンの合意の有効性に影響を与える可能性があります。
 
-## Proof of Completeness
+## 完全性の証明（Proof of Completeness）
 
 When using merkle proofs from outside blockchains, there is a significant difference between knowing that all transactions processed are valid and knowing that no transactions have been skipped or omitted. While it is impossible to prove that all of the most recent transactions are known, it is possible to prove that there have been no gaps in the transaction history. The EOS.IO software facilitates this by assigning a sequence number to every message delivered to every account. A user can use these sequence numbers to prove that all messages intended for a particular account have been processed and that they were processed in order.
 
