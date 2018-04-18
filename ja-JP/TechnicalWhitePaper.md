@@ -367,15 +367,15 @@ EOS.IOソフトウェアは、正当なソースコードと規約によって�
 6. コードの変更は7日後に発効されます。全てのフルノードにはソースコードの批准後に1週間のアップグレード期間が与えられます。
 7. 新たなコードにアップグレードしなかった全てのノードは自動的にシャットダウンされます。
 
-By default configuration of the EOS.IO software, the process of updating the blockchain to add new features takes 2 to 3 months, while updates to fix non-critical bugs that do not require changes to the constitution can take 1 to 2 months.
+EOS.IOソフトウェアのデフォルトの構成で、ブロックチェーンのアップデートプロセスは2ヶ月から3ヶ月を要します。一方で、規約の変更を必要とない重要でないバグ修正のためのアップデートは1ヶ月から2ヶ月かかります。
 
-### Emergency Changes
+### 緊急の変更
 
-The block producers may accelerate the process if a software change is required to fix a harmful bug or security exploit that is actively harming users. Generally speaking it could be against the constitution for accelerated updates to introduce new features or fix harmless bugs.
+実際にユーザーに害を与えているセキュリティ脆弱性や有害なバグを修正するためにソフトウェアの変更が必要とされている場合、ブロック生成者はこのプロセスを早める可能性があります。 一般的に新機能の導入または有害なバグを修正するために規約に反する可能性があります。
 
-# Scripts & Virtual Machines
+# スクリプト & バーチャルマシン
 
-The EOS.IO software will be first and foremost a platform for coordinating the delivery of authenticated messages to accounts. The details of scripting language and virtual machine are implementation specific details that are mostly independent from the design of the EOS.IO technology. Any language or virtual machine that is deterministic and properly sandboxed with sufficient performance can be integrated with the EOS.IO software API.
+EOS.IOソフトウェアは、アカウントへの認証済みメッセージの送信を調整するための最初のプラットフォームになります。 言語とバーチャルマシンをスクリプティングすることは、EOS.IOの技術設計からほとんど独立した具体的な詳細を実装することです。 Any language or virtual machine that is deterministic and properly sandboxed with sufficient performance can be integrated with the EOS.IO software API.
 
 ## Schema Defined Messages
 
