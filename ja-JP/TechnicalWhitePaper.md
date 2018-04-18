@@ -393,13 +393,13 @@ EOS.IOソフトウェアは、アカウントへの認証済みメッセージ�
 2. 全ての前提条件が有効であるかの検証
 3. アプリケーション状態の変更
 
-内部でのメッセージの矛盾の検証は読み取り専用で、ブロックチェーン状態へのアクセスを必要としません。 これは、最大限の並列処理をもって実行できるということを意味します。 必要な残高などの前提条件の検証も読み取り専用で、並列処理の恩恵を受けることができます。 Only modification of application state requires write access and must be processed sequentially for each application.
+内部でのメッセージの矛盾の検証は読み取り専用で、ブロックチェーン状態へのアクセスを必要としません。 これは、最大限の並列処理をもって実行できるということを意味します。 必要な残高などの前提条件の検証も読み取り専用で、並列処理の恩恵を受けることができます。 アプリケーション状態の修正のみ書き込みのアクセスが必要で、それぞれのアプリケーションごとに順番に処理する必要があります。
 
-Authentication is the read-only process of verifying that a message can be applied. Application is actually doing the work. In real time both calculations are required to be performed, however once a transaction is included in the blockchain it is no longer necessary to perform the authentication operations.
+認証はメッセージを適用可能な読み取り専用の検証プロセスです。 アプリケーションがまさにその仕事をします。 リアルタイムで両方の計算が実行される必要があります。しかし、一度トランザクションがブロックチェーンに含まれれば、認証オペレーションを実行する必要はありません。
 
 ## Virtual Machine Independent Architecture
 
-It is the intention of the EOS.IO software-based blockchain that multiple virtual machines can be supported and new virtual machines added over time as necessary. For this reason, this paper will not discuss the details of any particular language or virtual machine. That said, there are two virtual machines that are currently being evaluated for use with an EOS.IO software-based blockchain.
+複数の仮想マシンのサポートが可能で、随時必要に応じて新しい仮想マシンを追加することができるというのが、EOS.IOソフトウェアベースのブロックチェーンの意向です。 そのため、当ホワイトペーパーは特定の言語または仮想マシンの詳細について言及しません。 That said, there are two virtual machines that are currently being evaluated for use with an EOS.IO software-based blockchain.
 
 ### Web Assembly (WASM)
 
