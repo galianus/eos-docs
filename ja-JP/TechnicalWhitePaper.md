@@ -353,11 +353,11 @@ EOS.IOソフトウェアに組み込まれるということは、ブロック�
 
 EOS.IOソフトウェアをを使用したブロックチェーンは、規約（"constitution")と称されるP2Pの利用規約合意または拘束力のある契約を、それらに署名したユーザーとの間で結ぶことができます。 この規約の内容は、コードによって完全に強制されることのできないユーザー間の義務を定義し、相互に受け入れられたルールに基づいた法の選択と権限の確立による議論の解決を促進します。 ネットワークに公開される全てのトランザクションは、署名の一環として規約のハッシュを内包する必要があり、それによって署名者をそのコントラクトに明示的に紐付けます。
 
-規約は人間が読める形式のソースコードプロトコルの趣旨を定義します。 This intent is used to identify the difference between a bug and a feature when errors occur and guides the community on what fixes are proper or improper.
+規約は人間が読める形式のソースコードプロトコルの趣旨を定義します。 この趣旨は、エラーが生じた際のバグと機能の判別に使われ、コミュニティにどの部分を修正するのが適切または不適切かを伝えます。
 
-## Upgrading the Protocol & Constitution
+## プロトコルと規約のアップグレード
 
-The EOS.IO software defines a process by which the protocol as defined by the canonical source code and its constitution, can be updated using the following process:
+EOS.IOソフトウェアは、それを使うことによって、正当なソースコードと規約によって定義されたプロトコルが以下のような手順によってアップデートできるようになるプロセスを定義します。
 
 1. Block producers propose a change to the constitution and obtains 17/21 approval.
 2. Block producers maintain 17/21 approval for 30 consecutive days.
