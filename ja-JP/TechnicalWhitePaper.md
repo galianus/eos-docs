@@ -429,7 +429,7 @@ EOS.IOソフトウェアは、トランザクションが含まれた時点以�
 
 これらの証明を可能にするための適切なハッシュリンクを付加してブロックを生成するためには、わずかな諸経費の増加のみを必要とします。そのため、この方法を使わずにブロックを生成する理由はありません。
 
-他チェーンの証明を検証する段階になると、幅広い時間/スペース/帯域幅の最適化ができるようになります。 全てのブロックヘッダー（420MB/年）をトラッキングすることで証明のサイズを小さく維持できます。 Tracking only recent headers can offer a trade off between minimal long-term storage and proof size. Alternatively, a blockchain can use a lazy evaluation approach where it remembers intermediate hashes of past proofs. New proofs only have to include links to the known sparse tree. The exact approach used will necessarily depend upon the percentage of foreign blocks that include transactions referenced by merkle proof.
+他チェーンの証明を検証する段階になると、幅広い時間/スペース/帯域幅の最適化ができるようになります。 全てのブロックヘッダー（420MB/年）をトラッキングすることで証明のサイズを小さく維持できます。 直近のヘッダーのみをトラッキングすることで、最小限の長期ストレージと証明サイズを交換することができます。 また、ブロックチェーンは過去の証明の中間のハッシュを記録している遅延評価アプローチを使うことができます。 新しい証明は周知されているスパース・ツリーを含んでいることだけが必要です。 使用される正確なアプローチは、マークル証明によって参照されるトランザクションを含む外部ブロックによって異なります。
 
 After a certain density of interconnectedness it becomes more efficient to simply have one chain contain the entire block history of another chain and eliminate the need for proofs all together. For performance reasons, it is ideal to minimize the frequency of inter-chain proofs.
 
