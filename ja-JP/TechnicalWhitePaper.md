@@ -345,7 +345,7 @@ EOS.IOソフトウェアに組み込まれるということは、ブロック�
 
 全てのブロックチェーン上のブロック生成者は、どのトランザクションがブロックに含まれるか選択する力があり、これにより、アカウントを凍結することができます。 EOS.IOソフトウェアを使用しているブロックチェーンは、この権限を形式化していて、アクティブなブロック生成者の17/21の票によってアカウント凍結のプロセスをかけることができます。 もしブロック生成者がこの力を濫用した場合には、ユーザーはそのブロック生成者を投票により退任させてアカウントの凍結を解除することができます。
 
-## Changing Account Code
+## アカウントコードの変更
 
 When all else fails and an "unstoppable application" acts in an unpredictable manner, a blockchain using EOS.IO software allows the block producers to replace the account's code without hard forking the entire blockchain. Similar to the process of freezing an account, this replacement of the code requires a 17/21 vote of elected block producers.
 
