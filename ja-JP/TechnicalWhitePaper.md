@@ -397,19 +397,19 @@ EOS.IOソフトウェアは、アカウントへの認証済みメッセージ�
 
 認証はメッセージを適用可能な読み取り専用の検証プロセスです。 アプリケーションがまさにその仕事をします。 リアルタイムで両方の計算が実行される必要があります。しかし、一度トランザクションがブロックチェーンに含まれれば、認証オペレーションを実行する必要はありません。
 
-## Virtual Machine Independent Architecture
+## 仮想マシンから独立した構造
 
-複数の仮想マシンのサポートが可能で、随時必要に応じて新しい仮想マシンを追加することができるというのが、EOS.IOソフトウェアベースのブロックチェーンの意向です。 そのため、当ホワイトペーパーは特定の言語または仮想マシンの詳細について言及しません。 That said, there are two virtual machines that are currently being evaluated for use with an EOS.IO software-based blockchain.
+複数の仮想マシンのサポートが可能で、随時必要に応じて新しい仮想マシンを追加することができるというのが、EOS.IOソフトウェアベースのブロックチェーンの意向です。 そのため、当ホワイトペーパーは特定の言語または仮想マシンの詳細について言及しません。 とはいえ、現在2つの仮想マシンがEOS.IOソフトウェアベースのブロックチェーンでの使用に関して評価を受けています。
 
 ### Web Assembly (WASM)
 
-Web Assembly is an emerging web standard for building high performance web applications. With a few small modifications Web Assembly can be made deterministic and sandboxed. The benefit of Web Assembly is the widespread support from industry and that it enables contracts to be developed in familiar languages such as C or C++.
+Web Assemblyは、ハイパフォーマンスなWEBアプリケーションを構築するための新興のWEB標準です。 ごくわずかな変更でWeb Assemblyは決定的かつサンドボックス化することができます。 Web Assemblyの利点は、産業からの幅広いサポートと、CやC++といった一般になじみのある言語でコントラクトを開発できるようになることです。
 
-Ethereum developers have already begun modifying Web Assembly to provide suitable sandboxing and determinism in with their [Ethereum flavored Web Assembly (WASM)](https://github.com/ewasm/design). This approach can be easily adapted and integrated with EOS.IO software.
+Ethereumの開発者は、[Ethereum flavored Web Assembly (WASM)](https://github.com/ewasm/design) で適切なサンドボックス化と決定性を提供するために、すでにWeb Assemblyのモディファイを始めています。 このアプローチは簡単にEOS.IOソフトウェアに適合し、統合することができます。
 
 ### Ethereum Virtual Machine (EVM)
 
-This virtual machine has been used for most existing smart contracts and could be adapted to work within an EOS.IO blockchain. It is conceivable that EVM contracts could be run within their own sandbox inside an EOS.IO software-based blockchain and that with some adaptation EVM contracts could communicate with other EOS.IO software blockchain applications.
+この仮想マシンは既存のほとんどのスマートコントラクトで使用されてきていて、EOS.IOのブロックチェーンにおいて動作するよう適合させることができます。 It is conceivable that EVM contracts could be run within their own sandbox inside an EOS.IO software-based blockchain and that with some adaptation EVM contracts could communicate with other EOS.IO software blockchain applications.
 
 # Inter Blockchain Communication
 
