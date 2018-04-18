@@ -297,9 +297,9 @@ EOS.IOソフトウェアをローンチされたブロックチェーンに適�
 
 ## Objective and Subjective Measurements
 
-As discussed earlier, instrumenting computational usage has a significant impact on performance and optimization; therefore, all resource usage constraints are ultimately subjective and enforcement is done by block producers according to their individual algorithms and estimates.
+前述したように、計算使用料をインストルメント化することはパフォーマンスと最適化に大きな影響を持ちます。そのため、全てのリソース使用制限は最終的には主観的であり、ブロック生成者が個々のアルゴリズムと見積もりに基づいて実行されます。
 
-That said, there are certain things that are trivial to measure objectively. The number of messages delivered and the size of the data stored in the internal database are cheap to measure objectively. The EOS.IO software enables block producers to apply the same algorithm over these objective measures but may choose to apply stricter subjective algorithms over subjective measurements.
+つまり、客観的に測定するには些細なものもあります。 配信されたメッセージの数と、内部データベースに格納されているデータのサイズは客観的に測定するにはチープです。 The EOS.IO software enables block producers to apply the same algorithm over these objective measures but may choose to apply stricter subjective algorithms over subjective measurements.
 
 ## Receiver Pays
 
