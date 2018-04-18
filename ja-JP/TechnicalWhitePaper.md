@@ -333,9 +333,9 @@ EOS.IOソフトウェアを採用したブロックチェーンでは、ブロ�
 
 # ガバナンス
 
-ガバナンスとは、ソフトウェアのアルゴリズムによって完全に補足することができない主観的な事項に基づいて人々が合意に至るプロセスです。 EOS.IOソフトウェアベースのブロックチェーンは、ブロック生成者の既存の影響を効率的に管理するガバナンス・プロセスを実装しています。 Absent a defined governance process, prior blockchains relied ad hoc, informal, and often controversial governance processes that result in unpredictable outcomes.
+ガバナンスとは、ソフトウェアのアルゴリズムによって完全に補足することができない主観的な事項に基づいて人々が合意に至るプロセスです。 EOS.IOソフトウェアベースのブロックチェーンは、ブロック生成者の既存の影響を効率的に管理するガバナンス・プロセスを実装しています。 定義されたガバナンス・プロセスが存在しない場合、以前のブロックチェーンは、アドホックで非公式で、しばしば論議を呼んでいるガバナンス・プロセスに依存し、結果的に予期しない結果をもたらします。
 
-A blockchain based on the EOS.IO software recognizes that power originates with the token holders who delegate that power to the block producers. The block producers are given limited and checked authority to freeze accounts, update defective applications, and propose hard forking changes to the underlying protocol.
+EOS.IOソフトウェアベースのブロクチェーンは、パワーをブロック生成者に委任しているトークン保有者から生じるパワーを認識します。 The block producers are given limited and checked authority to freeze accounts, update defective applications, and propose hard forking changes to the underlying protocol.
 
 Embedded into the EOS.IO software is the election of block producers. Before any change can be made to the blockchain these block producers must approve it. If the block producers refuse to make changes desired by the token holders then they can be voted out. If the block producers make changes without permission of the token holders then all other non-producing full-node validators (exchanges, etc) will reject the change.
 
