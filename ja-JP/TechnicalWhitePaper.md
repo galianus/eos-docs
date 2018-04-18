@@ -419,9 +419,9 @@ EOS.IOソフトウェアはブロックチェーン間のコミュニケーシ�
 
 ## Merkle Proofs for Light Client Validation (LCV)
 
-クライアントが全てのトランザクションを処理する必要がない場合、他のブロックチェーンとの統合は非常に簡単です。 結局のところ、取引所はその取引所への入金と取引所からの送金のみを気にします。 It would also be ideal if the exchange chain could utilize lightweight merkle proofs of deposit rather than having to trust its own block producers entirely. At the very least a chain's block producers would like to maintain the smallest possible overhead when synchronizing with another blockchain.
+クライアントが全てのトランザクションを処理する必要がない場合、他のブロックチェーンとの統合は非常に簡単です。 結局のところ、取引所はその取引所への入金と取引所からの送金のみを気にします。 取引所のチェーンは、チェーンのブロック生成者を完全に信頼するより、デポジットに関する軽量なマークル証明を利用できた方が理想的です。 少なくとも、チェーンのブロック生成者は、他のブロックチェーンと同期する際に、できるだけ少ない諸経費を維持したいと考えるでしょう。
 
-The goal of LCV is to enable the generation of relatively light-weight proof of existence that can be validated by anyone tracking a relatively light-weight data set. In this case the objective is to prove that a particular transaction was included in a particular block and that the block is included in the verified history of a particular blockchain.
+LCVの目的は、比較的軽量なデータセットをトラッキングしている誰もが検証できる比較的軽量な存在の証明（proof of existence）を生成できるようにすることです。 この場合、目的は特定のトランザクションが特定のブロックに含まれていたこと、また、そのブロックが検証済みに特定のブロックチェーンに含まれていることを証明することです。
 
 Bitcoin supports validation of transactions assuming all nodes have access to the full history of block headers which amounts to 4MB of block headers per year. At 10 transactions per second, a valid proof requires about 512 bytes. This works well for a blockchain with a 10 minute block interval, but is no longer "light" for blockchains with a 3 second block interval.
 
