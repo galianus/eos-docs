@@ -351,9 +351,9 @@ EOS.IOソフトウェアに組み込まれるということは、ブロック�
 
 ## 規約
 
-EOS.IOソフトウェアをを使用したブロックチェーンは、規約（"constitution")と称されるP2Pの利用規約合意または拘束力のある契約を、それらに署名したユーザーとの間で結ぶことができます。 The content of this constitution defines obligations among the users which cannot be entirely enforced by code and facilitates dispute resolution by establishing jurisdiction and choice of law along with other mutually accepted rules. Every transaction broadcast on the network must incorporate the hash of the constitution as part of the signature and thereby explicitly binds the signer to the contract.
+EOS.IOソフトウェアをを使用したブロックチェーンは、規約（"constitution")と称されるP2Pの利用規約合意または拘束力のある契約を、それらに署名したユーザーとの間で結ぶことができます。 この規約の内容は、コードによって完全に強制されることのできないユーザー間の義務を定義し、相互に受け入れられたルールに基づいた法の選択と権限の確立による議論の解決を促進します。 ネットワークに公開される全てのトランザクションは、署名の一環として規約のハッシュを内包する必要があり、それによって署名者をそのコントラクトに明示的に紐付けます。
 
-The constitution also defines the human-readable intent of the source code protocol. This intent is used to identify the difference between a bug and a feature when errors occur and guides the community on what fixes are proper or improper.
+規約は人間が読める形式のソースコードプロトコルの趣旨を定義します。 This intent is used to identify the difference between a bug and a feature when errors occur and guides the community on what fixes are proper or improper.
 
 ## Upgrading the Protocol & Constitution
 
