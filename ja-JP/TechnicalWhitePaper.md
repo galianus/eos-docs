@@ -41,7 +41,7 @@ Copyright © 2017 block.one
   - [ブロックチェーン状態の部分評価](#partial-evaluation-of-blockchain-state)
   - [主観的な最善努力型のスケジューリング](#subjective-best-effort-scheduling)
 - [トークンモデルとリソースの使用状況](#token-model-and-resource-usage) 
-  - [Objective and Subjective Measurements](#objective-and-subjective-measurements)
+  - [客観的測定と主観的測定](#objective-and-subjective-measurements)
   - [Receiver Pays](#receiver-pays)
   - [Delegating Capacity](#delegating-capacity)
   - [Separating Transaction costs from Token Value](#separating-transaction-costs-from-token-value)
