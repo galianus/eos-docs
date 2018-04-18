@@ -339,11 +339,11 @@ EOS.IOソフトウェアベースのブロクチェーンは、パワーをブ�
 
 EOS.IOソフトウェアに組み込まれるということは、ブロック生成者の選任です。 ブロックチェーンのあらゆる変更が行われる前に、これらのブロック生成者はそれを承認する必要があります。 もしブロック生成者が、トークン保有者によって要求された変更を拒否した場合、トークン保有者は投票により退任させることができます。 もしブロック生成者がトークン保有者の許可なく変更を加えた場合、全ての非生産フルノード承認者（取引所など）はその変更を拒否することができます。
 
-## Freezing Accounts
+## アカウントの凍結
 
-スマートコントラクトは時に予期せぬ挙動により意図していた実行に失敗することがあります。またある時には、アプリケーションまたはアカウントは、異常な寮のリソースを消費する脆弱性を発見することがあります。 When such issues inevitably occur, the block producers have the power to rectify such situations.
+スマートコントラクトは時に予期せぬ挙動により意図していた実行に失敗することがあります。またある時には、アプリケーションまたはアカウントは、異常な寮のリソースを消費する脆弱性を発見することがあります。 そのような問題が起きることは不可避であるため、ブロック生成者はそのような状況を強制するためのパワーを備えておく必要があります。
 
-The block producers on all blockchains have the power to select which transactions are included in blocks which gives them the ability to freeze accounts. A blockchain using EOS.IO software formalizes this authority by subjecting the process of freezing an account to a 17/21 vote of active producers. If the producers abuse the power they can be voted out and an account will be unfrozen.
+全てのブロックチェーン上のブロック生成者は、どのトランザクションがブロックに含まれるか選択する力があり、これにより、アカウントを凍結することができます。 EOS.IOソフトウェアを使用しているブロックチェーンは、この権限を形式化していて、アクティブなブロック生成者の17/21の票によってアカウント凍結のプロセスをかけることができます。 もしブロック生成者がこの力を濫用した場合には、ユーザーはそのブロック生成者を投票により退任させてアカウントの凍結を解除することができます。
 
 ## Changing Account Code
 
