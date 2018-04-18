@@ -387,13 +387,13 @@ EOS.IOソフトウェアは、アカウントへの認証済みメッセージ�
 
 ## アプリケーションから独立した認証
 
-To maximize parallelization opportunities and minimize the computational debt associated with regenerating application state from the transaction log, EOS.IO software separates validation logic into three sections:
+並列化の機会を最大化し、トランザクションログからのアプリケーション状態の再生性に関連する計算の負債を最小化するために、EOS.IOソフトウェアは検証のロジックを3つのセクションに分割します:
 
-1. Validating that a message is internally consistent;
-2. Validating that all preconditions are valid; and
-3. Modifying the application state.
+1. メッセージが内部で矛盾しているかの検証
+2. 全ての前提条件が有効であるかの検証
+3. アプリケーション状態の変更
 
-Validating the internal consistency of a message is read-only and requires no access to blockchain state. This means that it can be performed with maximum parallelism. Validating preconditions, such as required balance, is read-only and therefore can also benefit from parallelism. Only modification of application state requires write access and must be processed sequentially for each application.
+内部でのメッセージの矛盾の検証は読み取り専用で、ブロックチェーン状態へのアクセスを必要としません。 これは、最大限の並列処理をもって実行できるということを意味します。 必要な残高などの前提条件の検証も読み取り専用で、並列処理の恩恵を受けることができます。 Only modification of application state requires write access and must be processed sequentially for each application.
 
 Authentication is the read-only process of verifying that a message can be applied. Application is actually doing the work. In real time both calculations are required to be performed, however once a transaction is included in the blockchain it is no longer necessary to perform the authentication operations.
 
