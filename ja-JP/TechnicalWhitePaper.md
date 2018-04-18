@@ -335,9 +335,9 @@ EOS.IOソフトウェアを採用したブロックチェーンでは、ブロ�
 
 ガバナンスとは、ソフトウェアのアルゴリズムによって完全に補足することができない主観的な事項に基づいて人々が合意に至るプロセスです。 EOS.IOソフトウェアベースのブロックチェーンは、ブロック生成者の既存の影響を効率的に管理するガバナンス・プロセスを実装しています。 定義されたガバナンス・プロセスが存在しない場合、以前のブロックチェーンは、アドホックで非公式で、しばしば論議を呼んでいるガバナンス・プロセスに依存し、結果的に予期しない結果をもたらします。
 
-EOS.IOソフトウェアベースのブロクチェーンは、パワーをブロック生成者に委任しているトークン保有者から生じるパワーを認識します。 The block producers are given limited and checked authority to freeze accounts, update defective applications, and propose hard forking changes to the underlying protocol.
+EOS.IOソフトウェアベースのブロクチェーンは、パワーをブロック生成者に委任しているトークン保有者から生じるパワーを認識します。 ブロック生成者には、アカウンの凍結と、欠陥のあるアプリケーションのアップデート、および内部プロトコルへのハードフォークの変更を提案するための制限付きの権限が与えられます。
 
-Embedded into the EOS.IO software is the election of block producers. Before any change can be made to the blockchain these block producers must approve it. If the block producers refuse to make changes desired by the token holders then they can be voted out. If the block producers make changes without permission of the token holders then all other non-producing full-node validators (exchanges, etc) will reject the change.
+EOS.IOソフトウェアに組み込まれるということは、ブロック生成者の選任です。 ブロックチェーンにあらゆる変更が行われる前に、これらのブロック生成者はそれを承認する必要があります。 If the block producers refuse to make changes desired by the token holders then they can be voted out. If the block producers make changes without permission of the token holders then all other non-producing full-node validators (exchanges, etc) will reject the change.
 
 ## Freezing Accounts
 
