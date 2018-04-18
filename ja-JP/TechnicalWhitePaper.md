@@ -357,15 +357,15 @@ EOS.IOソフトウェアをを使用したブロックチェーンは、規約�
 
 ## プロトコルと規約のアップグレード
 
-EOS.IOソフトウェアは、それを使うことによって、正当なソースコードと規約によって定義されたプロトコルが以下のような手順によってアップデートできるようになるプロセスを定義します。
+EOS.IOソフトウェアは、正当なソースコードと規約によって定義されたプロトコルが以下のような手順でアップデートできるようになるプロセスを定義します:
 
-1. Block producers propose a change to the constitution and obtains 17/21 approval.
-2. Block producers maintain 17/21 approval for 30 consecutive days.
-3. All users are required to sign transactions using the hash of the new constitution.
-4. Block producers adopt changes to the source code to reflect the change in the constitution and propose it to the blockchain using the hash of a git commit.
-5. Block producers maintain 17/21 approval for 30 consecutive days.
-6. Changes to the code take effect 7 days later, giving all full nodes 1 week to upgrade after ratification of the source code.
-7. All nodes that do not upgrade to the new code shut down automatically.
+1. ブロック生成者が規約の変更を提案し、17/21の賛成を得ます
+2. ブロック生成者が30日間連続で17/21の承認を維持します
+3. 全てのユーザーが新しい規約のハッシュによる署名を要求されます
+4. ブロック生成者が、規約の変更を反映するために、ソースコードへの変更を適用し、その変更をgitコミットのハッシュを用いてブロックチェーンに提案します。
+5. ブロック生成者が30日間連続で17/21の承認を維持します
+6. コードの変更は7日後に発効されます。全てのフルノードにはソースコードの批准後に1週間のアップグレード期間が与えられます。
+7. 新たなコードにアップグレードしなかった全てのノードは自動的にシャットダウンされます。
 
 By default configuration of the EOS.IO software, the process of updating the blockchain to add new features takes 2 to 3 months, while updates to fix non-critical bugs that do not require changes to the constitution can take 1 to 2 months.
 
