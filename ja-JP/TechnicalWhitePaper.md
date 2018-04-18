@@ -373,19 +373,19 @@ EOS.IOソフトウェアのデフォルトの構成で、ブロックチェー�
 
 実際にユーザーに害を与えているセキュリティ脆弱性や有害なバグを修正するためにソフトウェアの変更が必要とされている場合、ブロック生成者はこのプロセスを早める可能性があります。 一般的に新機能の導入または有害なバグを修正するために規約に反する可能性があります。
 
-# スクリプト & バーチャルマシン
+# スクリプト & 仮想マシン
 
-EOS.IOソフトウェアは、アカウントへの認証済みメッセージの送信を調整するための最初のプラットフォームになります。 言語とバーチャルマシンをスクリプティングすることは、EOS.IOの技術設計からほとんど独立した具体的な詳細を実装することです。 Any language or virtual machine that is deterministic and properly sandboxed with sufficient performance can be integrated with the EOS.IO software API.
+EOS.IOソフトウェアは、アカウントへの認証済みメッセージの送信を調整するための最初のプラットフォームになります。 言語と仮想マシンをスクリプティングすることは、EOS.IOの技術設計からほとんど独立した具体的な詳細を実装することです。 十分なパフォーマンスによって適切にサンドボックス化されている決定的なあらゆる言語または仮想マシンは、EOS.IOソフトウェアAPIに統合することができます。
 
-## Schema Defined Messages
+## スキーマによって定義されたメッセージ
 
-All messages sent between accounts are defined by a schema which is part of the blockchain consensus state. This schema allows seamless conversion between binary and JSON representation of the messages.
+アカウント間で送信された全てのメッセージは、ブロクチェーンの合意状態の一部であるスキーマによって定義されます。 このスキーマは、JSON表記のメッセージとバイナリ間のシームレスな変換を提供します。
 
-## Schema Defined Database
+## スキーマによって定義されたデータベース
 
-Database state is also defined using a similar schema. This ensures that all data stored by all applications is in a format that can be interpreted as human readable JSON but stored and manipulated with the efficiency of binary.
+データベースの状態も同様のスキーマを利用して定義されます。 これは全てのアプリケーションによって保存されたデータは人間が読むことのできるJSON形式に解釈可能なフォーマットになっていて、かつバイナリ形式の効率性をもって保存や操作できることを保証します。
 
-## Separating Authentication from Application
+## アプリケーションから独立した認証
 
 To maximize parallelization opportunities and minimize the computational debt associated with regenerating application state from the transaction log, EOS.IO software separates validation logic into three sections:
 
